@@ -1,0 +1,44 @@
+#0  0x00007fe6a863a750 in ?? () from /usr/lib/libGL.so.1
+#1  0x00007fe6a865c7ab in ?? () from /usr/lib/libGL.so.1
+#2  0x00007fe6a8633d0a in ?? () from /usr/lib/libGL.so.1
+#3  0x00007fe6a865bb6d in ?? () from /usr/lib/libGL.so.1
+#4  0x00007fe6a865bfb6 in ?? () from /usr/lib/libGL.so.1
+#5  0x00007fe6a48b92fb in ?? () from /usr/lib/libGLcore.so.1
+#6  0x00007fe6a48ba30d in _nv000071gl () from /usr/lib/libGLcore.so.1
+#7  0x00007fe6a865e928 in ?? () from /usr/lib/libGL.so.1
+#8  0x00007fe6a86271fd in ?? () from /usr/lib/libGL.so.1
+#9  0x00007fe6a863d127 in _fini () from /usr/lib/libGL.so.1
+#10 0x00007fe6a85b2114 in ?? ()
+#11 0x00007fe6a87c0000 in ?? ()
+#12 0x00007fe6a87c0580 in ?? ()
+#13 0x00007fe6a87bf4c0 in ?? ()
+#14 0x00007fe6a87ad4c0 in ?? ()
+#15 0x00007fe6a87ad990 in ?? ()
+#16 0x00007fe6a87ab000 in ?? ()
+#17 0x00007fe6a87ac000 in ?? ()
+#18 0x00007fe6a87ac4b8 in ?? ()
+#19 0x00007fe6a87ac978 in ?? ()
+#20 0x00007fe6a87aa980 in ?? ()
+#21 0x00007fe6a87a9000 in ?? ()
+#22 0x00007fe6a85dc4b0 in ?? ()
+#23 0x00007fe6a85dba98 in ?? ()
+#24 0x00007fe6a87bf980 in ?? ()
+#25 0x00007fe6a85dc9b8 in ?? ()
+#26 0x00007fe6a87ad000 in ?? ()
+#27 0x00007fe6a87ab4c0 in ?? ()
+#28 0x00007fe6a87ab978 in ?? ()
+#29 0x00007fe6a87aa000 in ?? ()
+#30 0x00000000021c2ed0 in ?? ()
+#31 0x00000000021ba0e0 in ?? ()
+#32 0x00007fe6a87aa4b8 in ?? ()
+#33 0x00007fe6a87a94b8 in ?? ()
+#34 0x00007fe6a85dc000 in ?? ()
+#35 0x00007fe6a85db000 in ?? ()
+#36 0x00007fe6a85db4b8 in ?? ()
+#37 0x00007fe6a85da118 in ?? ()
+#38 0x000000000244e7c0 in ?? ()
+#39 0x00007fe6a87a9960 in ?? ()
+#40 0x00007fe6a85da680 in ?? ()
+#41 0x00007fe6a85dab48 in ?? ()
+#42 0x00007fe6a87c2528 in ?? ()
+#43 0x0000000000000000 in ?? ()

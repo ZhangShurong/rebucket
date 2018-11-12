@@ -1,0 +1,31 @@
+#0  _XSend (dpy=0x538300, data=0x422726 "ATIFGLEXTENSION", size=15) at ../../src/xcb_io.c:224
+	c = <value optimized out>
+	__PRETTY_FUNCTION__ = "_XSend"
+#1  0x00007f2ca53da520 in XQueryExtension (dpy=0x538300, name=0x422726 "ATIFGLEXTENSION", 
+    major_opcode=0x7fffad8c3be4, first_event=0x7fffad8c3be8, first_error=0x7fffad8c3bec)
+    at ../../src/QuExt.c:50
+	rep = {type = 184 '¸', pad1 = 180 '´', sequenceNumber = 42378, length = 32556, present = 57 '9', 
+  major_opcode = 25 '\031', first_event = 64 '@', first_error = 0 '\0', pad3 = 0, pad4 = 4294967295, 
+  pad5 = 32556, pad6 = 4199208, pad7 = 0}
+#2  0x00007f2ca53cf2d4 in XInitExtension (dpy=0x538300, name=0x422726 "ATIFGLEXTENSION")
+    at ../../src/InitExt.c:49
+	codes = {extension = 0, major_opcode = 0, first_event = -1535024288, first_error = 32556}
+	ext = <value optimized out>
+#3  0x00007f2ca51a0c09 in XextAddDisplay (extinfo=0x533990, dpy=0x538300, 
+    ext_name=0x422726 "ATIFGLEXTENSION", hooks=0x52c5e0, nevents=0, data=0x0) at ../../src/extutil.c:108
+	dpyinfo = (XExtDisplayInfo *) 0x537330
+#4  0x000000000040c9c2 in ?? ()
+#5  0x000000000040e437 in ?? ()
+#6  0x000000000040df50 in ?? ()
+#7  0x0000000000409b86 in ?? ()
+#8  0x0000000000408f77 in ?? ()
+#9  0x0000000000408659 in ?? ()
+#10 0x0000000000406a3b in ?? ()
+#11 0x000000000040626b in ?? ()
+#12 0x00000000004068c7 in ?? ()
+#13 0x00000000004038ed in ?? ()
+#14 0x000000000040353a in ?? ()
+#15 0x00007f2ca47be1c4 in __libc_start_main () from /lib/libc.so.6
+#16 0x00000000004031ea in ?? ()
+#17 0x00007fffad8c3fa8 in ?? ()
+#18 0x0000000000000000 in ?? ()

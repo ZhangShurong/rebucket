@@ -1,0 +1,24 @@
+#0  0x00007f58035ec881 in CompPlugin::VTableForScreenAndWindow<SwitchScreen, SwitchWindow>::finiWindow(CompWindow*) () from /usr/lib/compiz/libswitcher.so
+No symbol table info available.
+#1  0x00007f5825f9f811 in CompPlugin::windowFiniPlugins(CompWindow*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#2  0x00007f5825f89c9a in CompWindow::~CompWindow() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#3  0x00007f5825f89fa9 in CompWindow::~CompWindow() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#4  0x00007f5825f6944f in compiz::private_screen::WindowManager::removeDestroyed() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#5  0x00007f5825f7146e in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#6  0x00007f5825fa5d17 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#7  0x00007f58244b185f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#8  0x00007f5823fb9dda in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f5823fba1a0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f5823fba59a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00000000004029ae in main ()
+No symbol table info available.

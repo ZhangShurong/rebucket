@@ -1,0 +1,86 @@
+#0  0x0106b429 in gtk_icon_source_set_pixbuf () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#1  0x0108303b in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#2  0x010831dc in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#3  0x010834bb in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#4  0x01083813 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#5  0x0112f72e in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#6  0x00fb5aca in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#7  0x0112f72e in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#8  0x00fb5aca in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#9  0x0112f72e in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#10 0x012230b8 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#11 0x0112f72e in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#12 0x0112fb6c in gtk_widget_get_preferred_size () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#13 0x01220fab in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#14 0x01224135 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#15 0x003960bc in g_cclosure_marshal_VOID__VOID () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x0037836d in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x0037991c in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x0038c247 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x0039573f in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x003958b3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x01216d5b in gtk_widget_show () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#22 0x0100dfec in gtk_dialog_run () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#23 0x00bcc35a in ffi_call_SYSV () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#24 0x00bcc08f in ffi_call () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#25 0x003c5d2b in ?? () from /usr/lib/libgirepository-1.0.so.1
+No symbol table info available.
+#26 0x003c7181 in g_function_info_invoke () from /usr/lib/libgirepository-1.0.so.1
+No symbol table info available.
+#27 0x008b8c60 in ?? () from /usr/lib/python2.7/dist-packages/gi/_gi.so
+No symbol table info available.
+#28 0x080fa85a in PyEval_EvalFrameEx ()
+No symbol table info available.
+#29 0x080fd741 in PyEval_EvalCodeEx ()
+No symbol table info available.
+#30 0x080f7757 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#31 0x080f7898 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#32 0x080fd274 in PyEval_EvalCodeEx ()
+No symbol table info available.
+#33 0x080f7757 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#34 0x080f7898 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#35 0x080f7898 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#36 0x080fd274 in PyEval_EvalCodeEx ()
+No symbol table info available.
+#37 0x080fdbe7 in PyEval_EvalCode ()
+No symbol table info available.
+#38 0x0811a8d0 in ?? ()
+No symbol table info available.
+#39 0x0811b4e9 in PyRun_FileExFlags ()
+No symbol table info available.
+#40 0x0811c0cc in PyRun_SimpleFileExFlags ()
+No symbol table info available.
+#41 0x0812c3c6 in Py_Main ()
+No symbol table info available.
+#42 0x0805da2b in main ()
+No symbol table info available.

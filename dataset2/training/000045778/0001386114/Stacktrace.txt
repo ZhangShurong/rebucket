@@ -1,0 +1,126 @@
+#0  0x00007fc9f51eebb9 in __GI_raise (sig=sig@entry=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:56
+        resultvar = 0
+        pid = 3741
+        selftid = 5107
+#1  0x00007fc9f51f1fc8 in __GI_abort () at abort.c:89
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x0, sa_sigaction = 0x0}, sa_mask = {__val = {0 <repeats 16 times>}}, sa_flags = 0, sa_restorer = 0x0}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007fc9f522be14 in __libc_message (do_abort=do_abort@entry=1, fmt=fmt@entry=0x7fc9f533a668 "*** Error in `%s': %s: 0x%s ***\n") at ../sysdeps/posix/libc_fatal.c:175
+        ap = {{gp_offset = 40, fp_offset = 0, overflow_arg_area = 0x7fc99efeaee0, reg_save_area = 0x7fc99efeae70}}
+        fd = 2
+        on_2 = <optimised out>
+        list = <optimised out>
+        nlist = <optimised out>
+        cp = <optimised out>
+        written = <optimised out>
+#3  0x00007fc9f52380ee in malloc_printerr (ptr=<optimised out>, str=0x7fc9f533a830 "double free or corruption (fasttop)", action=1) at malloc.c:4996
+        buf = "00007fc9b0073a20"
+        cp = <optimised out>
+#4  _int_free (av=<optimised out>, p=<optimised out>, have_lock=0) at malloc.c:3840
+        size = <optimised out>
+        fb = <optimised out>
+        nextchunk = <optimised out>
+        nextsize = <optimised out>
+        nextinuse = <optimised out>
+        prevsize = <optimised out>
+        bck = <optimised out>
+        fwd = <optimised out>
+        errstr = <optimised out>
+        locked = <optimised out>
+#5  0x00007fc9d9f2a19f in ft_glyphslot_free_bitmap () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#6  0x00007fc9d9f2c195 in FT_Load_Glyph () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#7  0x00007fc9da750f7b in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#8  0x00007fc9da701788 in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#9  0x00007fc9da702bff in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#10 0x00007fc9da6cd58a in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#11 0x00007fc9da6c02f0 in cairo_glyph_path () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#12 0x00007fc9d3c75dc1 in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#13 0x00007fc9d3c76154 in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#14 0x00007fc9d4e66f0f in pango_renderer_draw_glyphs () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#15 0x00007fc9d4e67898 in pango_renderer_draw_layout_line () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#16 0x00007fc9d4e67bf5 in pango_renderer_draw_layout () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#17 0x00007fc9d3c762fa in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#18 0x00007fc9cc0b3075 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#19 0x00007fc9cc0ada37 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#20 0x00007fc9cc0ad8c8 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#21 0x00007fc9cc0adcc0 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#22 0x00007fc9cc0a8503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#23 0x00007fc9cc0a8583 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#24 0x00007fc9cc0a8503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#25 0x00007fc9cc0a8583 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#26 0x00007fc9cc0a8503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#27 0x00007fc9cc0a8583 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#28 0x00007fc9cc0a8503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#29 0x00007fc9cc0a8583 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#30 0x00007fc9cc0a8503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#31 0x00007fc9cc0a8583 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#32 0x00007fc9cc0a8503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#33 0x00007fc9cc0a8903 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#34 0x00007fc9cc0a8503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#35 0x00007fc9cc0b4ac3 in rsvg_handle_render_cairo_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#36 0x00007fc9cc0b4ef4 in rsvg_handle_get_pixbuf_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#37 0x00007fc9cc2e5e46 in ?? () from /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+No symbol table info available.
+#38 0x00007fc9d8d731fb in gdk_pixbuf_loader_close () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#39 0x00007fc9d8d6f435 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#40 0x00007fc9d8d7107d in gdk_pixbuf_new_from_stream_at_scale () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#41 0x00007fc9d54a484b in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#42 0x00007fc9d54a7fea in gtk_icon_info_load_icon () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#43 0x00007fc9d624ff30 in unity::IconLoader::Impl::IconLoaderTask::LoaderJobFunc(_GTask*, void*, void*, _GCancellable*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#44 0x00007fc9eb6cdba5 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#45 0x00007fc9f3b2389c in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#46 0x00007fc9f3b22f15 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#47 0x00007fc9f3696182 in start_thread (arg=0x7fc99effd700) at pthread_create.c:312
+        __res = <optimised out>
+        pd = 0x7fc99effd700
+        now = <optimised out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140503932720896, -6964088418075749831, 0, 0, 140503932721600, 140503932720896, 6974294084427895353, 6974229373049426489}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimised out>
+        pagesize_m1 = <optimised out>
+        sp = <optimised out>
+        freesize = <optimised out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#48 0x00007fc9f52b2fbd in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+No locals.

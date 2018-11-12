@@ -1,0 +1,10 @@
+#0  0x0071a687 in raise () from /lib/libc.so.6
+No symbol table info available.
+#1  0x0071db62 in abort () from /lib/libc.so.6
+No symbol table info available.
+#2  0x00713727 in __assert_fail () from /lib/libc.so.6
+No symbol table info available.
+#3  0x08058d2c in eventLoop ()
+No symbol table info available.
+#4  0x08052bd3 in main ()
+No symbol table info available.

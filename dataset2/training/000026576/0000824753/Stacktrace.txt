@@ -1,0 +1,19 @@
+#0  0x007c8416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00cc4c4f in __GI_raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = <optimized out>
+        resultvar = <optimized out>
+        pid = 14741492
+        selftid = 1203
+#2  0x00cc8275 in __GI_abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0xd, sa_sigaction = 0xd}, sa_mask = {__val = {14741492, 3064987664, 139, 14741492, 3064987664, 139, 138, 13670669, 14741492, 138, 14741492, 138, 13605441, 3065036864, 3065036864, 138, 3065065312, 0, 3065036864, 4222451712, 3065036864, 3065036965, 3065036864, 3065036864, 3065037002, 3065037164, 3065036864, 3065037164, 0, 0, 0, 0}}, sa_flags = 0, sa_restorer = 0xeaaff4}
+        sigs = {__val = {32, 0 <repeats 31 times>}}
+#3  0x00cbd7e6 in __GI___assert_fail (assertion=0xbdf824 "", file=0xbdf72b "\377$v\360\377\354y\360\377\304y\360\377\244y\360\377\034u\360\377\034u\360\377\254w\360\377\214w\360\377\\w\360\377|y\360\377\324w\360\377\374w\360\377\064w\360\377_XPrivSyncFunction", line=140, function=0xbdfa07 "s") at assert.c:81
+        buf = 0xb6b16a10 "gnome-settings-daemon: ../../src/xcb_io.c:140: dequeue_pending_request: La declaración `req == dpy->xcb->pending_requests' no se cumple.\n"
+#4  0x00b66850 in append_pending_request (dpy=<optimized out>, sequence=137019352) at /usr/include/i386-linux-gnu/bits/stdio2.h:98
+        node = <optimized out>
+        __PRETTY_FUNCTION__ = "append_pending_request"
+#5  0x00b6764f in ?? () at ../../src/xcb_io.c:522 from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

@@ -1,0 +1,16 @@
+#0  0x00007f937397db8b in std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#1  0x00007f9360767845 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f93608386c8 in unity::UBusManager::OnCallback(_GVariant*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007f9360840629 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007f9371c388b5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f9371c38be8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f9371c38fe2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x0000000000402543 in main ()
+No symbol table info available.

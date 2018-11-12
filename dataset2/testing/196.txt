@@ -1,0 +1,22 @@
+#0  0x00986c84 in XGetDeviceProperty () from /usr/lib/i386-linux-gnu/libXi.so.6
+No symbol table info available.
+#1  0x025d42a6 in device_is_touchpad () from /usr/lib/gnome-settings-daemon-3.0/libmouse.so
+No symbol table info available.
+#2  0x025d057a in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmouse.so
+No symbol table info available.
+#3  0x025d1f8c in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmouse.so
+No symbol table info available.
+#4  0x025d2287 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmouse.so
+No symbol table info available.
+#5  0x003506e0 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x0035481f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00354f50 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x0035555b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00b937a5 in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#10 0x0804aa71 in main ()
+No symbol table info available.

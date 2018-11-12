@@ -1,0 +1,8 @@
+#0  0x00007f8856bcbb10 in ?? ()
+No symbol table info available.
+#1  0x00007f886a2ee8a1 in exit () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f886a2d3e26 in __libc_start_main () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x0000000000403801 in _start ()
+No symbol table info available.

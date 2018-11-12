@@ -1,0 +1,26 @@
+#0  0x00007fc207520c45 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007fc2075249f6 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007fc207519705 in __assert_fail () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007fc206d61fe1 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#4  0x00007fc206d62071 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00007fc206d626fd in _XEventsQueued () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007fc206d531fd in XPending () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007fc2072b356a in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#8  0x00007fc2078d5df2 in g_main_context_prepare () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007fc2078d6bfd in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007fc2078d7592 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007fc208aabdcd in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#12 0x00000000004036a2 in main ()
+No symbol table info available.

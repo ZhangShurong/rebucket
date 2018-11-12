@@ -1,0 +1,42 @@
+#0  0x00007fc916aa3207 in SimpleLauncherIcon::OnIconThemeChanged(_GtkIconTheme*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007fc9279ad81c in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#2  0x00007fc9279bf019 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x00007fc9279c8258 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007fc9279c841f in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007fc914ec0322 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#6  0x00007fc914ec1f70 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#7  0x00007fc91501b370 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#8  0x00007fc914ef0418 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#9  0x00007fc9279ad81c in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00007fc9279bee1f in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x00007fc9279c7fa9 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00007fc9279c841f in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007fc91500c121 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#14 0x00007fc914eeeafb in gtk_main_do_event () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#15 0x00007fc914b615cc in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#16 0x00007fc9270e0bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007fc9270e13a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007fc9270e19f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#20 0x0000000000423180 in main ()
+No symbol table info available.

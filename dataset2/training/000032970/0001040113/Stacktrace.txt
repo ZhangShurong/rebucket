@@ -1,0 +1,169 @@
+#0  0xb7590578 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0xb5c78dae in ?? () from /usr/lib/i386-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#2  0xb5c7a543 in ?? () from /usr/lib/i386-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#3  0xb6148b30 in ?? () from /usr/lib/i386-linux-gnu/mesa/libGL.so.1
+No symbol table info available.
+#4  0xb6123eb7 in ?? () from /usr/lib/i386-linux-gnu/mesa/libGL.so.1
+No symbol table info available.
+#5  0xb6178651 in TfpTexture::enable (this=0x91593e8, filter=GLTexture::Good) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/texture.cpp:599
+No locals.
+#6  0xb617d781 in enableFragmentOperationsAndDrawGeometry (mask=720896, filter=GLTexture::Good, attrib=..., texture=0x91593e8, w=0x9c19e20, gs=0x8134140) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1106
+No locals.
+#7  GLWindow::glDrawTexture (this=0x9c19e20, texture=0x91593e8, attrib=..., mask=720896) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1174
+        filter = GLTexture::Good
+#8  0xb35b2517 in PrivateAnimWindow::glDrawTexture (this=0xa2900a0, texture=0x91593e8, attrib=..., mask=720896) at /build/buildd/compiz-0.9.8+bzr3249/plugins/animation/src/animation.cpp:1515
+No locals.
+#9  0xb617d88f in GLWindow::glDrawTexture (this=0x9c19e20, texture=0x91593e8, attrib=..., mask=720896) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1158
+        curr = 0
+        filter = <optimized out>
+#10 0xb3a68a3a in DecorWindow::glDecorate (this=this@entry=0x9547770, transform=..., attrib=..., region=..., mask=720896, mask@entry=196608) at /build/buildd/compiz-0.9.8+bzr3249/plugins/decor/src/decor.cpp:247
+        box = {mRegion = {size = -1239952096, numRects = 1, rects = 0xbf9ef898, extents = {x1 = 428, x2 = 798, y1 = 486, y2 = 496}}}
+        ml = {<std::_Vector_base<GLTexture::Matrix, std::allocator<GLTexture::Matrix> >> = {_M_impl = {<std::allocator<GLTexture::Matrix>> = {<__gnu_cxx::new_allocator<GLTexture::Matrix>> = {<No data fields>}, <No data fields>}, _M_start = 0x9867468, _M_finish = 0x9867480, _M_end_of_storage = 0x9867480}}, <No data fields>}
+        preg = 0xb77c2884
+        reg = @0xb77c2884: {priv = 0x80dc3e0}
+#11 0xb3a6dfa9 in DecorWindow::glDraw (this=0x9547770, transform=..., attrib=..., region=..., mask=196608) at /build/buildd/compiz-0.9.8+bzr3249/plugins/decor/src/decor.cpp:167
+        status = true
+#12 0xb617e585 in GLWindow::glDraw (this=0x9c19e20, transform=..., fragment=..., region=..., mask=196608) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1184
+        rv = <optimized out>
+        curr = 5
+        reg = <optimized out>
+        ml = {<std::_Vector_base<GLTexture::Matrix, std::allocator<GLTexture::Matrix> >> = {_M_impl = {<std::allocator<GLTexture::Matrix>> = {<__gnu_cxx::new_allocator<GLTexture::Matrix>> = {<No data fields>}, <No data fields>}, _M_start = 0x110008, _M_finish = 0x92b5e80, _M_end_of_storage = 0xb75fd000}}, <No data fields>}
+#13 0xb34de573 in UnityMTGrabHandlesWindow::glDraw(GLMatrix const&, GLFragment::Attrib&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#14 0xb617e585 in GLWindow::glDraw (this=0x9c19e20, transform=..., fragment=..., region=..., mask=196608) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1184
+        rv = <optimized out>
+        curr = 1
+        reg = <optimized out>
+        ml = {<std::_Vector_base<GLTexture::Matrix, std::allocator<GLTexture::Matrix> >> = {_M_impl = {<std::allocator<GLTexture::Matrix>> = {<__gnu_cxx::new_allocator<GLTexture::Matrix>> = {<No data fields>}, <No data fields>}, _M_start = 0xb77c2000, _M_finish = 0xa115368, _M_end_of_storage = 0xb2ed90d5}}, <No data fields>}
+#15 0xb2ee6c93 in unity::UnityWindow::glDraw(GLMatrix const&, GLFragment::Attrib&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#16 0xb617e585 in GLWindow::glDraw (this=0x9c19e20, transform=..., fragment=..., region=..., mask=196608) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1184
+        rv = <optimized out>
+        curr = 0
+        reg = <optimized out>
+        ml = {<std::_Vector_base<GLTexture::Matrix, std::allocator<GLTexture::Matrix> >> = {_M_impl = {<std::allocator<GLTexture::Matrix>> = {<__gnu_cxx::new_allocator<GLTexture::Matrix>> = {<No data fields>}, <No data fields>}, _M_start = 0x81d4cd8, _M_finish = 0x81d4cd8, _M_end_of_storage = 0xb5a68e11}}, <No data fields>}
+#17 0xb617e94b in GLWindow::glPaint (this=0x9c19e20, attrib=..., transform=..., region=..., mask=196608) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1276
+        fragment = {priv = 0x9ba7cc0}
+        status = <optimized out>
+#18 0xb397aefc in WallWindow::glPaint (this=0x9ecd298, attrib=..., matrix=..., region=..., mask=131072) at /build/buildd/compiz-0.9.8+bzr3249/plugins/wall/src/wall.cpp:1474
+        status = <optimized out>
+        ws = <optimized out>
+#19 0xb617e991 in GLWindow::glPaint (this=0x9c19e20, attrib=..., transform=..., region=..., mask=131072) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1237
+        rv = <optimized out>
+        curr = 7
+        fragment = {priv = 0xb35d5289}
+        status = <optimized out>
+#20 0xb35ba37f in PrivateAnimWindow::glPaint (this=0xa2900a0, attrib=..., transform=..., region=..., mask=131072) at /build/buildd/compiz-0.9.8+bzr3249/plugins/animation/src/animation.cpp:1608
+        status = <optimized out>
+        __PRETTY_FUNCTION__ = "virtual bool PrivateAnimWindow::glPaint(const GLWindowPaintAttrib&, const GLMatrix&, const CompRegion&, unsigned int)"
+        wAttrib = {opacity = 65535, brightness = 65535, saturation = 65535, xScale = 1, yScale = 1, xTranslate = 0, yTranslate = 0}
+        wTransform = {m = {0.000694444461, 0, 0, 0, 0, -0.00117096014, 0, 0, 0, 0, 0, 0, -0.5, 0.49999997, -0.866025388, 1}}
+#21 0xb617e991 in GLWindow::glPaint (this=0x9c19e20, attrib=..., transform=..., region=..., mask=0) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1237
+        rv = <optimized out>
+        curr = 6
+        fragment = {priv = 0xb2f0ddf0}
+        status = <optimized out>
+#22 0xb3501696 in FadeWindow::glPaint (this=0xa2ffb10, attrib=..., transform=..., region=..., mask=0) at /build/buildd/compiz-0.9.8+bzr3249/plugins/fade/src/fade.cpp:186
+        fAttrib = {opacity = 65224, brightness = 49054, saturation = 4096, xScale = 6.3319142e-34, yScale = 0, xTranslate = 5.60519386e-45, yTranslate = -1.39606371e-08}
+        mode = -1080099032
+#23 0xb617e991 in GLWindow::glPaint (this=0x9c19e20, attrib=..., transform=..., region=..., mask=0) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1237
+        rv = <optimized out>
+        curr = 1
+        fragment = {priv = 0xb2fefb7b}
+        status = <optimized out>
+#24 0xb2edc91b in unity::UnityWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0xb617e991 in GLWindow::glPaint (this=0x9c19e20, attrib=..., transform=..., region=..., mask=0) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:1237
+        rv = <optimized out>
+        curr = 0
+        fragment = {priv = 0xbf9effa8}
+        status = <optimized out>
+#26 0xb617f02a in PrivateGLScreen::paintOutputRegion (this=0x8134180, transform=..., region=..., output=output@entry=0x80f8300, mask=11) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:368
+        unredirectFS = false
+        offXY = {mX = 0, mY = 0}
+        pl = {<std::_List_base<CompWindow*, std::allocator<CompWindow*> >> = {_M_impl = {<std::allocator<std::_List_node<CompWindow*> >> = {<__gnu_cxx::new_allocator<std::_List_node<CompWindow*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x924bc78, _M_prev = 0xa7b4108}}}, <No data fields>}
+        tmpRegion = {priv = 0x944b868}
+        vTransform = {m = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1}}
+#27 0xb617f5ad in GLScreen::glPaintOutput (this=0x8134140, sAttrib=..., transform=..., region=..., output=0x80f8300, mask=11) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:509
+        sTransform = {m = {0.000694444461, 0, 0, 0, -0, -0.00117096014, -0, -0, 0, 0, 1, 0, -0.5, 0.49999997, -0.866025388, 1}}
+#28 0xb3975b42 in WallScreen::glPaintOutput (this=0x8399518, attrib=..., matrix=..., region=..., output=0x80f8300, mask=11) at /build/buildd/compiz-0.9.8+bzr3249/plugins/wall/src/wall.cpp:1166
+        status = <optimized out>
+#29 0xb617f4b5 in GLScreen::glPaintOutput (this=0x8134140, sAttrib=..., transform=..., region=..., output=0x80f8300, mask=11) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:482
+        rv = <optimized out>
+        curr = 7
+        sTransform = {m = {0, -1.75, -3.68934881e+19, -1.22221982e-05, -3.68934881e+19, -1.84150624, 0, 1.875, -3.68934881e+19, 1.96650624, 0, -1.22221982e-05, 2.4662853e-43, 3.08285662e-44, 2.35418142e-43, -1.33412977e-05}}
+#30 0xb35b2479 in PrivateAnimScreen::glPaintOutput (this=0x8467b50, attrib=..., matrix=..., region=..., output=0x80f8300, mask=11) at /build/buildd/compiz-0.9.8+bzr3249/plugins/animation/src/animation.cpp:2444
+        __PRETTY_FUNCTION__ = "virtual bool PrivateAnimScreen::glPaintOutput(const GLScreenPaintAttrib&, const GLMatrix&, const CompRegion&, CompOutput*, unsigned int)"
+#31 0xb617f4b5 in GLScreen::glPaintOutput (this=0x8134140, sAttrib=..., transform=..., region=..., output=0x80f8300, mask=3) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:482
+        rv = <optimized out>
+        curr = 1
+        sTransform = {m = {2.36793492e-33, 6.66790354e-34, 6.6682268e-34, -1.16750489e-05, 2.36793492e-33, 6.66790354e-34, 6.6682268e-34, -1.07183996e-05, 0, 2.36793492e-33, 6.77189806e-34, -1.47913888e-05, 4.26612614e-34, -1.50278211e-05, -1.24230528, -1.47906258e-05}}
+#32 0xb2ee6f8c in unity::UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#33 0xb617f4b5 in GLScreen::glPaintOutput (this=0x8134140, sAttrib=..., transform=..., region=..., output=0x80f8300, mask=3) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/paint.cpp:482
+        rv = <optimized out>
+        curr = 0
+        sTransform = {m = {1.40129846e-45, -1.24231815, 1.50463277e-35, 6.28889478e-37, 1.12103877e-44, -1.50278211e-05, 4.3186487e-34, -1.50278211e-05, 5.47924072e-33, -1.24233913, 4.43131983e-34, -1.47910732e-05, -1.24232578, 4.26610777e-34, 5.47924072e-33, -1.47912897e-05}}
+#34 0xb6181711 in PrivateGLScreen::paintOutputs (this=0x8134180, outputs=..., mask=5, region=...) at /build/buildd/compiz-0.9.8+bzr3249/plugins/opengl/src/screen.cpp:1185
+        identity = {m = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1}}
+        output = 0x80f8300
+        tmpRegion = {priv = 0x9ef05e0}
+#35 0xb61ce7d1 in CompositeScreen::paint (this=0x812db10, outputs=..., mask=5) at /build/buildd/compiz-0.9.8+bzr3249/plugins/composite/src/screen.cpp:853
+No locals.
+#36 0xb3972ba1 in WallScreen::paint (this=0x8399518, outputs=..., mask=5) at /build/buildd/compiz-0.9.8+bzr3249/plugins/wall/src/wall.cpp:1148
+No locals.
+#37 0xb61ce7fd in CompositeScreen::paint (this=0x812db10, outputs=..., mask=5) at /build/buildd/compiz-0.9.8+bzr3249/plugins/composite/src/screen.cpp:850
+        curr = 0
+#38 0xb61d044b in CompositeScreen::handlePaintTimeout (this=0x812db10) at /build/buildd/compiz-0.9.8+bzr3249/plugins/composite/src/screen.cpp:812
+        timeDiff = <optimized out>
+        mask = 5
+        outputs = {<std::_List_base<CompOutput*, std::allocator<CompOutput*> >> = {_M_impl = {<std::allocator<std::_List_node<CompOutput*> >> = {<__gnu_cxx::new_allocator<std::_List_node<CompOutput*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x92d00d8, _M_prev = 0x92d00d8}}}, <No data fields>}
+        tv = {tv_sec = 1345646958, tv_usec = 470089}
+#39 0xb61d1600 in operator() (p=<optimized out>, this=0x812e510) at /usr/include/boost/bind/mem_fn_template.hpp:49
+No locals.
+#40 operator()<bool, boost::_mfi::mf0<bool, CompositeScreen>, boost::_bi::list0> (f=..., this=0x812e518, a=...) at /usr/include/boost/bind/bind.hpp:243
+No locals.
+#41 operator() (this=0x812e510) at /usr/include/boost/bind/bind_template.hpp:20
+No locals.
+#42 boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CompositeScreen>, boost::_bi::list1<boost::_bi::value<CompositeScreen*> > >, bool>::invoke (function_obj_ptr=...) at /usr/include/boost/function/function_template.hpp:132
+        f = 0x812e510
+#43 0xb7780543 in operator() (this=<optimized out>) at /usr/include/boost/function/function_template.hpp:760
+No locals.
+#44 CompTimer::triggerCallback (this=this@entry=0x812caa4) at /build/buildd/compiz-0.9.8+bzr3249/src/timer/src/timer.cpp:227
+No locals.
+#45 0xb7780601 in CompTimeoutSource::callback (this=0x812bec8) at /build/buildd/compiz-0.9.8+bzr3249/src/timer/src/timer.cpp:150
+        t = 0x812caa4
+        handler = 0x80df7b8
+        requeue = {<std::_List_base<CompTimer*, std::allocator<CompTimer*> >> = {_M_impl = {<std::allocator<std::_List_node<CompTimer*> >> = {<__gnu_cxx::new_allocator<std::_List_node<CompTimer*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x94b9460, _M_prev = 0x94b9460}}}, <No data fields>}
+        i = <optimized out>
+#46 0xb77806f1 in operator() (this=0x812bdd4) at /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h:1787
+No locals.
+#47 operator() (this=0x812bdd0) at /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:251
+No locals.
+#48 sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompTimeoutSource>, bool>::call_it (rep=0x812bdb8) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:103
+        typed_rep = 0x812bdb8
+#49 0xb777f88f in operator() (this=0x812a6e8) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:440
+No locals.
+#50 CompTimeoutSource::dispatch (this=0x812bec8, slot=0x812a6e8) at /build/buildd/compiz-0.9.8+bzr3249/src/timer/src/timer.cpp:133
+No locals.
+#51 0xb72a0e21 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#52 0xb71a4043 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#53 0xb71a43e0 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#54 0xb71a483b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#55 0xb72a22c3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#56 0xb7736a5a in compiz::private_screen::EventManager::startEventLoop (this=this@entry=0x80de710, dpy=0x80e2178) at /build/buildd/compiz-0.9.8+bzr3249/src/screen.cpp:170
+No locals.
+#57 0xb7736aa4 in CompScreenImpl::eventLoop (this=0x80dc458) at /build/buildd/compiz-0.9.8+bzr3249/src/screen.cpp:157
+No locals.
+#58 0x0804a3d2 in CompManager::run (this=this@entry=0xbf9f08e4) at /build/buildd/compiz-0.9.8+bzr3249/src/main.cpp:192
+No locals.
+#59 0x08049da5 in main (argc=1, argv=0xbf9f09a4) at /build/buildd/compiz-0.9.8+bzr3249/src/main.cpp:226
+        manager = {disableSm = false, clientId = 0x812b6a8 "107cc5d15cc144d22b134564370730491800000029060032", displayName = 0x0}

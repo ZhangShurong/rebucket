@@ -1,0 +1,99 @@
+#0  0x000000000043bef0 in CompWindow::id() ()
+No symbol table info available.
+#1  0x000000000044fad2 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#2  0x00007f973d56def4 in PrivateCompositeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#3  0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#4  0x00007f973d33c22f in PrivateGLScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#6  0x00007f973ae74f93 in DecorScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#7  0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#8  0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#9  0x00007f973a6364bf in RegexScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#10 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#11 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#12 0x00007f9739b0b7bc in MoveScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libmove.so
+No symbol table info available.
+#13 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#14 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#15 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#16 0x00007f97377bb1ad in WorkaroundsScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libworkarounds.so
+No symbol table info available.
+#17 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#18 0x00007f97398f9d3a in BaseSwitchScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libcompiztoolbox.so
+No symbol table info available.
+#19 0x00007f973759bfd1 in StaticSwitchScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libstaticswitcher.so
+No symbol table info available.
+#20 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#21 0x00007f973737c146 in ResizeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libresize.so
+No symbol table info available.
+#22 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#23 0x00007f97371626c1 in FadeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libfade.so
+No symbol table info available.
+#24 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#25 0x00007f9736f4cf3b in UnityMTGrabHandlesScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#26 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#27 0x00007f9736d2a3c7 in PrivateScaleScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#28 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#29 0x00007f9736b0f3c0 in SessionScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsession.so
+No symbol table info available.
+#30 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#31 0x00007f9736880609 in UnityScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#32 0x000000000044e6c9 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#33 0x000000000042e4bb in PrivateScreen::processEvents() ()
+No symbol table info available.
+#34 0x0000000000455a68 in CompEventSource::callback() ()
+No symbol table info available.
+#35 0x00007f97431f19df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#36 0x00007f97426a1bcd in g_main_dispatch (context=0x1082730) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:2440
+        dispatch = 0x7f97431f1990 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0x10b4b40
+        callback = 0x7f97431f1b40
+        cb_funcs = 0x7f974294c630
+        cb_data = 0x10b5ad0
+        current_source_link = {data = 0x10b5a60, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x10b5a60
+        current = 0x1082d90
+        i = <value optimized out>
+#37 g_main_context_dispatch (context=0x1082730) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3013
+No locals.
+#38 0x00007f97426a23a8 in g_main_context_iterate (context=0x1082730, block=<value optimized out>, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3091
+        max_priority = 2147483647
+        timeout = 2173
+        some_ready = 1
+        nfds = 15
+        allocated_nfds = <value optimized out>
+        fds = <value optimized out>
+#39 0x00007f97426a29f2 in g_main_loop_run (loop=0x10b58e0) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#40 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#41 0x0000000000423180 in main ()
+No symbol table info available.

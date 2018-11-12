@@ -1,0 +1,38 @@
+#0  0x0000000003df00c0 in ?? ()
+No symbol table info available.
+#1  0x00007faa445ac355 in unity::dash::ResultRendererTile::LoadIcon(unity::dash::Result&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007faa445ac93e in unity::dash::ResultRendererTile::Preload(unity::dash::Result&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007faa445b1159 in unity::dash::ResultViewGrid::DoLazyLoad() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007faa42e1faad in unity::glib::Source::Callback(void*) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#5  0x00007faa5679d44b in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007faa5679c8b5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007faa5679cbe8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007faa5679cca4 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007faa52a713b9 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#10 0x00007faa5394bdbf in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#11 0x00007faa587a325c in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#12 0x00007faa587a32ff in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#13 0x00007faa587a27dd in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#14 0x00007faa56c95acf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#15 0x00007faa5679c8b5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007faa5679cbe8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007faa5679cfe2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x0000000000402543 in main ()
+No symbol table info available.

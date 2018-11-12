@@ -1,0 +1,17 @@
+#0  0x0044e422 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x004ff4d1 in raise () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#2  0x00502932 in abort () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#3  0x00535ee5 in ?? () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#4  0x0053fff1 in ?? () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#5  0x005416f2 in ?? () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#6  0x0054479d in free () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#7  0x00b0e1cc in ?? () from /usr/lib/libGL.so.1
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

@@ -1,0 +1,127 @@
+#0  0x00007f9d3e6fdc54 in g_logv () from /usr/lib/libglib-2.0.so.0
+#1  0x00007f9d3e6fdfc3 in g_log () from /usr/lib/libglib-2.0.so.0
+#2  0x00007f9d42c94db2 in gdk_x_error (display=<value optimized out>, 
+    error=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.13.6/gdk/x11/gdkmain-x11.c:623
+	buf = "BadMatch (invalid parameter attributes)", '\0' <repeats 24 times>
+#3  0x00007f9d36bab981 in xkl_process_error (dpy=0x1ede8d0, evt=0x7fff4b72e520)
+    at xklavier_evt.c:513
+	buf = '\0' <repeats 127 times>
+	engine = (XklEngine *) 0x1f7bf80
+	__func__ = "xkl_process_error"
+#4  0x00007f9d411b2864 in _XError (dpy=0x1ede8d0, rep=0x21071b0)
+    at ../../src/XlibInt.c:2912
+	rtn_val = <value optimized out>
+	event = {type = 0, xany = {type = 0, serial = 32368848, 
+    send_event = 315, display = 0x6b4, window = 498440}, xkey = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, window = 498440, 
+    root = 0, subwindow = 0, time = 140313331603968, x = 1717, y = 0, 
+    x_root = 32371472, y_root = 0, state = 1265821320, keycode = 32767, 
+    same_screen = 32371472}, xbutton = {type = 0, serial = 32368848, 
+    send_event = 315, display = 0x6b4, window = 498440, root = 0, 
+    subwindow = 0, time = 140313331603968, x = 1717, y = 0, x_root = 32371472, 
+    y_root = 0, state = 1265821320, button = 32767, same_screen = 32371472}, 
+  xmotion = {type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    window = 498440, root = 0, subwindow = 0, time = 140313331603968, 
+    x = 1717, y = 0, x_root = 32371472, y_root = 0, state = 1265821320, 
+    is_hint = -1 'ÿ', same_screen = 32371472}, xcrossing = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, window = 498440, 
+    root = 0, subwindow = 0, time = 140313331603968, x = 1717, y = 0, 
+    x_root = 32371472, y_root = 0, mode = 1265821320, detail = 32767, 
+    same_screen = 32371472, focus = 0, state = 32371472}, xfocus = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, window = 498440, 
+    mode = 0, detail = 0}, xexpose = {type = 0, serial = 32368848, 
+    send_event = 315, display = 0x6b4, window = 498440, x = 0, y = 0, 
+    width = 0, height = 0, count = 1045010944}, xgraphicsexpose = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, drawable = 498440, 
+    x = 0, y = 0, width = 0, height = 0, count = 1045010944, 
+    major_code = 32669, minor_code = 1717}, xnoexpose = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, drawable = 498440, 
+    major_code = 0, minor_code = 0}, xvisibility = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, window = 498440, 
+    state = 0}, xcreatewindow = {type = 0, serial = 32368848, 
+    send_event = 315, display = 0x6b4, parent = 498440, window = 0, x = 0, 
+    y = 0, width = 1045010944, height = 32669, border_width = 1717, 
+    override_redirect = 0}, xdestroywindow = {type = 0, serial = 32368848, 
+    send_event = 315, display = 0x6b4, event = 498440, window = 0}, xunmap = {
+    type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    event = 498440, window = 0, from_configure = 0}, xmap = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, event = 498440, 
+    window = 0, override_redirect = 0}, xmaprequest = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, parent = 498440, 
+    window = 0}, xreparent = {type = 0, serial = 32368848, send_event = 315, 
+    display = 0x6b4, event = 498440, window = 0, parent = 0, x = 1045010944, 
+    y = 32669, override_redirect = 1717}, xconfigure = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, event = 498440, 
+    window = 0, x = 0, y = 0, width = 1045010944, height = 32669, 
+    border_width = 1717, above = 32371472, override_redirect = 1265821320}, 
+  xgravity = {type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    event = 498440, window = 0, x = 0, y = 0}, xresizerequest = {type = 0, 
+    serial = 32368848, send_event = 315, display = 0x6b4, window = 498440, 
+    width = 0, height = 0}, xconfigurerequest = {type = 0, serial = 32368848, 
+    send_event = 315, display = 0x6b4, parent = 498440, window = 0, x = 0, 
+    y = 0, width = 1045010944, height = 32669, border_width = 1717, 
+    above = 32371472, detail = 1265821320, value_mask = 32371472}, 
+  xcirculate = {type = 0, serial = 32368848, send_event = 315, 
+    display = 0x6b4, event = 498440, window = 0, place = 0}, 
+  xcirculaterequest = {type = 0, serial = 32368848, send_event = 315, 
+    display = 0x6b4, parent = 498440, window = 0, place = 0}, xproperty = {
+    type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    window = 498440, atom = 0, time = 0, state = 1045010944}, 
+  xselectionclear = {type = 0, serial = 32368848, send_event = 315, 
+    display = 0x6b4, window = 498440, selection = 0, time = 0}, 
+  xselectionrequest = {type = 0, serial = 32368848, send_event = 315, 
+    display = 0x6b4, owner = 498440, requestor = 0, selection = 0, 
+    target = 140313331603968, property = 1717, time = 32371472}, xselection = {
+    type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    requestor = 498440, selection = 0, target = 0, property = 140313331603968, 
+    time = 1717}, xcolormap = {type = 0, serial = 32368848, send_event = 315, 
+    display = 0x6b4, window = 498440, colormap = 0, new = 0, state = 0}, 
+  xclient = {type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    window = 498440, message_type = 0, format = 0, data = {
+      b = "\000\232I>\235\177\000\000µ\006\000\000\000\000\000\000\020óí\001", 
+      s = {-26112, 15945, 32669, 0, 1717, 0, 0, 0, -3312, 493}, l = {
+        140313331603968, 1717, 32371472, 140734459209352, 32371472}}}, 
+  xmapping = {type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    window = 498440, request = 0, first_keycode = 0, count = 0}, xerror = {
+    type = 0, display = 0x1ede8d0, resourceid = 315, serial = 1716, 
+    error_code = 8 '\b', request_code = 155 '\233', minor_code = 7 '\a'}, 
+  xkeymap = {type = 0, serial = 32368848, send_event = 315, display = 0x6b4, 
+    window = 498440, 
+    key_vector = '\0' <repeats 17 times>, "\232I>\235\177\000\000µ\006\000\000\000\000\000"}, pad = {0, 32368848, 315, 1716, 498440, 0, 0, 140313331603968, 
+    1717, 32371472, 140734459209352, 32371472, 32371472, 140734459209272, 
+    32371496, 1717, 140734459209280, 140313383979348, 140734459209280, 
+    32371472, 140734459209272, 140313331603968, 1715, 34632112}}
+	async = <value optimized out>
+	next = (_XAsyncHandler *) 0x6b3
+#5  0x00007f9d411ba2df in process_responses (dpy=0x1ede8d0, 
+    wait_for_first_event=0, current_error=0x7fff4b72e688, current_request=1717)
+    at ../../src/xcb_io.c:138
+	req = (PendingRequest *) 0x1f1c940
+	reply = (void *) 0x0
+	event = (xcb_generic_event_t *) 0x21071b0
+	error = (xcb_generic_error_t *) 0x0
+	c = (xcb_connection_t *) 0x1edf310
+	__PRETTY_FUNCTION__ = "process_responses"
+#6  0x00007f9d411ba68a in _XReply (dpy=0x1ede8d0, rep=0x7fff4b72e6e0, extra=0, 
+    discard=0) at ../../src/xcb_io.c:370
+	error = <value optimized out>
+	c = <value optimized out>
+	current = (PendingRequest *) 0x1f1c940
+	__PRETTY_FUNCTION__ = "_XReply"
+#7  0x00007f9d3d301495 in XRRSetCrtcConfig (dpy=0x1ede8d0, 
+    resources=0x215ac00, crtc=320, timestamp=0, x=0, y=0, mode=322, 
+    rotation=1, outputs=0x1f29630, noutputs=1) at ../../src/XrrCrtc.c:149
+	info = (XExtDisplayInfo *) 0x1ecf970
+	rep = {type = 0 '\0', status = 0 '\0', sequenceNumber = 0, length = 0, 
+  newTimestamp = 34669952, pad1 = 0, pad2 = 16, pad3 = 0, pad4 = 1047330147, 
+  pad5 = 32669}
+#8  0x00007f9d393e9e71 in gnome_rr_crtc_set_config ()
+   from /usr/lib/libgnome-desktop-2.so.7
+#9  0x00007f9d393ebe27 in ?? () from /usr/lib/libgnome-desktop-2.so.7
+#10 0x00007f9d3e6e5d7d in g_hash_table_foreach ()
+   from /usr/lib/libglib-2.0.so.0
+#11 0x00007f9d393ecde8 in gnome_rr_config_apply_stored ()
+   from /usr/lib/libgnome-desktop-2.so.7
+#12 0x00007f9d395faacf in ?? ()
+#13 0x0000000000000000 in ?? ()

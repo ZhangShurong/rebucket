@@ -1,0 +1,22 @@
+#0  0x00007fc88ca02894 in rw_screen_list_outputs (screen=0x65cac0) at randrwrap.c:483
+No locals.
+#1  0x00007fc88ca0214f in configuration_new_current (screen=0x65cac0) at monitor-db.c:343
+	config = <value optimized out>
+	a = (GPtrArray *) 0x64b240
+	rw_outputs = <value optimized out>
+	__PRETTY_FUNCTION__ = "configuration_new_current"
+#2  0x00007fc88ca023ed in configuration_apply_stored (screen=0x65cac0) at monitor-db.c:790
+	file = 0x65d280 "/home/jorge/.gnome2/monitors.xml"
+	configs = (Configuration **) 0x0
+	current = <value optimized out>
+	found = <value optimized out>
+	result = <value optimized out>
+#3  0x00007fc88cc0c960 in gsd_xrandr_manager_start () from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#4  0x00007fc88cc0c757 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#5  0x0000000000404c0a in gnome_settings_plugin_info_activate ()
+#6  0x0000000000403c65 in ?? ()
+#7  0x00007fc892401b3d in IA__g_slist_foreach (list=<value optimized out>, func=0x403c50, user_data=0x0)
+    at /build/buildd/glib2.0-2.16.1/glib/gslist.c:743
+	next = (GSList *) 0x64b460
+#8  0x0000000000403e74 in gnome_settings_manager_start ()
+#9  0x0000000000403ad8 in main ()

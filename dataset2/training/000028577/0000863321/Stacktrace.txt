@@ -1,0 +1,28 @@
+#0  0x00007f5c189ca3a5 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f5c189cdb0b in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f5c18d9b4ad in g_assertion_message () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f5c06a5c782 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmedia-keys.so
+No symbol table info available.
+#4  0x00007f5c06a5e8e8 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmedia-keys.so
+No symbol table info available.
+#5  0x00007f5c19a0c251 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#6  0x00007f5c19a0c3cf in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#7  0x00007f5c199e4721 in gdk_display_get_event () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#8  0x00007f5c19a0c0f2 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#9  0x00007f5c18d77a5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f5c18d78258 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f5c18d78792 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f5c19d92e1d in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#13 0x0000000000403caf in main ()
+No symbol table info available.

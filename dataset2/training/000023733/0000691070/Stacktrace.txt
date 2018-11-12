@@ -1,0 +1,38 @@
+#0  0x00007ffacd2a5ba5 in raise (sig=<value optimised out>) at ../nptl/sysdeusername/unix/sysv/linux/raise.c:64
+        pid = <value optimised out>
+        selftid = <value optimised out>
+#1  0x00007ffacd2a96b0 in abort () at abort.c:92
+        act = {__sigaction_handler = {sa_handler = 0x7fff5ff6a7d0, sa_sigaction = 0x7fff5ff6a7d0}, sa_mask = {__val = {140734803388560, 140734803397482, 6, 140715161793266, 3, 140734803388570, 6, 140715161793270, 2, 140734803388558, 2, 140715161784280, 1, 140715161793266, 3, 140734803388564}}, sa_flags = 12, sa_restorer = 0x7ffacd3bb2f6}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007ffacd2df43b in __libc_message (do_abort=<value optimised out>, fmt=<value optimised out>) at ../sysdeusername/unix/sysv/linux/libc_fatal.c:189
+        ap = {{gp_offset = 40, fp_offset = 48, overflow_arg_area = 0x7fff5ff6b210, reg_save_area = 0x7fff5ff6b120}}
+        ap_copy = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7fff5ff6b210, reg_save_area = 0x7fff5ff6b120}}
+        fd = 2
+        on_2 = <value optimised out>
+        list = <value optimised out>
+        nlist = 0
+        cp = <value optimised out>
+        written = false
+#3  0x00007ffacd2e94b6 in malloc_printerr (action=3, str=0x7ffacd3b9cc2 "corrupted double-linked list", ptr=<value optimised out>) at malloc.c:6283
+        buf = "000000000195ae60"
+        cp = 0x0
+#4  0x00007ffacd2ec8c7 in _int_free (av=0x7ffacd5f0e40, p=0x195ae60) at malloc.c:4964
+        size = 848
+        nextchunk = 0x195b1b0
+        nextsize = 3680
+        prevsize = <value optimised out>
+        bck = 0x0
+        fwd = 0x7ffacd5f10c8
+        errstr = <value optimised out>
+        __func__ = "_int_free"
+#5  0x00007ffacd2efc83 in __libc_free (mem=<value optimised out>) at malloc.c:3738
+        ar_ptr = 0x7ffacd5f0e40
+        p = 0x0
+#6  0x000000000042a5ae in CompScreen::~CompScreen() ()
+No symbol table info available.
+#7  0x000000000042a6a9 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#8  0x0000000000421a19 in CompManager::fini() ()
+No symbol table info available.
+#9  0x00000000004222e8 in main ()
+No symbol table info available.

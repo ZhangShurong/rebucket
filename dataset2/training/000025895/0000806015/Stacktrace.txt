@@ -1,0 +1,20 @@
+#0  0xb3b59a70 in ?? ()
+No symbol table info available.
+#1  0xb6f1b9cf in __erand48_r (xsubi=0x0, buffer=0xb7049324, result=0x1) at erand48_r.c:43
+        temp = {d = -0.21750784293699746, ieee = {mantissa1 = 134535729, mantissa0 = 776012, exponent = 1020, negative = 1}, ieee_nan = {mantissa1 = 134535729, mantissa0 = 251724, quiet_nan = 1, exponent = 1020, negative = 1}}
+#2  0xb6f1ba2f in lrand48_r (buffer=0x0, result=0xbfcbd824) at lrand48_r.c:31
+No locals.
+#3  0xb6f02daf in __gconv_open (toset=0x0, fromset=0x0, handle=0x0, flags=134522976) at gconv_open.c:197
+        lastp = <value optimized out>
+        runp = <value optimized out>
+        steps = <value optimized out>
+        nsteps = 3078364096
+        result = 0x0
+        cnt = 0
+        res = -1077159944
+        conv_flags = -95190214
+        errhand = <value optimized out>
+        ignore = <value optimized out>
+        trans = 0x0
+#4  0x0804aba1 in _start ()
+No symbol table info available.

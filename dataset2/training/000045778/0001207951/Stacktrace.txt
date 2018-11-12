@@ -1,0 +1,60 @@
+#0  0x00007f42a90e5037 in __GI_raise (sig=sig@entry=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:56
+        resultvar = 0
+        pid = 2848
+        selftid = 2848
+#1  0x00007f42a90e8698 in __GI_abort () at abort.c:90
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x7ffff8fe5a2a, sa_sigaction = 0x7ffff8fe5a2a}, sa_mask = {__val = {6, 139924282226092, 2, 140737370806846, 2, 139924282215060, 1, 139924282226088, 3, 140737370806820, 12, 139924282226092, 2, 140737370807632, 18, 140737370809392}}, sa_flags = 80, sa_restorer = 0x7}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007f42a91225ab in __libc_message (do_abort=do_abort@entry=2, fmt=fmt@entry=0x7f42a9235860 "*** Error in `%s': %s: 0x%s ***\n") at ../sysdeps/unix/sysv/linux/libc_fatal.c:199
+        ap = {{gp_offset = 40, fp_offset = 48, overflow_arg_area = 0x7ffff8fe6440, reg_save_area = 0x7ffff8fe6350}}
+        ap_copy = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7ffff8fe6440, reg_save_area = 0x7ffff8fe6350}}
+        fd = 2
+        on_2 = <optimized out>
+        list = <optimized out>
+        nlist = <optimized out>
+        cp = <optimized out>
+        written = <optimized out>
+#3  0x00007f42a912ea46 in malloc_printerr (ptr=0x3f5de50, str=0x7f42a9235a00 "free(): invalid next size (fast)", action=3) at malloc.c:4902
+        buf = "0000000003f5de50"
+        cp = <optimized out>
+#4  _int_free (av=<optimized out>, p=0x3f5de40, have_lock=0) at malloc.c:3758
+        size = <optimized out>
+        fb = <optimized out>
+        nextchunk = <optimized out>
+        nextsize = <optimized out>
+        nextinuse = <optimized out>
+        prevsize = <optimized out>
+        bck = <optimized out>
+        fwd = <optimized out>
+        errstr = <optimized out>
+        locked = <optimized out>
+        __func__ = "_int_free"
+#5  0x00007f4289dc2407 in ?? () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#6  0x00007f4289dc26f8 in ?? () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#7  0x00007f4289dd530a in ?? () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#8  0x00007f4289dd7720 in pango_layout_get_iter () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#9  0x00007f4289ddc87c in pango_renderer_draw_layout () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#10 0x00007f428a00825a in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#11 0x00007f428b2205ed in unity::dash::ResultRendererTile::LoadText(unity::dash::Result const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007f428b22825a in unity::dash::ResultViewGrid::DoLazyLoad() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#13 0x00007f428b2296d7 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x00007f4289547eba in unity::glib::Source::SourceCallback(void*) () from /usr/lib/libunity-core-6.0.so.7
+No symbol table info available.
+#15 0x00007f42a79ed0a6 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007f42a79ed3f8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007f42a79ed7fa in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x000000000040195b in main ()
+No symbol table info available.

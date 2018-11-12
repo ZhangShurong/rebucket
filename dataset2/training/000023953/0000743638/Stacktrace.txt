@@ -1,0 +1,28 @@
+#0  0x00007f3a83d19d05 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f3a83d1dab6 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f3a83d52d7b in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f3a83d5ea8f in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007f3a83d628e3 in free () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x00007f3a859e9019 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f3a859f2258 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f3a859f241f in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007f3a86121832 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#9  0x00007f3a8510abcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f3a8510b3a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f3a8510b9f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#13 0x0000000000423180 in main ()
+No symbol table info available.

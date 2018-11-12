@@ -1,0 +1,28 @@
+#0  0x00007f0e92dfa34c in ?? () from /usr/lib/libsyncdaemon-1.0.so.1
+No symbol table info available.
+#1  0x00007f0e96f270a7 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#2  0x00007f0ea4cb1154 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x00007f0ea4cc0f55 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007f0ea4cc892b in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f0ea4cc8af2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f0e96f276e6 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#7  0x00007f0e96ce0986 in dbus_connection_dispatch () from /lib/x86_64-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#8  0x00007f0e96f20425 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#9  0x00007f0ea47f244a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f0ea47f2810 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f0ea47f2c0a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f0ea5642add in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#13 0x0000000000403bd1 in main ()
+No symbol table info available.

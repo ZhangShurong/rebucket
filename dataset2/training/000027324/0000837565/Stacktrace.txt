@@ -1,0 +1,9 @@
+#0  0x403793f0 in g_str_hash () from /lib/arm-linux-gnueabi/libglib-2.0.so.0
+No symbol table info available.
+#1  0x40356dee in g_hash_table_lookup () from /lib/arm-linux-gnueabi/libglib-2.0.so.0
+No symbol table info available.
+#2  0x0000e8f4 in ?? ()
+No symbol table info available.
+#3  0x0000e8f4 in ?? ()
+No symbol table info available.
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)

@@ -1,0 +1,10 @@
+#0  0xb71bb6a6 in ?? () from /usr/lib/gnome-settings-daemon/plugins/screensaver/libscreensaver.so
+#1  0x08194440 in ?? ()
+#2  0xbfe57f40 in ?? ()
+#3  0xb71bc256 in ?? () from /usr/lib/gnome-settings-daemon/plugins/screensaver/libscreensaver.so
+#4  0x0804b4b9 in gnome_settings_plugin_activate ()
+#5  0x0804b7fc in gnome_settings_plugins_engine_activate_plugin ()
+#6  0x0804c2ad in ?? ()
+#7  0x0819be40 in ?? ()
+#8  0x08081830 in ?? ()
+#9  0x00000000 in ?? ()

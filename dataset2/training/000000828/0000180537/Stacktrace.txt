@@ -1,0 +1,7 @@
+#0  0xb77bc270 in ?? ()
+#1  0xb7efa076 in XCloseDisplay (dpy=0x8086a08) at ../../src/ClDisplay.c:71
+	ext = (_XExtension *) 0x833aaa0
+	i = 1
+#2  0x08055796 in removeDisplay ()
+#3  0x08052ea8 in finiCore ()
+#4  0x080528df in main ()

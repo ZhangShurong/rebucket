@@ -1,0 +1,171 @@
+#0  0x00007fa14d4b3f33 in workaroundsRemoveFromFullscreenList (w=0x2e952c0) at workarounds.c:140
+	mfw = (WorkaroundsManagedFsWindow *) 0x0
+	wd = (WorkaroundsDisplay *) 0x21
+#1  0x00007fa14d4b4dda in workaroundsHandleEvent (d=0x64e810, event=0x7fff620a4170)
+    at workarounds.c:559
+	w = (CompWindow *) 0x0
+	wd = (WorkaroundsDisplay *) 0x1906b00
+#2  0x00007fa14d2ada46 in zoomHandleEvent (d=0x64e810, event=0x7fff620a4170) at ezoom.c:1907
+	zd = (ZoomDisplay *) 0x1918ba0
+	s = (CompScreen *) 0x21
+#3  0x00007fa14d0a6d45 in vpswitchHandleEvent (d=0x64e810, event=0x7fff620a4170) at vpswitch.c:347
+	s = <value optimized out>
+	vd = (VpSwitchDisplay *) 0x1938d90
+#4  0x00007fa14cc9b2ba in fadeHandleEvent (d=0x64e810, event=0x7fff620a4170)
+    at ../../plugins/fade.c:537
+	w = (CompWindow *) 0x21
+	fd = (FadeDisplay *) 0x1a552e0
+#5  0x0000000000411b88 in eventLoop () at ../../src/display.c:1640
+	event = {type = 17, xany = {type = 17, serial = 27024, send_event = 0, display = 0x650590, 
+    window = 315}, xkey = {type = 17, serial = 27024, send_event = 0, display = 0x650590, 
+    window = 315, root = 44040227, subwindow = 0, time = 2286228, x = 65536, y = 1310742, 
+    x_root = 66740, y_root = 1441814, state = 0, keycode = 0, same_screen = 0}, xbutton = {type = 17, 
+    serial = 27024, send_event = 0, display = 0x650590, window = 315, root = 44040227, subwindow = 0, 
+    time = 2286228, x = 65536, y = 1310742, x_root = 66740, y_root = 1441814, state = 0, button = 0, 
+    same_screen = 0}, xmotion = {type = 17, serial = 27024, send_event = 0, display = 0x650590, 
+    window = 315, root = 44040227, subwindow = 0, time = 2286228, x = 65536, y = 1310742, 
+    x_root = 66740, y_root = 1441814, state = 0, is_hint = 0 '\0', same_screen = 0}, xcrossing = {
+    type = 17, serial = 27024, send_event = 0, display = 0x650590, window = 315, root = 44040227, 
+    subwindow = 0, time = 2286228, x = 65536, y = 1310742, x_root = 66740, y_root = 1441814, mode = 0, 
+    detail = 0, same_screen = 0, focus = 0, state = 1281}, xfocus = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, window = 315, mode = 44040227, detail = 0}, xexpose = {
+    type = 17, serial = 27024, send_event = 0, display = 0x650590, window = 315, x = 44040227, y = 0, 
+    width = 0, height = 0, count = 2286228}, xgraphicsexpose = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, drawable = 315, x = 44040227, y = 0, width = 0, height = 0, 
+    count = 2286228, major_code = 0, minor_code = 65536}, xnoexpose = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, drawable = 315, major_code = 44040227, minor_code = 0}, 
+  xvisibility = {type = 17, serial = 27024, send_event = 0, display = 0x650590, window = 315, 
+    state = 44040227}, xcreatewindow = {type = 17, serial = 27024, send_event = 0, display = 0x650590, 
+    parent = 315, window = 44040227, x = 0, y = 0, width = 2286228, height = 0, border_width = 65536, 
+    override_redirect = 1310742}, xdestroywindow = {type = 17, serial = 27024, send_event = 0, 
+    display = 0x650590, event = 315, window = 44040227}, xunmap = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, event = 315, window = 44040227, from_configure = 0}, xmap = {
+    type = 17, serial = 27024, send_event = 0, display = 0x650590, event = 315, window = 44040227, 
+    override_redirect = 0}, xmaprequest = {type = 17, serial = 27024, send_event = 0, 
+    display = 0x650590, parent = 315, window = 44040227}, xreparent = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, event = 315, window = 44040227, parent = 0, x = 2286228, 
+    y = 0, override_redirect = 65536}, xconfigure = {type = 17, serial = 27024, send_event = 0, 
+    display = 0x650590, event = 315, window = 44040227, x = 0, y = 0, width = 2286228, height = 0, 
+    border_width = 65536, above = 6192543976981684, override_redirect = 0}, xgravity = {type = 17, 
+    serial = 27024, send_event = 0, display = 0x650590, event = 315, window = 44040227, x = 0, y = 0}, 
+  xresizerequest = {type = 17, serial = 27024, send_event = 0, display = 0x650590, window = 315, 
+    width = 44040227, height = 0}, xconfigurerequest = {type = 17, serial = 27024, send_event = 0, 
+    display = 0x650590, parent = 315, window = 44040227, x = 0, y = 0, width = 2286228, height = 0, 
+    border_width = 65536, above = 6192543976981684, detail = 0, value_mask = 0}, xcirculate = {
+    type = 17, serial = 27024, send_event = 0, display = 0x650590, event = 315, window = 44040227, 
+    place = 0}, xcirculaterequest = {type = 17, serial = 27024, send_event = 0, display = 0x650590, 
+    parent = 315, window = 44040227, place = 0}, xproperty = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, window = 315, atom = 44040227, time = 0, state = 2286228}, 
+  xselectionclear = {type = 17, serial = 27024, send_event = 0, display = 0x650590, window = 315, 
+    selection = 44040227, time = 0}, xselectionrequest = {type = 17, serial = 27024, send_event = 0, 
+    display = 0x650590, owner = 315, requestor = 44040227, selection = 0, target = 2286228, 
+    property = 5629594023559168, time = 6192543976981684}, xselection = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, requestor = 315, selection = 44040227, target = 0, 
+    property = 2286228, time = 5629594023559168}, xcolormap = {type = 17, serial = 27024, 
+    send_event = 0, display = 0x650590, window = 315, colormap = 44040227, new = 0, state = 0}, 
+  xclient = {type = 17, serial = 27024, send_event = 0, display = 0x650590, window = 315, 
+    message_type = 44040227, format = 0, data = {
+      b = "\224â\"\000\000\000\000\000\000\000\001\000\026\000\024\000´\004\001", s = {-7532, 34, 0, 
+        0, 0, 1, 22, 20, 1204, 1}, l = {2286228, 5629594023559168, 6192543976981684, 0, 0}}}, 
+  xmapping = {type = 17, serial = 27024, send_event = 0, display = 0x650590, window = 315, 
+    request = 44040227, first_keycode = 0, count = 0}, xerror = {type = 17, display = 0x6990, 
+    resourceid = 0, serial = 6620560, error_code = 59 ';', request_code = 1 '\001', 
+    minor_code = 0 '\0'}, xkeymap = {type = 17, serial = 27024, send_event = 0, display = 0x650590, 
+    window = 315, 
+    key_vector = "#\000 \002", '\0' <repeats 12 times>, "\224â\"\000\000\000\000\000\000\000\001\000\026\000\024"}, pad = {140329466462225, 27024, 0, 6620560, 315, 44040227, 0, 2286228, 5629594023559168, 
+    6192543976981684, 0, 0, 1281, 0, 0, 496, 32, 11544304, 118121825067638, 0, 657, 11544336, 
+    140330939800064, 11317572}}
+	timeDiff = <value optimized out>
+	tv = {tv_sec = 1203022432, tv_usec = 476806}
+	d = (CompDisplay *) 0x64e810
+	s = (CompScreen *) 0x0
+	w = <value optimized out>
+	time = <value optimized out>
+	timeToNextRedraw = 32767
+	damageMask = <value optimized out>
+	mask = <value optimized out>
+#6  0x000000000040d059 in main (argc=1, argv=0x7fff620a42a8) at ../../src/main.c:442
+	size = 1644839592
+	ctx = {offset = 4212, pluginData = 0x63b5e0 "\006", textureFilterData = 0x0, 
+  refreshRateData = 0x0}
+	displayName = 0x0
+	plugin = {0x7fff620a6c44 "ccp", 0x0 <repeats 55 times>, 0x64 <Address 0x64 out of bounds>, 
+  0x7fa157a0b5c8 "\215CÛI\203Ä\001L\211¥Pýÿÿ<Sv|H\213µPüÿÿ»\002", 0x0, 0x7fff620a4740 " ", 
+  0x7fff620a4790 "", 0x7fff620a46db "", 0x7fff620a4620 "", 0x7fff620a4840 "\025\032\026", 
+  0x7fff620a4878 "r1îY¡\177", 0x7fff620a4820 "Ö\t6", 0x7fff620a4830 "ÊÈ\025", 0x0, 0x0, 0x0, 0x0, 0x0, 
+  0x0, 0x0, 0x0, 0x0, 0x0, 0x7fff620a49f0 "\001", 0x7fff620a48d0 "", 0x0, 
+  0x200000000 <Address 0x200000000 out of bounds>, 0x3 <Address 0x3 out of bounds>, 
+  0x4000000000 <Address 0x4000000000 out of bounds>, 0x7fa157d14580 "Àtk\001", 
+  0x7fa157d11d40 "\nÓ­W¡\177", 0xa00000000 <Address 0xa00000000 out of bounds>, 0x7fa157adda61 ".", 
+  0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x100 <Address 0x100 out of bounds>, 0x1 <Address 0x1 out of bounds>, 
+  0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xffffffff <Address 0xffffffff out of bounds>, 0x0, 0x0, 
+  0x0, 0x7fff620a4060 "pA\nbÿ\177", 0x7fff620a4060 "pA\nbÿ\177", 0x0, 
+  0x7fa159f5b6d2 <Address 0x7fa159f5b6d2 out of bounds>, 
+  0xffffffff <Address 0xffffffff out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
+  0x1 <Address 0x1 out of bounds>, 0x0, 0x0, 0x7fff620a47c0 "p\230¡W¡\177", 
+  0x4ffffffff <Address 0x4ffffffff out of bounds>, 
+  0x7fa100000000 <Address 0x7fa100000000 out of bounds>, 
+  0xffffffffffffff88 <Address 0xffffffffffffff88 out of bounds>, 0x5 <Address 0x5 out of bounds>, 
+  0x4ffffffff <Address 0x4ffffffff out of bounds>, 
+  0x7fff00000000 <Address 0x7fff00000000 out of bounds>, 
+  0xffffffffffffff88 <Address 0xffffffffffffff88 out of bounds>, 
+  0x7fa159e93548 <Address 0x7fa159e93548 out of bounds>, 
+  0x4ffffffff <Address 0x4ffffffff out of bounds>, 
+  0x7fa100000000 <Address 0x7fa100000000 out of bounds>, 
+  0xffffffffffffff90 <Address 0xffffffffffffff90 out of bounds>, 
+  0x73c3a79 <Address 0x73c3a79 out of bounds>, 0x4ffffffff <Address 0x4ffffffff out of bounds>, 0x0, 
+  0xffffffffffffff90 <Address 0xffffffffffffff90 out of bounds>, 0x1 <Address 0x1 out of bounds>, 
+  0x7fa15a074d20 "dH\213\004%\210ÿÿÿÿ ", 'Ì' <repeats 21 times>, "dH\213\004%\210ÿÿÿÿ`\b", 'Ì' <repeats 20 times>, "dH\213\004%\210ÿÿÿÿ`\020", 'Ì' <repeats 20 times>, "dH\213\004%\210ÿÿÿÿ`\030", 'Ì' <repeats 20 times>, "dH\213\004%\210ÿÿÿÿ` ", 'Ì' <repeats 20 times>, "dH\213\004%\210ÿÿÿÿ`(", 'Ì' <repeats 20 times>, "dH\213\004%\210ÿÿ"..., 0x488 <Address 0x488 out of bounds>, 
+  0x7fa159ec5000 <Address 0x7fa159ec5000 out of bounds>, 
+  0x7fa159e96c56 <Address 0x7fa159e96c56 out of bounds>, 
+  0x4ffffffff <Address 0x4ffffffff out of bounds>, 0x0, 
+  0xffffffffffffff90 <Address 0xffffffffffffff90 out of bounds>, 0x0, 0x7fa1579c1e10 "\vG", 
+  0x7fa15a06c878 "", 0x20 <Address 0x20 out of bounds>, 
+  0x7fa159e9ce12 <Address 0x7fa159e9ce12 out of bounds>, 0x7fa15a090fa0 "`ÛðY¡\177", 
+  0x25 <Address 0x25 out of bounds>, 0x20 <Address 0x20 out of bounds>, 
+  0xffffffffffffff88 <Address 0xffffffffffffff88 out of bounds>, 0x7fa15a073508 "", 
+  0x20 <Address 0x20 out of bounds>, 0x7fff620a47b0 "dH\213\004%\210ÿÿÿÿ 8\036", 
+  0x488 <Address 0x488 out of bounds>, 0x7fa15a086200 "dH\213\004%\210ÿÿÿÿ 8\036", 
+  0x7fa15681b357 <Address 0x7fa15681b357 out of bounds>, 
+  0x7fff00000001 <Address 0x7fff00000001 out of bounds>, 
+  0x2059e9260d <Address 0x2059e9260d out of bounds>, 
+  0xffff8825048b4864 <Address 0xffff8825048b4864 out of bounds>, 
+  0xcc00001e38a0ffff <Address 0xcc00001e38a0ffff out of bounds>, 0x7fa157a19870 "H\213\227\210", 
+  0x7fff620a48d0 "", 0xcccccccccccccccc <Address 0xcccccccccccccccc out of bounds>, 
+  0x7fa159e926c1 <Address 0x7fa159e926c1 out of bounds>, 0x11 <Address 0x11 out of bounds>, 
+  0x7fa159e926c1 <Address 0x7fa159e926c1 out of bounds>, 0x1a <Address 0x1a out of bounds>, 
+  0x7fa159ec1428 "\200&ìY¡\177", 0x19 <Address 0x19 out of bounds>, 0x1c <Address 0x1c out of bounds>, 
+  0x5868543 <Address 0x5868543 out of bounds>, 0x7fa159e929cd <Address 0x7fa159e929cd out of bounds>, 
+  0x3609d6 <Address 0x3609d6 out of bounds>, 0x3c579bad64 <Address 0x3c579bad64 out of bounds>, 
+  0x15c8ca <Address 0x15c8ca out of bounds>, 0x3620a4850 <Address 0x3620a4850 out of bounds>, 
+  0x161a15 <Address 0x161a15 out of bounds>, 0x7fff620a4860 "", 0x7fff620a49f8 "ì R\003", 
+  0x7fa155fc5970 <Address 0x7fa155fc5970 out of bounds>, 0x0, 0x0, 0x7fa159ec2680 "", 
+  0x7fa159ee3172 "\004", 0x7fa155fcea78 <Address 0x7fa155fcea78 out of bounds>, 
+  0x7fa159ed8ee8 "\200^'", 0x100000000 <Address 0x100000000 out of bounds>, 
+  0x100000581 <Address 0x100000581 out of bounds>, 0x7fff620a4a20 "PK\nbÿ\177", 
+  0x7fa15a093360 "¸R\nZ¡\177", 0x7fff620a4a30 "Ât@", 0x7fff620a49e0 "\001", 
+  0x5868543 <Address 0x5868543 out of bounds>, 0x7fff620a49f8 "ì R\003", 0x0, 
+  0x7fa159e9260d <Address 0x7fa159e9260d out of bounds>, 0x0, 0x7fa159ec13e8 "`9\tZ¡\177", 
+  0x11 <Address 0x11 out of bounds>, 0x1c <Address 0x1c out of bounds>, 
+  0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 
+  0x7fa159e92a5c <Address 0x7fa159e92a5c out of bounds>, 
+  0x157add7d6 <Address 0x157add7d6 out of bounds>, 
+  0x7fa1579bb924 "/N=öÎ\030L\017ùÄ-×øÔ\217Ó\204\"\233|\205\"\233|ìûÀ=°\"\225Ã8Ç\031uÿ\001Ä\022ÉBY\020ÜÏìµ¶w\035\rGÞÍ%µV1ýÇr1\035\a;úL\214\t)\020\t~\222\0348µï0jÝù{\004\\H±Ô¡\034 \002êÙ\0179µï0X?\227|\030\034sìT\200ÌsÙ\202c\002;H\205\0336\rfý2vàÕ¨§Ká¼\234#\217Ö\036h\233£\230Ëò\234\002Y1\n´\006ß½èe\235J\032\223¨Pµ¨\020\205)%~\016|\030¹Ñ8\a\221\222þ\206ï¦:VÓñIµ$\202¡7äQhoìð¤\017l"..., 
+  0x1620a4a50 <Address 0x1620a4a50 out of bounds>, 0x2e5a093358 <Address 0x2e5a093358 out of bounds>, 
+  0x3d8f538 <Address 0x3d8f538 out of bounds>, 0x7fff620a4950 "", 0x7fff620a4ae8 "", 
+  0x7fa1579bbb10 "", 0x0, 0x7fa159ec1470 "Ü\223@", 0x7fa15a093960 "", 0x4074c2 "__libc_start_main", 
+  0x7fa1579c7fd8 "", 0x4028d8 "\032\020", 0x100000000 <Address 0x100000000 out of bounds>, 
+  0x1000007b8 <Address 0x1000007b8 out of bounds>, 
+  0x7fa1ffffffff <Address 0x7fa1ffffffff out of bounds>, 0x7fa15a0a5358 "¸R\nZ¡\177", 
+  0x7fff620a4b20 "", 0x7fff620a4ad0 "", 0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 
+  0x7fff620a4ae8 "", 0x7fa159ec1470 "Ü\223@", 0x7fa159e92c6f <Address 0x7fa159e92c6f out of bounds>, 
+  0x0, 0x7fa159ec1470 "Ü\223@", 0x7fa100000001 <Address 0x7fa100000001 out of bounds>, 0x0, 
+  0x3000000001 <Address 0x3000000001 out of bounds>, 0x35220ec <Address 0x35220ec out of bounds>, 
+  0x182d <Address 0x182d out of bounds>, 0x0, 0x10000182d <Address 0x10000182d out of bounds>, 
+  0x7fa15a0a5358 "¸R\nZ¡\177", 0x7fff620a4b50 "\024þÁ\232Üx­ÿ\024þ?Îò\023\021ÿ", 0x7fa15a0a5000 "", 
+  0x4074c2 "__libc_start_main", 0x5620abb0 <Address 0x5620abb0 out of bounds>, 0x63b570 " +¢"...}
+	i = 6534670
+	nPlugin = 1
+	disableSm = 0
+	clientId = 0x7fff620a6c3b "default0"
+	refreshRateArg = 0x0

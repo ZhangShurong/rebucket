@@ -1,0 +1,30 @@
+#0  0x010aae07 in ?? () from /usr/lib/libsyncdaemon-1.0.so.1
+No symbol table info available.
+#1  0x001a3f8a in g_cclosure_marshal_VOID__POINTER () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#2  0x0108617a in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#3  0x001a1dac in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x001b30c5 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x001ba942 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x001baad3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x01086820 in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#8  0x01cb3441 in dbus_connection_dispatch () from /lib/i386-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#9  0x0107e9ad in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#10 0x0077a28a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x0077a695 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x0077aadb in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00bcf9e5 in gtk_main () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#14 0x0804ae6c in main ()
+No symbol table info available.

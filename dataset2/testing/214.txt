@@ -1,0 +1,34 @@
+#0  0x00539416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00573c41 in raise () from /lib/libc.so.6
+No symbol table info available.
+#2  0x0057711e in abort () from /lib/libc.so.6
+No symbol table info available.
+#3  0x005aabd7 in ?? () from /lib/libc.so.6
+No symbol table info available.
+#4  0x005b4fe1 in ?? () from /lib/libc.so.6
+No symbol table info available.
+#5  0x005b6996 in ?? () from /lib/libc.so.6
+No symbol table info available.
+#6  0x005b9acd in free () from /lib/libc.so.6
+No symbol table info available.
+#7  0x003a7501 in operator delete(void*) () from /usr/lib/libstdc++.so.6
+No symbol table info available.
+#8  0x08088e74 in CompOption::Value::~Value() ()
+No symbol table info available.
+#9  0x08089fd3 in CompOption::~CompOption() ()
+No symbol table info available.
+#10 0x08099048 in CoreOptions::~CoreOptions() ()
+No symbol table info available.
+#11 0x08070804 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#12 0x08070ab2 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#13 0x0806f658 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#14 0x0806f762 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#15 0x08066181 in CompManager::fini() ()
+No symbol table info available.
+#16 0x08066a00 in main ()
+No symbol table info available.

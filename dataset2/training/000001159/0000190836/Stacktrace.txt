@@ -1,0 +1,36 @@
+#0  0xb75dc913 in fxAirplane3DLinearAnimStepPolygon (w=0x878e218, p=0x878e678, forwardProgress=0.0714285746)
+    at airplane3d.c:775
+	as = <value optimized out>
+	aw = (AnimWindow *) 0x8788ef0
+	airplanePathLength = 1
+	airplaneFly2TaskBar = 1
+	aep = (AirplaneEffectParameters *) 0x0
+#1  0xb75e6c8f in polygonsAnimStep (s=0x815d640, w=0x878e218, time=19) at polygon.c:1484
+	i = 0
+	aw = (AnimWindow *) 0x8788ef0
+	forwardProgress = 0.0714285746
+#2  0xb75dc6ef in fxAirplane3DAnimStep (s=0x815d640, w=0x878e218, time=19) at airplane3d.c:963
+No locals.
+#3  0xb75d9994 in animPreparePaintScreen (s=0x815d640, msSinceLastPaint=19) at animation.c:2137
+	i = 0
+	aw = (AnimWindow *) 0x8788ef0
+	animStillInProgress = 0
+	w = (CompWindow *) 0x0
+	as = (AnimScreen *) 0x8481100
+#4  0xb75cd266 in infoPreparePaintScreen (s=0x815d640, ms=137453008) at resizeinfo.c:287
+	is = (InfoScreen *) 0x84c3b30
+#5  0xb75c6d30 in ?? () from /usr/lib/compiz/libfade.so
+#6  0x0815d640 in ?? ()
+#7  0x00000013 in ?? ()
+#8  0xbf982148 in ?? ()
+#9  0xb75c5308 in ?? () from /usr/lib/compiz/libcube.so
+#10 0x084b8a00 in ?? ()
+#11 0x0815d640 in ?? ()
+#12 0xbf982168 in ?? ()
+#13 0xb75c4758 in ?? () from /usr/lib/compiz/libcube.so
+#14 0x0815d640 in ?? ()
+#15 0x00000013 in ?? ()
+#16 0x00000004 in ?? ()
+#17 0xb75cdb4e in infoDonePaintScreen (s=0x1851) at resizeinfo.c:324
+	is = (InfoScreen *) 0x84c0708
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

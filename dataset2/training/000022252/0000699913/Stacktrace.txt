@@ -1,0 +1,88 @@
+#0  0x00e15e56 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#1  0x00e15f2f in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#2  0x00e16412 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#3  0x00e1c219 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#4  0x00e1e8fc in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#5  0x00e325a8 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#6  0x00e3271d in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#7  0x00e32870 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#8  0x00ba545c in g_cclosure_marshal_VOID__BOXED () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00b85e07 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00b873e0 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x00b9a986 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00ba3f55 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00ba42ad in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00edf018 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#15 0x00edffbf in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#16 0x00fa563b in gtk_widget_size_request () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#17 0x00fbbcb5 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#18 0x00ba545c in g_cclosure_marshal_VOID__BOXED () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x00b85e07 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x00b874b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x00b9a986 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x00ba3f55 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x00ba42ad in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x00edf018 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#25 0x00edffbf in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#26 0x00fa563b in gtk_widget_size_request () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#27 0x00fb93a4 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#28 0x00fbb19f in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#29 0x00e96640 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#30 0x00ba48fc in g_cclosure_marshal_VOID__VOID () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#31 0x00b85e07 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#32 0x00b874b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#33 0x00b9b015 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#34 0x00ba3f55 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#35 0x00ba4132 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#36 0x00dbd09a in gtk_container_check_resize () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#37 0x00dbd3fe in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#38 0x0034b118 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#39 0x0029a481 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#40 0x0029ec38 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#41 0x0029f400 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#42 0x0029fac3 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#43 0x08058e37 in main ()
+No symbol table info available.

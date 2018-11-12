@@ -1,0 +1,72 @@
+#0  0x00e58416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00406c8f in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x0040a2b5 in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x003ff826 in __assert_fail () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00be55a6 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00be685f in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00c39733 in XkbGetControls () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x02f09c62 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#8  0x02f09d59 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#9  0x02f0a38f in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#10 0x0029c92a in g_cclosure_marshal_VOID__STRING () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x0029aa5c in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x002aeec0 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x002b7b8f in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x002b7d03 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x001b98ee in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#16 0x00eaa35a in ffi_call_SYSV () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#17 0x00eaa08f in ffi_call () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#18 0x0029af0e in g_cclosure_marshal_generic () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x002994ad in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x0029aa5c in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x002aed08 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x002b7a41 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x002b7d03 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x001ba71c in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#25 0x001b60e8 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#26 0x00325c6d in g_main_context_invoke_full () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00325dcb in g_main_context_invoke () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#28 0x001b620c in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#29 0x001b6916 in g_settings_backend_keys_changed () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#30 0x0816d00f in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#31 0x001b6eaf in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#32 0x001b4087 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#33 0x02f0b17c in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#34 0x0059e914 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#35 0x00000000 in ?? ()
+No symbol table info available.

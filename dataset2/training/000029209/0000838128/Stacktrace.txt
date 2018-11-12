@@ -1,0 +1,34 @@
+#0  0x00007f8ee26083a5 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f8ee260bb0b in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f8ee2600d4d in __assert_fail () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f8ed46a9a3e in UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007f8eda0fdcfc in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x00007f8eda0f2cdc in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x00007f8eda318c79 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#7  0x00007f8eda31a23f in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#8  0x000000000042208b in CompTimer::triggerCallback() ()
+No symbol table info available.
+#9  0x00000000004221c2 in CompTimeoutSource::callback() ()
+No symbol table info available.
+#10 0x00000000004216bd in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#11 0x00007f8ee3c7b81f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#12 0x00007f8ee3780efd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f8ee37816f8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f8ee3781c32 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x000000000042b546 in CompScreen::eventLoop() ()
+No symbol table info available.
+#16 0x000000000041f57a in main ()
+No symbol table info available.

@@ -1,0 +1,12 @@
+#0  0x00007fde595a4910 in g_strjoin () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00000000020a9e30 in ?? ()
+No symbol table info available.
+#2  0x00000000020ecad0 in ?? ()
+No symbol table info available.
+#3  0x00000000020dd740 in ?? ()
+No symbol table info available.
+#4  0x000000000040d446 in ?? ()
+No symbol table info available.
+#5  0x0000000000000000 in ?? ()
+No symbol table info available.

@@ -1,0 +1,15 @@
+#0  0x05aa3a70 in ?? ()
+No symbol table info available.
+#1  0x001b19cf in __run_exit_handlers (status=0, listp=0x2e0324, run_list_atexit=true) at exit.c:78
+        atfct = <value optimized out>
+        onfct = <value optimized out>
+        cxafct = <value optimized out>
+        f = <value optimized out>
+#2  0x001b1a2f in exit (status=0) at exit.c:100
+No locales.
+#3  0x00198daf in __libc_start_main (main=0x804a860 <main>, argc=1, ubp_av=0xbfccf3b4, init=0x804d640 <__libc_csu_init>, fini=0x804d6a0 <__libc_csu_fini>, rtld_fini=0x368a10, stack_end=0xbfccf3ac) at libc-start.c:258
+        result = <value optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {3014644, 0, 0, -1077087352, -239511822, 1531293581}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x1, 0x804ab80}, data = {prev = 0x0, cleanup = 0x0, canceltype = 1}}}
+        not_first_call = <value optimized out>
+#4  0x0804aba1 in _start ()
+No symbol table info available.

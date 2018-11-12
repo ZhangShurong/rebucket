@@ -1,0 +1,18 @@
+#0  0x0352497b in ?? () from /usr/lib/gnome-settings-daemon-3.0/libxrandr.so
+No symbol table info available.
+#1  0x00e75572 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00e756ac in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#3  0x001c61a0 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x001ca2ef in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x001caa20 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x001cb02b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x006b8f95 in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#8  0x0804af0e in main ()
+No symbol table info available.

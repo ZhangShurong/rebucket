@@ -1,0 +1,35 @@
+#0  0xb3a2ce20 in GridScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#1  0xb6f2f9aa in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#2  0xb57e3146 in RegexScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#3  0xb6f2f9aa in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#4  0xb57bd69c in SessionScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsession.so
+No symbol table info available.
+#5  0xb6f2f9aa in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#6  0xb544895c in WorkaroundsScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libworkarounds.so
+No symbol table info available.
+#7  0xb6f2f9aa in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#8  0xb6f2f9e2 in CompScreenImpl::alwaysHandleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#9  0xb6f18f9e in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#10 0xb6f38704 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#11 0xb6f388e2 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#12 0xb6f38720 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#13 0xb6bcd834 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/arm-linux-gnueabihf/libglibmm-2.4.so.1
+No symbol table info available.
+#14 0xb6b076d8 in g_main_context_dispatch () from /lib/arm-linux-gnueabihf/libglib-2.0.so.0
+No symbol table info available.
+#15 0xb6b07922 in ?? () from /lib/arm-linux-gnueabihf/libglib-2.0.so.0
+No symbol table info available.
+#16 0xb6b07922 in ?? () from /lib/arm-linux-gnueabihf/libglib-2.0.so.0
+No symbol table info available.
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)

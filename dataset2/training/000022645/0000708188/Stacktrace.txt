@@ -1,0 +1,32 @@
+#0  0x00007f2d5a0e9a93 in ?? () from /usr/lib/libappindicator.so.1
+No symbol table info available.
+#1  0x00007f2d6278798c in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#2  0x00007f2d6279a089 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x00007f2d627a34a6 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007f2d627a365f in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f2d635ab643 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#6  0x00007f2d51761f9e in gkbd_indicator_config_init () from /usr/lib/libgnomekbdui.so.4
+No symbol table info available.
+#7  0x00007f2d519764f3 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#8  0x00007f2d6326abcd in gconf_listeners_notify () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#9  0x00007f2d6327b6e0 in ?? () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#10 0x00007f2d6327b861 in ?? () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#11 0x00007f2d622c7d4d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f2d622c8538 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f2d622c8b7a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f2d635dfec7 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#15 0x0000000000404349 in main ()
+No symbol table info available.

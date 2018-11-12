@@ -1,0 +1,144 @@
+#0  IA__g_logv (log_domain=0x0, log_level=G_LOG_LEVEL_ERROR, 
+    format=0x7f647e403f98 "You can only run one xsettings manager at a time; exiting\n", 
+    args1=0x7fff91edb1b0) at /build/buildd/glib2.0-2.15.4/glib/gmessages.c:503
+	buffer = "\020³í\221ÿ\177\000\000`³í\221ÿ\177\000\000h³í\221ÿ\177\000\000\000àê\211d\177\000\000@­í\221ÿ\177\000\000À®í\221ÿ\177\000\000`µí\221ÿ\177\000\000\206Û\204\205 \000\000\000\020\000\000\000\000\000\000\000\207Û\204\205\004", '\0' <repeats 11 times>, "h²í\221ÿ\177\000\000\026 \002\203\001", '\0' <repeats 19 times>, "ÿÿÿÿÿÿÿÿ\000\000\000\000\036\000\000\000\207Û\204\205d\177\000\000\000\000\000\000\000\000\000\000¨²í\221ÿ\177\000\000`xb\000\000\000\000\000 \231[\205d\177\000\000\020", '\0' <repeats 15 times>, " \000\000\000\000\000\000\000\024yb\000\000\000\000\000X\211b\000\000\000\000"...
+	depth = 1
+	domain = <value optimized out>
+	data = (gpointer) 0x0
+	log_func = (GLogFunc) 0x7f648581ad50 <IA__g_log_default_handler>
+	domain_fatal_mask = 5
+	test_level = G_LOG_FLAG_FATAL
+	was_recursion = 0
+	i = <value optimized out>
+#1  0x00007f648581a213 in IA__g_log (log_domain=0x7f64855b99a0 "", log_level=6711136, 
+    format=0x666760 "") at /build/buildd/glib2.0-2.15.4/glib/gmessages.c:517
+	args = {{gp_offset = 24, fp_offset = 48, overflow_arg_area = 0x7fff91edb290, 
+    reg_save_area = 0x7fff91edb1d0}}
+#2  0x00007f647e402ab1 in gnome_xsettings_manager_init (manager=0x656f90)
+    at gsd-xsettings-manager.c:782
+	display = (GdkDisplay *) 0x634110
+	i = <value optimized out>
+	n_screens = 1
+	res = <value optimized out>
+	terminated = <value optimized out>
+#3  0x00007f6485ac5948 in IA__g_type_create_instance (type=140069710888400)
+    at /build/buildd/glib2.0-2.15.4/gobject/gtype.c:1569
+	node = (TypeNode *) 0x666610
+	instance = (GTypeInstance *) 0x656f90
+	class = (GTypeClass *) 0x666760
+	i = 2237431248
+#4  0x00007f6485aab36d in g_object_constructor (type=140069710829984, n_construct_properties=6711136, 
+    construct_params=0x666760) at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:1046
+	object = (GObject *) 0x7f6485a972c0
+#5  0x00007f647e402706 in gnome_xsettings_manager_constructor (type=6710800, n_construct_properties=0, 
+    construct_properties=0x0) at gsd-xsettings-manager.c:664
+No locals.
+#6  0x00007f6485aa9d6d in IA__g_object_newv (object_type=6710800, n_parameters=0, 
+    parameters=<value optimized out>) at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:937
+	value = (GValue *) 0x0
+	pspec = (GParamSpec *) 0x0
+	cparams = (GObjectConstructParam *) 0x666760
+	oparams = <value optimized out>
+	nqueue = <value optimized out>
+	object = <value optimized out>
+	class = (GObjectClass *) 0x6666d0
+	unref_class = (GObjectClass *) 0x6666d0
+	slist = <value optimized out>
+	n_total_cparams = 0
+	n_cparams = 0
+	n_oparams = 0
+	n_cvalues = 0
+	cvalues = <value optimized out>
+	clist = (GList *) 0x0
+	i = <value optimized out>
+	__PRETTY_FUNCTION__ = "IA__g_object_newv"
+#7  0x00007f6485aaa8a2 in IA__g_object_new_valist (object_type=6710800, first_property_name=0x0, 
+    var_args=0x7fff91edb6d0) at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:986
+	error = <value optimized out>
+	pspec = <value optimized out>
+	params = <value optimized out>
+	name = <value optimized out>
+	object = <value optimized out>
+	n_params = <value optimized out>
+	n_alloced_params = <value optimized out>
+	__PRETTY_FUNCTION__ = "IA__g_object_new_valist"
+#8  0x00007f6485aaa9e1 in IA__g_object_new (object_type=6710800, first_property_name=0x0)
+    at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:795
+	var_args = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7fff91edb7c0, 
+    reg_save_area = 0x7fff91edb6f0}}
+	__PRETTY_FUNCTION__ = "IA__g_object_new"
+#9  0x00007f647e402531 in gnome_xsettings_manager_new () at gsd-xsettings-manager.c:837
+No locals.
+#10 0x00007f647e401506 in gnome_xsettings_plugin_init (plugin=<value optimized out>)
+    at gsd-xsettings-plugin.c:45
+No locals.
+#11 0x00007f6485ac5948 in IA__g_type_create_instance (type=140069710888400)
+    at /build/buildd/glib2.0-2.15.4/gobject/gtype.c:1569
+	node = (TypeNode *) 0x665020
+	instance = (GTypeInstance *) 0x656f60
+	class = (GTypeClass *) 0x666760
+	i = 2237431248
+#12 0x00007f6485aab36d in g_object_constructor (type=140069710829984, n_construct_properties=6711136, 
+    construct_params=0x666760) at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:1046
+	object = (GObject *) 0x663f70
+#13 0x00007f6485aa9d6d in IA__g_object_newv (object_type=6705184, n_parameters=0, 
+    parameters=<value optimized out>) at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:937
+	value = (GValue *) 0x664a90
+	pspec = (GParamSpec *) 0x0
+	cparams = (GObjectConstructParam *) 0x666760
+	oparams = <value optimized out>
+	nqueue = <value optimized out>
+	object = <value optimized out>
+	class = (GObjectClass *) 0x666520
+	unref_class = (GObjectClass *) 0x666520
+	slist = <value optimized out>
+	n_total_cparams = 0
+	n_cparams = 0
+	n_oparams = 0
+	n_cvalues = 0
+	cvalues = <value optimized out>
+	clist = (GList *) 0x0
+	i = <value optimized out>
+	__PRETTY_FUNCTION__ = "IA__g_object_newv"
+#14 0x00007f6485aaa8a2 in IA__g_object_new_valist (object_type=6705184, first_property_name=0x0, 
+    var_args=0x7fff91edbb90) at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:986
+	error = <value optimized out>
+	pspec = <value optimized out>
+	params = <value optimized out>
+	name = <value optimized out>
+	object = <value optimized out>
+	n_params = <value optimized out>
+	n_alloced_params = <value optimized out>
+	__PRETTY_FUNCTION__ = "IA__g_object_new_valist"
+#15 0x00007f6485aaa9e1 in IA__g_object_new (object_type=6705184, first_property_name=0x0)
+    at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:795
+	var_args = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7fff91edbc80, 
+    reg_save_area = 0x7fff91edbbb0}}
+	__PRETTY_FUNCTION__ = "IA__g_object_new"
+#16 0x00000000004042d7 in gnome_settings_plugins_engine_activate_plugin (info=0x664a90)
+    at gnome-settings-plugins-engine.c:482
+	__PRETTY_FUNCTION__ = "gnome_settings_plugins_engine_activate_plugin"
+#17 0x0000000000404961 in gnome_settings_plugins_engine_load_dir (
+    path=0x649b70 "/usr/lib/gnome-settings-daemon/plugins/xsettings")
+    at gnome-settings-plugins-engine.c:260
+	filename = 0x65a1e0 "/usr/lib/gnome-settings-daemon/plugins/xsettings/xsettings.gnome-settings-plugin"
+	error = (GError *) 0x0
+	d = (GDir *) 0x656860
+	name = <value optimized out>
+#18 0x0000000000404558 in gnome_settings_plugins_engine_load_dir (
+    path=0x405968 "/usr/lib/gnome-settings-daemon/plugins/") at gnome-settings-plugins-engine.c:293
+	filename = 0x649b70 "/usr/lib/gnome-settings-daemon/plugins/xsettings"
+	error = (GError *) 0x0
+	d = (GDir *) 0x657a40
+	name = <value optimized out>
+#19 0x0000000000404a83 in gnome_settings_plugins_engine_init (
+    gconf_prefix=0x6580f0 "/apps/gnome-settings-daemon/plugins") at gnome-settings-plugins-engine.c:308
+	__PRETTY_FUNCTION__ = "gnome_settings_plugins_engine_init"
+#20 0x0000000000403714 in gnome_settings_manager_start (manager=0x656c30, error=<value optimized out>)
+    at gnome-settings-manager.c:106
+No locals.
+#21 0x00000000004034ff in main (argc=1, argv=0x7fff91edbeb8) at main.c:221
+	manager = (GnomeSettingsManager *) 0x656c30
+	program = (GnomeProgram *) 0x64f870
+	res = <value optimized out>
+	error = (GError *) 0x0

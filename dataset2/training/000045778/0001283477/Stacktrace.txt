@@ -1,0 +1,199 @@
+#0  _int_malloc (av=0x7f8224000020, bytes=56) at malloc.c:3446
+        iters = <optimized out>
+        nb = 64
+        idx = 4
+        bin = <optimized out>
+        victim = 0x7f8224ccb300
+        size = 144
+        victim_index = <optimized out>
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        block = <optimized out>
+        bit = <optimized out>
+        map = <optimized out>
+        fwd = <optimized out>
+        bck = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#1  0x00007f8267d44f50 in __GI___libc_malloc (bytes=56) at malloc.c:2855
+        ar_ptr = 0x7f8224000020
+        victim = 0x7f8224000038
+        __func__ = "__libc_malloc"
+#2  0x00007f8268864dc4 in _dl_map_object_deps (map=map@entry=0x7f8268a5b000, preloads=preloads@entry=0x0, npreloads=npreloads@entry=0, trace_mode=trace_mode@entry=0, open_mode=open_mode@entry=-2147483648) at dl-deps.c:511
+        runp = <optimized out>
+        tail = <optimized out>
+        i = <optimized out>
+        name = <optimized out>
+        errno_saved = <optimized out>
+        errno_reason = 0
+        errstring = 0x0
+        objname = 0x0
+        needed_space = <optimized out>
+        needed_space_bytes = <optimized out>
+        __PRETTY_FUNCTION__ = "_dl_map_object_deps"
+        old_l_initfini = 0x0
+        l_initfini = <optimized out>
+        l_reldeps = <optimized out>
+#3  0x00007f826886b98b in dl_open_worker (a=a@entry=0x7f8219c0f778) at dl-open.c:272
+        args = 0x7f8219c0f778
+        file = 0x7f8267e3f83e "libgcc_s.so.1"
+        mode = -2147483647
+        call_map = <optimized out>
+        dst = <optimized out>
+        __PRETTY_FUNCTION__ = "dl_open_worker"
+        new = 0x7f8268a5b000
+        r = <optimized out>
+        reloc_mode = <optimized out>
+        nmaps = <optimized out>
+        l = <optimized out>
+        maps = <optimized out>
+        relocation_in_progress = <optimized out>
+        any_tls = <optimized out>
+        first_static_tls = <optimized out>
+#4  0x00007f8268866ea4 in _dl_catch_error (objname=objname@entry=0x7f8219c0f768, errstring=errstring@entry=0x7f8219c0f770, mallocedp=mallocedp@entry=0x7f8219c0f760, operate=operate@entry=0x7f826886b880 <dl_open_worker>, args=args@entry=0x7f8219c0f778) at dl-error.c:177
+        errcode = <optimized out>
+        old = 0x7f8219c0f860
+        c = {objname = 0x5b00000000 <error: Cannot access memory at address 0x5b00000000>, errstring = 0x0, malloced = 80, env = {{__jmpbuf = {-2, -2197221352375428395, 2147483649, 140198065469502, 140735944859816, 1, -2197221352398497067, -2197470335162230059}, __mask_was_saved = 1312952745, __saved_mask = {__val = {18446744073709551285, 0, 0, 0, 1, 0, 0, 0, 140196524377016, 0, 33780576, 201933312, 64, 0, 640, 768}}}}}
+        catchp = 0x7f8219c236d8
+#5  0x00007f826886b29b in _dl_open (file=0x7f8267e3f83e "libgcc_s.so.1", mode=-2147483647, caller_dlopen=<optimized out>, nsid=-2, argc=1, argv=0x7fffa40020a8, env=0x1968880) at dl-open.c:661
+        args = {file = 0x7f8267e3f83e "libgcc_s.so.1", mode = -2147483647, caller_dlopen = 0x7f8267dcd715 <init+21>, caller_dl_open = 0x7f8267df8a82 <do_dlopen+66>, map = 0x7f8268a5b000, nsid = 0, argc = 1, argv = 0x7fffa40020a8, env = 0x1968880}
+        objname = 0x7f824eb8211b "H\211\330[]A\\ÿ\001"
+        errstring = 0x8018000 ""
+        malloced = false
+        errcode = <optimized out>
+        __PRETTY_FUNCTION__ = "_dl_open"
+#6  0x00007f8267df8a82 in do_dlopen (ptr=ptr@entry=0x7f8219c0f980) at dl-libc.c:87
+        args = 0x7f8219c0f980
+#7  0x00007f8268866ea4 in _dl_catch_error (objname=0x7f8219c0f960, errstring=0x7f8219c0f970, mallocedp=0x7f8219c0f950, operate=0x7f8267df8a40 <do_dlopen>, args=0x7f8219c0f980) at dl-error.c:177
+        errcode = <optimized out>
+        old = 0x0
+        c = {objname = 0x0, errstring = 0x0, malloced = false, env = {{__jmpbuf = {64, -2197221352048272683, 2, 7, 81, 7, -2197221352062952747, -2197470335162230059}, __mask_was_saved = 8388736, __saved_mask = {__val = {72340172838076673, 72340172838076673, 18374686483949813760, 18374686483949813760, 0, 140196754553344, 8, 7, 12, 20, 8, 140197640503673, 537036936, 140196356508287, 140196754553336, 140196754553328}}}}}
+        catchp = 0x7f8219c236d8
+#8  0x00007f8267df8b42 in dlerror_run (args=0x7f8219c0f980, operate=0x7f8267df8a40 <do_dlopen>) at dl-libc.c:46
+        objname = 0x1308018000 <error: Cannot access memory at address 0x1308018000>
+        last_errstring = 0x0
+        malloced = false
+        result = <optimized out>
+#9  __GI___libc_dlopen_mode (name=name@entry=0x7f8267e3f83e "libgcc_s.so.1", mode=mode@entry=-2147483647) at dl-libc.c:163
+        args = {name = 0x7f8267e3f83e "libgcc_s.so.1", mode = -2147483647, caller_dlopen = 0x7f8267dcd715 <init+21>, map = 0x300000000}
+#10 0x00007f8267dcd715 in init () at ../sysdeps/x86_64/backtrace.c:52
+No locals.
+#11 0x00007f82661aaa90 in pthread_once () at ../nptl/sysdeps/unix/sysv/linux/x86_64/pthread_once.S:103
+No locals.
+#12 0x00007f8267dcd82c in __GI___backtrace (array=<optimized out>, size=64) at ../sysdeps/x86_64/backtrace.c:103
+        __p = <optimized out>
+        arg = {array = 0x7f8219c0fa20, cfa = 0, cnt = -1, size = 64}
+        once = 1
+#13 0x00007f8267ce1e56 in backtrace_and_maps (do_abort=603979808, do_abort@entry=2, written=144, fd=2) at ../sysdeps/unix/sysv/linux/libc_fatal.c:49
+        addrs = {0x3, 0x7f8224d63c00, 0x7f8224cbecf0, 0x2, 0x7f8219c0fb48, 0x7f8219c10460, 0x0, 0x7f824ebae967, 0x2074a7f00076a7f, 0x25, 0x12830000316f, 0x7f8219c0fb50, 0x0, 0x0, 0x25, 0x7f8219c0fb50, 0x0, 0x7f824eb7b7f1, 0x316f00000000, 0x38f0c70, 0x128300000001, 0x7f8219c0fb50, 0x188000001283, 0x1, 0x7f8219c0f598, 0x0, 0x0, 0x38f0c70, 0x7f8219c0fb50, 0x100000002, 0x7f8219c0fb48, 0x7f8224008030, 0x7f8224d65db0, 0x2, 0x0, 0x7f8219c0fb50, 0x0, 0x0, 0x1300000008, 0x7f8224d63fc0, 0x0 <repeats 22 times>, 0x7f8219c0fc68, 0x7f8219c0fc30}
+        n = 432079536
+#14 0x00007f8267d35baf in __libc_message (do_abort=do_abort@entry=2, fmt=fmt@entry=0x7f8267e44e88 "*** Error in `%s': %s: 0x%s ***\n") at ../sysdeps/posix/libc_fatal.c:172
+        ap = {{gp_offset = 40, fp_offset = 4294934653, overflow_arg_area = 0x7f8219c102c0, reg_save_area = 0x7f8219c10250}}
+        fd = 2
+        on_2 = <optimized out>
+        list = <optimized out>
+        nlist = <optimized out>
+        cp = <optimized out>
+        written = <optimized out>
+#15 0x00007f8267d4267a in malloc_printerr (ptr=<optimized out>, str=0x7f8267e44fb8 "free(): corrupted unsorted chunks", action=3) at malloc.c:4924
+        buf = "00007f8224d65f10"
+        cp = <optimized out>
+#16 _int_free (av=<optimized out>, p=<optimized out>, have_lock=0) at malloc.c:3780
+        size = <optimized out>
+        fb = <optimized out>
+        nextchunk = <optimized out>
+        nextsize = <optimized out>
+        nextinuse = <optimized out>
+        prevsize = <optimized out>
+        bck = <optimized out>
+        fwd = <optimized out>
+        errstr = <optimized out>
+        locked = <optimized out>
+#17 0x00007f824e8f9247 in pixman_image_unref () from /usr/lib/x86_64-linux-gnu/libpixman-1.so.0
+No symbol table info available.
+#18 0x00007f824eb806d0 in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#19 0x00007f824ebb4cd6 in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#20 0x00007f824ebb5600 in cairo_surface_destroy () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#21 0x00007f824ebc7ae9 in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#22 0x00007f824ebc7e80 in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#23 0x00007f824eb71bff in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#24 0x00007f824eb81e9f in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#25 0x00007f824ebb6b4c in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#26 0x00007f824eb7a3c9 in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#27 0x00007f824eb6d0a2 in cairo_show_glyphs () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#28 0x00007f824642ce43 in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#29 0x00007f824642d154 in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#30 0x00007f824790ef0f in pango_renderer_draw_glyphs () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#31 0x00007f824790f898 in pango_renderer_draw_layout_line () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#32 0x00007f824790fbf5 in pango_renderer_draw_layout () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#33 0x00007f824642d2fa in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#34 0x00007f8237d93f17 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#35 0x00007f8237d8e987 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#36 0x00007f8237d8e818 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#37 0x00007f8237d8ec10 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#38 0x00007f8237d89473 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#39 0x00007f8237d894f3 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#40 0x00007f8237d89473 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#41 0x00007f8237d89873 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#42 0x00007f8237d89473 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#43 0x00007f8237d95a13 in rsvg_handle_render_cairo_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#44 0x00007f8237d95e44 in rsvg_handle_get_pixbuf_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#45 0x00007f8237fbce46 in ?? () from /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+No symbol table info available.
+#46 0x00007f824b6771fb in gdk_pixbuf_loader_close () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#47 0x00007f824b673435 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#48 0x00007f824b67507d in gdk_pixbuf_new_from_stream_at_scale () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#49 0x00007f8247f4c3db in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#50 0x00007f8247f4fb7a in gtk_icon_info_load_icon () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#51 0x00007f82494124a1 in unity::IconLoader::Impl::IconLoaderTask::LoaderJobFunc(_GTask*, void*, void*, _GCancellable*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#52 0x00007f8262393b95 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#53 0x00007f82666328bc in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#54 0x00007f8266631f35 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#55 0x00007f82661a5182 in start_thread (arg=0x7f8219c23700) at pthread_create.c:312
+        __res = <optimized out>
+        pd = 0x7f8219c23700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140196754634496, 2199398548336958165, 0, 0, 140196754635200, 140196754634496, -2197221327987647787, -2197447212811134251}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+        pagesize_m1 = <optimized out>
+        sp = <optimized out>
+        freesize = <optimized out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#56 0x00007f8267dbcb2d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+No locals.

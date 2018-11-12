@@ -1,0 +1,8 @@
+#0  0x00007f174edbf548 in gsd_power_manager_start () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#1  0x00007f174edbf9ac in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#2  0x000000000040576d in gnome_settings_plugin_info_activate ()
+No symbol table info available.
+#3  0x00000000004046f5 in _start ()
+No symbol table info available.

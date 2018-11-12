@@ -1,0 +1,20 @@
+#0  0x00007fc689917bf4 in g_file_make_directory_with_parents () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#1  0x0000000000654141 in library_files_generate_unique_file ()
+No symbol table info available.
+#2  0x00000000006545c9 in library_files_duplicate ()
+No symbol table info available.
+#3  0x00000000006058e5 in ?? ()
+No symbol table info available.
+#4  0x000000000047e178 in ?? ()
+No symbol table info available.
+#5  0x00007fc6891f4602 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007fc6891f3e05 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007fc688ad3e9a in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0
+No symbol table info available.
+#8  0x00007fc68880139d in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#9  0x0000000000000000 in ?? ()
+No symbol table info available.

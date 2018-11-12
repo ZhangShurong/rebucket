@@ -1,0 +1,20 @@
+#0  0x00007fe909d63bf4 in g_file_make_directory_with_parents () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#1  0x00007fe8ea84f152 in gcm_profile_store_search () from /usr/lib/gnome-settings-daemon-3.0/libcolor.so
+No symbol table info available.
+#2  0x00007fe8ea851815 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libcolor.so
+No symbol table info available.
+#3  0x00007fe909d8f44e in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#4  0x00007fe909d8f57c in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0x00007fe90981dcd5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007fe90981e008 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007fe90981e402 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007fe90a21fd45 in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#9  0x0000000000403861 in main ()
+No symbol table info available.

@@ -1,0 +1,52 @@
+#0  0x00007f8d1c4ec445 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f8d1c4efbab in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f8d1caf7f6d in g_assertion_message () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f8d1caf8492 in g_assertion_message_expr () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f8cfd8fbdd6 in gsd_wacom_device_set_current_stylus () from /usr/lib/gnome-settings-daemon-3.0/libgsdwacom.so
+No symbol table info available.
+#5  0x00007f8cfd8fc1cb in ?? () from /usr/lib/gnome-settings-daemon-3.0/libgsdwacom.so
+No symbol table info available.
+#6  0x00007f8d1cd9b6c4 in g_object_newv () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f8d1cd9bea6 in g_object_new_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007f8d1cd9c1b4 in g_object_new () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00007f8cfd8fb1b4 in gsd_wacom_device_new () from /usr/lib/gnome-settings-daemon-3.0/libgsdwacom.so
+No symbol table info available.
+#10 0x00007f8cfd8f7f9f in ?? () from /usr/lib/gnome-settings-daemon-3.0/libgsdwacom.so
+No symbol table info available.
+#11 0x00007f8d1cd94c82 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00007f8d1cda5d51 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007f8d1cdae079 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007f8d1cdae734 in g_signal_emit_by_name () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007f8d1b824cb4 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#16 0x00007f8d1b825957 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#17 0x00007f8d1b82f630 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#18 0x00007f8d1b82f16e in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#19 0x00007f8d1b805b61 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#20 0x00007f8d1b82ecd2 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#21 0x00007f8d1cad7c9a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0x00007f8d1cad8060 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#23 0x00007f8d1cad845a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#24 0x00007f8d1d49cedd in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#25 0x0000000000403801 in main ()
+No symbol table info available.

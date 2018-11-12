@@ -1,0 +1,42 @@
+#0  0x00007fd643f6f34c in ?? () from /usr/lib/libsyncdaemon-1.0.so.1
+No symbol table info available.
+#1  0x00007fd64f9b20a7 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#2  0x00007fd65dce2154 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x00007fd65dcf1f55 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007fd65dcf992b in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007fd65dcf9af2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007fd64f9b26e6 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#7  0x00007fd6562e8986 in dbus_connection_dispatch () from /lib/x86_64-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#8  0x00007fd64f9ab425 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#9  0x00007fd65da2758a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007fd65da27950 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007fd65da27a14 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fd65e1d67d4 in g_application_run () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#13 0x000000000042b200 in ?? ()
+No symbol table info available.
+#14 0x00007fd65cfa630d in __libc_start_main () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#15 0x000000000042b241 in ?? ()
+No symbol table info available.
+#16 0x00007fffd6f21d28 in ?? ()
+No symbol table info available.
+#17 0x000000000000001c in ?? ()
+No symbol table info available.
+#18 0x0000000000000001 in ?? ()
+No symbol table info available.
+#19 0x00007fffd6f22a3a in ?? ()
+No symbol table info available.
+#20 0x0000000000000000 in ?? ()
+No symbol table info available.

@@ -1,0 +1,34 @@
+#0  0x00007f28837a76c5 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f28837a1515 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f28761f21a7 in ?? () from /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#3  0x00007f28761f35e6 in ?? () from /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#4  0x00007f28775d6a02 in TfpTexture::bindTexImage(unsigned long const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x00007f28775d70ec in TfpTexture::enable(GLTexture::Filter) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x00007f28775e7211 in GLWindow::glDrawTexture(GLTexture*, GLMatrix const&, GLWindowPaintAttrib const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0x00007f28775e75bf in GLWindow::glDrawTexture(GLTexture*, GLMatrix const&, GLWindowPaintAttrib const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#8  0x00007f286b0dad5f in DecorWindow::glDecorate(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#9  0x00007f286b0e025a in DecorWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#10 0x00007f28775e7bd7 in GLWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#11 0x00007f2867deff9e in unity::MT::getLayoutForMask(unsigned int, unsigned int) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#12 0x00007fff117b4540 in ?? ()
+No symbol table info available.
+#13 0x0000000000000131 in ?? ()
+No symbol table info available.
+#14 0x0000000004000500 in ?? ()
+No symbol table info available.
+#15 0x01007f288403f2b8 in ?? ()
+No symbol table info available.
+#16 0x0000000000000000 in ?? ()
+No symbol table info available.

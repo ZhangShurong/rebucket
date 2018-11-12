@@ -1,0 +1,22 @@
+#0  0x00007f1c158c0db7 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#1  0x00007f1c158c158a in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#2  0x00007f1c158cde30 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#3  0x00007f1c158cd94f in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#4  0x00007f1c158a0fb1 in gdk_display_get_event () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#5  0x00007f1c158cd462 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#6  0x00007f1c15ef0cbd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f1c15ef14b8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f1c15ef19f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f1c170c50ad in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#10 0x00000000004036a2 in main ()
+No symbol table info available.

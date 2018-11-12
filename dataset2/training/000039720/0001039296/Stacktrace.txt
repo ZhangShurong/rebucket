@@ -1,0 +1,54 @@
+#0  0xb4b2f2eb in nux::GraphicsDisplay::StartDndDrag(nux::GraphicsDisplay::_DndSourceFuncs const&, void*) () from /usr/lib/libnux-graphics-3.0.so.0
+No symbol table info available.
+#1  0xb437a5c2 in nux::InputArea::StartDragAsSource() () from /usr/lib/libnux-3.0.so.0
+No symbol table info available.
+#2  0xb440f910 in nux::WindowCompositor::MouseEventCycle(nux::Event&) () from /usr/lib/libnux-3.0.so.0
+No symbol table info available.
+#3  0xb4410faf in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-3.0.so.0
+No symbol table info available.
+#4  0xb4415c8c in nux::WindowThread::DoProcessEvent(nux::Event&) () from /usr/lib/libnux-3.0.so.0
+No symbol table info available.
+#5  0xb44163a6 in nux::WindowThread::ProcessEvent(nux::Event&) () from /usr/lib/libnux-3.0.so.0
+No symbol table info available.
+#6  0xb43b9e0d in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-3.0.so.0
+No symbol table info available.
+#7  0xb7147f73 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0xb7148310 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0xb71483f1 in g_main_context_iteration () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0xb77715dc in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#11 0xb67761ef in ccsProcessEvents () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#12 0xb67b1b0b in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#13 0xb67b1ea0 in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CcpScreen>, boost::_bi::list1<boost::_bi::value<CcpScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#14 0xb7724543 in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#15 0xb7724601 in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#16 0xb77246f1 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompTimeoutSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#17 0xb772388f in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#18 0xb7244e21 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#19 0xb7147f73 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0xb7148310 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0xb714876b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0xb72462c3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#23 0xb76daa5a in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#24 0xb76daaa4 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#25 0x0804a3d2 in CompManager::run() ()
+No symbol table info available.
+#26 0x08049da5 in main ()
+No symbol table info available.

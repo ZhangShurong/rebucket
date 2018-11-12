@@ -1,0 +1,40 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x080845bc in PrivateWindow::processMap() ()
+No symbol table info available.
+#2  0x08093036 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#3  0x00977802 in PrivateCompositeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#4  0x0809299f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#5  0x0099e5e4 in PrivateGLScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x0809299f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#7  0x00ec4664 in RotateScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/librotate.so
+No symbol table info available.
+#8  0x0809299f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#9  0x00a10964 in MoveScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libmove.so
+No symbol table info available.
+#10 0x0809299f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#11 0x08072489 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#12 0x0809a060 in CompEventSource::callback() ()
+No symbol table info available.
+#13 0x00bf2959 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#14 0x008b6aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x008b7270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x008b792b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00bf3e95 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#18 0x0806ecbb in CompScreen::eventLoop() ()
+No symbol table info available.
+#19 0x08066e78 in main ()
+No symbol table info available.

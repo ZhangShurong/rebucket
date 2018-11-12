@@ -1,0 +1,27 @@
+#0  0x00c87c13 in g_variant_unref () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x002c8092 in g_settings_get_boolean () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x080693db in ?? ()
+No symbol table info available.
+#3  0x08061d04 in ?? ()
+No symbol table info available.
+#4  0x08060c40 in ?? ()
+No symbol table info available.
+#5  0x00c90cae in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00c4a81f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00c4af50 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00c4b55b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x008b4805 in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#10 0x080507ec in ?? ()
+No symbol table info available.
+#11 0x00ee4113 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#12 0x08050a8d in ?? ()
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

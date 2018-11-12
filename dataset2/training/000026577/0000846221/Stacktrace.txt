@@ -1,0 +1,16 @@
+#0  0x00007f9f103e7f49 in g_variant_unref () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f9f10b783db in g_settings_get_string () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x000000000043216b in deja_dup_convert_ssh_to_file ()
+No symbol table info available.
+#3  0x000000000043272d in deja_dup_initialize ()
+No symbol table info available.
+#4  0x00000000004519b1 in deja_dup_gui_initialize ()
+No symbol table info available.
+#5  0x000000000042726d in deja_dup_app_main ()
+No symbol table info available.
+#6  0x00007f9f0ffeb30d in __libc_start_main () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0x0000000000415989 in _start ()
+No symbol table info available.

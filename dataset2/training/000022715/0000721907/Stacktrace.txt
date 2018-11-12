@@ -1,0 +1,79 @@
+#0  0x00007fa1503bd1f6 in IconTexture::~IconTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007fa1503bd269 in IconTexture::~IconTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007fa14f64222b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#3  0x00007fa14f64241e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#4  0x00007fa1500843cd in nux::Layout::~Layout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x00007fa1500ed9b9 in nux::VLayout::~VLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x00007fa14f64222b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#7  0x00007fa14f64241e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#8  0x00007fa15007f0a9 in nux::View::RemoveLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#9  0x00007fa15007f31f in nux::View::~View() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#10 0x00007fa1503f6171 in PlacesSimpleTile::~PlacesSimpleTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007fa1503f6209 in PlacesSimpleTile::~PlacesSimpleTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007fa14f64222b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#13 0x00007fa14f64241e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#14 0x00007fa1500843cd in nux::Layout::~Layout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#15 0x00007fa150071999 in nux::GridHLayout::~GridHLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#16 0x00007fa14f64222b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#17 0x00007fa14f64241e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#18 0x00007fa1500834dc in nux::Layout::RemoveChildObject(nux::Area*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#19 0x00007fa1503f09e5 in PlacesGroup::~PlacesGroup() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#20 0x00007fa1503f0a99 in PlacesGroup::~PlacesGroup() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#21 0x00007fa14f64222b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#22 0x00007fa14f64241e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#23 0x00007fa1503f245a in PlacesResultsController::Clear() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#24 0x00007fa1503f93c9 in PlacesView::SetActiveEntry(PlaceEntry*, unsigned int, char const*, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0x00007fa150417789 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#26 0x00007fa15b921c1d in g_main_dispatch (context=0x184b700) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:2440
+        dispatch = 0x7fa15b91d520 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0x2535d40
+        callback = 0x7fa1504176c0
+        cb_funcs = 0x7fa15bbcc630
+        cb_data = 0x3ea6a50
+        current_source_link = {data = 0x4133600, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x4133600
+        current = 0x186c9a0
+        i = <value optimized out>
+#27 g_main_context_dispatch (context=0x184b700) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:3013
+No locals.
+#28 0x00007fa15b922408 in g_main_context_iterate (context=0x184b700, block=<value optimized out>, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:3091
+        max_priority = 200
+        timeout = 0
+        some_ready = 1
+        nfds = 18
+        allocated_nfds = <value optimized out>
+        fds = <value optimized out>
+#29 0x00007fa15b922a4a in g_main_loop_run (loop=0x184b990) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#30 0x0000000000429dca in CompScreen::eventLoop() ()
+No symbol table info available.
+#31 0x0000000000422e80 in main ()
+No symbol table info available.

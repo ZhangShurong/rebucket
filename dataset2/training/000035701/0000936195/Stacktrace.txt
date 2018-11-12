@@ -1,0 +1,102 @@
+#0  0x00007f6e846eab6a in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f6e846e47fc in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f6e779cff7a in ?? () from /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#3  0x00007f6e779d118e in ?? () from /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#4  0x00007f6e7cfac922 in TfpTexture::bindPixmapToTexture(unsigned long, int, int, int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x00007f6e7cfa9ed4 in boost::detail::function::function_invoker4<GLTexture::List (*)(unsigned long, int, int, int), GLTexture::List, unsigned long, int, int, int>::invoke(boost::detail::function::function_buffer&, unsigned long, int, int, int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x00007f6e7cfac524 in GLTexture::bindPixmapToTexture(unsigned long, int, int, int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0x00007f6e71fdac11 in DecorTexture::DecorTexture(unsigned long) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#8  0x00007f6e71fdad2a in DecorScreen::getTexture(unsigned long) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#9  0x00007f6e71fdaddf in Decoration::Decoration(int, _decor_extents const&, _decor_extents const&, _decor_extents const&, _decor_extents const&, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned long, boost::shared_array<_decor_quad> const&, unsigned int) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#10 0x00007f6e71fdb25f in Decoration::create(unsigned long, long*, unsigned int, unsigned int, unsigned int) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#11 0x00007f6e71fdb96a in DecorationList::updateDecoration(unsigned long, unsigned long) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#12 0x00007f6e71fdd1bd in DecorScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#13 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#14 0x00007f6e717686a9 in ResizeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libresize.so
+No symbol table info available.
+#15 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#16 0x00007f6e71541e75 in PlaceScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libplace.so
+No symbol table info available.
+#17 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#18 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#19 0x00007f6e7110378c in MoveScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libmove.so
+No symbol table info available.
+#20 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#21 0x00007f6e70ef355f in RegexScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#22 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#23 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#24 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#25 0x00007f6e6ecf3dc2 in FadeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libfade.so
+No symbol table info available.
+#26 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#27 0x00007f6e6eadbf8c in SessionScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsession.so
+No symbol table info available.
+#28 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#29 0x00007f6e6e404efd in WorkaroundsScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libworkarounds.so
+No symbol table info available.
+#30 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#31 0x00007f6e6e1da917 in PrivateScaleScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#32 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#33 0x00007f6e6dec61b3 in unity::UnityScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#34 0x00007f6e84f8ef63 in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#35 0x00007f6e84f6613a in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#36 0x00007f6e84f9b9e7 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#37 0x00007f6e834a66bf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#38 0x00007f6e82fb0bca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#39 0x00007f6e82fb0f90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#40 0x00007f6e82fb1054 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#41 0x00007f6e7f4b1c79 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#42 0x00007f6e80d7759e in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#43 0x00007f6e84fa442b in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#44 0x00007f6e84fa452f in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#45 0x00007f6e84fa39dd in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#46 0x00007f6e834a66bf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#47 0x00007f6e82fb0bca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#48 0x00007f6e82fb0f90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#49 0x00007f6e82fb138a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#50 0x000000000040299e in main ()
+No symbol table info available.

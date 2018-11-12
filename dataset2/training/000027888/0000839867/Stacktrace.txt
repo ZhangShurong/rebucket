@@ -1,0 +1,7 @@
+#0  0x03fe0d4d in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmedia-keys.so
+No symbol table info available.
+#1  0x00977172 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x05df8ff4 in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+Backtrace stopped: el marco anterior está dentro de este marco (¿pila dañada?)

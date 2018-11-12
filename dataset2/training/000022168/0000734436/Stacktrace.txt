@@ -1,0 +1,18 @@
+#0  0x00007f352adf3374 in pthread_mutex_lock () from /lib/libpthread.so.0
+No symbol table info available.
+#1  0x00007f352b4c0819 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x000000000042cc38 in ~RefPtr (this=0x10ccab0, __in_chrg=<value optimized out>) at /usr/include/glibmm-2.4/glibmm/refptr.h:207
+No locals.
+#3  PrivateScreen::~PrivateScreen (this=0x10ccab0, __in_chrg=<value optimized out>) at /build/buildd/compiz-0.9.4/src/screen.cpp:4781
+No locals.
+#4  0x000000000042ceb9 in PrivateScreen::~PrivateScreen (this=0x10ccab0, __in_chrg=<value optimized out>) at /build/buildd/compiz-0.9.4/src/screen.cpp:4783
+No locals.
+#5  0x000000000042af95 in CompScreen::~CompScreen (this=0x10cc9f0, __in_chrg=<value optimized out>) at /build/buildd/compiz-0.9.4/src/screen.cpp:4688
+        p = <value optimized out>
+#6  0x000000000042b0a9 in CompScreen::~CompScreen (this=0x10cc9f0, __in_chrg=<value optimized out>) at /build/buildd/compiz-0.9.4/src/screen.cpp:4691
+No locals.
+#7  0x0000000000422769 in CompManager::fini (this=<value optimized out>) at /build/buildd/compiz-0.9.4/src/main.cpp:259
+No locals.
+#8  0x0000000000422f68 in main (argc=<value optimized out>, argv=0x7fff07e95dc8) at /build/buildd/compiz-0.9.4/src/main.cpp:287
+        manager = {plugins = {<std::_List_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {_M_impl = {<std::allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<__gnu_cxx::new_allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x10cc9b0, _M_prev = 0x10cc9b0}}}, <No data fields>}, disableSm = false, clientId = 0x0, displayName = 0x0}

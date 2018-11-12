@@ -1,0 +1,44 @@
+#0  0xb2cae743 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libxsettings.so
+No symbol table info available.
+#1  0xb2caf604 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libxsettings.so
+No symbol table info available.
+#2  0xb703632d in g_cclosure_marshal_VOID__STRINGv () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0xb70339b1 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0xb704e2e7 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0xb704e923 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0xb712acde in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#7  0xb68f135a in ffi_call_SYSV () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#8  0xb68f108f in ffi_call () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#9  0xb70344fa in g_cclosure_marshal_generic_va () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0xb7032057 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0xb70339b1 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0xb704e2e7 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0xb704e923 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0xb712b5d9 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#15 0xb7126ab8 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#16 0xb6f70570 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0xb6f72a93 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0xb6f72e30 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0xb6f7328b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0xb736019d in gtk_main () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#21 0x0804abc9 in main ()
+No symbol table info available.

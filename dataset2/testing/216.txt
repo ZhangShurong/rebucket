@@ -1,0 +1,21 @@
+#0  0xb7f5b0f4 in _XEnq () from /usr/lib/libX11.so.6
+#1  0xb7f630c4 in ?? () from /usr/lib/libX11.so.6
+#2  0xb7f6339a in _XReply () from /usr/lib/libX11.so.6
+#3  0xb7f56667 in XSync () from /usr/lib/libX11.so.6
+#4  0x08054aa9 in compCheckForError ()
+#5  0x0805b689 in ?? ()
+#6  0x0805bc6d in addScreenAction ()
+#7  0x080767e7 in ?? ()
+#8  0x08076f12 in ?? ()
+#9  0x08077272 in compInitDisplayOptionFromMetadata ()
+#10 0x080772ee in compInitDisplayOptionsFromMetadata ()
+#11 0xb5d4ee18 in ?? () from /usr/lib/compiz/libswitcher.so
+#12 0xb5d4cd23 in ?? () from /usr/lib/compiz/libswitcher.so
+#13 0x080714ad in ?? ()
+#14 0x08053eaa in forEachDisplayObject ()
+#15 0x08071792 in ?? ()
+#16 0x08052bd3 in compObjectForEachType ()
+#17 0x080714d2 in ?? ()
+#18 0x0807163d in pushPlugin ()
+#19 0x08058763 in eventLoop ()
+#20 0x08052827 in main ()

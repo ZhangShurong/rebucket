@@ -1,0 +1,20 @@
+#0  __pthread_mutex_lock (mutex=0x894c02fa8328ec8b) at pthread_mutex_lock.c:50
+        __PRETTY_FUNCTION__ = "__pthread_mutex_lock"
+        type = <value optimized out>
+        id = <value optimized out>
+#1  0x00007fe9e13f39b9 in g_source_unref_internal (source=0x7fe9e18d38e0, context=0x894c02fa8328ec83, have_lock=0) at /build/buildd/glib2.0-2.27.93/glib/gmain.c:1671
+        old_cb_data = 0x0
+        old_cb_funcs = 0x0
+        __PRETTY_FUNCTION__ = "g_source_unref_internal"
+#2  0x000000000042cada in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#3  0x000000000042cd69 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#4  0x000000000042ae45 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#5  0x000000000042af59 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#6  0x0000000000422689 in CompManager::fini() ()
+No symbol table info available.
+#7  0x0000000000422f18 in main ()
+No symbol table info available.

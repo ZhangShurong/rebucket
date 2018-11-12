@@ -1,0 +1,48 @@
+#0  0x0072f770 in ?? () from /lib/libc.so.6
+No symbol table info available.
+#1  0x0020cddb in g_strdup () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00199e70 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x001759e4 in g_object_set_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00176206 in g_object_set () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x07ed2b50 in app_indicator_set_label () from /usr/lib/libappindicator.so.1
+No symbol table info available.
+#6  0x045d8e8c in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#7  0x045d96a9 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#8  0x0017ea1c in g_cclosure_marshal_VOID__VOID () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x0016f4b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x001880e5 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x0018975c in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00189a45 in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x02793417 in xkl_xkb_process_x_event () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#14 0x0278f263 in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#15 0x045d8787 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#16 0x00871523 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#17 0x00873e91 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#18 0x0087440f in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#19 0x001eb015 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#20 0x001eee28 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#21 0x001ef367 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#22 0x003ef749 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#23 0x0804b543 in main ()
+No symbol table info available.

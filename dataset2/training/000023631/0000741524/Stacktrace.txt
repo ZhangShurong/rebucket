@@ -1,0 +1,60 @@
+#0  0x00007f30a048cd05 in raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = 0
+        pid = <value optimised out>
+        selftid = 2332
+#1  0x00007f30a0490ab6 in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x4, sa_sigaction = 0x4}, sa_mask = {__val = {139846825532096, 139846783506632, 139846783506392, 139846783505664, 139846824491106, 206158430256, 139846783505704, 139846783505456, 139846148697104, 139846148697136, 139846148423712, 140733260610296, 139846825518778, 139846825522549, 3683, 17256928}}, sa_flags = 0, sa_restorer = 0x7f309dda95d8}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007f30a04d53e0 in __malloc_assert (bytes=4) at malloc.c:351
+No locals.
+#3  __libc_malloc (bytes=4) at malloc.c:3682
+        ar_ptr = 0x7f3098000020
+        victim = 0x7f30982917d0
+        hook = <value optimised out>
+        __func__ = "__libc_malloc"
+#4  0x00007f30a1884b21 in g_realloc () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f30a189fcd7 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f30a18a00fa in g_string_sized_new () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f30a289df19 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#8  0x00007f30a289e78b in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#9  0x00007f30a289ec90 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#10 0x00007f30a289e9f8 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#11 0x00007f30a289ea6d in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#12 0x00007f30a289ffd4 in g_dbus_message_new_from_blob () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#13 0x00007f30a28a90f5 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#14 0x00007f30a2857d49 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#15 0x00007f30a187dbcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007f30a187e3a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007f30a187e9f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f30a28a7d44 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#19 0x00007f30a18a53e4 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007f30a11a9d8c in start_thread (arg=0x7f309ddaa700) at pthread_create.c:304
+        pd = 0x7f309ddaa700
+        now = <value optimised out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {139846783510272, 7653603932036267389, 140733260604720, 139846783510976, 0, 3, -7757965423522480771, -7757923092341850755}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = 0
+        robust = <value optimised out>
+        sp = <value optimised out>
+        freesize = <value optimised out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#21 0x00007f30a053ef7d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:112
+No locals.
+#22 0x0000000000000000 in ?? ()
+No symbol table info available.

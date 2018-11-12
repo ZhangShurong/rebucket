@@ -1,0 +1,13 @@
+#0  rw_output_by_id (info=0x1af28, id=77) at randrwrap.c:122
+	output = <value optimized out>
+#1  0xb7f1f970 in screen_info_new (screen=<value optimized out>)
+    at randrwrap.c:606
+	info = (ScreenInfo *) 0x81d2f40
+#2  0xb7f1ff0b in rw_screen_new (gdk_screen=0x80710b0, 
+    callback=0x804cdb0 <on_screen_changed>, data=0x80771c0) at randrwrap.c:391
+	screen = (RWScreen *) 0x81d2ec8
+	dpy = (Display *) 0x8065578
+	event_base = 98
+	ignore = 173
+#3  0x0804cfea in main (argc=110376, argv=0xbf949c34) at xrandr-capplet.c:871
+	app = <value optimized out>

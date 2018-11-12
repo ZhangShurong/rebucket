@@ -1,0 +1,76 @@
+#0  0x00007f78a3e85c55 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f78a3e89a06 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f78a3e7e715 in __assert_fail () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f78a36c4dae in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#4  0x00007f78a36c5aec in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00007f78a3716893 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007f78a371695e in XkbGetUpdatedMap () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007f78a3716a3d in XkbGetMap () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007f7892dd059a in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#9  0x00007f7892dd06c0 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#10 0x00007f7892dd0c5c in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#11 0x00007f78a4905dea in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00007f78a491913b in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007f78a4922757 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007f78a4922922 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007f78a4be75a1 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#16 0x00007f78a19b7a14 in ffi_call_unix64 () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#17 0x00007f78a19b7435 in ffi_call () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#18 0x00007f78a4906357 in g_cclosure_marshal_generic () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x00007f78a4905dea in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x00007f78a4918f74 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x00007f78a49225e6 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x00007f78a4922922 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x00007f78a4be8267 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#24 0x00007f78a4be506b in g_settings_backend_changed_tree () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#25 0x00007f7897dfc72c in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#26 0x00007f78a4bb3a61 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#27 0x00007f78a4bfbdaf in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#28 0x00007f78a4bb3a61 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#29 0x00007f78a4bb3b9c in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#30 0x00007f78a423c5bd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#31 0x00007f78a423cdb8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x00007f78a423d2f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#33 0x00007f7897dfba0b in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#34 0x00007f78a4262086 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#35 0x00007f78a509bd8c in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0
+No symbol table info available.
+#36 0x00007f78a3f381dd in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#37 0x0000000000000000 in ?? ()
+No symbol table info available.

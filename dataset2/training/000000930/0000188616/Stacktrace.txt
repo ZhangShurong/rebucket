@@ -1,0 +1,260 @@
+#0  0xb79de9e6 in workaroundsRemoveFromFullscreenList (w=0x8b2d3f8) at workarounds.c:140
+	mfw = (WorkaroundsManagedFsWindow *) 0x0
+	wd = <value optimized out>
+#1  0xb79df841 in workaroundsHandleEvent (d=0x8085510, event=0xbfb5d108) at workarounds.c:559
+	w = (CompWindow *) 0x0
+	wd = (WorkaroundsDisplay *) 0x8292630
+#2  0xb77878be in resizeHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/resize.c:961
+	o = {{name = 0xb7a42a0c "\201ÃèÅ", type = 3216360888, value = {b = 6375, i = 6375, 
+      f = 8.93327771e-42, s = 0x18e7 <Address 0x18e7 out of bounds>, c = {6375, 0, 1, 0}, action = {
+        initiate = 0x18e7, terminate = 0x1, state = 3085020556, type = 3080983857, key = {
+          keycode = -1212297228, modifiers = 134770504}, button = {button = 0, modifiers = 3216360936}, 
+        bell = -1212241255, edgeMask = 0, priv = {ptr = 0x80000000, val = -2147483648, uval = 2147483648, 
+          fptr = 0x80000000}}, match = {display = 0x18e7, op = 0x1, nOp = -1209946740}, list = {type = 6375, 
+        value = 0x1, nValue = -1209946740}}, rest = {i = {min = -1078605916, max = -1216834724}, f = {
+        min = -1.42015505, max = -1.48162617e-05, precision = 1.07681895e-33}}}, {name = 0x0, 
+    type = 3216361000, value = {b = -1216848067, i = -1216848067, f = -1.48041263e-05, 
+      s = 0xb7785f3d "\213N\f\213uà\213\221\\-", c = {24381, 46968, 0, 0}, action = {
+        initiate = 0xb7785f3d <resizeDamageWindowRect+109>, terminate = 0, state = 2147483648, 
+        type = 3216361380, key = {keycode = -1212297228, modifiers = 134770504}, button = {
+          button = -1213978100, modifiers = 0}, bell = 1072693248, edgeMask = 0, priv = {ptr = 0x3efeb000, 
+          val = 1056878592, uval = 1056878592, fptr = 0x3efeb000}}, match = {display = 0xb7785f3d, op = 0x0, 
+        nOp = -2147483648}, list = {type = 3078119229, value = 0x0, nValue = -2147483648}}, rest = {i = {
+        min = -1078606232, max = -1212238189}, f = {min = -1.42011738, max = -2.27347828e-05, 
+        precision = 1.51218894e+33}}}, {name = 0x3ec20e8d <Address 0x3ec20e8d out of bounds>, 
+    type = CompOptionTypeBool, value = {b = 1072955392, i = 1072955392, f = 1.90625, 
+      s = 0x3ff40000 <Address 0x3ff40000 out of bounds>, c = {0, 16372, 52928, 2115}, action = {
+        initiate = 0x3ff40000, terminate = 0x843cec0, state = 145944776, type = CompBindingTypeNone, key = {
+          keycode = 1072955392, modifiers = 0}, button = {button = 1056878592, modifiers = 3216361064}, 
+        bell = -1220260452, edgeMask = 138661568, priv = {ptr = 0x8b2f0c8, val = 145944776, 
+          uval = 145944776, fptr = 0x8b2f0c8}}, match = {display = 0x3ff40000, op = 0x843cec0, 
+        nOp = 145944776}, list = {type = 1072955392, value = 0x843cec0, nValue = 145944776}}, rest = {i = {
+        min = 1989483780, max = 1052905101}, f = {min = 1.51218894e+33, max = 0.379017264, 
+        precision = 1.07681895e-33}}}, {name = 0xb744a184 "\bð\001", type = 3216361176, value = {
+      b = -1220259929, i = -1220259929, f = -1.17010559e-05, 
+      s = 0xb7444fa7 "\213E\024Ù\030\203Ä\\[^_]Ã\213E\030\205Àu\202\213E\b\211úÝ]¨èhýÿÿÙ]ÜÙ\203ÄæÿÿÙEÜÚéßà\236\017\206`ÿÿÿÝEÀÜ\213¤æÿÿØ\213ÜãÿÿÝ\034$èN©þÿ\215\203´æÿÿÝEÈÙ]äÙEäÞÉÝE¨Ü \215\203¼æÿÿÜ0\215\203\234æÿÿÜ\bÜ\203¬æÿÿÙ]äÙEäÞÉÙ]äÙEäÝ\203\\ÓÿÿÝEÀÚéßà\236\017\206\212", c = {20391, 46916, 0, 0}, action = {
+        initiate = 0xb7444fa7 <fxZoomAnimProgress+503>, terminate = 0, state = 1056878592, 
+        type = CompBindingTypeNone, key = {keycode = 1072955392, modifiers = 2250248838}, button = {
+          button = 1062412505, modifiers = 3216361380}, bell = -1078606068, edgeMask = 1331754462, priv = {
+          ptr = 0x3f55a5a8, val = 1062577576, uval = 1062577576, fptr = 0x3f55a5a8}}, match = {
+        display = 0xb7444fa7, op = 0x0, nOp = 1056878592}, list = {type = 3074707367, value = 0x0, 
+        nValue = 1056878592}}, rest = {i = {min = -1, max = 65535}, f = {min = -nan(0x7fffff), 
+        max = 9.18340949e-41, precision = 1}}}, {name = 0x3f800000 <Address 0x3f800000 out of bounds>, 
+    type = CompOptionTypeBool, value = {b = 0, i = 0, f = 0, s = 0x0, c = {0, 0, 65045, 16255}, action = {
+        initiate = 0, terminate = 0x3f7ffe15, state = 145945140, type = 145945084, key = {
+          keycode = -1216873236, modifiers = 136427960}, button = {button = 137899920, 
+          modifiers = 3216361240}, bell = -1216884469, edgeMask = 136899080, priv = {ptr = 0x828ebc8, 
+          val = 136899528, uval = 136899528, fptr = 0x828ebc8}}, match = {display = 0x0, op = 0x3f7ffe15, 
+        nOp = 145945140}, list = {type = CompOptionTypeBool, value = 0x3f7ffe15, nValue = 145945140}}, 
+    rest = {i = {min = -1078605236, max = 136899880}, f = {min = -1.42023611, max = 5.08344369e-34, 
+        precision = 0}}}, {name = 0x8b2f200 "", type = 138030472, value = {b = -1220238972, i = -1220238972, 
+      f = -1.17201162e-05, s = 0xb744a184 "\bð\001", c = {41348, 46916, 47544, 2081}, action = {
+        initiate = 0xb744a184 <_fini+18416>, terminate = 0x821b9b8, state = 145943248, type = 3081755777, 
+        key = {keycode = -1220260583, modifiers = 3216361284}, button = {button = -1078606012, 
+          modifiers = 3081753297}, bell = -1220238972, edgeMask = 136427960, priv = {ptr = 0x868ec58, 
+          val = 141093976, uval = 141093976, fptr = 0x868ec58}}, match = {display = 0xb744a184, 
+        op = 0x821b9b8, nOp = 145943248}, list = {type = 3074728324, value = 0x821b9b8, 
+        nValue = 145943248}}, rest = {i = {min = -1078605912, max = -1220328982}, f = {min = -1.42015553, 
+        max = -1.16382525e-05, precision = 5.08307635e-34}}}}
+	w = (CompWindow *) 0x829f8a8
+	s = (CompScreen *) 0x0
+	rd = (ResizeDisplay *) 0x829f8a8
+	mask = {5, 1, 9, 8, 10, 2, 6, 4}
+#3  0xb7552dd4 in shiftHandleEvent (d=0x8085510, event=0xbfb5d108) at shift.c:2199
+	sd = (ShiftDisplay *) 0x82a3ee8
+	s = <value optimized out>
+#4  0xb777e626 in moveHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/move.c:714
+	o = {{name = 0xb7bdcff4 "\234­\024", type = 3082674496, value = {b = 32, i = 32, f = 4.48415509e-44, 
+      s = 0x20 <Address 0x20 out of bounds>, c = {32, 0, 53236, 47037}, action = {initiate = 0x20, 
+        terminate = 0xb7bdcff4, state = 146182272, type = 144651688, key = {keycode = -1221975220, 
+          modifiers = 136427960}, button = {button = 141919008, modifiers = 3216361608}, bell = -1221996213, 
+        edgeMask = 136899080, priv = {ptr = 0x828ebc8, val = 136899528, uval = 136899528, 
+          fptr = 0x828ebc8}}, match = {display = 0x20, op = 0xb7bdcff4, nOp = 146182272}, list = {type = 32, 
+        value = 0xb7bdcff4, nValue = 146182272}}, rest = {i = {min = -1078605236, max = 136899880}, f = {
+        min = -1.42023611, max = 5.08344369e-34, precision = 0}}}, {
+    name = 0x89ec140 "øÿ\n\005\037\003*\003øÿ\n\005\037\003*\003", type = 40, value = {b = 24, i = 24, 
+      f = 3.36311631e-44, s = 0x18 <Address 0x18 out of bounds>, c = {24, 0, 24, 0}, action = {
+        initiate = 0x18, terminate = 0x18, state = 144621888, type = 144621896, key = {keycode = 144651680, 
+          modifiers = 3082674516}, button = {button = -1212297228, modifiers = 3082558940}, 
+        bell = -1222036672, edgeMask = 144166688, priv = {ptr = 0x821b9b8, val = 136427960, 
+          uval = 136427960, fptr = 0x821b9b8}}, match = {display = 0x18, op = 0x18, nOp = 144621888}, 
+      list = {type = 24, value = 0x18, nValue = 144621888}}, rest = {i = {min = -1078605448, 
+        max = -1222050176}, f = {min = -1.42021084, max = -1.00728357e-05, precision = 5.08307635e-34}}}, {
+    name = 0x828ebc8 "ÿÿÿÿÿÿ", type = 3216362060, value = {b = 136899880, i = 136899880, f = 5.08344369e-34, 
+      s = 0x828ed28 "\027", c = {60712, 2088, 0, 0}, action = {initiate = 0x828ed28, terminate = 0, 
+        state = 40, type = 146182264, key = {keycode = 26, modifiers = 1}, button = {button = 143276384, 
+          modifiers = 3082674496}, bell = 144651688, edgeMask = 3216361720, priv = {ptr = 0xb7b013e0, 
+          val = -1213197344, uval = 3081769952, fptr = 0xb7b013e0 <free+144>}}, match = {
+        display = 0x828ed28, op = 0x0, nOp = 40}, list = {type = 136899880, value = 0x0, nValue = 40}}, 
+    rest = {i = {min = -1212292800, max = 144651688}, f = {min = -2.26354459e-05, max = 9.58207893e-34, 
+        precision = -2.26273914e-05}}}, {name = 0x0, type = 3082674496, value = {b = 144651680, 
+      i = 144651680, f = 9.58207159e-34, s = 0x89f35a0 "\021", c = {13728, 2207, 64413, 47023}, action = {
+        initiate = 0x89f35a0, terminate = 0xb7affb9d <malloc+141>, state = 3082674496, type = 8, key = {
+          keycode = -1221989426, modifiers = 136821800}, button = {button = 0, modifiers = 3216361816}, 
+        bell = -1221975220, edgeMask = 3072992076, priv = {ptr = 0x0, val = 0, uval = 0, fptr = 0}}, 
+      match = {display = 0x89f35a0, op = 0xb7affb9d, nOp = -1212292800}, list = {type = 144651680, 
+        value = 0xb7affb9d, nValue = -1212292800}}, rest = {i = {min = -1078605448, max = -1221989030}, f = {
+        min = -1.42021084, max = -1.01284477e-05, precision = 4.86674865e-34}}}}
+	xRoot = 144651704
+	yRoot = 136459864
+	w = (CompWindow *) 0x8b43928
+	s = (CompScreen *) 0xb7afd2d1
+	md = (MoveDisplay *) 0x8382f90
+#5  0xb777a571 in regexHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/regex.c:304
+	rd = (RegexDisplay *) 0x83b9108
+#6  0xb773c50d in decorHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/decoration.c:995
+	activeWindow = 58720385
+	w = <value optimized out>
+	dd = (DecorDisplay *) 0x83ac9e0
+#7  0xb747b5c9 in infoHandleEvent (d=0x8085510, event=0xbfb5d108) at resizeinfo.c:534
+	id = (InfoDisplay *) 0x83e22c0
+#8  0xb74367cd in animHandleEvent (d=0x8085510, event=0xbfb5d108) at animation.c:3758
+	tmpSteps = <value optimized out>
+	duration = 136427960
+	chosenEffect = 145937400
+	as = (AnimScreen *) 0x0
+	w = (CompWindow *) 0x807d610
+	ad = (AnimDisplay *) 0x8417e40
+#9  0xb7429597 in wobblyHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/wobbly.c:2155
+	activeWindow = 58720385
+	w = (CompWindow *) 0x8085510
+	s = <value optimized out>
+	wd = (WobblyDisplay *) 0x86b7618
+#10 0xb7421135 in snapHandleEvent (d=0x8085510, event=0xb7bde148) at snap.c:777
+	sd = (SnapDisplay *) 0x869c2a0
+#11 0xb741ce5e in fadeHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/fade.c:537
+	w = (CompWindow *) 0xb7bde148
+	fd = (FadeDisplay *) 0x871b990
+#12 0xb72987a6 in rotateHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/rotate.c:1616
+	s = (CompScreen *) 0x8085510
+	rd = (RotateDisplay *) 0x87c0e50
+#13 0xb729232e in scaleHandleEvent (d=0x8085510, event=0xbfb5d108) at ../../plugins/scale.c:1820
+	s = (CompScreen *) 0x8
+	sd = (ScaleDisplay *) 0x88af4b0
+#14 0xb7282a56 in scalefilterHandleEvent (d=0x8085510, event=0xbfb5d108) at scalefilter.c:608
+	fd = (ScaleFilterDisplay *) 0x88a4590
+#15 0xb722fa84 in scaleaddonHandleEvent (d=0x8085510, event=0xbfb5d108) at scaleaddon.c:556
+	ad = (ScaleAddonDisplay *) 0x89a2f58
+#16 0x08057ccc in eventLoop () at ../../src/display.c:1640
+	event = {type = 17, xany = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, 
+    window = 90}, xkey = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, window = 90, 
+    root = 56623374, subwindow = 2793457, time = 0, x = 2792624, y = 0, x_root = 1441820, y_root = 66606, 
+    state = 1441820, keycode = 4, same_screen = 1}, xbutton = {type = 17, serial = 557706, send_event = 0, 
+    display = 0x8086a08, window = 90, root = 56623374, subwindow = 2793457, time = 0, x = 2792624, y = 0, 
+    x_root = 1441820, y_root = 66606, state = 1441820, button = 4, same_screen = 1}, xmotion = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, window = 90, root = 56623374, subwindow = 2793457, 
+    time = 0, x = 2792624, y = 0, x_root = 1441820, y_root = 66606, state = 1441820, is_hint = 4 '\004', 
+    same_screen = 1}, xcrossing = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, 
+    window = 90, root = 56623374, subwindow = 2793457, time = 0, x = 2792624, y = 0, x_root = 1441820, 
+    y_root = 66606, mode = 1441820, detail = 4, same_screen = 1, focus = 1, state = 0}, xfocus = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, window = 90, mode = 56623374, detail = 2793457}, 
+  xexpose = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, window = 90, x = 56623374, 
+    y = 2793457, width = 0, height = 2792624, count = 0}, xgraphicsexpose = {type = 17, serial = 557706, 
+    send_event = 0, display = 0x8086a08, drawable = 90, x = 56623374, y = 2793457, width = 0, 
+    height = 2792624, count = 0, major_code = 1441820, minor_code = 66606}, xnoexpose = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, drawable = 90, major_code = 56623374, 
+    minor_code = 2793457}, xvisibility = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, 
+    window = 90, state = 56623374}, xcreatewindow = {type = 17, serial = 557706, send_event = 0, 
+    display = 0x8086a08, parent = 90, window = 56623374, x = 2793457, y = 0, width = 2792624, height = 0, 
+    border_width = 1441820, override_redirect = 66606}, xdestroywindow = {type = 17, serial = 557706, 
+    send_event = 0, display = 0x8086a08, event = 90, window = 56623374}, xunmap = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, event = 90, window = 56623374, 
+    from_configure = 2793457}, xmap = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, 
+    event = 90, window = 56623374, override_redirect = 2793457}, xmaprequest = {type = 17, serial = 557706, 
+    send_event = 0, display = 0x8086a08, parent = 90, window = 56623374}, xreparent = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, event = 90, window = 56623374, parent = 2793457, 
+    x = 0, y = 2792624, override_redirect = 0}, xconfigure = {type = 17, serial = 557706, send_event = 0, 
+    display = 0x8086a08, event = 90, window = 56623374, x = 2793457, y = 0, width = 2792624, height = 0, 
+    border_width = 1441820, above = 66606, override_redirect = 1441820}, xgravity = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, event = 90, window = 56623374, x = 2793457, 
+    y = 0}, xresizerequest = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, window = 90, 
+    width = 56623374, height = 2793457}, xconfigurerequest = {type = 17, serial = 557706, send_event = 0, 
+    display = 0x8086a08, parent = 90, window = 56623374, x = 2793457, y = 0, width = 2792624, height = 0, 
+    border_width = 1441820, above = 66606, detail = 1441820, value_mask = 4}, xcirculate = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, event = 90, window = 56623374, place = 2793457}, 
+  xcirculaterequest = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, parent = 90, 
+    window = 56623374, place = 2793457}, xproperty = {type = 17, serial = 557706, send_event = 0, 
+    display = 0x8086a08, window = 90, atom = 56623374, time = 2793457, state = 0}, xselectionclear = {
+    type = 17, serial = 557706, send_event = 0, display = 0x8086a08, window = 90, selection = 56623374, 
+    time = 2793457}, xselectionrequest = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, 
+    owner = 90, requestor = 56623374, selection = 2793457, target = 0, property = 2792624, time = 0}, 
+  xselection = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, requestor = 90, 
+    selection = 56623374, target = 2793457, property = 0, time = 2792624}, xcolormap = {type = 17, 
+    serial = 557706, send_event = 0, display = 0x8086a08, window = 90, colormap = 56623374, new = 2793457, 
+    state = 0}, xclient = {type = 17, serial = 557706, send_event = 0, display = 0x8086a08, window = 90, 
+    message_type = 56623374, format = 2793457, data = {
+      b = "\000\000\000\000°\234*\000\000\000\000\000\034\000\026\000.\004\001", s = {0, 0, -25424, 42, 0, 
+        0, 28, 22, 1070, 1}, l = {0, 2792624, 0, 1441820, 66606}}}, xmapping = {type = 17, serial = 557706, 
+    send_event = 0, display = 0x8086a08, window = 90, request = 56623374, first_keycode = 2793457, 
+    count = 0}, xerror = {type = 17, display = 0x8828a, resourceid = 0, serial = 134769160, 
+    error_code = 90 'Z', request_code = 0 '\0', minor_code = 0 '\0'}, xkeymap = {type = 17, serial = 557706, 
+    send_event = 0, display = 0x8086a08, window = 90, 
+    key_vector = "\016\001`\003ñ\237*\000\000\000\000\000°\234*\000\000\000\000\000\034\000\026\000.\004\001\000\034\000\026"}, pad = {17, 557706, 0, 134769160, 90, 56623374, 2793457, 0, 2792624, 0, 1441820, 66606, 
+    1441820, 4, 1, 1, 0, 0, 0, 1281, 135917992, 135918176, 135918288, 135918352}}
+	timeDiff = <value optimized out>
+	tv = {tv_sec = 1202043064, tv_usec = 257855}
+	d = (CompDisplay *) 0x8085510
+	s = (CompScreen *) 0x0
+	w = <value optimized out>
+	time = <value optimized out>
+	timeToNextRedraw = 32767
+	damageMask = 0
+	mask = <value optimized out>
+#17 0x080528cc in main (argc=7, argv=0xbfb5d674) at ../../src/main.c:442
+	size = <value optimized out>
+	ctx = {offset = 4212, pluginData = 0x807a008 "°'ä·", textureFilterData = 0x0, refreshRateData = 0x0}
+	displayName = 0x0
+	plugin = {0xbfb5dc3c "ccp", 0x1 <Address 0x1 out of bounds>, 0x371 <Address 0x371 out of bounds>, 
+  0xb7a2f5e0 "ªÓ£·\020ii\r", 0xb7c68550 "", 0xb7a3c24b "strstr", 0xb7a9ea8c "", 0xb7a3b068 "£", 
+  0x1 <Address 0x1 out of bounds>, 0xb7f38ff4 "(¯\001", 0xbfb5d2a8 "Ì\223©·P\205Æ·", 0xb7a521b8 "Ä\227ó·", 
+  0xbfb5d2c4 "\004Óµ¿)´ò·¸!¥·àõ¢·\001", 0xb7f2722a "\203ø", 0xb7a3b068 "£", 0xbfb5d2a8 "Ì\223©·P\205Æ·", 
+  0xb7f397c4 "(É\"\b)", 0x11 <Address 0x11 out of bounds>, 0xb7a2f5e0 "ªÓ£·\020ii\r", 
+  0x1 <Address 0x1 out of bounds>, 0x0, 0x1 <Address 0x1 out of bounds>, 0x0, 0x0, 
+  0xbfb5d24c "äÕµ¿#\022ò· \222ó· \230ó·", 0x0, 0xb7a2e6b0 "°æ¢·(ë¢·°æ¢·", 0xb7f1e700 "h®\001", 
+  0x88 <Address 0x88 out of bounds>, 0xbfb5d2b4 "ÿÿÿÿô\217ó·h°£·", 0xbfb5d2f4 "Ì\223©·", 0xb7a52000 "", 
+  0xb7a3c24b "strstr", 0x1c93db57 <Address 0x1c93db57 out of bounds>, 0x0, 0x0, 0xb7f38ff4 "(¯\001", 
+  0xbfb5d5e4 "\020V\a\bHÖµ¿P\204ª·\a", 0xb7f21223 "\215eô[^_]Ã\220\215t&", 0xb7f392a0 "", 
+  0xb7f39820 "Ä\227ó·", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8079000 "ÿÿÿÿ", 0xb7f1d460 "\006", 
+  0xb7f395c8 "4\201\004\b´\225ó·", 0xb7a3e340 "U\211å\203ì\020\211]ô\211uø\211}üè¼þÿÿ\201Ã \f\001", 
+  0x10000004 <Address 0x10000004 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xb7a993cc "­H", 
+  0xb7c68550 "", 0x0, 0xffffffff <Address 0xffffffff out of bounds>, 0xb7f38ff4 "(¯\001", 0xb7a3b068 "£", 
+  0xb7a52000 "", 0xbfb5d304 "àÕµ¿z\232¤·|\232¤·\001Ôµ¿¬æ¢·8Óµ¿àÕµ¿\201ç£·ûÓµ¿y\232¤·", 
+  0xb7f2b429 "\203ì\024\211Æe¡\f", 0xb7a521b8 "Ä\227ó·", 0xb7a2f5e0 "ªÓ£·\020ii\r", 
+  0x1 <Address 0x1 out of bounds>, 0x1 <Address 0x1 out of bounds>, 0x0, 0xb7a3c24b "strstr", 
+  0x33 <Address 0x33 out of bounds>, 0xb7a3a000 <Address 0xb7a3a000 out of bounds>, 
+  0x150b4 <Address 0x150b4 out of bounds>, 0x1 <Address 0x1 out of bounds>, 0xb7a993cc "­H", 
+  0xb7a4ef00 "¬Ì¤·õþÿot¡£·\005", 0x4d <Address 0x4d out of bounds>, 0x0, 
+  0xbfb5d5e0 "à\214ó·\020V\a\bHÖµ¿P\204ª·\a", 0xb7a49a7a "MP", 0xb7a49a7c "", 
+  0xbfb5d401 " Thu Jan 24 19:45:21 UTC 2008", 0xb7a2e6ac "", 0xbfb5d338 "Linux", 
+  0xbfb5d5e0 "à\214ó·\020V\a\bHÖµ¿P\204ª·\a", 0xb7a3e781 "\205À\017\225À\017¶À\211\203À!", 
+  0xbfb5d3fb "#1 SMP Thu Jan 24 19:45:21 UTC 2008", 0xb7a49a79 "SMP", 0x0, 0xbfb5d53c "", 0x0, 
+  0x756e694c <Address 0x756e694c out of bounds>, 0x78 <Address 0x78 out of bounds>, 0x0 <repeats 14 times>, 
+  0x61694e00 <Address 0x61694e00 out of bounds>, 0x6874 <Address 0x6874 out of bounds>, 
+  0x0 <repeats 14 times>, 0x2e320000 <Address 0x2e320000 out of bounds>, 
+  0x34322e36 <Address 0x34322e36 out of bounds>, 0x672d352d <Address 0x672d352d out of bounds>, 
+  0x72656e65 <Address 0x72656e65 out of bounds>, 0x6369 <Address 0x6369 out of bounds>, 
+  0x0 <repeats 11 times>, 0x23000000 <Address 0x23000000 out of bounds>, 
+  0x4d532031 <Address 0x4d532031 out of bounds>, 0x68542050 <Address 0x68542050 out of bounds>, 
+  0x614a2075 <Address 0x614a2075 out of bounds>, 0x3432206e <Address 0x3432206e out of bounds>, 
+  0x3a393120 <Address 0x3a393120 out of bounds>, 0x323a3534 <Address 0x323a3534 out of bounds>, 
+  0x54552031 <Address 0x54552031 out of bounds>, 0x30322043 <Address 0x30322043 out of bounds>, 
+  0x3830 <Address 0x3830 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
+  0x36383669 <Address 0x36383669 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x804fd15 "GLIBC_2.1", 
+  0xd696910 <Address 0xd696910 out of bounds>, 0xb7a52808 "\vý\004\b\020ii\r", 0xbfb5d4a0 "\024Õµ¿Ypò·", 
+  0xb7f26c9b "\205À\017\204fÿÿÿ\213G\b\205À\017\205Tÿÿÿ\205ö\017\205Lÿÿÿf\203}ä", 0xb7aa418a "GLIBC_2.0", 
+  0x804fd0b "GLIBC_2.0", 0xb7c68508 ".so.6", 0xb7c684f8 "\004\205Æ·", 0xb7a9e27c "±+", 0xbfb50002 "", 
+  0xb7f2c259 "\205Àuç\203Ä\b¸\001", 0x804dc4c "libc.so.6", 0xb7c68504 "libm.so.6", 0xb7f38ff4 "(¯\001", 
+  0xbfb5d4e0 "", 0xb7a527b4 "P\205Æ·ø\207Æ·\230\212Æ·h\215Æ·HÐ§·àÒ§·(Ö§·¸Ù§·¸Ü§·", 
+  0xbfb5d514 "ðÕµ¿*rò·P¦\004\bÔÕµ¿Ä\227ó·\021", 
+  0xb7f27059 "\205À\017\205°þÿÿ\213M¼\213\021ë²\213Uä1É\211UÀ\017¶\002\204À\017\204\237", 0x0, 0x0, 0x0, 
+  0x0, 0xb7f355bc "symbol=%s;  lookup in file=%s [%lu]\n", 0xbfb5d4e0 "", 
+  0xbfb5d5e0 "à\214ó·\020V\a\bHÖµ¿P\204ª·\a", 0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 
+  0x1d <Address 0x1d out of bounds>, 0xb7a95cbc "", 
+  0xb7a95ab8 "/N=öÎ\030L\017ùÄ-×\204\"\233|øÔ\217Ó\205\"\233|ìûÀ=°\"\225Ã8Ç\031uÿ\001Ä\022ÉBY\020ÜÏìµ¶w\035\rGÞÍ%µV1ýÇr1\035\a;úL\214\t)\020\t~\222\0348µï0jÝù{\004\\H±Ô¡\034 \002êÙ\0179µï0X?\227|\030\034sìT\200ÌsÙ\202c\002;H\205\0336\rfý2vàÕ¨§Ká¼\234#\217Ö\036h\233£\230Ëò\234\002Y1\n´\006ß½èe\235J\032\223¨Pµ¨\020\205)%~\016|\030¹Ñ8\a\221\222þ\206ï¦:VÓñIµ$\202¡7äQhoìð¤\017l"..., 0x0, 0x0, 0x0, 0x0, 0x0, 0x1 <Address 0x1 out of bounds>, 
+  0x85c <Address 0x85c out of bounds>, 0xb7a52808 "\vý\004\b\020ii\r", 0xb7c68550 "", 
+  0x804ddf9 "__libc_start_main"...}
+	i = 7
+	nPlugin = 1
+	disableSm = 0
+	clientId = 0xbfb5dc33 "default0"
+	refreshRateArg = 0x0

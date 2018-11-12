@@ -1,0 +1,19 @@
+#0  0x007d7416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00f8cc8f in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00f902b5 in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00fc2dfc in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00fcdbc2 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x00fcf55e in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00fd1498 in malloc () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0xb6cf40df in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#8  0xb60360ba in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

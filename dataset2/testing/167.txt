@@ -1,0 +1,52 @@
+#0  0xb78db424 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0xb6ed0c8f in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0xb6ed42b5 in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0xb6f06dfc in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0xb6f11bc2 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0xb6f1201f in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0xb6f12737 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0xb6f1594d in free () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#8  0xb70ea80f in operator delete(void*) () from /usr/lib/i386-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#9  0xb4c0516a in PrivateScaleWindow::~PrivateScaleWindow() () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#10 0xb4c02e90 in ScaleWindow::~ScaleWindow() () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#11 0xb4c02fa2 in ScaleWindow::~ScaleWindow() () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#12 0xb4c0f9d7 in CompPlugin::VTableForScreenAndWindow<ScaleScreen, ScaleWindow>::finiWindow(CompWindow*) () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#13 0x0809e3fc in CompScreen::finiPluginForScreen(CompPlugin*) ()
+No symbol table info available.
+#14 0x0809e12d in CompManager::finiPlugin(CompPlugin*) ()
+No symbol table info available.
+#15 0x0809fb31 in CompPlugin::pop() ()
+No symbol table info available.
+#16 0x08074cad in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#17 0x080756f4 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#18 0x080a3058 in CompEventSource::callback() ()
+No symbol table info available.
+#19 0xb7291111 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#20 0xb719625f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0xb7196990 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0xb7196f9b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#23 0xb7292753 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#24 0x08072497 in CompScreen::eventLoop() ()
+No symbol table info available.
+#25 0x08065634 in main ()
+No symbol table info available.

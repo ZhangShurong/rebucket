@@ -1,0 +1,19 @@
+#0  0xb7853424 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0xb72388a0 in raise (sig=11) at ../nptl/sysdeps/unix/sysv/linux/pt-raise.c:42
+        resultvar = <value optimized out>
+        resultvar = <value optimized out>
+        pid = <value optimized out>
+#2  0xb5b65bf3 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#3  0xb722fe99 in start_thread (arg=0xb2235b70) at pthread_create.c:304
+        pd = 0xb2235b70
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {-1222377484, 0, 4001536, -1306307592, -1365001783, -1376171069}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <value optimized out>
+        robust = <value optimized out>
+        pagesize_m1 = <value optimized out>
+        sp = <value optimized out>
+        freesize = <value optimized out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#4  0xb706773e in clone () at ../sysdeps/unix/sysv/linux/i386/clone.S:130
+No locales.

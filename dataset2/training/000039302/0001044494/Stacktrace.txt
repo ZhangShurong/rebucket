@@ -1,0 +1,18 @@
+#0  0x00007fd48fb67d9e in unity::dash::ResultRendererTile::LoadIcon(unity::dash::Result&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007fd48fb6830e in unity::dash::ResultRendererTile::Preload(unity::dash::Result&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007fd48fb6cb41 in unity::dash::ResultViewGrid::DoLazyLoad() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007fd48e11fdb1 in unity::glib::Source::SourceCallback(void*) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#4  0x00007fd4abc8a93b in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007fd4abc89db5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007fd4abc8a0e8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007fd4abc8a4e2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x000000000040270b in main ()
+No symbol table info available.

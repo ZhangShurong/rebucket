@@ -1,0 +1,75 @@
+#0  0x00203416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x0046edd1 in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x004722ae in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x004677e8 in __assert_fail () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00bd07fd in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00bcbf06 in XSync () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x02b3fe37 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#7  0x02b402af in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#8  0x0011e8fa in g_cclosure_marshal_VOID__STRING () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x0011c956 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00130e80 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x00139b4f in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00139cc3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x002a0d8e in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#14 0x001fe35a in ffi_call_SYSV () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#15 0x001fe08f in ffi_call () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#16 0x0011cede in g_cclosure_marshal_generic () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x0011b47d in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x0011c956 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x00130cc8 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x00139a01 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x00139cc3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x002a1bbc in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#23 0x0029e25c in g_settings_backend_changed_tree () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#24 0x06871110 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#25 0x002673a2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#26 0x002b7082 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#27 0x002673a2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#28 0x002674dc in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#29 0x00389c30 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#30 0x0038de1f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#31 0x0038e550 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x0038eb5b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#33 0x06870294 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#34 0x003b5444 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#35 0x00b7fe99 in start_thread () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#36 0x005146de in clone () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

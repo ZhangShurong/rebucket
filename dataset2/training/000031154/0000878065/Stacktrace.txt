@@ -1,0 +1,33 @@
+#0  0x00522416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x003bdc8f in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x003c12b5 in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x002ff6ce in g_assertion_message () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x002ffccf in g_assertion_message_expr () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x0804a950 in ?? ()
+No symbol table info available.
+#6  0x001c9bcf in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#7  0x00170aef in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#8  0x00170c1b in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#9  0x002d6110 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x002da25f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x002da990 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x002daf9b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x08049ba9 in ?? ()
+No symbol table info available.
+#14 0x003a9113 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#15 0x08049d99 in ?? ()
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

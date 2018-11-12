@@ -1,0 +1,22 @@
+#0  0x00007f7fc2f62bc2 in dbus_connection_ref () from /lib/x86_64-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#1  0x00007f7fc2f65ce0 in ?? () from /lib/x86_64-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#2  0x00007f7fc31a34f3 in DbusScreen::processMessages(short) () from /usr/lib/compiz/libdbus.so
+No symbol table info available.
+#3  0x000000000042af8b in CompWatchFd::internalCallback(Glib::IOCondition) ()
+No symbol table info available.
+#4  0x00007f7fd138cd6c in Glib::IOSource::dispatch(sigc::slot_base*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#5  0x00007f7fd138c9df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#6  0x00007f7fd083cbcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f7fd083d3a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f7fd083d9f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x000000000042a1ea in CompScreen::eventLoop() ()
+No symbol table info available.
+#10 0x0000000000423140 in main ()
+No symbol table info available.

@@ -1,0 +1,44 @@
+#0  0x00007f0beb8e1ba9 in g_variant_unref () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f0bec050acb in g_settings_get_string () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007f0be8083fb6 in ?? () from /usr/lib/x86_64-linux-gnu/gio/modules/libgiognomeproxy.so
+No symbol table info available.
+#3  0x00007f0be80849fc in ?? () from /usr/lib/x86_64-linux-gnu/gio/modules/libgiognomeproxy.so
+No symbol table info available.
+#4  0x00007f0bec32ae6b in ?? () from /usr/lib/libsoup-2.4.so.1
+No symbol table info available.
+#5  0x00007f0bec3336cb in ?? () from /usr/lib/libsoup-2.4.so.1
+No symbol table info available.
+#6  0x00007f0bec333d13 in ?? () from /usr/lib/libsoup-2.4.so.1
+No symbol table info available.
+#7  0x00007f0beb8a75bd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f0beb8a7db8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f0beb8a82f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x0000000000407140 in ?? ()
+No symbol table info available.
+#11 0x00000000004040c7 in ?? ()
+No symbol table info available.
+#12 0x00007f0beb2bde1f in __libc_start_main () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#13 0x00000000004040f9 in ?? ()
+No symbol table info available.
+#14 0x00007fff7e19b8a8 in ?? ()
+No symbol table info available.
+#15 0x000000000000001c in ?? ()
+No symbol table info available.
+#16 0x0000000000000004 in ?? ()
+No symbol table info available.
+#17 0x00007fff7e19cabe in ?? ()
+No symbol table info available.
+#18 0x00007fff7e19cad7 in ?? ()
+No symbol table info available.
+#19 0x00007fff7e19cae1 in ?? ()
+No symbol table info available.
+#20 0x00007fff7e19cae6 in ?? ()
+No symbol table info available.
+#21 0x0000000000000000 in ?? ()
+No symbol table info available.

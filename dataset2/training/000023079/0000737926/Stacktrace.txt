@@ -1,0 +1,117 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x05c4c2ad in nux::GpuRenderStates::SubmitChangeStates() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x05b73160 in nux::WindowThread::RenderInterfaceFromForeignCmd() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x091e989d in UnityScreen::paintDisplay(CompRegion const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x091ebb3d in UnityWindow::glDraw(GLMatrix const&, GLFragment::Attrib&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x00628758 in GLWindow::glDraw (this=0xa227620, transform=..., fragment=..., region=..., mask=65536) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:1165
+        rv = <value optimised out>
+        curr = 0
+        reg = {priv = 0x0}
+        ml = {<std::_Vector_base<GLTexture::Matrix, std::allocator<GLTexture::Matrix> >> = {_M_impl = {<std::allocator<GLTexture::Matrix>> = {<__gnu_cxx::new_allocator<GLTexture::Matrix>> = {<No data fields>}, <No data fields>}, _M_start = 0xa22769c, _M_finish = 0xbf9ee41c, _M_end_of_storage = 0xa227580}}, <No data fields>}
+#6  0x00628652 in GLWindow::glPaint (this=0xa227620, attrib=..., transform=..., region=..., mask=65536) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:1255
+        fragment = {priv = 0xa3f66d0}
+        status = <value optimised out>
+#7  0x00aa2aa2 in WallWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#8  0x0062854b in GLWindow::glPaint (this=0xa227620, attrib=..., transform=..., region=..., mask=0) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:1216
+        rv = <value optimised out>
+        curr = 3
+        fragment = {priv = 0xb7ef13}
+        status = <value optimised out>
+#9  0x00c75ed8 in FadeWindow::glPaint (this=0xa227f20, attrib=..., transform=..., region=..., mask=0) at /build/buildd/compiz-0.9.4/plugins/fade/src/fade.cpp:195
+        fAttrib = {opacity = 59208, brightness = 49054, saturation = 54640, xScale = -1.24139881, yScale = 1.08410727e-38, xTranslate = -1.2414217, yTranslate = 4.03871206e-34}
+        mode = <value optimised out>
+#10 0x0062854b in GLWindow::glPaint (this=0xa227620, attrib=..., transform=..., region=..., mask=0) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:1216
+        rv = <value optimised out>
+        curr = 0
+        fragment = {priv = 0xa426030}
+        status = <value optimised out>
+#11 0x00629068 in PrivateGLScreen::paintOutputRegion (this=0x9a59ff8, transform=..., region=..., output=0x9a1d488, mask=3) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:349
+        clip = @0xa227690
+        _foreach_continue315 = false
+        w = 0x6284b0
+        gw = 0xa227620
+        vTransform = {m = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1}}
+        offXY = {mX = 0, mY = 0}
+        tmpRegion = {priv = 0xa425b80}
+        count = <value optimised out>
+        status = <value optimised out>
+        withOffset = <value optimised out>
+        pl = {<std::_List_base<CompWindow*, std::allocator<CompWindow*> >> = {_M_impl = {<std::allocator<std::_List_node<CompWindow*> >> = {<__gnu_cxx::new_allocator<std::_List_node<CompWindow*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0xa228388, _M_prev = 0xa4250f8}}}, <No data fields>}
+        odMask = <value optimised out>
+        fullscreenWindow = <value optimised out>
+        unredirectFS = false
+#12 0x00629601 in GLScreen::glPaintOutput (this=0x9a57ae0, sAttrib=..., transform=..., region=..., output=0x9a1d488, mask=3) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:490
+        sTransform = {m = {0.000714285707, 0, 0, 0, -0, -0.000952380942, -0, -0, 0, 0, 1, 0, -0.5, 0.5, -0.866025388, 1}}
+#13 0x00aa2150 in WallScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#14 0x00629452 in GLScreen::glPaintOutput (this=0x9a57ae0, sAttrib=..., transform=..., region=..., output=0x9a1d488, mask=3) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:463
+        rv = <value optimised out>
+        curr = 1
+        sTransform = {m = {0, 7.00649232e-45, 9.55685553e-43, 0, 1.0897248e-38, 8.90830377e-39, 4.00474579e-34, 8.88163706e-39, 1.40129846e-45, 1.08939689e-38, -1.2415123, 5.35363327e-33, -1.24150658, 1.07826344e-38, -1.24150467, 8.88163706e-39}}
+#15 0x091e9919 in UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#16 0x00629452 in GLScreen::glPaintOutput (this=0x9a57ae0, sAttrib=..., transform=..., region=..., output=0x9a1d488, mask=3) at /build/buildd/compiz-0.9.4/plugins/opengl/src/paint.cpp:463
+        rv = <value optimised out>
+        curr = 0
+        sTransform = {m = {-1.24150944, 1.36181954e-38, 9.33120346e-33, 1.08058959e-38, 5.35363327e-33, 9.33120346e-33, 9.33120346e-33, 9.34571494e-33, -1.24151707, 4.03858257e-34, 9.33120346e-33, 9.33120346e-33, 9.35791657e-33, 8.87360482e-39, 3.99743568e-34, 9.18927252e-39}}
+#17 0x0061b32c in PrivateGLScreen::paintOutputs (this=0x9a59ff8, outputs=..., mask=4, region=...) at /build/buildd/compiz-0.9.4/plugins/opengl/src/screen.cpp:1046
+        identity = {m = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1}}
+        output = 0x9a1d488
+        _foreach_continue1020 = false
+        tmpRegion = {priv = 0xa421c48}
+#18 0x005c4b6b in CompositeScreen::paint (this=0x9a56788, outputs=..., mask=4) at /build/buildd/compiz-0.9.4/plugins/composite/src/screen.cpp:918
+No locals.
+#19 0x00aa300b in WallScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#20 0x005c4b25 in CompositeScreen::paint (this=0x9a56788, outputs=..., mask=4) at /build/buildd/compiz-0.9.4/plugins/composite/src/screen.cpp:915
+        curr = 3
+#21 0x005c4d4c in CompositeScreenInterface::paint (this=0x9de3b90, outputs=..., mask=4) at /build/buildd/compiz-0.9.4/plugins/composite/src/screen.cpp:987
+No locals.
+#22 0x005c4b25 in CompositeScreen::paint (this=0x9a56788, outputs=..., mask=4) at /build/buildd/compiz-0.9.4/plugins/composite/src/screen.cpp:915
+        curr = 1
+#23 0x005c4d4c in CompositeScreenInterface::paint (this=0x9dfd880, outputs=..., mask=4) at /build/buildd/compiz-0.9.4/plugins/composite/src/screen.cpp:987
+No locals.
+#24 0x005c4b25 in CompositeScreen::paint (this=0x9a56788, outputs=..., mask=4) at /build/buildd/compiz-0.9.4/plugins/composite/src/screen.cpp:915
+        curr = 0
+#25 0x005c6b93 in CompositeScreen::handlePaintTimeout (this=0x9a56788) at /build/buildd/compiz-0.9.4/plugins/composite/src/screen.cpp:855
+        timeDiff = <value optimised out>
+        mask = 4
+        outputs = {<std::_List_base<CompOutput*, std::allocator<CompOutput*> >> = {_M_impl = {<std::allocator<std::_List_node<CompOutput*> >> = {<__gnu_cxx::new_allocator<std::_List_node<CompOutput*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x9d84050, _M_prev = 0x9d84050}}}, <No data fields>}
+        tv = {tv_sec = 1300493877, tv_usec = 313289}
+        timeToNextRedraw = <value optimised out>
+#26 0x005c74ad in operator() (function_obj_ptr=...) at /usr/include/boost/bind/mem_fn_template.hpp:49
+No locals.
+#27 operator()<bool, boost::_mfi::mf0<bool, CompositeScreen>, boost::_bi::list0> (function_obj_ptr=...) at /usr/include/boost/bind/bind.hpp:243
+No locals.
+#28 operator() (function_obj_ptr=...) at /usr/include/boost/bind/bind_template.hpp:20
+No locals.
+#29 boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CompositeScreen>, boost::_bi::list1<boost::_bi::value<CompositeScreen*> > >, bool>::invoke (function_obj_ptr=...) at /usr/include/boost/function/function_template.hpp:132
+        f = 0x9a573b0
+#30 0x08065776 in operator() (this=0x9a51850) at /usr/include/boost/function/function_template.hpp:1013
+No locals.
+#31 CompTimeoutSource::callback (this=0x9a51850) at /build/buildd/compiz-0.9.4/src/timer.cpp:151
+        t = 0x9a57398
+#32 0x080651b1 in operator() (this=0x9a51850, slot=0x9a51bd8) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:440
+No locals.
+#33 CompTimeoutSource::dispatch (this=0x9a51850, slot=0x9a51bd8) at /build/buildd/compiz-0.9.4/src/timer.cpp:136
+No locals.
+#34 0x00e934f9 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#35 0x0039daa8 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#36 0x0039e270 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#37 0x0039e92b in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#38 0x00e94a35 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#39 0x0806e9ab in CompScreen::eventLoop (this=0x9a014b8) at /build/buildd/compiz-0.9.4/src/screen.cpp:128
+No locals.
+#40 0x08066c98 in main (argc=1, argv=0xbf9eefa4) at /build/buildd/compiz-0.9.4/src/main.cpp:285
+        manager = {plugins = {<std::_List_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {_M_impl = {<std::allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<__gnu_cxx::new_allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x9a01498, _M_prev = 0x9a01498}}}, <No data fields>}, disableSm = false, clientId = 0x9a50e80 "108cebbe6f8fd7e031130049386126052900000033590031", displayName = 0x0}

@@ -1,0 +1,10 @@
+#0  0x00007fad922c5149 in ?? () from /usr/lib/x86_64-linux-gnu/libdbusmenu-glib.so.4
+No symbol table info available.
+#1  0x00007fada16068ad in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007fada16069dc in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#3  0x00007fada5637e80 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x0000000000000000 in ?? ()
+No symbol table info available.

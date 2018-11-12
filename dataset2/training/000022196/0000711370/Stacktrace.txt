@@ -1,0 +1,36 @@
+#0  0x00007f9d0186a1c5 in nux::IOpenGLFrameBufferObject::Deactivate() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#1  0x00007f9d0186a249 in nux::IOpenGLFrameBufferObject::FormatFrameBufferObject(int, int, nux::BitmapFormat) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x00007f9d01bffba2 in nux::WindowCompositor::FormatRenderTargets(int, int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x00007f9d01c095f2 in nux::WindowThread::ThreadCtor(_XDisplay*, unsigned long, __GLXcontextRec*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0x00007f9d01b9d9b1 in nux::CreateFromForeignWindow(unsigned long, __GLXcontextRec*, void (*)(nux::NThread*, void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x00007f9d01f02487 in UnityScreen::UnityScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0x00007f9d01f058b9 in CompPlugin::VTableForScreenAndWindow<UnityScreen, UnityWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#7  0x0000000000450fea in CompManager::initPlugin(CompPlugin*) ()
+No symbol table info available.
+#8  0x00000000004520ee in CompPlugin::push(CompPlugin*) ()
+No symbol table info available.
+#9  0x000000000042ddff in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#10 0x000000000042e1c8 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#11 0x0000000000455358 in CompEventSource::callback() ()
+No symbol table info available.
+#12 0x00007f9d0f1ae8ef in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#13 0x00007f9d0d168cfd in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f9d0d1694e8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f9d0d169b2a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x0000000000429e5a in CompScreen::eventLoop() ()
+No symbol table info available.
+#17 0x0000000000422f10 in main ()
+No symbol table info available.

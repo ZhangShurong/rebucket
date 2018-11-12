@@ -1,0 +1,26 @@
+#0  0xb5fc09e6 in ?? () from /usr/lib/compiz/libworkarounds.so
+#1  0x08c167a0 in ?? ()
+#2  0x02000449 in ?? ()
+#3  0xbf87ab48 in ?? ()
+#4  0xb5fc2da0 in ?? () from /usr/lib/compiz/libworkarounds.so
+#5  0x08085890 in ?? ()
+#6  0x089057c0 in ?? ()
+#7  0xbf87ab08 in ?? ()
+#8  0xb5fc1831 in ?? () from /usr/lib/compiz/libworkarounds.so
+#9  0x08085890 in ?? ()
+#10 0x02000449 in ?? ()
+#11 0xbf87ab18 in ?? ()
+#12 0xb7c2bff4 in ?? () from /lib/tls/i686/cmov/libc.so.6
+#13 0x080872c8 in ?? ()
+#14 0xbf87abf8 in ?? ()
+#15 0x088d7c60 in ?? ()
+#16 0xb5fbd4b8 in ?? () from /usr/lib/compiz/libezoom.so
+#17 0x08085890 in ?? ()
+#18 0x089057c0 in ?? ()
+#19 0xbf87ab38 in ?? ()
+#20 0xb5fbaeff in ?? () from /usr/lib/compiz/libezoom.so
+#21 0x08085890 in ?? ()
+#22 0xbf87abf8 in ?? ()
+#23 0xbf87ab48 in ?? ()
+#24 0xb7acd8ef in xcb_xlib_unlock () from /usr/lib/libxcb-xlib.so.0
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

@@ -1,0 +1,4 @@
+#0  0xb6259c40 in ?? ()
+#1  0xb7c22e9e in exit () from /lib/tls/i686/cmov/libc.so.6
+#2  0xb7c0c038 in __libc_start_main () from /lib/tls/i686/cmov/libc.so.6
+#3  0x08051151 in _start ()

@@ -1,0 +1,147 @@
+#0  malloc_consolidate (av=av@entry=0x7f1288000020) at malloc.c:4065
+        fb = <optimized out>
+        maxfb = 0x7f1288000070
+        p = 0xe000000
+        nextp = <optimized out>
+        unsorted_bin = 0x7f1288000078
+        first_unsorted = <optimized out>
+        nextchunk = <optimized out>
+        size = <optimized out>
+        nextsize = <optimized out>
+        prevsize = <optimized out>
+        nextinuse = <optimized out>
+        bck = <optimized out>
+        fwd = <optimized out>
+        __func__ = "malloc_consolidate"
+#1  0x00007f12d4b950e1 in _int_malloc (av=av@entry=0x7f1288000020, bytes=bytes@entry=1793) at malloc.c:3358
+        nb = 1808
+        idx = <optimized out>
+        bin = <optimized out>
+        victim = <optimized out>
+        size = <optimized out>
+        victim_index = <optimized out>
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        block = <optimized out>
+        bit = <optimized out>
+        map = <optimized out>
+        fwd = <optimized out>
+        bck = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#2  0x00007f12d4b96ad1 in _int_realloc (av=av@entry=0x7f1288000020, oldp=oldp@entry=0x7f12880f80d0, oldsize=1680, nb=nb@entry=1808) at malloc.c:4197
+        newp = <optimized out>
+        newsize = <optimized out>
+        newmem = <optimized out>
+        next = 0x7f12880f8760
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        bck = <optimized out>
+        fwd = <optimized out>
+        copysize = <optimized out>
+        ncopies = <optimized out>
+        s = <optimized out>
+        d = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_realloc"
+        nextsize = <optimized out>
+#3  0x00007f12d4b97ae2 in __GI___libc_realloc (oldmem=0x7f12880f80e0, bytes=1792) at malloc.c:2984
+        ar_ptr = 0x7f1288000020
+        nb = 1808
+        newp = <optimized out>
+        hook = <optimized out>
+        oldp = 0x7f12880f80d0
+        oldsize = <optimized out>
+        __func__ = "__libc_realloc"
+#4  0x00007f12b91d7fb8 in ft_mem_qrealloc () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#5  0x00007f12b91d807a in ft_mem_realloc () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#6  0x00007f12b91d81d3 in FT_GlyphLoader_CheckPoints () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#7  0x00007f12b91d8311 in FT_GlyphLoader_CopyPoints () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#8  0x00007f12b9217736 in ?? () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#9  0x00007f12b921b34d in ?? () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#10 0x00007f12b91d953e in FT_Load_Glyph () from /usr/lib/x86_64-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#11 0x00007f12ba39865b in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#12 0x00007f12ba348fc6 in ?? () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#13 0x00007f12ba34921e in cairo_scaled_font_glyph_extents () from /usr/lib/x86_64-linux-gnu/libcairo.so.2
+No symbol table info available.
+#14 0x00007f12b57642e4 in ?? () from /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#15 0x00007f12b3492a66 in ?? () from /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0
+No symbol table info available.
+#16 0x00007f12b20577c8 in ?? () from /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0
+No symbol table info available.
+#17 0x00007f12b203d612 in hb_shape_plan_execute () from /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0
+No symbol table info available.
+#18 0x00007f12b203cc51 in hb_shape_full () from /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0
+No symbol table info available.
+#19 0x00007f12b3492dbb in ?? () from /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0
+No symbol table info available.
+#20 0x00007f12b553c9db in pango_shape_full () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#21 0x00007f12b5520316 in ?? () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#22 0x00007f12b5520608 in ?? () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#23 0x00007f12b553330a in ?? () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#24 0x00007f12b5534cf8 in ?? () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#25 0x00007f12b5535196 in pango_layout_get_size () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#26 0x00007f12ac6b5902 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#27 0x00007f12ac6b5838 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#28 0x00007f12ac6b5c32 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#29 0x00007f12ac6b0483 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#30 0x00007f12ac6b0503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#31 0x00007f12ac6b0483 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#32 0x00007f12ac6b0883 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#33 0x00007f12ac6b0483 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#34 0x00007f12ac6bc6a3 in rsvg_handle_render_cairo_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#35 0x00007f12ac6bcad4 in rsvg_handle_get_pixbuf_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#36 0x00007f12ace7be46 in ?? () from /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+No symbol table info available.
+#37 0x00007f12ba5fbe8d in gdk_pixbuf_loader_close () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#38 0x00007f12ba5f8065 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#39 0x00007f12ba5f9d3d in gdk_pixbuf_new_from_stream_at_scale () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#40 0x00007f12b6a2548a in unity::IconLoader::Impl::IconLoaderTask::LoaderJobFunc(_GTask*, void*, void*, _GCancellable*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#41 0x00007f12cb1c72a5 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#42 0x00007f12d3482c36 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#43 0x00007f12d3482275 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#44 0x00007f12d2ff6f6e in start_thread (arg=0x7f129ec10700) at pthread_create.c:311
+        __res = <optimized out>
+        pd = 0x7f129ec10700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {139717949589248, 1218700488943626015, 0, 139718868897888, 140734518069504, 4096, -1239461716556486881, -1239593405127170273}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = 0
+        pagesize_m1 = <optimized out>
+        sp = <optimized out>
+        freesize = <optimized out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#45 0x00007f12d4c0de2d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:113
+No locals.

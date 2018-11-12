@@ -1,0 +1,60 @@
+#0  0x00007f6cf65d93b5 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f6cf65dcb1b in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f6cf66110b3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f6cf661ba36 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007f6cf661be40 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x00007f6cf661c5f9 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007f6cf661fd1c in free () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0x00007f6cf66645db in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#8  0x00007f6cf6670571 in regfree () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#9  0x00007f6ce855a7c0 in RegexExp::~RegexExp() () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#10 0x00007f6ce855a7f9 in RegexExp::~RegexExp() () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#11 0x00000000004531ca in MatchExpOp::~MatchExpOp() ()
+No symbol table info available.
+#12 0x0000000000451666 in MatchGroupOp::~MatchGroupOp() ()
+No symbol table info available.
+#13 0x00000000004516d9 in MatchGroupOp::~MatchGroupOp() ()
+No symbol table info available.
+#14 0x0000000000451666 in MatchGroupOp::~MatchGroupOp() ()
+No symbol table info available.
+#15 0x00000000004516b1 in CompMatch::~CompMatch() ()
+No symbol table info available.
+#16 0x000000000044e35d in CompOption::Value::~Value() ()
+No symbol table info available.
+#17 0x000000000044e338 in CompOption::Value::~Value() ()
+No symbol table info available.
+#18 0x000000000044f7f1 in CompOption::~CompOption() ()
+No symbol table info available.
+#19 0x00007f6ce7eee858 in AnimationOptions::~AnimationOptions() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#20 0x00007f6ce7ed25f1 in PrivateAnimScreen::~PrivateAnimScreen() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#21 0x00007f6ce7ed27e9 in PrivateAnimScreen::~PrivateAnimScreen() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#22 0x00007f6ce7ecf725 in AnimScreen::~AnimScreen() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#23 0x00007f6ce7ecf779 in AnimScreen::~AnimScreen() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#24 0x000000000045a12a in CompManager::finiPlugin(CompPlugin*) ()
+No symbol table info available.
+#25 0x000000000045ba0f in CompPlugin::pop() ()
+No symbol table info available.
+#26 0x000000000042a20d in CompScreen::~CompScreen() ()
+No symbol table info available.
+#27 0x000000000042a469 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#28 0x00000000004256e0 in CompManager::fini() ()
+No symbol table info available.
+#29 0x0000000000422222 in main ()
+No symbol table info available.

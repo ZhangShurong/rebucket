@@ -1,0 +1,8 @@
+#0  0x00007f562ff06d4e in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#1  0x0000000000fba010 in ?? ()
+No symbol table info available.
+#2  0x0000002300000000 in ?? ()
+No symbol table info available.
+#3  0x0000000000000000 in ?? ()
+No symbol table info available.

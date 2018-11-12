@@ -1,0 +1,66 @@
+#0  0xb1f9d2dd in DecorWindow::update(bool) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#1  0xb1fa1a7c in DecorScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#2  0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#3  0xb1f55cd9 in SnapScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsnap.so
+No symbol table info available.
+#4  0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#5  0xb1eda8d6 in MoveScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libmove.so
+No symbol table info available.
+#6  0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#7  0xb1f2222b in ResizeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libresize.so
+No symbol table info available.
+#8  0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#9  0xb1efcb1f in PlaceScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libplace.so
+No symbol table info available.
+#10 0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#11 0xb1bfd38b in SessionScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsession.so
+No symbol table info available.
+#12 0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#13 0xb1f6f7eb in VPSwitchScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libvpswitch.so
+No symbol table info available.
+#14 0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#15 0xb582c6e6 in RegexScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#16 0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#17 0xb1894f81 in WorkaroundsScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libworkarounds.so
+No symbol table info available.
+#18 0xb776beee in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#19 0xb776bf60 in CompScreenImpl::alwaysHandleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#20 0xb7742fa1 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#21 0xb7743222 in CompScreenImpl::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#22 0xb77794d2 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#23 0xb7779842 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#24 0xb77795e2 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#25 0xb72abd71 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#26 0xb71b1d8a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0xb71b2195 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#28 0xb71b25db in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#29 0xb72ad3f3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#30 0xb7734b42 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#31 0x0804a4f2 in CompManager::run() ()
+No symbol table info available.
+#32 0x0804a17c in main ()
+No symbol table info available.

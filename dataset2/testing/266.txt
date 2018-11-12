@@ -1,0 +1,86 @@
+#0  0x00007f463567c3a5 in __GI_raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = 0
+        pid = <optimized out>
+        selftid = <optimized out>
+#1  0x00007f463567fb0b in __GI_abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x3, sa_sigaction = 0x3}, sa_mask = {__val = {4, 40942320, 40, 139939521631114, 1, 139939521640055, 3, 140733591846923, 5, 139939521631061, 1, 139939521640063, 3, 140733591846900, 12, 139939521640067}}, sa_flags = 2, sa_restorer = 0x7f46357a3683}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007f46356b4113 in __libc_message (do_abort=2, fmt=0x7f46357a50d8 "*** glibc detected *** %s: %s: 0x%s ***\n") at ../sysdeps/unix/sysv/linux/libc_fatal.c:189
+        ap = {{gp_offset = 40, fp_offset = 48, overflow_arg_area = 0x7fff17c00970, reg_save_area = 0x7fff17c00880}}
+        ap_copy = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7fff17c00970, reg_save_area = 0x7fff17c00880}}
+        fd = 2
+        on_2 = <optimized out>
+        list = <optimized out>
+        nlist = <optimized out>
+        cp = <optimized out>
+        written = <optimized out>
+#3  0x00007f46356bea96 in malloc_printerr (action=3, str=0x7f46357a5258 "double free or corruption (out)", ptr=<optimized out>) at malloc.c:6283
+        buf = "00000000032a6280"
+        cp = <optimized out>
+#4  0x00007f46356c2d7c in __GI___libc_free (mem=<optimized out>) at malloc.c:3738
+        ar_ptr = 0x7f46359e01c0
+        p = <optimized out>
+        hook = <optimized out>
+#5  0x00007f462ac73e3d in ?? () from /usr/lib/x86_64-linux-gnu/dri/libglsl.so
+No symbol table info available.
+#6  0x00007f462ac73e3d in ?? () from /usr/lib/x86_64-linux-gnu/dri/libglsl.so
+No symbol table info available.
+#7  0x00007f462ac73e3d in ?? () from /usr/lib/x86_64-linux-gnu/dri/libglsl.so
+No symbol table info available.
+#8  0x00007f462b0210e4 in _mesa_reference_shader () from /usr/lib/x86_64-linux-gnu/dri/libdricore.so
+No symbol table info available.
+#9  0x00007f462b01ead1 in ?? () from /usr/lib/x86_64-linux-gnu/dri/libdricore.so
+No symbol table info available.
+#10 0x00007f46257bd4e5 in nux::IOpenGLPixelShader::~IOpenGLPixelShader() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#11 0x00007f46257bd529 in nux::IOpenGLPixelShader::~IOpenGLPixelShader() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#12 0x00007f46250db66e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#13 0x00007f46250dbbb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#14 0x00007f46257bf412 in nux::IOpenGLShaderProgram::~IOpenGLShaderProgram() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#15 0x00007f46257bf589 in nux::IOpenGLShaderProgram::~IOpenGLShaderProgram() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#16 0x00007f46250db66e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#17 0x00007f46250dbbb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#18 0x00007f46257b4a77 in nux::GraphicsEngine::~GraphicsEngine() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#19 0x00007f46257af12b in nux::GraphicsDisplay::~GraphicsDisplay() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#20 0x00007f4625b9612d in nux::WindowThread::ThreadDtor() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#21 0x00007f4625b987f2 in nux::WindowThread::~WindowThread() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#22 0x00007f4625b98b29 in nux::WindowThread::~WindowThread() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#23 0x00007f4625fb6c22 in UnityScreen::~UnityScreen() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#24 0x00007f4625fb7269 in UnityScreen::~UnityScreen() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0x0000000000459dba in CompManager::finiPlugin(CompPlugin*) ()
+No symbol table info available.
+#26 0x000000000045b69f in CompPlugin::pop() ()
+No symbol table info available.
+#27 0x00000000004311f5 in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#28 0x0000000000431ab3 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#29 0x000000000045e751 in CompEventSource::callback() ()
+No symbol table info available.
+#30 0x00007f4636cee9df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#31 0x00007f46367f4a5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x00007f46367f5258 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#33 0x00007f46367f5792 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#34 0x000000000042e856 in CompScreen::eventLoop() ()
+No symbol table info available.
+#35 0x000000000042221a in main ()
+No symbol table info available.

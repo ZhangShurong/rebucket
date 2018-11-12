@@ -1,0 +1,162 @@
+#0  0xb7671339 in IA__g_datalist_id_set_data_full (datalist=0x81f8010, 
+    key_id=50, data=0x0, destroy_func=0)
+    at /build/buildd/glib2.0-2.15.4/glib/gdataset.c:216
+	__PRETTY_FUNCTION__ = "IA__g_datalist_id_set_data_full"
+#1  0xb7707647 in g_object_real_dispose (object=0x81f8008)
+    at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:533
+No locals.
+#2  0xb7d990c1 in gtk_object_dispose (gobject=0x81f8008)
+    at /build/buildd/gtk+2.0-2.12.7/gtk/gtkobject.c:423
+No locals.
+#3  0xb7e9ed71 in gtk_widget_dispose (object=0x81f8008)
+    at /build/buildd/gtk+2.0-2.12.7/gtk/gtkwidget.c:7854
+No locals.
+#4  0xb7eabf06 in gtk_window_dispose (object=0x81f8008)
+    at /build/buildd/gtk+2.0-2.12.7/gtk/gtkwindow.c:1968
+No locals.
+#5  0xb770793c in IA__g_object_unref (_object=0x81f8008)
+    at /build/buildd/glib2.0-2.15.4/gobject/gobject.c:1765
+	object = (GObject *) 0x81f8008
+	__PRETTY_FUNCTION__ = "IA__g_object_unref"
+#6  0xb5c3cdae in dialog_init (manager=0x807c320)
+    at gsd-media-keys-manager.c:271
+No locals.
+#7  0xb5c3d9be in acme_filter_events (xevent=0xbfdea0d8, event=0x8072198, 
+    manager=0x807c320) at gsd-media-keys-manager.c:727
+	keycode = <value optimized out>
+	i = <value optimized out>
+#8  0xb7be8241 in gdk_event_apply_filters (xevent=0xbfdea0d8, event=0x8072198, 
+    filters=0x32) at /build/buildd/gtk+2.0-2.12.7/gdk/x11/gdkevents-x11.c:345
+	filter = (GdkEventFilter *) 0x8056cf0
+	tmp_list = (GList *) 0x819fdc0
+	result = <value optimized out>
+#9  0xb7be9c5f in gdk_event_translate (display=0x806c020, event=0x8072198, 
+    xevent=0xbfdea0d8, return_exposes=0)
+    at /build/buildd/gtk+2.0-2.12.7/gdk/x11/gdkevents-x11.c:984
+	window = (GdkWindow *) 0x8072808
+	filter_window = (GdkWindow *) 0x8072808
+	window_impl = (GdkWindowImplX11 *) 0x8073418
+	return_val = <value optimized out>
+	xoffset = <value optimized out>
+	yoffset = <value optimized out>
+	screen = (GdkScreen *) 0x806e0b0
+	screen_x11 = (GdkScreenX11 *) 0x806e0b0
+	toplevel = (GdkToplevelX11 *) 0x81cea00
+	xwindow = 315
+	filter_xwindow = <value optimized out>
+#10 0xb7beb6ab in _gdk_events_queue (display=0x806c020)
+    at /build/buildd/gtk+2.0-2.12.7/gdk/x11/gdkevents-x11.c:2285
+	node = (GList *) 0x8211340
+	event = (GdkEvent *) 0x8072198
+	xevent = {type = 2, xany = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, window = 315}, xkey = {type = 2, serial = 21078, 
+    send_event = 0, display = 0x8063878, window = 315, root = 315, 
+    subwindow = 48234529, time = 64609548, x = 688, y = 353, x_root = 688, 
+    y_root = 353, state = 16, keycode = 174, same_screen = 1}, xbutton = {
+    type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    window = 315, root = 315, subwindow = 48234529, time = 64609548, x = 688, 
+    y = 353, x_root = 688, y_root = 353, state = 16, button = 174, 
+    same_screen = 1}, xmotion = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, window = 315, root = 315, subwindow = 48234529, 
+    time = 64609548, x = 688, y = 353, x_root = 688, y_root = 353, state = 16, 
+    is_hint = -82 'Æ', same_screen = 1}, xcrossing = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, window = 315, 
+    root = 315, subwindow = 48234529, time = 64609548, x = 688, y = 353, 
+    x_root = 688, y_root = 353, mode = 16, detail = 174, same_screen = 1, 
+    focus = 16, state = 16}, xfocus = {type = 2, serial = 21078, 
+    send_event = 0, display = 0x8063878, window = 315, mode = 315, 
+    detail = 48234529}, xexpose = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, window = 315, x = 315, y = 48234529, 
+    width = 64609548, height = 688, count = 353}, xgraphicsexpose = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, drawable = 315, 
+    x = 315, y = 48234529, width = 64609548, height = 688, count = 353, 
+    major_code = 688, minor_code = 353}, xnoexpose = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, drawable = 315, 
+    major_code = 315, minor_code = 48234529}, xvisibility = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, window = 315, 
+    state = 315}, xcreatewindow = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, parent = 315, window = 315, x = 48234529, 
+    y = 64609548, width = 688, height = 353, border_width = 688, 
+    override_redirect = 353}, xdestroywindow = {type = 2, serial = 21078, 
+    send_event = 0, display = 0x8063878, event = 315, window = 315}, xunmap = {
+    type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    event = 315, window = 315, from_configure = 48234529}, xmap = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, event = 315, 
+    window = 315, override_redirect = 48234529}, xmaprequest = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, parent = 315, 
+    window = 315}, xreparent = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, event = 315, window = 315, parent = 48234529, 
+    x = 64609548, y = 688, override_redirect = 353}, xconfigure = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, event = 315, 
+    window = 315, x = 48234529, y = 64609548, width = 688, height = 353, 
+    border_width = 688, above = 353, override_redirect = 16}, xgravity = {
+    type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    event = 315, window = 315, x = 48234529, y = 64609548}, xresizerequest = {
+    type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    window = 315, width = 315, height = 48234529}, xconfigurerequest = {
+    type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    parent = 315, window = 315, x = 48234529, y = 64609548, width = 688, 
+    height = 353, border_width = 688, above = 353, detail = 16, 
+    value_mask = 174}, xcirculate = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, event = 315, window = 315, place = 48234529}, 
+  xcirculaterequest = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, parent = 315, window = 315, place = 48234529}, 
+  xproperty = {type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    window = 315, atom = 315, time = 48234529, state = 64609548}, 
+  xselectionclear = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, window = 315, selection = 315, time = 48234529}, 
+  xselectionrequest = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, owner = 315, requestor = 315, selection = 48234529, 
+    target = 64609548, property = 688, time = 353}, xselection = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, requestor = 315, 
+    selection = 315, target = 48234529, property = 64609548, time = 688}, 
+  xcolormap = {type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    window = 315, colormap = 315, new = 48234529, state = 64609548}, 
+  xclient = {type = 2, serial = 21078, send_event = 0, display = 0x8063878, 
+    window = 315, message_type = 315, format = 48234529, data = {
+      b = "\f›Ÿ\003∞\002\000\000a\001\000\000∞\002\000\000a\001\000", s = {
+        -8948, 985, 688, 0, 353, 0, 688, 0, 353, 0}, l = {64609548, 688, 353, 
+        688, 353}}}, xmapping = {type = 2, serial = 21078, send_event = 0, 
+    display = 0x8063878, window = 315, request = 315, 
+    first_keycode = 48234529, count = 64609548}, xerror = {type = 2, 
+    display = 0x5256, resourceid = 0, serial = 134625400, error_code = 59 ';', 
+    request_code = 1 '\001', minor_code = 0 '\0'}, xkeymap = {type = 2, 
+    serial = 21078, send_event = 0, display = 0x8063878, window = 315, 
+    key_vector = ";\001\000\000!\000‡\002\f›Ÿ\003∞\002\000\000a\001\000\000∞\002\000\000a\001\000\000\020\000\000"}, pad = {2, 21078, 0, 134625400, 315, 315, 
+    48234529, 64609548, 688, 353, 688, 353, 16, 174, 1, 16, 16, 269488144, 0, 
+    1281, 705315918, 1970169165, 1952669998, 1113945705}}
+	xdisplay = (Display *) 0x8063878
+#11 0xb7bebabf in gdk_event_dispatch (source=0x8075188, callback=0, 
+    user_data=0x0) at /build/buildd/gtk+2.0-2.12.7/gdk/x11/gdkevents-x11.c:2345
+	display = (GdkDisplay *) 0x806c020
+	event = <value optimized out>
+#12 0xb7683d76 in IA__g_main_context_dispatch (context=0x80751d0)
+    at /build/buildd/glib2.0-2.15.4/glib/gmain.c:2064
+No locals.
+#13 0xb7687133 in g_main_context_iterate (context=0x80751d0, block=1, 
+    dispatch=1, self=0x8079208)
+    at /build/buildd/glib2.0-2.15.4/glib/gmain.c:2697
+	got_ownership = <value optimized out>
+	max_priority = 0
+	timeout = 0
+	some_ready = 1
+	nfds = <value optimized out>
+	allocated_nfds = <value optimized out>
+	fds = (GPollFD *) 0x8082798
+	__PRETTY_FUNCTION__ = "g_main_context_iterate"
+#14 0xb7687517 in IA__g_main_loop_run (loop=0x8081b58)
+    at /build/buildd/glib2.0-2.15.4/glib/gmain.c:2905
+	got_ownership = -1218202336
+	self = (GThread *) 0x8079208
+	__PRETTY_FUNCTION__ = "IA__g_main_loop_run"
+#15 0xb7d72d54 in IA__gtk_main ()
+    at /build/buildd/gtk+2.0-2.12.7/gtk/gtkmain.c:1163
+	tmp_list = (GList *) 0xbfdea300
+	functions = (GList *) 0x0
+	init = (GtkInitFunction *) 0x8079f48
+	loop = (GMainLoop *) 0x8081b58
+#16 0x0804ac1f in main (argc=134712968, argv=0x1) at main.c:228
+	manager = (GnomeSettingsManager *) 0x8079f48
+	program = (GnomeProgram *) 0x8075638
+	res = 0
+	error = (GError *) 0x0

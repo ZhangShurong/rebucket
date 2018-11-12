@@ -1,0 +1,56 @@
+#0  0x00c40416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x009c8cb1 in raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = <value optimised out>
+        resultvar = <value optimised out>
+        pid = 11513844
+        selftid = 3068
+#2  0x009cc18e in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0xbfc, sa_sigaction = 0xbfc}, sa_mask = {__val = {11513844, 1, 3213641996, 3213641832, 11166005, 5817572, 516032, 0, 34763640, 3213641996, 40326, 3213641964, 34730328, 56, 2, 3213641832, 10904836, 8, 0, 3213641892, 11513844, 5, 3213643352, 3213642012, 11026881, 2, 3213641892, 8, 0, 0, 6, 11353368}}, sa_flags = 3, sa_restorer = 0xad6222}
+        sigs = {__val = {32, 0 <repeats 31 times>}}
+#3  0x009ffdc7 in __libc_message (do_abort=2, fmt=0xad807c "*** glibc detected *** %s: %s: 0x%s ***\n") at ../sysdeps/unix/sysv/linux/libc_fatal.c:189
+        ap = 0xb6e00790 "*** glibc detected *** compiz: corrupted double-linked list: 0x09024fd8 ***\n"
+        ap_copy = 0xb6e00790 "*** glibc detected *** compiz: corrupted double-linked list: 0x09024fd8 ***\n"
+        fd = 2
+        on_2 = <value optimised out>
+        list = <value optimised out>
+        nlist = <value optimised out>
+        cp = <value optimised out>
+        written = <value optimised out>
+#4  0x00a0a1a1 in malloc_printerr (action=<value optimised out>, str=<value optimised out>, ptr=0x9024fd8) at malloc.c:6283
+        buf = "09024fd8"
+        cp = <value optimised out>
+#5  0x00a0a5f4 in malloc_consolidate (av=0xafc3c0) at malloc.c:5169
+        fb = 0xafc3d8
+        maxfb = 0xafc3ec
+        p = 0x9024e78
+        nextp = 0x9057410
+        unsorted_bin = 0xafc3f0
+        first_unsorted = <value optimised out>
+        nextchunk = 0x9024fd8
+        size = <value optimised out>
+        nextsize = 154836760
+        prevsize = <value optimised out>
+        nextinuse = <value optimised out>
+        bck = <value optimised out>
+        fwd = 0x93a9f18
+        __func__ = "malloc_consolidate"
+#6  0x00a0ba8a in _int_free (av=<value optimised out>, p=0x9a1a148) at malloc.c:5034
+        size = 979816
+        fb = <value optimised out>
+        nextchunk = 0x9b09188
+        nextsize = 808
+        nextinuse = <value optimised out>
+        prevsize = <value optimised out>
+        bck = <value optimised out>
+        fwd = <value optimised out>
+        errstr = 0x0
+        __func__ = "_int_free"
+#7  0x00a0ec8d in __libc_free (mem=0x9b083e8) at malloc.c:3738
+        ar_ptr = 0xafc3c0
+        p = <value optimised out>
+        hook = <value optimised out>
+#8  0x0216d86c in ?? () from /usr/lib/nvidia-current/libGL.so.1
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

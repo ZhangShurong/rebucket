@@ -1,0 +1,48 @@
+#0  0x0025ac4d in g_logv () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x0025add3 in g_log () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x0017a7b9 in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#3  0x00188388 in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#4  0x0287f95a in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#5  0x00967d6b in _XError () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x0096493d in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00964997 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00965850 in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x0094ad89 in _XGetWindowAttributes () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#10 0x0094af05 in XGetWindowAttributes () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#11 0x0287d75f in xkl_engine_select_input_merging () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#12 0x0287f486 in xkl_engine_process_create_window_evt () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#13 0x0287f744 in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#14 0x02c2e225 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#15 0x00184524 in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#16 0x001846e2 in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#17 0x0015314e in gdk_display_get_event () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#18 0x0018436a in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#19 0x0025328a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00253695 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x00253adb in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0x00c059e5 in gtk_main () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#23 0x0804ae6c in main ()
+No symbol table info available.

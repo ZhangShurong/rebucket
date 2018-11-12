@@ -1,0 +1,19 @@
+#0  0xb6cfcc97 in rw_screen_list_outputs ()
+   from /usr/lib/libgnome-desktop-2.so.2
+#1  0xb6cfc743 in configuration_apply_stored ()
+   from /usr/lib/libgnome-desktop-2.so.2
+#2  0xb5cc941a in gsd_xrandr_manager_start ()
+   from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#3  0xb5cc920f in ?? () from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#4  0x0807bc78 in ?? ()
+#5  0xbf8431c0 in ?? ()
+#6  0xb5cc9a32 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#7  0x0804b4c9 in gnome_settings_plugin_activate ()
+#8  0x0804b86e in gnome_settings_plugins_engine_activate_plugin ()
+#9  0x0804bb98 in ?? ()
+#10 0x0807a048 in ?? ()
+#11 0x00000080 in ?? ()
+#12 0x0804d041 in ?? ()
+#13 0x08088698 in ?? ()
+#14 0xb758ab48 in ?? () from /usr/lib/libglib-2.0.so.0
+#15 0x00000000 in ?? ()

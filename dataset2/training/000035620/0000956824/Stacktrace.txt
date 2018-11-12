@@ -1,0 +1,36 @@
+#0  0x00007f27b83aed89 in gnome_rr_screen_get_dpms_mode () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#1  0x00007f27b83aef60 in gnome_rr_screen_set_dpms_mode () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#2  0x00007f27b0252b97 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#3  0x00007f27b0253110 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#4  0x00007f27b773109a in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f27b774abc5 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f27b774b2e2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f27b024d318 in gpm_idletime_alarm_reset_all () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#8  0x00007f27b024d3e4 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#9  0x00007f27b61c7191 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#10 0x00007f27b61c7320 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#11 0x00007f27b6199511 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#12 0x00007f27b61c7012 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#13 0x00007f27b7473dda in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f27b74741a0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f27b747459a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007f27b7e6229d in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#17 0x0000000000403804 in main ()
+No symbol table info available.

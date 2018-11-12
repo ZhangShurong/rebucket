@@ -1,0 +1,30 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x00bfdca0 in nux::IOpenGLAsmVertexShader::IOpenGLAsmVertexShader(nux::NString) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x00c02819 in nux::GpuDevice::CreateAsmVertexShader(nux::IOpenGLAsmVertexShader**) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#3  0x00c02c1f in nux::GpuDevice::CreateAsmVertexShader() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#4  0x00bfea17 in nux::IOpenGLAsmShaderProgram::IOpenGLAsmShaderProgram(nux::NString) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#5  0x00c02789 in nux::GpuDevice::CreateAsmShaderProgram(nux::IOpenGLAsmShaderProgram**) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#6  0x00c02b5f in nux::GpuDevice::CreateAsmShaderProgram() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#7  0x00bec037 in nux::FontRenderer::FontRenderer(nux::GraphicsEngine&) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#8  0x00bbe433 in nux::GraphicsEngine::GraphicsEngine(nux::GraphicsDisplay&, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#9  0x00bd277d in nux::GraphicsDisplay::CreateOpenGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay const*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#10 0x00bfd489 in nux::DisplayAccessController::CreateGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#11 0x0804961a in ?? ()
+No symbol table info available.
+#12 0x08049b3d in ?? ()
+No symbol table info available.
+#13 0x00280e37 in __libc_start_main () from /lib/libc.so.6
+No symbol table info available.
+#14 0x08049021 in ?? ()
+No symbol table info available.

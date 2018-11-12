@@ -1,0 +1,6 @@
+#0  0xb7646309 in g_datalist_id_set_data_full ()
+   from /usr/lib/libglib-2.0.so.0
+#1  0xb76dc6d7 in ?? () from /usr/lib/libgobject-2.0.so.0
+#2  0x081b8850 in ?? ()
+#3  0x00000033 in ?? ()
+#4  0x00000000 in ?? ()

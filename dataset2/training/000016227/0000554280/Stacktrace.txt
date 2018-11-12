@@ -1,0 +1,145 @@
+#0  0x00007fb218c49260 in g_str_hash () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007fb218c17ded in g_hash_table_lookup () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007fb219edddd9 in theme_dir_get_icon_suffix (
+    dir=<value optimized out>, icon_name=0x1 <Address 0x1 out of bounds>, 
+    has_icon_file=0x0) at /build/buildd/gtk+2.0-2.20.0/gtk/gtkicontheme.c:2079
+        suffix = <value optimized out>
+#3  0x00007fb219ede751 in theme_lookup_icon (
+    icon_theme=<value optimized out>, icon_names=<value optimized out>, 
+    size=32, flags=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkicontheme.c:2132
+        min_difference = 7
+        match = 0
+        min_dir = 0xe91a00
+        closest_builtin = 0x0
+        suffix = <value optimized out>
+        l = 0xe4f6a0
+        has_larger = 0
+#4  choose_icon (icon_theme=<value optimized out>, 
+    icon_names=<value optimized out>, size=32, flags=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkicontheme.c:1272
+        theme = 0xd8d480
+        priv = <value optimized out>
+        l = 0xed7660
+        icon_info = <value optimized out>
+        allow_svg = 1
+        use_builtin = 4
+#5  0x00007fb219ef08e5 in ensure_pixbuf_for_gicon (image=0xe0f8b0)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkimage.c:1771
+        screen = 0xd1ea80
+        icon_theme = 0xd4a9a0
+        settings = <value optimized out>
+        width = 32
+        height = 32
+        info = <value optimized out>
+        flags = 7
+        __PRETTY_FUNCTION__ = "ensure_pixbuf_for_gicon"
+#6  0x00007fb219ef0a35 in gtk_image_calc_size (image=0xe0f8b0)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkimage.c:2333
+        pixbuf = <value optimized out>
+#7  0x00007fb219ef0b59 in gtk_image_size_request (widget=0x1, requisition=0x1)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkimage.c:2359
+No locales.
+#8  0x00007fb2190d7529 in g_closure_invoke ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00007fb2190eae61 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00007fb2190eca76 in g_signal_emit_valist ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x00007fb2190ecdc8 in g_signal_emit_by_name ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00007fb219f7c208 in _gtk_size_group_compute_requisition (
+    widget=0xe0f8b0, requisition=0x7fff96ba4c70)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtksizegroup.c:828
+        width = <value optimized out>
+        height = <value optimized out>
+#13 0x00007fb21a0371cc in gtk_window_size_request (widget=0xe04190, 
+    requisition=0xe041c8) at /build/buildd/gtk+2.0-2.20.0/gtk/gtkwindow.c:4953
+        child_requisition = {width = 0, height = 0}
+#14 0x00007fb2190d75de in g_closure_invoke ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007fb2190eae61 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00007fb2190eca76 in g_signal_emit_valist ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00007fb2190ecdc8 in g_signal_emit_by_name ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x00007fb219f7c208 in _gtk_size_group_compute_requisition (
+    widget=0xe04190, requisition=0x0)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtksizegroup.c:828
+        width = <value optimized out>
+        height = <value optimized out>
+#19 0x00007fb21a037521 in gtk_window_compute_configure_request (
+    window=0xe04190, request=0x7fff96ba5310, geometry=0x7fff96ba52c0, 
+    flags=0x7fff96ba532c) at /build/buildd/gtk+2.0-2.20.0/gtk/gtkwindow.c:5837
+        new_geometry = {min_width = 14729216, min_height = 0, 
+          max_width = 13979904, max_height = 0, base_width = 0, 
+          base_height = 0, width_inc = 14940304, height_inc = 0, 
+          min_aspect = 9.8813129168249309e-324, 
+          max_aspect = 6.9532685472507401e-310, win_gravity = 0}
+        new_flags = <value optimized out>
+        w = <value optimized out>
+        h = <value optimized out>
+        pos = <value optimized out>
+        parent_widget = <value optimized out>
+        info = <value optimized out>
+        screen = 0xd1ea80
+        x = <value optimized out>
+        y = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_window_compute_configure_request"
+#20 0x00007fb21a03fb25 in gtk_window_move_resize (container=0xe04190)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkwindow.c:6049
+        new_flags = <value optimized out>
+        info = 0xe34ef0
+        new_geometry = {min_width = -1766173888, min_height = 32767, 
+          max_width = 14940304, max_height = 0, base_width = 1160, 
+          base_height = 236, width_inc = 0, height_inc = 0, 
+          min_aspect = 6.9532685472539021e-310, 
+          max_aspect = 6.936825012114465e-310, win_gravity = 2528794256}
+        new_request = {x = 1, y = 0, width = 14696848, height = 0}
+        configure_request_pos_changed = <value optimized out>
+        hints_changed = <value optimized out>
+        configure_request_size_changed = <value optimized out>
+#21 gtk_window_check_resize (container=0xe04190)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkwindow.c:5403
+No locales.
+#22 0x00007fb2190d75de in g_closure_invoke ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x00007fb2190eb1dd in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x00007fb2190eca76 in g_signal_emit_valist ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#25 0x00007fb2190ed033 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#26 0x00007fb219e8e530 in gtk_container_idle_sizer (
+    data=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkcontainer.c:1350
+        widget = 0xe04190
+#27 0x00007fb2183bbd56 in gdk_threads_dispatch (data=0xe417a0)
+    at /build/buildd/gtk+2.0-2.20.0/gdk/gdk.c:512
+        ret = 0
+#28 0x00007fb218c268c2 in g_main_context_dispatch ()
+   from /lib/libglib-2.0.so.0
+No symbol table info available.
+#29 0x00007fb218c2a748 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#30 0x00007fb218c2ac55 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#31 0x00007fb219f0caf7 in IA__gtk_main ()
+    at /build/buildd/gtk+2.0-2.20.0/gtk/gtkmain.c:1219
+        tmp_list = 0xd50668
+        functions = 0x0
+        init = 0xd55000
+        loop = <value optimized out>
+#32 0x0000000000404a8a in main ()
+No symbol table info available.

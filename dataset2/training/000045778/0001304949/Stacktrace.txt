@@ -1,0 +1,85 @@
+#0  _int_malloc (av=0x7f4d83587760 <main_arena>, bytes=128) at malloc.c:3489
+        iters = <optimized out>
+        nb = 144
+        idx = 9
+        bin = <optimized out>
+        victim = 0x7f4d8358781b <main_arena+187>
+        size = 5479614109114695680
+        victim_index = <optimized out>
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        block = <optimized out>
+        bit = <optimized out>
+        map = <optimized out>
+        fwd = <optimized out>
+        bck = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#1  0x00007f4d8324b5f0 in __GI___libc_malloc (bytes=128) at malloc.c:2891
+        ar_ptr = 0x7f4d83587760 <main_arena>
+        victim = 0x0
+        __func__ = "__libc_malloc"
+#2  0x00007f4d83802f2d in operator new(unsigned long) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#3  0x00007f4d64f66e83 in unity::dash::PlacesVScrollBar::UpdateTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007f4d64f66ff9 in unity::dash::PlacesVScrollBar::PostLayoutManagement(long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x00007f4d63609b88 in nux::View::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#6  0x00007f4d6364ec09 in nux::ScrollView::ComputeContentPosition(float, float) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#7  0x00007f4d635df73e in nux::HLayout::ComputeContentPosition(float, float) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#8  0x00007f4d635dfca9 in nux::HLayout::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#9  0x00007f4d63609b79 in nux::View::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#10 0x00007f4d636094f1 in nux::VLayout::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#11 0x00007f4d636094f1 in nux::VLayout::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#12 0x00007f4d63609b79 in nux::View::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#13 0x00007f4d636094f1 in nux::VLayout::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#14 0x00007f4d63609b79 in nux::View::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#15 0x00007f4d635dfb11 in nux::HLayout::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#16 0x00007f4d63609b79 in nux::View::ComputeContentSize() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#17 0x00007f4d636197c0 in nux::WindowThread::ComputeQueuedLayout() () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#18 0x00007f4d6361ab28 in nux::WindowThread::RenderInterfaceFromForeignCmd(nux::Rect const&) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#19 0x00007f4d64d52d39 in unity::UnityScreen::paintDisplay() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#20 0x00007f4d64d530f8 in unity::UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#21 0x00007f4d6f7bfc52 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#22 0x00007f4d6f7b22e6 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#23 0x00007f4d6fdedaaf in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#24 0x00007f4d6fdf10a2 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#25 0x00007f4d83b2f9ad in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#26 0x00007f4d83b2fa5f in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#27 0x00007f4d83b2efbd in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#28 0x00007f4d8201b35f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#29 0x00007f4d81b0dce5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#30 0x00007f4d81b0e048 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#31 0x00007f4d81b0e30a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x00007f4d83aea15b in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#33 0x0000000000401971 in main ()
+No symbol table info available.

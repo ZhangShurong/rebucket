@@ -1,0 +1,28 @@
+#0  0x015d3129 in UnityDialogWindow::animate(int, float) () from /usr/lib/compiz/libunitydialog.so
+No symbol table info available.
+#1  0x015d475b in UnityDialogScreen::donePaint() () from /usr/lib/compiz/libunitydialog.so
+No symbol table info available.
+#2  0x07eff7d1 in CompositeScreen::donePaint() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#3  0x07f0111b in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#4  0x07f021f1 in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CompositeScreen>, boost::_bi::list1<boost::_bi::value<CompositeScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#5  0x080652b6 in CompTimeoutSource::callback() ()
+No symbol table info available.
+#6  0x08064a2f in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#7  0x005d3d31 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#8  0x03c9b0cf in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x03c9b800 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x03c9be0b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x005d5373 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#12 0x0806eb46 in CompScreen::eventLoop() ()
+No symbol table info available.
+#13 0x0806268c in main ()
+No symbol table info available.

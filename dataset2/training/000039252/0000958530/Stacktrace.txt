@@ -1,0 +1,28 @@
+#0  0x00fa00f1 in cairo_surface_set_user_data () from /usr/lib/i386-linux-gnu/libcairo.so.2
+No symbol table info available.
+#1  0x00f3c535 in gnome_bg_create_surface () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#2  0x074e21e1 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libbackground.so
+No symbol table info available.
+#3  0x0061c3e3 in g_cclosure_marshal_VOID__VOIDv () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x0061a8c7 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x0063523e in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x006358d3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00f3a27a in ?? () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#8  0x00737aef in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00736d8a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00737195 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x007375db in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x002ad155 in gtk_main () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#13 0x0804ab77 in main ()
+No symbol table info available.

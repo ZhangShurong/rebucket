@@ -1,0 +1,58 @@
+#0  0x00007fc8dc819250 in g_volume_get_mount () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#1  0x00007fc8c37fcbb8 in std::_Function_handler<void (_GVolume*), unity::launcher::VolumeImp::Impl::Impl(unity::glib::Object<_GVolume> const&, std::shared_ptr<unity::FileManager> const&, std::shared_ptr<unity::launcher::DeviceNotificationDisplay> const&, unity::launcher::VolumeImp*)::{lambda(_GVolume*)#2}>::_M_invoke(std::_Any_data const&, _GVolume*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x0000000001820470 in ?? ()
+No symbol table info available.
+#3  0x00007fc8c37b7290 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x000000000182a910 in ?? ()
+No symbol table info available.
+#5  0x0000000002954440 in ?? ()
+No symbol table info available.
+#6  0x000000000182a190 in ?? ()
+No symbol table info available.
+#7  0x0000000002dd6180 in ?? ()
+No symbol table info available.
+#8  0x000000000182a198 in ?? ()
+No symbol table info available.
+#9  0x00007fff89a39220 in ?? ()
+No symbol table info available.
+#10 0x00007fc8c38b309a in unity::GnomeFileManager::Impl::OnOpenLocationsUpdated(_GVariant*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007fc8e087015e in g_variant_get_child_value () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fc8e085457c in g_slice_free1 () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007fc8e085457c in g_slice_free1 () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007fc8e086f448 in g_variant_iter_loop () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007fc8c1b40a55 in unity::glib::DBusProxy::Impl::OnPropertyChanged(_GDBusProxy*, _GVariant*, char***) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#16 0x00007fc8dea09c18 in ffi_call_unix64 () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#17 0x00007fc8dea09580 in ffi_call () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#18 0x00007fc8df872edb in g_cclosure_marshal_generic () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x00007fc8df872580 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x00007fc8df883e60 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x00007fc8df88bc71 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x00007fc8df88bef2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x00007fc8dc85cef8 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#24 0x00007fc8dc84c835 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#25 0x00007fc8e0838f05 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00007fc8e0839248 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007fc8e08396ba in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#28 0x000000000040195b in main ()
+No symbol table info available.

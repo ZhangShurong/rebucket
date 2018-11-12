@@ -1,0 +1,181 @@
+#0  0x08080e74 in CompWindow::id (this=0x0) at /build/buildd/compiz-0.9.5.0/src/window.cpp:4629
+No locals.
+#1  0x077e7d42 in UnityScreen::getWindowPaintList() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00e40248 in CompositeScreen::getWindowPaintList (this=0x8b05580) at /build/buildd/compiz-0.9.5.0/plugins/composite/src/screen.cpp:924
+        rv = <optimized out>
+        curr = 0
+#3  0x016bcddc in DecorWindow::windowNotify (this=0x939e978, n=CompWindowNotifyMap) at /build/buildd/compiz-0.9.5.0/plugins/decor/src/decor.cpp:1676
+No locals.
+#4  0x0807a573 in CompWindow::windowNotify (this=0x939e650, n=CompWindowNotifyMap) at /build/buildd/compiz-0.9.5.0/src/window.cpp:1867
+        curr = 11
+#5  0x0175a43f in PrivateAnimWindow::windowNotify (this=0x939ec28, n=CompWindowNotifyMap) at /build/buildd/compiz-plugins-main-0.9.5.0/animation/src/animation.cpp:2733
+No locals.
+#6  0x0807a573 in CompWindow::windowNotify (this=0x939e650, n=CompWindowNotifyMap) at /build/buildd/compiz-0.9.5.0/src/window.cpp:1867
+        curr = 4
+#7  0x06776821 in FadeWindow::windowNotify (this=0x939f110, n=CompWindowNotifyMap) at /build/buildd/compiz-0.9.5.0/plugins/fade/src/fade.cpp:165
+No locals.
+#8  0x0807a573 in CompWindow::windowNotify (this=0x939e650, n=CompWindowNotifyMap) at /build/buildd/compiz-0.9.5.0/src/window.cpp:1867
+        curr = 1
+#9  0x077e443d in UnityWindow::windowNotify(CompWindowNotify) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#10 0x0807a573 in CompWindow::windowNotify (this=0x939e650, n=CompWindowNotifyMap) at /build/buildd/compiz-0.9.5.0/src/window.cpp:1867
+        curr = 0
+#11 0x080843d2 in CompWindow::map (this=0x939e650) at /build/buildd/compiz-0.9.5.0/src/window.cpp:1328
+No locals.
+#12 0x0809311c in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:1135
+        w = <optimized out>
+        wa = {x = 0, y = 0, width = 200, height = 200, border_width = 0, depth = 32, visual = 0x8ae0c80, root = 171, c_class = 1, bit_gravity = 1, win_gravity = 1, backing_store = 0, backing_planes = 4294967295, backing_pixel = 0, save_under = 0, colormap = 46137347, map_installed = 0, map_state = 0, all_event_masks = 6520959, your_event_mask = 0, do_not_propagate_mask = 0, override_redirect = 0, screen = 0x8ae0968}
+        actionEventHandled = <optimized out>
+#13 0x00e41ddf in PrivateCompositeScreen::handleEvent (this=0x8b05738, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/composite/src/screen.cpp:102
+        w = <optimized out>
+#14 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 21
+        w = <optimized out>
+        wa = {x = 2228212, y = 149726996, width = -1075243216, height = -1075243256, border_width = 2140105, depth = -1075243276, visual = 0x7a1e1bc, root = 3219723996, c_class = 145823556, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 145823208, colormap = 0, map_installed = 0, map_state = 0, all_event_masks = 0, your_event_mask = 23842521, do_not_propagate_mask = 145359504, override_redirect = -1075235860, screen = 0x13}
+        actionEventHandled = <optimized out>
+#15 0x07a4240e in PrivateGLScreen::handleEvent (this=0x8b0ee28, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/opengl/src/screen.cpp:588
+        w = <optimized out>
+#16 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 20
+        w = <optimized out>
+        wa = {x = 2228212, y = 145821040, width = 149572232, height = 14, border_width = 145803856, depth = 145803608, visual = 0x8b10d70, root = 16, c_class = 13, bit_gravity = 149572232, win_gravity = 14, backing_store = 149640184, backing_planes = 134719659, backing_pixel = 145803608, save_under = 149305832, colormap = 145884824, map_installed = 2139452, map_state = 149304088, all_event_masks = 149572232, your_event_mask = 14, do_not_propagate_mask = 145803856, override_redirect = 145803608, screen = 0x8e63318}
+        actionEventHandled = <optimized out>
+#17 0x016bcf3e in DecorScreen::handleEvent (this=0x8e64168, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/decor/src/decor.cpp:1805
+        activeWindow = 0
+        w = <optimized out>
+#18 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 19
+        w = <optimized out>
+        wa = {x = 23796264, y = 149691696, width = 149689320, height = 14, border_width = 145803856, depth = 145803608, visual = 0x8ec1d30, root = 16, c_class = 3, bit_gravity = 149689320, win_gravity = 14, backing_store = 149640184, backing_planes = 134719659, backing_pixel = 145803608, save_under = 0, colormap = 5, map_installed = 0, map_state = 149708304, all_event_masks = 149312248, your_event_mask = 14, do_not_propagate_mask = 145803856, override_redirect = 145803608, screen = 0x8ec5e10}
+        actionEventHandled = <optimized out>
+#19 0x06e27dbb in VPSwitchScreen::handleEvent (this=0x8e6cf58, event=0xbfe933ec) at /build/buildd/compiz-plugins-main-0.9.5.0/vpswitch/src/vpswitch.cpp:246
+No locals.
+#20 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 18
+        w = <optimized out>
+        wa = {x = 10657780, y = 146162180, width = 4394623, height = 10657780, border_width = 23860748, depth = 145627428, visual = 0x93a0440, root = 6, c_class = 145867264, bit_gravity = 0, win_gravity = 149547096, backing_store = 149537984, backing_planes = 10444052, backing_pixel = 134887268, save_under = 0, colormap = 6, map_installed = 134887268, map_state = 149547096, all_event_masks = 134887116, your_event_mask = 149547096, do_not_propagate_mask = -1075241972, override_redirect = 145803608, screen = 0xa}
+        actionEventHandled = <optimized out>
+#21 0x00fc3766 in RegexScreen::handleEvent (this=0x8af6838, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/regex/src/regex.cpp:250
+No locals.
+#22 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 16
+        w = <optimized out>
+        wa = {x = 4193496, y = 4193496, width = -1075241604, height = 51466693, border_width = -1075241208, depth = 154416784, visual = 0x0, root = 40, c_class = -72515583, bit_gravity = 154416784, win_gravity = 154416784, backing_store = 33, backing_planes = 154416784, backing_pixel = 154416804, save_under = 154416804, colormap = 154416784, map_installed = 4792308, map_state = 4797440, all_event_masks = 154416784, your_event_mask = 33, do_not_propagate_mask = 3720328, override_redirect = 0, screen = 0x0}
+        actionEventHandled = <optimized out>
+#23 0x014a32b6 in SnapScreen::handleEvent (this=0x8e85ab8, event=0xbfe933ec) at /build/buildd/compiz-plugins-main-0.9.5.0/snap/src/snap.cpp:560
+No locals.
+#24 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 14
+        w = <optimized out>
+        wa = {x = 0, y = 149482200, width = 0, height = -1075241215, border_width = 12, depth = -1075241020, visual = 0x9343664, root = 154416740, c_class = 2230900, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 51482612, backing_pixel = 134961420, save_under = -1075235860, colormap = 171, map_installed = 51443781, map_state = 145359504, all_event_masks = 13, your_event_mask = -1075235860, do_not_propagate_mask = 134819264, override_redirect = 149482736, screen = 0xbfe933ec}
+        actionEventHandled = <optimized out>
+#25 0x0311051e in MoveScreen::handleEvent (this=0x8e8ecf0, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/move/src/move.cpp:645
+No locals.
+#26 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 13
+        w = <optimized out>
+        wa = {x = 2228212, y = 149487768, width = -1075240400, height = -1075240440, border_width = 2140105, depth = -1075240460, visual = 0x14adff8, root = 3219726812, c_class = 2230900, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 149487328, colormap = 0, map_installed = 0, map_state = 0, all_event_masks = 0, your_event_mask = 0, do_not_propagate_mask = 0, override_redirect = 0, screen = 0x0}
+        actionEventHandled = <optimized out>
+#27 0x014b937a in PlaceScreen::handleEvent (this=0x8e902a0, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/place/src/place.cpp:392
+No locals.
+#28 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 10
+        w = <optimized out>
+        wa = {x = 56, y = 1, width = -1075239912, height = 3707603, border_width = 8052027, depth = 145630968, visual = 0xbfe9234c, root = 2581, c_class = 0, bit_gravity = 0, win_gravity = 145633344, backing_store = 145637580, backing_planes = 56, backing_pixel = 145633380, save_under = 15408527, colormap = 169150465, map_installed = 6, map_state = -1075240056, all_event_masks = 4051344, your_event_mask = 4792308, do_not_propagate_mask = 4797440, override_redirect = 154818560, screen = 0xbfe9247c}
+        actionEventHandled = <optimized out>
+#29 0x058951b8 in WallScreen::handleEvent (this=0x8e9b400, event=0xbfe933ec) at /build/buildd/compiz-plugins-main-0.9.5.0/wall/src/wall.cpp:534
+No locals.
+#30 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 8
+        w = <optimized out>
+        wa = {x = 0, y = 24, width = -1075239584, height = 9, border_width = 0, depth = 149631744, visual = 0x3fe2e84, root = 3707603, c_class = 10452455, bit_gravity = 27, win_gravity = 154788767, backing_store = 4792308, backing_planes = 4797440, backing_pixel = 10657780, save_under = 14, colormap = 3707603, map_installed = 9780952, map_state = -1216503104, all_event_masks = 9068532, your_event_mask = 1, do_not_propagate_mask = 7926997, override_redirect = 154788752, screen = 0xffffffff}
+        actionEventHandled = <optimized out>
+#31 0x03fee3d1 in WorkaroundsScreen::handleEvent (this=0x8eb36e8, event=0xbfe933ec) at /build/buildd/compiz-plugins-main-0.9.5.0/workarounds/src/workarounds.cpp:936
+        w = <optimized out>
+#32 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 6
+        w = <optimized out>
+        wa = {x = 2228212, y = 149684040, width = -1075239040, height = -1075239080, border_width = 2140105, depth = -1075239100, visual = 0x3c004c0, root = 3219728172, c_class = 2230900, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 149683600, colormap = 80, map_installed = 4797488, map_state = -1075239100, all_event_masks = 15408527, your_event_mask = 73, do_not_propagate_mask = 10, override_redirect = 96, screen = 0xa}
+        actionEventHandled = <optimized out>
+#33 0x03c0fe78 in ResizeScreen::handleEvent (this=0x8ec02c8, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/resize/src/resize.cpp:1497
+No locals.
+#34 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 5
+        w = <optimized out>
+        wa = {x = 2228212, y = 149695256, width = -1075238416, height = -1075238456, border_width = 2140105, depth = -1075238476, visual = 0x676f8c4, root = 3219728796, c_class = 2230900, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 149694816, colormap = 154459672, map_installed = 12750539, map_state = 0, all_event_masks = -1075238472, your_event_mask = -1075238472, do_not_propagate_mask = 512, override_redirect = 12758320, screen = 0xc2acde}
+        actionEventHandled = <optimized out>
+#35 0x06777712 in FadeScreen::handleEvent (this=0x8e8e840, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/fade/src/fade.cpp:67
+No locals.
+#36 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 4
+        w = <optimized out>
+        wa = {x = 2228212, y = 149730744, width = -1075238000, height = -1075238040, border_width = 2140105, depth = -1075238060, visual = 0x18c953c, root = 3219729212, c_class = 2230900, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 149730304, colormap = 3707603, map_installed = 97253568, map_state = -1075238125, all_event_masks = 4, your_event_mask = 3710334, do_not_propagate_mask = 97266664, override_redirect = 98131956, screen = 0x934de68}
+        actionEventHandled = <optimized out>
+#37 0x018d6b4a in UnityMTGrabHandlesScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#38 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 3
+        w = <optimized out>
+        wa = {x = 2228212, y = 149726224, width = -1075237440, height = -1075237480, border_width = 2140105, depth = -1075237500, visual = 0x5954ee0, root = 3219729772, c_class = 2230900, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 149725784, colormap = 0, map_installed = 5, map_state = 1062, all_event_masks = 0, your_event_mask = 2230552, do_not_propagate_mask = 124647749, override_redirect = 134550796, screen = 0x768a020}
+        actionEventHandled = <optimized out>
+#39 0x05966dc6 in PrivateScaleScreen::handleEvent (this=0x8eca798, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/plugins/scale/src/scale.cpp:1579
+        w = 0x0
+#40 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 2
+        w = <optimized out>
+        wa = {x = 2228212, y = 149754072, width = -1075236880, height = -1075236920, border_width = 2140105, depth = -1075236940, visual = 0x675cc3c, root = 3219730332, c_class = 2230900, bit_gravity = 0, win_gravity = 0, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 149753632, colormap = 0, map_installed = 1313135368, map_state = 318330561, all_event_masks = 0, your_event_mask = 0, do_not_propagate_mask = 10, override_redirect = 145739080, screen = 0x18}
+        actionEventHandled = <optimized out>
+#41 0x06766cfb in SessionScreen::handleEvent (this=0x8ed11b0, event=0xbfe933ec) at /build/buildd/compiz-plugins-main-0.9.5.0/session/src/session.cpp:707
+        w = 0xbfe933ec
+        state = 0
+#42 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 1
+        w = <optimized out>
+        wa = {x = 2228212, y = 149756412, width = -1075236432, height = -1075236472, border_width = 0, depth = -1075236492, visual = 0xbfe93160, root = 3219730780, c_class = 0, bit_gravity = 2230552, win_gravity = 134554514, backing_store = 5, backing_planes = 0, backing_pixel = 1, save_under = 149755968, colormap = 3710334, map_installed = 2048, map_state = 10000, all_event_masks = 32, your_event_mask = 3707603, do_not_propagate_mask = 15310148, override_redirect = -1216497576, screen = 0x19}
+        actionEventHandled = <optimized out>
+#43 0x077e4839 in UnityScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#44 0x08092dc0 in CompScreen::handleEvent (this=0x8aa0290, event=0xbfe933ec) at /build/buildd/compiz-0.9.5.0/src/event.cpp:986
+        curr = 0
+        w = <optimized out>
+        wa = {x = 24, y = 4792308, width = 10000, height = 145627512, border_width = 154433920, depth = 154399888, visual = 0x9346848, root = 154433648, c_class = 154766384, bit_gravity = 64, win_gravity = 145627512, backing_store = 3721533, backing_planes = 15343604, backing_pixel = 145614072, save_under = -1075236020, colormap = 4792308, map_installed = 4797440, map_state = 1, all_event_masks = 145627512, your_event_mask = 3721533, do_not_propagate_mask = 0, override_redirect = 15343604, screen = 0xea1ff4}
+        actionEventHandled = <optimized out>
+#45 0x0807276d in PrivateScreen::processEvents (this=0x8ad8200) at /build/buildd/compiz-0.9.5.0/src/screen.cpp:703
+        event = {type = 19, xany = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085}, xkey = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, root = 50331650, subwindow = 0, time = 0, x = 0, y = 0, x_root = 0, y_root = 0, state = 0, keycode = 0, same_screen = 0}, xbutton = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, root = 50331650, subwindow = 0, time = 0, x = 0, y = 0, x_root = 0, y_root = 0, state = 0, button = 0, same_screen = 0}, xmotion = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, root = 50331650, subwindow = 0, time = 0, x = 0, y = 0, x_root = 0, y_root = 0, state = 0, is_hint = 0 '\000', same_screen = 0}, xcrossing = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, root = 50331650, subwindow = 0, time = 0, x = 0, y = 0, x_root = 0, y_root = 0, mode = 0, detail = 0, same_screen = 0, focus = 0, state = 0}, xfocus = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, mode = 50331650, detail = 0}, xexpose = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, x = 50331650, y = 0, width = 0, height = 0, count = 0}, xgraphicsexpose = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, drawable = 25166085, x = 50331650, y = 0, width = 0, height = 0, count = 0, major_code = 0, minor_code = 0}, xnoexpose = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, drawable = 25166085, major_code = 50331650, minor_code = 0}, xvisibility = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, state = 50331650}, xcreatewindow = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, parent = 25166085, window = 50331650, x = 0, y = 0, width = 0, height = 0, border_width = 0, override_redirect = 0}, xdestroywindow = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, event = 25166085, window = 50331650}, xunmap = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, event = 25166085, window = 50331650, from_configure = 0}, xmap = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, event = 25166085, window = 50331650, override_redirect = 0}, xmaprequest = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, parent = 25166085, window = 50331650}, xreparent = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, event = 25166085, window = 50331650, parent = 0, x = 0, y = 0, override_redirect = 0}, xconfigure = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, event = 25166085, window = 50331650, x = 0, y = 0, width = 0, height = 0, border_width = 0, above = 0, override_redirect = 0}, xgravity = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, event = 25166085, window = 50331650, x = 0, y = 0}, xresizerequest = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, width = 50331650, height = 0}, xconfigurerequest = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, parent = 25166085, window = 50331650, x = 0, y = 0, width = 0, height = 0, border_width = 0, above = 0, detail = 0, value_mask = 0}, xcirculate = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, event = 25166085, window = 50331650, place = 0}, xcirculaterequest = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, parent = 25166085, window = 50331650, place = 0}, xproperty = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, atom = 50331650, time = 0, state = 0}, xselectionclear = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, selection = 50331650, time = 0}, xselectionrequest = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, owner = 25166085, requestor = 50331650, selection = 0, target = 0, property = 0, time = 0}, xselection = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, requestor = 25166085, selection = 50331650, target = 0, property = 0, time = 0}, xcolormap = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, colormap = 50331650, c_new = 0, state = 0}, xclient = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, message_type = 50331650, format = 0, data = {b = '\000' <se r\377\377\377\377\377\377\377烿\000\377\377\377\377\377\377\377瓿攀 ㄀㤀 昀漀椀猀㸀, s = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, l = {0, 0, 0, 0, 0}}}, xmapping = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, request = 50331650, first_keycode = 0, count = 0}, xerror = {type = 19, display = 0x95f, resourceid = 0, serial = 145630968, error_code = 5 '\005', request_code = 1 '\001', minor_code = 128 '\200'}, xkeymap = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, window = 25166085, key_vector = "\002\000\000\003", '\000' <se r\377\377\377\377\377\377\377烿\000\377\377\377\377\377\377\377瓿攀 ㈀㜀 昀漀椀猀㸀}, xgeneric = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, extension = 25166085, evtype = 50331650}, xcookie = {type = 19, serial = 2399, send_event = 0, display = 0x8ae26f8, extension = 25166085, evtype = 50331650, cookie = 0, data = 0x0}, pad = {19, 2399, 0, 145630968, 25166085, 50331650, 0 <repeats 18 times>}}
+        peekEvent = {type = 0, xany = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600}, xkey = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, root = 145681984, subwindow = 14130600, time = 145681984, x = 13894026, y = 145681984, x_root = 145691240, y_root = 0, state = 2228212, keycode = 145138488, same_screen = 1}, xbutton = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, root = 145681984, subwindow = 14130600, time = 145681984, x = 13894026, y = 145681984, x_root = 145691240, y_root = 0, state = 2228212, button = 145138488, same_screen = 1}, xmotion = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, root = 145681984, subwindow = 14130600, time = 145681984, x = 13894026, y = 145681984, x_root = 145691240, y_root = 0, state = 2228212, is_hint = 56 '8', same_screen = 1}, xcrossing = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, root = 145681984, subwindow = 14130600, time = 145681984, x = 13894026, y = 145681984, x_root = 145691240, y_root = 0, mode = 2228212, detail = 145138488, same_screen = 1, focus = 0, state = 2157099}, xfocus = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, mode = 145681984, detail = 14130600}, xexpose = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, x = 145681984, y = 14130600, width = 145681984, height = 13894026, count = 145681984}, xgraphicsexpose = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, drawable = 14130600, x = 145681984, y = 14130600, width = 145681984, height = 13894026, count = 145681984, major_code = 145691240, minor_code = 0}, xnoexpose = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, drawable = 14130600, major_code = 145681984, minor_code = 14130600}, xvisibility = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, state = 145681984}, xcreatewindow = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, parent = 14130600, window = 145681984, x = 14130600, y = 145681984, width = 13894026, height = 145681984, border_width = 145691240, override_redirect = 0}, xdestroywindow = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, event = 14130600, window = 145681984}, xunmap = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, event = 14130600, window = 145681984, from_configure = 14130600}, xmap = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, event = 14130600, window = 145681984, override_redirect = 14130600}, xmaprequest = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, parent = 14130600, window = 145681984}, xreparent = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, event = 14130600, window = 145681984, parent = 14130600, x = 145681984, y = 13894026, override_redirect = 145681984}, xconfigure = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, event = 14130600, window = 145681984, x = 14130600, y = 145681984, width = 13894026, height = 145681984, border_width = 145691240, above = 0, override_redirect = 2228212}, xgravity = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, event = 14130600, window = 145681984, x = 14130600, y = 145681984}, xresizerequest = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, width = 145681984, height = 14130600}, xconfigurerequest = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, parent = 14130600, window = 145681984, x = 14130600, y = 145681984, width = 13894026, height = 145681984, border_width = 145691240, above = 0, detail = 2228212, value_mask = 145138488}, xcirculate = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, event = 14130600, window = 145681984, place = 14130600}, xcirculaterequest = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, parent = 14130600, window = 145681984, place = 14130600}, xproperty = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, atom = 145681984, time = 14130600, state = 145681984}, xselectionclear = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, selection = 145681984, time = 14130600}, xselectionrequest = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, owner = 14130600, requestor = 145681984, selection = 14130600, target = 145681984, property = 13894026, time = 145681984}, xselection = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, requestor = 14130600, selection = 145681984, target = 14130600, property = 145681984, time = 13894026}, xcolormap = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, colormap = 145681984, c_new = 14130600, state = 145681984}, xclient = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, message_type = 145681984, format = 14130600, data = {b = "@\356\256\b\212\001\324\000@\356\256\bh\022\257\b\000\000\000", s = {-4544, 2222, 394, 212, -4544, 2222, 4712, 2223, 0, 0}, l = {145681984, 13894026, 145681984, 145691240, 0}}}, xmapping = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, request = 145681984, first_keycode = 14130600, count = 145681984}, xerror = {type = 0, display = 0x8aeef28, resourceid = 145144564, serial = 3219731640, error_code = 168 '\250', request_code = 157 '\235', minor_code = 215 '\327'}, xkeymap = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, window = 14130600, key_vector = "@\356\256\b\250\235\327\000@\356\256\b\212\001\324\000@\356\256\bh\022\257\b\000\000\000\000\364\377!"}, xgeneric = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, extension = 14130600, evtype = 145681984}, xcookie = {type = 0, serial = 145682216, send_event = 145144564, display = 0xbfe934b8, extension = 14130600, evtype = 145681984, cookie = 14130600, data = 0x8aeee40}, pad = {0, 145682216, 145144564, -1075235656, 14130600, 145681984, 14130600, 145681984, 13894026, 145681984, 145691240, 0, 2228212, 145138488, 1, 0, 2157099, 145138928, 0, 1, 145144564, 0, 12394496, 12402564}}
+#46 0x0809aa18 in callback (this=<optimized out>) at /build/buildd/compiz-0.9.5.0/src/eventsource.cpp:69
+No locals.
+#47 CompEventSource::callback (this=0x8b1d700) at /build/buildd/compiz-0.9.5.0/src/eventsource.cpp:61
+No locals.
+#48 0x00168f21 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#49 0x00263e1f in g_main_dispatch (context=0x8a59838) at /build/buildd/glib2.0-2.29.14/./glib/gmain.c:2500
+        dispatch = 0x168ec0 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0x8b06550
+        callback = 0x168fb0
+        cb_funcs = 0x31935c
+        cb_data = 0x8b1d830
+        current_source_link = {data = 0x8b06430, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x8b06430
+        current = 0x8b1eb28
+        i = <optimized out>
+#50 g_main_context_dispatch (context=0x8a59838) at /build/buildd/glib2.0-2.29.14/./glib/gmain.c:3083
+No locals.
+#51 0x00264550 in g_main_context_iterate (context=0x8a59838, block=2567968, dispatch=1, self=<optimized out>) at /build/buildd/glib2.0-2.29.14/./glib/gmain.c:3161
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+        fds = 0x8b06560
+#52 0x00264b5b in g_main_loop_run (loop=0x8b1d6f0) at /build/buildd/glib2.0-2.29.14/./glib/gmain.c:3369
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#53 0x0016a563 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#54 0x0806f7b0 in CompScreen::eventLoop (this=0x8aa0290) at /build/buildd/compiz-0.9.5.0/src/screen.cpp:128
+No locals.
+#55 0x08062ec4 in main (argc=1, argv=0xbfe93744) at /build/buildd/compiz-0.9.5.0/src/main.cpp:295
+        manager = {plugins = {<std::_List_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {_M_impl = {<std::allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<__gnu_cxx::new_allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x8aa0268, _M_prev = 0x8aa0268}}}, <No data fields>}, disableSm = false, clientId = 0x8b1cd08 "104482cf921f662001131313619434290200000015740049", displayName = 0x0}

@@ -1,0 +1,56 @@
+#0  0x00d14960 in g_logv () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00d14db2 in g_log () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x03f0bdd7 in gkbd_keyboard_drawing_new_dialog () from /usr/lib/libgnomekbdui.so.4
+No symbol table info available.
+#3  0x06e11c4c in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#4  0x00993a1c in g_cclosure_marshal_VOID__VOID () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x009844b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x0099d0e5 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x0099e75c in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x0099eec2 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x003a9b35 in gtk_widget_activate () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#10 0x002704a0 in gtk_menu_shell_activate_item () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#11 0x00272343 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#12 0x002650ed in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#13 0x0025d898 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#14 0x00982b27 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x009844b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x0099cd36 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x0099e5db in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x0099eec2 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x003a5736 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#20 0x00254cbd in gtk_propagate_event () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#21 0x0025615f in gtk_main_do_event () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#22 0x0082e43a in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#23 0x00d0a015 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#24 0x00d0de28 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#25 0x00d0e367 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00256749 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#27 0x0804b543 in main ()
+No symbol table info available.

@@ -1,0 +1,60 @@
+#0  0x00286960 in g_logv () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00286db2 in g_log () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x06bd9dd7 in gkbd_keyboard_drawing_new_dialog () from /usr/lib/libgnomekbdui.so.4
+No symbol table info available.
+#3  0x08e4dc4c in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#4  0x004afa1c in g_cclosure_marshal_VOID__VOID () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x004a04b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x004b90e5 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x004ba75c in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x004baec2 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x0070502a in gtk_menu_item_activate () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#10 0x072ec3ee in ?? () from /usr/lib/libappindicator.so.1
+No symbol table info available.
+#11 0x004b01bc in g_cclosure_marshal_VOID(unsigned int0_t) () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x004a04b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x004b90e5 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x004ba75c in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x004baec2 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x0440049c in ?? () from /usr/lib/libdbusmenu-glib.so.1
+No symbol table info available.
+#17 0x043fe2e9 in dbusmenu_menuitem_handle_event () from /usr/lib/libdbusmenu-glib.so.1
+No symbol table info available.
+#18 0x04401a93 in ?? () from /usr/lib/libdbusmenu-glib.so.1
+No symbol table info available.
+#19 0x04403140 in dbus_glib_marshal__dbusmenu_server_BOOLEAN__INT_STRING_BOXED_UINT_POINTER () from /usr/lib/libdbusmenu-glib.so.1
+No symbol table info available.
+#20 0x0011ab21 in ?? () from /usr/lib/libdbus-glib-1.so.2
+No symbol table info available.
+#21 0x0011b38e in ?? () from /usr/lib/libdbus-glib-1.so.2
+No symbol table info available.
+#22 0x0014b6ee in ?? () from /lib/libdbus-1.so.3
+No symbol table info available.
+#23 0x0013e3b7 in dbus_connection_dispatch () from /lib/libdbus-1.so.3
+No symbol table info available.
+#24 0x0011739d in ?? () from /usr/lib/libdbus-glib-1.so.2
+No symbol table info available.
+#25 0x0027c015 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#26 0x0027fe28 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00280367 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#28 0x006f0749 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#29 0x0804b543 in main ()
+No symbol table info available.

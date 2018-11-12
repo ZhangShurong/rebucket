@@ -1,0 +1,56 @@
+#0  0x00007f2efd1b013b in g_logv () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f2efd1b0312 in g_log () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f2efbef3623 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#3  0x00007f2efbf00437 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#4  0x00007f2efc4712bf in _XError () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00007f2efc46e291 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007f2efc46e2d5 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007f2efc46f0e0 in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007f2efc46aa6d in XSync () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x00007f2ee2475eb0 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#10 0x00007f2ee24774f4 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#11 0x00007f2ee2477519 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#12 0x00007f2efd4643c4 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007f2efd4745f5 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007f2efd47bfcb in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007f2efd47c6a4 in g_signal_emit_by_name () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00007f2ee1e42a28 in ?? () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#17 0x00007f2ee1e3e874 in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#18 0x00007f2ee2476503 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#19 0x00007f2efbefc901 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#20 0x00007f2efbefca90 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#21 0x00007f2efbecf5c1 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#22 0x00007f2efbefc782 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#23 0x00007f2efd1a8dda in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#24 0x00007f2efd1a91a0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#25 0x00007f2efd1a959a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00007f2efdb9084d in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#27 0x00000000004037f4 in main ()
+No symbol table info available.

@@ -1,0 +1,34 @@
+#0  0xb74199e6 in ?? () from /usr/lib/compiz/libworkarounds.so
+#1  0x089f1580 in ?? ()
+#2  0x03400023 in ?? ()
+#3  0xb7a39531 in pthread_mutex_lock ()
+   from /lib/tls/i686/cmov/libpthread.so.0
+#4  0xb741a841 in ?? () from /usr/lib/compiz/libworkarounds.so
+#5  0x08085510 in ?? ()
+#6  0x03400023 in ?? ()
+#7  0x083972a0 in ?? ()
+#8  0x00000008 in ?? ()
+#9  0xb72b1c64 in ?? () from /usr/lib/compiz/libswitcher.so
+#10 0xbfe8cd28 in ?? ()
+#11 0x0839f6a8 in ?? ()
+#12 0xb734b398 in ?? () from /usr/lib/compiz/libexpo.so
+#13 0x08085510 in ?? ()
+#14 0x084b0ab8 in ?? ()
+#15 0xbfe8c918 in ?? ()
+#16 0xb734a793 in ?? () from /usr/lib/compiz/libexpo.so
+#17 0x08085510 in ?? ()
+#18 0xbfe8cd28 in ?? ()
+#19 0x08077240 in ?? ()
+#20 0x0807d610 in ?? ()
+#21 0x08266408 in ?? ()
+#22 0x083eee10 in ?? ()
+#23 0x08085510 in ?? ()
+#24 0xb73424b8 in ?? () from /usr/lib/compiz/libezoom.so
+#25 0x08085510 in ?? ()
+#26 0x084b0ab8 in ?? ()
+#27 0xbfe8c948 in ?? ()
+#28 0xb733feff in ?? () from /usr/lib/compiz/libezoom.so
+#29 0x08085510 in ?? ()
+#30 0xbfe8cd28 in ?? ()
+#31 0xb7e0310b in _xcb_lock_io () from /usr/lib/libxcb.so.1
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

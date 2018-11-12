@@ -1,0 +1,36 @@
+#0  typing_break_timeout (manager=0x0) at gsd-typing-break-manager.c:82
+No locals.
+#1  0xb75c0316 in g_timeout_dispatch (source=0x8082058, 
+    callback=0xb59b27a0 <typing_break_timeout>, user_data=0x0)
+    at /build/buildd/glib2.0-2.16.1/glib/gmain.c:3437
+No locals.
+#2  0xb75bfbd8 in IA__g_main_context_dispatch (context=0x80763b8)
+    at /build/buildd/glib2.0-2.16.1/glib/gmain.c:2003
+No locals.
+#3  0xb75c2e3e in g_main_context_iterate (context=0x80763b8, block=1, 
+    dispatch=1, self=0x807b598)
+    at /build/buildd/glib2.0-2.16.1/glib/gmain.c:2636
+	got_ownership = <value optimized out>
+	max_priority = 2147483647
+	timeout = 2
+	some_ready = 1
+	nfds = <value optimized out>
+	allocated_nfds = <value optimized out>
+	fds = (GPollFD *) 0x808df68
+	__PRETTY_FUNCTION__ = "g_main_context_iterate"
+#4  0xb75c31c7 in IA__g_main_loop_run (loop=0x808dfd0)
+    at /build/buildd/glib2.0-2.16.1/glib/gmain.c:2844
+	got_ownership = -1219005152
+	self = (GThread *) 0x807b598
+	__PRETTY_FUNCTION__ = "IA__g_main_loop_run"
+#5  0xb7ca5244 in IA__gtk_main ()
+    at /build/buildd/gtk+2.0-2.12.9/gtk/gtkmain.c:1163
+	tmp_list = (GList *) 0xbfe6bce0
+	functions = (GList *) 0x0
+	init = (GtkInitFunction *) 0x8076a38
+	loop = (GMainLoop *) 0x808dfd0
+#6  0x0804ae0a in main (argc=134725440, argv=0x2) at main.c:256
+	manager = (GnomeSettingsManager *) 0x8082620
+	program = (GnomeProgram *) 0x8076a38
+	res = -1248122976
+	error = (GError *) 0x0

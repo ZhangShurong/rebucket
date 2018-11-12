@@ -1,0 +1,109 @@
+#0  g_variant_unref (value=0x0) at /build/buildd/glib2.0-2.29.16/./glib/gvariant-core.c:617
+No locals.
+#1  0x00007fc640133a18 in g_settings_get_boolean (settings=<optimized out>, key=<optimized out>) at /build/buildd/glib2.0-2.29.16/./gio/gsettings.c:1988
+        value = 0x0
+        result = 0
+#2  0x00007fc640d232c7 in init_config (playlist=0x7fc6418fd2b0) at totem-playlist.c:1551
+No locals.
+#3  totem_playlist_init (playlist=0x7fc6418fd2b0) at totem-playlist.c:1730
+        container = <optimized out>
+        xml = 0x7fc64185b2d0
+        widget = <optimized out>
+        context = <optimized out>
+#4  0x00007fc63fb374b3 in g_type_create_instance (type=<optimized out>) at /build/buildd/glib2.0-2.29.16/./gobject/gtype.c:1885
+        node = 0x7fc64197d7c0
+        instance = <optimized out>
+        class = <optimized out>
+        i = <optimized out>
+        total_size = <optimized out>
+#5  0x00007fc63fb169ac in g_object_constructor (type=<optimized out>, n_construct_properties=0, construct_params=0x0) at /build/buildd/glib2.0-2.29.16/./gobject/gobject.c:1629
+        object = <optimized out>
+#6  0x00007fc63fb19942 in g_object_newv (object_type=140489480722368, n_parameters=0, parameters=0x0) at /build/buildd/glib2.0-2.29.16/./gobject/gobject.c:1412
+        cparams = 0x0
+        oparams = 0x0
+        nqueue = 0x0
+        object = <optimized out>
+        class = 0x7fc64197c800
+        unref_class = 0x7fc64197c800
+        slist = 0x0
+        n_total_cparams = <optimized out>
+        n_cparams = 0
+        n_oparams = 0
+        n_cvalues = <optimized out>
+        cvalues = <optimized out>
+        clist = <optimized out>
+        newly_constructed = <optimized out>
+        i = <optimized out>
+        __PRETTY_FUNCTION__ = "g_object_newv"
+#7  0x00007fc63fb1a4bc in g_object_new (object_type=140489480722368, first_property_name=0x0) at /build/buildd/glib2.0-2.29.16/./gobject/gobject.c:1322
+        object = <optimized out>
+        var_args = {{gp_offset = 1063733069, fp_offset = 32710, overflow_arg_area = 0x0, reg_save_area = 0x7fc64197d7c0}}
+        __PRETTY_FUNCTION__ = "g_object_new"
+#8  0x00007fc640d23bca in totem_playlist_new () at totem-playlist.c:1742
+        playlist = <optimized out>
+#9  0x00007fc640d1c266 in playlist_widget_setup (totem=0x7fc641530000) at totem-object.c:4238
+No locals.
+#10 0x00007fc64118d947 in app_init (argv=0x7fc641541a40, totem=0x7fc641530000) at totem.c:102
+        sidebar_pageid = <optimized out>
+#11 app_command_line (app=<optimized out>, command_line=<optimized out>, totem=0x7fc641530000) at totem.c:223
+        context = <optimized out>
+        baconoptiongroup = <optimized out>
+        error = 0x0
+        argc = 1
+        argv = 0x7fc641541a40
+#12 0x00007fc639f40a14 in ffi_call_unix64 () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#13 0x00007fc639f40435 in ffi_call () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#14 0x00007fc63fb13397 in g_cclosure_marshal_generic (closure=0x7fc64152fa00, return_gvalue=0x7fff7de2d330, n_param_values=2, param_values=<optimized out>, invocation_hint=<optimized out>, marshal_data=0x7fc64118d7a0) at /build/buildd/glib2.0-2.29.16/./gobject/gclosure.c:1146
+        rtype = 0x7fc639f40d80
+        rvalue = 0x7fff7de2d0e0
+        n_args = 3
+        atypes = 0x7fff7de2d0b0
+        args = 0x7fff7de2d080
+        i = <optimized out>
+        cif = {abi = FFI_UNIX64, nargs = 3, arg_types = 0x7fff7de2d0b0, rtype = 0x7fc639f40d80, bytes = 0, flags = 10}
+        cc = 0x7fc64152fa00
+#15 0x00007fc63fb12ed4 in g_closure_invoke (closure=0x7fc64152fa00, return_value=0x7fff7de2d330, n_param_values=2, param_values=0x7fc641538950, invocation_hint=<optimized out>) at /build/buildd/glib2.0-2.29.16/./gobject/gclosure.c:773
+        marshal = 0x7fc63fb13200 <g_cclosure_marshal_generic>
+        marshal_data = <optimized out>
+        in_marshal = <optimized out>
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#16 0x00007fc63fb2617b in signal_emit_unlocked_R (node=<optimized out>, detail=0, instance=0x7fc641531800, emission_return=0x7fff7de2d470, instance_and_params=0x7fc641538950) at /build/buildd/glib2.0-2.29.16/./gobject/gsignal.c:3271
+        tmp = <optimized out>
+        handler = 0x7fc6414c5980
+        accumulator = 0x7fc64152ffe0
+        emission = {next = 0x0, instance = 0x7fc641531800, ihint = {signal_id = 165, detail = 0, run_type = G_SIGNAL_RUN_FIRST}, state = EMISSION_RUN, chain_type = 4}
+        class_closure = 0x7fc6414530e0
+        hlist = 0x7fc63f3f61b0
+        handler_list = 0x7fc6414c5980
+        return_accu = 0x7fff7de2d330
+        accu = {g_type = 24, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 165
+        max_sequential_handler_number = 10
+        return_value_altered = 0
+#17 0x00007fc63fb2f626 in g_signal_emit_valist (instance=<optimized out>, signal_id=<optimized out>, detail=<optimized out>, var_args=0x7fff7de2d4d8) at /build/buildd/glib2.0-2.29.16/./gobject/gsignal.c:3012
+        return_value = {g_type = 24, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        error = 0x0
+        rtype = 24
+        static_scope = 0
+        instance_and_params = 0x7fc641538950
+        signal_return_type = 24
+        param_values = 0x7fc641538968
+        node = 0x7fc64152f570
+        i = <optimized out>
+        n_params = 1
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#18 0x00007fc63fb2f962 in g_signal_emit (instance=<optimized out>, signal_id=<optimized out>, detail=<optimized out>) at /build/buildd/glib2.0-2.29.16/./gobject/gsignal.c:3059
+        var_args = {{gp_offset = 32, fp_offset = 48, overflow_arg_area = 0x7fff7de2d5b0, reg_save_area = 0x7fff7de2d4f0}}
+#19 0x00007fc64012a7fc in g_application_run (application=0x7fc641531800, argc=<optimized out>, argv=0x7fff7de2d718) at /build/buildd/glib2.0-2.29.16/./gio/gapplication.c:1303
+        cmdline = 0x7fc64153a8f0
+        v = <optimized out>
+        error = 0x0
+        arguments = 0x7fc64152f7c0
+        status = <optimized out>
+        i = <optimized out>
+        __PRETTY_FUNCTION__ = "g_application_run"
+#20 0x00007fc64118d632 in main (argc=2, argv=0x7fff7de2d718) at totem.c:280
+        totem = 0x7fc641530000
+        gtk_settings = <optimized out>

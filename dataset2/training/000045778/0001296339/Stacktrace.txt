@@ -1,0 +1,81 @@
+#0  _int_malloc (av=0x7f5470000020, bytes=6) at malloc.c:3489
+        iters = <optimized out>
+        nb = 32
+        idx = 2
+        bin = <optimized out>
+        victim = 0x7f54704cc570
+        size = 208
+        victim_index = <optimized out>
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        block = <optimized out>
+        bit = <optimized out>
+        map = <optimized out>
+        fwd = <optimized out>
+        bck = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#1  0x00007f549e1b9430 in __GI___libc_malloc (bytes=6) at malloc.c:2891
+        ar_ptr = 0x7f5470000020
+        victim = 0x7f547016aa50
+        __func__ = "__libc_malloc"
+#2  0x00007f549ca81611 in g_malloc () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f549ca98b0f in g_strdup () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f547e050c56 in pango_font_description_copy () from /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#5  0x00007f54754dadb6 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#6  0x00007f54754db97b in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#7  0x00007f54754db8c8 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#8  0x00007f54754dbcc0 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#9  0x00007f54754d6503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#10 0x00007f54754d6583 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#11 0x00007f54754d6503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#12 0x00007f54754d6903 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#13 0x00007f54754d6503 in ?? () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#14 0x00007f54754e2ac3 in rsvg_handle_render_cairo_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#15 0x00007f54754e2ef4 in rsvg_handle_get_pixbuf_sub () from /usr/lib/x86_64-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#16 0x00007f54756eee46 in ?? () from /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+No symbol table info available.
+#17 0x00007f5488f411fb in gdk_pixbuf_loader_close () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#18 0x00007f5488f3d435 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#19 0x00007f5488f3f07d in gdk_pixbuf_new_from_stream_at_scale () from /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#20 0x00007f547e6a43cb in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#21 0x00007f547e6a7b6a in gtk_icon_info_load_icon () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#22 0x00007f547f42f0c0 in unity::IconLoader::Impl::IconLoaderTask::LoaderJobFunc(_GTask*, void*, void*, _GCancellable*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#23 0x00007f5498803ba5 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#24 0x00007f549caa189c in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#25 0x00007f549caa0f15 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00007f549c614182 in start_thread (arg=0x7f546945e700) at pthread_create.c:312
+        __res = <optimized out>
+        pd = 0x7f546945e700
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140000520169216, -4016525245474085866, 0, 0, 140000520169920, 140000520169216, 3957183143666050070, 3957352713091212310}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+        pagesize_m1 = <optimized out>
+        sp = <optimized out>
+        freesize = <optimized out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#27 0x00007f549e23112d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:111
+No locals.

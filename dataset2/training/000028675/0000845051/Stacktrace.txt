@@ -1,0 +1,14 @@
+#0  0x00007fa8c3de6b50 in ?? ()
+No symbol table info available.
+#1  0x00007fa8dba2a31d in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007fa8db066b6d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007fa8db067368 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007fa8db0678a2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007fa8dc24f10d in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#6  0x00000000004036f2 in main ()
+No symbol table info available.

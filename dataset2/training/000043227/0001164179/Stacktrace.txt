@@ -1,0 +1,27 @@
+#0  0x44903580 in sigc::internal::slot_call0<unity::launcher::VolumeImp::Impl::Impl(unity::glib::Object<_GVolume> const&, std::shared_ptr<unity::FileManager> const&, std::shared_ptr<unity::launcher::DeviceNotificationDisplay> const&, unity::launcher::VolumeImp*)::{lambda()#3}, void>::call_it(sigc::internal::slot_rep*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x44974172 in unity::GnomeFileManager::Impl::OnOpenLocationsUpdated(_GVariant*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x44973e5a in std::_Function_handler<void (_GVariant*), sigc::bound_mem_functor1<void, unity::GnomeFileManager::Impl, _GVariant*> >::_M_invoke(std::_Any_data const&, _GVariant*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x44fd69a2 in std::function<void (_GVariant*)>::operator()(_GVariant*) const () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#4  0x44fd4f3e in unity::glib::DBusProxy::Impl::OnPropertyChanged(_GDBusProxy*, _GVariant*, char***) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#5  0x44fd6612 in std::_Function_handler<void (_GDBusProxy*, _GVariant*, char***), sigc::bound_mem_functor3<void, unity::glib::DBusProxy::Impl, _GDBusProxy*, _GVariant*, char***> >::_M_invoke(std::_Any_data const&, _GDBusProxy*, _GVariant*, char***) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#6  0x44fd6598 in unity::glib::Signal<void, _GDBusProxy*, _GVariant*, char***>::Callback(_GDBusProxy*, _GVariant*, char***, unity::glib::Signal<void, _GDBusProxy*, _GVariant*, char***>*) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#7  0x4065b948 in ffi_call_VFP () from /usr/lib/arm-linux-gnueabihf/libffi.so.6
+No symbol table info available.
+#8  0x4065be74 in ffi_call () from /usr/lib/arm-linux-gnueabihf/libffi.so.6
+No symbol table info available.
+#9  0x405c2622 in g_cclosure_marshal_generic () from /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x405c1fe8 in g_closure_invoke () from /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x405cd92c in ?? () from /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x405cd92c in ?? () from /usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0
+No symbol table info available.
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)

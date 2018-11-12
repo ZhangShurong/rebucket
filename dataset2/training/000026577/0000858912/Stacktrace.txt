@@ -1,0 +1,83 @@
+#0  g_variant_unref (value=0x0) at /build/buildd/glib2.0-2.29.92/./glib/gvariant-core.c:617
+No locals.
+#1  0x00699ac2 in g_settings_get_boolean (settings=0x9f7f318, key=0x96971bf "show-seconds") at /build/buildd/glib2.0-2.29.92/./gio/gsettings.c:1988
+        value = 0x0
+        result = 0
+#2  0x09693468 in generate_format_string_full (show_day=0, show_date=0) at /build/buildd/indicator-datetime-0.2.95/./src/utils.c:188
+        twelvehour = 1
+        settings = 0x9f7f318
+        time_mode = 0
+        show_seconds = <optimized out>
+        time_string = <optimized out>
+        __PRETTY_FUNCTION__ = "generate_format_string_full"
+        date_string = <optimized out>
+#3  0x09694a0a in generate_format_string_now (self=<optimized out>) at /build/buildd/indicator-datetime-0.2.95/./src/indicator-datetime.c:1150
+No locals.
+#4  0x09695d0c in indicator_datetime_init (self=0x9e84690) at /build/buildd/indicator-datetime-0.2.95/./src/indicator-datetime.c:309
+        client = <optimized out>
+#5  0x00f0f71b in g_type_create_instance (type=167290624) at /build/buildd/glib2.0-2.29.92/./gobject/gtype.c:1885
+        node = 0x9f8a700
+        instance = 0x9e84690
+        class = 0x9f6a7c8
+        i = <optimized out>
+        total_size = 4294967295
+#6  0x00eedaeb in g_object_constructor (type=167290624, n_construct_properties=0, construct_params=0x0) at /build/buildd/glib2.0-2.29.92/./gobject/gobject.c:1629
+        object = <optimized out>
+#7  0x00ef0c59 in g_object_newv (object_type=167290624, n_parameters=0, parameters=0x0) at /build/buildd/glib2.0-2.29.92/./gobject/gobject.c:1412
+        cparams = 0x0
+        oparams = 0x0
+        nqueue = 0x0
+        object = <optimized out>
+        class = 0x9f6a7c8
+        unref_class = 0x9f6a7c8
+        slist = 0x0
+        n_total_cparams = <optimized out>
+        n_cparams = 0
+        n_oparams = 0
+        n_cvalues = <optimized out>
+        cvalues = <optimized out>
+        clist = <optimized out>
+        newly_constructed = <optimized out>
+        i = <optimized out>
+        __PRETTY_FUNCTION__ = "g_object_newv"
+#8  0x00ef17b8 in g_object_new (object_type=167290624, first_property_name=0x0) at /build/buildd/glib2.0-2.29.92/./gobject/gobject.c:1322
+        object = <optimized out>
+        var_args = <optimized out>
+        __PRETTY_FUNCTION__ = "g_object_new"
+#9  0x0087e092 in indicator_object_new_from_file () from /usr/lib/libindicator3.so.6
+No symbol table info available.
+#10 0x0804fb6c in ?? ()
+No symbol table info available.
+#11 0x00f0f71b in g_type_create_instance (type=166478192) at /build/buildd/glib2.0-2.29.92/./gobject/gtype.c:1885
+        node = 0x9ec4170
+        instance = 0x9ec6068
+        class = 0x9ec41a8
+        i = <optimized out>
+        total_size = 4294967295
+#12 0x00eedaeb in g_object_constructor (type=166478192, n_construct_properties=0, construct_params=0x0) at /build/buildd/glib2.0-2.29.92/./gobject/gobject.c:1629
+        object = <optimized out>
+#13 0x00ef0c59 in g_object_newv (object_type=166478192, n_parameters=0, parameters=0x0) at /build/buildd/glib2.0-2.29.92/./gobject/gobject.c:1412
+        cparams = 0x0
+        oparams = 0x0
+        nqueue = 0x0
+        object = <optimized out>
+        class = 0x9ec41a8
+        unref_class = 0x9ec41a8
+        slist = 0x0
+        n_total_cparams = <optimized out>
+        n_cparams = 0
+        n_oparams = 0
+        n_cvalues = <optimized out>
+        cvalues = <optimized out>
+        clist = <optimized out>
+        newly_constructed = <optimized out>
+        i = <optimized out>
+        __PRETTY_FUNCTION__ = "g_object_newv"
+#14 0x00ef17b8 in g_object_new (object_type=166478192, first_property_name=0x0) at /build/buildd/glib2.0-2.29.92/./gobject/gobject.c:1322
+        object = <optimized out>
+        var_args = <optimized out>
+        __PRETTY_FUNCTION__ = "g_object_new"
+#15 0x0804f316 in panel_service_get_default ()
+No symbol table info available.
+#16 0x0804b14c in main ()
+No symbol table info available.

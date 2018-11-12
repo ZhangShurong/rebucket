@@ -1,0 +1,98 @@
+#0  g_logv (log_domain=0x7f96c4c9a3a6 "Gdk", log_level=<optimized out>, format=0x7f96c4ca4b27 "%s", args1=0x7fff5fed4b88) at /build/buildd/glib2.0-2.31.4.is.2.31.2/./glib/gmessages.c:765
+        domain = 0x0
+        data = <optimized out>
+        depth = 0
+        log_func = <optimized out>
+        domain_fatal_mask = <optimized out>
+        masquerade_fatal = <optimized out>
+        test_level = <optimized out>
+        was_fatal = 0
+        was_recursion = 0
+        i = <optimized out>
+#1  0x00007f96c41f9dd2 in g_log (log_domain=<optimized out>, log_level=<optimized out>, format=<optimized out>) at /build/buildd/glib2.0-2.31.4.is.2.31.2/./glib/gmessages.c:792
+        args = {{gp_offset = 24, fp_offset = 48, overflow_arg_area = 0x7fff5fed4c60, reg_save_area = 0x7fff5fed4ba0}}
+#2  0x00007f96c4c7a2d3 in _gdk_x11_display_error_event (display=<optimized out>, error=<optimized out>) at /build/buildd/gtk+3.0-3.3.4/./gdk/x11/gdkdisplay-x11.c:2397
+        buf = "BadMatch (invalid parameter attributes)", '\000' <repeats 24 times>
+        msg = <optimized out>
+        display_x11 = <optimized out>
+        tmp_list = <optimized out>
+        ignore = 0
+#3  0x00007f96c4c87037 in gdk_x_error (error=0x7fff5fed4e00, xdisplay=<optimized out>) at /build/buildd/gtk+3.0-3.3.4/./gdk/x11/gdkmain-x11.c:312
+        error_display = 0x11cc000
+        manager = <optimized out>
+        displays = 0x0
+#4  gdk_x_error (xdisplay=<optimized out>, error=0x7fff5fed4e00) at /build/buildd/gtk+3.0-3.3.4/./gdk/x11/gdkmain-x11.c:275
+No locals.
+#5  0x00007f96b32f4441 in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#6  0x00007f96c38f907f in _XError () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007f96c38f5e31 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007f96c38f5e75 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x00007f96c38f6c80 in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#10 0x00007f96c38dbe3b in _XGetWindowAttributes () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#11 0x00007f96c38dbfe1 in XGetWindowAttributes () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#12 0x00007f96b32f2844 in xkl_engine_select_input_merging () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#13 0x00007f96b32f4018 in xkl_engine_process_create_window_evt () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#14 0x00007f96b32f428b in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#15 0x00007f96b392c123 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#16 0x00007f96c4c83591 in gdk_event_apply_filters (xevent=0x7fff5fed5240, event=0x1287400, window=0x0) at /build/buildd/gtk+3.0-3.3.4/./gdk/x11/gdkeventsource.c:83
+        filter = 0x1347b30
+        node = <optimized out>
+        tmp_list = 0x7f96ac049860
+        result = <optimized out>
+#17 0x00007f96c4c83720 in gdk_event_source_translate_event (xevent=0x7fff5fed5240, event_source=0x11dd280) at /build/buildd/gtk+3.0-3.3.4/./gdk/x11/gdkeventsource.c:197
+        filter_window = 0x11d8000
+        dpy = 0x11bea10
+        event = 0x1287400
+        result = GDK_FILTER_CONTINUE
+        event_translator = <optimized out>
+#18 _gdk_x11_display_queue_events (display=0x11cc000) at /build/buildd/gtk+3.0-3.3.4/./gdk/x11/gdkeventsource.c:334
+        event = 0x1287400
+        xevent = {type = 16, xany = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349}, xkey = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, root = 37748737, subwindow = 42949672970, time = 42949672970, x = 0, y = 0, x_root = 21896368, y_root = 0, state = 21887824, keycode = 0, same_screen = 21896496}, xbutton = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, root = 37748737, subwindow = 42949672970, time = 42949672970, x = 0, y = 0, x_root = 21896368, y_root = 0, state = 21887824, button = 0, same_screen = 21896496}, xmotion = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, root = 37748737, subwindow = 42949672970, time = 42949672970, x = 0, y = 0, x_root = 21896368, y_root = 0, state = 21887824, is_hint = 0 '\000', same_screen = 21896496}, xcrossing = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, root = 37748737, subwindow = 42949672970, time = 42949672970, x = 0, y = 0, x_root = 21896368, y_root = 0, mode = 21887824, detail = 0, same_screen = 21896496, focus = 0, state = 21895936}, xfocus = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, mode = 37748737, detail = 0}, xexpose = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, x = 37748737, y = 0, width = 10, height = 10, count = 10}, xgraphicsexpose = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, drawable = 349, x = 37748737, y = 0, width = 10, height = 10, count = 10, major_code = 10, minor_code = 0}, xnoexpose = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, drawable = 349, major_code = 37748737, minor_code = 0}, xvisibility = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, state = 37748737}, xcreatewindow = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, parent = 349, window = 37748737, x = 10, y = 10, width = 10, height = 10, border_width = 0, override_redirect = 0}, xdestroywindow = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, event = 349, window = 37748737}, xunmap = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, event = 349, window = 37748737, from_configure = 10}, xmap = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, event = 349, window = 37748737, override_redirect = 10}, xmaprequest = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, parent = 349, window = 37748737}, xreparent = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, event = 349, window = 37748737, parent = 42949672970, x = 10, y = 10, override_redirect = 0}, xconfigure = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, event = 349, window = 37748737, x = 10, y = 10, width = 10, height = 10, border_width = 0, above = 21896368, override_redirect = 21887824}, xgravity = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, event = 349, window = 37748737, x = 10, y = 10}, xresizerequest = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, width = 37748737, height = 0}, xconfigurerequest = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, parent = 349, window = 37748737, x = 10, y = 10, width = 10, height = 10, border_width = 0, above = 21896368, detail = 21887824, value_mask = 21896496}, xcirculate = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, event = 349, window = 37748737, place = 10}, xcirculaterequest = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, parent = 349, window = 37748737, place = 10}, xproperty = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, atom = 37748737, time = 42949672970, state = 10}, xselectionclear = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, selection = 37748737, time = 42949672970}, xselectionrequest = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, owner = 349, requestor = 37748737, selection = 42949672970, target = 42949672970, property = 0, time = 21896368}, xselection = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, requestor = 349, selection = 37748737, target = 42949672970, property = 42949672970, time = 0}, xcolormap = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, colormap = 37748737, new = 10, state = 10}, xclient = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, message_type = 37748737, format = 10, data = {b = "\n\000\000\000\n", '\000' <repeats 11 times>"\260, \034N\001", s = {10, 0, 10, 0, 0, 0, 0, 0, 7344, 334}, l = {42949672970, 0, 21896368, 21887824, 21896496}}}, xmapping = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, request = 37748737, first_keycode = 0, count = 10}, xerror = {type = 16, display = 0x244, resourceid = 0, serial = 18606608, error_code = 93 ']', request_code = 1 '\001', minor_code = 0 '\000'}, xkeymap = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, window = 349, key_vector = "\001\000@\002\000\000\000\000\n\000\000\000\n\000\000\000\n\000\000\000\n\000\000\000\000\000\000\000\000\000\000"}, xgeneric = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, extension = 349, evtype = 0}, xcookie = {type = 16, serial = 580, send_event = 0, display = 0x11bea10, extension = 349, evtype = 0, cookie = 37748737, data = 0xa0000000a}, pad = {140282221821968, 580, 0, 18606608, 349, 37748737, 42949672970, 42949672970, 0, 21896368, 21887824, 21896496, 21895936, 21304192, 0, 0, 0, 0, 0, 176, 128, 21895920, 3, 140285223460278}}
+        xdisplay = 0x11bea10
+        event_source = 0x11dd280
+        display_x11 = <optimized out>
+#19 0x00007f96c4c56371 in gdk_display_get_event (display=0x11cc000) at /build/buildd/gtk+3.0-3.3.4/./gdk/gdkdisplay.c:311
+        __PRETTY_FUNCTION__ = "gdk_display_get_event"
+#20 0x00007f96c4c83412 in gdk_event_source_dispatch (source=<optimized out>, callback=<optimized out>, user_data=<optimized out>) at /build/buildd/gtk+3.0-3.3.4/./gdk/x11/gdkeventsource.c:356
+        display = 0x11cc000
+        event = <optimized out>
+#21 0x00007f96c41f289a in g_main_dispatch (context=0x11da000) at /build/buildd/glib2.0-2.31.4.is.2.31.2/./glib/gmain.c:2513
+        dispatch = 0x7f96c4c83400 <gdk_event_source_dispatch>
+        was_in_call = 0
+        user_data = 0x0
+        callback = 0
+        cb_funcs = 0x0
+        cb_data = 0x0
+        current_source_link = {data = 0x11dd280, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x11dd280
+        current = 0x1256d40
+        i = <optimized out>
+#22 g_main_context_dispatch (context=0x11da000) at /build/buildd/glib2.0-2.31.4.is.2.31.2/./glib/gmain.c:3050
+No locals.
+#23 0x00007f96c41f2c60 in g_main_context_iterate (dispatch=1, block=<optimized out>, context=0x11da000, self=<optimized out>) at /build/buildd/glib2.0-2.31.4.is.2.31.2/./glib/gmain.c:3121
+        timeout = 0
+        some_ready = 1
+        fds = <optimized out>
+        max_priority = 0
+        nfds = 9
+        allocated_nfds = <optimized out>
+#24 g_main_context_iterate (context=0x11da000, block=<optimized out>, dispatch=1, self=<optimized out>) at /build/buildd/glib2.0-2.31.4.is.2.31.2/./glib/gmain.c:3058
+        some_ready = 1
+#25 0x00007f96c41f305a in g_main_loop_run (loop=0x7f96ac008b70) at /build/buildd/glib2.0-2.31.4.is.2.31.2/./glib/gmain.c:3315
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#26 0x00007f96c5036b5d in gtk_main () at /build/buildd/gtk+3.0-3.3.4/./gtk/gtkmain.c:1164
+        loop = 0x7f96ac008b70
+#27 0x0000000000403bd1 in main ()
+No symbol table info available.

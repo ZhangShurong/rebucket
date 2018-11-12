@@ -1,0 +1,20 @@
+#0  0x00007f73a55e1a59 in gnome_rr_screen_get_dpms_mode () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#1  0x00007f73a55e1c30 in gnome_rr_screen_set_dpms_mode () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#2  0x00007f739c7075b7 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#3  0x00007f739c707ead in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#4  0x00007f73a42591cb in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f73a425858a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f73a4258950 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f73a4258d4a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f73a50a844d in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#9  0x0000000000403bd1 in main ()
+No symbol table info available.

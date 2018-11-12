@@ -1,0 +1,89 @@
+#0  0x00007fa08fd50ed1 in _int_malloc (av=0x7fa090090760 <main_arena>, bytes=24) at malloc.c:3399
+        iters = <optimised out>
+        nb = 32
+        idx = 2
+        bin = <optimised out>
+        victim = 0x3b64f60
+        size = <optimised out>
+        victim_index = <optimised out>
+        remainder = <optimised out>
+        remainder_size = <optimised out>
+        block = <optimised out>
+        bit = <optimised out>
+        map = <optimised out>
+        fwd = <optimised out>
+        bck = <optimised out>
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#1  0x00007fa08fd52f10 in __GI___libc_malloc (bytes=24) at malloc.c:2850
+        ar_ptr = 0x7fa090090760 <main_arena>
+        victim = 0x1440a40
+        __func__ = "__libc_malloc"
+#2  0x00007fa09030bf3d in operator new(unsigned long) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#3  0x00007fa07b9daf42 in std::list<CompWindow*, std::allocator<CompWindow*> >::operator=(std::list<CompWindow*, std::allocator<CompWindow*> > const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#4  0x00007fa07b9d9f5a in PrivateGLScreen::paintOutputRegion(GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x00007fa07b9dae65 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x00007fa075aac093 in WallScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#7  0x00007fa07b9dad90 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#8  0x00007fa070feb96c in unity::UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#9  0x00007fa07b9dad90 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#10 0x00007fa07b9db959 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#11 0x00007fa0880385df in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#12 0x00007fa088039f48 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#13 0x00007fa09063657d in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20130415
+No symbol table info available.
+#14 0x00007fa09063662f in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20130415
+No symbol table info available.
+#15 0x00007fa090635b8d in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20130415
+No symbol table info available.
+#16 0x00007fa08eb22a4f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x00007fa08e61c9d5 in g_idle_add_full () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007fff18c7c458 in ?? ()
+No symbol table info available.
+#19 0x0000000000e4cb20 in ?? ()
+No symbol table info available.
+#20 0x00007fa08eb229d0 in ?? () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#21 0x0000000000db7100 in ?? ()
+No symbol table info available.
+#22 0x0000000000d851b0 in ?? ()
+No symbol table info available.
+#23 0x0000000000000001 in ?? ()
+No symbol table info available.
+#24 0x0000000001e93230 in ?? ()
+No symbol table info available.
+#25 0x0000000000000001 in ?? ()
+No symbol table info available.
+#26 0x00007fa08e62b8b0 in g_queue_find_custom () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007fa08e61cd38 in g_child_watch_source_new () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#28 0x000000017fffffff in ?? ()
+No symbol table info available.
+#29 0x0000000000db7100 in ?? ()
+No symbol table info available.
+#30 0x0000000000d84f10 in ?? ()
+No symbol table info available.
+#31 0x0000000000e4c780 in ?? ()
+No symbol table info available.
+#32 0x0000000000d82ec0 in ?? ()
+No symbol table info available.
+#33 0x00007fff18c7c520 in ?? ()
+No symbol table info available.
+#34 0x0000000000d86800 in ?? ()
+No symbol table info available.
+#35 0x0000000000000000 in ?? ()
+No symbol table info available.

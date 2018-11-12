@@ -1,0 +1,36 @@
+#0  0x0075d416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00457cb1 in raise () from /lib/libc.so.6
+No symbol table info available.
+#2  0x0045b18e in abort () from /lib/libc.so.6
+No symbol table info available.
+#3  0x0048edc7 in ?? () from /lib/libc.so.6
+No symbol table info available.
+#4  0x004991a1 in ?? () from /lib/libc.so.6
+No symbol table info available.
+#5  0x0049ab56 in ?? () from /lib/libc.so.6
+No symbol table info available.
+#6  0x0049dc8d in free () from /lib/libc.so.6
+No symbol table info available.
+#7  0x001e34b1 in operator delete(void*) () from /usr/lib/libstdc++.so.6
+No symbol table info available.
+#8  0x00ad7e0a in metadata::Plugin_Option::~Plugin_Option() () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#9  0x00ada967 in void google::protobuf::internal::RepeatedPtrFieldBase::Destroy<google::protobuf::RepeatedPtrField<metadata::Plugin_Option>::TypeHandler>() () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#10 0x00ad7e6e in metadata::Plugin_Screen::~Plugin_Screen() () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#11 0x00ad7f22 in metadata::Plugin_Screen::~Plugin_Screen() () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#12 0x00ad3c42 in metadata::Plugin::SharedDtor() () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#13 0x00ad8a9d in metadata::Plugin::~Plugin() () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#14 0x0045c8bf in ?? () from /lib/libc.so.6
+No symbol table info available.
+#15 0x0045c91f in exit () from /lib/libc.so.6
+No symbol table info available.
+#16 0x00443cee in __libc_start_main () from /lib/libc.so.6
+No symbol table info available.
+#17 0x080631b1 in _start ()
+No symbol table info available.

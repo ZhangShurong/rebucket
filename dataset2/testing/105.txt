@@ -1,0 +1,42 @@
+#0  0xb74ca77b in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0xb65c3b66 in ccsStringToModifiers () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#2  0xb7710c5e in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#3  0xb65d3ee9 in ccsIntegrationReadOptionIntoSetting () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#4  0xb770f4c6 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#5  0xb65d4d21 in ccsBackendReadSetting () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#6  0xb65d4d8e in ?? () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#7  0xb65d4d21 in ccsBackendReadSetting () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#8  0xb65d89f5 in ccsReadPluginSettingsDefault () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#9  0xb65d6a81 in ccsReadPluginSettings () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#10 0xb65c97d2 in ccsLoadPluginSettings () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#11 0xb65d7544 in ccsContextNew () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#12 0xb674dccb in CcpScreen::CcpScreen(CompScreen*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#13 0xb6750968 in CompPlugin::VTableForScreen<CcpScreen>::initScreen(CompScreen*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#14 0xb76b25aa in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#15 0xb76b2f30 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#16 0xb7685f10 in compiz::private_screen::PluginManager::updatePlugins(CompScreen*, std::vector<CompOption::Value, std::allocator<CompOption::Value> > const&) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#17 0xb7686310 in PrivateScreen::initPlugins() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#18 0xb7686b5d in CompScreenImpl::init(char const*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#19 0x0804ad90 in CompManager::init() ()
+No symbol table info available.
+#20 0x08049ed0 in main ()
+No symbol table info available.

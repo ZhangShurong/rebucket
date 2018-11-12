@@ -1,0 +1,34 @@
+#0  0x009a7416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x0054fdd1 in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x005532ae in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x005487e8 in __assert_fail () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00805850 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x0080664f in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00801f06 in XSync () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00448927 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#8  0x00422f62 in gdk_flush () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#9  0x079dbd93 in ?? () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#10 0x079dc181 in ?? () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#11 0x002d04ff in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x002cee1f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x002cf550 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x002cfb5b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00b12275 in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#16 0x0804aa71 in main ()
+No symbol table info available.

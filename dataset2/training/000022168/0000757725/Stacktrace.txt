@@ -1,0 +1,14 @@
+#0  0x00007f989ac81f45 in ?? ()
+No symbol table info available.
+#1  0x000000000042cc48 in CompScreen::leaveShowDesktopMode(CompWindow*) ()
+No symbol table info available.
+#2  0x000000000042cec9 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#3  0x0000000000422f78 in CompManager::init() ()
+No symbol table info available.
+#4  0x0000000000422eb0 in CompManager::init() ()
+No symbol table info available.
+#5  0x0000000000000001 in ?? ()
+No symbol table info available.
+#6  0x0000000000000000 in ?? ()
+No symbol table info available.

@@ -1,0 +1,50 @@
+#0  0x002b0213 in g_variant_unref () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x0055424c in g_settings_get () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x0805b43f in ?? ()
+No symbol table info available.
+#3  0x0805b529 in ?? ()
+No symbol table info available.
+#4  0x002103ab in g_type_create_instance () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x001ee78b in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x001f18f9 in g_object_newv () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x001f2458 in g_object_new () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x0805c635 in ?? ()
+No symbol table info available.
+#9  0x0805975d in ?? ()
+No symbol table info available.
+#10 0x00570dc8 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#11 0x00570eed in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#12 0x005711c9 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#13 0x005183a2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#14 0x005680c8 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#15 0x005183a2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#16 0x005184dc in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#17 0x0026ec30 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00272e1f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00273550 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00273b5b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x00c19275 in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#22 0x080562d5 in ?? ()
+No symbol table info available.
+#23 0x00f80da7 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#24 0x08056619 in ?? ()
+No symbol table info available.

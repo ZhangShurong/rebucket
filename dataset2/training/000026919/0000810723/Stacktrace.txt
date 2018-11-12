@@ -1,0 +1,10 @@
+#0  0x01109a70 in ?? ()
+No symbol table info available.
+#1  0x00a3e9cf in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00a3ea2f in exit () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00a25daf in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x0804aba1 in _start ()
+No symbol table info available.

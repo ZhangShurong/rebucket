@@ -1,0 +1,11 @@
+#0  0x003c4410 in vfprintf () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00468361 in __vasprintf_chk () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00310566 in g_variant_type_first () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x002e9693 in g_slist_nth_data () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0xbfee043c in ?? ()
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

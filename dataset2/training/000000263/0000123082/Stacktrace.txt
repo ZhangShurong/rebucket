@@ -1,0 +1,57 @@
+#0  0x00000000 in ?? ()
+#1  0x08051739 in compLogMessage (d=0x8076800, componentName=0x80728f8 "core", level=CompLogLevelFatal, format=0x8072b69 "Couldn't open display %s") at ../../src/main.c:121
+	args = 0xbfce16c0 "Å)Î¿À\037Ì·\201\027À·\030"
+	message = "Couldn't open display 1\000\\ðl\017\000àÍ·\031\000\000\000(Ü¹·üÖ¹·Ø\016Î¿ô\237Í·\f\017Î¿\000\000\000\000\003\000\000\000´â¿·ÈuÆ·\220\214\a\bô\237Í·\000\020\000\000x\017Î¿Q\016¿·\220\214\a\b\000Àö·\000Ðö·\001\000\000\000ÿÿÿÿ\000\000\000\000\003\003\000\000\000\000\000\000\000\000\000\000\003¼\b\000\200\201\000\000\001\000\000\000è\003\000\000è\003", '\0' <repeats 14 times>, "H\001\000\000`\017Î¿\000\020\000\000\000Àö·Ã³Å·ô\237Í·X¼¿·\004\000\000\000\000Àö·\221 À·\200\017Î¿"...
+#2  0x08056cc4 in addDisplay (name=0xbfce29c5 "1") at ../../src/display.c:2564
+	dpy = (Display *) 0x0
+	focus = <value optimized out>
+	revertTo = -1077012632
+	i = -1077007941
+	compositeMajor = 134710376
+	compositeMinor = 134718576
+	fixesMinor = -1212140399
+	xkbOpcode = 134722832
+	firstScreen = <value optimized out>
+	lastScreen = -1212147839
+#3  0x08051b6d in main (argc=3, argv=0xbfce1d54) at ../../src/main.c:450
+	size = 134686725
+	ctx = {offset = 3739, pluginData = 0x0, textureFilterData = 0x0, refreshRateData = 0x0}
+	displayName = 0xbfce29c5 "1"
+	plugin = {0x1c93db56 <Address 0x1c93db56 out of bounds>, 0xb7a6425c <Address 0xb7a6425c out of bounds>, 0xb7a6425f <Address 0xb7a6425f out of bounds>, 0x0, 0x0, 
+  0x1 <Address 0x1 out of bounds>, 0x364 <Address 0x364 out of bounds>, 0xb7a59900 "ÈS¦·\020ii\r", 0xb7cde000 "", 0xb7a6425b <Address 0xb7a6425b out of bounds>, 
+  0xb7ba67a8 <Address 0xb7ba67a8 out of bounds>, 0xb7a63078 <Address 0xb7a63078 out of bounds>, 0x1 <Address 0x1 out of bounds>, 0xb7f88ff4 "(\237\001", 0xb7a825b0 "<\230ø·", 
+  0xbfce1988 "h\022º·", 0xbfce19a4 "à\031Î¿\202¾÷·°%¨·", 0xb7f78103 "\203ø", 0xb7a63078 <Address 0xb7a63078 out of bounds>, 0xbfce1988 "h\022º·", 0xb7f8983c "\220-¨·\031", 0x0, 
+  0xb7a59900 "ÈS¦·\020ii\r", 0x1 <Address 0x1 out of bounds>, 0x0, 0x1 <Address 0x1 out of bounds>, 0xbfce191c "\001", 
+  0xb7f7efd8 "\205Àt\027\2118\203À\b\211F\004\211ð\213]ô\213uø\213}ü\211ì]Ã1öëí\211ö\215¼'", 0x11 <Address 0x11 out of bounds>, 0x8 <Address 0x8 out of bounds>, 0xb7f6f468 "", 
+  0xbfce1994 "²\232«\aô\217ø·ø#¨·x0¦·à\031Î¿\202¾÷·°%¨·", 0xb7a58000 "", 0x1 <Address 0x1 out of bounds>, 0xbfce1950 "\210", 0xbfce19d0 "M", 0xb7a823f8 "", 
+  0xb7a6425b <Address 0xb7a6425b out of bounds>, 0x1000000 <Address 0x1000000 out of bounds>, 0x1c93db57 <Address 0x1c93db57 out of bounds>, 0x0, 0x0, 
+  0xb7f87434 "_dl_allocate_tls_init", 0x0, 0xb7f87434 "_dl_allocate_tls_init", 0xb7f6f700 "l\236\001", 0x88 <Address 0x88 out of bounds>, 0x0, 0x0, 0x0, 
+  0xb7a66300 <Address 0xb7a66300 out of bounds>, 0x10000004 <Address 0x10000004 out of bounds>, 0xb7f63000 <Address 0xb7f63000 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
+  0xb7ba1268 <Address 0xb7ba1268 out of bounds>, 0xb7cde000 "", 0x0, 0x7ab9ab2 <Address 0x7ab9ab2 out of bounds>, 0xb7f88ff4 "(\237\001", 0xb7a823f8 "", 
+  0xb7a63078 <Address 0xb7a63078 out of bounds>, 0xbfce19e0 "º\022§·¼\022§·×\032Î Ý\032Î¿¼\206¥·\024\032Î¿¸\034Î¿zg¦·×\032Î¿¹\022§·", 
+  0xb7f7be82 "\213Uð\203ì\024\211Á1À\205Òt\t\205Ét\002\213\001\003B\004\213\213\030ýÿÿ\205Éu\t\213Mè\213Uì\211\004\021\215eô[^_]Ã1Àë\223\215\203ðàÿÿ\211D$\f\215\203³àÿÿ\211D$\004\215\203ÀàÿÿÇD$\bM", 0xb7a825b0 "<\230ø·", 0xb7a59900 "ÈS¦·\020ii\r", 0x1 <Address 0x1 out of bounds>, 0x1 <Address 0x1 out of bounds>, 0x0, 
+  0xb7a6425b <Address 0xb7a6425b out of bounds>, 0x34 <Address 0x34 out of bounds>, 0xb7a62000 <Address 0xb7a62000 out of bounds>, 0x500150b8 <Address 0x500150b8 out of bounds>, 
+  0x4d <Address 0x4d out of bounds>, 0x0, 0xb7a586bc "", 0xbfce1a14 "Linux", 0xb7a712ba <Address 0xb7a712ba out of bounds>, 0xb7a712bc <Address 0xb7a712bc out of bounds>, 
+  0x20ce1ad7 <Address 0x20ce1ad7 out of bounds>, 0xbfce1add " Mon Jun 25 17:33:14 GMT 2007", 0xb7a586bc "", 0xbfce1a14 "Linux", 
+  0xbfce1cb8 "(\035Î¿¼þº·à\214ø· &\a\b(\035Î¿¼þº·\003", 0xb7a6677a <Address 0xb7a6677a out of bounds>, 0xbfce1ad7 "#1 SMP Mon Jun 25 17:33:14 GMT 2007", 
+  0xb7a712b9 <Address 0xb7a712b9 out of bounds>, 0x0, 0x100 <Address 0x100 out of bounds>, 0xbfce1c18 "<\230ø·", 0x756e694c <Address 0x756e694c out of bounds>, 
+  0x78 <Address 0x78 out of bounds>, 0x0 <repeats 14 times>, 0x74756700 <Address 0x74756700 out of bounds>, 0x30317973 <Address 0x30317973 out of bounds>, 
+  0x67 <Address 0x67 out of bounds>, 0x0 <repeats 13 times>, 0x2e320000 <Address 0x2e320000 out of bounds>, 0x32322e36 <Address 0x32322e36 out of bounds>, 
+  0x672d372d <Address 0x672d372d out of bounds>, 0x72656e65 <Address 0x72656e65 out of bounds>, 0x6369 <Address 0x6369 out of bounds>, 0x0 <repeats 11 times>, 
+  0x23000000 <Address 0x23000000 out of bounds>, 0x4d532031 <Address 0x4d532031 out of bounds>, 0x6f4d2050 <Address 0x6f4d2050 out of bounds>, 
+  0x754a206e <Address 0x754a206e out of bounds>, 0x3532206e <Address 0x3532206e out of bounds>, 0x3a373120 <Address 0x3a373120 out of bounds>, 
+  0x313a3333 <Address 0x313a3333 out of bounds>, 0x4d472034 <Address 0x4d472034 out of bounds>, 0x30322054 <Address 0x30322054 out of bounds>, 
+  0x3730 <Address 0x3730 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x36383669 <Address 0x36383669 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
+  0x804f226 "GLIBC_2.1", 0xd696910 <Address 0xd696910 out of bounds>, 0xb7ba5fa8 <Address 0xb7ba5fa8 out of bounds>, 0xbfce1b84 "\b\034Î¿B\177÷·", 
+  0xb7f77b79 "\205À\017\204rÿÿÿ\213Eà\213@\b\205À\017\205bÿÿÿ\205ö\017\205Zÿÿÿf\203}ä", 0xb7babcd4 <Address 0xb7babcd4 out of bounds>, 0x804f21c "GLIBC_2.0", 0xb7f19f94 ".so.6", 
+  0xb7f19f84 "\220\237ñ·", 0xb7a82e18 "\034ò\004\b\020ii\r", 0xbfce0002 "", 0xb7f7cc99 "\205Àuç\203Ä\b¸\001", 0x804d167 "libc.so.6", 0xb7f19f90 "libm.so.6", 
+  0xb7f88ff4 "(\237\001", 0xb7a82dcc "", 0xf <Address 0xf out of bounds>, 0xbfce1c08 "Ô\034Î¿\003\201÷·L£\004\b¸\034Î¿<\230ø·", 0xb7f77f42 "\205Àt»é\235þÿÿ\220\215t&", 0x0, 0x0, 
+  0x0, 0x0, 0x123 <Address 0x123 out of bounds>, 0x3d8f5 <Address 0x3d8f5 out of bounds>, 0xbfce1bd4 "", 0xbfce1bd4 "", 0xbfce1cc4 " &\a\b(\035Î¿¼þº·\003", 
+  0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 0xb7cde000 "", 0x19 <Address 0x19 out of bounds>, 0xb7b9dc28 <Address 0xb7b9dc28 out of bounds>, 
+  0xb7b9da28 <Address 0xb7b9da28 out of bounds>, 0x804d2f2 "__libc_start_main", 0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 0x804d2fe "_main", 0x804d2f6 "bc_start_main", 
+  0x0...}
+	i = <value optimized out>
+	nPlugin = 0
+	disableSm = 0
+	clientId = 0x0
+	refreshRateArg = 0x0

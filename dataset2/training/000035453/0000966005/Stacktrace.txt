@@ -1,0 +1,26 @@
+#0  0x00007fbb0e3d635b in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmedia-keys.so
+No symbol table info available.
+#1  0x00007fbb0e3d6dae in ?? () from /usr/lib/gnome-settings-daemon-3.0/libmedia-keys.so
+No symbol table info available.
+#2  0x00007fbb30ac397d in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#3  0x00007fbb30b21166 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#4  0x00007fbb30ac397d in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0x00007fbb30b171ea in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#6  0x00007fbb30ac397d in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#7  0x00007fbb30ac3aac in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#8  0x00007fbb30553d8a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007fbb30554150 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007fbb3055454a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007fbb30f43d8d in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#12 0x0000000000403801 in main ()
+No symbol table info available.

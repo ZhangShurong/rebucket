@@ -1,0 +1,20 @@
+#0  0x0000000001432159 in ?? ()
+No symbol table info available.
+#1  0x00007f26517813c8 in nux::GraphicsDisplay::GrabKeyboard(void (*)(bool, void*), void*, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x00007f2651b7a60b in nux::WindowCompositor::GrabKeyboardAdd(nux::InputArea*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x00007f2651ed2aec in PlacesController::Show() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007f2651e62c09 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x00007f2661ce9bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f2661cea3a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f2661cea9f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#9  0x0000000000423180 in main ()
+No symbol table info available.

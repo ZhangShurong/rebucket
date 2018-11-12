@@ -1,0 +1,29 @@
+#0  0x00b18362 in ?? () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#1  0x00b09f59 in ?? () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#2  0x00170aef in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#3  0x00d73d3d in ?? () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#4  0x00170aef in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0x00170c1b in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#6  0x0052b130 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x0052f23f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x0052f970 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x0052ff7b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00bf6fe5 in gtk_main () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#11 0x08054b45 in ?? ()
+No symbol table info available.
+#12 0x00733113 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#13 0x08054bb5 in ?? ()
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

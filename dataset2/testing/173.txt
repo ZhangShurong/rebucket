@@ -1,0 +1,14 @@
+#0  0xb7297054 in XDefineCursor () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#1  0xb76a4e70 in PrivateScreen::updateStartupFeedback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#2  0xb76a5114 in PrivateScreen::removeAllSequences() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#3  0xb76a516b in CompScreenImpl::~CompScreenImpl() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#4  0xb76a5342 in CompScreenImpl::~CompScreenImpl() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#5  0x0804ac8b in CompManager::init() ()
+No symbol table info available.
+#6  0x0804a14a in main ()
+No symbol table info available.

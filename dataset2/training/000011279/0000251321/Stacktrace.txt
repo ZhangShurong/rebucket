@@ -1,0 +1,7 @@
+#0  0x000000000041e888 in addWindowDamage ()
+#1  0x000000000041ecd4 in resizeWindow ()
+#2  0x000000000042175d in handleSyncAlarm ()
+#3  0x000000000041d0e3 in ?? ()
+#4  0x000000000040ed33 in ?? ()
+#5  0x00000000004124f2 in eventLoop ()
+#6  0x000000000040d049 in main ()

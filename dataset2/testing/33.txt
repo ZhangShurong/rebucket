@@ -1,0 +1,9 @@
+#0  0x02f5a1d3 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libxsettings.so
+No symbol table info available.
+#1  0x02f5afed in ?? () from /usr/lib/gnome-settings-daemon-3.0/libxsettings.so
+No symbol table info available.
+#2  0x00a4092a in g_flags_register_static () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x08b72444 in ?? ()
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

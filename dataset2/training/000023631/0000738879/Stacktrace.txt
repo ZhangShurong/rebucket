@@ -1,0 +1,38 @@
+#0  0x00007fa09c74fd05 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007fa09c753ab6 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007fa09c7983e0 in malloc () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007fa09db47a63 in g_malloc () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007fa09db83953 in g_variant_type_copy () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007fa09eb61c68 in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#6  0x00007fa09eb619f8 in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#7  0x00007fa09eb61a6d in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#8  0x00007fa09eb62fd4 in g_dbus_message_new_from_blob () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#9  0x00007fa09eb6c0f5 in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#10 0x00007fa09eb1ad49 in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#11 0x00007fa09db40bcd in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fa09db413a8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007fa09db419f2 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007fa09eb6ad44 in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#15 0x00007fa09db683e4 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007fa09d46cd8c in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0
+No symbol table info available.
+#17 0x00007fa09c801f7d in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#18 0x0000000000000000 in ?? ()
+No symbol table info available.

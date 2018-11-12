@@ -1,0 +1,16 @@
+#0  0x00007f63e745c394 in pthread_mutex_lock () from /lib/x86_64-linux-gnu/libpthread.so.0
+No symbol table info available.
+#1  0x00007f63e7b29899 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x000000000042cee8 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#3  0x000000000042d169 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#4  0x000000000042b215 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#5  0x000000000042b349 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#6  0x0000000000422989 in CompManager::fini() ()
+No symbol table info available.
+#7  0x0000000000423188 in main ()
+No symbol table info available.

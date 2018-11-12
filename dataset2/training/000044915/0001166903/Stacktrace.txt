@@ -1,0 +1,24 @@
+#0  0xb7103e95 in g_logv () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0xb7104013 in g_log () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0xb71fe76e in Glib::exception_handlers_invoke() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#3  0xb71fee65 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#4  0xb70fc3b3 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0xb70fc750 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0xb70fcc2b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0xb72002e3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#8  0xb76ab46a in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#9  0xb76ab4b4 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#10 0x08049b22 in CompManager::run() ()
+No symbol table info available.
+#11 0x080492ec in main ()
+No symbol table info available.

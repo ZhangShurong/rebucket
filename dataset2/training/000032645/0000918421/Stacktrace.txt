@@ -1,0 +1,32 @@
+#0  0x00007f8245ddc727 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#1  0x00007f8245ddca77 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#2  0x00007f824f6db364 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x00007f824f6eb615 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007f824f6f2feb in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f824f6f31b2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f8245dd71f5 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#7  0x00007f824febf981 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#8  0x00007f824febfb10 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#9  0x00007f824fe92481 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#10 0x00007f824febf802 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#11 0x00007f824f4206ca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f824f420a90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f824f420e8a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f82502723fd in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#15 0x0000000000403bd1 in main ()
+No symbol table info available.

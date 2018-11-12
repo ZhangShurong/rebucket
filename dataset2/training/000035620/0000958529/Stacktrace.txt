@@ -1,0 +1,38 @@
+#0  0x007a17a4 in gnome_rr_screen_get_dpms_mode () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#1  0x007a1994 in gnome_rr_screen_set_dpms_mode () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#2  0x00e04b16 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#3  0x00e050c6 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#4  0x002813e3 in g_cclosure_marshal_VOID__VOIDv () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x0027f8c7 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x0029a23e in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x0029a8d3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00dfe381 in gpm_idletime_alarm_reset_all () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#9  0x00dfe42a in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#10 0x003551b4 in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#11 0x00355372 in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#12 0x003231ee in gdk_display_get_event () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#13 0x00354ffa in ?? () from /usr/lib/i386-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#14 0x0059fd8a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x005a0195 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x005a05db in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00a0d155 in gtk_main () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#18 0x0804ab77 in main ()
+No symbol table info available.

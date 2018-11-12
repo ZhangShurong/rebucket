@@ -1,0 +1,7 @@
+#0  0xb7f1bbad in _dl_close () from /lib/ld-linux.so.2
+#1  0xb7a67cb4 in dlclose_doit () from /lib/tls/i686/cmov/libdl.so.2
+#2  0xb7f165d6 in _dl_catch_error () from /lib/ld-linux.so.2
+#3  0xb7a682bc in _dlerror_run () from /lib/tls/i686/cmov/libdl.so.2
+#4  0xb7a67cea in dlclose () from /lib/tls/i686/cmov/libdl.so.2
+#5  0xb7c267bd in ?? () from /usr/lib/libGL.so.1
+#6  0x00000000 in ?? ()

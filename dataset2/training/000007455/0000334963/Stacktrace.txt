@@ -1,0 +1,41 @@
+#0  set_touchpad_enabled (state=1) at gsd-mouse-manager.c:492
+	numdevices = 239
+	i = 0
+	devicelist = (XDeviceInfo *) 0x0
+	device = (XDevice *) 0x1
+	data = 0 '\0'
+	prop = 193
+#1  0x00007f6ff3ca0e35 in set_mouse_settings (manager=0x169a700)
+    at gsd-mouse-manager.c:785
+	client = <value optimized out>
+#2  0x00007f6ff3ca11f1 in gsd_mouse_manager_idle_cb (manager=0x169a700)
+    at gsd-mouse-manager.c:881
+	client = <value optimized out>
+#3  0x00007f6ffc2d319a in IA__g_main_context_dispatch (context=0x163fb30)
+    at /build/buildd/glib2.0-2.19.8/glib/gmain.c:1814
+No locals.
+#4  0x00007f6ffc2d6870 in g_main_context_iterate (context=0x163fb30, block=1, 
+    dispatch=1, self=<value optimized out>)
+    at /build/buildd/glib2.0-2.19.8/glib/gmain.c:2448
+	max_priority = 200
+	timeout = 0
+	some_ready = 1
+	nfds = 8
+	allocated_nfds = <value optimized out>
+	fds = (GPollFD *) 0x1784ff0
+	__PRETTY_FUNCTION__ = "g_main_context_iterate"
+#5  0x00007f6ffc2d6d3d in IA__g_main_loop_run (loop=0x1784fd0)
+    at /build/buildd/glib2.0-2.19.8/glib/gmain.c:2656
+	self = (GThread *) 0x16034d0
+	__PRETTY_FUNCTION__ = "IA__g_main_loop_run"
+#6  0x00007f6ffed572e7 in IA__gtk_main ()
+    at /build/buildd/gtk+2.0-2.15.4/gtk/gtkmain.c:1205
+	tmp_list = (GList *) 0x1680e00
+	functions = (GList *) 0x0
+	init = (GtkInitFunction *) 0x16862f0
+	loop = <value optimized out>
+#7  0x000000000040470d in main (argc=1, argv=0x7fff0746dde8) at main.c:489
+	manager = (GnomeSettingsManager *) 0x1680e00
+	bus = (DBusGConnection *) 0x1683d38
+	res = <value optimized out>
+	error = (GError *) 0x0

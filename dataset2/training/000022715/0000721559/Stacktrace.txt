@@ -1,0 +1,128 @@
+#0  0x063108c0 in IconTexture::~IconTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x06310952 in IconTexture::~IconTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x08920da1 in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#3  0x08920fd8 in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#4  0x060d349f in nux::Area::UnParentObject() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x06114fb3 in nux::Layout::~Layout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x06188968 in nux::VLayout::~VLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x06188992 in nux::VLayout::~VLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#8  0x08920da1 in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#9  0x08920fd8 in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#10 0x060d349f in nux::Area::UnParentObject() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#11 0x0610f68c in nux::View::RemoveLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#12 0x0610f961 in nux::View::~View() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#13 0x0634fc30 in PlacesTile::~PlacesTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x0634f156 in PlacesSimpleTile::~PlacesSimpleTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#15 0x0634f202 in PlacesSimpleTile::~PlacesSimpleTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#16 0x08920da1 in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#17 0x08920fd8 in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#18 0x060d349f in nux::Area::UnParentObject() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#19 0x06114110 in nux::Layout::RemoveChildObject(nux::Area*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#20 0x0634b294 in PlacesResultsController::RemoveResultFromGroup(char const*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#21 0x06352567 in PlacesView::OnResultRemoved(_DeeModel*, _DeeModelIter*, PlacesView*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#22 0x00524fc8 in g_cclosure_marshal_VOID__POINTER () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x00508352 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x0051b048 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#25 0x00523b29 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#26 0x00523e3d in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#27 0x0331f2d5 in ?? () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#28 0x03315ef7 in dee_model_remove () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#29 0x063417c7 in PlaceEntryHome::OnResultRemoved(_DeeModel*, _DeeModelIter*, PlaceEntryHome*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#30 0x00524fc8 in g_cclosure_marshal_VOID__POINTER () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#31 0x00508352 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#32 0x0051b048 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#33 0x00523b29 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#34 0x00523e3d in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#35 0x0331a10e in ?? () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#36 0x00524fc8 in g_cclosure_marshal_VOID__POINTER () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#37 0x00508352 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#38 0x0051b048 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#39 0x00523b29 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#40 0x00523e3d in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#41 0x0331f2d5 in ?? () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#42 0x03315ef7 in dee_model_remove () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#43 0x0331b118 in ?? () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#44 0x03315ef7 in dee_model_remove () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#45 0x03321c31 in ?? () from /usr/lib/libdee-1.0.so.1
+No symbol table info available.
+#46 0x024a9270 in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#47 0x0057f461 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#48 0x00583c18 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#49 0x005843e0 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#50 0x00584694 in g_main_context_iteration () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#51 0x003bf194 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#52 0x00444c7e in ccsProcessEvents () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#53 0x003b05cc in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#54 0x003b0b7d in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CcpScreen>, boost::_bi::list1<boost::_bi::value<CcpScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#55 0x08065686 in CompTimeoutSource::callback() ()
+No symbol table info available.
+#56 0x080650c1 in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#57 0x00ca4649 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#58 0x00583c18 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#59 0x005843e0 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#60 0x00584aa3 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#61 0x00ca5b85 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#62 0x0806e79b in CompScreen::eventLoop() ()
+No symbol table info available.
+#63 0x08066ba8 in main ()
+No symbol table info available.

@@ -1,0 +1,44 @@
+#0  0x00007f577f363d05 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f577f367ab6 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f577f3ac3e0 in malloc () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f578075ba63 in g_malloc () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f57807740c8 in g_memdup () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f5780730fe0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f578078aafc in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f578078abdf in g_variant_new_byte () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f5781775418 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#9  0x00007f57817759c7 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#10 0x00007f5781775a6d in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#11 0x00007f5781776fd4 in g_dbus_message_new_from_blob () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#12 0x00007f57817800f5 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#13 0x00007f578172ed49 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#14 0x00007f5780754bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f57807553a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007f57807559f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007f578177ed44 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#18 0x00007f578077c3e4 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f5780080d8c in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0
+No symbol table info available.
+#20 0x00007f577f415f7d in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#21 0x0000000000000000 in ?? ()
+No symbol table info available.

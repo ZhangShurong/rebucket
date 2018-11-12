@@ -1,0 +1,36 @@
+#0  0xb2b38610 in getCompPluginVTable20090315_unitymtgrabhandles () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#1  0xb776487e in ?? () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#2  0xb7763c1e in CompPlugin::load(char const*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#3  0xb7737f02 in compiz::private_screen::PluginManager::updatePlugins(CompScreen*, std::vector<CompOption::Value, std::allocator<CompOption::Value> > const&) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#4  0xb77393a6 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#5  0xb7739530 in CompScreenImpl::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#6  0xb776c1d2 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#7  0xb776c541 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#8  0xb776c202 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#9  0xb7294e21 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0xb7198043 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0xb71983e0 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0xb719883b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0xb72962c3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#14 0xb772ab7a in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#15 0xb772abc4 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#16 0x0804a5e2 in CompManager::run() ()
+No symbol table info available.
+#17 0x08049ecc in main ()
+No symbol table info available.

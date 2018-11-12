@@ -1,0 +1,7 @@
+#0  0xb6db07ba in ?? ()
+#1  0xb76604a6 in ?? ()
+#2  0xb765fd36 in ?? ()
+#3  0xb76630f3 in ?? ()
+#4  0xb76634d7 in ?? ()
+#5  0xb7d4fd54 in ?? ()
+#6  0x0804abcf in main ()

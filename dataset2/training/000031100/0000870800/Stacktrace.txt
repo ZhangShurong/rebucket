@@ -1,0 +1,132 @@
+#0  0x00c482ac in dconf_engine_refresh_user (engine=0x84aedc8) at ../engine/dconf-engine.c:146
+        __PRETTY_FUNCTION__ = "dconf_engine_refresh_user"
+#1  0x00c48723 in dconf_engine_refresh (engine=0x84aedc8) at ../engine/dconf-engine.c:197
+No locals.
+#2  dconf_engine_read_internal (engine=0x84aedc8, key=0x857fdc8 "/org/gnome/settings-daemon/plugins/power/idle-dim-ac", user=1, system=1) at ../engine/dconf-engine.c:382
+        value = 0x0
+        lowest = <optimized out>
+        limit = <optimized out>
+        i = <optimized out>
+#3  0x00c4b410 in dconf_settings_backend_read (key=0x857fdc8 "/org/gnome/settings-daemon/plugins/power/idle-dim-ac", backend=0x84dc870, expected_type=<optimized out>, default_value=<optimized out>) at dconfsettingsbackend.c:452
+No locals.
+#4  dconf_settings_backend_read (backend=0x84dc870, key=0x857fdc8 "/org/gnome/settings-daemon/plugins/power/idle-dim-ac", expected_type=0x37f560, default_value=0) at dconfsettingsbackend.c:438
+        dcsb = 0x84dc870
+#5  0x001a8bce in g_settings_backend_read (backend=0x84dc870, key=0x857fdc8 "/org/gnome/settings-daemon/plugins/power/idle-dim-ac", expected_type=0x37f560, default_value=0) at /build/buildd/glib2.0-2.30.0/./gio/gsettingsbackend.c:732
+        value = <optimized out>
+#6  0x001abf44 in g_settings_read_from_backend (info=0xbf9d34a0) at /build/buildd/glib2.0-2.30.0/./gio/gsettings.c:1110
+        value = <optimized out>
+        fixup = <optimized out>
+        path = 0x857fdc8 "/org/gnome/settings-daemon/plugins/power/idle-dim-ac"
+#7  0x001ad091 in g_settings_get_value (settings=0x8537a28, key=0xd4dac1 "idle-dim-ac") at /build/buildd/glib2.0-2.30.0/./gio/gsettings.c:1293
+        info = {settings = 0x8537a28, key = 0xb54caac4 "idle-dim-ac", schema = 0x0, is_flags = 0, is_enum = 0, strinfo = 0x0, strinfo_length = 0, unparsed = 0x0, lc_char = 0 '\000', type = 0x37f560, minimum = 0x0, maximum = 0x0, default_value = 0xb54db7c8}
+        value = <optimized out>
+        __PRETTY_FUNCTION__ = "g_settings_get_value"
+#8  0x001adf3e in g_settings_get_boolean (settings=0x8537a28, key=0xd4dac1 "idle-dim-ac") at /build/buildd/glib2.0-2.30.0/./gio/gsettings.c:1986
+        value = <optimized out>
+        result = <optimized out>
+#9  0x00d472e6 in idle_set_mode (manager=0x8527800, mode=GSD_POWER_IDLE_MODE_DIM) at gsd-power-manager.c:2661
+        ret = 0
+        error = 0x0
+        idle = <optimized out>
+        idle_percentage = <optimized out>
+        min = 13947546
+        max = 16
+        now = -1253355936
+        action_type = <optimized out>
+        state = <optimized out>
+#10 0x00d478c4 in idle_evaluate (manager=0x8527800) at gsd-power-manager.c:2914
+        is_idle_inhibited = <optimized out>
+        timeout_blank = <optimized out>
+        timeout_sleep = <optimized out>
+        on_battery = <optimized out>
+#11 idle_evaluate (manager=0x8527800) at gsd-power-manager.c:2872
+No locals.
+#12 0x00264503 in g_cclosure_marshal_VOID__UINT (closure=0x854c538, return_value=0x0, n_param_values=2, param_values=0xb5407478, invocation_hint=0xbf9d36d0, marshal_data=0x0) at /build/buildd/glib2.0-2.30.0/./gobject/gmarshal.c:259
+        callback = 0xd478d0 <idle_idletime_alarm_expired_cb>
+        cc = 0x854c538
+        data1 = <optimized out>
+        data2 = <optimized out>
+        __PRETTY_FUNCTION__ = "g_cclosure_marshal_VOID__UINT"
+#13 0x00262c3c in g_closure_invoke (closure=0x854c538, return_value=0x0, n_param_values=2, param_values=0xb5407478, invocation_hint=0xbf9d36d0) at /build/buildd/glib2.0-2.30.0/./gobject/gclosure.c:774
+        marshal = 0x264470 <g_cclosure_marshal_VOID__UINT>
+        marshal_data = 0x0
+        in_marshal = 0
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#14 0x002759f0 in signal_emit_unlocked_R (node=0x8548c08, detail=0, instance=0x8545b68, emission_return=0x0, instance_and_params=0xb5407478) at /build/buildd/glib2.0-2.30.0/./gobject/gsignal.c:3272
+        tmp = <optimized out>
+        handler = 0x8539dc0
+        accumulator = 0x0
+        emission = {next = 0x0, instance = 0x8545b68, ihint = {signal_id = 206, detail = 0, run_type = G_SIGNAL_RUN_FIRST}, state = EMISSION_RUN, chain_type = 4}
+        class_closure = 0x8546cd8
+        hlist = 0x854c558
+        handler_list = 0x8539dc0
+        return_accu = 0x0
+        accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 206
+        max_sequential_handler_number = 305
+        return_value_altered = 0
+#15 0x0027e787 in g_signal_emit_valist (instance=0x8545b68, signal_id=206, detail=0, var_args=0xbf9d3890 "\364\377\214") at /build/buildd/glib2.0-2.30.0/./gobject/gsignal.c:3003
+        instance_and_params = 0xb5407478
+        signal_return_type = 4
+        param_values = 0xb540748c
+        node = 0x8548c08
+        i = <optimized out>
+        n_params = 1
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#16 0x0027e8f3 in g_signal_emit (instance=0x8545b68, signal_id=206, detail=0) at /build/buildd/glib2.0-2.30.0/./gobject/gsignal.c:3060
+        var_args = 0xbf9d388c "\001"
+#17 0x00d4124b in gpm_idletime_event_filter_cb (data=<optimized out>, gdkxevent=<optimized out>, event=<optimized out>) at gpm-idletime.c:271
+        alarm_item = 0xb54b70f0
+#18 gpm_idletime_event_filter_cb (gdkxevent=0xbf9d395c, event=0x8522d60, data=0x8545b68) at gpm-idletime.c:244
+        xevent = 0xbf9d395c
+        idletime = 0x8545b68
+#19 0x0089c044 in gdk_event_apply_filters (xevent=0xbf9d395c, event=0x8522d60, window=0x0) at /build/buildd/gtk+3.0-3.2.0/./gdk/x11/gdkeventsource.c:83
+        filter = 0x854ad70
+        node = <optimized out>
+        tmp_list = 0x852ba90
+        result = <optimized out>
+#20 0x0089c1c4 in gdk_event_source_translate_event (xevent=0xbf9d395c, event_source=0x84ab240) at /build/buildd/gtk+3.0-3.2.0/./gdk/x11/gdkeventsource.c:197
+        filter_window = 0x0
+        dpy = 0x8499800
+        event = 0x8522d60
+        result = GDK_FILTER_CONTINUE
+        event_translator = <optimized out>
+#21 _gdk_x11_display_queue_events (display=0x84a4800) at /build/buildd/gtk+3.0-3.2.0/./gdk/x11/gdkeventsource.c:334
+        event = 0x8522d60
+        xevent = {type = 96, xany = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529}, xkey = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, root = 0, subwindow = 10000, time = 0, x = 10000, y = 285517, x_root = 0, y_root = 0, state = 0, keycode = 0, same_screen = 0}, xbutton = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, root = 0, subwindow = 10000, time = 0, x = 10000, y = 285517, x_root = 0, y_root = 0, state = 0, button = 0, same_screen = 0}, xmotion = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, root = 0, subwindow = 10000, time = 0, x = 10000, y = 285517, x_root = 0, y_root = 0, state = 0, is_hint = 0 '\000', same_screen = 0}, xcrossing = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, root = 0, subwindow = 10000, time = 0, x = 10000, y = 285517, x_root = 0, y_root = 0, mode = 0, detail = 0, same_screen = 0, focus = 0, state = 0}, xfocus = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, mode = 0, detail = 10000}, xexpose = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, x = 0, y = 10000, width = 0, height = 10000, count = 285517}, xgraphicsexpose = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, drawable = 20971529, x = 0, y = 10000, width = 0, height = 10000, count = 285517, major_code = 0, minor_code = 0}, xnoexpose = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, drawable = 20971529, major_code = 0, minor_code = 10000}, xvisibility = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, state = 0}, xcreatewindow = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, parent = 20971529, window = 0, x = 10000, y = 0, width = 10000, height = 285517, border_width = 0, override_redirect = 0}, xdestroywindow = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, event = 20971529, window = 0}, xunmap = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, event = 20971529, window = 0, from_configure = 10000}, xmap = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, event = 20971529, window = 0, override_redirect = 10000}, xmaprequest = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, parent = 20971529, window = 0}, xreparent = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, event = 20971529, window = 0, parent = 10000, x = 0, y = 10000, override_redirect = 285517}, xconfigure = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, event = 20971529, window = 0, x = 10000, y = 0, width = 10000, height = 285517, border_width = 0, above = 0, override_redirect = 0}, xgravity = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, event = 20971529, window = 0, x = 10000, y = 0}, xresizerequest = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, width = 0, height = 10000}, xconfigurerequest = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, parent = 20971529, window = 0, x = 10000, y = 0, width = 10000, height = 285517, border_width = 0, above = 0, detail = 0, value_mask = 0}, xcirculate = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, event = 20971529, window = 0, place = 10000}, xcirculaterequest = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, parent = 20971529, window = 0, place = 10000}, xproperty = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, atom = 0, time = 10000, state = 0}, xselectionclear = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, selection = 0, time = 10000}, xselectionrequest = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, owner = 20971529, requestor = 0, selection = 10000, target = 0, property = 10000, time = 285517}, xselection = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, requestor = 20971529, selection = 0, target = 10000, property = 0, time = 10000}, xcolormap = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, colormap = 0, new = 10000, state = 0}, xclient = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, message_type = 0, format = 10000, data = {b = "\000\000\000\000\020'\000\000M[\004\000\000\000\000\000\000\000\000", s = {0, 0, 10000, 0, 23373, 4, 0, 0, 0, 0}, l = {0, 10000, 285517, 0, 0}}}, xmapping = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, request = 0, first_keycode = 10000, count = 0}, xerror = {type = 96, display = 0x1316, resourceid = 0, serial = 139040768, error_code = 9 '\t', request_code = 0 '\000', minor_code = 64 '@'}, xkeymap = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, window = 20971529, key_vector = "\000\000\000\000\020'\000\000\000\000\000\000\020'\000\000M[\004", '\000' <repeats 12 times>}, xgeneric = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, extension = 20971529, evtype = 0}, xcookie = {type = 96, serial = 4886, send_event = 0, display = 0x8499800, extension = 20971529, evtype = 0, cookie = 10000, data = 0x0}, pad = {96, 4886, 0, 139040768, 20971529, 0, 10000, 0, 10000, 285517, 0 <repeats 14 times>}}
+        xdisplay = 0x8499800
+        event_source = 0x84ab240
+        display_x11 = 0x84a4800
+#22 0x0087075e in gdk_display_get_event (display=0x84a4800) at /build/buildd/gtk+3.0-3.2.0/./gdk/gdkdisplay.c:311
+        __PRETTY_FUNCTION__ = "gdk_display_get_event"
+#23 0x0089beba in gdk_event_source_dispatch (source=0x84ab240, callback=0, user_data=0x0) at /build/buildd/gtk+3.0-3.2.0/./gdk/x11/gdkeventsource.c:356
+        display = 0x84a4800
+        event = <optimized out>
+#24 0x002e825f in g_main_dispatch (context=0x84acd10) at /build/buildd/glib2.0-2.30.0/./glib/gmain.c:2441
+        dispatch = 0x89be90 <gdk_event_source_dispatch>
+        was_in_call = 0
+        user_data = 0x0
+        callback = 0
+        cb_funcs = 0x0
+        cb_data = 0x0
+        current_source_link = {data = 0x84ab240, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x84ab240
+        current = 0x851e8c0
+        i = <optimized out>
+#25 g_main_context_dispatch (context=0x84acd10) at /build/buildd/glib2.0-2.30.0/./glib/gmain.c:3011
+No locals.
+#26 0x002e8990 in g_main_context_iterate (context=0x84acd10, block=3109664, dispatch=1, self=<optimized out>) at /build/buildd/glib2.0-2.30.0/./glib/gmain.c:3089
+        max_priority = 2147483647
+        timeout = 3000
+        some_ready = 1
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+        fds = 0x8585888
+#27 0x002e8f9b in g_main_loop_run (loop=0x8579d10) at /build/buildd/glib2.0-2.30.0/./glib/gmain.c:3297
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#28 0x0104df95 in gtk_main () at /build/buildd/gtk+3.0-3.2.0/./gtk/gtkmain.c:1367
+        loop = 0x8579d10
+#29 0x0804af0e in main (argc=1, argv=0xbf9d3c24) at main.c:466
+        res = <optimized out>
+        error = 0x0

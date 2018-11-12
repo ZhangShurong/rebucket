@@ -1,0 +1,11 @@
+#0  0xb77bd424 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0xb6fefe6e in raise () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#2  0xb585e743 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#3  0xb6fe7d31 in start_thread () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#4  0xb6e280ce in clone () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

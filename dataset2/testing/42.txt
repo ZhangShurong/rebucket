@@ -1,0 +1,13 @@
+#0  0xb7f3abad in ?? () from /lib/ld-linux.so.2
+#1  0xb7a83cb4 in ?? () from /lib/tls/i686/cmov/libdl.so.2
+#2  0xb7f355d6 in ?? () from /lib/ld-linux.so.2
+#3  0xb7a842bc in ?? () from /lib/tls/i686/cmov/libdl.so.2
+#4  0xb7a83cea in dlclose () from /lib/tls/i686/cmov/libdl.so.2
+#5  0xb7c427bd in ?? () from /usr/lib/libGL.so.1
+#6  0xb7c2284a in ?? () from /usr/lib/libGL.so.1
+#7  0xb7e44975 in _XFreeExtData () from /usr/lib/libX11.so.6
+#8  0xb7e50e53 in _XFreeDisplayStructure () from /usr/lib/libX11.so.6
+#9  0xb7e3dfc6 in XCloseDisplay () from /usr/lib/libX11.so.6
+#10 0x080557b6 in removeDisplay ()
+#11 0x08052e98 in finiCore ()
+#12 0x080528cf in main ()

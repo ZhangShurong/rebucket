@@ -1,0 +1,10 @@
+#0  0x00007fc271a1ba93 in app_indicator_set_status () from /usr/lib/libappindicator.so.1
+No symbol table info available.
+#1  0x0000000000000050 in ?? ()
+No symbol table info available.
+#2  0x0000000000000030 in ?? ()
+No symbol table info available.
+#3  0x00007fc2701ac389 in realloc () from /lib/libc.so.6
+No symbol table info available.
+#4  0x0000000000000000 in ?? ()
+No symbol table info available.

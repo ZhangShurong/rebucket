@@ -1,0 +1,9 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x414155e8 in NvRmMemHandleFromId () from /usr/lib/nvidia-tegra/libnvrm.so
+No symbol table info available.
+#2  0x41de42a4 in ?? () from /usr/lib/nvidia-tegra/libnvwsi.so
+No symbol table info available.
+#3  0x41de42a4 in ?? () from /usr/lib/nvidia-tegra/libnvwsi.so
+No symbol table info available.
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)

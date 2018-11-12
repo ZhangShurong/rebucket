@@ -1,0 +1,34 @@
+#0  0x00007f8252f77153 in g_type_check_is_value_type () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#1  0x00007f8252f79701 in g_value_type_compatible () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#2  0x00007f8252f5a208 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x00007f8252f6e816 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007f8252f6eef2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f8232ee3fb4 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#6  0x00007f8252f55580 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f8252f66e60 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007f8252f6ec71 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00007f8252f6eef2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00007f8232ee462a in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#11 0x00007f8239d41c06 in dbus_connection_dispatch () from /lib/x86_64-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#12 0x00007f8232eddc95 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#13 0x00007f8253f1bf05 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f8253f1c248 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f8253f1c6ba in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x000000000040195b in main ()
+No symbol table info available.

@@ -1,0 +1,42 @@
+#0  0x00204f81 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#1  0x002052ea in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#2  0x0020c404 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#3  0x0020df8e in gtk_icon_theme_get_icon_sizes () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#4  0x00383dee in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#5  0x0038440d in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#6  0x0038d5b8 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#7  0x080aa5b6 in ?? ()
+No symbol table info available.
+#8  0x08074742 in ?? ()
+No symbol table info available.
+#9  0x0069d93c in g_cclosure_marshal_VOID__VOID () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x0068ca87 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x0068e412 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x006a3e3a in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x006a59bc in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x006a5e62 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x0037aafb in gtk_widget_realize () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#16 0x0806c0a5 in ?? ()
+No symbol table info available.
+#17 0x0806ceb3 in ?? ()
+No symbol table info available.
+#18 0x0807f32e in ?? ()
+No symbol table info available.
+#19 0x0451bce7 in __libc_start_main () from /lib/libc.so.6
+No symbol table info available.
+#20 0x0806a5a1 in ?? ()
+No symbol table info available.

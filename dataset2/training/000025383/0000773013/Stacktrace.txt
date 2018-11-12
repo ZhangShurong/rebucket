@@ -1,0 +1,28 @@
+#0  0x080527e8 in gwd_get_decor_frame ()
+No symbol table info available.
+#1  0x08059cef in ?? ()
+No symbol table info available.
+#2  0xb730cfd5 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#3  0xb730f773 in gtk_menu_popup () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#4  0x08059f8b in action_menu_map ()
+No symbol table info available.
+#5  0x08058ca1 in event_filter_func ()
+No symbol table info available.
+#6  0xb718a713 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#7  0xb718c920 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#8  0xb718c9df in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#9  0xb6d05aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0xb6d06270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0xb6d0692b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0xb7301c39 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#13 0x0804fc27 in main ()
+No symbol table info available.

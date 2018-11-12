@@ -1,0 +1,79 @@
+#0  0x00007febd7d99d05 in raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = 0
+        pid = <value optimized out>
+        selftid = 1803
+#1  0x00007febd7d9dab6 in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x20, sa_sigaction = 0x20}, sa_mask = {__val = {140650916653760, 43051400, 0, 140733654691440, 140650915612770, 206158430256, 140733654691480, 140733654691232, 75685664, 140650671449190, 140650936540880, 140733654698735, 140650916640442, 140650916644213, 3683, 2}}, sa_flags = -1139730128, sa_restorer = 0x7fff1b7eee70}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007febd7de23e0 in __malloc_assert (bytes=32) at malloc.c:351
+No locals.
+#3  __libc_malloc (bytes=32) at malloc.c:3682
+        ar_ptr = 0x7febbc000020
+        victim = 0x7febbc039400
+        hook = <value optimized out>
+        __func__ = "__libc_malloc"
+#4  0x00007febd865fe0d in operator new(unsigned long) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#5  0x00007febc9469593 in IndicatorObjectEntryProxyRemote::OnShowNowChanged(bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0x00007febc94a5e12 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#7  0x00007febd9a57765 in g_closure_invoke (closure=0x7febbc000000, return_value=0x0, n_param_values=4, param_values=0x4b30920, invocation_hint=0x7fff1b7ef100) at /build/buildd/glib2.0-2.28.4/./gobject/gclosure.c:767
+        marshal = <value optimized out>
+        marshal_data = <value optimized out>
+        in_marshal = 1
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#8  0x00007febd9a69019 in signal_emit_unlocked_R (node=<value optimized out>, detail=0, instance=0xe392b0, emission_return=0x0, instance_and_params=0x4b30920) at /build/buildd/glib2.0-2.28.4/./gobject/gsignal.c:3252
+        tmp = <value optimized out>
+        handler = 0x7febbc019960
+        accumulator = 0x0
+        emission = {next = 0x0, instance = 0xe392b0, ihint = {signal_id = 198, detail = 0, run_type = G_SIGNAL_RUN_FIRST}, state = EMISSION_RUN, chain_type = 4}
+        class_closure = 0x10611d0
+        handler_list = 0x7febbc019960
+        return_accu = 0x0
+        accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 198
+        max_sequential_handler_number = 1292
+        return_value_altered = 0
+#9  0x00007febd9a72258 in g_signal_emit_valist (instance=<value optimized out>, signal_id=<value optimized out>, detail=<value optimized out>, var_args=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./gobject/gsignal.c:2983
+        instance_and_params = 0x4b30920
+        signal_return_type = 4
+        param_values = 0x4b30938
+        node = 0x1061220
+        i = <value optimized out>
+        n_params = 3
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#10 0x00007febd9a7241f in g_signal_emit (instance=<value optimized out>, signal_id=<value optimized out>, detail=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./gobject/gsignal.c:3040
+        var_args = {{gp_offset = 48, fp_offset = 48, overflow_arg_area = 0x7fff1b7ef3f0, reg_save_area = 0x7fff1b7ef330}}
+#11 0x00007febda1a1832 in emit_signal_instance_in_idle_cb (data=0x7febd0028bd0) at /build/buildd/glib2.0-2.28.4/./gio/gdbusconnection.c:3400
+        signal_instance = 0x7febd0028bd0
+        parameters = 0x7febbc111930
+        has_subscription = 1
+#12 0x00007febd918abcd in g_main_dispatch (context=0xe32e70) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:2440
+        dispatch = 0x7febd91864e0 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0x7febd0028bd0
+        callback = 0x7febda1a17b0 <emit_signal_instance_in_idle_cb>
+        cb_funcs = 0x7febd9435630
+        cb_data = 0x7febd0044eb0
+        current_source_link = {data = 0x7febd0037530, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x7febd0037530
+        current = 0xe33d90
+        i = <value optimized out>
+#13 g_main_context_dispatch (context=0xe32e70) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3013
+No locals.
+#14 0x00007febd918b3a8 in g_main_context_iterate (context=0xe32e70, block=<value optimized out>, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3091
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = 15
+        allocausername_nfds = <value optimized out>
+        fds = <value optimized out>
+#15 0x00007febd918b9f2 in g_main_loop_run (loop=0xe68990) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#16 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#17 0x0000000000423180 in main ()
+No symbol table info available.

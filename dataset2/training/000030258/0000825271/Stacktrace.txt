@@ -1,0 +1,44 @@
+#0  0x00de1999 in g_logv () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00de1cd3 in g_log () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00177bf9 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#3  0x00185958 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#4  0x070cc99a in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#5  0x005c1d3b in _XError () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x005be90d in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x005bf8f7 in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x005b512f in XQueryTree () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x070d48ea in xkl_engine_query_tree () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#10 0x070cbbe6 in xkl_engine_process_focus_in_evt () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#11 0x070cc7b4 in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#12 0x0153a115 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#13 0x00181914 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#14 0x00181ad2 in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#15 0x00150e5e in gdk_display_get_event () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#16 0x0018175a in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#17 0x00dd8e1f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00dd9550 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00dd9b5b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x009116e5 in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#21 0x0804aa71 in main ()
+No symbol table info available.

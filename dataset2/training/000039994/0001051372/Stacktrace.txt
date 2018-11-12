@@ -1,0 +1,22 @@
+#0  0x00007f57f8d2df85 in getCompPluginVTable20090315_unitymtgrabhandles () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#1  0x00007f5814f8b130 in ?? () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#2  0x00007f5814f8a614 in CompPlugin::load(char const*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#3  0x00007f5814f621b8 in compiz::private_screen::PluginManager::updatePlugins(CompScreen*, std::vector<CompOption::Value, std::allocator<CompOption::Value> > const&) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#4  0x00007f5814f63632 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#5  0x00007f5814f92037 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#6  0x00007f581348bd1f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#7  0x00007f5812f90b15 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f5812f90e48 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f5812f91242 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x000000000040270b in main ()
+No symbol table info available.

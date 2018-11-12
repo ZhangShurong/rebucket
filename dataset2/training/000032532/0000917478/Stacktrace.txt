@@ -1,0 +1,36 @@
+#0  0x00007f86deeba4ff in PluginClassHandler<UnityWindow, CompWindow, 0>::get(CompWindow*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007f86deebadf2 in compiz::CompizMinimizedWindowHandler<UnityScreen, UnityWindow>::minimize() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f86deebabc3 in compiz::CompizMinimizedWindowHandler<UnityScreen, UnityWindow>::minimize() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007f86deeabb7a in UnityWindow::minimize() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x000000000043f130 in CompWindow::minimize() ()
+No symbol table info available.
+#5  0x00007f86dee3e7e5 in unity::PanelMenuView::OnMinimizeClicked() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0x00007f86dee9760a in unity::WindowButtons::OnMinimizeClicked(nux::View*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#7  0x00007f86de9cd96f in nux::AbstractButton::RecvClick(int, int, unsigned long, unsigned long) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#8  0x00007f86de9d497e in nux::InputArea::EmitMouseClickSignal(int, int, unsigned long, unsigned long) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#9  0x00007f86dea8753e in nux::WindowCompositor::MouseEventCycle(nux::Event&) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#10 0x00007f86dea887af in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#11 0x00007f86dea8ce94 in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#12 0x00007f86dea8d383 in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#13 0x00007f86ef87aa5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f86ef87b258 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f86ef87b792 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x000000000042e856 in CompScreen::eventLoop() ()
+No symbol table info available.
+#17 0x000000000042221a in main ()
+No symbol table info available.

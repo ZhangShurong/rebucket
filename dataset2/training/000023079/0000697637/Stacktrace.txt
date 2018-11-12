@@ -1,0 +1,74 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x044184fd in nux::GpuRenderStates::SubmitChangeStates() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x02df81a3 in nux::WindowThread::RenderInterfaceFromForeignCmd() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x023617cd in UnityScreen::paintDisplay(CompRegion const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x02361861 in UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x0069f792 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x006a148c in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0x005d79bb in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#8  0x009f8e6b in WallScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#9  0x005d7975 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#10 0x005d7b9c in CompositeScreenInterface::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#11 0x005d7975 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#12 0x005d7b9c in CompositeScreenInterface::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#13 0x005d7975 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#14 0x005d9903 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#15 0x005da1bd in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CompositeScreen>, boost::_bi::list1<boost::_bi::value<CompositeScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#16 0x0806e95d in CompTimer::internalCallback(unsigned int) ()
+No symbol table info available.
+#17 0x08075d06 in sigc::internal::slot_call0<sigc::bind_functor<-1, sigc::bound_mem_functor1<bool, CompTimer, unsigned int>, unsigned int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>, bool>::call_it(sigc::internal::slot_rep*) ()
+No symbol table info available.
+#18 0x0057ffda in Glib::TimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#19 0x0057e419 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#20 0x00ef2c28 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#21 0x00ef33f0 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#22 0x00ef36a4 in g_main_context_iteration () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#23 0x00324194 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#24 0x002c7c7e in ccsProcessEvents () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#25 0x002a45cc in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#26 0x002a4b7d in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CcpScreen>, boost::_bi::list1<boost::_bi::value<CcpScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#27 0x0806e95d in CompTimer::internalCallback(unsigned int) ()
+No symbol table info available.
+#28 0x08075d06 in sigc::internal::slot_call0<sigc::bind_functor<-1, sigc::bound_mem_functor1<bool, CompTimer, unsigned int>, unsigned int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>, bool>::call_it(sigc::internal::slot_rep*) ()
+No symbol table info available.
+#29 0x0057ffda in Glib::TimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#30 0x0057e419 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#31 0x00ef2c28 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#32 0x00ef33f0 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#33 0x00ef3ab3 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#34 0x0057f955 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#35 0x0806de1a in CompScreen::eventLoop() ()
+No symbol table info available.
+#36 0x08066068 in main ()
+No symbol table info available.

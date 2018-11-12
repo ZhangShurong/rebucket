@@ -1,0 +1,65 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0xb29ca47a in PanelMenuView::ProcessEvent (this=0x89b4e00, ievent=..., TraverseInfo=0, ProcessEventInfo=0) at /build/buildd/unity-3.6.8/src/PanelMenuView.cpp:200
+        ret = <value optimized out>
+        geo = {x = 66, y = 191, width = 1089, height = 24}
+#2  0xb283682e in nux::Layout::ProcessEvent (this=0x8972420, ievent=..., TraverseInfo=0, ProcessEventInfo=0) at ./Layout.cpp:750
+        ic = <value optimized out>
+        ret = 0
+#3  0xb29d214f in PanelView::ProcessEvent (this=0x896ad98, ievent=..., TraverseInfo=0, ProcessEventInfo=0) at /build/buildd/unity-3.6.8/src/PanelView.cpp:119
+        ret = 0
+#4  0xb283682e in nux::Layout::ProcessEvent (this=0x896abd0, ievent=..., TraverseInfo=0, ProcessEventInfo=0) at ./Layout.cpp:750
+        ic = <value optimized out>
+        ret = 0
+#5  0xb27f3768 in nux::BaseWindow::ProcessEvent (this=0x89d3808, ievent=..., TraverseInfo=0, ProcessEventInfo=0) at ./BaseWindow.cpp:121
+        ret = 0
+        ProcEvInfo = <value optimized out>
+        window_event = {VirtualKeycodeState = {0 <repeats 256 times>}, width = 0, height = 0, ascii_code = 0, virtual_code = 0, e_x = 483, e_y = 214, e_x_root = 0, e_y_root = 191, e_dx = 0, e_dy = 0, e_clicks = 0, e_is_click = 0, e_x11_timestamp = 0, e_x11_window = 67108867, e_x11_keycode = 27, e_keysym = 0, e_wheeldelta = 0, e_text = '\000' <repetidos 15 veces>, e_key_modifiers = 0, e_mouse_state = 0, e_key_repeat_count = 0, e_length = 0, e_event = 19}
+        base = {x = 0, y = 191, width = 1440, height = 24}
+        viewGeometry = {x = 0, y = 191, width = 1440, height = 24}
+#6  0xb28c36f6 in nux::WindowCompositor::ProcessEvent (this=0x86e38b0, event=...) at ./WindowCompositor.cpp:463
+        ret = <value optimized out>
+        ProcessEventInfo = 0
+        MouseIsOverMenu = false
+        pointer_grab_area = <value optimized out>
+        keyboard_grab_area = 0x86e39c0
+        ret = 0
+        base_window_reshuffling = <value optimized out>
+#7  0xb28c9db1 in nux::WindowThread::ExecutionLoop (this=0x85d6b40, timer_id=0) at ./WindowThread.cpp:993
+        w = 3360
+        h = 1091
+        event = {VirtualKeycodeState = {0 <repeats 256 times>}, width = 0, height = 0, ascii_code = 0, virtual_code = 0, e_x = 483, e_y = 214, e_x_root = 0, e_y_root = 0, e_dx = 0, e_dy = 0, e_clicks = 0, e_is_click = 0, e_x11_timestamp = 0, e_x11_window = 67108867, e_x11_keycode = 27, e_keysym = 0, e_wheeldelta = 0, e_text = '\000' <repetidos 15 veces>, e_key_modifiers = 0, e_mouse_state = 0, e_key_repeat_count = 0, e_length = 0, e_event = 19}
+        ms = <value optimized out>
+        Application = 0x85d6b40
+#8  0xb28ca66f in nux::nux_event_dispatch (source=0x86e4eb8, callback=0, user_data=0x85d6b40) at ./WindowThread.cpp:121
+        window_thread = 0x85d6b40
+        return_code = <value optimized out>
+#9  0xb722faa8 in g_main_dispatch (context=0x8105f68) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:2440
+        dispatch = 0xb28ca640 <nux::nux_event_dispatch(GSource*, GSourceFunc, gpointer)>
+        was_in_call = 0
+        user_data = 0x85d6b40
+        callback = 0
+        cb_funcs = 0xb72c533c
+        cb_data = 0x881ae90
+        current_source_link = {data = 0x86e4eb8, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x86e4eb8
+        current = 0x8106e48
+        i = <value optimized out>
+#10 g_main_context_dispatch (context=0x8105f68) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3013
+No locales.
+#11 0xb7230270 in g_main_context_iterate (context=0x8105f68, block=-1222375392, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3091
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = <value optimized out>
+        allocated_nfds = <value optimized out>
+        fds = 0x8d180c0
+#12 0xb723092b in g_main_loop_run (loop=0x8135588) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#13 0xb735ea35 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#14 0x0806ebab in CompScreen::eventLoop (this=0x80d84b8) at /build/buildd/compiz-0.9.4git20110322/src/screen.cpp:128
+No locales.
+#15 0x08066e58 in main (argc=1, argv=0xbfb3e704) at /build/buildd/compiz-0.9.4git20110322/src/main.cpp:285
+        manager = {plugins = {<std::_List_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {_M_impl = {<std::allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<__gnu_cxx::new_allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x80d8498, _M_prev = 0x80d8498}}}, <No data fields>}, disableSm = false, clientId = 0x8134ad0 "105b46338ebe8eaba130131553738824300000017830047", displayName = 0x0}

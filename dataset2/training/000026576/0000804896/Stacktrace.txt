@@ -1,0 +1,78 @@
+#0  0x00e96416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x0083edd1 in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x008422ae in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x008377e8 in __assert_fail () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00bd5850 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00bd664f in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00c2b662 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00c2b736 in XkbGetUpdatedMap () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00c2b830 in XkbGetMap () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x01b16b74 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#10 0x01b16c99 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#11 0x01b172cf in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#12 0x00152a7a in g_cclosure_marshal_VOID__STRING () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00135846 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00148a80 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x0015173f in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x001518b3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00af37ae in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#18 0x00b38a78 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#19 0x0013436d in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x00135846 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x001488c8 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x001515f1 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x001518b3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x00af45ec in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#25 0x00af0cdc in g_settings_backend_changed_tree () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#26 0x03a7a110 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#27 0x00aba0a2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#28 0x00b096cc in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#29 0x00aba0a2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#30 0x00aba1dc in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#31 0x001c3230 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x001c70cf in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#33 0x001c7800 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#34 0x001c7e0b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#35 0x03a79294 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#36 0x001ee644 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#37 0x00115e99 in start_thread () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#38 0x008e46ee in clone () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.

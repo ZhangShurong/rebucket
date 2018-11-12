@@ -1,0 +1,75 @@
+#0  0x00007f107651cba5 in raise (sig=6) at ../nptl/sysdeusername/unix/sysv/linux/raise.c:64
+        resultvar = 0
+        pid = <value optimized out>
+        selftid = <value optimized out>
+#1  0x00007f10765204f6 in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x20000000e, sa_sigaction = 0x20000000e}, sa_mask = {__val = {140735047458992, 140735047469903, 52, 139708682384260, 3, 140735047458986, 6, 139708682384264, 2, 140735047458974, 2, 139708682375285, 1, 139708682384260, 3, 140735047458980}}, sa_flags = 12, sa_restorer = 0x7f107662b388}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007f10765556bb in __libc_message (do_abort=2, fmt=0x7f107662cbf0 "*** glibc detected *** %s: %s: 0x%s ***\n") at ../sysdeusername/unix/sysv/linux/libc_fatal.c:189
+        ap = {{gp_offset = 40, fp_offset = 48, overflow_arg_area = 0x7fff6e82ea20, reg_save_area = 0x7fff6e82e930}}
+        ap_copy = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7fff6e82ea20, reg_save_area = 0x7fff6e82e930}}
+        fd = 2
+        on_2 = <value optimized out>
+        list = <value optimized out>
+        nlist = <value optimized out>
+        cp = <value optimized out>
+        written = <value optimized out>
+#3  0x00007f10765613cc in malloc_printerr (av=<value optimized out>, p=0x7f1076867190) at malloc.c:6283
+        buf = "00007f10768671a0"
+        cp = <value optimized out>
+#4  _int_free (av=<value optimized out>, p=0x7f1076867190) at malloc.c:4795
+        size = <value optimized out>
+        fb = <value optimized out>
+        nextchunk = <value optimized out>
+        nextsize = <value optimized out>
+        nextinuse = <value optimized out>
+        prevsize = <value optimized out>
+        bck = <value optimized out>
+        fwd = <value optimized out>
+        errstr = 0x7f1076629dda "free(): invalid pointer"
+        __func__ = "_int_free"
+#5  0x00007f1076565223 in __libc_free (mem=<value optimized out>) at malloc.c:3738
+        ar_ptr = 0x7f10768671a0
+        p = <value optimized out>
+        hook = <value optimized out>
+#6  0x00007f106c2d3ee8 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#7  0x00007f106c2d4602 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#8  0x00007f107784dbcd in gconf_listeners_notify () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#9  0x00007f107785e6e0 in ?? () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#10 0x00007f107785e861 in ?? () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#11 0x00007f10768aed0d in g_main_dispatch (context=0xa07250) at /build/buildd/glib2.0-2.27.90/glib/gmain.c:2440
+        dispatch = 0x7f10768aa610 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0xa1d860
+        callback = 0x7f107785e7d0
+        cb_funcs = 0x7f1076b55630
+        cb_data = 0xcb0e20
+        current_source_link = {data = 0xbdf6e0, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0xbdf6e0
+        current = 0xa18fc0
+        i = <value optimized out>
+#12 g_main_context_dispatch (context=0xa07250) at /build/buildd/glib2.0-2.27.90/glib/gmain.c:3013
+No locals.
+#13 0x00007f10768af4f8 in g_main_context_iterate (context=0xa07250, block=<value optimized out>, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.27.90/glib/gmain.c:3091
+        max_priority = 200
+        timeout = 0
+        some_ready = 1
+        nfds = 12
+        allocated_nfds = <value optimized out>
+        fds = <value optimized out>
+#14 0x00007f10768afb3a in g_main_loop_run (loop=0xa81200) at /build/buildd/glib2.0-2.27.90/glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#15 0x00007f1077bc2767 in IA__gtk_main () at /build/buildd/gtk+2.0-2.23.3.is.2.23.2/gtk/gtkmain.c:1238
+        tmp_list = <value optimized out>
+        functions = 0x0
+        init = <value optimized out>
+        loop = 0xa81200
+#16 0x0000000000404349 in main ()
+No symbol table info available.

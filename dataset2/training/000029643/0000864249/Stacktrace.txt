@@ -1,0 +1,34 @@
+#0  0x00007f76f61cffa6 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#1  0x00007f76f61c318e in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#2  0x00007f76f59cdc17 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#3  0x00007f76f63eab8c in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#4  0x00007f76f59cdc17 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0x00007f76f59cdd29 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#6  0x00007f76f5463a5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f76f5464258 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f76f5464792 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00000000004042c5 in ?? ()
+No symbol table info available.
+#10 0x00007f76f4b4c30d in __libc_start_main () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#11 0x000000000040432d in ?? ()
+No symbol table info available.
+#12 0x00007ffff02d4db8 in ?? ()
+No symbol table info available.
+#13 0x000000000000001c in ?? ()
+No symbol table info available.
+#14 0x0000000000000001 in ?? ()
+No symbol table info available.
+#15 0x00007ffff02d6a73 in ?? ()
+No symbol table info available.
+#16 0x0000000000000000 in ?? ()
+No symbol table info available.

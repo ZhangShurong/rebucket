@@ -1,0 +1,42 @@
+#0  0x0000000d in ?? ()
+No symbol table info available.
+#1  0x084d2e48 in Launcher::EnsureAnimation() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x084d5c53 in Launcher::OnBFBUpdate(_GVariant*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x0855409f in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x0058c311 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00590aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00591270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00591524 in g_main_context_iteration () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x0028a194 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#9  0x003e1dde in ccsProcessEvents () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#10 0x001d876c in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#11 0x001d8d1d in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CcpScreen>, boost::_bi::list1<boost::_bi::value<CcpScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#12 0x08065936 in CompTimeoutSource::callback() ()
+No symbol table info available.
+#13 0x08065371 in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#14 0x00194959 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#15 0x00590aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00591270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x0059192b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00195e95 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#19 0x0806ebab in CompScreen::eventLoop() ()
+No symbol table info available.
+#20 0x08066e58 in main ()
+No symbol table info available.

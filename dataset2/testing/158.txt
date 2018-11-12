@@ -1,0 +1,24 @@
+#0  0xb3dd381b in nux::GraphicsDisplay::StartDndDrag(nux::GraphicsDisplay::_DndSourceFuncs const&, void*) () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#1  0xb3ed4f5a in nux::InputArea::StartDragAsSource() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#2  0xb3f9c3ee in nux::WindowCompositor::MouseEventCycle(nux::Event&) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#3  0xb3f9dd5f in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#4  0xb3fa2b36 in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#5  0xb3fa309f in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#6  0xb708828a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0xb7088695 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0xb7088adb in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0xb7181063 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0x08072497 in CompScreen::eventLoop() ()
+No symbol table info available.
+#11 0x08065634 in main ()
+No symbol table info available.

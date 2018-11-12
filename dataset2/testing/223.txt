@@ -1,0 +1,96 @@
+#0  0x00007f2a4972ed05 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f2a49732ab6 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f2a4ab4551d in g_assertion_message () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f2a4ab45ae0 in g_assertion_message_expr () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f2a4ab61df6 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f2a4ab61e8b in g_variant_type_info_get_type_string () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f2a4bb3fcb0 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#7  0x00007f2a4bb3fd61 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#8  0x00007f2a4bb434a5 in g_dbus_message_to_blob () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#9  0x00007f2a4bb384b6 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#10 0x00007f2a4bb3a00d in g_dbus_connection_send_message_with_reply () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#11 0x00007f2a4bb3a471 in g_dbus_connection_call () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#12 0x00007f2a4bb47fcc in g_dbus_proxy_call () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#13 0x00007f2a3ada7e61 in PanelView::SyncGeometries() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x00007f2a3ada7fe0 in PanelView::Draw(nux::GraphicsEngine&, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#15 0x00007f2a3a9eda8a in nux::View::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#16 0x00007f2a3a9f34f7 in nux::Layout::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#17 0x00007f2a3a9b835e in nux::BaseWindow::DrawContent(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#18 0x00007f2a3a9eda9e in nux::View::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#19 0x00007f2a3aa6b811 in nux::WindowCompositor::RenderTopViewContent(nux::BaseWindow*, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#20 0x00007f2a3aa761cd in nux::WindowCompositor::RenderTopViews(bool, std::list<nux::ObjectWeakPtr<nux::BaseWindow>, std::allocator<nux::ObjectWeakPtr<nux::BaseWindow> > >&, bool, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#21 0x00007f2a3aa76af5 in nux::WindowCompositor::Draw(bool, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#22 0x00007f2a3aa7a1fc in nux::WindowThread::RenderInterfaceFromForeignCmd(nux::Rect*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#23 0x00007f2a3ad97fb1 in UnityScreen::paintDisplay(CompRegion const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#24 0x00007f2a3ad99e2f in UnityWindow::glDraw(GLMatrix const&, GLFragment::Attrib&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0x00007f2a457c0f10 in GLWindow::glDraw(GLMatrix const&, GLFragment::Attrib&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#26 0x00007f2a457c0dc5 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#27 0x00007f2a3d18a408 in WallWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#28 0x00007f2a457c0d60 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#29 0x00007f2a3b678d05 in FadeWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libfade.so
+No symbol table info available.
+#30 0x00007f2a457c0d60 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#31 0x00007f2a457c1655 in PrivateGLScreen::paintOutputRegion(GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#32 0x00007f2a457c1b07 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#33 0x00007f2a3d189be2 in WallScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#34 0x00007f2a457c1a3d in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#35 0x00007f2a3ad9801e in UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#36 0x00007f2a457c1a3d in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#37 0x00007f2a457b9861 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#38 0x00007f2a459ea9b9 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#39 0x00007f2a459ec810 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#40 0x0000000000421c0f in CompTimeoutSource::callback() ()
+No symbol table info available.
+#41 0x000000000042167d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#42 0x00007f2a4b66f9df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#43 0x00007f2a4ab1fbcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#44 0x00007f2a4ab203a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#45 0x00007f2a4ab209f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#46 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#47 0x0000000000423180 in main ()
+No symbol table info available.

@@ -1,0 +1,106 @@
+#0  0xb75499e0 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0xb482eb2e in ?? () from /usr/lib/i386-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#2  0xb48301a3 in ?? () from /usr/lib/i386-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#3  0xb4fdfe80 in ?? () from /usr/lib/i386-linux-gnu/mesa/libGL.so.1
+No symbol table info available.
+#4  0xb4fb7de7 in ?? () from /usr/lib/i386-linux-gnu/mesa/libGL.so.1
+No symbol table info available.
+#5  0xb5950faf in TfpTexture::bindTexImage(unsigned long const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0xb59516b7 in TfpTexture::enable(GLTexture::Filter) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0xb5945651 in GLWindow::glDrawTexture(GLTexture*, GLMatrix const&, GLWindowPaintAttrib const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#8  0xb2c42a7d in PrivateAnimWindow::glDrawTexture(GLTexture*, GLMatrix const&, GLWindowPaintAttrib const&, unsigned int) () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#9  0xb5945a9e in GLWindow::glDrawTexture(GLTexture*, GLMatrix const&, GLWindowPaintAttrib const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#10 0xb308dbd7 in DecorWindow::glDecorate(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#11 0xb309316d in DecorWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#12 0xb594619d in GLWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#13 0xb2bc5603 in UnityMTGrabHandlesWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#14 0xb594619d in GLWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#15 0xb24bb59b in unity::UnityWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#16 0xb594619d in GLWindow::glDraw(GLMatrix const&, GLWindowPaintAttrib const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#17 0xb5946533 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#18 0xb2fa81bc in WallWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#19 0xb5946571 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#20 0xb2c4af1f in PrivateAnimWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#21 0xb5946571 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#22 0xb2be8666 in FadeWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libfade.so
+No symbol table info available.
+#23 0xb5946571 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#24 0xb24b1b6b in unity::UnityWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0xb5946571 in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#26 0xb5946bba in PrivateGLScreen::paintOutputRegion(GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#27 0xb594713f in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#28 0xb2fa2e22 in WallScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#29 0xb5947055 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#30 0xb2c42c39 in PrivateAnimScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#31 0xb5947055 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#32 0xb24bb888 in unity::UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#33 0xb5947055 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#34 0xb594b0d7 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#35 0xb597df31 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#36 0xb2f9fc21 in WallScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#37 0xb597df5d in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#38 0xb597fd81 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#39 0xb5980fa0 in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CompositeScreen>, boost::_bi::list1<boost::_bi::value<CompositeScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#40 0xb773a913 in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#41 0xb773a9d1 in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#42 0xb773aac1 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompTimeoutSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#43 0xb7739c4f in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#44 0xb725a071 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#45 0xb715ba83 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#46 0xb715be20 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#47 0xb715c27b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#48 0xb725b513 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#49 0xb76f0b7a in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#50 0xb76f0bc4 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#51 0x0804a5e2 in CompManager::run() ()
+No symbol table info available.
+#52 0x08049ecc in main ()
+No symbol table info available.

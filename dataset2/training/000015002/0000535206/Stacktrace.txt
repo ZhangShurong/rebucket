@@ -1,0 +1,24 @@
+#0  0x00acb2c4 in g_object_unref () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#1  0x002bb7ff in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#2  0x005c07fc in g_hash_table_foreach () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#3  0x002bb662 in gtk_rc_reset_styles () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#4  0x002295da in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#5  0x006d14f8 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#6  0x005cde81 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#7  0x005cfe05 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#8  0x005d3b08 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#9  0x005d405f in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00260049 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#11 0x0804bd33 in main ()
+No symbol table info available.

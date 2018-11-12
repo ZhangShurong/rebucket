@@ -1,0 +1,3 @@
+#0  0x0804ad46 in ?? ()
+#1  0xb7d9a685 in __libc_start_main () from /lib/tls/i686/cmov/libc.so.6
+#2  0x08048e81 in ?? ()

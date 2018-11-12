@@ -1,0 +1,42 @@
+#0  0x00007f1a0475bc45 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f1a0475f9f6 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f1a04794ccb in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f1a0479ebb6 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007f1a047a2931 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x00007f1a047a431e in malloc () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007f19ffa0cae3 in ?? () from /usr/lib/nvidia-current/libGL.so.1
+No symbol table info available.
+#7  0x00007f19ffa1193d in ?? () from /usr/lib/nvidia-current/libGL.so.1
+No symbol table info available.
+#8  0x00007f19ffa0bd95 in ?? () from /usr/lib/nvidia-current/libGL.so.1
+No symbol table info available.
+#9  0x00007f1a061f1c7e in ?? () from /lib64/ld-linux-x86-64.so.2
+No symbol table info available.
+#10 0x00007f1a061ed6d6 in ?? () from /lib64/ld-linux-x86-64.so.2
+No symbol table info available.
+#11 0x00007f1a061f233a in ?? () from /lib64/ld-linux-x86-64.so.2
+No symbol table info available.
+#12 0x00007f1a02088f16 in ?? () from /lib/x86_64-linux-gnu/libdl.so.2
+No symbol table info available.
+#13 0x00007f1a061ed6d6 in ?? () from /lib64/ld-linux-x86-64.so.2
+No symbol table info available.
+#14 0x00007f1a0208952c in ?? () from /lib/x86_64-linux-gnu/libdl.so.2
+No symbol table info available.
+#15 0x00007f1a02088fc1 in dlopen () from /lib/x86_64-linux-gnu/libdl.so.2
+No symbol table info available.
+#16 0x00007f1a04fc2784 in g_module_open () from /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0
+No symbol table info available.
+#17 0x00000000004059be in ?? ()
+No symbol table info available.
+#18 0x00007f1a051fb140 in g_type_module_use () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x00000000004052a3 in gnome_settings_plugin_info_activate ()
+No symbol table info available.
+#20 0x0000000000404135 in _start ()
+No symbol table info available.

@@ -1,0 +1,30 @@
+#0  0x00007f78a69acc5a in PluginClassHandler<UnityDialogWindow, CompWindow, 0>::get(CompWindow*) () from /usr/lib/compiz/libunitydialog.so
+No symbol table info available.
+#1  0x00007f78a69ab886 in UnityDialogWindow::~UnityDialogWindow() () from /usr/lib/compiz/libunitydialog.so
+No symbol table info available.
+#2  0x00007f78a69ab979 in UnityDialogWindow::~UnityDialogWindow() () from /usr/lib/compiz/libunitydialog.so
+No symbol table info available.
+#3  0x00000000004505a1 in CompPlugin::windowFiniPlugins(CompWindow*) ()
+No symbol table info available.
+#4  0x000000000044086c in CompWindow::~CompWindow() ()
+No symbol table info available.
+#5  0x0000000000440a79 in CompWindow::~CompWindow() ()
+No symbol table info available.
+#6  0x000000000042a1ef in PrivateScreen::removeDestroyed() ()
+No symbol table info available.
+#7  0x000000000042db43 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#8  0x0000000000454e51 in CompEventSource::callback() ()
+No symbol table info available.
+#9  0x00007f78b82198af in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0x00007f78b4560cbd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f78b45614b8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f78b45619f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x000000000042a9b2 in CompScreen::eventLoop() ()
+No symbol table info available.
+#14 0x000000000041ec52 in main ()
+No symbol table info available.

@@ -1,0 +1,238 @@
+#0  0x001ae569 in postAnimationCleanupCustom (w=<value optimized out>, 
+    closing=<value optimized out>, finishing=0, clearMatchingRow=1)
+    at animation.c:1550
+	aw = (AnimWindow *) 0xa822ff0
+	wCur = <value optimized out>
+#1  0x001ae73f in postAnimationCleanup (w=0xa7e68a8) at animation.c:1775
+No locals.
+#2  0x001b14e9 in animPreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at animation.c:2486
+	aw = (AnimWindow *) 0xa822ff0
+	animStillInProgress = 0
+	w = (CompWindow *) 0xa7e68a8
+	as = <value optimized out>
+#3  0x0091738b in shiftPreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at shift.c:1630
+	ss = (ShiftScreen *) 0x9d5b930
+#4  0x009d05c0 in infoPreparePaintScreen (s=0x98cef88, ms=176304112)
+    at resizeinfo.c:361
+	is = (InfoScreen *) 0x9e5f2c0
+#5  0x00a1e703 in thumbPreparePaintScreen (s=0x98cef88, ms=23)
+    at thumbnail.c:896
+	ts = (ThumbScreen *) 0x9e62f18
+#6  0x009c1037 in loginoutPreparePaintScreen (s=0x98cef88, ms=23)
+    at loginout.c:272
+	ls = (LoginoutScreen *) 0x9ed8c20
+	val = 0.100000001
+	val2 = 0
+#7  0x00a393a3 in wobblyPreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at ../../plugins/wobbly.c:1794
+	ww = (WobblyWindow *) 0x4b4868
+	w = (CompWindow *) 0xbf88879c
+	ws = (WobblyScreen *) 0x9f84850
+#8  0x00cccedc in fadePreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at ../../plugins/fade.c:232
+	w = <value optimized out>
+	steps = 2
+	fs = (FadeScreen *) 0xa13c7e8
+#9  0x00cd5ca0 in cubePreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at ../../plugins/cube.c:797
+	opt = <value optimized out>
+	x = -18.8184433
+	progress = 0.418187618
+	cs = (CubeScreen *) 0xa225c78
+#10 0x00faecd7 in switchPreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at ../../plugins/switcher.c:1297
+	ss = (SwitchScreen *) 0xa22eb38
+#11 0x00cdc5eb in showdesktopPreparePaintScreen (s=0x98cef88, 
+    msSinceLastPaint=23) at showdesktop.c:417
+	ss = (ShowdesktopScreen *) 0xa181e08
+#12 0x00ce1cd8 in scalePreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at ../../plugins/scale.c:922
+	ss = (ScaleScreen *) 0xa31c070
+#13 0x00dabcfb in tdPreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at 3d.c:178
+	w = (CompWindow *) 0x1
+	tds = <value optimized out>
+	cs = (CubeScreen *) 0xa225c78
+#14 0x00f243f0 in rotatePreparePaintScreen (s=0x98cef88, msSinceLastPaint=23)
+    at ../../plugins/rotate.c:511
+	rs = <value optimized out>
+	cs = (CubeScreen *) 0xa225c78
+#15 0x00f4a6bb in expoPreparePaintScreen (s=0x98cef88, ms=23) at expo.c:799
+	es = (ExpoScreen *) 0x9e86488
+	val = 0
+#16 0x080589d4 in eventLoop () at ../../src/display.c:1551
+	event = {type = 102, xany = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, window = 31457283}, xkey = {
+    type = 102, serial = 1053384, send_event = 0, display = 0x9761de0, 
+    window = 31457283, root = 29360276, subwindow = 3, time = 0, 
+    x = 35473852, y = 0, x_root = 52428824, y_root = 1256, state = 52428824, 
+    keycode = 1, same_screen = 1}, xbutton = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, window = 31457283, root = 29360276, 
+    subwindow = 3, time = 0, x = 35473852, y = 0, x_root = 52428824, 
+    y_root = 1256, state = 52428824, button = 1, same_screen = 1}, xmotion = {
+    type = 102, serial = 1053384, send_event = 0, display = 0x9761de0, 
+    window = 31457283, root = 29360276, subwindow = 3, time = 0, 
+    x = 35473852, y = 0, x_root = 52428824, y_root = 1256, state = 52428824, 
+    is_hint = 1 '\001', same_screen = 1}, xcrossing = {type = 102, 
+    serial = 1053384, send_event = 0, display = 0x9761de0, window = 31457283, 
+    root = 29360276, subwindow = 3, time = 0, x = 35473852, y = 0, 
+    x_root = 52428824, y_root = 1256, mode = 52428824, detail = 1, 
+    same_screen = 1, focus = 0, state = 256}, xfocus = {type = 102, 
+    serial = 1053384, send_event = 0, display = 0x9761de0, window = 31457283, 
+    mode = 29360276, detail = 3}, xexpose = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, window = 31457283, x = 29360276, 
+    y = 3, width = 0, height = 35473852, count = 0}, xgraphicsexpose = {
+    type = 102, serial = 1053384, send_event = 0, display = 0x9761de0, 
+    drawable = 31457283, x = 29360276, y = 3, width = 0, height = 35473852, 
+    count = 0, major_code = 52428824, minor_code = 1256}, xnoexpose = {
+    type = 102, serial = 1053384, send_event = 0, display = 0x9761de0, 
+    drawable = 31457283, major_code = 29360276, minor_code = 3}, 
+  xvisibility = {type = 102, serial = 1053384, send_event = 0, 
+    display = 0x9761de0, window = 31457283, state = 29360276}, 
+  xcreatewindow = {type = 102, serial = 1053384, send_event = 0, 
+    display = 0x9761de0, parent = 31457283, window = 29360276, x = 3, y = 0, 
+    width = 35473852, height = 0, border_width = 52428824, 
+    override_redirect = 1256}, xdestroywindow = {type = 102, 
+    serial = 1053384, send_event = 0, display = 0x9761de0, event = 31457283, 
+    window = 29360276}, xunmap = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, event = 31457283, window = 29360276, 
+    from_configure = 3}, xmap = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, event = 31457283, window = 29360276, 
+    override_redirect = 3}, xmaprequest = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, parent = 31457283, 
+    window = 29360276}, xreparent = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, event = 31457283, window = 29360276, 
+    parent = 3, x = 0, y = 35473852, override_redirect = 0}, xconfigure = {
+    type = 102, serial = 1053384, send_event = 0, display = 0x9761de0, 
+    event = 31457283, window = 29360276, x = 3, y = 0, width = 35473852, 
+    height = 0, border_width = 52428824, above = 1256, 
+    override_redirect = 52428824}, xgravity = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, event = 31457283, window = 29360276, 
+    x = 3, y = 0}, xresizerequest = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, window = 31457283, width = 29360276, 
+    height = 3}, xconfigurerequest = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, parent = 31457283, 
+    window = 29360276, x = 3, y = 0, width = 35473852, height = 0, 
+    border_width = 52428824, above = 1256, detail = 52428824, 
+    value_mask = 1}, xcirculate = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, event = 31457283, window = 29360276, 
+    place = 3}, xcirculaterequest = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, parent = 31457283, 
+    window = 29360276, place = 3}, xproperty = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, window = 31457283, atom = 29360276, 
+    time = 3, state = 0}, xselectionclear = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, window = 31457283, 
+    selection = 29360276, time = 3}, xselectionrequest = {type = 102, 
+    serial = 1053384, send_event = 0, display = 0x9761de0, owner = 31457283, 
+    requestor = 29360276, selection = 3, target = 0, property = 35473852, 
+    time = 0}, xselection = {type = 102, serial = 1053384, send_event = 0, 
+    display = 0x9761de0, requestor = 31457283, selection = 29360276, 
+    target = 3, property = 0, time = 35473852}, xcolormap = {type = 102, 
+    serial = 1053384, send_event = 0, display = 0x9761de0, window = 31457283, 
+    colormap = 29360276, new = 3, state = 0}, xclient = {type = 102, 
+    serial = 1053384, send_event = 0, display = 0x9761de0, window = 31457283, 
+    message_type = 29360276, format = 3, data = {
+      b = "\000\000\000\000¼I\035\002\000\000\000\000\030\000 \003è\004\000", 
+      s = {0, 0, 18876, 541, 0, 0, 24, 800, 1256, 0}, l = {0, 35473852, 0, 
+        52428824, 1256}}}, xmapping = {type = 102, serial = 1053384, 
+    send_event = 0, display = 0x9761de0, window = 31457283, 
+    request = 29360276, first_keycode = 3, count = 0}, xerror = {type = 102, 
+    display = 0x1012c8, resourceid = 0, serial = 158735840, 
+    error_code = 3 '\003', request_code = 0 '\0', minor_code = 224 'à'}, 
+  xkeymap = {type = 102, serial = 1053384, send_event = 0, 
+    display = 0x9761de0, window = 31457283, 
+    key_vector = "\224\000À\001\003\000\000\000\000\000\000\000¼I\035\002\000\000\000\000\030\000 \003è\004\000\000\030\000 \003"}, pad = {102, 1053384, 0, 
+    158735840, 31457283, 29360276, 3, 0, 35473852, 0, 52428824, 1256, 
+    52428824, 1, 1, 0, 256, 0, 0, 0, 0, 0, 0, 0}}
+	timeDiff = 23
+	tv = {tv_sec = 1255791013, tv_usec = 699009}
+	d = (CompDisplay *) 0x9761128
+	s = (CompScreen *) 0x98cef88
+	w = <value optimized out>
+	t = <value optimized out>
+	time = <value optimized out>
+	timeToNextRedraw = <value optimized out>
+	damageMask = 4
+	mask = <value optimized out>
+#17 0x08052c93 in main (argc=12, argv=0xbf889034) at ../../src/main.c:467
+	ctx = {offset = 2950, pluginData = 0x9758040 "0eX", 
+  textureFilterData = 0x0, refreshRateData = 0x0}
+	displayName = 0x0
+	plugin = {0xbf889b4c "move", 0xbf889b51 "resize", 0xbf889b58 "place", 
+  0xbf889b5e "decoration", 0xbf889b69 "animation", 0xbf889b73 "ccp", 0x0, 
+  0x0, 0x1 <Address 0x1 out of bounds>, 0x383 <Address 0x383 out of bounds>, 
+  0xb7729dc0 "í³'", 0xb772c048 "", 0x27a278 "strstr", 0x451e74 "", 
+  0x27909c "\234", 0x1 <Address 0x1 out of bounds>, 0x443ff4 ",¿\001", 
+  0xbf888c8c "\003", 0xb772df40 "ÌGD", 0xbf888c60 "\202\222K", 
+  0x431009 "\203ø", 0xbf888c50 "\003", 0x27909c "\234", 0xbf888c44 "\002", 
+  0x4447cc "\214\223r· ", 0x0, 0xb7729dc0 "í³'", 
+  0x1 <Address 0x1 out of bounds>, 0x0, 0x1 <Address 0x1 out of bounds>, 
+  0x443ff4 ",¿\001", 
+  0x434b50 "U\211åWV\203ì\034\213u\b\213\006\213V\b\213N\004\213x\030\211Uìº\001", 0x1 <Address 0x1 out of bounds>, 0xb772c840 "", 
+  0xbf8889c0 "\210dè\t\210ï\214\t8\212\210¿»¦ô", 0xbf888e48 "", 0x0, 
+  0x443ff4 ",¿\001", 0xb772dd88 "", 0x0, 0xbf888c8c "\003", 
+  0xbf888c44 "\002", 0xbf888c50 "\003", 0x0, 0x443ff4 ",¿\001", 
+  0x27a278 "strstr", 0xbf888e78 "", 
+  0x27c820 "U\211å\203ì\f\211\034$\213U\f\211t$\004\211|$\bè7úÿÿ\201Ã»\027\001", 0x10000004 <Address 0x10000004 out of bounds>, 0xb772c2f0 "", 0x0, 0x0, 
+  0x0, 0x0, 0x287e65 "SMP", 0x0, 0x2 <Address 0x2 out of bounds>, 
+  0x2 <Address 0x2 out of bounds>, 
+  0xffffffff <Address 0xffffffff out of bounds>, 0x0, 
+  0x3 <Address 0x3 out of bounds>, 0x287e65 "SMP", 0x287e66 "MP", 
+  0x287e66 "MP", 
+  0x4b9282 "\205À\017\205nýÿÿ\213}Ø\205ÿ\017\204cýÿÿ\213uÜ\213Mä\215\f\016\213uà9uì\211MèvT\213EÐ\017¶\020\211ð:\0241\017\205\231", 
+  0xbf888da3 "MP Fri Oct 16 14:04:26 UTC 2009", 0x0, 
+  0x2 <Address 0x2 out of bounds>, 0x287e67 "P", 
+  0x3 <Address 0x3 out of bounds>, 0x0, 0x3 <Address 0x3 out of bounds>, 
+  0x2 <Address 0x2 out of bounds>, 0x287e66 "MP", 0x287e65 "SMP", 
+  0x3 <Address 0x3 out of bounds>, 
+  0xbf888da2 "SMP Fri Oct 16 14:04:26 UTC 2009", 
+  0x1 <Address 0x1 out of bounds>, 0x0, 
+  0xbf888da2 "SMP Fri Oct 16 14:04:26 UTC 2009", 
+  0x3 <Address 0x3 out of bounds>, 0x3 <Address 0x3 out of bounds>, 
+  0x28dff4 "´^\001", 
+  0xbf888d97 "#48-Ubuntu SMP Fri Oct 16 14:04:26 UTC 2009", 0x444020 "pFD", 
+  0xbf888f80 "À\207\a\b", 0x27c778 "\205À\017\225À\017¶À\211\203Ì!", 
+  0xbf888da2 "SMP Fri Oct 16 14:04:26 UTC 2009", 0x287e65 "SMP", 0x0, 
+  0x440528 "symbol=%s;  lookup in file=%s [%lu]\n", 0x0, 0xbf888ed8 "\212\b", 
+  0x756e694c <Address 0x756e694c out of bounds>, 
+  0x78 <Address 0x78 out of bounds>, 0x0 <repeats 14 times>, 
+  0x73697600 <Address 0x73697600 out of bounds>, 
+  0x616c2d68 <Address 0x616c2d68 out of bounds>, 
+  0x706f7470 <Address 0x706f7470 out of bounds>, 0x0 <repeats 13 times>, 
+  0x2e320000 <Address 0x2e320000 out of bounds>, 
+  0x31332e36 <Address 0x31332e36 out of bounds>, 
+  0x2d34312d <Address 0x2d34312d out of bounds>, 
+  0x656e6567 <Address 0x656e6567 out of bounds>, 0x636972 "246", 
+  0x0 <repeats 11 times>, 0x23000000 <Address 0x23000000 out of bounds>, 
+  0x552d3834 <Address 0x552d3834 out of bounds>, 
+  0x746e7562 <Address 0x746e7562 out of bounds>, 
+  0x4d532075 <Address 0x4d532075 out of bounds>, 
+  0x72462050 <Address 0x72462050 out of bounds>, 
+  0x634f2069 <Address 0x634f2069 out of bounds>, 
+  0x36312074 <Address 0x36312074 out of bounds>, 
+  0x3a343120 <Address 0x3a343120 out of bounds>, 
+  0x323a3430 <Address 0x323a3430 out of bounds>, 
+  0x54552036 <Address 0x54552036 out of bounds>, 
+  0x30322043 <Address 0x30322043 out of bounds>, 
+  0x3930 <Address 0x3930 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0x0, 
+  0x36383669 <Address 0x36383669 out of bounds>, 0x0 <repeats 15 times>, 
+  0x6f6e2800 <Address 0x6f6e2800 out of bounds>, 0x29656e "", 
+  0x0 <repeats 11 times>, 0x451644 "«,", 
+  0xd696910 <Address 0xd696910 out of bounds>, 0xbf888e90 "", 
+  0x430a80 "\213Mà\205Àu9\203Ä(\211ð[^_]Ã\215´&", 0x457786 "GLIBC_2.0", 
+  0x804fff0 "GLIBC_2.0", 0xb7727684 "þÿÿÿ", 0x430292 "Ç\203ü\005", 0x0, 
+  0xb7729440 "ðÿ\004\b\020ii\r", 
+  0xbf880002 "b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@t?\032\032b>ÄÃ??@@"..., 0x436200 "\205Àuä\203Ä\b¸\001", 0x804da16 "libc.so.6", 
+  0xb772dfec "libpthread.so.0", 0x443ff4 ",¿\001", 
+  0x448b98 "/N=öÎ\030L\017ùÄ-×\204\"\233|øÔ\217Ó\204\"\233|%ÁÔñìûÀ=°\"\225Ã8Ç\031uÿ\001Ä\022ÉBY\020ÜÏìµ¶w\035\rGÞÍ%µV1ýÇr1\035\a;úL\214\t)\020\t~\222\0348µï0jÝù{\004\\H±Ô¡\034 \002êÙ\0179µï0X?\227|\030\034sìT\200ÌsÙ\202c\002;H\205\0336\rfý2vàÕ¨§Ká¼\234#\217Ö\036h\233£\230Ëò\234\002Y1\n´\006ß½èe\235J\032\223¨Pµ¨\020\205)%~\016|\030¹Ñ8\a\221\222þ\206ï¦:VÓñIµ$\202¡7äQhoì"..., 
+  0xf <Address 0xf out of bounds>, 0xbf888f00 "´\217\210¿\t\020C", 
+  0x430da5 "\205À\017\205²", 0x0, 0x0, 0x444bb0 "ÀKD", 0x444958 "", 0x0, 
+  0x448da4 "", 0x440528 "symbol=%s;  lookup in file=%s [%lu]\n", 
+  0xbf888ecc ""...}
+	i = <value optimized out>
+	nPlugin = 6
+	disableSm = 0
+	clientId = 0xbf889b1d "102dda5b8648bce6125578879912522000000196730037"
+	refreshRateArg = 0x0

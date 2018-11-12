@@ -1,0 +1,13 @@
+#0  0x0081f8fc in g_main_context_prepare () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x008206e7 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x0082104b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x001e4e81 in gtk_dialog_run () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#4  0x0450b5ef in ?? ()
+No symbol table info available.
+#5  0x09ed3120 in ?? ()
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

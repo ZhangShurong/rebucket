@@ -1,0 +1,24 @@
+#0  0x007f88dc in g_main_context_prepare (context=0x83883c8, priority=0xbfef7238) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:2758
+        result = <optimized out>
+        prepare = <optimized out>
+        source_timeout = -1
+        i = <optimized out>
+        n_ready = <optimized out>
+        current_priority = <optimized out>
+        source = 0x83e9540
+#1  0x007f96c7 in g_main_context_iterate (context=0x83883c8, block=1, dispatch=1, self=<optimized out>) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:3069
+        max_priority = <optimized out>
+        timeout = <optimized out>
+        some_ready = <optimized out>
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+        fds = 0xb6b29b88
+#2  0x007fa02b in g_main_loop_run (loop=0x86fcfa8) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:3297
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#3  0x00df6651 in gtk_dialog_run () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#4  0x0563663f in ?? ()
+No symbol table info available.
+#5  0x0862d160 in ?? ()
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

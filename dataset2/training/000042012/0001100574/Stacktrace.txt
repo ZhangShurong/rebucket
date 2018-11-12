@@ -1,0 +1,30 @@
+#0  0x00007f9eab595d72 in GridScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#1  0x00007f9ec55420ad in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#2  0x00007f9eab38029f in RegexScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#3  0x00007f9ec55420ad in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#4  0x00007f9ec55420ad in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#5  0x00007f9ea89006cd in WorkaroundsScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libworkarounds.so
+No symbol table info available.
+#6  0x00007f9ec55420ad in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#7  0x00007f9ec55420eb in CompScreenImpl::alwaysHandleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#8  0x00007f9ec551c282 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#9  0x00007f9ec554e8d7 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#10 0x00007f9ec3a3aebf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0x00007f9ec353fa95 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f9ec353fdc8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f9ec35401c2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x000000000040240b in main ()
+No symbol table info available.

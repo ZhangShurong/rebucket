@@ -1,0 +1,44 @@
+#0  0x00007ffe3fccb173 in std::_List_node_base::_M_hook(std::_List_node_base*) () from /usr/lib/libstdc++.so.6
+No symbol table info available.
+#1  0x00007ffe2e731197 in nux::InputArea::OnEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#2  0x00007ffe2ead6993 in PlacesResultsView::ProcessEvent(nux::Event&, long, long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007ffe2e76d0e5 in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0x00007ffe2e76d0a5 in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x00007ffe2e7353f0 in nux::BaseWindow::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x00007ffe2e7e535b in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x00007ffe2e7edc6f in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#8  0x00007ffe2e7ee403 in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#9  0x00007ffe3e99fc1d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007ffe3e9a0408 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007ffe3e9a0699 in g_main_context_iteration () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007ffe3c5c4e99 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#13 0x00007ffe3d26d880 in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#14 0x000000000042190f in CompTimeoutSource::callback() ()
+No symbol table info available.
+#15 0x000000000042137d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#16 0x00007ffe409e3acf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x00007ffe3e99fc1d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007ffe3e9a0408 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007ffe3e9a0a4a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#20 0x0000000000429dca in CompScreen::eventLoop() ()
+No symbol table info available.
+#21 0x0000000000422e80 in main ()
+No symbol table info available.

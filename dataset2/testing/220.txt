@@ -1,0 +1,62 @@
+#0  dialog_init (manager=manager@entry=0xfacd50) at gsd-media-keys-manager.c:472
+No locals.
+#1  0x00007f0374c78e28 in update_screen_cb (source_object=<optimized out>, res=<optimized out>, user_data=0xfacd50) at gsd-media-keys-manager.c:1846
+        error = 0x0
+        percentage = 80
+        new_percentage = 0x7f039001ea90
+        data = 0xfacd50
+        manager = 0xfacd50
+        osd_percentage = <optimized out>
+#2  0x00007f039c20df77 in g_simple_async_result_complete (simple=0x7f0384005a60) at /build/buildd/glib2.0-2.34.2/./gio/gsimpleasyncresult.c:775
+        current_source = 0x7f039000d420
+        current_context = 0x0
+        __PRETTY_FUNCTION__ = "g_simple_async_result_complete"
+#3  0x00007f039c26840a in reply_cb (connection=<optimized out>, res=<optimized out>, user_data=0x7f0384005a60) at /build/buildd/glib2.0-2.34.2/./gio/gdbusproxy.c:2632
+        simple = 0x7f0384005a60
+        value = <optimized out>
+        error = 0x0
+        fd_list = 0x0
+#4  0x00007f039c20df77 in g_simple_async_result_complete (simple=0xf3e260) at /build/buildd/glib2.0-2.34.2/./gio/gsimpleasyncresult.c:775
+        current_source = 0x7f039000d420
+        current_context = 0x0
+        __PRETTY_FUNCTION__ = "g_simple_async_result_complete"
+#5  0x00007f039c25e892 in g_dbus_connection_call_done (source=<optimized out>, result=<optimized out>, user_data=0xf91210) at /build/buildd/glib2.0-2.34.2/./gio/gdbusconnection.c:5339
+        simple = 0xf3e260
+        connection = <optimized out>
+        state = 0xf91210
+        error = 0x0
+        reply = 0x7f03880039e0
+#6  0x00007f039c20df77 in g_simple_async_result_complete (simple=0xf41950) at /build/buildd/glib2.0-2.34.2/./gio/gsimpleasyncresult.c:775
+        current_source = 0x7f039000d420
+        current_context = 0x0
+        __PRETTY_FUNCTION__ = "g_simple_async_result_complete"
+#7  0x00007f039c20e079 in complete_in_idle_cb (data=<optimized out>) at /build/buildd/glib2.0-2.34.2/./gio/gsimpleasyncresult.c:787
+        simple = <optimized out>
+#8  0x00007f039bca0a95 in g_main_dispatch (context=0xba37e0) at /build/buildd/glib2.0-2.34.2/./glib/gmain.c:2715
+        dispatch = 0x7f039bc9de40 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0xf41950
+        callback = 0x7f039c20e070 <complete_in_idle_cb>
+        cb_funcs = 0x7f039bf4e9e0 <g_source_callback_funcs>
+        cb_data = 0x7f039000bb20
+        current_source_link = {data = 0x7f039000d420, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x7f039000d420
+        current = 0xbd2090
+        i = <optimized out>
+#9  g_main_context_dispatch (context=context@entry=0xba37e0) at /build/buildd/glib2.0-2.34.2/./glib/gmain.c:3219
+No locals.
+#10 0x00007f039bca0dc8 in g_main_context_iterate (context=0xba37e0, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at /build/buildd/glib2.0-2.34.2/./glib/gmain.c:3290
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+        fds = 0xeeda50
+#11 0x00007f039bca11c2 in g_main_loop_run (loop=0xe03630) at /build/buildd/glib2.0-2.34.2/./glib/gmain.c:3484
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#12 0x00007f039c683065 in gtk_main () at /build/buildd/gtk+3.0-3.6.2/./gtk/gtkmain.c:1160
+        loop = 0xe03630
+#13 0x000000000040379b in main (argc=1, argv=0x7fff88db5e78) at main.c:544
+        res = <optimized out>
+        error = 0x0

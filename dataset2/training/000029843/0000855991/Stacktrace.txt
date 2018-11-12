@@ -1,0 +1,44 @@
+#0  0x00007f620f396649 in XFindOnExtensionList () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#1  0x00007f6202b0466b in ?? () from /usr/lib/nvidia-current/libGL.so.1
+No symbol table info available.
+#2  0x00007f6202af6500 in glXReleaseTexImageEXT () from /usr/lib/nvidia-current/libGL.so.1
+No symbol table info available.
+#3  0x00007f6202dc4777 in TfpTexture::~TfpTexture() () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#4  0x00007f6202dc4829 in TfpTexture::~TfpTexture() () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x00007f6202dc3df5 in GLTexture::List::~List() () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x00007f620031aca8 in DecorScreen::releaseTexture(DecorTexture*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#7  0x00007f620031dd6f in Decoration::release(Decoration*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#8  0x00007f620031eba7 in DecorWindow::~DecorWindow() () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#9  0x00007f620031ed89 in DecorWindow::~DecorWindow() () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#10 0x0000000000451681 in CompPlugin::windowFiniPlugins(CompWindow*) ()
+No symbol table info available.
+#11 0x00000000004413cc in CompWindow::~CompWindow() ()
+No symbol table info available.
+#12 0x00000000004415d9 in CompWindow::~CompWindow() ()
+No symbol table info available.
+#13 0x000000000042b0af in PrivateScreen::removeDestroyed() ()
+No symbol table info available.
+#14 0x000000000042e723 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#15 0x0000000000455f31 in CompEventSource::callback() ()
+No symbol table info available.
+#16 0x00007f620e0749df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x00007f620db7ab4d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f620db7b348 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f620db7b882 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x000000000042b846 in CompScreen::eventLoop() ()
+No symbol table info available.
+#21 0x000000000041f61a in main ()
+No symbol table info available.

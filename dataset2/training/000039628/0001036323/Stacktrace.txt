@@ -1,0 +1,30 @@
+#0  0x00007f5bc11042b2 in unity::launcher::BFBLauncherIcon::OnOverlayShown(_GVariant*, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007f5bc11f6b19 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f5bd43ebcd5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f5bd43ec008 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f5bd43ec0c4 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f5bd06be3b9 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#6  0x00007f5bd1598dbf in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#7  0x00007f5bd63f225c in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#8  0x00007f5bd63f22ff in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#9  0x00007f5bd63f17dd in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#10 0x00007f5bd48e5acf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0x00007f5bd43ebcd5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f5bd43ec008 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f5bd43ec402 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x0000000000402543 in main ()
+No symbol table info available.

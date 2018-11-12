@@ -1,0 +1,88 @@
+#0  0x00007fb812c67445 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007fb812c6abab in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007fb8135a6f6d in g_assertion_message () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007fb8135a7492 in g_assertion_message_expr () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007fb7ea7d97b6 in ?? () from /usr/lib/control-center-1/panels/libwacom-properties.so
+No symbol table info available.
+#5  0x00007fb7ea7d9bab in ?? () from /usr/lib/control-center-1/panels/libwacom-properties.so
+No symbol table info available.
+#6  0x00007fb81384a6c4 in g_object_newv () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007fb81384aea6 in g_object_new_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007fb81384b1b4 in g_object_new () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00007fb7ea7d8b94 in ?? () from /usr/lib/control-center-1/panels/libwacom-properties.so
+No symbol table info available.
+#10 0x00007fb7ea7d2d77 in ?? () from /usr/lib/control-center-1/panels/libwacom-properties.so
+No symbol table info available.
+#11 0x00007fb7ea7d368b in ?? () from /usr/lib/control-center-1/panels/libwacom-properties.so
+No symbol table info available.
+#12 0x00007fb813864937 in g_type_create_instance () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007fb813849099 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007fb81384a6c4 in g_object_newv () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007fb81384aea6 in g_object_new_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00007fb81384b1b4 in g_object_new () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00007fb815652e14 in ?? ()
+No symbol table info available.
+#18 0x00007fb81565451b in ?? ()
+No symbol table info available.
+#19 0x00007fb815653537 in ?? ()
+No symbol table info available.
+#20 0x00007fb813843c82 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x00007fb813854d51 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x00007fb81385d079 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x00007fb81385d222 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x00007fb815656403 in ?? ()
+No symbol table info available.
+#25 0x00007fb813847047 in g_cclosure_marshal_VOID__BOXEDv () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#26 0x00007fb813843eaa in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#27 0x00007fb81385c721 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#28 0x00007fb81385d222 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#29 0x00007fb8156564d1 in ?? ()
+No symbol table info available.
+#30 0x00007fb814d11eb8 in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#31 0x00007fb813843c82 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#32 0x00007fb813854d51 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#33 0x00007fb81385cd5e in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#34 0x00007fb81385d222 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#35 0x00007fb814e3d729 in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#36 0x00007fb814d0fe5b in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#37 0x00007fb814d11b71 in gtk_main_do_event () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#38 0x00007fb814961ce2 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#39 0x00007fb813586c9a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#40 0x00007fb813587060 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#41 0x00007fb813587124 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#42 0x00007fb813b1ab74 in g_application_run () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#43 0x00007fb81565275a in main ()
+No symbol table info available.

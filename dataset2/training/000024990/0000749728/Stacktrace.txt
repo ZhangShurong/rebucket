@@ -1,0 +1,18 @@
+#0  0x00007f4709331687 in Unity::MT::GrabHandleGroup::hide() () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#1  0x00007f4709331912 in UnityMTGrabHandlesWindow::hideHandles() () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#2  0x00007f4709331958 in UnityMTGrabHandlesWindow::onHideTimeout(void*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#3  0x00007f471605a4eb in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f4716058bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f47160593a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f47160599f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x000000000042a22a in CompScreen::eventLoop (this=0xeba9f0) at /build/buildd/compiz-0.9.4git20110322/src/screen.cpp:128
+No locals.
+#8  0x0000000000423180 in main (argc=<value optimized out>, argv=0x7fff1d740928) at /build/buildd/compiz-0.9.4git20110322/src/main.cpp:285
+        manager = {plugins = {<std::_List_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {_M_impl = {<std::allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<__gnu_cxx::new_allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0xeba9b0, _M_prev = 0xeba9b0}}}, <No data fields>}, disableSm = false, clientId = 0xf33be0 "10d41b866acfdc9e5f13017670473957700000014580031", displayName = 0x0}

@@ -1,0 +1,30 @@
+#0  typing_break_timeout (manager=0x0) at gsd-typing-break-manager.c:82
+No locals.
+#1  0xb764d486 in IA__g_source_get_current_time (source=0x81a9e88, 
+    timeval=0xb59e87a0) at /build/buildd/glib2.0-2.15.6/glib/gmain.c:3206
+	__PRETTY_FUNCTION__ = "IA__g_source_get_current_time"
+#2  0xb764cd16 in IA__g_main_context_dispatch (context=0x80735c8)
+    at /build/buildd/glib2.0-2.15.6/glib/gmain.c:2048
+No locals.
+#3  0xb76500d3 in g_main_context_iterate (context=0x80735c8, block=1, 
+    dispatch=1, self=0x8078f00)
+    at /build/buildd/glib2.0-2.15.6/glib/gmain.c:2653
+	got_ownership = <value optimized out>
+	max_priority = <value optimized out>
+	timeout = <value optimized out>
+	some_ready = <value optimized out>
+	nfds = <value optimized out>
+	allocated_nfds = <value optimized out>
+	fds = <value optimized out>
+	__PRETTY_FUNCTION__ = "g_main_context_iterate"
+#4  0xb76504b7 in IA__g_main_loop_run (loop=0x818a998)
+    at /build/buildd/glib2.0-2.15.6/glib/gmain.c:2893
+	got_ownership = <value optimized out>
+	self = (GThread *) 0x8078f00
+	__PRETTY_FUNCTION__ = "IA__g_main_loop_run"
+#5  0xb7d31244 in gtk_exit () from /usr/lib/libgtk-x11-2.0.so.0
+#6  0x0804ae0a in main (argc=134717872, argv=0x2) at main.c:256
+	manager = (GnomeSettingsManager *) 0xbfca8740
+	program = (GnomeProgram *) 0x8073e48
+	res = -1247901792
+	error = (GError *) 0x0

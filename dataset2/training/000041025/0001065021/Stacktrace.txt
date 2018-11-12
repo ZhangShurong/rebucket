@@ -1,0 +1,24 @@
+#0  0xb747ef7d in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0xb47a9c2e in ?? () from /usr/lib/i386-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#2  0xb47ab2b3 in ?? () from /usr/lib/i386-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#3  0xb5869e40 in ?? () from /usr/lib/i386-linux-gnu/mesa/libGL.so.1
+No symbol table info available.
+#4  0xb5841c77 in ?? () from /usr/lib/i386-linux-gnu/mesa/libGL.so.1
+No symbol table info available.
+#5  0xb58a1fc7 in boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, void (*)(_XDisplay*, unsigned long, int, int*), boost::_bi::list4<boost::_bi::value<_XDisplay*>, boost::arg<1>, boost::_bi::value<int>, boost::_bi::value<int*> > >, void, unsigned long>::invoke(boost::detail::function::function_buffer&, unsigned long) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0xb58bef97 in compiz::opengl::bindTexImageGLX(ServerGrabInterface*, unsigned long, unsigned long, boost::function<bool (unsigned long)> const&, boost::function<void (unsigned long)> const&, boost::function<void ()> const&, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0xb58a0667 in TfpTexture::bindTexImage(unsigned long const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#8  0xb58a1c50 in TfpTexture::bindPixmapToTexture(unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#9  0xb58b38e9 in boost::detail::function::function_invoker5<GLTexture::List (*)(unsigned long, int, int, int, compiz::opengl::_PixmapSource), GLTexture::List, unsigned long, int, int, int, compiz::opengl::_PixmapSource>::invoke(boost::detail::function::function_buffer&, unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#10 0x08be8e00 in ?? ()
+No symbol table info available.
+#11 0x00000000 in ?? ()
+No symbol table info available.

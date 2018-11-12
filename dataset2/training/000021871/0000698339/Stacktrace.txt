@@ -1,0 +1,58 @@
+#0  0x00007fd91efa5ba5 in raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = 0
+        pid = <value optimised out>
+        selftid = <value optimised out>
+#1  0x00007fd91efa94f6 in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x20000000e, sa_sigaction = 0x20000000e}, sa_mask = {__val = {140733332267952, 140733332277911, 52, 140570505462660, 3, 140733332267946, 6, 140570505462664, 2, 140733332267934, 2, 140570505453685, 1, 140570505462660, 3, 140733332267940}}, sa_flags = 12, sa_restorer = 0x7fd91f0b4388}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007fd91efde6bb in __libc_message (do_abort=2, fmt=0x7fd91f0b5bf0 "*** glibc detected *** %s: %s: 0x%s ***\n") at ../sysdeps/unix/sysv/linux/libc_fatal.c:189
+        ap = {{gp_offset = 40, fp_offset = 48, overflow_arg_area = 0x7fff08472d20, reg_save_area = 0x7fff08472c30}}
+        ap_copy = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7fff08472d20, reg_save_area = 0x7fff08472c30}}
+        fd = 2
+        on_2 = <value optimised out>
+        list = <value optimised out>
+        nlist = <value optimised out>
+        cp = <value optimised out>
+        written = <value optimised out>
+#3  0x00007fd91efea3cc in malloc_printerr (av=<value optimised out>, p=0x7fd91f2f0190) at malloc.c:6283
+        buf = "00007fd91f2f01a0"
+        cp = <value optimised out>
+#4  _int_free (av=<value optimised out>, p=0x7fd91f2f0190) at malloc.c:4795
+        size = <value optimised out>
+        fb = <value optimised out>
+        nextchunk = <value optimised out>
+        nextsize = <value optimised out>
+        nextinuse = <value optimised out>
+        prevsize = <value optimised out>
+        bck = <value optimised out>
+        fwd = <value optimised out>
+        errstr = 0x7fd91f0b2dda "free(): invalid pointer"
+        __func__ = "_int_free"
+#5  0x00007fd91efee223 in __libc_free (mem=<value optimised out>) at malloc.c:3738
+        ar_ptr = 0x7fd91f2f01a0
+        p = <value optimised out>
+        hook = <value optimised out>
+#6  0x00007fd914227ee8 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#7  0x00007fd914228602 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#8  0x00007fd9202d6bcd in gconf_listeners_notify () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#9  0x00007fd9202e76e0 in ?? () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#10 0x00007fd9202e7861 in ?? () from /usr/lib/libgconf-2.so.4
+No symbol table info available.
+#11 0x00007fd91f337d0d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fd91f3384f8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007fd91f338b3a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007fd92064b767 in IA__gtk_main () at /build/buildd/gtk+2.0-2.23.3.is.2.23.2/gtk/gtkmain.c:1238
+        tmp_list = <value optimised out>
+        functions = 0x0
+        init = <value optimised out>
+        loop = 0x1a01050
+#15 0x0000000000404349 in main ()
+No symbol table info available.

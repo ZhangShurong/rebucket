@@ -1,0 +1,43 @@
+#0  0x00007ffca6a5d1e8 in sigc::internal::signal_emit0<void, sigc::nil>::emit(sigc::internal::signal_impl*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007ffca6a59ae3 in Launcher::EventLogic() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007ffca66d4b9b in nux::InputArea::OnEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x00007ffca670cfe5 in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0x00007ffca66d6d9d in nux::BaseWindow::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x00007ffca677b9bc in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x00007ffca6787371 in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x00007ffca6787ac3 in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#8  0x00007ffcb1274d0d in g_main_dispatch (context=0x11f5960) at /build/buildd/glib2.0-2.27.91/glib/gmain.c:2440
+        dispatch = 0x7ffca6787ab0 <nux::nux_event_dispatch(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0x1710ce0
+        callback = 0
+        cb_funcs = 0x7ffcb151b630
+        cb_data = 0x1a65650
+        current_source_link = {data = 0x1810610, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x1810610
+        current = 0x12167a0
+        i = <value optimized out>
+#9  g_main_context_dispatch (context=0x11f5960) at /build/buildd/glib2.0-2.27.91/glib/gmain.c:3013
+No locals.
+#10 0x00007ffcb12754f8 in g_main_context_iterate (context=0x11f5960, block=<value optimized out>, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.27.91/glib/gmain.c:3091
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = 15
+        allocated_nfds = <value optimized out>
+        fds = <value optimized out>
+#11 0x00007ffcb1275b3a in g_main_loop_run (loop=0x11f5ad0) at /build/buildd/glib2.0-2.27.91/glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#12 0x0000000000429b8a in CompScreen::eventLoop() ()
+No symbol table info available.
+#13 0x0000000000422c50 in main ()
+No symbol table info available.

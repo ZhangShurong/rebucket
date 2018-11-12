@@ -1,0 +1,40 @@
+#0  0x00007faaff38bf2b in g_logv () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007faaff38c102 in g_log () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007faafe0cf623 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#3  0x00007faafe0dc3a7 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#4  0x00007faafe64d2bf in _XError () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00007faafe64a291 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007faafe64a2d5 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007faafe64b0e0 in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007faafe646a6d in XSync () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x00007faad6ebf698 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libclipboard.so
+No symbol table info available.
+#10 0x00007faad6ec02fd in ?? () from /usr/lib/gnome-settings-daemon-3.0/libclipboard.so
+No symbol table info available.
+#11 0x00007faafe0d8901 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#12 0x00007faafe0d8ab4 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#13 0x00007faafe0ab581 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#14 0x00007faafe0d8782 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#15 0x00007faaff384bca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007faaff384f90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007faaff38538a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007faaffd6227d in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#19 0x000000000040374f in main ()
+No symbol table info available.

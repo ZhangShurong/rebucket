@@ -1,0 +1,72 @@
+#0  0x000000000043be60 in CompWindow::id() ()
+No symbol table info available.
+#1  0x000000000044fa82 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#2  0x00007ff12688fef4 in PrivateCompositeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#3  0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#4  0x00007ff12665e22f in PrivateGLScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#6  0x00007ff12331af93 in DecorScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#7  0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#8  0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#9  0x00007ff122adc4bf in RegexScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#10 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#11 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#12 0x00007ff121fb17bc in MoveScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libmove.so
+No symbol table info available.
+#13 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#14 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#15 0x00007ff121975407 in GridScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#16 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#17 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#18 0x00007ff11fc611ad in WorkaroundsScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libworkarounds.so
+No symbol table info available.
+#19 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#20 0x00007ff11f822146 in ResizeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libresize.so
+No symbol table info available.
+#21 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#22 0x00007ff11f6086c1 in FadeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libfade.so
+No symbol table info available.
+#23 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#24 0x00007ff11f3ed3c7 in PrivateScaleScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#25 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#26 0x00007ff11f1d23c0 in SessionScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsession.so
+No symbol table info available.
+#27 0x000000000044e649 in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#28 0x000000000042e47b in PrivateScreen::processEvents() ()
+No symbol table info available.
+#29 0x0000000000455a08 in CompEventSource::callback() ()
+No symbol table info available.
+#30 0x00007ff12b0309df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#31 0x00007ff12a4e0bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x00007ff12a4e13a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#33 0x00007ff12a4e19f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#34 0x000000000042a1ea in CompScreen::eventLoop() ()
+No symbol table info available.
+#35 0x0000000000423140 in main ()
+No symbol table info available.

@@ -1,0 +1,28 @@
+#0  0x01338b8f in nux::InputArea::OnEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#1  0x01376db6 in nux::View::PostProcessEvent2(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#2  0x0112239d in Launcher::ProcessEvent(nux::Event&, long, long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x0137a1bc in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0x0133d2cf in nux::BaseWindow::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x013ff35c in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x01405b0a in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x0140635f in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#8  0x00303cb8 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00304480 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00304b43 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#11 0x008a5b85 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#12 0x0806e82b in CompScreen::eventLoop() ()
+No symbol table info available.
+#13 0x08066c38 in main ()
+No symbol table info available.

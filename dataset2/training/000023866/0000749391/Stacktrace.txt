@@ -1,0 +1,114 @@
+#0  0x00244416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00ae7e71 in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00aeb34e in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00ae0888 in __assert_fail () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x008f024a in nouveau_update_renderbuffers (dri_ctx=0x98758e8, draw=0x9d4ea28) at nouveau_context.c:260
+        rb = 0x9ced478
+        s = <value optimized out>
+        old_name = 3220442200
+        index = <value optimized out>
+        ctx = 0x987a1d8
+        nctx = 0x987a1d8
+        screen = <value optimized out>
+        fb = 0x9c18be0
+        nfb = 0x9c18be0
+        attachments = {1, 4, 3220442200, 48663794, 164596912, 34037, 0, 163719544, 15422263, 49868788}
+        buffers = <value optimized out>
+        i = <value optimized out>
+        count = 3
+        ret = <value optimized out>
+        __PRETTY_FUNCTION__ = "nouveau_update_renderbuffers"
+#5  0x008f7156 in nouveau_set_texbuffer (dri_ctx=0x98758e8, target=34037, format=8410, draw=0x9d4ea28) at nouveau_texture.c:603
+        nctx = 0x987a1d8
+        ctx = 0x987a1d8
+        fb = <value optimized out>
+        rb = 0x9cf04a8
+        t = 0x9cf8cb0
+        ti = 0x9c22978
+        s = 0x9c229dc
+#6  0x00a100fe in ?? () from /usr/lib/mesa/libGL.so.1
+No symbol table info available.
+#7  0x009e722b in ?? () from /usr/lib/mesa/libGL.so.1
+No symbol table info available.
+#8  0x008c242a in TfpTexture::bindPixmapToTexture(unsigned long, int, int, int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#9  0x008bbade in boost::detail::function::function_invoker4<GLTexture::List (*)(unsigned long, int, int, int), GLTexture::List, unsigned long, int, int, int>::invoke(boost::detail::function::function_buffer&, unsigned long, int, int, int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#10 0x008c1eaa in GLTexture::bindPixmapToTexture(unsigned long, int, int, int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#11 0x00a353c3 in DecorTexture::DecorTexture(unsigned long) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#12 0x00a35501 in DecorScreen::getTexture(unsigned long) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#13 0x00a35b0b in Decoration::create(unsigned long, unsigned long) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#14 0x00a38973 in DecorScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#15 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#16 0x00877f19 in VPSwitchScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libvpswitch.so
+No symbol table info available.
+#17 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#18 0x0092b521 in RegexScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libregex.so
+No symbol table info available.
+#19 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#20 0x009374f5 in SnapScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsnap.so
+No symbol table info available.
+#21 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#22 0x00a73964 in MoveScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libmove.so
+No symbol table info available.
+#23 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#24 0x00a95b71 in PlaceScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libplace.so
+No symbol table info available.
+#25 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#26 0x00e68053 in WallScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#27 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#28 0x00ef7ad1 in WorkaroundsScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libworkarounds.so
+No symbol table info available.
+#29 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#30 0x0109970e in ResizeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libresize.so
+No symbol table info available.
+#31 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#32 0x00f0d9d5 in FadeScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libfade.so
+No symbol table info available.
+#33 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#34 0x0538b450 in PrivateScaleScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#35 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#36 0x059125a6 in SessionScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libsession.so
+No symbol table info available.
+#37 0x0809237f in CompScreen::handleEvent(_XEvent*) ()
+No symbol table info available.
+#38 0x08072359 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#39 0x08099db0 in CompEventSource::callback() ()
+No symbol table info available.
+#40 0x00280959 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#41 0x003ddaa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#42 0x003de270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#43 0x003de92b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#44 0x00281e95 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#45 0x0806ebab in CompScreen::eventLoop() ()
+No symbol table info available.
+#46 0x08066e58 in main ()
+No symbol table info available.

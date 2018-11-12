@@ -1,0 +1,23 @@
+#0  0xb74cc6ff in g_logv () from /usr/lib/libglib-2.0.so.0
+#1  0xb74cca76 in g_log () from /usr/lib/libglib-2.0.so.0
+#2  0xb7b455a4 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#3  0xb6273f20 in xkl_process_error () from /usr/lib/libxklavier.so.12
+#4  0xb789cec9 in _XError () from /usr/lib/libX11.so.6
+#5  0xb78a5439 in _XReply () from /usr/lib/libX11.so.6
+#6  0xb7882073 in XGetWindowProperty () from /usr/lib/libX11.so.6
+#7  0xb627b44e in xkl_engine_get_window_title ()
+   from /usr/lib/libxklavier.so.12
+#8  0xb627b4d7 in xkl_get_debug_window_title ()
+   from /usr/lib/libxklavier.so.12
+#9  0xb6273f8f in xkl_engine_process_create_window_evt ()
+   from /usr/lib/libxklavier.so.12
+#10 0xb6274b5c in xkl_engine_filter_events () from /usr/lib/libxklavier.so.12
+#11 0xb62a63b7 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+#12 0xb7b37ee3 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#13 0xb7b3a9a3 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#14 0xb7b3aecf in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#15 0xb74c27e1 in g_main_context_dispatch () from /usr/lib/libglib-2.0.so.0
+#16 0xb74c5e83 in ?? () from /usr/lib/libglib-2.0.so.0
+#17 0xb74c63a2 in g_main_loop_run () from /usr/lib/libglib-2.0.so.0
+#18 0xb7cc3a39 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+#19 0x0804b0ac in main ()

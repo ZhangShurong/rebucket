@@ -1,0 +1,29 @@
+#0  0x0088d416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x008bbc8f in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x008bf2b5 in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x008b4826 in __assert_fail () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00a415a6 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00a4285f in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00a96fd2 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00a970a6 in XkbGetUpdatedMap () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00a971a0 in XkbGetMap () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x0329bc34 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#10 0x0329bd59 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#11 0x0329c38f in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#12 0x0072d92a in g_flags_register_static () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x08d99924 in ?? ()
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

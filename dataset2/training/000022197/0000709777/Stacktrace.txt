@@ -1,0 +1,40 @@
+#0  0x007f1e56 in sn_monitor_context_ref () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#1  0x007f2423 in ?? () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#2  0x007f1c6d in sn_list_foreach () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#3  0x007f258b in ?? () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#4  0x007f1c6d in sn_list_foreach () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#5  0x007f2927 in ?? () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#6  0x007f3abe in ?? () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#7  0x007f1c6d in sn_list_foreach () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#8  0x007f3d3a in ?? () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#9  0x007f3e22 in sn_internal_xmessage_process_event () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#10 0x007f0c96 in sn_display_process_event () from /usr/lib/libstartup-notification-1.so.0
+No symbol table info available.
+#11 0x08071f90 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#12 0x080995d0 in CompEventSource::callback() ()
+No symbol table info available.
+#13 0x00152439 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#14 0x00643c68 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00644430 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00644af3 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00153975 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#18 0x0806e82b in CompScreen::eventLoop() ()
+No symbol table info available.
+#19 0x08066c38 in main ()
+No symbol table info available.

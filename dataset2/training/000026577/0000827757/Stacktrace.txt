@@ -1,0 +1,72 @@
+#0  0x00b4ec13 in g_variant_unref () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00769e2a in g_settings_get_string () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00cfe35a in ffi_call_SYSV () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#3  0x00cfe08f in ffi_call () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#4  0x00617edb in ?? () from /usr/lib/libgirepository-1.0.so.1
+No symbol table info available.
+#5  0x00619341 in g_function_info_invoke () from /usr/lib/libgirepository-1.0.so.1
+No symbol table info available.
+#6  0x00600c60 in ?? () from /usr/lib/python2.7/dist-packages/gi/_gi.so
+No symbol table info available.
+#7  0x080fae15 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#8  0x080fdc81 in PyEval_EvalCodeEx ()
+No symbol table info available.
+#9  0x080f7c7f in PyEval_EvalFrameEx ()
+No symbol table info available.
+#10 0x080f7dc0 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#11 0x080fd7b4 in PyEval_EvalCodeEx ()
+No symbol table info available.
+#12 0x0808c522 in ?? ()
+No symbol table info available.
+#13 0x0805dc31 in PyObject_Call ()
+No symbol table info available.
+#14 0x080738cd in ?? ()
+No symbol table info available.
+#15 0x0805dc31 in PyObject_Call ()
+No symbol table info available.
+#16 0x080c2f2a in ?? ()
+No symbol table info available.
+#17 0x080be75b in ?? ()
+No symbol table info available.
+#18 0x0805dc31 in PyObject_Call ()
+No symbol table info available.
+#19 0x080f8169 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#20 0x080fd7b4 in PyEval_EvalCodeEx ()
+No symbol table info available.
+#21 0x0808c522 in ?? ()
+No symbol table info available.
+#22 0x0805dc31 in PyObject_Call ()
+No symbol table info available.
+#23 0x080738cd in ?? ()
+No symbol table info available.
+#24 0x0805dc31 in PyObject_Call ()
+No symbol table info available.
+#25 0x080c2f2a in ?? ()
+No symbol table info available.
+#26 0x080be75b in ?? ()
+No symbol table info available.
+#27 0x0805dc31 in PyObject_Call ()
+No symbol table info available.
+#28 0x080f8169 in PyEval_EvalFrameEx ()
+No symbol table info available.
+#29 0x080fd7b4 in PyEval_EvalCodeEx ()
+No symbol table info available.
+#30 0x080fe127 in PyEval_EvalCode ()
+No symbol table info available.
+#31 0x0811ad30 in ?? ()
+No symbol table info available.
+#32 0x0811b949 in PyRun_FileExFlags ()
+No symbol table info available.
+#33 0x0811c52c in PyRun_SimpleFileExFlags ()
+No symbol table info available.
+#34 0x0812c806 in Py_Main ()
+No symbol table info available.
+#35 0x0805da0b in main ()
+No symbol table info available.

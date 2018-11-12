@@ -1,0 +1,40 @@
+#0  0x00007ffa0e66dd6a in PluginClassHandler<GridWindow, CompWindow, 0>::get(CompWindow*) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#1  0x00007ffa0e6685cb in GridScreen::snapbackOptionChanged(CompOption*, GridOptions::Options) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#2  0x00007ffa0e670930 in GridOptions::setOption(std::string const&, CompOption::Value&) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#3  0x0000000000428034 in CompScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) ()
+No symbol table info available.
+#4  0x00007ffa14402e2e in CcpScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#5  0x0000000000428083 in CompScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) ()
+No symbol table info available.
+#6  0x00007ffa144030e4 in CcpScreen::setOptionFromContext(CompOption*, char const*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#7  0x00007ffa1440379c in CcpScreen::initPluginForScreen(CompPlugin*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#8  0x000000000045a278 in CompScreen::initPluginForScreen(CompPlugin*) ()
+No symbol table info available.
+#9  0x000000000045a060 in CompManager::initPlugin(CompPlugin*) ()
+No symbol table info available.
+#10 0x000000000045bb6e in CompPlugin::push(CompPlugin*) ()
+No symbol table info available.
+#11 0x000000000043164f in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#12 0x0000000000431b13 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#13 0x000000000045ead1 in CompEventSource::callback() ()
+No symbol table info available.
+#14 0x00007ffa1db3a9df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#15 0x00007ffa1d640a5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007ffa1d641258 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007ffa1d641792 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x000000000042e8b6 in CompScreen::eventLoop() ()
+No symbol table info available.
+#19 0x000000000042227a in main ()
+No symbol table info available.

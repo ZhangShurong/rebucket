@@ -1,0 +1,39 @@
+#0  0x0038d2f0 in g_logv () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x0038d742 in g_log () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x005d4091 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#3  0x0101e690 in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#4  0x0064e2c9 in _XError () from /usr/lib/libX11.so.6
+No symbol table info available.
+#5  0x006550de in _XReply () from /usr/lib/libX11.so.6
+No symbol table info available.
+#6  0x00642ca1 in XQueryTree () from /usr/lib/libX11.so.6
+No symbol table info available.
+#7  0x01026267 in xkl_engine_query_tree () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#8  0x0101ed7a in xkl_engine_process_focus_in_evt ()
+   from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#9  0x0101f45c in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#10 0x02ad5a57 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#11 0x005c8333 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#12 0x005caca1 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#13 0x005cb21f in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#14 0x003829b5 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#15 0x003867c8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00386d07 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#17 0x009ae749 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#18 0x0804b543 in main ()
+No symbol table info available.

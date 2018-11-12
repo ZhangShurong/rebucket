@@ -1,0 +1,36 @@
+#0  0xb5a9e9e6 in ?? () from /usr/lib/compiz/libworkarounds.so
+#1  0x08e0a100 in ?? ()
+#2  0x05000021 in ?? ()
+#3  0xb6588531 in pthread_mutex_lock () from /lib/tls/i686/cmov/libpthread.so.0
+#4  0xb5a9f841 in ?? () from /usr/lib/compiz/libworkarounds.so
+#5  0x08085890 in ?? ()
+#6  0x05000021 in ?? ()
+#7  0xb5b3fa7b in scalePreparePaintScreen (s=0x8085890, msSinceLastPaint=-1073971160) at ../../plugins/scale.c:880
+	ss = <value optimized out>
+#8  0xb5a98eff in ?? () from /usr/lib/compiz/libezoom.so
+#9  0x08085890 in ?? ()
+#10 0xbffc8028 in ?? ()
+#11 0xbffc7f0c in ?? ()
+#12 0xb7b0bd78 in writev () from /lib/tls/i686/cmov/libc.so.6
+#13 0xb5a93905 in ?? () from /usr/lib/compiz/libvpswitch.so
+#14 0x08085890 in ?? ()
+#15 0xbffc8028 in ?? ()
+#16 0xb5a871bb in fadeRemoveDisplayModal (d=0x0, w=0x0) at ../../plugins/fade.c:362
+	fw = <value optimized out>
+#17 0xb5a87e5e in fadeHandleEvent (d=0x8085890, event=0xbffc8028) at ../../plugins/fade.c:537
+	w = (CompWindow *) 0xb7b89148
+	fd = (FadeDisplay *) 0x8a61f00
+#18 0xb5a83a84 in ?? () from /usr/lib/compiz/libscaleaddon.so
+#19 0x08085890 in ?? ()
+#20 0xbffc8028 in ?? ()
+#21 0xbffc8028 in ?? ()
+#22 0xb5a7c610 in ?? () from /usr/lib/compiz/libscalefilter.so
+#23 0x08085890 in ?? ()
+#24 0x08085890 in ?? ()
+#25 0xbffc7ee8 in ?? ()
+#26 0xb5a7aa56 in ?? () from /usr/lib/compiz/libscalefilter.so
+#27 0x08085890 in ?? ()
+#28 0xbffc8028 in ?? ()
+#29 0x00000020 in ?? ()
+#30 0xb7b69c35 in ?? () from /lib/tls/i686/cmov/libc.so.6
+#31 0x00000000 in ?? ()

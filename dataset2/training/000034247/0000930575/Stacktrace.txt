@@ -1,0 +1,38 @@
+#0  0xb682be51 in g_type_check_instance () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#1  0xb6821b72 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#2  0xb6822253 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0xb31b27b2 in ?? () from /usr/lib/i386-linux-gnu/libbamf3.so.0
+No symbol table info available.
+#4  0xb31b9baa in bamf_marshal_VOID__STRING_STRING () from /usr/lib/i386-linux-gnu/libbamf3.so.0
+No symbol table info available.
+#5  0xb5e9517a in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#6  0xb6808f8c in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0xb681a845 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0xb68220c2 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0xb6822253 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0xb5e95820 in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#11 0xb5e4b441 in dbus_connection_dispatch () from /lib/i386-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#12 0xb5e8d9ad in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#13 0xb6f5fa4a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0xb6f5fe55 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0xb6f6029b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0xb7058273 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x08072497 in CompScreen::eventLoop() ()
+No symbol table info available.
+#18 0x08065634 in main ()
+No symbol table info available.

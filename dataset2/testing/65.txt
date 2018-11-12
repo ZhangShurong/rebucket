@@ -1,0 +1,24 @@
+#0  0x00005d305b6c6163 in ?? ()
+No symbol table info available.
+#1  0x00007f1cb85951a1 in CompPlugin::windowFiniPlugins(CompWindow*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#2  0x00007f1cb8583d55 in CompWindow::~CompWindow() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#3  0x00007f1cb8583ff9 in CompWindow::~CompWindow() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#4  0x00007f1cb8564537 in compiz::private_screen::WindowManager::removeDestroyed() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#5  0x00007f1cb856e464 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#6  0x00007f1cb859cd87 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#7  0x00007f1cb6a96acf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#8  0x00007f1cb659ccc5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f1cb659cff8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f1cb659d3f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x0000000000402543 in main ()
+No symbol table info available.

@@ -1,0 +1,82 @@
+#0  0x00007f38a6d3e2da in __dynamic_cast () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#1  0x00007f3887660069 in nux_base_window_accessible_check_active () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f38876bb5bf in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007f38876bb922 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007f38876bbb3a in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x00007f38876bcd2a in sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>::operator()(nux::BaseWindow* const&, _UnityRootAccessible* const&, int const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0x00007f38876bcc3e in sigc::adaptor_functor<sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void> >::deduce_result_type<nux::BaseWindow* const&, _UnityRootAccessible*&, int&, void, void, void, void>::type sigc::adaptor_functor<sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void> >::operator()<nux::BaseWindow* const&, _UnityRootAccessible*&, int&>(nux::BaseWindow* const&, _UnityRootAccessible*&, int&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#7  0x00007f38876bcb52 in sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>::deduce_result_type<nux::BaseWindow* const&, void, void, void, void, void, void>::type sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>::operator()<nux::BaseWindow* const&>(nux::BaseWindow* const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#8  0x00007f38876bc986 in sigc::internal::slot_call1<sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>, void, nux::BaseWindow*>::call_it(sigc::internal::slot_rep*, nux::BaseWindow* const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#9  0x00007f38858f097d in nux::BaseWindow::ShowWindow(bool, bool) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#10 0x00007f38879a916b in unity::spread::Filter::Filter() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007f38876ac0ea in void __gnu_cxx::new_allocator<unity::spread::Filter>::construct<unity::spread::Filter>(unity::spread::Filter*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007f38876ab448 in std::enable_if<std::allocator_traits<std::allocator<unity::spread::Filter> >::__construct_helper<unity::spread::Filter>::value, void>::type std::allocator_traits<std::allocator<unity::spread::Filter> >::_S_construct<unity::spread::Filter>(std::allocator<unity::spread::Filter>&, unity::spread::Filter*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#13 0x00007f38876aa141 in decltype (_S_construct({parm#1}, {parm#2})) std::allocator_traits<std::allocator<unity::spread::Filter> >::construct<unity::spread::Filter>(std::allocator<unity::spread::Filter>&, unity::spread::Filter*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x00007f38876a7c46 in std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>::_Sp_counted_ptr_inplace<>(std::allocator<unity::spread::Filter>) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#15 0x00007f38876a5861 in void __gnu_cxx::new_allocator<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2> >::construct<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::spread::Filter> const>(std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>*, std::allocator<unity::spread::Filter> const&&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#16 0x00007f38876a3464 in std::enable_if<std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2> > >::__construct_helper<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::spread::Filter> const>::value, void>::type std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2> > >::_S_construct<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::spread::Filter> const>(std::allocator<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2> >&, std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>*, std::allocator<unity::spread::Filter> const&&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#17 0x00007f38876a072e in decltype (_S_construct({parm#1}, {parm#2}, (forward<std::allocator<unity::spread::Filter> const>)({parm#3}))) std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2> > >::construct<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::spread::Filter> const>(std::allocator<std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2> >&, std::_Sp_counted_ptr_inplace<unity::spread::Filter, std::allocator<unity::spread::Filter>, (__gnu_cxx::_Lock_policy)2>*, std::allocator<unity::spread::Filter> const&&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#18 0x00007f388769b294 in std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<unity::spread::Filter, std::allocator<unity::spread::Filter>>(std::_Sp_make_shared_tag, unity::spread::Filter*, std::allocator<unity::spread::Filter> const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#19 0x00007f3887696d7a in std::__shared_ptr<unity::spread::Filter, (__gnu_cxx::_Lock_policy)2>::__shared_ptr<std::allocator<unity::spread::Filter>>(std::_Sp_make_shared_tag, std::allocator<unity::spread::Filter> const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#20 0x00007f3887691cda in std::shared_ptr<unity::spread::Filter>::shared_ptr<std::allocator<unity::spread::Filter>>(std::_Sp_make_shared_tag, std::allocator<unity::spread::Filter> const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#21 0x00007f388768c358 in std::shared_ptr<unity::spread::Filter> std::allocate_shared<unity::spread::Filter, std::allocator<unity::spread::Filter>>(std::allocator<unity::spread::Filter> const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#22 0x00007f3887684d47 in std::shared_ptr<unity::spread::Filter> std::make_shared<unity::spread::Filter>() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#23 0x00007f388766ab6b in unity::UnityScreen::OnInitiateSpread() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#24 0x00007f38876a00fc in sigc::bound_mem_functor0<void, unity::UnityScreen>::operator()() const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0x00007f388769ab48 in sigc::adaptor_functor<sigc::bound_mem_functor0<void, unity::UnityScreen> >::operator()() const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#26 0x00007f38876966ad in sigc::internal::slot_call0<sigc::bound_mem_functor0<void, unity::UnityScreen>, void>::call_it(sigc::internal::slot_rep*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#27 0x00007f388767fef3 in sigc::internal::signal_emit0<void, sigc::nil>::emit(sigc::internal::signal_impl*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#28 0x00007f38876883d0 in sigc::signal0<void, sigc::nil>::emit() const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#29 0x00007f3887a02139 in unity::PluginAdapter::OnScreenGrabbed() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#30 0x00007f388766fecd in unity::UnityScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#31 0x00007f38a70582cf in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#32 0x00007f38a705830b in CompScreenImpl::alwaysHandleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#33 0x00007f38a703279d in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#34 0x00007f38a7065f07 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#35 0x00007f38a5557a4f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#36 0x00007f38a504fd05 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#37 0x00007f38a5050068 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#38 0x00007f38a505032a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#39 0x00007f38a702710b in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#40 0x0000000000401971 in main ()
+No symbol table info available.

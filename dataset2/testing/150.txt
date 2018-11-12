@@ -1,0 +1,26 @@
+#0  0x02105f46 in dbus_connection_ref () from /lib/i386-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#1  0x0210969a in ?? () from /lib/i386-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#2  0x0159766b in DbusScreen::processMessages(short) () from /usr/lib/compiz/libdbus.so
+No symbol table info available.
+#3  0x0159c6ab in boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<bool, boost::_mfi::mf1<bool, DbusScreen, short>, boost::_bi::list2<boost::_bi::value<DbusScreen*>, boost::arg<1> > >, void, short>::invoke(boost::detail::function::function_buffer&, short) () from /usr/lib/compiz/libdbus.so
+No symbol table info available.
+#4  0x0806f9ae in CompWatchFd::internalCallback(Glib::IOCondition) ()
+No symbol table info available.
+#5  0x007c3286 in Glib::IOSource::dispatch(sigc::slot_base*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#6  0x007c2d31 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#7  0x005e654f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x005e6c80 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x005e728b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x007c4373 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0x0806f1a0 in CompScreen::eventLoop() ()
+No symbol table info available.
+#12 0x08062d04 in main ()
+No symbol table info available.

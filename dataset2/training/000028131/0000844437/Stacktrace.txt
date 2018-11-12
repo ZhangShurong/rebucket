@@ -1,0 +1,22 @@
+#0  0x00007fb3d01bec61 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#1  0x00007fb3d96e2aed in g_dbus_connection_flush_finish () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007fb3cc03d2a0 in ?? ()
+No symbol table info available.
+#3  0x0000000002499030 in ?? ()
+No symbol table info available.
+#4  0x000000000242a0a8 in ?? ()
+No symbol table info available.
+#5  0x0000000002499030 in ?? ()
+No symbol table info available.
+#6  0x00007fb3cc03d2a0 in ?? ()
+No symbol table info available.
+#7  0x00007fb3cc081e40 in ?? ()
+No symbol table info available.
+#8  0x00007fb3d9b8afe0 in ?? () from /lib/x86_64-linux-gnu/libpthread.so.0
+No symbol table info available.
+#9  0x00000000024f5700 in ?? ()
+No symbol table info available.
+#10 0x0000000000000000 in ?? ()
+No symbol table info available.

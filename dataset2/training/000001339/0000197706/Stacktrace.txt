@@ -1,0 +1,33 @@
+#0  rw_output_by_id (info=0x0, id=77) at randrwrap.c:122
+	output = <value optimized out>
+#1  0xb6da4990 in screen_info_new (screen=<value optimized out>) at randrwrap.c:606
+	info = (ScreenInfo *) 0x80a0c08
+#2  0xb6da4f3b in rw_screen_new (gdk_screen=0x806d0b0, callback=0xb63a0340 <on_randr_event>, data=0x0)
+    at randrwrap.c:391
+	screen = (RWScreen *) 0x80a2018
+	dpy = (Display *) 0x8063880
+	event_base = 115
+	ignore = 186
+#3  0xb63a0410 in gsd_xrandr_manager_start (manager=0x8077508, error=0xbff58960) at gsd-xrandr-manager.c:114
+	rw_screen = <value optimized out>
+#4  0xb63a020f in impl_activate (plugin=0x8085a18) at gsd-xrandr-plugin.c:78
+	res = <value optimized out>
+	error = (GError *) 0x0
+#5  0x0804b86e in gnome_settings_plugins_engine_activate_plugin (info=0x8083218)
+    at gnome-settings-plugins-engine.c:533
+	__PRETTY_FUNCTION__ = "gnome_settings_plugins_engine_activate_plugin"
+#6  0x0804bb98 in activate_plugin (info=0x8083218, user_data=0x0) at gnome-settings-plugins-engine.c:244
+	res = <value optimized out>
+#7  0xb7646041 in IA__g_slist_foreach (list=0x807e3a8, func=0x804bb80 <activate_plugin>, user_data=0x0)
+    at /build/buildd/glib2.0-2.15.6/glib/gslist.c:468
+	next = (GSList *) 0x807e458
+#8  0x0804beba in gnome_settings_plugins_engine_init (gconf_prefix=0x807f370 "/apps/gnome_settings_daemon/plugins")
+    at gnome-settings-plugins-engine.c:346
+	__PRETTY_FUNCTION__ = "gnome_settings_plugins_engine_init"
+#9  0x0804acd3 in gnome_settings_manager_start (manager=0x8077248, error=0xbff58a94) at gnome-settings-manager.c:106
+No locals.
+#10 0x0804aa5a in main (argc=134711448, argv=0x2) at main.c:221
+	manager = (GnomeSettingsManager *) 0x8077248
+	program = (GnomeProgram *) 0x8072648
+	res = <value optimized out>
+	error = (GError *) 0x0

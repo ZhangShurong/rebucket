@@ -1,0 +1,215 @@
+#0  *__GI___libc_free (mem=0x1905) at malloc.c:3599
+	ar_ptr = <value optimized out>
+	p = (mchunkptr) 0x18fd
+	hook = (void (*)(void *, const void *)) 0
+#1  0x00aeb411 in finiParticles (ps=0x9d2846c) at particle.c:272
+No locals.
+#2  0x00aeb4de in particlesCleanup (w=0xa06d3a8) at particle.c:343
+	i = 2
+	aw = <value optimized out>
+#3  0x00a92f23 in postAnimationCleanupCustom (w=<value optimized out>, 
+    closing=<value optimized out>, finishing=1, clearMatchingRow=1)
+    at animation.c:1568
+	aw = (AnimWindow *) 0xa2acd10
+	wCur = <value optimized out>
+#4  0x00a933d0 in animFiniWindow (p=0x94b7200, w=0xa06d3a8)
+    at animation.c:4872
+	aw = (AnimWindow *) 0xa2acd10
+#5  0x00a922c3 in animFiniObject (p=0x94b7200, o=0xa06d3a8)
+    at animation.c:4904
+	dispTab = {0, 0xa93990 <animFiniDisplay>, 0xa93800 <animFiniScreen>, 
+  0xa93380 <animFiniWindow>}
+#6  0x08071362 in finiObjectTree (object=0xa06d3a8, closure=0xbfbf9618)
+    at ../../src/plugin.c:433
+	p = (CompPlugin *) 0x94b7200
+	ctx = {plugin = 0x94b7200, type = 4294967295}
+#7  0x080713ff in objectFiniPlugins (o=0xa06d3a8) at ../../src/plugin.c:525
+	ctx = {plugin = 0x94b7200, object = 0x0}
+	p = (CompPlugin *) 0x94b7200
+#8  0x080655b2 in removeWindow (w=0xa06d3a8) at ../../src/window.c:2408
+No locals.
+#9  0x08058081 in eventLoop () at ../../src/display.c:1634
+	w = (CompWindow *) 0xa06d3a8
+	event = {type = 17, xany = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, window = 316}, xkey = {type = 17, 
+    serial = 4901377, send_event = 0, display = 0x8f08cf0, window = 316, 
+    root = 29724526, subwindow = 123992930, time = 0, x = 123897697, y = 0, 
+    x_root = 3999002, y_root = 0, state = 5768474, keycode = 12, 
+    same_screen = 1}, xbutton = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, window = 316, root = 29724526, 
+    subwindow = 123992930, time = 0, x = 123897697, y = 0, x_root = 3999002, 
+    y_root = 0, state = 5768474, button = 12, same_screen = 1}, xmotion = {
+    type = 17, serial = 4901377, send_event = 0, display = 0x8f08cf0, 
+    window = 316, root = 29724526, subwindow = 123992930, time = 0, 
+    x = 123897697, y = 0, x_root = 3999002, y_root = 0, state = 5768474, 
+    is_hint = 12 '\f', same_screen = 1}, xcrossing = {type = 17, 
+    serial = 4901377, send_event = 0, display = 0x8f08cf0, window = 316, 
+    root = 29724526, subwindow = 123992930, time = 0, x = 123897697, y = 0, 
+    x_root = 3999002, y_root = 0, mode = 5768474, detail = 12, 
+    same_screen = 1, focus = 1, state = 8448}, xfocus = {type = 17, 
+    serial = 4901377, send_event = 0, display = 0x8f08cf0, window = 316, 
+    mode = 29724526, detail = 123992930}, xexpose = {type = 17, 
+    serial = 4901377, send_event = 0, display = 0x8f08cf0, window = 316, 
+    x = 29724526, y = 123992930, width = 0, height = 123897697, count = 0}, 
+  xgraphicsexpose = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, drawable = 316, x = 29724526, y = 123992930, 
+    width = 0, height = 123897697, count = 0, major_code = 3999002, 
+    minor_code = 0}, xnoexpose = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, drawable = 316, 
+    major_code = 29724526, minor_code = 123992930}, xvisibility = {type = 17, 
+    serial = 4901377, send_event = 0, display = 0x8f08cf0, window = 316, 
+    state = 29724526}, xcreatewindow = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, parent = 316, window = 29724526, 
+    x = 123992930, y = 0, width = 123897697, height = 0, 
+    border_width = 3999002, override_redirect = 0}, xdestroywindow = {
+    type = 17, serial = 4901377, send_event = 0, display = 0x8f08cf0, 
+    event = 316, window = 29724526}, xunmap = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, event = 316, window = 29724526, 
+    from_configure = 123992930}, xmap = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, event = 316, window = 29724526, 
+    override_redirect = 123992930}, xmaprequest = {type = 17, 
+    serial = 4901377, send_event = 0, display = 0x8f08cf0, parent = 316, 
+    window = 29724526}, xreparent = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, event = 316, window = 29724526, 
+    parent = 123992930, x = 0, y = 123897697, override_redirect = 0}, 
+  xconfigure = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, event = 316, window = 29724526, x = 123992930, 
+    y = 0, width = 123897697, height = 0, border_width = 3999002, above = 0, 
+    override_redirect = 5768474}, xgravity = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, event = 316, window = 29724526, 
+    x = 123992930, y = 0}, xresizerequest = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, window = 316, width = 29724526, 
+    height = 123992930}, xconfigurerequest = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, parent = 316, window = 29724526, 
+    x = 123992930, y = 0, width = 123897697, height = 0, 
+    border_width = 3999002, above = 0, detail = 5768474, value_mask = 12}, 
+  xcirculate = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, event = 316, window = 29724526, place = 123992930}, 
+  xcirculaterequest = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, parent = 316, window = 29724526, place = 123992930}, 
+  xproperty = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, window = 316, atom = 29724526, time = 123992930, 
+    state = 0}, xselectionclear = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, window = 316, selection = 29724526, 
+    time = 123992930}, xselectionrequest = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, owner = 316, requestor = 29724526, 
+    selection = 123992930, target = 0, property = 123897697, time = 0}, 
+  xselection = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, requestor = 316, selection = 29724526, 
+    target = 123992930, property = 0, time = 123897697}, xcolormap = {
+    type = 17, serial = 4901377, send_event = 0, display = 0x8f08cf0, 
+    window = 316, colormap = 29724526, new = 123992930, state = 0}, 
+  xclient = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, window = 316, message_type = 29724526, 
+    format = 123992930, data = {
+      b = "\000\000\000\000a\207b\a\000\000\000\000\032\005=\000\000\000\000", s = {0, 0, -30879, 1890, 0, 0, 1306, 61, 0, 0}, l = {0, 123897697, 0, 
+        3999002, 0}}}, xmapping = {type = 17, serial = 4901377, 
+    send_event = 0, display = 0x8f08cf0, window = 316, request = 29724526, 
+    first_keycode = 123992930, count = 0}, xerror = {type = 17, 
+    display = 0x4aca01, resourceid = 0, serial = 149982448, 
+    error_code = 60 '<', request_code = 1 '\001', minor_code = 0 '\0'}, 
+  xkeymap = {type = 17, serial = 4901377, send_event = 0, 
+    display = 0x8f08cf0, window = 316, 
+    key_vector = "n\217?\001b?c\a\000\000\000\000a\207b\a\000\000\000\000\032\005=\000\000\000\000\000\032\005X"}, pad = {17, 4901377, 0, 149982448, 316, 
+    29724526, 123992930, 0, 123897697, 0, 3999002, 0, 5768474, 12, 1, 1, 
+    8448, 6332816, 6332816, 0, 17, 166920440, 166388392, 104}}
+	timeDiff = <value optimized out>
+	tv = {tv_sec = 1249149866, tv_usec = 135745}
+	d = (CompDisplay *) 0x8f08038
+	s = (CompScreen *) 0x9068e08
+	w = <value optimized out>
+	t = <value optimized out>
+	time = <value optimized out>
+	timeToNextRedraw = <value optimized out>
+	damageMask = 0
+	mask = <value optimized out>
+#10 0x08052b34 in main (argc=9, argv=0xbfbf9c24) at ../../src/main.c:453
+	ctx = {offset = 2880, pluginData = 0x8eff138 "XSMP", 
+  textureFilterData = 0x0, refreshRateData = 0x0}
+	displayName = 0x0
+	plugin = {0xbfbfbb66 "gconf", 0xbfbfbb6c "core", 0xbfbfbb71 "ccp", 
+  0x5ee868 "*** glibc detected *** %s: %s: 0x%s ***\n", 
+  0x5eb6e1 "corrupted double-linked list", 0x5eb6ba "<unknown>", 
+  0x9f9dd8 "\211F\f\213\034$\213t$\004\211?]?\220\220\220\220\220\220\220\220\220\220U\211?\203?8\211]??????\201??!", 0x60a160 "", 
+  0x31 <Address 0x31 out of bounds>, 0xbfbf9874 "c?W", 
+  0xfd0f06 "\213E?\213\225D???\211\002\213\205@???\213\225<????", 
+  0x60a18c "", 0x60a18c "", 0x0, 
+  0x60a190 "?.s\n ?\005\nXV?\t`?\005\n?Y\b\n?Y?\t0?\006\nP??\t\220?\003\n8??\t??`", 0x40 <Address 0x40 out of bounds>, 0xb8066d80 "", 0xfdfff4 "(?\001", 
+  0xbfbf9898 "?\230????Q", 0x51b52b "\201???\016", 0x608ff4 "|?\025", 
+  0x120 <Address 0x120 out of bounds>, 0x488 <Address 0x488 out of bounds>, 
+  0xbfbf9884 "`??\b\210\004", 0x51d281 "\201?s?\016", 
+  0x5eb76e "malloc(): memory corruption", 0x5eb6ba "<unknown>", 
+  0x8eff120 "?2\006?\021", 
+  0x60a198 "XV?\t`?\005\n?Y\b\n?Y?\t0?\006\nP??\t\220?\003\n8??\t??`", 
+  0xfd0ee9 "\205?\211?uQ\213\225D???\215\205L???\211\002\213E\f\211\004$?U\b\213E?\213\225D???\211\002\213\205@???\213\225<????", 0x0, 0x60a1c8 "??`", 
+  0x5ece9f "%s\n", 0x5ee868 "*** glibc detected *** %s: %s: 0x%s ***\n", 
+  0x5eb76e "malloc(): memory corruption", 0x5eb6ba "<unknown>", 
+  0x8eff258 "\001", 
+  0x60a198 "XV?\t`?\005\n?Y\b\n?Y?\t0?\006\nP??\t\220?\003\n8??\t??`", 
+  0x90000001 <Address 0x90000001 out of bounds>, 0x0, 
+  0x490 <Address 0x490 out of bounds>, 0x4a <Address 0x4a out of bounds>, 
+  0xa919 <Address 0xa919 out of bounds>, 0x8 <Address 0x8 out of bounds>, 
+  0x4 <Address 0x4 out of bounds>, 0x8eff260 ".ICE-unix/3805.xml", 
+  0x51c4a4 "\201?P?\016", 0x136ca0 "\203?<1?\213\025Du\032", 0xb8066828 "", 
+  0x20 <Address 0x20 out of bounds>, 0x4d775f "\207?\211?\201?", 
+  0x8eff120 "?2\006?\021", 0x0, 0x51f651 "\201??\231\016", 
+  0x8eff260 ".ICE-unix/3805.xml", 0x60a160 "", 0xfe0020 "p\006?", 
+  0x8eff6e8 "", 0x4a0 <Address 0x4a0 out of bounds>, 0x8eff6e8 "", 
+  0xa918 <Address 0xa918 out of bounds>, 
+  0x51f225 "\205?\211?t\031\213U?e\203=\f", 
+  0x10 <Address 0x10 out of bounds>, 0x8eff120 "?2\006?\021", 
+  0x10 <Address 0x10 out of bounds>, 0x57ea63 "[=\001???s2????\001", 
+  0x488 <Address 0x488 out of bounds>, 
+  0x136fb8 "\205?\177?\203?\004u\034\205??\a", 
+  0x3 <Address 0x3 out of bounds>, 0x8eff260 ".ICE-unix/3805.xml", 
+  0x488 <Address 0x488 out of bounds>, 0x608ff4 "|?\025", 0x60a160 "", 
+  0x8eff260 ".ICE-unix/3805.xml", 0xbfbf98b8 "", 0x51cde6 "e\203=\f", 
+  0x60a160 "", 0x8eff260 ".ICE-unix/3805.xml", 0x8eff258 "\001", 
+  0xbfbf9acc "", 0x8eff238 " ", 0x3 <Address 0x3 out of bounds>, 
+  0x36e000 "e\003", 0x0, 0x8eff238 " ", 0x0, 0x36e000 "e\003", 
+  0x13a2f9 "\201?<\002", 0x2 <Address 0x2 out of bounds>, 0xbfbf99cc "", 0x0, 
+  0xb8062750 "n\226\237", 0xbfbf0017 "", 0xfd1c00 "\205?u?\203?\b?\001", 
+  0x9f961f "libc.so.6", 0xb8066d34 "libm.so.6", 
+  0x3 <Address 0x3 out of bounds>, 0xfe0958 "", 0x0, 0xb8066d80 "", 
+  0xfcbff5 "\205?\017\205????\213M?\213\021??\213M\020\213\021\205?\017\205=???\211\001\213E?\211A\004?0???f\220\213U?\211U?\017?\002?E\234", 0x8050600 "", 
+  0x608ff4 "|?\025", 0xfd5954 "\201???", 0x11c <Address 0x11c out of bounds>, 
+  0x8050ed8 "l$\b\b\a\034\001", 0x80505e8 "?\037\b\b\006,", 
+  0x3 <Address 0x3 out of bounds>, 0x0, 0x0, 0x2 <Address 0x2 out of bounds>, 
+  0x0, 0x0, 0x0, 0x0, 0x36c320 "\004", 0x36c328 "\005", 0x36c330 "\006", 0x0, 
+  0x0, 0x0, 0x36c338 "\n", 0x36c340 "\v", 0x0, 0x0, 0x36c318 "\016", 
+  0x0 <repeats 27 times>, 
+  0xbfbf9c4c "u???\214???\235???????????????\002???#???4???J???\232???????????V???d???~???????????????\024???r???????????????\024???(???;???h???x???\211???\232???????", 0xbfbf9c24 "????????\f???\026???%???V???f???l???q???", 
+  0xfdfff4 "(?\001", 0x0, 0x9fc050 "", 0xbfbf9ac8 "?\a?", 
+  0xfd0f06 "\213E?\213\225D???\211\002\213\205@???\213\225<????", 
+  0xbfbf9b00 "", 0x0, 0x4b8438 "1,", 
+  0xd696910 <Address 0xd696910 out of bounds>, 0xbfbf9a38 "?\232?????", 
+  0xfcbc18 "\205?t\036\213E?\213@\b\205?u\022\205?u\016f\203}?", 
+  0x4be463 "GLIBC_2.0", 0x804ff67 "GLIBC_2.0", 0xb8065588 "", 
+  0xb8066d28 "4m\006?", 0xb8063dd0 "g?\004\b\020ii\r", 0xbfbf0002 "", 
+  0xfd1c00 "\205?u?\203?\b?\001", 0x804d9a5 "libc.so.6", 
+  0xb8066d34 "libm.so.6", 0xfdfff4 "(?\001", 
+  0xb8063d6c "\200m\006?8P\006??R\006?\210U\006??X\006?", 
+  0xe <Address 0xe out of bounds>, 0xbfbf9ab4 "?\233??\017??", 
+  0xfcbff5 "\205?\017\205????\213M?\213\021??\213M\020\213\021\205?\017\205=???\211\001\213E?\211A\004?0???f\220\213U?\211U?\017?\002?E\234", 
+  0xfdfff4 "(?\001", 0xfdfcc0 "", 0x9fc050 "", 
+  0x7fffffff <Address 0x7fffffff out of bounds>, 
+  0x177ff8e "\213C0\211\204$\214\001", 
+  0xfdbe68 "symbol=%s;  lookup in file=%s [%lu]\n", 0xbfbf9a80 "", 
+  0xbfbf9a80 "", 0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 
+  0xb8066d80 "", 0x7b1ea71 <Address 0x7b1ea71 out of bounds>, 
+  0x1e <Address 0x1e out of bounds>, 0x4afd38 "", 
+  0x4afb30 "/N=??\030L\017??-?\204\"\233|??\217?\205\"\233|???=?\"\225?8?\031u?\001?\022?BY\020?????w\035\rG??%?V1??r1\035\a;?L\214\t)\020\t~\222\0348??0j??{\004\\H???\034?\002??\0179??0X?\227|\030\034s?T\200?s?\202c\002;H\205\0336\rf?2v????K??\234#\217?\036h\233?\230??\234\002Y1\n?\006???e\235J\032\223?P??\020\205)%~\016|\030??8\a\221\222?\206??:V??I?$\202?7?Qho???\017l"..., 0x804db9b "", 
+  0x804db8a "__libc_start_main", 0x0, 0x0, 0x1 <Address 0x1 out of bounds>, 
+  0x870 <Address 0x870 out of bounds>, 0xb8063dd0 "g?\004\b\020ii\r", 
+  0xb8066d80 "", 0x804db8a "__libc_start_main", 0x4b8c58 "", 0x804a740 "J\f", 
+  0x1 <Address 0x1 out of bounds>, 0xfdfff4 "(?\001", 
+  0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 0xfe0828 "?\a?", 
+  0xbfbf9ba0 "\t", 0xfcc20f "\203?", 
+  0xbfbf9b90 "\200|\a\b? \005\b?\233???'L", 0x804a740 "J\f", 
+  0xbfbf9b84 "?\217`", 0xfe07cc "4=\006?\036", 0x0, 
+  0xb8063dd0 "g?\004\b\020ii\r"...}
+	i = <value optimized out>
+	nPlugin = 3
+	disableSm = 0
+	clientId = 0xbfbfbb25 "1074a0bd5e38fb478a124902593433418500000038050035"
+	refreshRateArg = 0x0

@@ -1,0 +1,46 @@
+#0  0xaa552051 in decor_pixmap_property_to_quads () from /usr/lib/libdecoration.so.0
+No symbol table info available.
+#1  0xaa56c0e1 in Decoration::create(unsigned long, long*, unsigned int, unsigned int, unsigned int) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#2  0xaa56c6d3 in DecorationList::updateDecoration(unsigned long, unsigned long) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#3  0xaa56aaab in DecorScreen::checkForDm(bool) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#4  0xaa56b1ae in DecorScreen::DecorScreen(CompScreen*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#5  0xaa57455e in PluginClassHandler<DecorScreen, CompScreen, 0>::get(CompScreen*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#6  0xaa57476b in CompPlugin::VTableForScreenAndWindow<DecorScreen, DecorWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libdecor.so
+No symbol table info available.
+#7  0xb7774d12 in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#8  0xb77758c0 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#9  0xb7741693 in PrivateScreen::updatePlugins() () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#10 0xb7742417 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#11 0xb7742562 in CompScreenImpl::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#12 0xb777b202 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#13 0xb777b572 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#14 0xb777b312 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#15 0xb72adbf1 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#16 0xb71b5aba in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0xb71b5ec5 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0xb71b630b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0xb72af273 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#20 0xb77370cf in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#21 0x0804a4e2 in CompManager::run() ()
+No symbol table info available.
+#22 0x0804a16c in main ()
+No symbol table info available.

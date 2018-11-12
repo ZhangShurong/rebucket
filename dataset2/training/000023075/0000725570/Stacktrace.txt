@@ -1,0 +1,26 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x009bfeef in nux::GLFramebufferObject::_GenerateFboId() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x009bffd8 in nux::GLFramebufferObject::GLFramebufferObject() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#3  0x00a24162 in nux::IOpenGLFrameBufferObject::IOpenGLFrameBufferObject(char const*, int) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#4  0x00a1820f in nux::GpuDevice::CreateFrameBufferObject(nux::IOpenGLFrameBufferObject**) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#5  0x00a18d3f in nux::GpuDevice::CreateFrameBufferObject() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#6  0x009d857b in nux::GraphicsEngine::GraphicsEngine(nux::GraphicsDisplay&, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#7  0x009eb80d in nux::GraphicsDisplay::CreateOpenGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay const*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#8  0x00a16379 in nux::DisplayAccessController::CreateGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#9  0x0804961a in ?? ()
+No symbol table info available.
+#10 0x08049b1d in ?? ()
+No symbol table info available.
+#11 0x0059de36 in __libc_start_main () from /lib/libc.so.6
+No symbol table info available.
+#12 0x08049021 in ?? ()
+No symbol table info available.

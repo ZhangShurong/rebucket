@@ -1,0 +1,66 @@
+#0  0x00007f031d57d73c in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f03105f93f7 in ?? () from /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#2  0x00007f03105fa846 in ?? () from /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+No symbol table info available.
+#3  0x00007f03119f2570 in compiz::opengl::bindTexImageGLX(ServerGrabInterface*, unsigned long, unsigned long, boost::function<bool (unsigned long)> const&, boost::function<void (unsigned long)> const&, boost::function<void ()> const&, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#4  0x00007f03119e9979 in TfpTexture::bindTexImage(unsigned long const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x00007f03119ead91 in TfpTexture::bindPixmapToTexture(unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x00007f03119e5d19 in boost::detail::function::function_invoker5<GLTexture::List (*)(unsigned long, int, int, int, compiz::opengl::_PixmapSource), GLTexture::List, unsigned long, int, int, int, compiz::opengl::_PixmapSource>::invoke(boost::detail::function::function_buffer&, unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0x00007f03119ea752 in GLTexture::bindPixmapToTexture(unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#8  0x00007f02feeae675 in unity::UnityWindow::DrawWindowDecoration(GLWindowPaintAttrib const&, GLMatrix const&, unsigned int, bool, int, int, unsigned int, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#9  0x00007f02feeb0d02 in unity::UnityWindow::scalePaintDecoration(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#10 0x00007f02ff7b02fd in ScaleWindow::scalePaintDecoration(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#11 0x00007f02ff7aff0f in PrivateScaleWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libscale.so
+No symbol table info available.
+#12 0x00007f03119da11d in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#13 0x00007f02feeb08c4 in unity::UnityWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x00007f03119da11d in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#15 0x00007f03119da425 in PrivateGLScreen::paintOutputRegion(GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#16 0x00007f03119dac09 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#17 0x00007f030375e4af in WallScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#18 0x00007f03119dab2e in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#19 0x00007f03119dab2e in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#20 0x00007f02feebb62c in unity::UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#21 0x00007f03119dab2e in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#22 0x00007f03119e21ab in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#23 0x00007f030bde6f05 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#24 0x00007f030bde8a78 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#25 0x00007f031dd8163c in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120920
+No symbol table info available.
+#26 0x00007f031dd816df in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120920
+No symbol table info available.
+#27 0x00007f031dd80bad in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120920
+No symbol table info available.
+#28 0x00007f031c273d1f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#29 0x00007f031bd78bb5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#30 0x00007f031bd78ee8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#31 0x00007f031bd792e2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x000000000040270b in main ()
+No symbol table info available.

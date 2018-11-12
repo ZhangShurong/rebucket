@@ -1,0 +1,32 @@
+#0  0x00007f5d976e2ceb in sigc::internal::slot_call0<unity::launcher::VolumeImp::Impl::Impl(unity::glib::Object<_GVolume> const&, std::shared_ptr<unity::FileManager> const&, std::shared_ptr<unity::launcher::DeviceNotificationDisplay> const&, unity::launcher::VolumeImp*)::{lambda()#3}, void>::call_it(sigc::internal::slot_rep*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007f5d9779938a in unity::GnomeFileManager::Impl::OnOpenLocationsUpdated(_GVariant*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f5d95a26a55 in unity::glib::DBusProxy::Impl::OnPropertyChanged(_GDBusProxy*, _GVariant*, char***) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#3  0x00007f5db1e9ac18 in ffi_call_unix64 () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#4  0x00007f5db1e9a580 in ffi_call () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#5  0x00007f5db2d03edb in g_cclosure_marshal_generic () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f5db2d03580 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f5db2d14e60 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007f5db2d1cc71 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00007f5db2d1cef2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00007f5dabb67ef8 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#11 0x00007f5dabb57835 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#12 0x00007f5db3cc9f05 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f5db3cca248 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f5db3cca6ba in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x000000000040195b in main ()
+No symbol table info available.

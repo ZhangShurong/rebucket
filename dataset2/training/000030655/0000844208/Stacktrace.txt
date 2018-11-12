@@ -1,0 +1,12 @@
+#0  0x00007f32eeb4330b in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#1  0x00007f32f9a84670 in g_child_watch_funcs () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x0000000000cf84b0 in ?? ()
+No symbol table info available.
+#3  0x00007f32eeb42bb0 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#4  0x0000000000dfa310 in ?? ()
+No symbol table info available.
+#5  0x0000000000000000 in ?? ()
+No symbol table info available.

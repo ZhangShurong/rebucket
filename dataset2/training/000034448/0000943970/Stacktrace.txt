@@ -1,0 +1,40 @@
+#0  0x00007f2b2b364445 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f2b2b367bab in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f2b2b35d10e in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f2b2b35d1b2 in __assert_fail () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007f2b2bb47603 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00007f2b2bb47621 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007f2b2bb47d4d in _XEventsQueued () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007f2b2bb3941d in XPending () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007f2b2c948824 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#9  0x00007f2b2be85b73 in g_main_context_check () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f2b2be860d6 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f2b2be8659a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x0000000000404154 in ?? ()
+No symbol table info available.
+#13 0x00007f2b2b34f76d in __libc_start_main () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#14 0x00000000004041bd in ?? ()
+No symbol table info available.
+#15 0x00007fff8e4e9638 in ?? ()
+No symbol table info available.
+#16 0x000000000000001c in ?? ()
+No symbol table info available.
+#17 0x0000000000000001 in ?? ()
+No symbol table info available.
+#18 0x00007fff8e4e9a6e in ?? ()
+No symbol table info available.
+#19 0x0000000000000000 in ?? ()
+No symbol table info available.

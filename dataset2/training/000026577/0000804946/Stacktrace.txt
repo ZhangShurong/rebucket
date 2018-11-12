@@ -1,0 +1,149 @@
+#0  g_variant_unref (value=0x0) at /build/buildd/glib2.0-2.29.8/./glib/gvariant-core.c:617
+No locales.
+#1  0x00adb0a2 in g_settings_get_boolean (settings=0x0, key=0x810e222 "enable") at /build/buildd/glib2.0-2.29.8/./gio/gsettings.c:1955
+        value = 0x0
+        result = 0
+#2  0x0810b260 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#3  0x0036ca7a in g_cclosure_marshal_VOID__STRING (closure=0x9794b20, return_value=0x0, n_param_values=2, param_values=0x97e2540, invocation_hint=0xb5afc5c0, marshal_data=0x0) at /build/buildd/glib2.0-2.29.8/./gobject/gmarshal.c:498
+        callback = 0x810b2c0
+        cc = 0x9794b20
+        data1 = 0x978dbb8
+        data2 = 0x97275e8
+        __PRETTY_FUNCTION__ = "g_cclosure_marshal_VOID__STRING"
+#4  0x0034f91c in g_closure_invoke (closure=0x9794b20, return_value=0x0, n_param_values=2, param_values=0x97e2540, invocation_hint=0xb5afc5c0) at /build/buildd/glib2.0-2.29.8/./gobject/gclosure.c:771
+        marshal = 0x36c9d0 <g_cclosure_marshal_VOID__STRING>
+        marshal_data = 0x0
+        in_marshal = 0
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#5  0x00362a80 in signal_emit_unlocked_R (node=0x972d338, detail=1214, instance=0x978dbb8, emission_return=0x0, instance_and_params=0x97e2540) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3256
+        tmp = <value optimized out>
+        handler = 0x9792300
+        accumulator = 0x0
+        emission = {next = 0xb5afc8f8, instance = 0x978dbb8, ihint = {signal_id = 18, detail = 1214, run_type = G_SIGNAL_RUN_FIRST}, state = EMISSION_RUN, chain_type = 4}
+        class_closure = 0x9715440
+        hlist = 0x975e038
+        handler_list = 0x9792300
+        return_accu = 0x0
+        accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 18
+        max_sequential_handler_number = 229
+        return_value_altered = 0
+#6  0x0036b73f in g_signal_emit_valist (instance=0x978dbb8, signal_id=18, detail=1214, var_args=0xb5afc770 "X\251\260\266\\ͯ\265\244ǯ\265\254\027") at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:2987
+        instance_and_params = 0x97e2540
+        signal_return_type = 4
+        param_values = 0x97e2554
+        node = 0x972d338
+        i = <value optimized out>
+        n_params = 1
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#7  0x0036b8b3 in g_signal_emit (instance=0x978dbb8, signal_id=18, detail=1214) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3044
+        var_args = 0xb5afc76c "e#{\tX\251\260\266\\ͯ\265\244ǯ\265\254\027"
+#8  0x00ad87ae in g_settings_real_change_event (settings=0x978dbb8, keys=0xb5afcaec, n_keys=20) at /build/buildd/glib2.0-2.29.8/./gio/gsettings.c:279
+        i = <value optimized out>
+#9  0x00b1da78 in _gio_marshal_BOOLEAN__POINTER_INT (closure=0x97379c8, return_value=0xb5afc914, n_param_values=3, param_values=0xb6b0a958, invocation_hint=0xb5afc900, marshal_data=0xad8750) at /build/buildd/glib2.0-2.29.8/./gio/gio-marshal.c:357
+        callback = 0xad8750 <g_settings_real_change_event>
+        cc = 0x97379c8
+        data1 = 0x978dbb8
+        data2 = 0xb6b00500
+        v_return = <value optimized out>
+        __PRETTY_FUNCTION__ = "_gio_marshal_BOOLEAN__POINTER_INT"
+#10 0x0034e36d in g_type_class_meta_marshal (closure=0x97379c8, return_value=0xb5afc914, n_param_values=3, param_values=0xb6b0a958, invocation_hint=0xb5afc900, marshal_data=0x50) at /build/buildd/glib2.0-2.29.8/./gobject/gclosure.c:882
+        class = <value optimized out>
+        callback = <value optimized out>
+        offset = 80
+#11 0x0034f91c in g_closure_invoke (closure=0x97379c8, return_value=0xb5afc914, n_param_values=3, param_values=0xb6b0a958, invocation_hint=0xb5afc900) at /build/buildd/glib2.0-2.29.8/./gobject/gclosure.c:771
+        marshal = 0x34e310 <g_type_class_meta_marshal>
+        marshal_data = 0x50
+        in_marshal = 0
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#12 0x003628c8 in signal_emit_unlocked_R (node=0x97388a8, detail=0, instance=0x978dbb8, emission_return=0xb5afca4c, instance_and_params=0xb6b0a958) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3294
+        accumulator = 0x972d2b0
+        emission = {next = 0x0, instance = 0x978dbb8, ihint = {signal_id = 19, detail = 0, run_type = G_SIGNAL_RUN_LAST}, state = EMISSION_RUN, chain_type = 3064988928}
+        class_closure = 0x97379c8
+        hlist = 0x975e038
+        handler_list = 0x0
+        return_accu = 0xb5afc914
+        accu = {g_type = 20, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 19
+        max_sequential_handler_number = 229
+        return_value_altered = 0
+#13 0x0036b5f1 in g_signal_emit_valist (instance=0x978dbb8, signal_id=19, detail=0, var_args=0xb5afcab4 "\354ί\265") at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:2997
+        return_value = {g_type = 20, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        error = 0x0
+        rtype = <value optimized out>
+        static_scope = 0
+        instance_and_params = 0xb6b0a958
+        signal_return_type = 20
+        param_values = 0xb6b0a96c
+        node = 0x97388a8
+        i = <value optimized out>
+        n_params = 2
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#14 0x0036b8b3 in g_signal_emit (instance=0x978dbb8, signal_id=19, detail=0) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3044
+        var_args = 0xb5afcaac "\354ʯ\265\024"
+#15 0x00ad95ec in settings_backend_keys_changed (target=0x978dbb8, backend=0x973c028, path=0xb6b0a228 "/org/gnome/desktop/a11y/keyboard/", items=0xb6b12da0, origin_tag=0x0) at /build/buildd/glib2.0-2.29.8/./gio/gsettings.c:389
+        quarks = {1214, 1213, 614, 1212, 611, 613, 1216, 615, 1217, 1215, 1219, 1218, 1220, 1221, 616, 617, 1223, 1222, 612, 618, 3630052, 3065025096, 158619552, 158619552, 11090444, 3628438, 0, 158619552, 12062708, 3065025096, 3064997122, 158529080, 11111836, 3065025096, 964, 0, 12062708, 3628438, 4, 4, 12062708, 3065025096, 3064997128, 0, 11117097, 3065025096, 158606936, 11473979, 12062708, 3065025096, 12062708, 3065025096, 11119203, 3065025096, 3048197412, 4, 0, 0, 3048197976, 1, 11043292, 15421428, 14956802, 15421428, 14636744, 3065005760, 0, 964, 11090444, 3628438, 158621320, 0, 12062708, 3065005760, 158621186, 0, 11111836, 3065006272, 158606936, 15421428, 3747828, 1, 1, 3065005760, 14983244, 158375088, 3065005760, 0, 3621076, 3065025096, 158606936, 11473979, 12062708, 1, 1959758, 1152889, 3631101, 3065025096, 3048197588, 3543609, 3747828, 1956933, 1, 15422480, 3584787, 15421428, 158710912, 3048197388, 14983244, 82, 3065026968, 158710912, 14983244, 158710912, 3048197388, 3065024080, 3064987712, 88, 3065064448, 2940916, 3065064144, 141, 3048197384, 1965618, 14986000, 13, 13, 89, 3064987720, 2787071, 304, 4, 2940916, 3065064152, 3064987664, 3048197436, 1971417, 304, 168, 1948754, 3048197820, 304, 168, 162, 3064987664, 2940916, 162, 161, 3048197640, 2451709, 3065064152, 162, 3048197820, 3065024088, 0, 0, 4222451712, 3065064152, 3065064253, 3065064152, 3065064152, 3065064313, 1959758, 3065064152, 3065064452, 3985716, 10818968, 93642637, 0, 0, 10754100, 4, 8, 8, 56, 3064987720, 2787071, 64, 3048197688, 3987313, 0, 3064987664, 8, 3064987712, 2940916, 3064987664, 3048197856, 3048197624, 1969843, 10742660, 4056048, 3048197760, 15421428, 56, 3048197856, 56, 14736946, 56, 84, 3064987720...}
+        j = <value optimized out>
+        l = 20
+        settings = 0x978dbb8
+        ignore_this = -1229938136
+        i = <value optimized out>
+        __PRETTY_FUNCTION__ = "settings_backend_keys_changed"
+#16 0x00ad5cdc in g_settings_backend_changed_tree (backend=0x973c028, tree=0x97e8c80, origin_tag=0x0) at /build/buildd/glib2.0-2.29.8/./gio/gsettingsbackend.c:701
+        watch = 0x97459a0
+        keys = 0xb6b12da0
+        path = 0xb6b0a228 "/org/gnome/desktop/a11y/keyboard/"
+        __PRETTY_FUNCTION__ = "g_settings_backend_changed_tree"
+#17 0x05952110 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#18 0x00a9f0a2 in g_simple_async_result_complete (simple=0x973f0b0) at /build/buildd/glib2.0-2.29.8/./gio/gsimpleasyncresult.c:749
+        current_source = <value optimized out>
+        current_context = <value optimized out>
+        __PRETTY_FUNCTION__ = "g_simple_async_result_complete"
+#19 0x00aee6cc in g_dbus_connection_call_done (source=0x9735010, result=0xb6b09398, user_data=0x9785f40) at /build/buildd/glib2.0-2.29.8/./gio/gdbusconnection.c:5017
+        connection = <value optimized out>
+        state = 0x9785f40
+        error = 0xb6b14730
+        reply = 0x9740cf0
+        value = <value optimized out>
+#20 0x00a9f0a2 in g_simple_async_result_complete (simple=0xb6b09398) at /build/buildd/glib2.0-2.29.8/./gio/gsimpleasyncresult.c:749
+        current_source = <value optimized out>
+        current_context = <value optimized out>
+        __PRETTY_FUNCTION__ = "g_simple_async_result_complete"
+#21 0x00a9f1dc in complete_in_idle_cb (data=0xb6b09398) at /build/buildd/glib2.0-2.29.8/./gio/gsimpleasyncresult.c:761
+        simple = <value optimized out>
+#22 0x00e03230 in g_idle_dispatch (source=0xb6b12ed0, callback=0xa9f1b0 <complete_in_idle_cb>, user_data=0xb6b09398) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:4844
+No locales.
+#23 0x00e070cf in g_main_dispatch (context=0x9745b28) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:2477
+        dispatch = 0xe03210 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0xb6b09398
+        callback = 0xa9f1b0 <complete_in_idle_cb>
+        cb_funcs = 0xeb535c
+        cb_data = 0xb6b10420
+        current_source_link = {data = 0xb6b12ed0, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0xb6b12ed0
+        current = 0x973ddc8
+        i = <value optimized out>
+#24 g_main_context_dispatch (context=0x9745b28) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3050
+No locales.
+#25 0x00e07800 in g_main_context_iterate (context=0x9745b28, block=14771200, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3128
+        max_priority = 2147483647
+        timeout = 119999
+        some_ready = 1
+        nfds = <value optimized out>
+        allocated_nfds = <value optimized out>
+        fds = 0x973ef08
+#26 0x00e07e0b in g_main_loop_run (loop=0x9745880) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3336
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#27 0x05951294 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#28 0x00e2e644 in g_thread_create_proxy (data=0x9745bb8) at /build/buildd/glib2.0-2.29.8/./glib/gthread.c:1954
+        thread = 0x9745bb8
+        __PRETTY_FUNCTION__ = "g_thread_create_proxy"
+#29 0x00115e99 in start_thread () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#30 0x002416ee in clone () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.

@@ -1,0 +1,10 @@
+#0  0xb7f429ad in _XSend () from /usr/lib/libX11.so.6
+#1  0xb7f30098 in XQueryExtension () from /usr/lib/libX11.so.6
+#2  0xb7f24631 in XInitExtension () from /usr/lib/libX11.so.6
+#3  0xb7efcd6f in XextAddDisplay () from /usr/lib/libXext.so.6
+#4  0xb8025e70 in ?? () from /usr/lib/libGL.so.1
+#5  0xb8063c98 in ?? () from /usr/lib/libGL.so.1
+#6  0xb80a1a73 in ?? () from /lib/ld-linux.so.2
+#7  0xb7dbbbb9 in exit () from /lib/tls/i686/cmov/libc.so.6
+#8  0xb7da377d in __libc_start_main () from /lib/tls/i686/cmov/libc.so.6
+#9  0x080488f1 in ?? ()

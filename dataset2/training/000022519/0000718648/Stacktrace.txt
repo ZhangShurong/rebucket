@@ -1,0 +1,65 @@
+#0  0x00007f401ce84bd0 in Launcher::EventLogic() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007f401ce89b17 in Launcher::DrawContent(nux::GraphicsEngine&, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f401cb3c981 in nux::View::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x00007f401cb4116a in nux::Layout::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0x00007f401cb09212 in nux::BaseWindow::DrawContent(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x00007f401cb3c981 in nux::View::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x00007f401cbb3191 in nux::WindowCompositor::RenderTopViewContent(nux::BaseWindow*, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x00007f401cbbd884 in nux::WindowCompositor::RenderTopViews(bool, std::list<nux::ObjectWeakPtr<nux::BaseWindow>, std::allocator<nux::ObjectWeakPtr<nux::BaseWindow> > >&, bool, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#8  0x00007f401cbbe1b4 in nux::WindowCompositor::Draw(bool, bool) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#9  0x00007f401cbc15da in nux::WindowThread::RenderInterfaceFromForeignCmd() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#10 0x00007f401cece895 in UnityScreen::paintDisplay(CompRegion const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007f401cece8f7 in UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007f4023f3d53d in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#13 0x00007f4023f3f0e1 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#14 0x00007f4024565569 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#15 0x00007f4024567380 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#16 0x000000000042190f in CompTimeoutSource::callback() ()
+No symbol table info available.
+#17 0x000000000042137d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#18 0x00007f402abfcacf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#19 0x00007f4028bb8c1d in g_main_dispatch (context=0x2086c00) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:2440
+        dispatch = 0x7f402abfca80 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0x20b47e0
+        callback = 0x7f402abfcc30
+        cb_funcs = 0x7f4028e63630
+        cb_data = 0x2110c50
+        current_source_link = {data = 0x20c24c0, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x20c24c0
+        current = 0x20a7ba0
+        i = <value optimized out>
+#20 g_main_context_dispatch (context=0x2086c00) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:3013
+No locals.
+#21 0x00007f4028bb9408 in g_main_context_iterate (context=0x2086c00, block=<value optimized out>, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:3091
+        max_priority = 2147483647
+        timeout = 3
+        some_ready = 1
+        nfds = 14
+        allocated_nfds = <value optimized out>
+        fds = <value optimized out>
+#22 0x00007f4028bb9a4a in g_main_loop_run (loop=0x2086d70) at /build/buildd/glib2.0-2.28.0/glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#23 0x0000000000429dca in CompScreen::eventLoop() ()
+No symbol table info available.
+#24 0x0000000000422e80 in main ()
+No symbol table info available.

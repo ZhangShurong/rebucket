@@ -1,0 +1,104 @@
+#0  __strstr_ia32 (haystack_start=0x0, needle_start=0xb60e032f "GLX_SGIX_fbconfig") at ../string/strstr.c:63
+        haystack = 0x0
+        needle = 0xb60e032f "GLX_SGIX_fbconfig"
+        needle_len = <optimized out>
+        haystack_len = <optimized out>
+        ok = true
+#1  0xb60ca58d in GLScreen::GLScreen(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#2  0xb60c0fb6 in PluginClassHandler<GLScreen, CompScreen, 4>::get(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#3  0xb60c1fbb in CompPlugin::VTableForScreenAndWindow<GLScreen, GLWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#4  0xb76d71ea in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#5  0xb76d7b70 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#6  0xb76aadb0 in compiz::private_screen::PluginManager::updatePlugins(CompScreen*, std::vector<CompOption::Value, std::allocator<CompOption::Value> > const&) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#7  0xb76ac246 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#8  0xb76ac3d0 in CompScreenImpl::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#9  0xb76dee12 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#10 0xb76df181 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#11 0xb76dee42 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#12 0xb7207e21 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#13 0xb710af73 in g_main_dispatch (context=0x956fa00) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:2707
+        dispatch = 0xb7207dc0 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0x956e9e8
+        callback = 0xb7207f00
+        cb_funcs = 0xb71be4f8
+        cb_data = 0x956ea58
+        current_source_link = {data = 0x95d00b0, next = 0xbfac5438}
+        need_destroy = <optimized out>
+        source = 0x95d00b0
+        current = 0x956fbb8
+        i = <optimized out>
+#14 g_main_context_dispatch (context=context@entry=0x956fa00) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:3211
+No locals.
+#15 0xb710b310 in g_main_context_iterate (context=context@entry=0x956fa00, block=block@entry=0, dispatch=dispatch@entry=1, self=<error reading variable: Unhandled dwarf expression opcode 0xfa>) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:3282
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = 4
+        allocated_nfds = <optimized out>
+        fds = <optimized out>
+#16 0xb710b3f1 in g_main_context_iteration (context=0x956fa00, may_block=0) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:3343
+        retval = <optimized out>
+#17 0xb77315dc in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#18 0xb673c1ef in ccsProcessEvents () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#19 0xb773eb0b in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#20 0xb773eea0 in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CcpScreen>, boost::_bi::list1<boost::_bi::value<CcpScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#21 0xb76e7543 in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#22 0xb76e7601 in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#23 0xb76e76f1 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompTimeoutSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#24 0xb76e688f in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#25 0xb7207e21 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#26 0xb710af73 in g_main_dispatch (context=0x956fa00) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:2707
+        dispatch = 0xb7207dc0 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0x95bb3f0
+        callback = 0xb7207f00
+        cb_funcs = 0xb71be4f8
+        cb_data = 0x95c2a50
+        current_source_link = {data = 0x95b03e8, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x95b03e8
+        current = 0x956fbb8
+        i = <optimized out>
+#27 g_main_context_dispatch (context=context@entry=0x956fa00) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:3211
+No locals.
+#28 0xb710b310 in g_main_context_iterate (context=0x956fa00, block=block@entry=1, dispatch=dispatch@entry=1, self=<error reading variable: Unhandled dwarf expression opcode 0xfa>) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:3282
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = 4
+        allocated_nfds = <optimized out>
+        fds = <optimized out>
+#29 0xb710b76b in g_main_loop_run (loop=0x956ea08) at /build/buildd/glib2.0-2.33.8/./glib/gmain.c:3476
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#30 0xb72092c3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#31 0xb769da5a in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#32 0xb769daa4 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120526
+No symbol table info available.
+#33 0x0804a3d2 in CompManager::run() ()
+No symbol table info available.
+#34 0x08049da5 in main ()
+No symbol table info available.

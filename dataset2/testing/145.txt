@@ -1,0 +1,36 @@
+#0  0x00007f0aff559e77 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#1  0x00007f0afef6fee1 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007f0aff7b681c in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#3  0x00007f0afef6fee1 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#4  0x00007f0afef7001c in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0x00007f0afe2dab6d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f0afe2db368 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f0afe2db8a2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f0aff64389d in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#9  0x00000000004113f9 in ?? ()
+No symbol table info available.
+#10 0x00007f0afd85b30d in __libc_start_main (main=0x4112d0, argc=2, ubp_av=0x7fff161fbce8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fff161fbcd8) at libc-start.c:226
+        result = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {0, -7132975731114041586, 4265020, 140733564566752, 0, 0, 7132778641487240974, 7140298150432415502}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x44b290, 0x7fff161fbce8}, data = {prev = 0x0, cleanup = 0x0, canceltype = 4502160}}}
+        not_first_call = <optimized out>
+#11 0x0000000000411465 in ?? ()
+No symbol table info available.
+#12 0x00007fff161fbcd8 in ?? ()
+No symbol table info available.
+#13 0x000000000000001c in ?? ()
+No symbol table info available.
+#14 0x0000000000000002 in ?? ()
+No symbol table info available.
+#15 0x00007fff161fc962 in ?? ()
+No symbol table info available.
+#16 0x0000000000000000 in ?? ()
+No symbol table info available.

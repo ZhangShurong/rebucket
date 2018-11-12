@@ -1,0 +1,40 @@
+#0  0x0000000000000000 in ?? ()
+No symbol table info available.
+#1  0x00007fa52122f482 in nux::IOpenGLAsmVertexShader::IOpenGLAsmVertexShader(nux::NString) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x00007fa5212339e8 in nux::GpuDevice::CreateAsmVertexShader(nux::IOpenGLAsmVertexShader**) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#3  0x00007fa521233d86 in nux::GpuDevice::CreateAsmVertexShader() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#4  0x00007fa52122fef8 in nux::IOpenGLAsmShaderProgram::IOpenGLAsmShaderProgram(nux::NString) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#5  0x00007fa521233968 in nux::GpuDevice::CreateAsmShaderProgram(nux::IOpenGLAsmShaderProgram**) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#6  0x00007fa521233cd6 in nux::GpuDevice::CreateAsmShaderProgram() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#7  0x00007fa52121d00a in nux::FontRenderer::FontRenderer(nux::GraphicsEngine&) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#8  0x00007fa5211f110b in nux::GraphicsEngine::GraphicsEngine(nux::GraphicsDisplay&, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#9  0x00007fa5212042a4 in nux::GraphicsDisplay::CreateOpenGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay const*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#10 0x00007fa52122edce in nux::DisplayAccessController::CreateGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#11 0x0000000000401a5e in ?? ()
+No symbol table info available.
+#12 0x0000000000401f0d in ?? ()
+No symbol table info available.
+#13 0x00007fa520387eff in __libc_start_main () from /lib/libc.so.6
+No symbol table info available.
+#14 0x00000000004014d9 in ?? ()
+No symbol table info available.
+#15 0x00007ffff9b1d2a8 in ?? ()
+No symbol table info available.
+#16 0x000000000000001c in ?? ()
+No symbol table info available.
+#17 0x0000000000000001 in ?? ()
+No symbol table info available.
+#18 0x00007ffff9b1db5b in ?? ()
+No symbol table info available.
+#19 0x0000000000000000 in ?? ()
+No symbol table info available.

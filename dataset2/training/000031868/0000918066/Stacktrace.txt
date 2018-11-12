@@ -1,0 +1,20 @@
+#0  0x00007fae9949d3b5 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007fae994a0b1b in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007fae994d50b3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007fae994dfa36 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007fae994dfe08 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x00007fae994e0d9f in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007fae994e4a32 in calloc () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0x00007fae9a617521 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007fae994e3d1c in free () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#9  0x0000000000000000 in ?? ()
+No symbol table info available.

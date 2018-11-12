@@ -1,0 +1,49 @@
+#0  0x00bd7e3d in sigc::signal_base::impl() const () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#1  0x00bd7f65 in sigc::signal_base::connect(sigc::slot_base const&) () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#2  0x01164d11 in UnityScreen::UnityScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x01169dd4 in CompPlugin::VTableForScreenAndWindow<UnityScreen, UnityWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x08095b27 in CompManager::initPlugin(CompPlugin*) ()
+No symbol table info available.
+#5  0x08096d06 in CompPlugin::push(CompPlugin*) ()
+No symbol table info available.
+#6  0x08071f06 in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#7  0x080725a8 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#8  0x0809a480 in CompEventSource::callback() ()
+No symbol table info available.
+#9  0x00190959 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0x004bcaa8 in g_main_dispatch (context=0x8804390) at /build/buildd/glib2.0-2.28.5/./glib/gmain.c:2440
+        dispatch = 0x1908f0 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0x882b918
+        callback = 0x190ae0
+        cb_funcs = 0x55233c
+        cb_data = 0x881a370
+        current_source_link = {data = 0x8819280, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x8819280
+        current = 0x8804fc8
+        i = <value optimized out>
+#11 g_main_context_dispatch (context=0x8804390) at /build/buildd/glib2.0-2.28.5/./glib/gmain.c:3013
+No locals.
+#12 0x004bd270 in g_main_context_iterate (context=0x8804390, block=5036064, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.28.5/./glib/gmain.c:3091
+        max_priority = 2147483647
+        timeout = 15
+        some_ready = 1
+        nfds = <value optimized out>
+        allocated_nfds = <value optimized out>
+        fds = 0xb6f01b70
+#13 0x004bd92b in g_main_loop_run (loop=0x883fe78) at /build/buildd/glib2.0-2.28.5/./glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#14 0x00191e95 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#15 0x0806ecdb in CompScreen::eventLoop() ()
+No symbol table info available.
+#16 0x08066e98 in main ()
+No symbol table info available.

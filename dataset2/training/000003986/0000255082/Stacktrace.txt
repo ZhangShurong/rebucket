@@ -1,0 +1,147 @@
+#0  0x00007feeab8e6c64 in g_logv () from /usr/lib/libglib-2.0.so.0
+#1  0x00007feeab8e6fd3 in g_log () from /usr/lib/libglib-2.0.so.0
+#2  0x00007feeafe7c932 in gdk_x_error (display=<value optimized out>, 
+    error=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.13.5/gdk/x11/gdkmain-x11.c:641
+	buf = "BadMatch (invalid parameter attributes)", '\0' <repeats 24 times>
+#3  0x00007feeae39a864 in _XError (dpy=0x1a164d0, rep=0x1a50390)
+    at ../../src/XlibInt.c:2912
+	rtn_val = <value optimized out>
+	event = {type = 0, xany = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, window = 497672}, xkey = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, window = 497672, 
+    root = 0, subwindow = 0, time = 140663054674432, x = 117, y = 0, 
+    x_root = 27357952, y_root = 0, state = 3096523688, keycode = 32767, 
+    same_screen = 27357952}, xbutton = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, window = 497672, root = 0, 
+    subwindow = 0, time = 140663054674432, x = 117, y = 0, x_root = 27357952, 
+    y_root = 0, state = 3096523688, button = 32767, same_screen = 27357952}, 
+  xmotion = {type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    window = 497672, root = 0, subwindow = 0, time = 140663054674432, x = 117, 
+    y = 0, x_root = 27357952, y_root = 0, state = 3096523688, 
+    is_hint = -1 'ÿ', same_screen = 27357952}, xcrossing = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, window = 497672, 
+    root = 0, subwindow = 0, time = 140663054674432, x = 117, y = 0, 
+    x_root = 27357952, y_root = 0, mode = -1198443608, detail = 32767, 
+    same_screen = 27357952, focus = 0, state = 27357952}, xfocus = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, window = 497672, 
+    mode = 0, detail = 0}, xexpose = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, window = 497672, x = 0, y = 0, 
+    width = 0, height = 0, count = -1419236864}, xgraphicsexpose = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, drawable = 497672, 
+    x = 0, y = 0, width = 0, height = 0, count = -1419236864, 
+    major_code = 32750, minor_code = 117}, xnoexpose = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, drawable = 497672, 
+    major_code = 0, minor_code = 0}, xvisibility = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, window = 497672, 
+    state = 0}, xcreatewindow = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, parent = 497672, window = 0, x = 0, 
+    y = 0, width = -1419236864, height = 32750, border_width = 117, 
+    override_redirect = 0}, xdestroywindow = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, event = 497672, window = 0}, xunmap = {
+    type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    event = 497672, window = 0, from_configure = 0}, xmap = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, event = 497672, 
+    window = 0, override_redirect = 0}, xmaprequest = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, parent = 497672, 
+    window = 0}, xreparent = {type = 0, serial = 27354320, send_event = 125, 
+    display = 0x74, event = 497672, window = 0, parent = 0, x = -1419236864, 
+    y = 32750, override_redirect = 117}, xconfigure = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, event = 497672, 
+    window = 0, x = 0, y = 0, width = -1419236864, height = 32750, 
+    border_width = 117, above = 27357952, override_redirect = -1198443608}, 
+  xgravity = {type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    event = 497672, window = 0, x = 0, y = 0}, xresizerequest = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, window = 497672, 
+    width = 0, height = 0}, xconfigurerequest = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, parent = 497672, window = 0, x = 0, 
+    y = 0, width = -1419236864, height = 32750, border_width = 117, 
+    above = 27357952, detail = -1198443608, value_mask = 27357952}, 
+  xcirculate = {type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    event = 497672, window = 0, place = 0}, xcirculaterequest = {type = 0, 
+    serial = 27354320, send_event = 125, display = 0x74, parent = 497672, 
+    window = 0, place = 0}, xproperty = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, window = 497672, atom = 0, time = 0, 
+    state = -1419236864}, xselectionclear = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, window = 497672, selection = 0, 
+    time = 0}, xselectionrequest = {type = 0, serial = 27354320, 
+    send_event = 125, display = 0x74, owner = 497672, requestor = 0, 
+    selection = 0, target = 140663054674432, property = 117, time = 27357952}, 
+  xselection = {type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    requestor = 497672, selection = 0, target = 0, property = 140663054674432, 
+    time = 117}, xcolormap = {type = 0, serial = 27354320, send_event = 125, 
+    display = 0x74, window = 497672, colormap = 0, new = 0, state = 0}, 
+  xclient = {type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    window = 497672, message_type = 0, format = 0, data = {
+      b = "\000*h«î\177\000\000u\000\000\000\000\000\000\000\000s¡\001", s = {
+        10752, -21656, 32750, 0, 117, 0, 0, 0, 29440, 417}, l = {
+        140663054674432, 117, 27357952, 140736289911720, 27357952}}}, 
+  xmapping = {type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    window = 497672, request = 0, first_keycode = 0, count = 0}, xerror = {
+    type = 0, display = 0x1a164d0, resourceid = 125, serial = 116, 
+    error_code = 8 '\b', request_code = 152 '\230', minor_code = 7 '\a'}, 
+  xkeymap = {type = 0, serial = 27354320, send_event = 125, display = 0x74, 
+    window = 497672, 
+    key_vector = '\0' <repeats 17 times>, "*h«î\177\000\000u\000\000\000\000\000\000"}, pad = {0, 27354320, 125, 116, 497672, 0, 0, 140663054674432, 117, 
+    27357952, 140736289911720, 27357952, 27357952, 140736289911640, 27357976, 
+    117, 140736289911648, 140663107045716, 140736289911648, 27357952, 
+    140736289911640, 140663054674432, 115, 27591568}}
+	async = <value optimized out>
+	next = (_XAsyncHandler *) 0x73
+#4  0x00007feeae3a22df in process_responses (dpy=0x1a164d0, 
+    wait_for_first_event=0, current_error=0x7fffb89133a8, current_request=117)
+    at ../../src/xcb_io.c:138
+	req = (PendingRequest *) 0x1a5f7a0
+	reply = (void *) 0x0
+	event = (xcb_generic_event_t *) 0x1a50390
+	error = (xcb_generic_error_t *) 0x0
+	c = (xcb_connection_t *) 0x1a17300
+	__PRETTY_FUNCTION__ = "process_responses"
+#5  0x00007feeae3a268a in _XReply (dpy=0x1a164d0, rep=0x7fffb8913400, extra=0, 
+    discard=0) at ../../src/xcb_io.c:370
+	error = <value optimized out>
+	c = <value optimized out>
+	current = (PendingRequest *) 0x1a5f7a0
+	__PRETTY_FUNCTION__ = "_XReply"
+#6  0x00007feeaa6ec495 in XRRSetCrtcConfig (dpy=0x1a164d0, 
+    resources=0x1a5d380, crtc=130, timestamp=0, x=0, y=0, mode=137, 
+    rotation=1, outputs=0x1a5bb50, noutputs=1) at ../../src/XrrCrtc.c:149
+	info = (XExtDisplayInfo *) 0x1a07970
+	rep = {type = 0 '\0', status = 0 '\0', sequenceNumber = 0, length = 0, 
+  newTimestamp = 27558432, pad1 = 0, pad2 = 16, pad3 = 0, pad4 = 2878049635, 
+  pad5 = 32750}
+#7  0x00007feea67d7831 in gnome_rr_crtc_set_config (crtc=0x1a5c400, x=0, y=0, 
+    mode=0x1a5c1f0, rotation=GNOME_RR_ROTATION_0, 
+    outputs=<value optimized out>, n_outputs=1) at gnome-rr.c:940
+	info = (ScreenInfo *) 0x1a5bdb0
+	output_ids = (GArray *) 0x1a48220
+	i = <value optimized out>
+	__PRETTY_FUNCTION__ = "gnome_rr_crtc_set_config"
+#8  0x00007feea67d9647 in real_assign_crtcs (screen=0x10f01a5bdb0, 
+    outputs=<value optimized out>, assignment=0x7feeab8ced7d)
+    at gnome-rr-config.c:1171
+	gnome_rr_output = (GnomeRROutput *) 0xa
+	modes = <value optimized out>
+	pass = 27492160
+	crtcs = (GnomeRRCrtc **) 0x600
+	output = (GnomeOutputInfo *) 0x50
+#9  0x0000000001a5bc90 in ?? ()
+#10 0x0000000001a5bc10 in ?? ()
+#11 0x0000000001a5c2c0 in ?? ()
+#12 0x0000040000000500 in ?? ()
+#13 0x00007feeae39612e in XSync (dpy=0x7feea67da5ed, discard=0)
+    at ../../src/Sync.c:61
+	rep = {type = 0 '\0', revertTo = 0 '\0', sequenceNumber = 0, 
+  length = 0, focus = 1536, pad1 = 175, pad2 = 2048, pad3 = 320, pad4 = 125, 
+  pad5 = 0}
+#14 0x0000000001a37c40 in ?? ()
+#15 0x0000000001a241e0 in ?? ()
+#16 0x00007feea69e5be5 in gsd_xrandr_manager_start ()
+   from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#17 0x00007feea69e55b7 in ?? ()
+   from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#18 0x0000000000405472 in gnome_settings_plugin_info_activate ()
+#19 0x0000000000404095 in ?? ()
+#20 0x00007feeab8fbcfd in g_slist_foreach () from /usr/lib/libglib-2.0.so.0
+#21 0x0000000000404272 in gnome_settings_manager_start ()
+#22 0x0000000000403e92 in main ()

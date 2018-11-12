@@ -1,0 +1,26 @@
+#0  0x00d9f0b7 in std::_List_node_base::_M_hook(std::_List_node_base*) () from /usr/lib/libstdc++.so.6
+No symbol table info available.
+#1  0x07043da9 in nux::InputArea::OnEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#2  0x07082886 in nux::View::PostProcessEvent2(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x070488e6 in nux::BaseWindow::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0x0710d789 in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x07113dce in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x0711469f in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x001d8c08 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#8  0x001d93d0 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#9  0x001d9a93 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#10 0x0014c865 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0x0806e8bb in CompScreen::eventLoop() ()
+No symbol table info available.
+#12 0x08066ba8 in main ()
+No symbol table info available.

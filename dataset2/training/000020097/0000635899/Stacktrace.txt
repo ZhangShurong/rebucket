@@ -1,0 +1,111 @@
+#0  0x00b13960 in g_logv () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00b13db2 in g_log () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x04387dd7 in gkbd_keyboard_drawing_new_dialog (group=0, 
+    group_name=0x945f958 "United Kingdom") at gkbd-keyboard-drawing.c:2533
+	groupsLevels = {{group = 0, level = 1}, {group = 0, level = 3}, {
+    group = 0, level = 0}, {group = 0, level = 2}}
+	pGroupsLevels = {0x438b500, 0x438b508, 0x438b510, 0x438b518}
+	builder = (GtkBuilder *) 0x944d168
+	kbdraw = (GtkWidget *) 0xb98524
+	component_names = {keymap = 0xb984f4 "", 
+  keycodes = 0x4cf8c0 "gtk-menu-transfer-window", 
+  types = 0x4f <Address 0x4f out of bounds>, compat = 0x93b10b0 "0O9\t\001", 
+  symbols = 0xe673b7 "\201�=�", geometry = 0x95b7c70 "�!;\t\001"}
+	xkl_data = <value optimized out>
+	rect = <value optimized out>
+	error = (GError *) 0x94fb130
+	title = '\0' <repeats 127 times>
+	engine = (XklEngine *) 0x93f7820
+#3  0x06a54c4c in popup_menu_show_layout () at gsd-keyboard-xkb.c:253
+	dialog = <value optimized out>
+	engine = <value optimized out>
+	xkl_state = (XklState *) 0x94562fc
+	group_names = (gchar **) 0x9554f18
+	p = (gpointer) 0x0
+#4  0x0053da1c in g_cclosure_marshal_VOID__VOID ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x0052e4b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x005470e5 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x0054875c in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00548ec2 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x003a9b35 in IA__gtk_widget_activate (widget=0x95b8d68)
+    at /build/buildd/gtk+2.0-2.21.7/gtk/gtkwidget.c:5014
+	__PRETTY_FUNCTION__ = "IA__gtk_widget_activate"
+#10 0x002704a0 in IA__gtk_menu_shell_activate_item (menu_shell=0x94d0328, 
+    menu_item=0x95b8d68, force_deactivate=1)
+    at /build/buildd/gtk+2.0-2.21.7/gtk/gtkmenushell.c:1361
+	slist = <value optimized out>
+	shells = (GSList *) 0x94fa1e0
+	__PRETTY_FUNCTION__ = "IA__gtk_menu_shell_activate_item"
+#11 0x00272343 in gtk_menu_shell_button_release (widget=0x94d0328, 
+    event=0x941f728) at /build/buildd/gtk+2.0-2.21.7/gtk/gtkmenushell.c:788
+	submenu = (GtkWidget *) 0x0
+	menu_item = (GtkWidget *) 0x95b8d68
+	deactivate = <value optimized out>
+#12 0x002650ed in gtk_menu_button_release (widget=0x94d0328, event=0x941f728)
+    at /build/buildd/gtk+2.0-2.21.7/gtk/gtkmenu.c:3011
+	priv = <value optimized out>
+#13 0x0025d898 in _gtk_marshal_BOOLEAN__BOXED (closure=0x93ba7d8, 
+    return_value=0xbfcfad84, n_param_values=2, param_values=0x95126a0, 
+    invocation_hint=0xbfcfad70, marshal_data=0x265000)
+    at /build/buildd/gtk+2.0-2.21.7/gtk/gtkmarshalers.c:86
+	data1 = (gpointer) 0x94d0328
+	data2 = (gpointer) 0x93bc4e8
+	v_return = <value optimized out>
+	__PRETTY_FUNCTION__ = "_gtk_marshal_BOOLEAN__BOXED"
+#14 0x0052cb27 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x0052e4b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00546d36 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x005485db in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x00548ec2 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x003a5736 in gtk_widget_event_internal (widget=<value optimized out>, 
+    event=0x941f728) at /build/buildd/gtk+2.0-2.21.7/gtk/gtkwidget.c:4983
+	signal_num = <value optimized out>
+	return_val = 0
+#20 0x00254cbd in IA__gtk_propagate_event (widget=0x94d0328, event=0x941f728)
+    at /build/buildd/gtk+2.0-2.21.7/gtk/gtkmain.c:2465
+	tmp = (GtkWidget *) 0x94d0328
+	handled_event = <value optimized out>
+	__PRETTY_FUNCTION__ = "IA__gtk_propagate_event"
+#21 0x0025615f in IA__gtk_main_do_event (event=0x941f728)
+    at /build/buildd/gtk+2.0-2.21.7/gtk/gtkmain.c:1665
+	event_widget = (GtkWidget *) 0x95b8d68
+	grab_widget = <value optimized out>
+	window_group = (GtkWindowGroup *) 0x94430b0
+	rewritten_event = (GdkEvent *) 0x0
+	tmp_list = <value optimized out>
+	__PRETTY_FUNCTION__ = "IA__gtk_main_do_event"
+#22 0x0060e43a in gdk_event_dispatch (source=0x93b8ef0, callback=0, 
+    user_data=0x0)
+    at /build/buildd/gtk+2.0-2.21.7/gdk/x11/gdkevents-x11.c:2377
+	display = <value optimized out>
+	event = <value optimized out>
+#23 0x00b09015 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#24 0x00b0ce28 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#25 0x00b0d367 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00256749 in IA__gtk_main ()
+    at /build/buildd/gtk+2.0-2.21.7/gtk/gtkmain.c:1237
+	tmp_list = (GList *) 0x93d534c
+	functions = (GList *) 0x0
+	init = (GtkInitFunction *) 0x93d80a8
+	loop = (GMainLoop *) 0x9417b98
+#27 0x0804b543 in main (argc=1, argv=0xbfcfb304) at main.c:502
+	manager = (GnomeSettingsManager *) 0x93cbb20
+	bus = (DBusGConnection *) 0x93d534c
+	res = <value optimized out>
+	error = (GError *) 0x0

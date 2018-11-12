@@ -1,0 +1,22 @@
+#0  0xb7867424 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0xb6fd6dd1 in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0xb6fda2ae in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0xb6fcf7e8 in __assert_fail () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0xb6e1c850 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0xb6e1d64f in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0xb6e18f06 in XSync () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0xb2a91e0c in gsd_a11y_keyboard_manager_stop () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#8  0xb2a8f4df in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#9  0x0804cdcd in gnome_settings_plugin_info_get_enabled ()
+No symbol table info available.
+#10 0x0804b44c in _start ()
+No symbol table info available.

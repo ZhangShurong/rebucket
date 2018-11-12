@@ -1,0 +1,22 @@
+#0  0x00007fcc322341a4 in vfprintf () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007fcc322e31e1 in __vasprintf_chk () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007fcc326113eb in g_unix_signal_source_new () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x0000000000000010 in ?? ()
+No symbol table info available.
+#4  0x0000000000000010 in ?? ()
+No symbol table info available.
+#5  0x00007fcc325ec70d in g_strdup_printf () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007fcc325ea69d in g_slice_alloc () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x0000000000b7bc20 in ?? ()
+No symbol table info available.
+#8  0x0000000000b0e8b0 in ?? ()
+No symbol table info available.
+#9  0x00007fcc325851c0 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#10 0x0000000000000000 in ?? ()
+No symbol table info available.

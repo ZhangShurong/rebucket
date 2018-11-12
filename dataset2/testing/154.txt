@@ -1,0 +1,37 @@
+#0  0x00007f884edcdc50 in __libc_free (mem=0x7f88500b22e3) at malloc.c:3724
+        ar_ptr = 0x7f884f0cee40
+        p = 0x7f88500b22d3
+#1  0x00007f884318a285 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#2  0x00007f884318a9a9 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#3  0x00007f884f5c8a6e in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007f884f5dede7 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f884f5e02a6 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f884f5e05f8 in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f8842b578c6 in xkl_xkb_process_x_event () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#8  0x00007f8842b53e14 in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#9  0x00007f8843189c93 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#10 0x00007f884eafb9d3 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#11 0x00007f884eafd298 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#12 0x00007f884eafd71e in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#13 0x00007f884f113342 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f884f1172a8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f884f1177b5 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007f88503fb3e7 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#17 0x000000000040429a in main ()
+No symbol table info available.

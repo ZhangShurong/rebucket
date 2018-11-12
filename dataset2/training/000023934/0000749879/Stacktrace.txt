@@ -1,0 +1,61 @@
+#0  closure_invoke_notifiers (closure=0x3000000, return_value=0x0, n_param_values=4, param_values=0x6247f60, invocation_hint=0x7fffa3f301b0) at /build/buildd/glib2.0-2.28.4/./gobject/gclosure.c:289
+        ndata = 0xcc0f0f0fcc0f0f1f
+        i = <value optimized out>
+#1  g_closure_invoke (closure=0x3000000, return_value=0x0, n_param_values=4, param_values=0x6247f60, invocation_hint=0x7fffa3f301b0) at /build/buildd/glib2.0-2.28.4/./gobject/gclosure.c:773
+        marshal = <value optimized out>
+        marshal_data = <value optimized out>
+        in_marshal = 0
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#2  0x00007f7dd64d5019 in signal_emit_unlocked_R (node=<value optimized out>, detail=0, instance=0x1ca9d80, emission_return=0x0, instance_and_params=0x6247f60) at /build/buildd/glib2.0-2.28.4/./gobject/gsignal.c:3252
+        tmp = <value optimized out>
+        handler = 0x7f7dcc010130
+        accumulator = 0x0
+        emission = {next = 0x0, instance = 0x1ca9d80, ihint = {signal_id = 198, detail = 0, run_type = G_SIGNAL_RUN_FIRST}, state = EMISSION_RUN, chain_type = 4}
+        class_closure = 0x2636f60
+        handler_list = 0x7f7dcc010130
+        return_accu = 0x0
+        accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 198
+        max_sequential_handler_number = 1776
+        return_value_altered = 0
+#3  0x00007f7dd64de258 in g_signal_emit_valist (instance=<value optimized out>, signal_id=<value optimized out>, detail=<value optimized out>, var_args=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./gobject/gsignal.c:2983
+        instance_and_params = 0x6247f60
+        signal_return_type = 4
+        param_values = 0x6247f78
+        node = 0x25abe20
+        i = <value optimized out>
+        n_params = 3
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#4  0x00007f7dd64de41f in g_signal_emit (instance=<value optimized out>, signal_id=<value optimized out>, detail=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./gobject/gsignal.c:3040
+        var_args = {{gp_offset = 48, fp_offset = 48, overflow_arg_area = 0x7fffa3f304a0, reg_save_area = 0x7fffa3f303e0}}
+#5  0x00007f7dd6c0e832 in emit_signal_instance_in_idle_cb (data=0x7f7dcc155b10) at /build/buildd/glib2.0-2.28.4/./gio/gdbusconnection.c:3400
+        signal_instance = 0x7f7dcc155b10
+        parameters = 0x6c73040
+        has_subscription = 1
+#6  0x00007f7dd5bf6bcd in g_main_dispatch (context=0x1c9edb0) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:2440
+        dispatch = 0x7f7dd5bf24e0 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0x7f7dcc155b10
+        callback = 0x7f7dd6c0e7b0 <emit_signal_instance_in_idle_cb>
+        cb_funcs = 0x7f7dd5ea1630
+        cb_data = 0x7f7dcc073400
+        current_source_link = {data = 0x7f7dcc0b1750, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x7f7dcc0b1750
+        current = 0x1c9fe90
+        i = <value optimized out>
+#7  g_main_context_dispatch (context=0x1c9edb0) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3013
+No locals.
+#8  0x00007f7dd5bf73a8 in g_main_context_iterate (context=0x1c9edb0, block=<value optimized out>, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3091
+        max_priority = 2147483647
+        timeout = 3192
+        some_ready = 1
+        nfds = 15
+        allocated_nfds = <value optimized out>
+        fds = <value optimized out>
+#9  0x00007f7dd5bf79f2 in g_main_loop_run (loop=0x1cd4d40) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#10 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#11 0x0000000000423180 in main ()
+No symbol table info available.

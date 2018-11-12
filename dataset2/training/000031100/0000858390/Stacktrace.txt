@@ -1,0 +1,110 @@
+#0  0x010722ac in dconf_engine_refresh_user (engine=0x825e160) at ../engine/dconf-engine.c:146
+        __PRETTY_FUNCTION__ = "dconf_engine_refresh_user"
+#1  0x01072723 in dconf_engine_refresh (engine=0x825e160) at ../engine/dconf-engine.c:197
+No locals.
+#2  dconf_engine_read_internal (engine=0x825e160, key=0x82965d0 "/org/gnome/nautilus/preferences/enable-delete", user=1, system=1) at ../engine/dconf-engine.c:382
+        value = 0x0
+        lowest = <optimized out>
+        limit = <optimized out>
+        i = <optimized out>
+#3  0x01075410 in dconf_settings_backend_read (key=0x82965d0 "/org/gnome/nautilus/preferences/enable-delete", backend=0x825cce0, expected_type=<optimized out>, default_value=<optimized out>) at dconfsettingsbackend.c:452
+No locals.
+#4  dconf_settings_backend_read (backend=0x825cce0, key=0x82965d0 "/org/gnome/nautilus/preferences/enable-delete", expected_type=0x1040980, default_value=0) at dconfsettingsbackend.c:438
+        dcsb = 0x825cce0
+#5  0x0079b62e in g_settings_backend_read (backend=0x825cce0, key=0x82965d0 "/org/gnome/nautilus/preferences/enable-delete", expected_type=0x1040980, default_value=0) at /build/buildd/glib2.0-2.29.92/./gio/gsettingsbackend.c:732
+        value = <optimized out>
+#6  0x0079e4d4 in g_settings_read_from_backend (info=0xbf8e96c0) at /build/buildd/glib2.0-2.29.92/./gio/gsettings.c:1110
+        value = <optimized out>
+        fixup = <optimized out>
+        path = 0x82965d0 "/org/gnome/nautilus/preferences/enable-delete"
+#7  0x0079fc01 in g_settings_get_value (settings=0x82f84c8, key=0x8163332 "enable-delete") at /build/buildd/glib2.0-2.29.92/./gio/gsettings.c:1293
+        info = {settings = 0x82f84c8, key = 0x84ee8b1 "enable-delete", schema = 0x0, is_flags = 0, is_enum = 0, strinfo = 0x0, strinfo_length = 0, unparsed = 0x0, lc_char = 0 '\000', type = 0x1040980, minimum = 0x0, maximum = 0x0, default_value = 0x86b4868}
+        value = <optimized out>
+        __PRETTY_FUNCTION__ = "g_settings_get_value"
+#8  0x007a0aae in g_settings_get_boolean (settings=0x82f84c8, key=0x8163332 "enable-delete") at /build/buildd/glib2.0-2.29.92/./gio/gsettings.c:1986
+        value = <optimized out>
+        result = <optimized out>
+#9  0x080be183 in real_update_menus (view=0x84e6288) at nautilus-view.c:8443
+        selection = 0x0
+        l = <optimized out>
+        selection_count = 0
+        tip = 0x8165664 "Move each selected item to the Trash"
+        label = 0x815f1f1 "Mo_ve to Trash"
+        label_with_underscore = <optimized out>
+        selection_contains_special_link = 135681636
+        selection_contains_desktop_or_home_dir = 0
+        can_create_files = 1
+        can_delete_files = 0
+        can_copy_files = 0
+        can_link_files = 0
+        can_duplicate_files = 0
+        show_separate_delete_command = <optimized out>
+        show_open_alternate = <optimized out>
+        show_open_in_new_tab = <optimized out>
+        can_open = 0
+        show_app = <optimized out>
+        show_save_search = <optimized out>
+        save_search_sensitive = <optimized out>
+        show_save_search_as = <optimized out>
+        show_desktop_target = <optimized out>
+        action = <optimized out>
+        app = <optimized out>
+        app_icon = <optimized out>
+        menuitem = <optimized out>
+        next_pane_is_writable = -1215758336
+        show_properties = <optimized out>
+#10 0x0807801d in nautilus_icon_view_update_menus (view=0x84e6288) at nautilus-icon-view.c:1518
+        icon_view = 0x84e6288
+        selection_count = <optimized out>
+        action = <optimized out>
+        icon_container = <optimized out>
+        editable = <optimized out>
+#11 0x08071107 in real_update_menus (view=0x84e6288) at nautilus-desktop-icon-view.c:770
+        desktop_view = <optimized out>
+        label = <optimized out>
+        action = <optimized out>
+        __PRETTY_FUNCTION__ = "real_update_menus"
+#12 0x080b5f26 in nautilus_view_update_menus (view=0x84e6288) at nautilus-view.c:813
+No locals.
+#13 nautilus_view_update_menus (view=0x84e6288) at nautilus-view.c:804
+No locals.
+#14 0x080b5f85 in update_menus_timeout_callback (data=0x84e6288) at nautilus-view.c:3504
+        view = 0x84e6288
+#15 0x00faa9bf in g_timeout_dispatch (source=0x8710810, callback=0x80b5f40 <update_menus_timeout_callback>, user_data=0x84e6288) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:3907
+        timeout_source = 0x8710810
+        again = <optimized out>
+#16 0x00fa92ef in g_main_dispatch (context=0x8288630) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:2441
+        dispatch = 0xfaa990 <g_timeout_dispatch>
+        was_in_call = 0
+        user_data = 0x84e6288
+        callback = 0x80b5f40 <update_menus_timeout_callback>
+        cb_funcs = 0x105e35c
+        cb_data = 0x86e24a8
+        current_source_link = {data = 0x8710810, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x8710810
+        current = 0x82f8a98
+        i = <optimized out>
+#17 g_main_context_dispatch (context=0x8288630) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:3011
+No locals.
+#18 0x00fa9a20 in g_main_context_iterate (context=0x8288630, block=16483312, dispatch=1, self=<optimized out>) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:3089
+        max_priority = 2147483647
+        timeout = 99
+        some_ready = 1
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+        fds = 0x853a588
+#19 0x00faa02b in g_main_loop_run (loop=0x825c1f8) at /build/buildd/glib2.0-2.29.92/./glib/gmain.c:3297
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#20 0x00c115f5 in gtk_main () at /build/buildd/gtk+3.0-3.1.92/./gtk/gtkmain.c:1367
+        loop = 0x825c1f8
+#21 0x00b0f654 in gtk_application_run_mainloop (application=0x825cc00) at /build/buildd/gtk+3.0-3.1.92/./gtk/gtkapplication.c:115
+No locals.
+#22 0x00796adc in g_application_run (application=0x825cc00, argc=2, argv=0xbf8e9b04) at /build/buildd/glib2.0-2.29.92/./gio/gapplication.c:1323
+        arguments = 0x825c1f8
+        status = 0
+        i = <optimized out>
+        __PRETTY_FUNCTION__ = "g_application_run"
+#23 0x08067774 in main (argc=2, argv=0xbf8e9b04) at nautilus-main.c:102
+        retval = <optimized out>
+        application = 0x825cc00

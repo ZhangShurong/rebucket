@@ -1,0 +1,36 @@
+#0  0xb7761424 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0xb6d15c8f in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0xb6d192b5 in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0xb6d4facc in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0xb6d5a892 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0xb6d5b532 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0xb6d5e61d in free () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0xb6f2e51f in operator delete(void*) () from /usr/lib/i386-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#8  0xb6f1599b in std::string::_Rep::_M_destroy(std::allocator<char> const&) () from /usr/lib/i386-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#9  0xb409efdb in unity::IconLoader::Impl::Iteration() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#10 0xb409f0ab in unity::IconLoader::Impl::Loop(unity::IconLoader::Impl*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0xb6fd8150 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0xb6fda6ea in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0xb6fdaaf5 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0xb6fdaf3b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0xb70d3063 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#16 0x08072497 in CompScreen::eventLoop() ()
+No symbol table info available.
+#17 0x08065634 in main ()
+No symbol table info available.

@@ -1,0 +1,93 @@
+#0  0x033fcf59 in getInstance (base=<optimized out>) at /usr/include/compiz/core/pluginclasshandler.h:153
+No locals.
+#1  PluginClassHandler<UnityWindow, CompWindow, 0>::get (base=0x9cf23d0) at /usr/include/compiz/core/pluginclasshandler.h:185
+No locals.
+#2  0x033fd899 in compiz::CompizMinimizedWindowHandler<UnityScreen, UnityWindow>::minimize (this=0x9996e50) at /build/buildd/unity-4.28.0/plugins/unityshell/src/compizminimizedwindowhandler.h:184
+        mh = {px = 0x9ec76c0, pn = {pi_ = 0xa226768}}
+        wmState = 325
+        data = {3, 0}
+        transients = {<std::_Vector_base<unsigned int, std::allocator<unsigned int> >> = {_M_impl = {<std::allocator<unsigned int>> = {<__gnu_cxx::new_allocator<unsigned int>> = {<No data fields>}, <No data fields>}, _M_start = 0x0, _M_finish = 0x0, _M_end_of_storage = 0x0}}, <No data fields>}
+        compizMinimizeHandler = {px = 0x9996e50, pn = {pi_ = 0x9d62948}}
+#3  0x033eda87 in UnityWindow::minimize (this=0x9d027f0) at /build/buildd/unity-4.28.0/plugins/unityshell/src/unityshell.cpp:1714
+No locals.
+#4  0x0808366b in CompWindow::minimize (this=0x9ef4478) at /build/buildd/compiz-0.9.6+bzr20110929/src/window.cpp:4856
+        curr = 0
+#5  0x0338d695 in PluginAdapter::Minimize (this=0xb66006c8, xid=46137412) at /build/buildd/unity-4.28.0/plugins/unityshell/src/PluginAdapter.cpp:524
+        win = 46137412
+        window = <optimized out>
+#6  0x03373526 in OnMinimizeClicked (this=0x9684600) at /build/buildd/unity-4.28.0/plugins/unityshell/src/PanelMenuView.cpp:1206
+        window = 0x9ceef70
+#7  unity::PanelMenuView::OnMinimizeClicked (this=0x9684600) at /build/buildd/unity-4.28.0/plugins/unityshell/src/PanelMenuView.cpp:1192
+No locals.
+#8  0x033793f2 in operator() (this=0x96e2704) at /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h:1787
+No locals.
+#9  operator() (this=0x96e2700) at /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:251
+No locals.
+#10 sigc::internal::slot_call0<sigc::bound_mem_functor0<void, unity::PanelMenuView>, void>::call_it (rep=0x96e26e8) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:103
+        typed_rep = 0x96e26e8
+#11 0x033d45f9 in emit (impl=<optimized out>) at /usr/include/sigc++-2.0/sigc++/signal.h:776
+        it = {_M_node = 0x96e26d0}
+        exec = {sig_ = 0x96e26b8}
+        slots = {slots_ = @0x96e26c0, placeholder = {_M_node = 0x9d4e588}}
+#12 emit (this=<optimized out>) at /usr/include/sigc++-2.0/sigc++/signal.h:2673
+No locals.
+#13 unity::WindowButtons::OnMinimizeClicked (this=0x96d46d8, view=0x96d8200) at /build/buildd/unity-4.28.0/plugins/unityshell/src/WindowButtons.cpp:364
+No locals.
+#14 0x033d5e2d in operator() (this=0x96db09c, _A_a1=<optimized out>) at /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h:1851
+No locals.
+#15 operator()<nux::AbstractButton* const&> (this=0x96db098, _A_arg1=<optimized out>) at /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:84
+No locals.
+#16 sigc::internal::slot_call1<sigc::bound_mem_functor1<void, unity::WindowButtons, nux::View*>, void, nux::AbstractButton*>::call_it (rep=0x96db080, a_1=@0xbfa549f4) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:137
+        typed_rep = 0x96db080
+#17 0x034f2671 in emit (_A_a1=@0xbfa549f4, impl=<optimized out>) at /usr/include/sigc++-2.0/sigc++/signal.h:1010
+        it = {_M_node = 0x96db068}
+        exec = {sig_ = 0x96db050}
+        slots = {slots_ = @0x96db058, placeholder = {_M_node = 0x9ebb4b0}}
+#18 emit (_A_a1=@0xbfa549f4, this=<optimized out>) at /usr/include/sigc++-2.0/sigc++/signal.h:2781
+No locals.
+#19 RecvClick (this=0x96d8200, x=<optimized out>, y=<optimized out>, button_flags=<optimized out>, key_flags=<optimized out>) at ./AbstractButton.cpp:80
+No locals.
+#20 nux::AbstractButton::RecvClick (this=0x96d8200, x=12, y=9, button_flags=4096, key_flags=0) at ./AbstractButton.cpp:61
+No locals.
+#21 0x034f2c3f in operator() (this=0x96da564, _A_a1=<optimized out>, _A_a2=<optimized out>, _A_a3=<optimized out>, _A_a4=<optimized out>) at /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h:2055
+No locals.
+#22 operator()<const int&, const int&, const long unsigned int&, const long unsigned int&> (this=0x96da560, _A_arg1=<optimized out>, _A_arg2=<optimized out>, _A_arg3=<optimized out>, _A_arg4=<optimized out>) at /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:144
+No locals.
+#23 sigc::internal::slot_call4<sigc::bound_mem_functor4<void, nux::AbstractButton, int, int, unsigned long, unsigned long>, void, int, int, unsigned long, unsigned long>::call_it (rep=0x96da548, a_1=@0xbfa54ad4, a_2=@0xbfa54ad8, a_3=@0xbfa54adc, a_4=@0xbfa54ae0) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:251
+        typed_rep = 0x96da548
+#24 0x034fa26d in emit (_A_a4=@0xbfa54ae0, _A_a3=@0xbfa54adc, _A_a2=@0xbfa54ad8, _A_a1=@0xbfa54ad4, impl=<optimized out>) at /usr/include/sigc++-2.0/sigc++/signal.h:1757
+        it = <optimized out>
+        exec = {sig_ = 0x96da518}
+        slots = {slots_ = @0x96da520, placeholder = {_M_node = 0x9987e28}}
+#25 emit (_A_a4=@0xbfa54ae0, _A_a3=@0xbfa54adc, _A_a2=@0xbfa54ad8, _A_a1=@0xbfa54ad4, this=<optimized out>) at /usr/include/sigc++-2.0/sigc++/signal.h:3117
+No locals.
+#26 nux::InputArea::EmitMouseClickSignal (this=0x96d8200, x=12, y=9, mouse_button_state=4096, special_keys_state=0) at ./InputArea.cpp:391
+No locals.
+#27 0x035c29d2 in nux::WindowCompositor::MouseEventCycle (this=0x9576fb0, event=...) at ./WindowCompositor.cpp:594
+        mouse_owner_geo = {x = 25, y = 2, width = 19, height = 19}
+        mouse_owner_y = 9
+        hit_view = 0x96d8200
+        hit_base_window = 0x96edc30
+        mouse_owner_x = 12
+#28 0x035c3e1f in nux::WindowCompositor::ProcessEvent (this=0x9576fb0, event=...) at ./WindowCompositor.cpp:1024
+        menu_active = <optimized out>
+#29 0x035c8bf6 in nux::WindowThread::ExecutionLoop (this=0xb6600b50, timer_id=0) at ./WindowThread.cpp:1003
+        w = 1440
+        h = 900
+        event = {VirtualKeycodeState = {0 <repeats 256 times>}, width = 11010816, height = 11338496, ascii_code = 0, virtual_code = 0, e_x = 37, e_y = 11, e_x_root = 0, e_y_root = 0, e_dx = 0, e_dy = 0, e_clicks = 0, e_is_click = 0, e_x11_timestamp = 0, e_x11_window = 27262980, e_x11_state = 0, e_x11_keycode = 0, e_keysym = 0, e_wheeldelta = 0, e_text = '\000' <repeats 15 times>, e_key_modifiers = 0, e_mouse_state = 4096, e_key_repeat_count = 0, e_length = 5374976, e_event = nux::NUX_MOUSE_RELEASED}
+        Application = 0xb6600b50
+#30 0x035c915f in nux::nux_event_dispatch (source=0x9355140, callback=0, user_data=0xb6600b50) at ./WindowThread.cpp:126
+        window_thread = 0xb6600b50
+        return_code = <optimized out>
+#31 0x006e825f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#32 0x006e8990 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#33 0x006e8f9b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#34 0x00425753 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#35 0x08072497 in CompScreen::eventLoop (this=0x90b2430) at /build/buildd/compiz-0.9.6+bzr20110929/src/screen.cpp:129
+No locals.
+#36 0x08065634 in main (argc=1, argv=0xbfa55344) at /build/buildd/compiz-0.9.6+bzr20110929/src/main.cpp:306
+        manager = {plugins = {<std::_List_base<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {_M_impl = {<std::allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<__gnu_cxx::new_allocator<std::_List_node<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x90b2408, _M_prev = 0x90b2408}}}, <No data fields>}, disableSm = false, clientId = 0x9179ba8 "10ed46d6424ac6864f132691475630027400000036640036", displayName = 0x0}

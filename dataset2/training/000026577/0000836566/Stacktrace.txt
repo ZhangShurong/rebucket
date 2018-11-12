@@ -1,0 +1,28 @@
+#0  0x00007f4ab49434e9 in g_variant_unref () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f4ab4eb2a18 in g_settings_get_boolean () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x0000000000404fa1 in ?? ()
+No symbol table info available.
+#3  0x00007f4ab4908efd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f4ab49096f8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f4ab4909c32 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00000000004042c5 in ?? ()
+No symbol table info available.
+#7  0x00007f4ab3ff130d in __libc_start_main () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#8  0x000000000040432d in ?? ()
+No symbol table info available.
+#9  0x00007fff4658ad68 in ?? ()
+No symbol table info available.
+#10 0x000000000000001c in ?? ()
+No symbol table info available.
+#11 0x0000000000000001 in ?? ()
+No symbol table info available.
+#12 0x00007fff4658bab0 in ?? ()
+No symbol table info available.
+#13 0x0000000000000000 in ?? ()
+No symbol table info available.

@@ -1,0 +1,30 @@
+#0  0x02c5eb91 in ?? () from /usr/lib/i386-linux-gnu/dri/i965_dri.so
+No symbol table info available.
+#1  0x02c5e673 in ?? () from /usr/lib/i386-linux-gnu/dri/i965_dri.so
+No symbol table info available.
+#2  0x02c4751f in brw_upload_state () from /usr/lib/i386-linux-gnu/dri/i965_dri.so
+No symbol table info available.
+#3  0x02c327e7 in brw_draw_prims () from /usr/lib/i386-linux-gnu/dri/i965_dri.so
+No symbol table info available.
+#4  0x07b492f0 in vbo_exec_vtx_flush () from /usr/lib/i386-linux-gnu/dri/libdricore.so
+No symbol table info available.
+#5  0x07b3e6f7 in ?? () from /usr/lib/i386-linux-gnu/dri/libdricore.so
+No symbol table info available.
+#6  0x07b46b0f in vbo_exec_FlushVertices () from /usr/lib/i386-linux-gnu/dri/libdricore.so
+No symbol table info available.
+#7  0x07a93007 in _mesa_set_enable () from /usr/lib/i386-linux-gnu/dri/libdricore.so
+No symbol table info available.
+#8  0x07a93458 in _mesa_Disable () from /usr/lib/i386-linux-gnu/dri/libdricore.so
+No symbol table info available.
+#9  0x0257fcf4 in ?? () from /usr/lib/vlc/plugins/video_output/libxcb_glx_plugin.so
+No symbol table info available.
+#10 0x0257bd0e in ?? () from /usr/lib/vlc/plugins/video_output/libxcb_glx_plugin.so
+No symbol table info available.
+#11 0x006a11ab in ?? () from /usr/lib/libvlccore.so.5
+No symbol table info available.
+#12 0x006a2d7c in ?? () from /usr/lib/libvlccore.so.5
+No symbol table info available.
+#13 0x003c8d4c in start_thread () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#14 0x004c8ace in clone () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.

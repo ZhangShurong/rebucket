@@ -1,0 +1,35 @@
+#0  0x00ceb1c3 in g_variant_unref () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x007a0f52 in g_settings_get_boolean () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x080f8de9 in ?? ()
+No symbol table info available.
+#3  0x080f8ebb in ?? ()
+No symbol table info available.
+#4  0x08068ae0 in ?? ()
+No symbol table info available.
+#5  0x00a7e14c in g_cclosure_marshal_VOID__VOID () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00a7b68d in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00a7cc3c in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00a8f838 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00a98787 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00a988f3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x00796e86 in g_application_register () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#12 0x0806872d in ?? ()
+No symbol table info available.
+#13 0x0079746d in g_application_run () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#14 0x08067914 in ?? ()
+No symbol table info available.
+#15 0x014ce113 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#16 0x0806794d in ?? ()
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

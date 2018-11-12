@@ -1,0 +1,21 @@
+#0  0xb74aa6ff in g_logv () from /usr/lib/libglib-2.0.so.0
+#1  0xb74aaa76 in g_log () from /usr/lib/libglib-2.0.so.0
+#2  0xb7b235a4 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#3  0xb787aec9 in _XError () from /usr/lib/libX11.so.6
+#4  0xb7882fb8 in ?? () from /usr/lib/libX11.so.6
+#5  0xb7883362 in _XReply () from /usr/lib/libX11.so.6
+#6  0xb72c3c38 in XRRSetCrtcConfig () from /usr/lib/libXrandr.so.2
+#7  0xb6cc9c8b in gnome_rr_crtc_set_config ()
+   from /usr/lib/libgnome-desktop-2.so.7
+#8  0xb6ccbeeb in ?? () from /usr/lib/libgnome-desktop-2.so.7
+#9  0xb7492366 in g_hash_table_foreach () from /usr/lib/libglib-2.0.so.0
+#10 0xb6ccd08f in gnome_rr_config_apply_stored ()
+   from /usr/lib/libgnome-desktop-2.so.7
+#11 0xb6d12c7c in gsd_xrandr_manager_start ()
+   from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#12 0xb6d11b3f in ?? () from /usr/lib/gnome-settings-daemon-2.0/libxrandr.so
+#13 0x0804cbbf in gnome_settings_plugin_info_activate ()
+#14 0x0804b5be in ?? ()
+#15 0xb74c0227 in g_slist_foreach () from /usr/lib/libglib-2.0.so.0
+#16 0x0804b7e5 in gnome_settings_manager_start ()
+#17 0x0804b35f in main ()

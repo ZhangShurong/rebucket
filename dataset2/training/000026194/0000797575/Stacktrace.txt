@@ -1,0 +1,176 @@
+#0  0x0023f429 in gtk_icon_source_set_pixbuf (source=0x93aa698, pixbuf=0x92a2318) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkiconfactory.c:2187
+        __inst = 0x92a2318
+        __t = 153767968
+        __r = <value optimized out>
+        _g_boolean_var_ = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_icon_source_set_pixbuf"
+#1  0x0025703b in ensure_stated_icon_from_info (image=<value optimized out>, info=0x0) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1528
+        source = 0x93aa698
+        rendered = <value optimized out>
+        priv = 0x92a2318
+        context = 0xb5c04798
+        destination = 0x92a2318
+        symbolic = 0
+#2  0x002571dc in ensure_pixbuf_for_icon_name (image=0x92a22a0, state=<value optimized out>) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1584
+        priv = 0x92a2318
+        screen = <value optimized out>
+        icon_theme = <value optimized out>
+        width = 48
+        height = 48
+        info = 0x0
+        flags = GTK_ICON_LOOKUP_USE_BUILTIN
+        __PRETTY_FUNCTION__ = "ensure_pixbuf_for_icon_name"
+#3  0x002574bb in gtk_image_calc_size (image=0x92a22a0) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1916
+        widget = 0x92a22a0
+        priv = 0x92a2318
+        pixbuf = 0x0
+        context = 0xb5c04798
+        state = GTK_STATE_FLAG_NORMAL
+#4  0x002577c3 in gtk_image_get_preferred_height (widget=0x92a22a0, minimum=0xbfc06b50, natural=0xbfc06b54) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1972
+        image = <value optimized out>
+        priv = 0x92a2318
+#5  0x0030328e in compute_size_for_orientation (widget=0x92a22a0, orientation=GTK_SIZE_GROUP_VERTICAL, for_size=-1, minimum_size=0xbfc06ba8, natural_size=0xbfc06bac) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:383
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#6  0x003f6fe8 in gtk_window_get_preferred_height (widget=0x9411000, minimum_size=0xbfc06c20, natural_size=0xbfc06c24) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:6258
+        child_min = <value optimized out>
+        child_nat = <value optimized out>
+        window = 0x9411000
+        child = 0x92a22a0
+        border_width = <value optimized out>
+#7  0x0030328e in compute_size_for_orientation (widget=0x9411000, orientation=GTK_SIZE_GROUP_VERTICAL, for_size=-1, minimum_size=0xbfc06c78, natural_size=0xbfc06c7c) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:383
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#8  0x00303bd8 in gtk_widget_get_preferred_size (widget=0x9411000, minimum_size=0xbfc06d54, natural_size=0x0) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:703
+        min_width = <value optimized out>
+        nat_width = <value optimized out>
+        min_height = <value optimized out>
+        nat_height = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_widget_get_preferred_size"
+#9  0x003f4fab in gtk_window_compute_hints (window=0x9411000, request=0xbfc06e84, geometry=0xbfc06e40, flags=0xbfc06ea4) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:7241
+        widget = 0x9411000
+        extra_width = 0
+        extra_height = 0
+        geometry_info = <value optimized out>
+        priv = 0x9411088
+        requisition = {width = 0, height = -1077907984}
+#10 gtk_window_compute_configure_request (window=0x9411000, request=0xbfc06e84, geometry=0xbfc06e40, flags=0xbfc06ea4) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:6563
+        priv = 0x9411088
+        new_geometry = {min_width = -1077908048, min_height = 1151184, max_width = -1077908060, max_height = 9976436, base_width = 0, base_height = 0, width_inc = 5, height_inc = 0, min_aspect = -2.2533755117883264e-41, max_aspect = 2.7252632369283512e-306, win_gravity = 9274304}
+        new_flags = <value optimized out>
+        w = <value optimized out>
+        h = <value optimized out>
+        pos = <value optimized out>
+        parent_widget = <value optimized out>
+        info = <value optimized out>
+        screen = 0x92a0050
+        x = <value optimized out>
+        y = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_window_compute_configure_request"
+#11 0x003fc877 in gtk_window_move_resize (container=0x9411000) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:6794
+        new_flags = <value optimized out>
+        priv = 0x9411088
+        allocation = {x = 0, y = 153915760, width = 12920404, height = 154810016}
+        widget = 0x9411000
+        info = 0x941d650
+        new_geometry = {min_width = 154810036, min_height = 153924312, max_width = 155258880, max_height = 12947940, base_width = 153924312, base_height = 72, width_inc = 153690384, height_inc = 5849076, min_aspect = 5.6182707528755707e-307, max_aspect = 6.5775333803688191e-308, win_gravity = 3217059812}
+        new_request = {x = 153694616, y = 1064, width = 12921394, height = 12918166}
+        configure_request_pos_changed = 0
+        hints_changed = <value optimized out>
+        container = 0x9411000
+        gdk_window = 0x92a2348
+        configure_request_size_changed = 0
+        saved_last_info = {geometry = {min_width = 155258880, min_height = 6036028, max_width = 153628720, max_height = 5079666, base_width = 0, base_height = 12922080, width_inc = 153924312, height_inc = 6035990, min_aspect = 8.7792101159844002e-308, max_aspect = 5.2400163461415113e-306, win_gravity = 9274304}, flags = 13037556, configure_request = {x = 154810016, y = -1077907484, width = 0, height = 13037556}}
+#12 gtk_window_check_resize (container=0x9411000) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:6032
+No locals.
+#13 gtk_window_check_resize (container=0x9411000) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:6025
+No locals.
+#14 0x004294a8 in gtk_plug_check_resize (container=0x9411000) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkplug.c:1433
+No locals.
+#15 gtk_plug_check_resize (container=0x9411000) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkplug.c:1430
+No locals.
+#16 0x00c480bc in g_cclosure_marshal_VOID__VOID (closure=0x92ae608, return_value=0x0, n_param_values=1, param_values=0x9365120, invocation_hint=0xbfc07040, marshal_data=0x429430) at /build/buildd/glib2.0-2.29.8/./gobject/gmarshal.c:79
+        callback = 0x429430 <gtk_plug_check_resize>
+        cc = 0x92ae608
+        data1 = 0x9411000
+        data2 = <value optimized out>
+        __PRETTY_FUNCTION__ = "g_cclosure_marshal_VOID__VOID"
+#17 0x00c2a36d in g_type_class_meta_marshal (closure=0x92ae608, return_value=0x0, n_param_values=1, param_values=0x9365120, invocation_hint=0xbfc07040, marshal_data=0x1a4) at /build/buildd/glib2.0-2.29.8/./gobject/gclosure.c:882
+        class = <value optimized out>
+        callback = <value optimized out>
+        offset = 420
+#18 0x00c2b91c in g_closure_invoke (closure=0x92ae608, return_value=0x0, n_param_values=1, param_values=0x9365120, invocation_hint=0xbfc07040) at /build/buildd/glib2.0-2.29.8/./gobject/gclosure.c:771
+        marshal = 0xc2a310 <g_type_class_meta_marshal>
+        marshal_data = 0x1a4
+        in_marshal = 0
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#19 0x00c3e8c8 in signal_emit_unlocked_R (node=0x92ae638, detail=0, instance=0x9411000, emission_return=0x0, instance_and_params=0x9365120) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3294
+        accumulator = 0x0
+        emission = {next = 0x0, instance = 0x9411000, ihint = {signal_id = 88, detail = 0, run_type = G_SIGNAL_RUN_LAST}, state = EMISSION_RUN, chain_type = 155321296}
+        class_closure = 0x92ae608
+        hlist = 0x93a57f8
+        handler_list = 0x0
+        return_accu = 0x0
+        accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 88
+        max_sequential_handler_number = 633
+        return_value_altered = 0
+#20 0x00c4773f in g_signal_emit_valist (instance=0x9411000, signal_id=88, detail=0, var_args=0xbfc071ec "\364?Y") at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:2987
+        instance_and_params = 0x9365120
+        signal_return_type = 4
+        param_values = 0x9365134
+        node = 0x92ae638
+        i = <value optimized out>
+        n_params = 0
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#21 0x00c478b3 in g_signal_emit (instance=0x9411000, signal_id=88, detail=0) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3044
+        var_args = 0xbfc071ec "\364?Y"
+#22 0x001d83da in gtk_container_check_resize (container=0x9411000) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkcontainer.c:1787
+No locals.
+#23 0x001d879f in gtk_container_idle_sizer (data=0x0) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkcontainer.c:1677
+        slist = 0xb5c1e7e0
+        widget = 0x9411000
+#24 0x005b8c2e in gdk_threads_dispatch (data=0x9309fc0) at /build/buildd/gtk+3.0-3.1.6/./gdk/gdk.c:754
+        dispatch = 0x9309fc0
+        ret = 0
+#25 0x006c7230 in g_idle_dispatch (source=0x941c300, callback=0x5b8bf0 <gdk_threads_dispatch>, user_data=0x9309fc0) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:4844
+No locals.
+#26 0x006cb0cf in g_main_dispatch (context=0x92a3b78) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:2477
+        dispatch = 0x6c7210 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0x9309fc0
+        callback = 0x5b8bf0 <gdk_threads_dispatch>
+        cb_funcs = 0x77935c
+        cb_data = 0x9373ad0
+        current_source_link = {data = 0x941c300, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x941c300
+        current = 0x92e0690
+        i = <value optimized out>
+#27 g_main_context_dispatch (context=0x92a3b78) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3050
+No locals.
+#28 0x006cb800 in g_main_context_iterate (context=0x92a3b78, block=7185408, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3128
+        max_priority = 110
+        timeout = 0
+        some_ready = 1
+        nfds = <value optimized out>
+        allocated_nfds = <value optimized out>
+        fds = 0x935e238
+#29 0x006cbe0b in g_main_loop_run (loop=0x932bbb0) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3336
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#30 0x00279485 in gtk_main () at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkmain.c:1358
+        loop = 0x932bbb0
+#31 0x0804aa01 in main ()
+No symbol table info available.

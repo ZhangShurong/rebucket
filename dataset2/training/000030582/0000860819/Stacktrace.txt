@@ -1,0 +1,9 @@
+#0  0x007cb224 in ?? ()
+No symbol table info available.
+#1  0x007c670a in ?? ()
+No symbol table info available.
+#2  0x00bf3113 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x007c70b5 in ?? ()
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

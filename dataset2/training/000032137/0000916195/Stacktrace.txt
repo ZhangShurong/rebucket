@@ -1,0 +1,44 @@
+#0  0x00007f8db4328a2b in g_logv () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f8db4328c02 in g_log () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f8db4db76c3 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#3  0x00007f8db4dc4427 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#4  0x00007f8da1d6f441 in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#5  0x00007f8db3a2707f in _XError () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007f8db3a23e31 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007f8db3a24d87 in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007f8db3a1a73d in XQueryTree () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x00007f8da1d761be in xkl_engine_query_tree () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#10 0x00007f8da1d6e871 in xkl_engine_process_focus_in_evt () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#11 0x00007f8da1d6f2ab in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#12 0x00007f8da23a7123 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#13 0x00007f8db4dc0981 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#14 0x00007f8db4dc0b10 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#15 0x00007f8db4d93481 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#16 0x00007f8db4dc0802 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#17 0x00007f8db43216ca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f8db4321a90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f8db4321e8a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007f8db51733fd in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#21 0x0000000000403bd1 in main ()
+No symbol table info available.

@@ -1,0 +1,12 @@
+#0  0x08065308 in resizeWindow ()
+#1  0x08067ccc in handleSyncAlarm ()
+#2  0x080634ab in ?? ()
+#3  0x08ae9dc8 in ?? ()
+#4  0xb7c45750 in ?? () from /usr/lib/libGL.so.1
+#5  0xbf9320a8 in ?? ()
+#6  0x0805479f in ?? ()
+#7  0x08ae9dc8 in ?? ()
+#8  0x00000003 in ?? ()
+#9  0x00000010 in ?? ()
+#10 0xbf932188 in ?? ()
+#11 0x00000000 in ?? ()

@@ -1,0 +1,48 @@
+#0  0x00007fdf7065ba2b in g_logv () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007fdf7065bc02 in g_log () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007fdf710ea6c3 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#3  0x00007fdf710f7427 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#4  0x00007fdf5b7c3441 in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#5  0x00007fdf6fd5a07f in _XError () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007fdf6fd56e31 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007fdf6fd56e75 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007fdf6fd57c80 in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x00007fdf6fd3ce3b in _XGetWindowAttributes () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#10 0x00007fdf6fd3cfe1 in XGetWindowAttributes () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#11 0x00007fdf5b7c1844 in xkl_engine_select_input_merging () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#12 0x00007fdf5b7c3018 in xkl_engine_process_create_window_evt () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#13 0x00007fdf5b7c328b in xkl_engine_filter_events () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#14 0x00007fdf5bdfb123 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libkeyboard.so
+No symbol table info available.
+#15 0x00007fdf710f3981 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#16 0x00007fdf710f3b10 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#17 0x00007fdf710c6481 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#18 0x00007fdf710f3802 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#19 0x00007fdf706546ca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007fdf70654a90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x00007fdf70654e8a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0x00007fdf714a644d in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#23 0x0000000000403bd1 in main ()
+No symbol table info available.

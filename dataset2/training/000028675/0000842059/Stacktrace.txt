@@ -1,0 +1,14 @@
+#0  0x00007f2ef1ed5c61 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#1  0x00007f2efcc8daed in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007f2efc2c9e5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f2efc2ca658 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f2efc2cab92 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f2efd4b1c1d in gtk_main () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#6  0x00000000004036f2 in main ()
+No symbol table info available.

@@ -1,0 +1,72 @@
+#0  IA__g_slice_alloc (mem_size=344) at /build/buildd/glib2.0-2.16.3/glib/gslice.c:474
+	tmem = (ThreadMemory *) 0x614290
+	ix = 21
+	chunk_size = <value optimized out>
+	mem = <value optimized out>
+#1  0x00007fed77ca8fc6 in IA__g_slice_alloc0 (mem_size=1) at /build/buildd/glib2.0-2.16.3/glib/gslice.c:833
+	mem = <value optimized out>
+#2  0x00007fed77f420df in IA__g_type_create_instance (type=8586704)
+    at /build/buildd/glib2.0-2.16.3/gobject/gtype.c:1555
+	node = (TypeNode *) 0x8305d0
+	instance = <value optimized out>
+	class = (GTypeClass *) 0x845200
+	i = <value optimized out>
+#3  0x00007fed77f27f4d in g_object_constructor (type=1, n_construct_properties=2083592320, 
+    construct_params=0x846470) at /build/buildd/glib2.0-2.16.3/gobject/gobject.c:1046
+	object = (GObject *) 0x7fed6f3e5eda
+#4  0x00007fed77f28540 in IA__g_object_newv (object_type=8586704, n_parameters=0, 
+    parameters=<value optimized out>) at /build/buildd/glib2.0-2.16.3/gobject/gobject.c:937
+	cparams = (GObjectConstructParam *) 0x846470
+	oparams = <value optimized out>
+	nqueue = <value optimized out>
+	object = <value optimized out>
+	class = (GObjectClass *) 0x845200
+	unref_class = (GObjectClass *) 0x0
+	slist = <value optimized out>
+	n_total_cparams = 2
+	n_cparams = 2
+	n_oparams = 4
+	n_cvalues = 1
+	cvalues = <value optimized out>
+	clist = (GList *) 0x0
+	i = <value optimized out>
+	__PRETTY_FUNCTION__ = "IA__g_object_newv"
+#5  0x00007fed77f28f46 in IA__g_object_new_valist (object_type=8586704, first_property_name=0x0, 
+    var_args=0x7fff84342750) at /build/buildd/glib2.0-2.16.3/gobject/gobject.c:1027
+	params = (GParameter *) 0xa6f860
+	name = (const gchar *) 0x0
+	object = <value optimized out>
+	n_params = 5
+	n_alloced_params = 16
+	__PRETTY_FUNCTION__ = "IA__g_object_new_valist"
+#6  0x00007fed77f29171 in IA__g_object_new (object_type=8586704, first_property_name=0x7fed6f3e5ed5 "type")
+    at /build/buildd/glib2.0-2.16.3/gobject/gobject.c:795
+	var_args = {{gp_offset = 48, fp_offset = 48, overflow_arg_area = 0x7fff84342870, 
+    reg_save_area = 0x7fff84342770}}
+	__PRETTY_FUNCTION__ = "IA__g_object_new"
+#7  0x00007fed6f3e193c in gsd_media_keys_window_new ()
+   from /usr/lib/gnome-settings-daemon-2.0/libmedia-keys.so
+#8  0x00007fed6f3e00d0 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libmedia-keys.so
+#9  0x00007fed6f3e0b3b in ?? () from /usr/lib/gnome-settings-daemon-2.0/libmedia-keys.so
+#10 0x00007fed7b90314c in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#11 0x00007fed7b904a6d in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#12 0x00007fed7b906142 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#13 0x00007fed7b90655e in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#14 0x00007fed77c8d262 in IA__g_main_context_dispatch (context=0x642740)
+    at /build/buildd/glib2.0-2.16.3/glib/gmain.c:2009
+No locals.
+#15 0x00007fed77c90516 in g_main_context_iterate (context=0x642740, block=1, dispatch=1, 
+    self=<value optimized out>) at /build/buildd/glib2.0-2.16.3/glib/gmain.c:2642
+	max_priority = 0
+	timeout = 0
+	some_ready = 1
+	nfds = <value optimized out>
+	allocated_nfds = <value optimized out>
+	fds = (GPollFD *) 0x806df0
+	__PRETTY_FUNCTION__ = "g_main_context_iterate"
+#16 0x00007fed77c907d7 in IA__g_main_loop_run (loop=0x806c70)
+    at /build/buildd/glib2.0-2.16.3/glib/gmain.c:2850
+	self = (GThread *) 0x648930
+	__PRETTY_FUNCTION__ = "IA__g_main_loop_run"
+#17 0x00007fed7bc9cf03 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+#18 0x0000000000403949 in main ()

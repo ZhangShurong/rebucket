@@ -1,0 +1,36 @@
+#0  0x00007f6592b3f997 in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#1  0x00007f659253c2cd in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007f6592d8990c in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#3  0x00007f659253c2cd in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#4  0x00007f659253c3fc in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0x00007f65918b044a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007f65918b0810 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007f65918b0c0a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007f6592c22add in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#9  0x00000000004114f9 in ?? ()
+No symbol table info available.
+#10 0x00007f6590e2f30d in __libc_start_main (main=0x4113d0, argc=2, ubp_av=0x7fffb955ab28, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffb955ab18) at libc-start.c:226
+        result = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {0, 7402725788388563714, 4265276, 140736302787360, 0, 0, -7402596959088403710, -7462215921141671166}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x44b430, 0x7fffb955ab28}, data = {prev = 0x0, cleanup = 0x0, canceltype = 4502576}}}
+        not_first_call = <optimized out>
+#11 0x0000000000411565 in ?? ()
+No symbol table info available.
+#12 0x00007fffb955ab18 in ?? ()
+No symbol table info available.
+#13 0x000000000000001c in ?? ()
+No symbol table info available.
+#14 0x0000000000000002 in ?? ()
+No symbol table info available.
+#15 0x00007fffb955b951 in ?? ()
+No symbol table info available.
+#16 0x0000000000000000 in ?? ()
+No symbol table info available.

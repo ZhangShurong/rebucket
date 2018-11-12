@@ -1,0 +1,59 @@
+#0  0x00acc416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x005f2c8f in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x005f62b5 in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00628dfc in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00633bc2 in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x0063401f in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00634eac in ?? () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0x00637498 in malloc () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#8  0x001c680b in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x001c6d62 in g_malloc () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x0099d20d in g_buffered_input_stream_set_buffer_size () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#11 0x0099d2e0 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#12 0x00add5e6 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00adfe79 in g_object_newv () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00ae0de3 in g_object_new_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00ae1040 in g_object_new () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x009a5e8b in g_data_input_stream_new () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#17 0x00a2fa9e in g_dbus_message_new_from_blob () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#18 0x00a3c1b5 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#19 0x009d9aef in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#20 0x009d9c1b in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#21 0x001bc110 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0x001c025f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#23 0x001c0990 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#24 0x001c0f9b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#25 0x00a39cea in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#26 0x001e75f4 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00dc7d31 in start_thread () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#28 0x006970ce in clone () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

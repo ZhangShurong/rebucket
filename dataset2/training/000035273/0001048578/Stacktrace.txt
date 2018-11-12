@@ -1,0 +1,28 @@
+#0  0x00007f996d2419c4 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f9960f8bdfa in GLScreen::GLScreen(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#2  0x00007f9960f7efa8 in PluginClassHandler<GLScreen, CompScreen, 5>::get(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#3  0x00007f9960f86f3c in CompPlugin::VTableForScreenAndWindow<GLScreen, GLWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#4  0x00007f996dae4e86 in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#5  0x00007f996dae5751 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#6  0x00007f996dabc1c8 in compiz::private_screen::PluginManager::updatePlugins(CompScreen*, std::vector<CompOption::Value, std::allocator<CompOption::Value> > const&) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#7  0x00007f996dabd632 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#8  0x00007f996daec037 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#9  0x00007f996bfe5acf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0x00007f996baeab15 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f996baeae48 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f996baeb242 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x000000000040270b in main ()
+No symbol table info available.

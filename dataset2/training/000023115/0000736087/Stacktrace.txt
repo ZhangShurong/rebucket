@@ -1,0 +1,24 @@
+#0  0x00007fbadb337d10 in gtk_rgb_to_hsv () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#1  0x00007fbadb337e06 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#2  0x00007fbadb3380d9 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#3  0x0000000002617480 in ?? ()
+No symbol table info available.
+#4  0x0000000000000001 in ?? ()
+No symbol table info available.
+#5  0x00007fbada52b765 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007fbada53c7e3 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007fbada546258 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007fbada54660d in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00007fbadb3ded28 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#10 0x00007fbadb49852c in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#11 0x0000000000000000 in ?? ()
+No symbol table info available.

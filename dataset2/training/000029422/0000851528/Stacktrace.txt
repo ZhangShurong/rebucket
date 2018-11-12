@@ -1,0 +1,20 @@
+#0  0x00007fb47fba94f3 in _XFreeEventCookies () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#1  0x00007fb47fb94b22 in XNextEvent () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#2  0x000000000042e759 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#3  0x0000000000455f31 in CompEventSource::callback() ()
+No symbol table info available.
+#4  0x00007fb47e86d9df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#5  0x00007fb47e373b6d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00007fb47e374368 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007fb47e3748a2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x000000000042b846 in CompScreen::eventLoop() ()
+No symbol table info available.
+#9  0x000000000041f61a in main ()
+No symbol table info available.

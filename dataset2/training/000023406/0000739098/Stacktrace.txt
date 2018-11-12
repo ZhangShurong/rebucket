@@ -1,0 +1,30 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x0063ece0 in nux::IOpenGLAsmVertexShader::IOpenGLAsmVertexShader(nux::NString) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x00643409 in nux::GpuDevice::CreateAsmVertexShader(nux::IOpenGLAsmVertexShader**) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#3  0x0064380f in nux::GpuDevice::CreateAsmVertexShader() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#4  0x0063fa57 in nux::IOpenGLAsmShaderProgram::IOpenGLAsmShaderProgram(nux::NString) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#5  0x00643379 in nux::GpuDevice::CreateAsmShaderProgram(nux::IOpenGLAsmShaderProgram**) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#6  0x0064374f in nux::GpuDevice::CreateAsmShaderProgram() () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#7  0x0062d077 in nux::FontRenderer::FontRenderer(nux::GraphicsEngine&) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#8  0x005ff70b in nux::GraphicsEngine::GraphicsEngine(nux::GraphicsDisplay&, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#9  0x0061366d in nux::GraphicsDisplay::CreateOpenGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay const*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#10 0x0063e4c9 in nux::DisplayAccessController::CreateGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#11 0x0804974a in ?? ()
+No symbol table info available.
+#12 0x08049c9d in ?? ()
+No symbol table info available.
+#13 0x00fcde37 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#14 0x08049151 in ?? ()
+No symbol table info available.

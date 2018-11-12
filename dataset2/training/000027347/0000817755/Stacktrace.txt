@@ -1,0 +1,16 @@
+#0  0x003132e7 in g_source_unref () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x0019d6de in Glib::Source::unreference() const () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#2  0x08070b75 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#3  0x08070ea0 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#4  0x0806ad75 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#5  0x0806aea0 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#6  0x0806626f in CompManager::fini() ()
+No symbol table info available.
+#7  0x08062d0c in main ()
+No symbol table info available.

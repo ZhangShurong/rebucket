@@ -1,0 +1,54 @@
+#0  0xb78194bb in ?? () from /usr/lib/libappindicator.so.1
+No symbol table info available.
+#1  0xb72bd90c in g_cclosure_marshal_VOID__VOID () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#2  0xb72a04b2 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#3  0xb72b4228 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#4  0xb72bcf65 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0xb72bd142 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0xb753ed28 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#7  0xb753eedc in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#8  0xb753f9f2 in gtk_icon_theme_lookup_icon () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#9  0xb7540628 in gtk_icon_theme_load_icon () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#10 0x0804dde7 in ?? ()
+No symbol table info available.
+#11 0xb72a62c2 in g_object_newv () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#12 0xb72a6f50 in g_object_new_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#13 0xb72a7067 in g_object_new () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x0804eacf in ?? ()
+No symbol table info available.
+#15 0x0804c849 in ?? ()
+No symbol table info available.
+#16 0x0804bd88 in ?? ()
+No symbol table info available.
+#17 0xb783d3d5 in polkit_agent_listener_initiate_authentication () from /usr/lib/libpolkit-agent-1.so.0
+No symbol table info available.
+#18 0xb783d637 in ?? () from /usr/lib/libpolkit-agent-1.so.0
+No symbol table info available.
+#19 0xb73a81b5 in ?? () from /usr/lib/libgio-2.0.so.0
+No symbol table info available.
+#20 0xb71f9501 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#21 0xb71fdcb8 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#22 0xb71fe480 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#23 0xb71feb43 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#24 0x0804f759 in ?? ()
+No symbol table info available.
+#25 0xb7072ce6 in __libc_start_main () from /lib/libc.so.6
+No symbol table info available.
+#26 0x0804b971 in ?? ()
+No symbol table info available.

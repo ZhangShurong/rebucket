@@ -1,0 +1,46 @@
+#0  0x005c564c in g_str_hash () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x005906d8 in g_hash_table_lookup () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x0738db6f in ?? () from /usr/lib/gnome-settings-daemon-2.0/libubuntuone.so
+No symbol table info available.
+#3  0x00542fc8 in g_cclosure_marshal_VOID__POINTER () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00526352 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00539048 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00541b29 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00541e3d in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x05227263 in ?? () from /usr/lib/libsyncdaemon-1.0.so.1
+No symbol table info available.
+#9  0x00542f08 in g_cclosure_marshal_VOID__BOXED () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00798d44 in ?? () from /usr/lib/libdbus-glib-1.so.2
+No symbol table info available.
+#11 0x00526352 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00539048 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00541b29 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00541cc2 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x0079996d in ?? () from /usr/lib/libdbus-glib-1.so.2
+No symbol table info available.
+#16 0x00a5139b in dbus_connection_dispatch () from /lib/libdbus-1.so.3
+No symbol table info available.
+#17 0x00791bad in ?? () from /usr/lib/libdbus-glib-1.so.2
+No symbol table info available.
+#18 0x005a1c18 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#19 0x005a23e0 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#20 0x005a2aa3 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#21 0x002429c9 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#22 0x0804b654 in main ()
+No symbol table info available.

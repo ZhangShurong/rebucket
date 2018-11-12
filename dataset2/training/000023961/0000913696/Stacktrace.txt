@@ -1,0 +1,46 @@
+#0  0x00007f59856e2bf2 in IdValuePair::matchesPluginOption(ExtensionPluginInfo*, int) const () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#1  0x00007f59856e3a2f in __gnu_cxx::__normal_iterator<IdValuePair*, std::vector<IdValuePair, std::allocator<IdValuePair> > > std::__find_if<__gnu_cxx::__normal_iterator<IdValuePair*, std::vector<IdValuePair, std::allocator<IdValuePair> > >, boost::_bi::bind_t<bool, boost::_mfi::cmf2<bool, IdValuePair, ExtensionPluginInfo*, int>, boost::_bi::list3<boost::arg<1>, boost::_bi::value<ExtensionPluginInfo*>, boost::_bi::value<unsigned int> > > >(__gnu_cxx::__normal_iterator<IdValuePair*, std::vector<IdValuePair, std::allocator<IdValuePair> > >, __gnu_cxx::__normal_iterator<IdValuePair*, std::vector<IdValuePair, std::allocator<IdValuePair> > >, boost::_bi::bind_t<bool, boost::_mfi::cmf2<bool, IdValuePair, ExtensionPluginInfo*, int>, boost::_bi::list3<boost::arg<1>, boost::_bi::value<ExtensionPluginInfo*>, boost::_bi::value<unsigned int> > >, std::random_access_iterator_tag) () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#2  0x00007f59856e2cff in AnimWindow::pluginOptVal(ExtensionPluginInfo*, unsigned int, Animation*) () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#3  0x00007f59856e8f75 in ZoomAnim::getSpringiness() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#4  0x00007f59856e8e5a in ZoomAnim::scaleAroundIcon() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#5  0x00007f59856e9f15 in ZoomAnim::applyTransform() () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#6  0x00007f59856c978f in PrivateAnimScreen::preparePaint(int) () from /usr/lib/compiz/libanimation.so
+No symbol table info available.
+#7  0x00007f598a268d17 in CompositeScreen::preparePaint(int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#8  0x00007f5984defe16 in WallScreen::preparePaint(int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#9  0x00007f598a268d17 in CompositeScreen::preparePaint(int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#10 0x00007f598a268d17 in CompositeScreen::preparePaint(int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#11 0x00007f5983e4680d in UnityScreen::preparePaint(int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007f598a268d17 in CompositeScreen::preparePaint(int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#13 0x00007f598a26a84d in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#14 0x0000000000424d5b in CompTimer::triggerCallback() ()
+No symbol table info available.
+#15 0x0000000000424e92 in CompTimeoutSource::callback() ()
+No symbol table info available.
+#16 0x000000000042438d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#17 0x00007f5999ed548f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#18 0x00007f59999df58a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f59999df950 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007f59999dfd4a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x000000000042e856 in CompScreen::eventLoop() ()
+No symbol table info available.
+#22 0x000000000042221a in main ()
+No symbol table info available.

@@ -1,0 +1,110 @@
+#0  brw_update_renderbuffer_surface (brw=0xee9520, rb=0xed1730, unit=0) at brw_wm_surface_state.c:1165
+        intel = 0xee9520
+        ctx = 0xee9520
+        irb = 0xed1730
+        mt = 0x0
+        region = <optimized out>
+        surf = <optimized out>
+        tile_x = 0
+        tile_y = 8
+        format = 0
+        __FUNCTION__ = "brw_update_renderbuffer_surface"
+#1  0x00007f021a492320 in brw_update_renderbuffer_surfaces (brw=0xee9520) at brw_wm_surface_state.c:1261
+        intel = 0xee9520
+        ctx = 0xee9520
+        i = <optimized out>
+#2  0x00007f021a47c462 in brw_upload_state (brw=brw@entry=0xee9520) at brw_state_upload.c:500
+        atom = <optimized out>
+        ctx = 0xee9520
+        intel = 0xee9520
+        state = 0xeffb8c
+        i = <optimized out>
+        dirty_count = 0
+#3  0x00007f021a4699a7 in brw_try_draw_prims (max_index=5, min_index=1498361448, ib=<optimized out>, nr_prims=<optimized out>, prim=0x7fff594f2e50, arrays=<optimized out>, ctx=0xee9520) at brw_draw.c:493
+        estimated_max_prim_size = 4096
+        retval = <optimized out>
+        i = <optimized out>
+        fail_next = false
+#4  brw_draw_prims (ctx=0xee9520, prim=0x7fff594f2e50, nr_prims=<optimized out>, ib=<optimized out>, index_bounds_valid=<optimized out>, min_index=0, max_index=5, tfb_vertcount=0x0) at brw_draw.c:589
+        arrays = <optimized out>
+#5  0x00007f0219fe5d44 in vbo_draw_arrays (ctx=0xee9520, mode=4, start=0, count=6, numInstances=1, baseInstance=<optimized out>) at ../../../../../src/mesa/vbo/vbo_exec_array.c:645
+        vbo = 0xf760a0
+        exec = 0xf76ce8
+        prim = {{mode = 4, indexed = 0, begin = 1, end = 1, weak = 0, no_current_update = 0, pad = 0, start = 0, count = 6, basevertex = 0, num_instances = 1, base_instance = 0}, {mode = 0, indexed = 0, begin = 0, end = 0, weak = 0, no_current_update = 0, pad = 0, start = 0, count = 0, basevertex = 0, num_instances = 0, base_instance = 0}}
+#6  0x00007f021b1cc236 in PrivateVertexBuffer::render (this=<optimized out>, projection=<optimized out>, modelview=<optimized out>, attrib=0x7fff594f2f60) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/opengl/src/vertexbuffer.cpp:541
+        attribs = <optimized out>
+        positionIndex = 1
+        normalIndex = -1
+        colorIndex = -1
+        texCoordIndex = {0, -1, -1, -1}
+        tmpProgram = 0x1e9f9d0
+#7  0x00007f021b1cc81d in GLVertexBuffer::render (this=<optimized out>, projection=..., modelview=..., attrib=...) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/opengl/src/vertexbuffer.cpp:381
+No locals.
+#8  0x00007f021b1cc897 in GLVertexBuffer::render (this=<optimized out>, modelview=..., attrib=...) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/opengl/src/vertexbuffer.cpp:353
+        gScreen = <optimized out>
+        projection = <optimized out>
+#9  0x00007f021b1cc8db in GLVertexBuffer::render (this=<optimized out>, modelview=...) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/opengl/src/vertexbuffer.cpp:344
+        attrib = {opacity = 65535, brightness = 65535, saturation = 65535, xScale = 0, yScale = 0, xTranslate = 0, yTranslate = 0}
+#10 0x00007f021b1d32df in GLScreen::glPaintCompositedOutput (this=<optimized out>, region=..., fbo=fbo@entry=0x110a0f0, mask=mask@entry=4) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/opengl/src/paint.cpp:756
+        vertexData = {<std::_Vector_base<float, std::allocator<float> >> = {_M_impl = {<std::allocator<float>> = {<__gnu_cxx::new_allocator<float>> = {<No data fields>}, <No data fields>}, _M_start = 0x37d47b0, _M_finish = 0x37d47f8, _M_end_of_storage = 0x37d47f8}}, <No data fields>}
+        textureData = {<std::_Vector_base<float, std::allocator<float> >> = {_M_impl = {<std::allocator<float>> = {<__gnu_cxx::new_allocator<float>> = {<No data fields>}, <No data fields>}, _M_start = 0x4729590, _M_finish = 0x47295c0, _M_end_of_storage = 0x47295c0}}, <No data fields>}
+        sTransform = {m = {0.000732064422, 0, 0, 0, -0, -0.00130208337, -0, -0, 0, 0, 1, 0, -0.5, 0.5, -0.866025388, 1}}
+        texmatrix = @0x11114d8: {xx = 0.000732064422, yx = 0, xy = 0, yy = 0.00130208337, x0 = 0, y0 = 0}
+        streamingBuffer = 0x1115be0
+#11 0x00007f021b1d5ab3 in PrivateGLScreen::paintOutputs (this=0xed04b0, outputs=..., mask=4, region=...) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/opengl/src/screen.cpp:2103
+        oldFbo = 0x0
+        useFbo = true
+        tmpRegion = {priv = 0x42527d0}
+        alwaysSwap = 240
+        fullscreen = <optimized out>
+#12 0x00007f02201e9cf5 in CompositeScreen::paint (this=0xec74c0, outputs=..., mask=<optimized out>) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/composite/src/screen.cpp:891
+        curr = 0
+#13 0x00007f02201eb5b8 in CompositeScreen::handlePaintTimeout (this=0xec74c0) at /build/buildd/compiz-0.9.8.6+bzr3433/plugins/composite/src/screen.cpp:851
+        timeDiff = <optimized out>
+        dpy = <optimized out>
+        mask = 4
+        d = <optimized out>
+        outputs = {<std::_List_base<CompOutput*, std::allocator<CompOutput*> >> = {_M_impl = {<std::allocator<std::_List_node<CompOutput*> >> = {<__gnu_cxx::new_allocator<std::_List_node<CompOutput*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x4a03a40, _M_prev = 0x4a03a40}}}, <No data fields>}
+        tv = {tv_sec = 1375616439, tv_usec = 126518}
+#14 0x00007f0227d3b6dc in operator() (this=<optimized out>) at /usr/include/boost/function/function_template.hpp:760
+No locals.
+#15 CompTimer::triggerCallback (this=this@entry=0xec7620) at /build/buildd/compiz-0.9.8.6+bzr3433/src/timer/src/timer.cpp:231
+No locals.
+#16 0x00007f0227d3b77f in CompTimeoutSource::callback (this=<optimized out>) at /build/buildd/compiz-0.9.8.6+bzr3433/src/timer/src/timer.cpp:154
+        t = 0xec7620
+        handler = 0xe4cd30
+        requeue = {<std::_List_base<CompTimer*, std::allocator<CompTimer*> >> = {_M_impl = {<std::allocator<std::_List_node<CompTimer*> >> = {<__gnu_cxx::new_allocator<std::_List_node<CompTimer*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x7fff594f32a0, _M_prev = 0x7fff594f32a0}}}, <No data fields>}
+        i = <optimized out>
+#17 0x00007f0227d3ac4d in operator() (this=<optimized out>) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:440
+No locals.
+#18 CompTimeoutSource::dispatch (this=<optimized out>, slot=<optimized out>) at /build/buildd/compiz-0.9.8.6+bzr3433/src/timer/src/timer.cpp:137
+No locals.
+#19 0x00007f022622bd1f in Glib::Source::dispatch_vfunc (callback=<optimized out>, user_data=<optimized out>) at main.cc:956
+        self = <optimized out>
+        callback_data = <optimized out>
+        __PRETTY_FUNCTION__ = "static gboolean Glib::Source::dispatch_vfunc(GSource*, GSourceFunc, void*)"
+#20 0x00007f0225d30ab5 in g_main_dispatch (context=0xe54340) at /build/buildd/glib2.0-2.34.1/./glib/gmain.c:2715
+        dispatch = 0x7f022622bcd0 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        was_in_call = 0
+        user_data = 0xe92460
+        callback = 0x7f022622be10 <(anonymous namespace)::glibmm_dummy_source_callback(void*)>
+        cb_funcs = 0x7f0225fde9e0 <g_source_callback_funcs>
+        cb_data = 0xeb1af0
+        current_source_link = {data = 0xe962c0, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0xe962c0
+        current = 0xe54750
+        i = <optimized out>
+#21 g_main_context_dispatch (context=context@entry=0xe54340) at /build/buildd/glib2.0-2.34.1/./glib/gmain.c:3219
+No locals.
+#22 0x00007f0225d30de8 in g_main_context_iterate (context=0xe54340, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at /build/buildd/glib2.0-2.34.1/./glib/gmain.c:3290
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+        fds = 0x1e9e340
+#23 0x00007f0225d311e2 in g_main_loop_run (loop=0xe53430) at /build/buildd/glib2.0-2.34.1/./glib/gmain.c:3484
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#24 0x000000000040270b in main (argc=1, argv=<optimized out>) at /build/buildd/compiz-0.9.8.6+bzr3433/src/main.cpp:262
+        manager = {disableSm = false, clientId = 0xe78830 "104f7510719689a3b0137561266774276100000031380031", displayName = 0x0}

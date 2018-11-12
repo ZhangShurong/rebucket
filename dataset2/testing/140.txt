@@ -1,0 +1,83 @@
+#0  0x00007fdfdbbbb3c6 in nux::GraphicsDisplay::GrabKeyboard (this=0x1c97430, callback=0, data=0x1e23930, replace_existing=true) at ./GraphicsDisplayX11.cpp:2537
+No locals.
+#1  0x00007fdfdbfb460b in nux::WindowCompositor::GrabKeyboardAdd (this=0x1e23930, area=0x29ef1b0) at ./WindowCompositor.cpp:1970
+        result = true
+#2  0x00007fdfdc3159eb in QuicklistView::Show (this=0x29ef1b0) at /build/buildd/unity-3.6.8/src/QuicklistView.cpp:284
+No locals.
+#3  0x00007fdfdc31137f in LauncherIcon::OpenQuicklist (this=<value optimised out>, default_to_first_item=false) at /build/buildd/unity-3.6.8/src/LauncherIcon.cpp:430
+        geo = {x = 0, y = 24, width = 66, height = 876}
+        menus = {<std::_List_base<_DbusmenuMenuitem*, std::allocator<_DbusmenuMenuitem*> >> = {_M_impl = {<std::allocator<std::_List_node<_DbusmenuMenuitem*> >> = {<__gnu_cxx::new_allocator<std::_List_node<_DbusmenuMenuitem*> >> = {<No data fields>}, <No data fields>}, _M_node = {_M_next = 0x272cc70, _M_prev = 0x2902f70}}}, <No data fields>}
+        tip_x = 67
+#4  0x00007fdfdc2fc11f in emit (this=<value optimised out>, x=<value optimised out>, y=<value optimised out>, button_flags=<value optimised out>, key_flags=<value optimised out>) at /usr/include/sigc++-2.0/sigc++/signal.h:1010
+No locals.
+#5  emit (this=<value optimised out>, x=<value optimised out>, y=<value optimised out>, button_flags=<value optimised out>, key_flags=<value optimised out>) at /usr/include/sigc++-2.0/sigc++/signal.h:2777
+No locals.
+#6  Launcher::MouseDownLogic (this=<value optimised out>, x=<value optimised out>, y=<value optimised out>, button_flags=<value optimised out>, key_flags=<value optimised out>) at /build/buildd/unity-3.6.8/src/Launcher.cpp:2946
+        launcher_icon = <value optimised out>
+#7  0x00007fdfdc2fc258 in Launcher::RecvMouseDown (this=0x246bc30, x=45, y=392, button_flags=67371008, key_flags=<value optimised out>) at /build/buildd/unity-3.6.8/src/Launcher.cpp:2602
+No locals.
+#8  0x00007fdfdbef55dd in emit (this=0x246bc48, event=..., TraverseInfo=<value optimised out>, ProcessEventInfo=<value optimised out>) at /usr/include/sigc++-2.0/sigc++/signal.h:1757
+No locals.
+#9  emit (this=0x246bc48, event=..., TraverseInfo=<value optimised out>, ProcessEventInfo=<value optimised out>) at /usr/include/sigc++-2.0/sigc++/signal.h:3107
+No locals.
+#10 nux::InputArea::OnEvent (this=0x246bc48, event=..., TraverseInfo=<value optimised out>, ProcessEventInfo=<value optimised out>) at ./InputArea.cpp:458
+        event_type = 1
+        event_processor_state = 47512320
+        PreviousMouseOverArea = 0x246bc48
+        mouse_focus_area = <value optimised out>
+        ret = 0
+        CurrentMouseOverArea = <value optimised out>
+        keyboard_focus_area = 0x246bc48
+#11 0x00007fdfdbf36de6 in nux::Layout::ProcessEvent (this=0x252d340, ievent=..., TraverseInfo=<value optimised out>, ProcessEventInfo=0) at ./Layout.cpp:750
+        ic = <value optimised out>
+        ret = 0
+#12 0x00007fdfdbefb520 in nux::BaseWindow::ProcessEvent (this=0x1e3a190, ievent=..., TraverseInfo=0, ProcessEventInfo=<value optimised out>) at ./BaseWindow.cpp:121
+        ret = 0
+        ProcEvInfo = <value optimised out>
+        window_event = {VirtualKeycodeState = {0 <repeats 256 times>}, width = 1918988389, height = 1919906913, ascii_code = 0, virtual_code = 0, e_x = 45, e_y = 416, e_x_root = 0, e_y_root = 24, e_dx = 0, e_dy = 0, e_clicks = 0, e_is_click = 0, e_x11_timestamp = 0, e_x11_window = 58720258, e_x11_keycode = 0, e_keysym = 0, e_wheeldelta = 0, e_text = '\000' <repeats 15 times>, e_key_modifiers = 0, e_mouse_state = 67371008, e_key_repeat_count = 0, e_length = 1716482657, e_event = 1}
+        base = {x = 0, y = 24, width = 66, height = 876}
+        viewGeometry = {x = 0, y = 24, width = 66, height = 876}
+#13 0x00007fdfdbfb5151 in nux::WindowCompositor::ProcessEvent (this=0x1e23930, event=...) at ./WindowCompositor.cpp:463
+        ret = <value optimised out>
+        ProcessEventInfo = 0
+        MouseIsOverMenu = false
+        pointer_grab_area = <value optimised out>
+        keyboard_grab_area = <value optimised out>
+        ret = 0
+        base_window_reshuffling = <value optimised out>
+#14 0x00007fdfdbfbd8e3 in nux::WindowThread::ExecutionLoop (this=0x1c8b8f0, timer_id=<value optimised out>) at ./WindowThread.cpp:993
+        w = 1440
+        h = 900
+        event = {VirtualKeycodeState = {0 <repeats 256 times>}, width = 1918988389, height = 1919906913, ascii_code = 0, virtual_code = 0, e_x = 45, e_y = 416, e_x_root = 0, e_y_root = 0, e_dx = 0, e_dy = 0, e_clicks = 0, e_is_click = 0, e_x11_timestamp = 0, e_x11_window = 58720258, e_x11_keycode = 0, e_keysym = 0, e_wheeldelta = 0, e_text = '\000' <repeats 15 times>, e_key_modifiers = 0, e_mouse_state = 67371008, e_key_repeat_count = 0, e_length = 1716482657, e_event = 1}
+        ms = <value optimised out>
+        Application = 0x1c8b8f0
+#15 0x00007fdfdbfbe083 in nux::nux_event_dispatch (source=<value optimised out>, callback=<value optimised out>, user_data=0x1c8b8f0) at ./WindowThread.cpp:121
+        window_thread = 0x1c8b8f0
+        return_code = <value optimised out>
+#16 0x00007fdfea7f3bcd in g_main_dispatch (context=0x1655860) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:2440
+        dispatch = 0x7fdfdbfbe070 <nux::nux_event_dispatch(GSource*, GSourceFunc, gpointer)>
+        was_in_call = 0
+        user_data = 0x1c8b8f0
+        callback = 0
+        cb_funcs = 0x7fdfeaa9e630
+        cb_data = 0x1d8a410
+        current_source_link = {data = 0x1d8b270, next = 0x0}
+        need_destroy = <value optimised out>
+        source = 0x1d8b270
+        current = 0x1655090
+        i = <value optimised out>
+#17 g_main_context_dispatch (context=0x1655860) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3013
+No locals.
+#18 0x00007fdfea7f43a8 in g_main_context_iterate (context=0x1655860, block=<value optimised out>, dispatch=1, self=<value optimised out>) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3091
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = 15
+        allocated_nfds = <value optimised out>
+        fds = <value optimised out>
+#19 0x00007fdfea7f49f2 in g_main_loop_run (loop=0x16cc390) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:3299
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#20 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#21 0x0000000000423180 in main ()
+No symbol table info available.

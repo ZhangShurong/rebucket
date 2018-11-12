@@ -1,0 +1,56 @@
+#0  0x00000000 in ?? ()
+#1  0x08051739 in compLogMessage (d=0x8076800, componentName=0x80728f8 "core", level=CompLogLevelFatal, format=0x8072b69 "Couldn't open display %s") at ../../src/main.c:121
+	args = 0xbfba6590 "(\006®·x"
+	message = "Couldn't open display \000¿\000\000\000\000\001\000\000\000\000\000\000\0003hº¿,hº¿ô\237ð·\003\000\000\000\000\000\000\000´]º¿5-ð·\b\000\000\000\f\000\000\000\000\000\000\000@hº¿\217«ï·\220i ·\200i ·\f\000\000\000ô\237ð· \000\000\000\001\000\000\000 ¢ð·°\\º¿\020hº¿\006\003ê·ô\237ð·\024\000\000\000U\214Ê· ¢ð·\000pÆ·\000\000\000\0000§Æ·\220`º¿ hï·ô\237ð·\020hº¿\000\000\000\000@^º¿\001,ð·\001", '\0' <repeats 15 times>, "zQÒ·\000\000\000\000ô"...
+#2  0x08056cc4 in addDisplay (name=0x0) at ../../src/display.c:2564
+	dpy = (Display *) 0x0
+	focus = <value optimized out>
+	revertTo = -1078303128
+	i = -1211748364
+	compositeMajor = 134722008
+	compositeMinor = -1211743968
+	fixesMinor = -1212640559
+	xkbOpcode = 134723720
+	firstScreen = <value optimized out>
+	lastScreen = -1211743968
+#3  0x08051b6d in main (argc=1, argv=0xbfba6c24) at ../../src/main.c:450
+	size = 0
+	ctx = {offset = 3739, pluginData = 0x0, textureFilterData = 0x0, refreshRateData = 0x0}
+	displayName = 0x0
+	plugin = {0x0, 0x0, 0xbfba62c0 "", 0x100 <Address 0x100 out of bounds>, 0x1 <Address 0x1 out of bounds>, 0x0, 0x0, 0x0, 0x0, 0xd690002 <Address 0xd690002 out of bounds>, 
+  0x0, 0x0, 0xb7082670 "", 0xb7eef298 "", 0xb70806d0 "Ð\006\b·H\v\b·Ð\006\b·", 0x10 <Address 0x10 out of bounds>, 0xbfba67bc "Ìgº¿üõî·\230òî·8zð·ègº¿\210óï·\022", 
+  0xb7f02d35 "\203Ä\b[]Ã\220\215t&", 0x8 <Address 0x8 out of bounds>, 0x90 <Address 0x90 out of bounds>, 0xb7f09ff4 "(¯\001", 0xbfba67cc "ègº¿\210óï·\022", 0xb7eef5fc "", 
+  0xb7eef298 "", 0xb7f07a38 "_dl_allocate_tls_init", 0xbfba67e8 "­\211Ï·|hº¿\f£\b·,hº¿Õ{ï·=£\b·¬\211Ï·", 
+  0xb7eff388 "\205Àt\027\2118\203À\b\211F\004\211ð\213]ô\213uø\213}ü\211ì]Ã1öëí\211ö\215¼'", 0x12 <Address 0x12 out of bounds>, 0x8 <Address 0x8 out of bounds>, 
+  0x36eef468 <Address 0x36eef468 out of bounds>, 0xb70806d0 "Ð\006\b·H\v\b·Ð\006\b·", 0xb7080000 "", 0xb7cf89ad "thread_key_create", 0xbfba687c "", 0xb708a30c "\001", 
+  0xbfba682c "°hº¿}~ï·\205Ïc\tÀbº¿", 0xb7ef7bd5 "\205À\017\204\rÿÿÿéÏþÿÿ\203ø\006\017\204öþÿÿ\220\215t&", 0xb708a33d "_GLOBAL_OFFSET_TABLE_", 0xb7cf89ac "pthread_key_create", 
+  0x0, 0x0, 0x0, 0xb7f07ab7 "ld-linux.so.2", 0xb7f07ac5 "libpthread.so.0", 0xb7f07ad5 "libdl.so.2", 0xb7f07ae0 "libc.so.6", 0xb7f09ff4 "(¯\001", 0xb70810c4 " f · ¢ð·Ði ·hl ·", 
+  0xbfba62c0 "", 0xbfba68b0 'Ì' <repeats 200 times>..., 0xb7ef7e7d "\205ÀtÔé\"ÿÿÿ\213M¬1Ò\213E¨÷±x\001", 0x963cf85 <Address 0x963cf85 out of bounds>, 0xbfba62c0 "", 
+  0x100 <Address 0x100 out of bounds>, 0xb7d21c60 "e¡Äÿÿÿÿ \004\017", 0xbfba6884 "e¡Äÿÿÿÿ \004\017", 0x20 <Address 0x20 out of bounds>, 
+  0xb781fe87 "\203Ä\030F;t$\030|\221èªÑÿÿ¸\001", 0xb7d21c60 "e¡Äÿÿÿÿ \004\017", 0xbfba6884 "e¡Äÿÿÿÿ \004\017", 0x20 <Address 0x20 out of bounds>, 0x0, 
+  0xb781d04e "Ã", '\220' <repeats 49 times>, "¡ q\236·\205Àt\023Pè1ÆÎÿÇ\005 q\236·", 0xb781fe96 "¸\001", 0x5 <Address 0x5 out of bounds>, 0xbfba6b78 " kº¿ô/Æ·à\234ð·", 
+  0xbfba6b74 "", 0x6 <Address 0x6 out of bounds>, 0xf04 <Address 0xf04 out of bounds>, 0x0, 0x482 <Address 0x482 out of bounds>, 0xffc4a165 <Address 0xffc4a165 out of bounds>, 
+  0xa0ffffff <Address 0xa0ffffff out of bounds>, 0xf04 <Address 0xf04 out of bounds>, 0x0, 0xcccccccc <Address 0xcccccccc out of bounds> <repeats 87 times>, 
+  0xb7b75310 "U\211å\213E\b\213PH\213B\004\203è\001\205À\211B\004u\027ÇB\b", 0xbfba6a68 "\200kº¿.N=ö", 0xcccccccc <Address 0xcccccccc out of bounds>, 0x804f226 "GLIBC_2.1", 
+  0xd696910 <Address 0xd696910 out of bounds>, 0xb7b2a05c "ç*", 0xbfba6a40 "Äjº¿\002\177ï·p\032", 
+  0xb7ef7b39 "\205À\017\204rÿÿÿ\213Eà\213@\b\205À\017\205bÿÿÿ\205ö\017\205Zÿÿÿf\203}ä", 0xb7b2fdf6 "GLIBC_2.0", 0x804f21c "GLIBC_2.0", 0xb7e96fb0 ".so.6", 0xb7e96fa0 "¬oé·", 
+  0xb70810f8 "\034ò\004\b\020ii\r", 0xbfba0002 "", 0xb7efcff9 "\205Àuç\203Ä\b¸\001", 0x804d167 "libc.so.6", 0xb7e96fac "libm.so.6", 0xb7f09ff4 "(¯\001", 0xb70810a8 "", 
+  0xf <Address 0xf out of bounds>, 0xbfba6ac4 "\220kº¿Á\200ï·L£\004\btkº¿¼§ð·", 0xb7ef7f02 "\205Àt»é\235þÿÿ\220\215t&", 0x1a70 <Address 0x1a70 out of bounds>, 
+  0xbfba6b10 "Ðkº¿`¦ð·òÒ\004\bÍrP·.N=ö", 0xb7b78f51 "\201Ä´", 0xbfba6a68 "\200kº¿.N=ö", 0x123 <Address 0x123 out of bounds>, 0x3d8f5 <Address 0x3d8f5 out of bounds>, 
+  0xbfba6a90 "", 0xbfba6a90 "", 0xbfba6b80 "à\234ð·", 0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 0xb7c67000 "", 0x1a <Address 0x1a out of bounds>, 0xb7b21c4c "", 
+  0xb7b21a4c "/N=öÎ\030L\017ùÄ-×\204\"\233|øÔ\217Ó\205\"\233|ìûÀ=°\"\225Ã8Ç\031uÿ\001Ä\022ÉBY\020ÜÏìµ¶w\035\rGÞÍ%µV1ýÇr1\035\a;úL\214\t)\020\t~\222\0348µï0jÝù{\004\\H±Ô¡\034 \002êÙ\0179µï0X?\227|\030\034sìT\200ÌsÙ\202c\002;H\205\0336\rfý2vàÕ¨§Ká¼\234#\217Ö\036h\233£\230Ëò\234\002Y1\n´\006ß½èe\235J\032\223¨Pµ¨\020\205)%~\016|\030¹Ñ8\a\221\222þ\206ï¦:VÓñIµ$\202¡7äQhoìð¤\017l"..., 0x804d2f2 "__libc_start_main", 0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 0x804d2fe "_main", 0x804d2f6 "bc_start_main", 0x0, 0x0, 
+  0x1 <Address 0x1 out of bounds>, 0x841 <Address 0x841 out of bounds>, 0xb70810f8 "\034ò\004\b\020ii\r", 0xb7c67000 "", 0x804d2f2 "__libc_start_main", 0xb7b2a85c "", 
+  0x804a34c "\206\v", 0x1 <Address 0x1 out of bounds>, 0xb7f09ff4 "(¯\001", 0xb7f0a818 "¼§ð·", 0xbfba6b74 "", 0xbfba6b90 "à\234ð·\220&\a\bøkº¿0@³·\001", 0xb7ef80c1 "\203ø", 
+  0x804a34c "\206\v", 0xbfba6b74 "", 0xb7f0a7bc "l\020\b·\032", 0x0, 0xb70810f8 "\034ò\004\b\020ii\r", 0x1 <Address 0x1 out of bounds>, 0x0, 0x1 <Address 0x1 out of bounds>, 
+  0xbfba6b18 "òÒ\004\bÍrP·.N=ö", 0x0, 0xb7ba19e6 "\211Ó=\001ðÿÿs\001Ãès\224\b", 0xb7cc0a1d "\213[\004\211\\$\030\211Ø\231\211D$\020\211T$\024\213\\$\034¸@B\017", 
+  0xbfba6b18 "òÒ\004\bÍrP·.N=ö", 0xb7c67000 "", 0xbfba6b80 "à\234ð·", 0x0, 0x8078358 "", 0xbfba6bd0 "\201@×`\221ê\177r", 0xb7f0a660 "", 0x804d2f2 "__libc_start_main", 
+  0xb75072cd "1À\203Ä\004[^_]YZÃ", '\220' <repeats 39 times>, "UWVS¡¸)Ò·\213l$\030\213\\$\034\213t$ j\001ÿÐ¸", 0xf63d4e2e <Address 0xf63d4e2e out of bounds>, 0x0, 0x0, 
+  0x1a70 <Address 0x1a70 out of bounds>, 0x6 <Address 0x6 out of bounds>, 0xf82e4c4d <Address 0xf82e4c4d out of bounds>, 0x43483 <Address 0x43483 out of bounds>, 
+  0xb7cd4e45 "\203Ä\b[^_\203Ä\020Ã\220\203ì$UWV¡Ì)Ò·SÿÐ\211Ãè{Éíÿ\211ÅÇD$\020", 0x29a <Address 0x29a out of bounds>, 0x1a70 <Address 0x1a70 out of bounds>, 
+  0xbfba6b98 "økº¿0@³·\001", 0x8051160 "[\201Ã\020P\002", 0x1 <Address 0x1 out of bounds>, 0x8076170 "\024`\a\b`¦ð·Ð\030ð·\216", 0xbfba6b68 "\233\016", 
+  0x8050075 "ÉÃ" <Address 0x8050077 out of bounds>, 0x0, 0xb7cd5195 "\203Ä\fÃ\215v"}
+	i = <value optimized out>
+	nPlugin = 0
+	disableSm = 0
+	clientId = 0x0
+	refreshRateArg = 0x0

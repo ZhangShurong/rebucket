@@ -1,0 +1,38 @@
+#0  0x0118b0f7 in sigc::internal::signal_emit0<void, sigc::nil>::emit(sigc::internal::signal_impl*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x01183dca in Launcher::EventLogic() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x011840d8 in Launcher::RecvMouseMove(int, int, int, int, unsigned long, unsigned long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x01189b2e in sigc::internal::slot_call6<sigc::bound_mem_functor6<void, Launcher, int, int, int, int, unsigned long, unsigned long>, void, int, int, int, int, unsigned long, unsigned long>::call_it(sigc::internal::slot_rep*, int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x0836c583 in sigc::internal::signal_emit6<void, int, int, int, int, unsigned long, unsigned long, sigc::nil>::emit(sigc::internal::signal_impl*, int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x0836ae90 in nux::InputArea::OnEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x083abe79 in nux::View::PostProcessEvent2(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x01176f6d in Launcher::ProcessEvent(nux::Event&, long, long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#8  0x083b274e in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#9  0x08370448 in nux::BaseWindow::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#10 0x0843d03c in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#11 0x08443941 in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#12 0x084441ff in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#13 0x006cfaa8 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#14 0x006d0270 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#15 0x006d092b in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00dfea35 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x0806e9ab in CompScreen::eventLoop() ()
+No symbol table info available.
+#18 0x08066c98 in main ()
+No symbol table info available.

@@ -1,0 +1,19 @@
+#0  0x0232696f in ?? ()
+   from /usr/lib/gnome-settings-daemon-2.0/libclipboard.so
+No symbol table info available.
+#1  0x00516947 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#2  0x00519001 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#3  0x0051954f in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#4  0x002b7e05 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#5  0x002bbb08 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#6  0x002bc05f in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00ade049 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#8  0x0804bd33 in main ()
+No symbol table info available.

@@ -1,0 +1,41 @@
+#0  0x00007f1fda6640c4 in ?? () from /usr/lib/libgnome-desktop-2.so.17
+No symbol table info available.
+#1  0x00007f1fda66756e in gnome_bg_draw ()
+   from /usr/lib/libgnome-desktop-2.so.17
+No symbol table info available.
+#2  0x00007f1fda66775d in gnome_bg_create_pixmap ()
+   from /usr/lib/libgnome-desktop-2.so.17
+No symbol table info available.
+#3  0x00007f1fd60986f1 in ?? ()
+   from /usr/lib/gnome-settings-daemon-2.0/libbackground.so
+No symbol table info available.
+#4  0x00007f1fe217b19e in g_closure_invoke ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f1fe2190448 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f1fe2191ad6 in g_signal_emit_valist ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f1fe2191e28 in g_signal_emit_by_name ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007f1fe14b3b8e in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#9  0x00007f1fe14a5f60 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#10 0x00007f1fe14a6938 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#11 0x00007f1fe14a6e6e in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#12 0x00007f1fe1cd6ef0 in g_main_context_dispatch ()
+   from /lib/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f1fe1cdad28 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f1fe1cdb26d in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f1fe2fcb677 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#16 0x0000000000404a8a in main ()
+No symbol table info available.

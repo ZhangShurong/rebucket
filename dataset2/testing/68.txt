@@ -1,0 +1,26 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0xb32cb934 in unity::launcher::BFBLauncherIcon::OnOverlayShown(_GVariant*, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0xb32cc858 in std::_Function_handler<void (_GVariant*), sigc::bind_functor<-1, sigc::bound_mem_functor2<void, unity::launcher::BFBLauncherIcon, _GVariant*, bool>, bool, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil> >::_M_invoke(std::_Any_data const&, _GVariant*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0xb33c4b94 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0xb71162c0 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0xb7119043 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0xb71193e0 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0xb711983b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0xb72172c3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#9  0xb76abb7a in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#10 0xb76abbc4 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#11 0x0804a5f2 in CompManager::run() ()
+No symbol table info available.
+#12 0x08049edc in main ()
+No symbol table info available.

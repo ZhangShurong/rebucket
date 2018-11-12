@@ -1,0 +1,96 @@
+#0  0x00007f80163e72f6 in sigc::signal_base::impl() const () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#1  0x00007f80163e73b9 in sigc::signal_base::connect(sigc::slot_base const&) () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#2  0x00007f800504b7a3 in TrashLauncherIcon::OnEmptyTrash(_DbusmenuMenuitem*, int, TrashLauncherIcon*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007f800c116140 in ?? ()
+No symbol table info available.
+#4  0x0000000001fdb908 in ?? ()
+No symbol table info available.
+#5  0x00007f8012eb2ece in CcpScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#6  0x0000000000425564 in CompScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) ()
+No symbol table info available.
+#7  0x00007f800c115880 in ?? ()
+No symbol table info available.
+#8  0x0000000001fdb908 in ?? ()
+No symbol table info available.
+#9  0x0000000000000001 in ?? ()
+No symbol table info available.
+#10 0x00007f800c10db48 in ?? ()
+No symbol table info available.
+#11 0x00007f801538f153 in malloc_set_state () from /lib/libc.so.6
+No symbol table info available.
+#12 0x0000000000670110 in pointerMods ()
+No symbol table info available.
+#13 0x0000000000670110 in pointerMods ()
+No symbol table info available.
+#14 0x0000000000425470 in ?? ()
+No symbol table info available.
+#15 0x0000000001e03a10 in ?? ()
+No symbol table info available.
+#16 0x00007f8012eb31bb in CcpScreen::setOptionFromContext(CompOption*, char const*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#17 0x00007fffb5e23fd0 in ?? ()
+No symbol table info available.
+#18 0x00007fffb5e23fc0 in ?? ()
+No symbol table info available.
+#19 0x00007f8015948c86 in std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_M_clone(std::allocator<char> const&, unsigned long) () from /usr/lib/libstdc++.so.6
+No symbol table info available.
+#20 0x00007f800c000020 in ?? ()
+No symbol table info available.
+#21 0x0000000001e5a940 in ?? ()
+No symbol table info available.
+#22 0x00007fffb5e241c0 in ?? ()
+No symbol table info available.
+#23 0x0000000001fe3db0 in ?? ()
+No symbol table info available.
+#24 0x00007f800c000020 in ?? ()
+No symbol table info available.
+#25 0x0000000000000128 in ?? ()
+No symbol table info available.
+#26 0x0000000000000128 in ?? ()
+No symbol table info available.
+#27 0x0000000001fe3db0 in ?? ()
+No symbol table info available.
+#28 0x0000000001dd2ab0 in ?? ()
+No symbol table info available.
+#29 0x0000000000000001 in ?? ()
+No symbol table info available.
+#30 0x00007f801538eb8e in ?? () from /lib/libc.so.6
+No symbol table info available.
+#31 0x0000000001dd2ab0 in ?? ()
+No symbol table info available.
+#32 0x0000000000000001 in ?? ()
+No symbol table info available.
+#33 0x00007f800504ec89 in WindowManagerDummy::Restore(unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#34 0x00007f800c06c790 in ?? ()
+No symbol table info available.
+#35 0x0000000001fe3db0 in ?? ()
+No symbol table info available.
+#36 0x0000000000000001 in ?? ()
+No symbol table info available.
+#37 0x0000000000450e9a in CompManager::initPlugin(CompPlugin*) ()
+No symbol table info available.
+#38 0x0000000000451f9e in CompPlugin::push(CompPlugin*) ()
+No symbol table info available.
+#39 0x000000000042db00 in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#40 0x000000000042e138 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#41 0x0000000000455208 in CompEventSource::callback() ()
+No symbol table info available.
+#42 0x00007f8016629acf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#43 0x00007f80145e5c1d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#44 0x00007f80145e6408 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#45 0x00007f80145e6a4a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#46 0x0000000000429dca in CompScreen::eventLoop() ()
+No symbol table info available.
+#47 0x0000000000422e80 in main ()
+No symbol table info available.

@@ -1,0 +1,18 @@
+#0  0x009f30c7 in std::_List_node_base::_M_hook(std::_List_node_base*) () from /usr/lib/i386-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#1  0x086e0baf in LauncherIcon::OnDelayedUpdateTimeout(void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x007353cc in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00733aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00734270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x0073492b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x00289a35 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#7  0x0806ebab in CompScreen::eventLoop() ()
+No symbol table info available.
+#8  0x08066e58 in main ()
+No symbol table info available.

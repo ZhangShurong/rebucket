@@ -1,0 +1,20 @@
+#0  0xb4cffdc7 in Unity::MT::GrabHandleGroup::hide() () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#1  0xb4d00069 in UnityMTGrabHandlesWindow::hideHandles() () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#2  0xb4d000dd in UnityMTGrabHandlesWindow::onHideTimeout(void*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#3  0xb72623cc in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0xb7260aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0xb7261270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0xb726192b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0xb7390ff5 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#8  0x0806ec8b in CompScreen::eventLoop() ()
+No symbol table info available.
+#9  0x08066e48 in main ()
+No symbol table info available.

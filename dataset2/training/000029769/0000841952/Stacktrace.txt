@@ -1,0 +1,12 @@
+#0  0x006eb2e9 in g_logv () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x006eb623 in g_log () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x08faefb0 in gsd_power_manager_start () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#3  0x08faf502 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libpower.so
+No symbol table info available.
+#4  0x0804cab4 in gnome_settings_plugin_info_activate ()
+No symbol table info available.
+#5  0x0804b70c in _start ()
+No symbol table info available.

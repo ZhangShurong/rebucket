@@ -1,0 +1,9 @@
+#0  0xb75cc016 in std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*) () from /usr/lib/i386-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#1  0xb71ae067 in sigc::internal::signal_impl::insert(std::_List_iterator<sigc::slot_base>, sigc::slot_base const&) () from /usr/lib/i386-linux-gnu/libsigc-2.0.so.0
+No symbol table info available.
+#2  0xb71ae0f9 in sigc::internal::signal_impl::connect(sigc::slot_base const&) () from /usr/lib/i386-linux-gnu/libsigc-2.0.so.0
+No symbol table info available.
+#3  0xbfc2648c in ?? ()
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

@@ -1,0 +1,44 @@
+#0  _int_free (av=0x7fd116f47740 <main_arena>, p=0x7d9da60, have_lock=0) at malloc.c:3832
+        idx = 1
+        fd = <optimised out>
+        old = 0xffffffff
+        old_idx = <optimised out>
+        size = <optimised out>
+        fb = 0x7fd116f47750 <main_arena+16>
+        nextchunk = <optimised out>
+        nextsize = <optimised out>
+        nextinuse = <optimised out>
+        prevsize = <optimised out>
+        bck = <optimised out>
+        fwd = <optimised out>
+        errstr = 0x0
+        locked = 0
+        __func__ = "_int_free"
+#1  0x00007fd1164574c5 in XDestroyRegion () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#2  0x00007fd1174f5c85 in CompRegion::intersects(CompRegion const&) const () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#3  0x00007fd0f8432280 in unity::UnityScreen::compizDamageNux(CompRegion const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007fd0f8432884 in unity::UnityScreen::preparePaint(int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x00007fd110194f25 in CompositeScreen::preparePaint(int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#6  0x00007fd1101966b8 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#7  0x00007fd1174f254c in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#8  0x00007fd1174f25ef in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#9  0x00007fd1174f1add in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#10 0x00007fd1157b7fff in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0x00007fd1152b4166 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fd1152b44b8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007fd1152b48ba in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x000000000040195b in main ()
+No symbol table info available.

@@ -1,0 +1,30 @@
+#0  0x54580a31 in ?? ()
+No symbol table info available.
+#1  0xb48a06e3 in nux::GraphicsDisplay::GrabKeyboard(void (*)(bool, void*), void*, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0xb4a80b96 in nux::WindowCompositor::GrabKeyboardAdd(nux::InputArea*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0xb49a9626 in nux::InputArea::GrabKeyboard() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0xb4b9d9ee in PlacesController::Show() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0xb4b9daf5 in PlacesController::ToggleShowHide() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0xb4b9db1d in PlacesController::ExternalActivation(_GVariant*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#7  0xb4bda2ef in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#8  0xb72f1311 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0xb72f5aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0xb72f6270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0xb72f692b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0xb7424a35 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#13 0x0806ebab in CompScreen::eventLoop() ()
+No symbol table info available.
+#14 0x08066e58 in main ()
+No symbol table info available.

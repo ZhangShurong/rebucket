@@ -1,0 +1,32 @@
+#0  set_touchpad_enabled (state=<value optimized out>) at gsd-mouse-manager.c:419
+	numdevices = 32601
+	i = 0
+	values = {0, 0}
+	devicelist = (XDeviceInfo *) 0x0
+	c = {control = 1, length = 32, first_valuator = 0, num_valuators = 2, resolutions = 0x7fffd7767f40}
+#1  0x00007f59c2a1185d in gsd_mouse_manager_start (manager=0x65eac0, error=<value optimized out>)
+    at gsd-mouse-manager.c:836
+	client = (GConfClient *) 0x633240
+#2  0x00007f59c2a10797 in impl_activate (plugin=0x65ea90) at gsd-mouse-plugin.c:78
+	res = <value optimized out>
+	error = (GError *) 0x0
+#3  0x0000000000404c0a in gnome_settings_plugin_info_activate (info=0x636af0)
+    at gnome-settings-plugin-info.c:481
+	__PRETTY_FUNCTION__ = "gnome_settings_plugin_info_activate"
+#4  0x0000000000403c65 in maybe_activate_plugin (info=0x636af0, user_data=<value optimized out>)
+    at gnome-settings-manager.c:92
+	res = <value optimized out>
+#5  0x00007f59cb0cbb3d in IA__g_slist_reverse (list=0x6286e8)
+    at /build/buildd/glib2.0-2.16.1/glib/gslist.c:504
+	prev = (GSList *) 0x0
+#6  0x0000000000646d60 in ?? ()
+#7  0x000000000064d640 in ?? ()
+#8  0x0000000000656aa0 in ?? ()
+#9  0x0000000000403e74 in gnome_settings_manager_start (manager=0x646d40, error=<value optimized out>)
+    at gnome-settings-manager.c:246
+No locals.
+#10 0x0000000000403ad8 in main (argc=1, argv=0x7fffd77681d8) at main.c:247
+	manager = (GnomeSettingsManager *) 0x646d40
+	program = (GnomeProgram *) 0x644000
+	res = <value optimized out>
+	error = (GError *) 0x0

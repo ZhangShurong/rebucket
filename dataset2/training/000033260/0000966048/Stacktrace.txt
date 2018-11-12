@@ -1,0 +1,32 @@
+#0  0x002dd1ae in Glib::Source::prepare_vfunc(_GSource*, int*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#1  0x00b7d802 in g_main_context_prepare () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00b7e00f in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00b7e1ef in g_main_context_pending () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x0070d2c8 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#5  0x0070d2fb in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#6  0x0043841a in ccsContextDestroy () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#7  0x003c8184 in CcpScreen::~CcpScreen() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#8  0x003c8242 in CcpScreen::~CcpScreen() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#9  0x003cf927 in CompPlugin::VTableForScreen<CcpScreen>::finiScreen(CompScreen*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#10 0x007c5257 in CompManager::finiPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#11 0x007c6a6c in CompPlugin::pop() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#12 0x0078ad6d in CompScreenImpl::~CompScreenImpl() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#13 0x0078af02 in CompScreenImpl::~CompScreenImpl() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#14 0x0804a540 in CompManager::fini() ()
+No symbol table info available.
+#15 0x0804a184 in main ()
+No symbol table info available.

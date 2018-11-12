@@ -1,0 +1,51 @@
+#0  _int_malloc (av=0x7fe3c1eb9760 <main_arena>, bytes=60) at malloc.c:3489
+        iters = <optimized out>
+        nb = 80
+        idx = 5
+        bin = <optimized out>
+        victim = 0x2aaae80
+        size = 160
+        victim_index = <optimized out>
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        block = <optimized out>
+        bit = <optimized out>
+        map = <optimized out>
+        fwd = <optimized out>
+        bck = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#1  0x00007fe3c1b7d5f0 in __GI___libc_malloc (bytes=60) at malloc.c:2891
+        ar_ptr = 0x7fe3c1eb9760 <main_arena>
+        victim = 0x7fe3c1eb9780 <main_arena+32>
+        __func__ = "__libc_malloc"
+#2  0x00007fe3c0445611 in g_malloc () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007fe3c045cb0f in g_strdup () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007fe3bc22ef0b in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0x00007fe3bc231565 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#6  0x00007fe399402098 in ?? () from /usr/lib/x86_64-linux-gnu/gio/modules/libgvfsdbus.so
+No symbol table info available.
+#7  0x00007fe3a0a7c9a5 in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#8  0x00007fe3a0a7d034 in ?? () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#9  0x00007fe3a180f227 in unity::IconLoader::Impl::IconLoaderTask::ProcessGIconTask() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#10 0x00007fe3a180a928 in unity::IconLoader::Impl::Iteration() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007fe39fb91c4a in unity::glib::Source::SourceCallback(void*) () from /usr/lib/libunity-core-6.0.so.9
+No symbol table info available.
+#12 0x00007fe3c043fce5 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007fe3c0440048 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007fe3c044030a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007fe3c241c15b in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#16 0x0000000000401971 in main ()
+No symbol table info available.

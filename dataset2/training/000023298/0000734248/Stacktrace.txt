@@ -1,0 +1,26 @@
+#0  0x00007ffc92d34cd0 in rgb_to_hsv (r=0, g=0, b=0, h=0xf00dface00000000, s=0x22879e8, v=0xf00dface00000000) at /build/buildd/gtk+2.0-2.24.1/gtk/gtkhsv.c:494
+        red = 0
+        green = 0
+        blue = 0
+        s = 3.2066724744495706e-291
+        h = 0
+        min = <value optimized out>
+        max = 9.7948102991147064e+25
+        delta = <value optimized out>
+        v = 9.7948102991147064e+25
+#1  IA__gtk_rgb_to_hsv (r=0, g=0, b=0, h=0xf00dface00000000, s=0x22879e8, v=0xf00dface00000000) at /build/buildd/gtk+2.0-2.24.1/gtk/gtkhsv.c:1597
+        __PRETTY_FUNCTION__ = "IA__gtk_rgb_to_hsv"
+#2  0x00007ffc92d34dc6 in find_image_offset (icon_name=0xf00dface00000000 <Address 0xf00dface00000000 out of bounds>, directory_index=3, cache=<value optimized out>) at /build/buildd/gtk+2.0-2.24.1/gtk/gtkiconcache.c:241
+        hash_offset = <value optimized out>
+        chain_offset = <value optimized out>
+        hash = <value optimized out>
+        i = <value optimized out>
+        n_buckets = <value optimized out>
+        image_list_offset = <value optimized out>
+        n_images = <value optimized out>
+#3  0x00007ffc92d35099 in _gtk_icon_cache_get_icon_flags (cache=0xf00dface00000000, icon_name=0x22879e8 "", directory_index=0) at /build/buildd/gtk+2.0-2.24.1/gtk/gtkiconcache.c:567
+        image_offset = <value optimized out>
+#4  0x00007ffc92d3a328 in do_theme_change (icon_theme=0x0) at /build/buildd/gtk+2.0-2.24.1/gtk/gtkicontheme.c:638
+        priv = 0xf00dface00000000
+#5  0x0000000000000000 in ?? ()
+No symbol table info available.

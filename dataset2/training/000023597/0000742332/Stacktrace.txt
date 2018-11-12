@@ -1,0 +1,48 @@
+#0  0x043c20b9 in SimpleLauncherIcon::OnIconThemeChanged(_GtkIconTheme*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x001cf48c in g_cclosure_marshal_VOID__VOID () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#2  0x001b3372 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x001c6048 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x001ceb29 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x001cecc2 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x0173eed8 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#7  0x01740cf9 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#8  0x018b977f in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#9  0x01773964 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#10 0x001b1cc7 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x001b3372 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x001c5e45 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x001ce8d7 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x001cecc2 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x018a8556 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#16 0x01772074 in gtk_main_do_event () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#17 0x010f1a0a in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#18 0x00497aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00498270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x0049892b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x00182a35 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#22 0x0806ebab in CompScreen::eventLoop() ()
+No symbol table info available.
+#23 0x08066e58 in main ()
+No symbol table info available.

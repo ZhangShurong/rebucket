@@ -1,0 +1,18 @@
+#0  0x00007f6d8e39ec55 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f6d8e3a2a06 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f6d8e397715 in __assert_fail () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f6d8dbdedae in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#4  0x00007f6d8dbdfaec in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00007f6d8dbdb273 in XSync () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007f6d7e14b243 in gsd_a11y_keyboard_manager_stop () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#7  0x00000000004050ed in gnome_settings_plugin_info_deactivate ()
+No symbol table info available.
+#8  0x0000000000403f05 in _start ()
+No symbol table info available.

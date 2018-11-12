@@ -1,0 +1,26 @@
+#0  0x00124416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00fd6e71 in raise () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00fda34e in abort () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x006f3f27 in g_logv () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x006f3f62 in g_log () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x0085a266 in Glib::exception_handlers_invoke() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#6  0x0085a97d in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#7  0x006eaaa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x006eb270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x006eb92b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x0085be95 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0x0806ecdb in CompScreen::eventLoop() ()
+No symbol table info available.
+#12 0x08066e98 in main ()
+No symbol table info available.

@@ -1,0 +1,44 @@
+#0  0x00007fd0c53f83a5 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007fd0c53fbb0b in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007fd0c5430113 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007fd0c543aa96 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007fd0c543ed7c in free () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x00007fd0ba615d8b in nouveau_bo_ref () from /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.1
+No symbol table info available.
+#6  0x00007fd0ba614c83 in ?? () from /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.1
+No symbol table info available.
+#7  0x00007fd0ba61515f in nouveau_pushbuf_flush () from /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.1
+No symbol table info available.
+#8  0x00007fd0ba328052 in ?? () from /usr/lib/x86_64-linux-gnu/dri/libgallium.so
+No symbol table info available.
+#9  0x00007fd0bbbef080 in PrivateGLScreen::waitForVideoSync() () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#10 0x00007fd0bbbef269 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#11 0x00007fd0bbe0ff09 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#12 0x00007fd0bbe1177f in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#13 0x0000000000422d6b in CompTimer::triggerCallback() ()
+No symbol table info available.
+#14 0x0000000000422ea2 in CompTimeoutSource::callback() ()
+No symbol table info available.
+#15 0x000000000042239d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#16 0x00007fd0c6a6a9df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x00007fd0c6570a5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007fd0c6571258 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007fd0c6571792 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x000000000042c816 in CompScreen::eventLoop() ()
+No symbol table info available.
+#21 0x000000000042022a in main ()
+No symbol table info available.

@@ -1,0 +1,36 @@
+#0  0x000075a6 in ?? ()
+No symbol table info available.
+#1  0xb50141f4 in getCompPluginVTable20090315_imgsvg () from /usr/lib/compiz/libimgsvg.so
+No symbol table info available.
+#2  0xb772938a in ?? () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#3  0xb772874e in CompPlugin::load(char const*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#4  0xb76f6db6 in compiz::private_screen::PluginManager::updatePlugins() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#5  0xb76f90cf in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#6  0xb76f9222 in CompScreenImpl::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#7  0xb772f4d2 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#8  0xb772f842 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#9  0xb772f5e2 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#10 0xb7261d71 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0xb7167d8a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0xb7168195 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0xb71685db in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0xb72633f3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#15 0xb76eab42 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120228
+No symbol table info available.
+#16 0x0804a4f2 in CompManager::run() ()
+No symbol table info available.
+#17 0x0804a17c in main ()
+No symbol table info available.

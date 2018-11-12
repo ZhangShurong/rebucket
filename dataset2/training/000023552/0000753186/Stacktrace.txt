@@ -1,0 +1,32 @@
+#0  0x00007f77158698c3 in __libc_free (mem=0x7f76f80233f0) at malloc.c:3736
+        ar_ptr = 0x7f76b800001f
+        p = 0x7f76f80233e0
+        hook = <value optimised out>
+#1  0x00007f7716bdcf9c in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f7716c3cbf1 in g_variant_unref () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f7716bef8ee in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f7716beff15 in g_hash_table_unref () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f7717c22d82 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#6  0x00007f77174cebe4 in g_object_unref () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f7717c1857d in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#8  0x00007f7716bfc7ae in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f7716bfcef1 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f7716c00c41 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f7716c013a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f7716c019f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x000000000042a34a in CompScreen::eventLoop() ()
+No symbol table info available.
+#14 0x00000000004231c0 in main ()
+No symbol table info available.

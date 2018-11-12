@@ -1,0 +1,6 @@
+#0  0x08055c3c in ?? ()
+No symbol table info available.
+#1  0x08058bb4 in eventLoop ()
+No symbol table info available.
+#2  0x08052c93 in main ()
+No symbol table info available.

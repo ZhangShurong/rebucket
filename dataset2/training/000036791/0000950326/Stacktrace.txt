@@ -1,0 +1,40 @@
+#0  0x00007f3d084cd445 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f3d084d0bab in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f3d085090be in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f3d085138b6 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007f3cf65dc78f in std::_Rb_tree<unsigned long, std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const>, std::_Select1st<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> > >::_M_erase(std::_Rb_tree_node<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#5  0x00007f3cf65dc74c in std::_Rb_tree<unsigned long, std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const>, std::_Select1st<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> > >::_M_erase(std::_Rb_tree_node<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#6  0x00007f3cf65dc74c in std::_Rb_tree<unsigned long, std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const>, std::_Select1st<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> > >::_M_erase(std::_Rb_tree_node<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#7  0x00007f3cf65dc74c in std::_Rb_tree<unsigned long, std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const>, std::_Select1st<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> > >::_M_erase(std::_Rb_tree_node<std::pair<unsigned long const, boost::shared_ptr<unity::MT::GrabHandle> const> >*) () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#8  0x00007f3cf65d6d95 in UnityMTGrabHandlesScreen::~UnityMTGrabHandlesScreen() () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#9  0x00007f3cf65d6fc9 in UnityMTGrabHandlesScreen::~UnityMTGrabHandlesScreen() () from /usr/lib/compiz/libunitymtgrabhandles.so
+No symbol table info available.
+#10 0x00007f3d08dd11d8 in CompManager::finiPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#11 0x00007f3d08dd271e in CompPlugin::pop() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#12 0x00007f3d08da1e3c in PrivateScreen::updatePlugins() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#13 0x00007f3d08da2284 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#14 0x00007f3d08dd79e7 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#15 0x00007f3d072e485f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#16 0x00007f3d06decdda in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007f3d06ded1a0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f3d06ded59a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x000000000040299e in main ()
+No symbol table info available.

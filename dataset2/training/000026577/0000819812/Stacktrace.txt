@@ -1,0 +1,67 @@
+#0  0x00007f1beeae0ba9 in g_variant_unref () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f1bef453cb8 in g_settings_get_boolean () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007f1bddb04bf8 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#3  0x00007f1bef16fe94 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007f1bef18313b in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f1bef18c757 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f1bef18c922 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f1bef4515a1 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#8  0x00007f1bec221a14 in ffi_call_unix64 () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#9  0x00007f1bec221435 in ffi_call () from /usr/lib/x86_64-linux-gnu/libffi.so.6
+No symbol table info available.
+#10 0x00007f1bef170357 in g_cclosure_marshal_generic () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x00007f1bef16fe94 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00007f1bef182f74 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007f1bef18c5e6 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007f1bef18c922 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007f1bef452267 in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#16 0x00007f1bef44f06b in g_settings_backend_changed_tree () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#17 0x00007f1be64b172c in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#18 0x00007f1bef41da61 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#19 0x00007f1bef465daf in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#20 0x00007f1bef41da61 in g_simple_async_result_complete () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#21 0x00007f1bef41db9c in ?? () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#22 0x00007f1beeaa65bd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#23 0x00007f1beeaa6db8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#24 0x00007f1beeaa72f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#25 0x00007f1be64b0a0b in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#26 0x00007f1beeacc086 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007f1bef905d8c in start_thread (arg=0x7f1be5c6f700) at pthread_create.c:304
+        pd = 0x7f1be5c6f700
+        now = <value optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {139757795866368, 5724294720675155006, 140733231645584, 139757795867072, 0, 3, -5672551781220185026, -5672538160276927426}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = 0
+        robust = <value optimized out>
+        sp = <value optimized out>
+        freesize = <value optimized out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#28 0x00007f1bee7a21dd in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:112
+No locals.
+#29 0x0000000000000000 in ?? ()
+No symbol table info available.

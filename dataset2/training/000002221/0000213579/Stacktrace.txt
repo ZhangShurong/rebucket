@@ -1,0 +1,26 @@
+#0  0x000000000041ec9b in updateWindowAttributes ()
+#1  0x00007f582dc09ed0 in ?? () from /usr/lib/compiz/libmove.so
+#2  0x0000000000421c95 in handleEvent ()
+#3  0x00007f582dc0ac26 in ?? () from /usr/lib/compiz/libmove.so
+#4  0x00007f582da06077 in ?? () from /usr/lib/compiz/libresize.so
+#5  0x00007f582d7ffd0a in ?? () from /usr/lib/compiz/libdecoration.so
+#6  0x00007f582a1481a2 in ?? () from /usr/lib/compiz/libvideo.so
+#7  0x00007f5829f3f2e2 in ?? () from /usr/lib/compiz/libwall.so
+#8  0x00007f5829d304ea in ?? () from /usr/lib/compiz/libsnap.so
+#9  0x00007f5829b15dbd in ?? () from /usr/lib/compiz/libanimation.so
+#10 0x00007f5829681eaa in ?? () from /usr/lib/compiz/libscale.so
+#11 0x00007f5829479343 in ?? () from /usr/lib/compiz/libexpo.so
+#12 0x00007f582926ee85 in ?? () from /usr/lib/compiz/libswitcher.so
+#13 0x00007f58290678e0 in ?? () from /usr/lib/compiz/libregex.so
+#14 0x00007f5828e63c9f in ?? () from /usr/lib/compiz/libresizeinfo.so
+#15 0x00007f5828c5d986 in ?? () from /usr/lib/compiz/libworkarounds.so
+#16 0x00007f5828a56a46 in ?? () from /usr/lib/compiz/libezoom.so
+#17 0x00007f582884f935 in ?? () from /usr/lib/compiz/libvpswitch.so
+#18 0x00007f582844443a in ?? () from /usr/lib/compiz/libfade.so
+#19 0x00007f582823eed6 in ?? () from /usr/lib/compiz/libscaleaddon.so
+#20 0x00007f5828035ec3 in ?? () from /usr/lib/compiz/libscalefilter.so
+#21 0x00007f5827e2ea91 in ?? () from /usr/lib/compiz/libsession.so
+#22 0x00007f5827c26ec4 in ?? () from /usr/lib/compiz/libshift.so
+#23 0x00007f5827a16c28 in ?? () from /usr/lib/compiz/libwobbly.so
+#24 0x0000000000411b88 in eventLoop ()
+#25 0x000000000040d019 in main ()

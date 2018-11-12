@@ -1,0 +1,21 @@
+#0  0x00a409b2 in g_logv () from /usr/lib/libglib-2.0.so.0
+#1  0x00a40d86 in g_log () from /usr/lib/libglib-2.0.so.0
+#2  0x005db501 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#3  0x08d78358 in xkl_process_error () from /usr/lib/libxklavier.so.15
+#4  0x01034839 in _XError () from /usr/lib/libX11.so.6
+#5  0x0103b5ce in _XReply () from /usr/lib/libX11.so.6
+#6  0x010190b6 in XGetWindowProperty () from /usr/lib/libX11.so.6
+#7  0x08d7e0fb in xkl_engine_is_toplevel_window_transparent ()
+   from /usr/lib/libxklavier.so.15
+#8  0x08d78a1d in xkl_engine_process_focus_in_evt ()
+   from /usr/lib/libxklavier.so.15
+#9  0x08d7906c in xkl_engine_filter_events () from /usr/lib/libxklavier.so.15
+#10 0x0170e6f7 in ?? () from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+#11 0x005cfe93 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#12 0x005d26d1 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#13 0x005d2c1f in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+#14 0x00a36c48 in g_main_context_dispatch () from /usr/lib/libglib-2.0.so.0
+#15 0x00a3a4f0 in ?? () from /usr/lib/libglib-2.0.so.0
+#16 0x00a3a95f in g_main_loop_run () from /usr/lib/libglib-2.0.so.0
+#17 0x002612f9 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+#18 0x0804b9ce in main ()

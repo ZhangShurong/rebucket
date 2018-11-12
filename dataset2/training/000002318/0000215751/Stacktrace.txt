@@ -1,0 +1,43 @@
+#0  configuration_new_current (screen=0x65e300) at monitor-db.c:360
+	config = (Configuration *) 0x65f580
+	a = (GPtrArray *) 0x64c330
+	rw_outputs = <value optimized out>
+	clone_width = <value optimized out>
+	clone_height = <value optimized out>
+	__PRETTY_FUNCTION__ = "configuration_new_current"
+#1  0x00007f18c6d76a89 in configuration_apply_stored (screen=0x65e300)
+    at monitor-db.c:972
+	configs = (Configuration **) 0x0
+	current = <value optimized out>
+	found = <value optimized out>
+	result = 0
+#2  0x00007f18c6f81dd1 in gsd_xrandr_manager_start (manager=0x648600, 
+    error=<value optimized out>) at gsd-xrandr-manager.c:185
+	major = 1
+	minor = 2
+	event_base = 109
+	error_base = 173
+	display = <value optimized out>
+	xdisplay = (Display *) 0x52
+#3  0x00007f18c6f81b27 in impl_activate (plugin=0x654d90)
+    at gsd-xrandr-plugin.c:78
+	res = <value optimized out>
+	error = (GError *) 0x0
+#4  0x0000000000404f0c in gnome_settings_plugin_info_activate (info=0x6383c0)
+    at gnome-settings-plugin-info.c:506
+	__PRETTY_FUNCTION__ = "gnome_settings_plugin_info_activate"
+#5  0x0000000000403c85 in maybe_activate_plugin (info=0x6383c0, 
+    user_data=<value optimized out>) at gnome-settings-manager.c:93
+	res = <value optimized out>
+#6  0x00007f18cc777bed in IA__g_slist_foreach (list=<value optimized out>, 
+    func=0x403c70 <maybe_activate_plugin>, user_data=0x0)
+    at /build/buildd/glib2.0-2.16.3/glib/gslist.c:743
+	next = (GSList *) 0x64c340
+#7  0x0000000000403e94 in gnome_settings_manager_start (manager=0x648540, 
+    error=<value optimized out>) at gnome-settings-manager.c:271
+	ret = <value optimized out>
+#8  0x0000000000403ad8 in main (argc=1, argv=0x7fffd8e10758) at main.c:260
+	manager = (GnomeSettingsManager *) 0x648540
+	program = (GnomeProgram *) 0x645800
+	res = <value optimized out>
+	error = (GError *) 0x0

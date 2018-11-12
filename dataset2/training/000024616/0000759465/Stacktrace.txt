@@ -1,0 +1,10 @@
+#0  0x080845b9 in PrivateWindow::processMap (this=Cannot access memory at address 0xbfa00d80
+) at /build/buildd/compiz-0.9.4+bzr20110411/src/window.cpp:4624
+        gravity = <value optimized out>
+        xwc = <error reading variable xwc (Cannot access memory at address 0xbfa00d38)>
+        xwcm = <error reading variable xwcm (Cannot access memory at address 0xbfa00d5c)>
+        pos = <error reading variable pos (Cannot access memory at address 0xbfa00d54)>
+        allowFocus = <value optimized out>
+        wasManaged = false
+        stackingMode = <value optimized out>
+Cannot access memory at address 0xbfa00d7c

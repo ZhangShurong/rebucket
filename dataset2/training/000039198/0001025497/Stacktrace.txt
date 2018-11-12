@@ -1,0 +1,18 @@
+#0  0x00007f8254ff9ebb in unity::dash::LensBar::AddLens(std::shared_ptr<unity::dash::Lens>&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x3f89b4e83f861111 in ?? ()
+No symbol table info available.
+#2  0x3f8000003f800000 in ?? ()
+No symbol table info available.
+#3  0x3d9b4e823d422222 in ?? ()
+No symbol table info available.
+#4  0x0000000200000002 in ?? ()
+No symbol table info available.
+#5  0x0000000200000002 in ?? ()
+No symbol table info available.
+#6  0x0000000100000000 in ?? ()
+No symbol table info available.
+#7  0x0000038e43fa0000 in ?? ()
+No symbol table info available.
+#8  0x0000000000000000 in ?? ()
+No symbol table info available.

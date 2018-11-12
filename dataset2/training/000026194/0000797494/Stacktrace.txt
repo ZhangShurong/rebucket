@@ -1,0 +1,93 @@
+#0  0x0023f429 in gtk_icon_source_set_pixbuf () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#1  0x0025703b in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#2  0x002571dc in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#3  0x002574bb in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#4  0x002577c3 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#5  0x0030328e in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#6  0x003f6fe8 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#7  0x0030328e in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#8  0x00303bd8 in gtk_widget_get_preferred_size () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#9  0x003f4fab in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#10 0x003fc877 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#11 0x004294a8 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#12 0x006b20bc in g_cclosure_marshal_VOID__VOID (closure=0x838f5d0, return_value=0x0, n_param_values=1, param_values=0x8400660, invocation_hint=0xbfe68650, marshal_data=0x429430) at /build/buildd/glib2.0-2.29.8/./gobject/gmarshal.c:79
+        callback = 0x429430
+        cc = 0x838f5d0
+        data1 = 0x84a1008
+        data2 = <value optimized out>
+        __PRETTY_FUNCTION__ = "g_cclosure_marshal_VOID__VOID"
+#13 0x0069436d in g_type_class_meta_marshal (closure=0x838f5d0, return_value=0x0, n_param_values=1, param_values=0x8400660, invocation_hint=0xbfe68650, marshal_data=0x1a4) at /build/buildd/glib2.0-2.29.8/./gobject/gclosure.c:882
+        class = <value optimized out>
+        callback = <value optimized out>
+        offset = 420
+#14 0x0069591c in g_closure_invoke (closure=0x838f5d0, return_value=0x0, n_param_values=1, param_values=0x8400660, invocation_hint=0xbfe68650) at /build/buildd/glib2.0-2.29.8/./gobject/gclosure.c:771
+        marshal = 0x694310 <g_type_class_meta_marshal>
+        marshal_data = 0x1a4
+        in_marshal = 0
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#15 0x006a88c8 in signal_emit_unlocked_R (node=0x838f600, detail=0, instance=0x84a1008, emission_return=0x0, instance_and_params=0x8400660) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3294
+        accumulator = 0x0
+        emission = {next = 0x0, instance = 0x84a1008, ihint = {signal_id = 88, detail = 0, run_type = G_SIGNAL_RUN_LAST}, state = EMISSION_RUN, chain_type = 138759984}
+        class_closure = 0x838f5d0
+        hlist = 0x8421580
+        handler_list = 0x0
+        return_accu = 0x0
+        accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 88
+        max_sequential_handler_number = 223
+        return_value_altered = 0
+#16 0x006b173f in g_signal_emit_valist (instance=0x84a1008, signal_id=88, detail=0, var_args=0xbfe687fc "\364?Y") at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:2987
+        instance_and_params = 0x8400660
+        signal_return_type = 4
+        param_values = 0x8400674
+        node = 0x838f600
+        i = <value optimized out>
+        n_params = 0
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#17 0x006b18b3 in g_signal_emit (instance=0x84a1008, signal_id=88, detail=0) at /build/buildd/glib2.0-2.29.8/./gobject/gsignal.c:3044
+        var_args = 0xbfe687fc "\364?Y"
+#18 0x001d83da in gtk_container_check_resize () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#19 0x001d879f in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#20 0x00b05c2e in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#21 0x0094e230 in g_idle_dispatch (source=0x8423d00, callback=0xb05bf0, user_data=0x8409b30) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:4844
+No locals.
+#22 0x009520cf in g_main_dispatch (context=0x8388348) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:2477
+        dispatch = 0x94e210 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0x8409b30
+        callback = 0xb05bf0
+        cb_funcs = 0xa0035c
+        cb_data = 0x840ee90
+        current_source_link = {data = 0x8423d00, next = 0x0}
+        need_destroy = <value optimized out>
+        source = 0x8423d00
+        current = 0x83cae80
+        i = <value optimized out>
+#23 g_main_context_dispatch (context=0x8388348) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3050
+No locals.
+#24 0x00952800 in g_main_context_iterate (context=0x8388348, block=9835520, dispatch=1, self=<value optimized out>) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3128
+        max_priority = 110
+        timeout = 0
+        some_ready = 1
+        nfds = <value optimized out>
+        allocated_nfds = <value optimized out>
+        fds = 0x840c268
+#25 0x00952e0b in g_main_loop_run (loop=0x83bc3e0) at /build/buildd/glib2.0-2.29.8/./glib/gmain.c:3336
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#26 0x080588f2 in main ()
+No symbol table info available.

@@ -1,0 +1,64 @@
+#0  0x026a6fa6 in ?? () from /usr/lib/libgnomekbdui.so.4
+No symbol table info available.
+#1  0x026a71d2 in gkbd_indicator_config_refresh_style ()
+   from /usr/lib/libgnomekbdui.so.4
+No symbol table info available.
+#2  0x026aac60 in ?? () from /usr/lib/libgnomekbdui.so.4
+No symbol table info available.
+#3  0x00542b8c in g_cclosure_marshal_VOID__PARAM ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00534252 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x0054bcb0 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x0054cfe4 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x0054d746 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x005387f1 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00534f8f in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x0053c173 in g_object_thaw_notify () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x002fe942 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#12 0x002e0707 in gtk_rc_reparse_all_for_settings ()
+   from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#13 0x002e09f3 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#14 0x00542b8c in g_cclosure_marshal_VOID__PARAM ()
+   from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00534252 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x0054b97d in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x0054cfe4 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x0054d746 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x005387f1 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#20 0x00534f8f in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x0053ad83 in g_object_notify () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x00300f0e in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#23 0x0028adc0 in gtk_main_do_event () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#24 0x0071a37a in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#25 0x00a2c645 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00a30338 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00a30877 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#28 0x0028b299 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#29 0x0804bd33 in main ()
+No symbol table info available.

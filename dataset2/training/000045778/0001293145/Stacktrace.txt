@@ -1,0 +1,151 @@
+#0  _int_malloc (av=av@entry=0xb7534420 <main_arena>, bytes=bytes@entry=1025) at malloc.c:3489
+        iters = 2
+        nb = 1032
+        idx = 72
+        bin = <optimized out>
+        victim = 0xa49c4c8
+        size = 304
+        victim_index = <optimized out>
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        block = <optimized out>
+        bit = <optimized out>
+        map = <optimized out>
+        fwd = <optimized out>
+        bck = 0xfbf1ce8c
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#1  0xb73fea60 in _int_realloc (av=av@entry=0xb7534420 <main_arena>, oldp=oldp@entry=0x9311448, oldsize=oldsize@entry=712, nb=nb@entry=1032) at malloc.c:4286
+        newp = <optimized out>
+        newsize = <optimized out>
+        newmem = <optimized out>
+        next = 0x9311710
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        bck = <optimized out>
+        fwd = <optimized out>
+        copysize = <optimized out>
+        ncopies = <optimized out>
+        s = <optimized out>
+        d = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_realloc"
+        nextsize = 728
+#2  0xb73ffb08 in __GI___libc_realloc (oldmem=0x9311450, bytes=1024) at malloc.c:3029
+        ar_ptr = 0xb7534420 <main_arena>
+        nb = 1032
+        newp = <optimized out>
+        hook = <optimized out>
+        oldp = 0x9311448
+        oldsize = 712
+        __func__ = "__libc_realloc"
+#3  0xb21e5573 in ?? () from /usr/lib/i386-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#4  0xb21eb431 in ft_mem_qrealloc () from /usr/lib/i386-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#5  0xb21eb50e in ft_mem_realloc () from /usr/lib/i386-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#6  0xb21eb69d in FT_GlyphLoader_CheckPoints () from /usr/lib/i386-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#7  0xb222ba21 in ?? () from /usr/lib/i386-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#8  0xb222febe in ?? () from /usr/lib/i386-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#9  0xb21ecc2a in FT_Load_Glyph () from /usr/lib/i386-linux-gnu/libfreetype.so.6
+No symbol table info available.
+#10 0xb2426661 in ?? () from /usr/lib/i386-linux-gnu/libcairo.so.2
+No symbol table info available.
+#11 0xb23cc190 in ?? () from /usr/lib/i386-linux-gnu/libcairo.so.2
+No symbol table info available.
+#12 0xb23cc40a in cairo_scaled_font_glyph_extents () from /usr/lib/i386-linux-gnu/libcairo.so.2
+No symbol table info available.
+#13 0xb0cee472 in ?? () from /usr/lib/i386-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#14 0xb0cf0e56 in ?? () from /usr/lib/i386-linux-gnu/libpangocairo-1.0.so.0
+No symbol table info available.
+#15 0xb106fd9c in pango_font_get_glyph_extents () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#16 0xb0b96f96 in ?? () from /usr/lib/i386-linux-gnu/libpangoft2-1.0.so.0
+No symbol table info available.
+#17 0xb06118ab in ?? () from /usr/lib/i386-linux-gnu/libharfbuzz.so.0
+No symbol table info available.
+#18 0xb05f784f in hb_shape_plan_execute () from /usr/lib/i386-linux-gnu/libharfbuzz.so.0
+No symbol table info available.
+#19 0xb05f6ca2 in hb_shape_full () from /usr/lib/i386-linux-gnu/libharfbuzz.so.0
+No symbol table info available.
+#20 0xb05f6d2b in hb_shape () from /usr/lib/i386-linux-gnu/libharfbuzz.so.0
+No symbol table info available.
+#21 0xb0b9747c in ?? () from /usr/lib/i386-linux-gnu/libpangoft2-1.0.so.0
+No symbol table info available.
+#22 0xb107898e in ?? () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#23 0xb1089474 in pango_shape_full () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#24 0xb106a0c8 in ?? () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#25 0xb106a3e0 in ?? () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#26 0xb107f07c in ?? () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#27 0xb1080c40 in ?? () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#28 0xb10811e5 in pango_layout_get_size () from /usr/lib/i386-linux-gnu/libpango-1.0.so.0
+No symbol table info available.
+#29 0xae11863f in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#30 0xae11857d in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#31 0xae11898b in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#32 0xae112704 in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#33 0xae11278f in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#34 0xae112704 in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#35 0xae11278f in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#36 0xae112704 in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#37 0xae112adf in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#38 0xae112704 in ?? () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#39 0xae12073c in rsvg_handle_render_cairo_sub () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#40 0xae120be0 in rsvg_handle_get_pixbuf_sub () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#41 0xae120c73 in rsvg_handle_get_pixbuf () from /usr/lib/i386-linux-gnu/librsvg-2.so.2
+No symbol table info available.
+#42 0xae153ad5 in ?? () from /usr/lib/i386-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+No symbol table info available.
+#43 0xb1fc8378 in gdk_pixbuf_loader_close () from /usr/lib/i386-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#44 0xb1fc425e in ?? () from /usr/lib/i386-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#45 0xb1fc5fee in gdk_pixbuf_new_from_stream_at_scale () from /usr/lib/i386-linux-gnu/libgdk_pixbuf-2.0.so.0
+No symbol table info available.
+#46 0xb12c6009 in ?? () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#47 0xb12c9b89 in gtk_icon_info_load_icon () from /usr/lib/i386-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#48 0xb1aca41c in unity::IconLoader::Impl::IconLoaderTask::LoaderJobFunc(_GTask*, void*, void*, _GCancellable*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#49 0xb61ee1d2 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#50 0xb70ec425 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#51 0xb70eb9ca in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#52 0xb705ef70 in start_thread (arg=0xa596ab40) at pthread_create.c:312
+        __res = <optimized out>
+        pd = 0xa596ab40
+        now = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {-1224273920, -1516852416, 4001536, -1516854296, 1510935947, 2090275758}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+        pagesize_m1 = <optimized out>
+        sp = <optimized out>
+        freesize = <optimized out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#53 0xb7474a6e in clone () at ../sysdeps/unix/sysv/linux/i386/clone.S:129
+No locals.

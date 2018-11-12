@@ -1,0 +1,94 @@
+#0  0x00cb2416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x00dcddd1 in raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = <value optimized out>
+        resultvar = <value optimized out>
+        pid = 15732724
+        selftid = 1191
+#2  0x00dd12ae in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0xb5b00188, sa_sigaction = 0xb5b00188}, sa_mask = {__val = {336, 3048245544, 15732724, 3048210448, 138, 3058237596, 14758781, 15732724, 15732724, 15732724, 139, 3058237800, 14692814, 3048245248, 3048245248, 138, 3048222848, 0, 3048245248, 4222451712, 3048245248, 3048245349, 3048245248, 3048245248, 3048245386, 3048245548, 3048245248, 3048245548, 0, 0, 0, 0}}, sa_flags = 0, sa_restorer = 0xb5b07c60}
+        sigs = {__val = {32, 0 <repeats 31 times>}}
+#3  0x00dc67e8 in __assert_fail (assertion=0xa41824 "req == dpy->xcb->pending_requests", file=0xa4172b "../../src/xcb_io.c", line=140, function=0xa41a07 "dequeue_pending_request") at assert.c:81
+        buf = 0xb5b03080 "gnome-settings-daemon: ../../src/xcb_io.c:140: dequeue_pending_request: La declaración `req == dpy->xcb->pending_requests' no se cumple.\n"
+#4  0x009c8850 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x009c964f in _XReply () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00a1e662 in ?? () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00a1e736 in XkbGetUpdatedMap () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00a1e830 in XkbGetMap () from /usr/lib/i386-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x03836b74 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#10 0x03836c99 in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#11 0x038372cf in ?? () from /usr/lib/gnome-settings-daemon-3.0/liba11y-keyboard.so
+No symbol table info available.
+#12 0x007198fa in g_cclosure_marshal_VOID__STRING () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00717956 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x0072be50 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00734b0f in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00734c83 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00662a5e in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#18 0x008d735a in ffi_call_SYSV () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#19 0x008d708f in ffi_call () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#20 0x00717ede in g_cclosure_marshal_generic () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x0071647d in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x00717956 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x0072bc98 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x007349c1 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#25 0x00734c83 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#26 0x0066389c in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#27 0x0065ff8c in g_settings_backend_changed_tree () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#28 0x00caa110 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#29 0x006290e2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#30 0x0067899c in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#31 0x006290e2 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#32 0x0062921c in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#33 0x00f4a370 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#34 0x00f4e54f in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#35 0x00f4ec80 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#36 0x00f4f28b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#37 0x00ca9294 in ?? () from /usr/lib/gio/modules/libdconfsettings.so
+No symbol table info available.
+#38 0x00f75934 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#39 0x005b1e99 in start_thread (arg=0xb6491b70) at pthread_create.c:304
+        pd = 0xb6491b70
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {6041588, 0, 4001536, -1236724984, -1034914969, -431431669}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <value optimized out>
+        robust = <value optimized out>
+        pagesize_m1 = <value optimized out>
+        sp = <value optimized out>
+        freesize = <value optimized out>
+        __PRETTY_FUNCTION__ = "start_thread"
+#40 0x00e736ee in clone () at ../sysdeps/unix/sysv/linux/i386/clone.S:130
+No locales.

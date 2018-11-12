@@ -1,0 +1,16 @@
+#0  0x00007f5a68215b50 in ?? ()
+No symbol table info available.
+#1  0x00007f5a82bb03b8 in Launcher::OnBFBUpdate(_GVariant*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f5a82b5ac09 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007f5a8e9b9bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f5a8e9ba3a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f5a8e9ba9f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#7  0x0000000000423180 in main ()
+No symbol table info available.

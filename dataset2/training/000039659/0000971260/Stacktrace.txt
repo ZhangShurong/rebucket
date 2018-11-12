@@ -1,0 +1,62 @@
+#0  0x000075a6 in ?? ()
+No symbol table info available.
+#1  0xb47121f4 in getCompPluginVTable20090315_imgsvg () from /usr/lib/compiz/libimgsvg.so
+No symbol table info available.
+#2  0xb773940a in ?? () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#3  0xb77387ce in CompPlugin::load(char const*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#4  0xb7705890 in compiz::private_screen::PluginManager::updatePlugins() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#5  0xb7707b67 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#6  0xb7707cb2 in CompScreenImpl::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#7  0xb773f552 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#8  0xb773f8c2 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#9  0xb773f662 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#10 0xb726dda1 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0xb7173cda in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0xb71740e5 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0xb71741c1 in g_main_context_iteration () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0xb67ee31c in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#15 0xb67bbc2f in ccsProcessEvents () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#16 0xb778934b in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#17 0xb7789621 in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CcpScreen>, boost::_bi::list1<boost::_bi::value<CcpScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#18 0xb7748c83 in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#19 0xb7748d91 in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#20 0xb7748ea2 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompTimeoutSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#21 0xb774801f in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#22 0xb726dda1 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#23 0xb7173cda in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#24 0xb71740e5 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#25 0xb717452b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0xb726f423 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#27 0xb76fb9e6 in compiz::private_screen::EventManager::startEventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#28 0xb76fba22 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#29 0x0804a4f2 in CompManager::run() ()
+No symbol table info available.
+#30 0x0804a17c in main ()
+No symbol table info available.

@@ -1,0 +1,34 @@
+#0  0x0067a963 in g_variant_unref () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x0039305a in g_settings_get_string () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x139a282e in deja_dup_convert_ssh_to_file () from /usr/lib/control-center-1/panels/libdeja-dup.so
+No symbol table info available.
+#3  0x139a2e35 in deja_dup_initialize () from /usr/lib/control-center-1/panels/libdeja-dup.so
+No symbol table info available.
+#4  0x13995902 in deja_dup_gui_initialize () from /usr/lib/control-center-1/panels/libdeja-dup.so
+No symbol table info available.
+#5  0x1397f11f in g_io_module_load () from /usr/lib/control-center-1/panels/libdeja-dup.so
+No symbol table info available.
+#6  0x00341b3e in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#7  0x005dd2c9 in g_type_module_use () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00341d42 in g_io_modules_load_all_in_directory_with_scope () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#9  0x00341de3 in g_io_modules_load_all_in_directory () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#10 0x00ed3840 in ?? ()
+No symbol table info available.
+#11 0x005da3eb in g_type_create_instance () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x005b87bb in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x005bb929 in g_object_newv () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x005bc488 in g_object_new () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00ed3884 in gnome_control_center_new ()
+No symbol table info available.
+#16 0x00ed0c6d in main ()
+No symbol table info available.

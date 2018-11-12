@@ -1,0 +1,10 @@
+#0  rw_output_by_id (info=0x0, id=68) at randrwrap.c:122
+	output = <value optimized out>
+#1  0x00007f6ee3681482 in screen_info_new (screen=<value optimized out>) at randrwrap.c:604
+	info = (ScreenInfo *) 0x6605c0
+#2  0x00000073000000b8 in ?? ()
+#3  0x00000000006540d0 in ?? ()
+#4  0x0000000000650240 in ?? ()
+#5  0x000000000065eb50 in ?? ()
+#6  0x0000000000650300 in ?? ()
+#7  0x0000000000000000 in ?? ()

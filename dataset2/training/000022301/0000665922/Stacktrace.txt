@@ -1,0 +1,78 @@
+#0  0x00007f40795229ab in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#1  0x00007f407826735d in g_hash_table_lookup () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f4078254e5f in g_cache_remove () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f40795e7ea9 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#4  0x00007f407872ba6e in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f4078740da1 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f4078742996 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f4078742f53 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007f40795dfd98 in gtk_style_detach () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#9  0x00007f407968287e in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#10 0x00007f40796829b8 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#11 0x00007f40795a9d59 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#12 0x00007f407872ba6e in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007f40787414d7 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007f4078742996 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007f4078742f53 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00007f407872fc89 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00007f4078733614 in g_object_notify () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x00007f40795cb45a in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#19 0x00007f40795ae4d5 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#20 0x00007f40795ae774 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#21 0x00007f40795ae901 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#22 0x00007f40795aead8 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#23 0x00007f40795aee2d in gtk_rc_reparse_all_for_settings () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#24 0x00007f40795aef55 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#25 0x00007f407872ba6e in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#26 0x00007f40787414d7 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#27 0x00007f4078742996 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#28 0x00007f4078742f53 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#29 0x00007f407872fc89 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#30 0x00007f4078733614 in g_object_notify () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#31 0x00007f40795cc390 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#32 0x00007f407955e035 in gtk_main_do_event () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#33 0x00007f4077c6074c in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#34 0x00007f4078276342 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#35 0x00007f407827a2a8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#36 0x00007f407827a7b5 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#37 0x00007f407955e3e7 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#38 0x000000000040429a in main ()
+No symbol table info available.

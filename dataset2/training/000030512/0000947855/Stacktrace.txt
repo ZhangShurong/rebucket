@@ -1,0 +1,42 @@
+#0  0x00007f8e1674ed1a in PluginClassHandler<GridWindow, CompWindow, 0>::get(CompWindow*) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#1  0x00007f8e16749904 in GridScreen::snapbackOptionChanged(CompOption*, GridOptions::Options) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#2  0x00007f8e16751b20 in GridOptions::setOption(std::string const&, CompOption::Value&) () from /usr/lib/compiz/libgrid.so
+No symbol table info available.
+#3  0x00007f8e28219ee7 in CompScreenImpl::_setOptionForPlugin(char const*, char const*, CompOption::Value&) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#4  0x00007f8e2403219e in CcpScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#5  0x00007f8e2821912c in CompScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#6  0x00007f8e17be8f6c in WallScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#7  0x00007f8e2821912c in CompScreen::setOptionForPlugin(char const*, char const*, CompOption::Value&) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#8  0x00007f8e2403382d in CcpScreen::setOptionFromContext(CompOption*, char const*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#9  0x00007f8e2403451c in CcpScreen::initPluginForScreen(CompPlugin*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#10 0x00007f8e2825527c in CompScreen::initPluginForScreen(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#11 0x00007f8e28255ecd in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#12 0x00007f8e282568a1 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#13 0x00007f8e282256ea in PrivateScreen::updatePlugins() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#14 0x00007f8e28226284 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#15 0x00007f8e2825b9e7 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#16 0x00007f8e267686df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x00007f8e26270dda in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f8e262711a0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f8e2627159a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x000000000040299e in main ()
+No symbol table info available.

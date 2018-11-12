@@ -1,0 +1,48 @@
+#0  0x00007fe5c3505175 in g_type_check_instance () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#1  0x00007fe5c34fba36 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#2  0x00007fe5c34fc1d2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0x00007fe5c01f30a7 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#4  0x00007fe5c34e4384 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007fe5c34f4635 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007fe5c34fc00b in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007fe5c34fc1d2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007fe5c01f36e6 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#9  0x00007fe5bbdca986 in dbus_connection_dispatch () from /lib/x86_64-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#10 0x00007fe5c01ec425 in ?? () from /usr/lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#11 0x00007fe5c449ebca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fe5c449ef90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007fe5c449f054 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007fe5c099fc79 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#15 0x00007fe5c226558e in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#16 0x00007fe5c64923db in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#17 0x00007fe5c64924df in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#18 0x00007fe5c649198d in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120125
+No symbol table info available.
+#19 0x00007fe5c49946bf in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#20 0x00007fe5c449ebca in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x00007fe5c449ef90 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0x00007fe5c449f38a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#23 0x000000000040299e in main ()
+No symbol table info available.

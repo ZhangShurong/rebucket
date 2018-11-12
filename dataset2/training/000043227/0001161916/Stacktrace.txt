@@ -1,0 +1,48 @@
+#0  0xb1ebfddf in sigc::internal::slot_call0<unity::launcher::VolumeImp::Impl::Impl(unity::glib::Object<_GVolume> const&, std::shared_ptr<unity::FileManager> const&, std::shared_ptr<unity::launcher::DeviceNotificationDisplay> const&, unity::launcher::VolumeImp*)::{lambda()#3}, void>::call_it(sigc::internal::slot_rep*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0xb1f7cbe9 in unity::GnomeFileManager::Impl::OnOpenLocationsUpdated(_GVariant*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0xb140d5b8 in std::function<void (_GVariant*)>::operator()(_GVariant*) const () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#3  0xb140a5eb in unity::glib::DBusProxy::Impl::OnPropertyChanged(_GDBusProxy*, _GVariant*, char***) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#4  0xb140ce1a in std::_Function_handler<void (_GDBusProxy*, _GVariant*, char***), sigc::bound_mem_functor3<void, unity::glib::DBusProxy::Impl, _GDBusProxy*, _GVariant*, char***> >::_M_invoke(std::_Any_data const&, _GDBusProxy*, _GVariant*, char***) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#5  0xb140cd0b in unity::glib::Signal<void, _GDBusProxy*, _GVariant*, char***>::Callback(_GDBusProxy*, _GVariant*, char***, unity::glib::Signal<void, _GDBusProxy*, _GVariant*, char***>*) () from /usr/lib/libunity-core-6.0.so.5
+No symbol table info available.
+#6  0xb700d48e in ffi_call_SYSV () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#7  0xb700d1ef in ffi_call () from /usr/lib/i386-linux-gnu/libffi.so.6
+No symbol table info available.
+#8  0xb707b4fc in g_cclosure_marshal_generic () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0xb707abc6 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0xb708cf2e in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#11 0xb7094f37 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0xb70951c3 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0xb634c026 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#14 0xb633a116 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#15 0xb7186f10 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0xb718a3b3 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0xb718a750 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0xb718ac2b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0xb728e2e3 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#20 0xb773946a in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#21 0xb77394b4 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20130125
+No symbol table info available.
+#22 0x08049b22 in CompManager::run() ()
+No symbol table info available.
+#23 0x080492ec in main ()
+No symbol table info available.

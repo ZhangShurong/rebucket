@@ -1,0 +1,12 @@
+#0  0xb7755291 in nux::GraphicsDisplay::CreateOpenGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay const*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#1  0xb77801c9 in nux::DisplayAccessController::CreateGLWindow(char const*, unsigned int, unsigned int, nux::WindowStyle, nux::GraphicsDisplay*, bool, bool) () from /usr/lib/libnux-graphics-0.9.so.0
+No symbol table info available.
+#2  0x0804961a in ?? ()
+No symbol table info available.
+#3  0x08049b1d in ?? ()
+No symbol table info available.
+#4  0xb7354e36 in __libc_start_main () from /lib/tls/i686/nosegneg/libc.so.6
+No symbol table info available.
+#5  0x08049021 in ?? ()
+No symbol table info available.

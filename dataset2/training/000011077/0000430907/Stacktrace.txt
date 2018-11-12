@@ -1,0 +1,12 @@
+#0  0x0088b832 in ?? () from /lib/ld-linux.so.2
+No symbol table info available.
+#1  0x002794d1 in raise () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#2  0x0027c932 in abort () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#3  0x00272648 in __assert_fail () from /lib/tls/i686/cmov/libc.so.6
+No symbol table info available.
+#4  0x08058d2c in eventLoop ()
+No symbol table info available.
+#5  0x08052bd3 in main ()
+No symbol table info available.

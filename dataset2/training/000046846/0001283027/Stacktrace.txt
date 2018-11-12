@@ -1,0 +1,65 @@
+#0  0x0000690100000000 in ?? ()
+No symbol table info available.
+#1  0x00007f82f2c1d31f in __dynamic_cast () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#2  0x00007f82d4d7cb7a in nux_base_window_accessible_check_active (self=0x7f82ac005a80, active_window=0x43a05e0) at /home/username/Reviews/misc/unity/plugins/unityshell/src/nux-base-window-accessible.cpp:183
+        is_active = 0
+        nux_object = 0x4bae9a0
+        bwindow = 0x0
+        __PRETTY_FUNCTION__ = "void nux_base_window_accessible_check_active(NuxBaseWindowAccessible*, nux::BaseWindow*)"
+#3  0x00007f82d4de209b in check_active_window (self=0x275ce90) at /home/username/Reviews/misc/unity/plugins/unityshell/src/unity-root-accessible.cpp:241
+Python Exception <class 'TypeError'> iter() returned non-iterator of type '_iterator': 
+        iter = 0x50c2b30
+        window = 0x7f82ac005a80
+#4  0x00007f82d4de23fe in set_active_window (self=0x275ce90, window=0x43a05e0) at /home/username/Reviews/misc/unity/plugins/unityshell/src/unity-root-accessible.cpp:324
+        __PRETTY_FUNCTION__ = "void set_active_window(UnityRootAccessible*, nux::BaseWindow*)"
+#5  0x00007f82d4de2616 in wc_change_visibility_window_cb (window=0x43a05e0, self=0x275ce90, visible=1) at /home/username/Reviews/misc/unity/plugins/unityshell/src/unity-root-accessible.cpp:378
+No locals.
+#6  0x00007f82d4de3806 in sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>::operator() (this=0x2b54c90, _A_a1=@0x7fff8e3564a0: 0x43a05e0, _A_a2=@0x2b54c98: 0x275ce90, _A_a3=@0x2b54ca0: 1) at /usr/include/sigc++-2.0/sigc++/functors/ptr_fun.h:185
+No locals.
+#7  0x00007f82d4de371a in sigc::adaptor_functor<sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void> >::operator()<nux::BaseWindow* const&, _UnityRootAccessible*&, int&> (this=0x2b54c88, _A_arg1=@0x7fff8e3564a0: 0x43a05e0, _A_arg2=@0x2b54c98: 0x275ce90, _A_arg3=@0x2b54ca0: 1) at /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:123
+No locals.
+#8  0x00007f82d4de362e in sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>::operator()<nux::BaseWindow* const&> (this=0x2b54c80, _A_arg1=@0x7fff8e3564a0: 0x43a05e0) at /usr/include/sigc++-2.0/sigc++/adaptors/bind.h:1336
+No locals.
+#9  0x00007f82d4de3462 in sigc::internal::slot_call1<sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>, void, nux::BaseWindow*>::call_it (rep=0x2b54c50, a_1=@0x7fff8e3564a0: 0x43a05e0) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:137
+        typed_rep = 0x2b54c50
+#10 0x00007f82d2ecc97d in nux::BaseWindow::ShowWindow(bool, bool) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#11 0x00007f82d4f0075c in unity::CairoBaseWindow::Show (this=0x43a05e0) at /home/username/Reviews/misc/unity/launcher/CairoBaseWindow.cpp:64
+No locals.
+#12 0x00007f82d4f8902b in unity::Tooltip::ShowTooltipWithTipAt (this=0x43a05e0, x=60, y=796) at /home/username/Reviews/misc/unity/launcher/Tooltip.cpp:117
+No locals.
+#13 0x00007f82d4f52908 in unity::launcher::LauncherIcon::ShowTooltip (this=0x2d2ae70) at /home/username/Reviews/misc/unity/launcher/LauncherIcon.cpp:494
+        pos = @0x7fff8e356560: {x = 60, y = 796}
+#14 0x00007f82d4f8bb92 in unity::launcher::TooltipManager::MouseMoved (this=0x2b84578, icon_under_mouse=...) at /home/username/Reviews/misc/unity/launcher/TooltipManager.cpp:61
+        type = unity::launcher::AbstractLauncherIcon::APPLICATION
+#15 0x00007f82d4f1771e in unity::launcher::Launcher::RecvMouseMove (this=0x2b83d70, x=32, y=743, dx=0, dy=2, button_flags=0, key_flags=1048576) at /home/username/Reviews/misc/unity/launcher/Launcher.cpp:2167
+No locals.
+#16 0x00007f82d4f26405 in sigc::bound_mem_functor6<void, unity::launcher::Launcher, int, int, int, int, unsigned long, unsigned long>::operator() (this=0x2c306f8, _A_a1=@0x7fff8e35675c: 32, _A_a2=@0x7fff8e356758: 743, _A_a3=@0x7fff8e356754: 0, _A_a4=@0x7fff8e356750: 2, _A_a5=@0x7fff8e356748: 0, _A_a6=@0x7fff8e3567b0: 1048576) at /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h:2201
+No locals.
+#17 0x00007f82d4f250b6 in sigc::adaptor_functor<sigc::bound_mem_functor6<void, unity::launcher::Launcher, int, int, int, int, unsigned long, unsigned long> >::operator()<int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&> (this=0x2c306f0, _A_arg1=@0x7fff8e35675c: 32, _A_arg2=@0x7fff8e356758: 743, _A_arg3=@0x7fff8e356754: 0, _A_arg4=@0x7fff8e356750: 2, _A_arg5=@0x7fff8e356748: 0, _A_arg6=@0x7fff8e3567b0: 1048576) at /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:189
+No locals.
+#18 0x00007f82d4f23499 in sigc::internal::slot_call6<sigc::bound_mem_functor6<void, unity::launcher::Launcher, int, int, int, int, unsigned long, unsigned long>, void, int, int, int, int, unsigned long, unsigned long>::call_it (rep=0x2c306c0, a_1=@0x7fff8e35675c: 32, a_2=@0x7fff8e356758: 743, a_3=@0x7fff8e356754: 0, a_4=@0x7fff8e356750: 2, a_5=@0x7fff8e356748: 0, a_6=@0x7fff8e3567b0: 1048576) at /usr/include/sigc++-2.0/sigc++/functors/slot.h:337
+        typed_rep = 0x2c306c0
+#19 0x00007f82d2ee3fab in nux::InputArea::EmitMouseMoveSignal(int, int, int, int, unsigned long, unsigned long) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#20 0x00007f82d2f0f5ef in nux::WindowCompositor::TrackMouseMovement(nux::Event const&, bool) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#21 0x00007f82d2f16c55 in nux::WindowCompositor::MouseEventCycle(nux::Event&) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#22 0x00007f82d2f1793b in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#23 0x00007f82d2f1bfef in nux::WindowThread::DoProcessEvent(nux::Event&) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#24 0x00007f82d2eefc26 in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#25 0x00007f82f0f2dd05 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00007f82f0f2e068 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007f82f0f2e32a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#28 0x00007f82f2f0610b in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#29 0x0000000000401971 in main ()
+No symbol table info available.

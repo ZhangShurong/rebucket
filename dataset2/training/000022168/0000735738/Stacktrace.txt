@@ -1,0 +1,14 @@
+#0  0x00007f7cf947bf45 in g_source_unref () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x000000000042cc38 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#2  0x000000000042ceb9 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#3  0x000000000042af95 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#4  0x000000000042b0a9 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#5  0x0000000000422769 in CompManager::fini() ()
+No symbol table info available.
+#6  0x0000000000422f68 in main ()
+No symbol table info available.

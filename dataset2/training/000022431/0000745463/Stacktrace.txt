@@ -1,0 +1,26 @@
+#0  0x00000000 in ?? ()
+No symbol table info available.
+#1  0x01264278 in Launcher::EnsureAnimation() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x01266921 in Launcher::SetHover() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x012669d4 in Launcher::EnsureHoverState() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x0126719f in Launcher::OnBFBUpdate(_GVariant*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x012dd2ef in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0x006ad311 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x006b1aa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x006b2270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x006b292b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x003b9a35 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#11 0x0806ebab in CompScreen::eventLoop() ()
+No symbol table info available.
+#12 0x08066e58 in main ()
+No symbol table info available.

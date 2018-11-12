@@ -1,0 +1,32 @@
+#0  0x00e12e3d in sigc::signal_base::impl() const () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#1  0x00e12f65 in sigc::signal_base::connect(sigc::slot_base const&) () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#2  0x01bc7d11 in UnityScreen::initUnity(nux::NThread*, void*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x01bccdd4 in boost::detail::function::functor_manager<boost::_bi::bind_t<bool, boost::_mfi::mf3<bool, UnityScreen, CompAction*, unsigned int, std::vector<CompOption, std::allocator<CompOption> >&>, boost::_bi::list4<boost::_bi::value<UnityScreen*>, boost::arg<1>, boost::arg<2>, boost::arg<3> > > >::manage(boost::detail::function::function_buffer const&, boost::detail::function::function_buffer&, boost::detail::function::functor_manager_operation_type) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x08095b27 in ?? ()
+No symbol table info available.
+#5  0x08096d06 in std::_Rb_tree<char const*, std::pair<char const* const, CompPlugin*>, std::_Select1st<std::pair<char const* const, CompPlugin*> >, CompPlugin::cmpStr, std::allocator<std::pair<char const* const, CompPlugin*> > >::_M_insert_unique(std::pair<char const* const, CompPlugin*> const&) ()
+No symbol table info available.
+#6  0x08071f06 in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#7  0x080725a8 in CompScreen::insertWindow(CompWindow*, unsigned long) ()
+No symbol table info available.
+#8  0x0809a480 in CoreOptions::~CoreOptions() ()
+No symbol table info available.
+#9  0x0053e959 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0x005ebaa8 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x005ec270 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x005ec92b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x0053fe95 in Glib::MainLoop::run() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#14 0x0806ecdb in CompScreen::eventLoop() ()
+No symbol table info available.
+#15 0x08066e98 in main ()
+No symbol table info available.

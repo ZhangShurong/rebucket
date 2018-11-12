@@ -1,0 +1,34 @@
+#0  0x00007f321b87e950 in std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#1  0x00007f3219e3f152 in sigc::internal::signal_impl::insert(std::_List_iterator<sigc::slot_base>, sigc::slot_base const&) () from /usr/lib/x86_64-linux-gnu/libsigc-2.0.so.0
+No symbol table info available.
+#2  0x00007f3219e3f1c0 in sigc::internal::signal_impl::connect(sigc::slot_base const&) () from /usr/lib/x86_64-linux-gnu/libsigc-2.0.so.0
+No symbol table info available.
+#3  0x00007f3219e3f384 in sigc::signal_base::connect(sigc::slot_base const&) () from /usr/lib/x86_64-linux-gnu/libsigc-2.0.so.0
+No symbol table info available.
+#4  0x00007f32063b7418 in unity::UnityScreen::UnityScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x00007f32063cbb68 in PluginClassHandler<unity::UnityScreen, CompScreen, 0>::get(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0x00007f32063cbd0c in CompPlugin::VTableForScreenAndWindow<unity::UnityScreen, unity::UnityWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#7  0x00007f321bb87d26 in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#8  0x00007f321bb88382 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#9  0x00007f321bb5c650 in compiz::private_screen::PluginManager::updatePlugins() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#10 0x00007f321bb5cdc0 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#11 0x00007f321bb8f0e7 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#12 0x00007f321a087f2f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#13 0x00007f3219b8f835 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0x00007f3219b8fb68 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007f3219b8ff62 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0x0000000000402ce9 in main ()
+No symbol table info available.

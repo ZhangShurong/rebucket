@@ -1,0 +1,82 @@
+#0  0xb715852d in g_logv () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0xb71586b3 in g_log () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0xb62e5fac in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#3  0xb62e6197 in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#4  0xb62e9fae in g_settings_get_value () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#5  0xb7770edd in ?? () from /usr/lib/libcompizconfig_gsettings_backend.so
+No symbol table info available.
+#6  0xb77715e9 in ccsGSettingsWrapperGetValue () from /usr/lib/libcompizconfig_gsettings_backend.so
+No symbol table info available.
+#7  0xb776fa3a in getVariantAtKey () from /usr/lib/libcompizconfig_gsettings_backend.so
+No symbol table info available.
+#8  0xb67a3036 in getVariantForCCSSetting () from /usr/lib/compizconfig/backends/libgsettings.so
+No symbol table info available.
+#9  0xb67a30b8 in readOption () from /usr/lib/compizconfig/backends/libgsettings.so
+No symbol table info available.
+#10 0xb67a34ec in readSetting () from /usr/lib/compizconfig/backends/libgsettings.so
+No symbol table info available.
+#11 0xb676a0b1 in ccsBackendReadSetting () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#12 0xb676a11e in ?? () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#13 0xb676a0b1 in ccsBackendReadSetting () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#14 0xb676e055 in ccsReadPluginSettingsDefault () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#15 0xb676bfc1 in ccsReadPluginSettings () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#16 0xb675ef63 in ccsLoadPluginSettings () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#17 0xb676e1cc in ccsFindSettingDefault () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#18 0xb676860d in ccsFindSetting () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#19 0xb777bfc4 in CcpScreen::setOptionFromContext(CompOption*, char const*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#20 0xb777cb41 in CcpScreen::initPluginForScreen(CompPlugin*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#21 0xb7730fbd in CompScreen::initPluginForScreen(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#22 0xb76f1bce in ScreenInterface::initPluginForScreen(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#23 0xb7730fbd in CompScreen::initPluginForScreen(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#24 0xb7731d91 in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#25 0xb7732830 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#26 0xb7701054 in compiz::private_screen::PluginManager::updatePlugins(CompScreen*, std::vector<CompOption::Value, std::allocator<CompOption::Value> > const&) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#27 0xb7702356 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#28 0xb77024e0 in CompScreenImpl::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#29 0xb7737d42 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#30 0xb77380e1 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompEventSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#31 0xb7737d72 in CompEventSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#32 0xb72521f1 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#33 0xb7150973 in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#34 0xb7150d10 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#35 0xb71511eb in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#36 0xb7253693 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#37 0xb76f51da in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#38 0xb76f5224 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20121210
+No symbol table info available.
+#39 0x0804a1c2 in CompManager::run() ()
+No symbol table info available.
+#40 0x08049c1c in main ()
+No symbol table info available.

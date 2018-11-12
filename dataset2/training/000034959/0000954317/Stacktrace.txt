@@ -1,0 +1,20 @@
+#0  0x0095327b in ?? () from /usr/lib/i386-linux-gnu/libdbusmenu-glib.so.4
+No symbol table info available.
+#1  0x002d0c50 in g_simple_async_result_complete () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x002d0d7c in ?? () from /usr/lib/i386-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#3  0x0068a7f0 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x0068cd8a in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x0068d195 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#6  0x0068d5db in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x0804b65a in ?? ()
+No symbol table info available.
+#8  0x00d794d3 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#9  0x0804b6a5 in ?? ()
+No symbol table info available.

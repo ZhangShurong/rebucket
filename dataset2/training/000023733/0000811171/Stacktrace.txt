@@ -1,0 +1,47 @@
+#0  0xb7887424 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0xb6ff4e71 in raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = <value optimized out>
+        resultvar = <value optimized out>
+        pid = -1223528460
+        selftid = 1987
+#2  0xb6ff834e in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x7c3, sa_sigaction = 0x7c3}, sa_mask = {__val = {3071438836, 1, 3216003520, 3216003356, 3071091925, 3079296228, 515136, 0, 3026217900, 3216003520, 3441, 3216003488, 3026213276, 56, 2, 3216003356, 3070830372, 8, 0, 3216003416, 3071438836, 4, 2, 3216003536, 3070952794, 2, 3216003416, 8, 0, 7, 6, 3071280376}}, sa_flags = 3, sa_restorer = 0x4}
+        sigs = {__val = {32, 0 <repeats 31 times>}}
+#3  0xb702b577 in __libc_message (do_abort=2, fmt=0xb71048ac "*** glibc detected *** %s: %s: 0x%s ***\n") at ../sysdeps/unix/sysv/linux/libc_fatal.c:189
+        ap = 0xb1687e98 "*** glibc detected *** compiz: malloc(): smallbin double linked list corrupted: 0x093bbb18 ***\n"
+        ap_copy = 0xb1687e98 "*** glibc detected *** compiz: malloc(): smallbin double linked list corrupted: 0x093bbb18 ***\n"
+        fd = 2
+        on_2 = <value optimized out>
+        list = <value optimized out>
+        nlist = <value optimized out>
+        cp = <value optimized out>
+        written = <value optimized out>
+#4  0xb7035961 in malloc_printerr (action=<value optimized out>, str=<value optimized out>, ptr=0x93bbb18) at malloc.c:6283
+        buf = "093bbb18"
+        cp = <value optimized out>
+#5  0xb70384ba in _int_malloc (av=0xb71283c0, bytes=20) at malloc.c:4308
+        p = <value optimized out>
+        nb = 24
+        idx = <value optimized out>
+        bin = <value optimized out>
+        victim = <value optimized out>
+        size = <value optimized out>
+        victim_index = <value optimized out>
+        remainder = <value optimized out>
+        remainder_size = <value optimized out>
+        block = <value optimized out>
+        bit = <value optimized out>
+        map = <value optimized out>
+        fwd = <value optimized out>
+        bck = <value optimized out>
+        errstr = <value optimized out>
+        __func__ = "_int_malloc"
+#6  0xb7039f53 in __libc_malloc (bytes=20) at malloc.c:3660
+        ar_ptr = 0xb71283c0
+        victim = <value optimized out>
+        hook = <value optimized out>
+        __func__ = "__libc_malloc"
+#7  0xb5bf291a in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.

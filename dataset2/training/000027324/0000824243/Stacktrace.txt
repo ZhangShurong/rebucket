@@ -1,0 +1,21 @@
+#0  0x00f017ea in g_str_hash () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00ece118 in g_hash_table_lookup () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x08051351 in ?? ()
+No symbol table info available.
+#3  0x08055a11 in ?? ()
+No symbol table info available.
+#4  0x00edaf98 in g_list_foreach () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x08055d0e in ?? ()
+No symbol table info available.
+#6  0x0804f64d in ?? ()
+No symbol table info available.
+#7  0x0804aa27 in ?? ()
+No symbol table info available.
+#8  0x0087b113 in __libc_start_main () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.
+#9  0x0804aacd in ?? ()
+No symbol table info available.
+Backtrace stopped: Not enough registers or memory available to unwind further

@@ -1,0 +1,58 @@
+#0  0x00007f5b9d14f2da in __dynamic_cast () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#1  0x00007f5b7c4cb069 in nux_base_window_accessible_check_active () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f5b7c5265bf in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007f5b7c526922 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x00007f5b7c526b3a in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#5  0x00007f5b7c527d2a in sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>::operator()(nux::BaseWindow* const&, _UnityRootAccessible* const&, int const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#6  0x00007f5b7c527c3e in sigc::adaptor_functor<sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void> >::deduce_result_type<nux::BaseWindow* const&, _UnityRootAccessible*&, int&, void, void, void, void>::type sigc::adaptor_functor<sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void> >::operator()<nux::BaseWindow* const&, _UnityRootAccessible*&, int&>(nux::BaseWindow* const&, _UnityRootAccessible*&, int&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#7  0x00007f5b7c527b52 in sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>::deduce_result_type<nux::BaseWindow* const&, void, void, void, void, void, void>::type sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>::operator()<nux::BaseWindow* const&>(nux::BaseWindow* const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#8  0x00007f5b7c527986 in sigc::internal::slot_call1<sigc::bind_functor<-1, sigc::pointer_functor3<nux::BaseWindow*, _UnityRootAccessible*, int, void>, _UnityRootAccessible*, int, sigc::nil, sigc::nil, sigc::nil, sigc::nil, sigc::nil>, void, nux::BaseWindow*>::call_it(sigc::internal::slot_rep*, nux::BaseWindow* const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#9  0x00007f5b7a75b97d in nux::BaseWindow::ShowWindow(bool, bool) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#10 0x00007f5b7c63b668 in unity::CairoBaseWindow::Show() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007f5b7c6c3f37 in unity::Tooltip::ShowTooltipWithTipAt(int, int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007f5b7c68d814 in unity::launcher::LauncherIcon::ShowTooltip() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#13 0x00007f5b7c6c6a9e in unity::launcher::TooltipManager::MouseMoved(nux::ObjectPtr<unity::launcher::AbstractLauncherIcon> const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x00007f5b7c65262a in unity::launcher::Launcher::RecvMouseMove(int, int, int, int, unsigned long, unsigned long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#15 0x00007f5b7c661311 in sigc::bound_mem_functor6<void, unity::launcher::Launcher, int, int, int, int, unsigned long, unsigned long>::operator()(int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#16 0x00007f5b7c65ffc2 in sigc::adaptor_functor<sigc::bound_mem_functor6<void, unity::launcher::Launcher, int, int, int, int, unsigned long, unsigned long> >::deduce_result_type<int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&, void>::type sigc::adaptor_functor<sigc::bound_mem_functor6<void, unity::launcher::Launcher, int, int, int, int, unsigned long, unsigned long> >::operator()<int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&>(int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#17 0x00007f5b7c65e3a5 in sigc::internal::slot_call6<sigc::bound_mem_functor6<void, unity::launcher::Launcher, int, int, int, int, unsigned long, unsigned long>, void, int, int, int, int, unsigned long, unsigned long>::call_it(sigc::internal::slot_rep*, int const&, int const&, int const&, int const&, unsigned long const&, unsigned long const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#18 0x00007f5b7a772fab in nux::InputArea::EmitMouseMoveSignal(int, int, int, int, unsigned long, unsigned long) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#19 0x00007f5b7a79e5ef in nux::WindowCompositor::TrackMouseMovement(nux::Event const&, bool) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#20 0x00007f5b7a7a5c55 in nux::WindowCompositor::MouseEventCycle(nux::Event&) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#21 0x00007f5b7a7a693b in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#22 0x00007f5b7a7aafef in nux::WindowThread::DoProcessEvent(nux::Event&) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#23 0x00007f5b7a77ec26 in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+No symbol table info available.
+#24 0x00007f5b9b45fd05 in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#25 0x00007f5b9b460068 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00007f5b9b46032a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007f5b9d43810b in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#28 0x0000000000401971 in main ()
+No symbol table info available.

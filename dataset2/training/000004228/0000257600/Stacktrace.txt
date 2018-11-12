@@ -1,0 +1,10 @@
+#0  main (argc=1, argv=<value optimized out>) at glxinfo.c:971
+	displayName = 0x2 <Address 0x2 out of bounds>
+	dpy = (Display *) 0xf705a0
+	numScreens = 1
+	scrnum = 0
+	mode = Normal
+	findBest = <value optimized out>
+	limits = <value optimized out>
+	allowDirect = 1
+	i = <value optimized out>

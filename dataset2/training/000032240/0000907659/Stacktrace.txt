@@ -1,0 +1,60 @@
+#0  0x00007fc12bbb97ab in g_logv () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007fc12bbb9982 in g_log () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007fc12c6462d3 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#3  0x00007fc12c653037 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#4  0x00007fc11f223441 in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#5  0x00007fc12b2b807f in _XError () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007fc12b2b4e31 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007fc12b2b5d87 in _XReply () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007fc12a92527b in XRRSetCrtcConfig () from /usr/lib/x86_64-linux-gnu/libXrandr.so.2
+No symbol table info available.
+#9  0x00007fc12cf38d5e in gnome_rr_crtc_set_config_with_time () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#10 0x00007fc12cf3c8a1 in ?? () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#11 0x00007fc12bba2c1f in g_hash_table_foreach () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fc12cf3e19a in gnome_rr_config_apply_with_time () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#13 0x00007fc1210a68a7 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libxrandr.so
+No symbol table info available.
+#14 0x00007fc1210a81b8 in ?? () from /usr/lib/gnome-settings-daemon-3.0/libxrandr.so
+No symbol table info available.
+#15 0x00007fc12c071154 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00007fc12c080f55 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00007fc12c08892b in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#18 0x00007fc12c088af2 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#19 0x00007fc12cf3a354 in ?? () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#20 0x00007fc12cf3a511 in ?? () from /usr/lib/libgnome-desktop-3.so.2
+No symbol table info available.
+#21 0x00007fc12c64f591 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#22 0x00007fc12c64f744 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#23 0x00007fc12c622371 in gdk_display_get_event () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#24 0x00007fc12c64f412 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#25 0x00007fc12bbb244a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00007fc12bbb2810 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007fc12bbb2c0a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#28 0x00007fc12ca02add in gtk_main () from /usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#29 0x0000000000403bd1 in main ()
+No symbol table info available.

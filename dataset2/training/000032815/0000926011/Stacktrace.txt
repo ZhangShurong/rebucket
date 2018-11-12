@@ -1,0 +1,28 @@
+#0  0x00007f97ae37a3b5 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f97ae37db1b in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f97ae372d2d in __assert_fail () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007f97ade2e603 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#4  0x00007f97ade2e621 in ?? () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#5  0x00007f97ade2ed4d in _XEventsQueued () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#6  0x00007f97ade2041d in XPending () from /usr/lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007f97af1d3804 in ?? () from /usr/lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#8  0x00007f97ae72d573 in g_main_context_prepare () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f97a0029390 in ?? ()
+No symbol table info available.
+#10 0x0000000000ccb850 in ?? ()
+No symbol table info available.
+#11 0x0000000000403d28 in ?? ()
+No symbol table info available.
+#12 0x00007fffc1feb940 in ?? ()
+No symbol table info available.
+#13 0x0000000000000000 in ?? ()
+No symbol table info available.

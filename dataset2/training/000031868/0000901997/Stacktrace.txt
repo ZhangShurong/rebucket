@@ -1,0 +1,186 @@
+#0  0x00007ff20347c395 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007ff20347fafb in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007ff2034b4093 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00007ff2034bea16 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#4  0x00007ff2034bede8 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#5  0x00007ff2034bf5d9 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007ff2034c2cfc in free () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0x00007ff1f211e391 in nux::NTextureData::ClearData() () from /usr/lib/libnux-image-1.0.so.0
+No symbol table info available.
+#8  0x00007ff1f211eabb in nux::NTextureData::~NTextureData() () from /usr/lib/libnux-image-1.0.so.0
+No symbol table info available.
+#9  0x00007ff1f2366e22 in nux::Texture2D::~Texture2D() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#10 0x00007ff1f2366e59 in nux::Texture2D::~Texture2D() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#11 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#12 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#13 0x00007ff1f2d58a79 in nux::StaticCairoText::~StaticCairoText() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x00007ff1f2d58b59 in nux::StaticCairoText::~StaticCairoText() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#15 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#16 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#17 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#18 0x00007ff1f274bc29 in nux::VLayout::~VLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#19 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#20 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#21 0x00007ff1f26dd6f9 in nux::View::RemoveLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#22 0x00007ff1f26ddb98 in nux::View::~View() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#23 0x00007ff1f2d25443 in unity::PlacesSimpleTile::~PlacesSimpleTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#24 0x00007ff1f2d249ab in unity::Shortcut::~Shortcut() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#26 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#27 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#28 0x00007ff1f26cea79 in nux::GridHLayout::~GridHLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#29 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#30 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#31 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#32 0x00007ff1f274bc29 in nux::VLayout::~VLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#33 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#34 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#35 0x00007ff1f26dd6f9 in nux::View::RemoveLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#36 0x00007ff1f26ddb98 in nux::View::~View() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#37 0x00007ff1f2d233b7 in unity::PlacesHomeView::~PlacesHomeView() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#38 0x00007ff1f2d23579 in unity::PlacesHomeView::~PlacesHomeView() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#39 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#40 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#41 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#42 0x00007ff1f26d4259 in nux::HLayout::~HLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#43 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#44 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#45 0x00007ff1f26dd6f9 in nux::View::RemoveLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#46 0x00007ff1f26ddb98 in nux::View::~View() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#47 0x00007ff1f2d03268 in unity::dash::LensView::~LensView() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#48 0x00007ff1f2ccaee9 in unity::dash::HomeView::~HomeView() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#49 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#50 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#51 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#52 0x00007ff1f274bc29 in nux::VLayout::~VLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#53 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#54 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#55 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#56 0x00007ff1f274bc29 in nux::VLayout::~VLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#57 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#58 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#59 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#60 0x00007ff1f274bc29 in nux::VLayout::~VLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#61 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#62 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#63 0x00007ff1f26dd6f9 in nux::View::RemoveLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#64 0x00007ff1f26ddb98 in nux::View::~View() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#65 0x00007ff1f2ca9d38 in unity::dash::DashView::~DashView() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#66 0x00007ff1f2ca9e79 in unity::dash::DashView::~DashView() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#67 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#68 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#69 0x00007ff1f26e409d in nux::Layout::~Layout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#70 0x00007ff1f26d4259 in nux::HLayout::~HLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#71 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#72 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#73 0x00007ff1f26dd6f9 in nux::View::RemoveLayout() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#74 0x00007ff1f26ddb98 in nux::View::~View() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#75 0x00007ff1f26ab199 in nux::BaseWindow::~BaseWindow() () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#76 0x00007ff1f1ca166e in nux::Object::Destroy() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#77 0x00007ff1f1ca1bb9 in nux::Object::UnReference() () from /usr/lib/libnux-core-1.0.so.0
+No symbol table info available.
+#78 0x00007ff1f2c93141 in unity::dash::DashController::~DashController() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#79 0x00007ff1f2d89572 in std::_Sp_counted_ptr<unity::dash::DashController*, (__gnu_cxx::_Lock_policy)2>::_M_dispose() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#80 0x00007ff1f2d7ffa6 in UnityScreen::~UnityScreen() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#81 0x00007ff1f2d80269 in UnityScreen::~UnityScreen() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#82 0x000000000045a12a in CompManager::finiPlugin(CompPlugin*) ()
+No symbol table info available.
+#83 0x000000000045ba0f in CompPlugin::pop() ()
+No symbol table info available.
+#84 0x00000000004311f5 in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#85 0x0000000000431ab3 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#86 0x000000000045eac1 in CompEventSource::callback() ()
+No symbol table info available.
+#87 0x00007ff204ae548f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#88 0x00007ff2045f089a in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#89 0x00007ff2045f0c60 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#90 0x00007ff2045f105a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#91 0x000000000042e856 in CompScreen::eventLoop() ()
+No symbol table info available.
+#92 0x000000000042221a in main ()
+No symbol table info available.

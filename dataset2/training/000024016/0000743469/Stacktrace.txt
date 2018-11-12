@@ -1,0 +1,42 @@
+#0  0x0000000004e46d70 in ?? ()
+No symbol table info available.
+#1  0x00007f4fa9559c7b in PanelMenuView::ProcessEvent(nux::Event&, long, long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f4fa91f2de6 in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#3  0x00007f4fa91f2de6 in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#4  0x00007f4fa91b7520 in nux::BaseWindow::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x00007f4fa9271151 in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x00007f4fa92798e3 in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#7  0x00007f4fa927a083 in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#8  0x00007f4fb9470bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x00007f4fb94713a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#10 0x00007f4fb9471639 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f4fb5e4de99 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#12 0x00007f4fb6794a10 in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#13 0x0000000000421c0f in CompTimeoutSource::callback() ()
+No symbol table info available.
+#14 0x000000000042167d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#15 0x00007f4fb9fc09df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#16 0x00007f4fb9470bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007f4fb94713a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f4fb94719f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#20 0x0000000000423180 in main ()
+No symbol table info available.

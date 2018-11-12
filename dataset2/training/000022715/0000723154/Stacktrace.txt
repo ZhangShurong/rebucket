@@ -1,0 +1,72 @@
+#0  0x00007f61d86911f6 in IconTexture::~IconTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#1  0x00007f61d8691269 in IconTexture::~IconTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f61d791622b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#3  0x00007f61d791641e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#4  0x00007f61d83583cd in nux::Layout::~Layout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#5  0x00007f61d83c19b9 in nux::VLayout::~VLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#6  0x00007f61d791622b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#7  0x00007f61d791641e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#8  0x00007f61d83530a9 in nux::View::RemoveLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#9  0x00007f61d835331f in nux::View::~View() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#10 0x00007f61d86ca171 in PlacesSimpleTile::~PlacesSimpleTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007f61d86ca209 in PlacesSimpleTile::~PlacesSimpleTile() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007f61d791622b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#13 0x00007f61d791641e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#14 0x00007f61d83583cd in nux::Layout::~Layout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#15 0x00007f61d8345999 in nux::GridHLayout::~GridHLayout() () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#16 0x00007f61d791622b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#17 0x00007f61d791641e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#18 0x00007f61d83574dc in nux::Layout::RemoveChildObject(nux::Area*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#19 0x00007f61d86c49e5 in PlacesGroup::~PlacesGroup() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#20 0x00007f61d86c4a99 in PlacesGroup::~PlacesGroup() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#21 0x00007f61d791622b in nux::Object::Destroy() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#22 0x00007f61d791641e in nux::Object::UnReference() () from /usr/lib/libnux-core-0.9.so.0
+No symbol table info available.
+#23 0x00007f61d86c645a in PlacesResultsController::Clear() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#24 0x00007f61d86cd3c9 in PlacesView::SetActiveEntry(PlaceEntry*, unsigned int, char const*, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0x00007f61d86cdc39 in PlacesView::ProcessEvent(nux::Event&, long, long) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#26 0x00007f61d8357355 in nux::Layout::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#27 0x00007f61d831f590 in nux::BaseWindow::ProcessEvent(nux::Event&, long, long) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#28 0x00007f61d83cf5fc in nux::WindowCompositor::ProcessEvent(nux::Event&) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#29 0x00007f61d83d7f4f in nux::WindowThread::ExecutionLoop(unsigned int) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#30 0x00007f61d83d86f3 in nux::nux_event_dispatch(_GSource*, int (*)(void*), void*) () from /usr/lib/libnux-0.9.so.0
+No symbol table info available.
+#31 0x00007f61e7c4dc2d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#32 0x00007f61e7c4e418 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#33 0x00007f61e7c4ea5a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#34 0x0000000000429dca in CompScreen::eventLoop() ()
+No symbol table info available.
+#35 0x0000000000422e80 in main ()
+No symbol table info available.

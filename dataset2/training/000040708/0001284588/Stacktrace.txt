@@ -1,0 +1,188 @@
+#0  _wordcopy_fwd_aligned (dstp=388104608, srcp=959287304, len=3111105) at wordcopy.c:84
+        a0 = <optimized out>
+        a1 = <optimized out>
+#1  0x00007f7f8d9a4ca5 in __memmove_sse2 (dest=0x172201a0, src=<optimized out>, len=24888844) at ../string/memmove.c:79
+        dstp = <optimized out>
+        srcp = <optimized out>
+#2  0x00007f7f807dae5c in memmove (__len=24888844, __src=<optimized out>, __dest=<optimized out>) at /usr/include/x86_64-linux-gnu/bits/string3.h:57
+No locals.
+#3  drisw_update_tex_buffer (drawable=<optimized out>, ctx=<optimized out>, res=<optimized out>) at ../../../../../../../src/gallium/state_trackers/dri/sw/drisw.c:320
+        dPriv = <optimized out>
+        st_ctx = <optimized out>
+        pipe = 0x165d130
+        transfer = 0x497a950
+        x = 77063464
+        y = 0
+        w = -2141261437
+        h = 32639
+        ximage_stride = 24888844
+        line = 32638
+        cpp = <optimized out>
+#4  0x00007f7f807da577 in dri_set_tex_buffer2 (pDRICtx=<optimized out>, target=3553, format=8410, dPriv=<optimized out>) at ../../../../../../../src/gallium/state_trackers/dri/sw/dri_drawable.c:245
+        internal_format = PIPE_FORMAT_B8G8R8A8_UNORM
+        pt = 0x497e610
+#5  0x00007f7f82025a11 in compiz::opengl::bindTexImageGLX(ServerGrabInterface*, unsigned long, unsigned long, boost::function<bool (unsigned long)> const&, boost::function<void (unsigned long)> const&, boost::function<void ()> const&, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#6  0x00007f7f82009c3e in TfpTexture::bindTexImage(unsigned long const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0x00007f7f8200a5d0 in TfpTexture::bindPixmapToTexture(unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#8  0x00007f7f82017a59 in boost::detail::function::function_invoker5<GLTexture::List (*)(unsigned long, int, int, int, compiz::opengl::_PixmapSource), GLTexture::List, unsigned long, int, int, int, compiz::opengl::_PixmapSource>::invoke(boost::detail::function::function_buffer&, unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#9  0x00007f7f8200a21b in GLTexture::bindPixmapToTexture(unsigned long, int, int, int, compiz::opengl::_PixmapSource) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#10 0x00007f7f6d434967 in unity::compiz_utils::PixmapTexture::PixmapTexture(int, int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#11 0x00007f7f6d43599c in void __gnu_cxx::new_allocator<unity::compiz_utils::PixmapTexture>::construct<unity::compiz_utils::PixmapTexture, int&, int&>(unity::compiz_utils::PixmapTexture*, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#12 0x00007f7f6d435931 in std::enable_if<std::allocator_traits<std::allocator<unity::compiz_utils::PixmapTexture> >::__construct_helper<unity::compiz_utils::PixmapTexture, int&, int&>::value, void>::type std::allocator_traits<std::allocator<unity::compiz_utils::PixmapTexture> >::_S_construct<unity::compiz_utils::PixmapTexture, int&, int&>(std::allocator<unity::compiz_utils::PixmapTexture>&, unity::compiz_utils::PixmapTexture*, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#13 0x00007f7f6d4358e0 in decltype (_S_construct({parm#1}, {parm#2}, (forward<int&>)({parm#3}), (forward<int&>)({parm#3}))) std::allocator_traits<std::allocator<unity::compiz_utils::PixmapTexture> >::construct<unity::compiz_utils::PixmapTexture, int&, int&>(std::allocator<unity::compiz_utils::PixmapTexture>&, unity::compiz_utils::PixmapTexture*, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#14 0x00007f7f6d435814 in std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>::_Sp_counted_ptr_inplace<int&, int&>(std::allocator<unity::compiz_utils::PixmapTexture>, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#15 0x00007f7f6d4356dd in void __gnu_cxx::new_allocator<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2> >::construct<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::compiz_utils::PixmapTexture> const, int&, int&>(std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>*, std::allocator<unity::compiz_utils::PixmapTexture> const&&, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#16 0x00007f7f6d43560e in std::enable_if<std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2> > >::__construct_helper<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::compiz_utils::PixmapTexture> const, int&, int&>::value, void>::type std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2> > >::_S_construct<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::compiz_utils::PixmapTexture> const, int&, int&>(std::allocator<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2> >&, std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>*, std::allocator<unity::compiz_utils::PixmapTexture> const&&, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#17 0x00007f7f6d435520 in decltype (_S_construct({parm#1}, {parm#2}, (forward<std::allocator<unity::compiz_utils::PixmapTexture> const>)({parm#3}), (forward<int&>)({parm#3}), (forward<int&>)({parm#3}))) std::allocator_traits<std::allocator<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2> > >::construct<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>, std::allocator<unity::compiz_utils::PixmapTexture> const, int&, int&>(std::allocator<std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2> >&, std::_Sp_counted_ptr_inplace<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, (__gnu_cxx::_Lock_policy)2>*, std::allocator<unity::compiz_utils::PixmapTexture> const&&, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#18 0x00007f7f6d4353f1 in std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, int&, int&>(std::_Sp_make_shared_tag, unity::compiz_utils::PixmapTexture*, std::allocator<unity::compiz_utils::PixmapTexture> const&, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#19 0x00007f7f6d4352e7 in std::__shared_ptr<unity::compiz_utils::PixmapTexture, (__gnu_cxx::_Lock_policy)2>::__shared_ptr<std::allocator<unity::compiz_utils::PixmapTexture>, int&, int&>(std::_Sp_make_shared_tag, std::allocator<unity::compiz_utils::PixmapTexture> const&, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#20 0x00007f7f6d435276 in std::shared_ptr<unity::compiz_utils::PixmapTexture>::shared_ptr<std::allocator<unity::compiz_utils::PixmapTexture>, int&, int&>(std::_Sp_make_shared_tag, std::allocator<unity::compiz_utils::PixmapTexture> const&, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#21 0x00007f7f6d4351fa in std::shared_ptr<unity::compiz_utils::PixmapTexture> std::allocate_shared<unity::compiz_utils::PixmapTexture, std::allocator<unity::compiz_utils::PixmapTexture>, int&, int&>(std::allocator<unity::compiz_utils::PixmapTexture> const&, int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#22 0x00007f7f6d43512e in std::shared_ptr<unity::compiz_utils::PixmapTexture> std::make_shared<unity::compiz_utils::PixmapTexture, int&, int&>(int&, int&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#23 0x00007f7f6d434ab2 in unity::compiz_utils::CairoContext::CairoContext(int, int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#24 0x00007f7f6d1c2b50 in unity::decoration::Title::RenderTexture() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#25 0x00007f7f6d1c3e92 in sigc::bound_mem_functor0<void, unity::decoration::Title>::operator()() const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#26 0x00007f7f6d1c3d6c in sigc::adaptor_functor<sigc::bound_mem_functor0<void, unity::decoration::Title> >::operator()() const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#27 0x00007f7f6d1c3c36 in sigc::hide_functor<-1, sigc::bound_mem_functor0<void, unity::decoration::Title> >::deduce_result_type<bool const&, void, void, void, void, void, void>::type sigc::hide_functor<-1, sigc::bound_mem_functor0<void, unity::decoration::Title> >::operator()<bool const&>(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#28 0x00007f7f6d1c39a6 in sigc::internal::slot_call1<sigc::hide_functor<-1, sigc::bound_mem_functor0<void, unity::decoration::Title> >, void, bool const&>::call_it(sigc::internal::slot_rep*, bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#29 0x00007f7f6d0d024a in sigc::internal::signal_emit1<void, bool const&, sigc::nil>::emit(sigc::internal::signal_impl*, bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#30 0x00007f7f6d0cbd39 in sigc::signal1<void, bool const&, sigc::nil>::emit(bool const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#31 0x00007f7f6d0c7413 in nux::PropertyChangedSignal<bool>::EmitChanged(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#32 0x00007f7f6d0c1b68 in nux::Property<bool>::Set(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#33 0x00007f7f6d0bae41 in nux::Property<bool>::operator=(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#34 0x00007f7f6d1b6b87 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#35 0x00007f7f6d1b93f8 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#36 0x00007f7f6d1b904d in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#37 0x00007f7f6d0d024a in sigc::internal::signal_emit1<void, bool const&, sigc::nil>::emit(sigc::internal::signal_impl*, bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#38 0x00007f7f6d0cbd39 in sigc::signal1<void, bool const&, sigc::nil>::emit(bool const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#39 0x00007f7f6d0c7413 in nux::PropertyChangedSignal<bool>::EmitChanged(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#40 0x00007f7f6d0c1b68 in nux::Property<bool>::Set(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#41 0x00007f7f6d0bae41 in nux::Property<bool>::operator=(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#42 0x00007f7f6d1b6b87 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#43 0x00007f7f6d1b93f8 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#44 0x00007f7f6d1b904d in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#45 0x00007f7f6d0d024a in sigc::internal::signal_emit1<void, bool const&, sigc::nil>::emit(sigc::internal::signal_impl*, bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#46 0x00007f7f6d0cbd39 in sigc::signal1<void, bool const&, sigc::nil>::emit(bool const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#47 0x00007f7f6d0c7413 in nux::PropertyChangedSignal<bool>::EmitChanged(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#48 0x00007f7f6d0c1b68 in nux::Property<bool>::Set(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#49 0x00007f7f6d0bae41 in nux::Property<bool>::operator=(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#50 0x00007f7f6d1b6b87 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#51 0x00007f7f6d1b93f8 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#52 0x00007f7f6d1b904d in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#53 0x00007f7f6d0d024a in sigc::internal::signal_emit1<void, bool const&, sigc::nil>::emit(sigc::internal::signal_impl*, bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#54 0x00007f7f6d0cbd39 in sigc::signal1<void, bool const&, sigc::nil>::emit(bool const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#55 0x00007f7f6d0c7413 in nux::PropertyChangedSignal<bool>::EmitChanged(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#56 0x00007f7f6d0c1b68 in nux::Property<bool>::Set(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#57 0x00007f7f6d0bae41 in nux::Property<bool>::operator=(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#58 0x00007f7f6d1a318d in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#59 0x00007f7f6d1aa0a6 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#60 0x00007f7f6d1a9c87 in ?? () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#61 0x00007f7f6d0d024a in sigc::internal::signal_emit1<void, bool const&, sigc::nil>::emit(sigc::internal::signal_impl*, bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#62 0x00007f7f6d0cbd39 in sigc::signal1<void, bool const&, sigc::nil>::emit(bool const&) const () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#63 0x00007f7f6d0c7413 in nux::PropertyChangedSignal<bool>::EmitChanged(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#64 0x00007f7f6d0c1b68 in nux::Property<bool>::Set(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#65 0x00007f7f6d0bae41 in nux::Property<bool>::operator=(bool const&) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#66 0x00007f7f6d1970d4 in unity::decoration::Manager::Impl::HandleEventAfter(_XEvent*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#67 0x00007f7f6d197e13 in unity::decoration::Manager::HandleEventAfter(_XEvent*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#68 0x00007f7f6d0a50f8 in unity::UnityScreen::handleEvent(_XEvent*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#69 0x00007f7f8e26c2cf in CompScreen::handleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#70 0x00007f7f8e26c30b in CompScreenImpl::alwaysHandleEvent(_XEvent*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#71 0x00007f7f8e24679d in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#72 0x00007f7f8e279f07 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#73 0x00007f7f8c76aa4f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#74 0x00007f7f8c262d05 in g_main_dispatch (context=0x1563160) at /build/buildd/glib2.0-2.39.90/./glib/gmain.c:3066
+        dispatch = 0x7f7f8c76aa00 <Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*)>
+        prev_source = 0x0
+        was_in_call = 0
+        user_data = 0x1600870
+        callback = 0x7f7f8c76a9d0
+        cb_funcs = 0x7f7f8c51b920 <g_source_callback_funcs>
+        cb_data = 0x1606140
+        need_destroy = <optimized out>
+        source = 0x15ad6f0
+        current = 0x1559440
+        i = 0
+#75 g_main_context_dispatch (context=context@entry=0x1563160) at /build/buildd/glib2.0-2.39.90/./glib/gmain.c:3641
+No locals.
+#76 0x00007f7f8c263068 in g_main_context_iterate (context=0x1563160, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at /build/buildd/glib2.0-2.39.90/./glib/gmain.c:3712
+        max_priority = 2147483647
+        timeout = 355
+        some_ready = 1
+        nfds = <optimized out>
+        allocated_nfds = 7
+        fds = 0x1914590
+#77 0x00007f7f8c26332a in g_main_loop_run (loop=0x1562ec0) at /build/buildd/glib2.0-2.39.90/./glib/gmain.c:3906
+        __FUNCTION__ = "g_main_loop_run"
+#78 0x00007f7f8e23b10b in compiz::private_screen::EventManager::startEventLoop(_XDisplay*) () from /usr/lib/libcompiz_core.so.ABI-20140123
+No symbol table info available.
+#79 0x0000000000401971 in main ()
+No symbol table info available.

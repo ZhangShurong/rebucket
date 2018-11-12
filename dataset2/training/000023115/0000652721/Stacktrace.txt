@@ -1,0 +1,76 @@
+#0  0x00007f2a0a919d4e in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#1  0x00007f2a0a91a0f9 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#2  0x00007f2a0a920568 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#3  0x00007f2a0a920f01 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#4  0x00007f2a0a933385 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#5  0x00007f2a0a9334d5 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#6  0x00007f2a0a9335f9 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#7  0x00007f2a095c49b9 in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007f2a095d9da1 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#9  0x00007f2a095db996 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#10 0x00007f2a095dbce8 in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#11 0x00007f2a0a9c0138 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#12 0x00007f2a0aa7c56c in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#13 0x00007f2a095c4a6e in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007f2a095d9da1 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007f2a095db996 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#16 0x00007f2a095dbce8 in g_signal_emit_by_name () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#17 0x00007f2a0a9c0138 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#18 0x00007f2a0aa7c8c1 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#19 0x00007f2a0aa84f55 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#20 0x00007f2a095c4a6e in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#21 0x00007f2a095da120 in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#22 0x00007f2a095db996 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#23 0x00007f2a095dbf53 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#24 0x00007f2a0a8cff70 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#25 0x00007f2a0a366626 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#26 0x00007f2a0910f342 in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007f2a091132a8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#28 0x00007f2a091137b5 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#29 0x000000000040f4db in ?? ()
+No symbol table info available.
+#30 0x00007f2a08ae7d8e in __libc_start_main (main=<value optimized out>, argc=<value optimized out>, ubp_av=<value optimized out>, init=<value optimized out>, fini=<value optimized out>, rtld_fini=<value optimized out>, stack_end=0x7fff0fada808) at libc-start.c:226
+        result = <value optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {0, -812296663186952558, 4226720, 140733456427024, 0, 0, 811838868771942034, 787625404580212370}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x41ea60, 0x7fff0fada818}, data = {prev = 0x0, cleanup = 0x0, canceltype = 4319840}}}
+        not_first_call = <value optimized out>
+#31 0x0000000000407ec9 in ?? ()
+No symbol table info available.
+#32 0x00007fff0fada808 in ?? ()
+No symbol table info available.
+#33 0x000000000000001c in ?? ()
+No symbol table info available.
+#34 0x0000000000000001 in ?? ()
+No symbol table info available.
+#35 0x00007fff0fadba1b in ?? ()
+No symbol table info available.
+#36 0x0000000000000000 in ?? ()
+No symbol table info available.

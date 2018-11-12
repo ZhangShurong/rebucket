@@ -1,0 +1,4 @@
+#0  cairo_set_line_width (cr=0x0, width=1) at /build/buildd/libcairo-1.4.10/src/cairo.c:942
+	status = <value optimized out>
+#1  0xb66db6c5 in ?? ()
+#2  0x00000000 in ?? ()

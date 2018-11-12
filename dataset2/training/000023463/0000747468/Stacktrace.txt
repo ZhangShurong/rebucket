@@ -1,0 +1,22 @@
+#0  0x00007ff5f1237d05 in raise () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007ff5f123bab6 in abort () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007ff5f2631a22 in g_logv () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007ff5f2631aaf in g_log () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007ff5f317883b in Glib::exception_handlers_invoke() () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#5  0x00007ff5f3178e5e in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#6  0x00007ff5f2628bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#7  0x00007ff5f26293a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#8  0x00007ff5f26299f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#9  0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#10 0x0000000000423180 in main ()
+No symbol table info available.

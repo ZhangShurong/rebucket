@@ -1,0 +1,34 @@
+#0  0x00007f1a58538748 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00000000017e5cf0 in ?? ()
+No symbol table info available.
+#2  0x00000000017edb20 in ?? ()
+No symbol table info available.
+#3  0x00007f1a4fbaf9db in ccsStringToModifiers () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#4  0x00007f1a4ef09e1d in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#5  0x00007f1a4ef08967 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#6  0x00007f1a4fbc2beb in ccsReadPluginSettingsDefault () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#7  0x00007f1a4fbb523e in ccsLoadPluginSettings () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#8  0x00007f1a4fbc19f2 in ccsContextNew () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#9  0x00007f1a4fdeffcf in CcpScreen::CcpScreen(CompScreen*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#10 0x00007f1a4fdf2939 in CompPlugin::VTableForScreen<CcpScreen>::initScreen(CompScreen*) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#11 0x00007f1a58d44e86 in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#12 0x00007f1a58d45751 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#13 0x00007f1a58d1c1c8 in compiz::private_screen::PluginManager::updatePlugins(CompScreen*, std::vector<CompOption::Value, std::allocator<CompOption::Value> > const&) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#14 0x00007f1a58d1ce51 in CompScreenImpl::init(char const*) () from /usr/lib/libcompiz_core.so.ABI-20120603
+No symbol table info available.
+#15 0x0000000000403522 in CompManager::init() ()
+No symbol table info available.
+#16 0x00000000004026ff in main ()
+No symbol table info available.

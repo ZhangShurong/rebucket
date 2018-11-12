@@ -1,0 +1,16 @@
+#0  0xb729302e in Glib::Source::prepare_vfunc(_GSource*, int*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#1  0xb7199812 in g_main_context_prepare () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0xb719a01f in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0xb719a5db in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0xb7294273 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#5  0xb771b14f in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#6  0x0804a4e2 in CompManager::run() ()
+No symbol table info available.
+#7  0x0804a16c in main ()
+No symbol table info available.

@@ -1,0 +1,174 @@
+#0  0x00007f878d43ecb2 in g_logv () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f878d43f093 in g_log () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f878ca08e36 in gdk_x_error (display=<value optimized out>, 
+    error=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.19.3/gdk/x11/gdkmain-x11.c:466
+        buf = "BadMatch (invalid parameter attributes)", '\000' <repeats 24 times>
+#3  0x00007f87816f42c1 in xkl_process_error () from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#4  0x00007f878c49fee4 in _XError () from /usr/lib/libX11.so.6
+No symbol table info available.
+#5  0x00007f878c4a6a96 in _XReply () from /usr/lib/libX11.so.6
+No symbol table info available.
+#6  0x00007f878c49490d in XQueryTree () from /usr/lib/libX11.so.6
+No symbol table info available.
+#7  0x00007f87816faffe in xkl_engine_query_tree ()
+   from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#8  0x00007f87816f48f6 in xkl_engine_process_focus_in_evt ()
+   from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#9  0x00007f87816f4edb in xkl_engine_filter_events ()
+   from /usr/lib/libxklavier.so.16
+No symbol table info available.
+#10 0x00007f8781f2e053 in ?? ()
+   from /usr/lib/gnome-settings-daemon-2.0/libkeyboard.so
+No symbol table info available.
+#11 0x00007f878c9fe526 in gdk_event_apply_filters (display=0xe38000, 
+    event=0x1115410, xevent=0x7fff0a5041b0, 
+    return_exposes=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.19.3/gdk/x11/gdkevents-x11.c:351
+        filter = 0x301
+        tmp_list = 0xf18d20
+        result = <value optimized out>
+#12 gdk_event_translate (display=0xe38000, event=0x1115410, 
+    xevent=0x7fff0a5041b0, return_exposes=<value optimized out>)
+    at /build/buildd/gtk+2.0-2.19.3/gdk/x11/gdkevents-x11.c:922
+        window = <value optimized out>
+        window_private = <value optimized out>
+        filter_window = 0x0
+        window_impl = 0x0
+        return_val = <value optimized out>
+        screen = <value optimized out>
+        screen_x11 = <value optimized out>
+        toplevel = 0x0
+        xwindow = <value optimized out>
+        filter_xwindow = <value optimized out>
+#13 0x00007f878ca005a8 in _gdk_events_queue (display=0xe38000)
+    at /build/buildd/gtk+2.0-2.19.3/gdk/x11/gdkevents-x11.c:2305
+        node = 0x11a35a0
+        event = 0x1115410
+        xevent = {type = 9, xany = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, window = 81789154}, xkey = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, root = 12884901888, subwindow = 67746118, 
+            time = 3758096384000, x = 0, y = 1, x_root = 18982047, 
+            y_root = 0, state = 0, keycode = 0, same_screen = 0}, xbutton = {
+            type = 9, serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, root = 12884901888, subwindow = 67746118, 
+            time = 3758096384000, x = 0, y = 1, x_root = 18982047, 
+            y_root = 0, state = 0, button = 0, same_screen = 0}, xmotion = {
+            type = 9, serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, root = 12884901888, subwindow = 67746118, 
+            time = 3758096384000, x = 0, y = 1, x_root = 18982047, 
+            y_root = 0, state = 0, is_hint = 0 '\000', same_screen = 0}, 
+          xcrossing = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, window = 81789154, root = 12884901888, 
+            subwindow = 67746118, time = 3758096384000, x = 0, y = 1, 
+            x_root = 18982047, y_root = 0, mode = 0, detail = 0, 
+            same_screen = 0, focus = 0, state = 1281}, xfocus = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, mode = 0, detail = 3}, xexpose = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, x = 0, y = 3, width = 67746118, height = 0, 
+            count = 0}, xgraphicsexpose = {type = 9, serial = 53221, 
+            send_event = 0, display = 0xe2cc30, drawable = 81789154, x = 0, 
+            y = 3, width = 67746118, height = 0, count = 0, major_code = 875, 
+            minor_code = 0}, xnoexpose = {type = 9, serial = 53221, 
+            send_event = 0, display = 0xe2cc30, drawable = 81789154, 
+            major_code = 0, minor_code = 3}, xvisibility = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, state = 0}, xcreatewindow = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            parent = 81789154, window = 12884901888, x = 67746118, y = 0, 
+            width = 0, height = 875, border_width = 0, 
+            override_redirect = 1}, xdestroywindow = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            event = 81789154, window = 12884901888}, xunmap = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            event = 81789154, window = 12884901888, 
+            from_configure = 67746118}, xmap = {type = 9, serial = 53221, 
+            send_event = 0, display = 0xe2cc30, event = 81789154, 
+            window = 12884901888, override_redirect = 67746118}, 
+          xmaprequest = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, parent = 81789154, window = 12884901888}, 
+          xreparent = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, event = 81789154, window = 12884901888, 
+            parent = 67746118, x = 0, y = 875, override_redirect = 0}, 
+          xconfigure = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, event = 81789154, window = 12884901888, 
+            x = 67746118, y = 0, width = 0, height = 875, border_width = 0, 
+            above = 18982047, override_redirect = 0}, xgravity = {type = 9, 
+            serial = 53221, send_event = 0, display = 0xe2cc30, 
+            event = 81789154, window = 12884901888, x = 67746118, y = 0}, 
+          xresizerequest = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, window = 81789154, width = 0, height = 3}, 
+          xconfigurerequest = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, parent = 81789154, window = 12884901888, 
+            x = 67746118, y = 0, width = 0, height = 875, border_width = 0, 
+            above = 18982047, detail = 0, value_mask = 0}, xcirculate = {
+            type = 9, serial = 53221, send_event = 0, display = 0xe2cc30, 
+            event = 81789154, window = 12884901888, place = 67746118}, 
+          xcirculaterequest = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, parent = 81789154, window = 12884901888, 
+            place = 67746118}, xproperty = {type = 9, serial = 53221, 
+            send_event = 0, display = 0xe2cc30, window = 81789154, 
+            atom = 12884901888, time = 67746118, state = 0}, 
+          xselectionclear = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, window = 81789154, selection = 12884901888, 
+            time = 67746118}, xselectionrequest = {type = 9, serial = 53221, 
+            send_event = 0, display = 0xe2cc30, owner = 81789154, 
+            requestor = 12884901888, selection = 67746118, 
+            target = 3758096384000, property = 4294967296, time = 18982047}, 
+          xselection = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, requestor = 81789154, 
+            selection = 12884901888, target = 67746118, 
+            property = 3758096384000, time = 4294967296}, xcolormap = {
+            type = 9, serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, colormap = 12884901888, new = 67746118, 
+            state = 0}, xclient = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, window = 81789154, 
+            message_type = 12884901888, format = 67746118, data = {
+              b = "\000\000\000\000k\003\000\000\000\000\000\000\001\000\000\000\237\244!\001", s = {0, 0, 875, 0, 0, 0, 1, 0, -23393, 289}, l = {
+                3758096384000, 4294967296, 18982047, 0, 0}}}, xmapping = {
+            type = 9, serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, request = 0, first_keycode = 3, 
+            count = 67746118}, xerror = {type = 9, display = 0xcfe5, 
+            resourceid = 0, serial = 14863408, error_code = 226 '\342', 
+            request_code = 0 '\000', minor_code = 224 '\340'}, xkeymap = {
+            type = 9, serial = 53221, send_event = 0, display = 0xe2cc30, 
+            window = 81789154, 
+            key_vector = "\000\000\000\000\003\000\000\000F\271\t\004\000\000\000\000\000\000\000\000k\003\000\000\000\000\000\000\001\000\000"}, 
+          xgeneric = {type = 9, serial = 53221, send_event = 0, 
+            display = 0xe2cc30, extension = 81789154, evtype = 0}, xcookie = {
+            type = 9, serial = 53221, send_event = 0, display = 0xe2cc30, 
+            extension = 81789154, evtype = 0, cookie = 0, data = 0x409b946}, 
+          pad = {140217797312521, 53221, 0, 14863408, 81789154, 12884901888, 
+            67746118, 3758096384000, 4294967296, 18982047, 0, 0, 
+            3000472339193267457, 161336864990624876, 743179841774751837, 
+            2321659703566824804, -8382289328635629518, -9199549472005312596, 
+            -7801148682179196213, 8458897340133047413, 3689046474780516464, 
+            -4124488185075707360, -2349236600592880273, 1569195382516912535}}
+        xdisplay = 0xe2cc30
+#14 0x00007f878ca00ade in gdk_event_dispatch (source=<value optimized out>, 
+    callback=0, user_data=0x1)
+    at /build/buildd/gtk+2.0-2.19.3/gdk/x11/gdkevents-x11.c:2366
+        display = 0xe38000
+        event = <value optimized out>
+#15 0x00007f878d434d4e in g_main_context_dispatch ()
+   from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007f878d438718 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007f878d438b75 in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f878e51ca37 in IA__gtk_main ()
+    at /build/buildd/gtk+2.0-2.19.3/gtk/gtkmain.c:1219
+        tmp_list = 0xe73e28
+        functions = 0x0
+        init = 0xe719c0
+        loop = <value optimized out>
+#19 0x0000000000404a2a in main ()
+No symbol table info available.

@@ -1,0 +1,10 @@
+#0  0x00007f6695b40faf in ?? () from /usr/lib/compiz/libwobbly.so
+#1  0x00007f6695d537b0 in ?? () from /usr/lib/compiz/libshift.so
+#2  0x00007f6695b4106f in ?? () from /usr/lib/compiz/libwobbly.so
+#3  0x000000000040ffd4 in paintScreen ()
+#4  0x00007f66980abcf9 in ?? () from /usr/lib/compiz/libwall.so
+#5  0x00007f66975e5bca in ?? () from /usr/lib/compiz/libexpo.so
+#6  0x00007f6696dc9ab3 in ?? () from /usr/lib/compiz/libworkarounds.so
+#7  0x00007f6695d50d29 in ?? () from /usr/lib/compiz/libshift.so
+#8  0x0000000000411fe9 in eventLoop ()
+#9  0x000000000040d019 in main ()

@@ -1,0 +1,38 @@
+#0  0x00007fe39e07c90b in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#1  0x00007fe39cd9bf4d in g_hash_table_lookup () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007fe39cd8942f in g_cache_remove () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007fe39e14ed5a in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#4  0x00007fe39d2689ae in g_closure_invoke () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007fe39d27a81e in ?? () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007fe39d284476 in g_signal_emit_valist () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007fe39d284633 in g_signal_emit () from /usr/lib/libgobject-2.0.so.0
+No symbol table info available.
+#8  0x00007fe39e1511a8 in gtk_style_detach () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#9  0x00007fe39e1ff071 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#10 0x00007fe39e1ff228 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#11 0x00007fe39e1147c9 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#12 0x00007fe39e08a103 in ?? () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#13 0x00007fe39c745e36 in ?? () from /usr/lib/libgdk-x11-2.0.so.0
+No symbol table info available.
+#14 0x00007fe39cdacadd in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#15 0x00007fe39cdad2c8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#16 0x00007fe39cdad90a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#17 0x00007fe39e0bd7c7 in gtk_main () from /usr/lib/libgtk-x11-2.0.so.0
+No symbol table info available.
+#18 0x0000000000404349 in main ()
+No symbol table info available.

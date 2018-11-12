@@ -1,0 +1,261 @@
+#0  0x00007ff231f9b3c7 in gtk_icon_source_set_pixbuf (source=0x7ff235dd5240, pixbuf=0x7fffb0708014) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkiconfactory.c:2187
+        __inst = 0x7fffb0708014
+        __t = 140678245972224
+        __r = <value optimized out>
+        _g_boolean_var_ = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_icon_source_set_pixbuf"
+#1  0x00007ff231fb08dc in ensure_stated_icon_from_info (image=<value optimized out>, info=0x0) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1528
+        source = 0x7ff235dd5240
+        rendered = <value optimized out>
+        priv = 0x7ff235c81850
+        context = 0x7ff235dcd810
+        destination = 0x7fffb0708014
+        symbolic = 0
+#2  0x00007ff231fb0a6b in ensure_pixbuf_for_icon_name (image=0x7ff235c81790, state=GTK_STATE_FLAG_INSENSITIVE) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1584
+        priv = 0x7ff235c81850
+        screen = <value optimized out>
+        icon_theme = <value optimized out>
+        width = 24
+        height = 24
+        info = 0x0
+        flags = GTK_ICON_LOOKUP_USE_BUILTIN
+        __PRETTY_FUNCTION__ = "ensure_pixbuf_for_icon_name"
+#3  0x00007ff231fb0d1b in gtk_image_calc_size (image=0x7ff235c81790) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1916
+        widget = 0x7ff235c81790
+        priv = 0x7ff235c81850
+        pixbuf = 0x0
+        context = 0x7ff235dcd810
+        state = GTK_STATE_FLAG_INSENSITIVE
+#4  0x00007ff231fb0f98 in gtk_image_get_preferred_height (widget=<value optimized out>, minimum=0x7fffb0708010, natural=0x7fffb0708014) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkimage.c:1972
+        image = <value optimized out>
+        priv = 0x7ff235c81850
+#5  0x00007ff23204c875 in compute_size_for_orientation (widget=0x7ff235c81790, orientation=GTK_SIZE_GROUP_VERTICAL, for_size=-1, minimum_size=0x7fffb0708098, natural_size=0x7fffb070809c) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:383
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#6  0x00007ff231ef83da in gtk_box_get_size (widget=<value optimized out>, orientation=GTK_ORIENTATION_VERTICAL, minimum_size=0x7fffb0708130, natural_size=0x7fffb0708134) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkbox.c:1019
+        child_minimum = 829884147
+        child_natural = 32754
+        child = 0x7ff20c062ef0
+        box = <value optimized out>
+        private = 0x7ff235c94170
+        children = 0x7ff235c929a0
+        nvis_children = <value optimized out>
+        minimum = <value optimized out>
+        natural = <value optimized out>
+#7  0x00007ff23204c875 in compute_size_for_orientation (widget=0x7ff235c940b0, orientation=GTK_SIZE_GROUP_VERTICAL, for_size=-1, minimum_size=0x7fffb07081c8, natural_size=0x7fffb07081cc) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:383
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#8  0x00007ff231f0138f in gtk_button_get_size (widget=<value optimized out>, orientation=GTK_ORIENTATION_VERTICAL, minimum_size=0x7fffb0708260, natural_size=0x7fffb0708264) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkbutton.c:1962
+        child_min = <value optimized out>
+        child_nat = <value optimized out>
+        button = <value optimized out>
+        context = <value optimized out>
+        child = 0x7ff235c940b0
+        default_border = {left = 1, right = 1, top = 1, bottom = 1}
+        inner_border = {left = 1, right = 1, top = 1, bottom = 1}
+        padding = {left = 2, right = 2, top = 2, bottom = 2}
+        focus_width = 1
+        focus_pad = 1
+        minimum = 10
+        natural = 10
+#9  0x00007ff23204c875 in compute_size_for_orientation (widget=0x7ff235c8e000, orientation=GTK_SIZE_GROUP_VERTICAL, for_size=-1, minimum_size=0x7fffb07082e8, natural_size=0x7fffb07082ec) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:383
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#10 0x00007ff231ef83da in gtk_box_get_size (widget=<value optimized out>, orientation=GTK_ORIENTATION_VERTICAL, minimum_size=0x7fffb0708380, natural_size=0x7fffb0708384) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkbox.c:1019
+        child_minimum = 841003799
+        child_natural = 32754
+        child = 0x7ff235c94870
+        box = <value optimized out>
+        private = 0x7ff234ec2f20
+        children = 0x7ff235c95080
+        nvis_children = <value optimized out>
+        minimum = <value optimized out>
+        natural = <value optimized out>
+#11 0x00007ff23204c875 in compute_size_for_orientation (widget=0x7ff234ec2e60, orientation=GTK_SIZE_GROUP_VERTICAL, for_size=-1, minimum_size=0x7fffb0708430, natural_size=0x7fffb0708434) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:383
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#12 0x00007ff23204c875 in compute_size_for_orientation (widget=0x7ff235546200, orientation=GTK_SIZE_GROUP_VERTICAL, for_size=-1, minimum_size=0x7fffb0708498, natural_size=0x7fffb070849c) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:383
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#13 0x00007ff23204d10a in gtk_widget_get_preferred_size (widget=0x7ff235546200, minimum_size=0x7fffb0708520, natural_size=0x0) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:703
+        min_width = <value optimized out>
+        nat_width = <value optimized out>
+        min_height = <value optimized out>
+        nat_height = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_widget_get_preferred_size"
+#14 0x00007ff2320b7f62 in toolbar_content_size_request (content=0x7ff235be6a00, requisition=0x7fffb0708520, toolbar=<value optimized out>) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtktoolbar.c:3386
+No locals.
+#15 0x00007ff2320ba641 in gtk_toolbar_size_request (widget=0x7ff23553d040, requisition=0x7fffb0708580) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtktoolbar.c:913
+        requisition = {width = 46, height = 27}
+        content = <value optimized out>
+        toolbar = 0x7ff23553d040
+        priv = 0x7ff23553d100
+        list = <value optimized out>
+        max_child_height = <value optimized out>
+        max_child_width = <value optimized out>
+        max_homogeneous_child_width = <value optimized out>
+        max_homogeneous_child_height = <value optimized out>
+        homogeneous_size = <value optimized out>
+        long_req = <value optimized out>
+        pack_front_size = <value optimized out>
+        ipadding = <value optimized out>
+        border_width = <value optimized out>
+        arrow_requisition = {width = 894685352, height = 32754}
+#16 0x00007ff2320ba8dc in gtk_toolbar_get_preferred_width (widget=<value optimized out>, minimum=0x7fffb0708600, natural=0x7fffb0708604) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtktoolbar.c:1024
+        requisition = {width = -1, height = 0}
+#17 0x00007ff23204ccbc in compute_size_for_orientation (widget=0x7ff23553d040, orientation=GTK_SIZE_GROUP_HORIZONTAL, for_size=-1, minimum_size=0x7fffb0708688, natural_size=0x7fffb070868c) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:350
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#18 0x00007ff231ef8385 in gtk_box_get_size (widget=<value optimized out>, orientation=GTK_ORIENTATION_HORIZONTAL, minimum_size=0x7fffb0708720, natural_size=0x7fffb0708724) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkbox.c:1016
+        child_minimum = 841003810
+        child_natural = 32754
+        child = 0x7ff235548070
+        box = <value optimized out>
+        private = 0x7ff235444650
+        children = 0x7ff23554aba0
+        nvis_children = <value optimized out>
+        minimum = <value optimized out>
+        natural = <value optimized out>
+#19 0x00007ff23204ccbc in compute_size_for_orientation (widget=0x7ff235444590, orientation=GTK_SIZE_GROUP_HORIZONTAL, for_size=-1, minimum_size=0x7fffb07087a8, natural_size=0x7fffb07087ac) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:350
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#20 0x00007ff231ef8385 in gtk_box_get_size (widget=<value optimized out>, orientation=GTK_ORIENTATION_HORIZONTAL, minimum_size=0x7fffb0708840, natural_size=0x7fffb0708844) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkbox.c:1016
+        child_minimum = 327
+        child_natural = 327
+        child = 0x7ff235549ff0
+        box = <value optimized out>
+        private = 0x7ff235444570
+        children = 0x7ff235539fa0
+        nvis_children = <value optimized out>
+        minimum = <value optimized out>
+        natural = <value optimized out>
+#21 0x00007ff23204ccbc in compute_size_for_orientation (widget=0x7ff2354444b0, orientation=GTK_SIZE_GROUP_HORIZONTAL, for_size=-1, minimum_size=0x7fffb07088a8, natural_size=0x7fffb07088ac) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:350
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#22 0x00007ff23212b142 in gtk_window_get_preferred_width (widget=<value optimized out>, minimum_size=0x7fffb0708930, natural_size=0x7fffb0708934) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:6232
+        child_min = <value optimized out>
+        child_nat = <value optimized out>
+        window = 0x7ff2354ae070
+        child = 0x7ff2354444b0
+        border_width = <value optimized out>
+#23 0x00007ff23204ccbc in compute_size_for_orientation (widget=0x7ff2354ae070, orientation=GTK_SIZE_GROUP_HORIZONTAL, for_size=-1, minimum_size=0x7fffb0708990, natural_size=0x7fffb0708994) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:350
+        adjusted_min = <value optimized out>
+        adjusted_natural = <value optimized out>
+        adjusted_for_size = -1
+        cached_size = <value optimized out>
+        found_in_cache = <value optimized out>
+        min_size = 0
+        nat_size = 0
+        __PRETTY_FUNCTION__ = "compute_size_for_orientation"
+#24 0x00007ff23204d0bc in gtk_widget_get_preferred_size (widget=0x7ff2354ae070, minimum_size=0x7fffb0708a50, natural_size=0x0) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtksizerequest.c:685
+        min_width = <value optimized out>
+        nat_width = <value optimized out>
+        min_height = <value optimized out>
+        nat_height = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_widget_get_preferred_size"
+#25 0x00007ff232129400 in gtk_window_compute_hints (window=0x7ff2354ae070, request=0x7fffb0708b30, geometry=0x7fffb0708ae0, flags=0x7fffb0708b4c) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:7241
+        widget = 0x7ff2354ae070
+        extra_width = 0
+        extra_height = 0
+        geometry_info = <value optimized out>
+        priv = 0x7ff2354ae150
+        requisition = {width = 903556136, height = 32754}
+#26 gtk_window_compute_configure_request (window=0x7ff2354ae070, request=0x7fffb0708b30, geometry=0x7fffb0708ae0, flags=0x7fffb0708b4c) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:6563
+        priv = 0x7ff2354ae150
+        new_geometry = {min_width = 886989896, min_height = 32754, max_width = 834835461, max_height = 32754, base_width = 564, base_height = 0, width_inc = 903556160, height_inc = 32754, min_aspect = 6.9504296553334274e-310, max_aspect = 6.950428838200232e-310, win_gravity = 2960165752}
+        new_flags = <value optimized out>
+        w = <value optimized out>
+        h = <value optimized out>
+        pos = <value optimized out>
+        parent_widget = <value optimized out>
+        info = <value optimized out>
+        screen = 0x7ff234e080e0
+        x = <value optimized out>
+        y = <value optimized out>
+        __PRETTY_FUNCTION__ = "gtk_window_compute_configure_request"
+#27 0x00007ff23212c0e5 in gtk_window_show (widget=0x7ff2354ae070) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwindow.c:4607
+        info = 0x7ff235d7cce0
+        allocation = {x = 0, y = 0, width = 0, height = 0}
+        was_realized = <value optimized out>
+        configure_request = {x = 1, y = 0, width = 834994485, height = 32754}
+        new_geometry = {min_width = 888920768, min_height = 32754, max_width = 903346896, max_height = 32754, base_width = 894099568, base_height = 32754, width_inc = 834854676, height_inc = 32754, min_aspect = 6.9504296450062696e-310, max_aspect = 6.9504259993978441e-310, win_gravity = 0}
+        new_flags = 32754
+        window = 0x7ff2354ae070
+        priv = 0x7ff2354ae150
+        container = 0x7ff2354ae070
+        need_resize = 1
+        is_plug = <value optimized out>
+#28 0x00007ff231c27d54 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#29 0x00007ff231c39397 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#30 0x00007ff231c431c7 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#31 0x00007ff231c43392 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#32 0x00007ff23211fd48 in gtk_widget_show (widget=0x7ff2354ae070) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwidget.c:3883
+No locals.
+#33 gtk_widget_show (widget=0x7ff2354ae070) at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkwidget.c:3860
+No locals.
+#34 0x00007ff2331f26c1 in e_shell_create_shell_window () from /usr/lib/evolution/3.0/libeshell.so.0
+No symbol table info available.
+#35 0x00007ff233644afe in ?? ()
+No symbol table info available.
+#36 0x00007ff23176985d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#37 0x00007ff23176a058 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#38 0x00007ff23176a592 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#39 0x00007ff231fcfbad in gtk_main () at /build/buildd/gtk+3.0-3.1.6/./gtk/gtkmain.c:1358
+        loop = 0x7ff235429ee0
+#40 0x00007ff2336445a6 in main ()
+No symbol table info available.

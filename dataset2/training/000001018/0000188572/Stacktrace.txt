@@ -1,0 +1,30 @@
+#0  0xb63636a6 in impl_activate (plugin=0x812eb30) at gsd-screensaver-plugin.c:80
+	res = <value optimized out>
+	error = (GError *) 0x0
+#1  0x0804b7fc in gnome_settings_plugins_engine_activate_plugin (info=0x8130220)
+    at gnome-settings-plugins-engine.c:516
+	__PRETTY_FUNCTION__ = "gnome_settings_plugins_engine_activate_plugin"
+#2  0x0804c2ad in gnome_settings_plugins_engine_load_dir (
+    path=0x808b268 "/usr/lib/gnome-settings-daemon/plugins/screensaver")
+    at gnome-settings-plugins-engine.c:260
+	filename = 0x810a2a8 "/usr/lib/gnome-settings-daemon/plugins/screensaver/screensaver.gnome-settings-plugin"
+	error = (GError *) 0x0
+	d = (GDir *) 0x812d460
+	name = <value optimized out>
+#3  0x0804bd28 in gnome_settings_plugins_engine_load_dir (
+    path=0x804d348 "/usr/lib/gnome-settings-daemon/plugins/") at gnome-settings-plugins-engine.c:293
+	filename = 0x808b268 "/usr/lib/gnome-settings-daemon/plugins/screensaver"
+	error = (GError *) 0x0
+	d = (GDir *) 0x807eff0
+	name = <value optimized out>
+#4  0x0804c422 in gnome_settings_plugins_engine_init (
+    gconf_prefix=0x807f788 "/apps/gnome-settings-daemon/plugins") at gnome-settings-plugins-engine.c:308
+	__PRETTY_FUNCTION__ = "gnome_settings_plugins_engine_init"
+#5  0x0804acc3 in gnome_settings_manager_start (manager=0x8076b48, error=0xbfaecd84)
+    at gnome-settings-manager.c:106
+No locals.
+#6  0x0804aa38 in main (argc=134737592, argv=0x1) at main.c:221
+	manager = (GnomeSettingsManager *) 0x8076b48
+	program = (GnomeProgram *) 0x8072470
+	res = <value optimized out>
+	error = (GError *) 0x0

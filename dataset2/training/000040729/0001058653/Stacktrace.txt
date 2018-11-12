@@ -1,0 +1,12 @@
+#0  0x00007f5119716add in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f51197104c7 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007f5106bc66d8 in ?? ()
+No symbol table info available.
+#3  0x0000000003cb3eb8 in ?? ()
+No symbol table info available.
+#4  0x00007f5119d15883 in std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+No symbol table info available.
+#5  0x0000000000000000 in ?? ()
+No symbol table info available.

@@ -1,0 +1,66 @@
+#0  0xb6ffe001 in g_type_check_instance () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#1  0xb6ff3600 in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#2  0xb6ff4433 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#3  0xb43e65e3 in ?? () from /usr/lib/i386-linux-gnu/libbamf3.so.0
+No symbol table info available.
+#4  0xb43ed8ba in bamf_marshal_VOID__STRING_STRING () from /usr/lib/i386-linux-gnu/libbamf3.so.0
+No symbol table info available.
+#5  0xb61e317a in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#6  0xb6fda464 in g_closure_invoke () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0xb6fec0b9 in ?? () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#8  0xb6ff42bc in g_signal_emit_valist () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#9  0xb6ff4433 in g_signal_emit () from /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#10 0xb61e3820 in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#11 0xb6199441 in dbus_connection_dispatch () from /lib/i386-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#12 0xb61db9ad in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#13 0xb70cfcda in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#14 0xb70d00e5 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#15 0xb70d01c1 in g_main_context_iteration () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#16 0xb671f31c in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#17 0xb65dcc2f in ccsProcessEvents () from /usr/lib/libcompizconfig.so.0
+No symbol table info available.
+#18 0xb674234b in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#19 0xb6742621 in boost::detail::function::function_obj_invoker0<boost::_bi::bind_t<bool, boost::_mfi::mf0<bool, CcpScreen>, boost::_bi::list1<boost::_bi::value<CcpScreen*> > >, bool>::invoke(boost::detail::function::function_buffer&) () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#20 0xb76a4c83 in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#21 0xb76a4d91 in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#22 0xb76a4ea2 in sigc::internal::slot_call0<sigc::bound_mem_functor0<bool, CompTimeoutSource>, bool>::call_it(sigc::internal::slot_rep*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#23 0xb76a401f in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#24 0xb71c9da1 in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#25 0xb70cfcda in g_main_context_dispatch () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#26 0xb70d00e5 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#27 0xb70d052b in g_main_loop_run () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#28 0xb71cb423 in Glib::MainLoop::run() () from /usr/lib/i386-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#29 0xb76579e6 in compiz::private_screen::EventManager::startEventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#30 0xb7657a22 in CompScreenImpl::eventLoop() () from /usr/lib/libcompiz_core.so.ABI-20120305
+No symbol table info available.
+#31 0x0804a4f2 in CompManager::run() ()
+No symbol table info available.
+#32 0x0804a17c in main ()
+No symbol table info available.

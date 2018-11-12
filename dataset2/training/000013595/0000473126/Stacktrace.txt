@@ -1,0 +1,47 @@
+#0  0x0069e422 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x004ea4d1 in *__GI_raise (sig=6)
+    at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+	resultvar = <value optimized out>
+	pid = 6291444
+	selftid = 3373
+#2  0x004ed932 in *__GI_abort () at abort.c:92
+	act = {__sigaction_handler = {
+    sa_handler = 0x94bcd0 <glGenQueriesARB>, 
+    sa_sigaction = 0x94bcd0 <glGenQueriesARB>}, sa_mask = {__val = {
+      3217024628, 6040632, 9896548, 786432, 5487872, 9154384, 0, 41761, 
+      3217024776, 9108816, 4983240, 1011, 0, 5786225, 12, 3078662184, 
+      3217024704, 6291444, 4, 3217026160, 3217024820, 5903764, 2, 3217024704, 
+      4, 0, 3, 3217024812, 2, 6165219, 6165215, 6160791}}, 
+  sa_flags = 6160765, sa_restorer = 0x5e262b}
+	sigs = {__val = {32, 0 <repeats 31 times>}}
+#3  0x00520ee5 in __libc_message (do_abort=2, 
+    fmt=0x5e4438 "*** glibc detected *** %s: %s: 0x%s ***\n")
+    at ../sysdeps/unix/sysv/linux/libc_fatal.c:189
+	ap = <value optimized out>
+	fd = -1077942164
+	on_2 = <value optimized out>
+	list = <value optimized out>
+	nlist = <value optimized out>
+	cp = <value optimized out>
+	written = false
+#4  0x0052aff1 in malloc_printerr (action=<value optimized out>, 
+    str=0x6 <Address 0x6 out of bounds>, ptr=0x845c008) at malloc.c:6217
+	buf = "0845c008"
+	cp = <value optimized out>
+#5  0x0052c6f2 in _int_free (av=<value optimized out>, 
+    p=<value optimized out>) at malloc.c:4750
+	size = 3256
+	nextchunk = (mchunkptr) 0xd2d
+	nextsize = 138788872
+	prevsize = <value optimized out>
+	bck = <value optimized out>
+	fwd = <value optimized out>
+	errstr = 0x6 <Address 0x6 out of bounds>
+	__PRETTY_FUNCTION__ = "_int_free"
+#6  0x0052f79d in *__GI___libc_free (mem=0x845c008) at malloc.c:3716
+	ar_ptr = (mstate) 0x6013a0
+	p = (mchunkptr) 0x6
+#7  0x008ed1c1 in ?? () from /usr/lib/libGL.so.1
+No symbol table info available.
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)

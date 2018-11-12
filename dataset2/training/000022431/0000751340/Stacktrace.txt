@@ -1,0 +1,46 @@
+#0  0x00007fca86e5f2f6 in sigc::signal_base::impl() const () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#1  0x00007fca86e5f3b9 in sigc::signal_base::connect(sigc::slot_base const&) () from /usr/lib/libsigc-2.0.so.0
+No symbol table info available.
+#2  0x00007fca7a217088 in UnityScreen::UnityScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#3  0x00007fca7a21c399 in CompPlugin::VTableForScreenAndWindow<UnityScreen, UnityWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#4  0x000000000045162a in CompManager::initPlugin(CompPlugin*) ()
+No symbol table info available.
+#5  0x000000000045271e in CompPlugin::push(CompPlugin*) ()
+No symbol table info available.
+#6  0x000000000042df90 in PrivateScreen::updatePlugins() ()
+No symbol table info available.
+#7  0x000000000042e5c8 in PrivateScreen::processEvents() ()
+No symbol table info available.
+#8  0x0000000000455a68 in CompEventSource::callback() ()
+No symbol table info available.
+#9  0x00007fca872f3e1f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0x00007fca867a3bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007fca867a43a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007fca867a4639 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007fca83180e99 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#14 0x00007fca83ac7a10 in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#15 0x0000000000421c0f in CompTimeoutSource::callback() ()
+No symbol table info available.
+#16 0x000000000042167d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#17 0x00007fca872f3e1f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#18 0x00007fca867a3bcd in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007fca867a43a8 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007fca867a49f2 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x000000000042a22a in CompScreen::eventLoop() ()
+No symbol table info available.
+#22 0x0000000000423180 in main ()
+No symbol table info available.

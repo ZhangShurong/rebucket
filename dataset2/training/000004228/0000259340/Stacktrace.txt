@@ -1,0 +1,44 @@
+#0  0x00007f92dfdd9b03 in ?? () from /usr/lib/libGL.so.1
+#1  0x00007f92dfdd9fb6 in ?? () from /usr/lib/libGL.so.1
+#2  0x00007f92dc03c2fb in ?? () from /usr/lib/libGLcore.so.1
+#3  0x00007f92dc03d30d in _nv000071gl () from /usr/lib/libGLcore.so.1
+#4  0x00007f92dfddc928 in ?? () from /usr/lib/libGL.so.1
+#5  0x00007f92dfda51fd in ?? () from /usr/lib/libGL.so.1
+#6  0x00007f92dfdbb127 in _fini () from /usr/lib/libGL.so.1
+#7  0x00007f92dfd35114 in ?? ()
+#8  0x00007f92dff43000 in ?? ()
+#9  0x00007f92dff43580 in ?? ()
+#10 0x00007f92dff424c0 in ?? ()
+#11 0x00007f92dff2b4c0 in ?? ()
+#12 0x00007f92dff2b990 in ?? ()
+#13 0x00007f92dff29000 in ?? ()
+#14 0x00007f92dff2a000 in ?? ()
+#15 0x00007f92dff2a4b8 in ?? ()
+#16 0x00007f92dff2a978 in ?? ()
+#17 0x00007f92dff28980 in ?? ()
+#18 0x00007f92dff27000 in ?? ()
+#19 0x00007f92dfd5a4b0 in ?? ()
+#20 0x00007f92dfd59a98 in ?? ()
+#21 0x00007f92dff42980 in ?? ()
+#22 0x00007f92dfd5a9b8 in ?? ()
+#23 0x00007f92dff2b000 in ?? ()
+#24 0x00007f92dff294c0 in ?? ()
+#25 0x00007f92dff29978 in ?? ()
+#26 0x00007f92dff28000 in ?? ()
+#27 0x00000000013b2650 in ?? ()
+#28 0x00000000013a9800 in ?? ()
+#29 0x00007f92dff284b8 in ?? ()
+#30 0x00007f92dff274b8 in ?? ()
+#31 0x00007f92dfd5a000 in ?? ()
+#32 0x00007f92dfd59000 in ?? ()
+#33 0x00007f92dfd594b8 in ?? ()
+#34 0x00007f92dfd58118 in ?? ()
+#35 0x00007f92dff27960 in ?? ()
+#36 0x00007f92dfd58680 in ?? ()
+#37 0x00007f92dfd58b48 in ?? ()
+#38 0x00007f92dff45528 in ?? ()
+#39 0x00007fffe7f4e737 in gettimeofday ()
+#40 0x00007f92dd85f72d in exit () from /lib/libc.so.6
+#41 0x00007f92dd84746d in __libc_start_main () from /lib/libc.so.6
+#42 0x000000000040c609 in _start ()
+No locals.

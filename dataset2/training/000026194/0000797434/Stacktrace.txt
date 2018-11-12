@@ -1,0 +1,42 @@
+#0  0x00007f94913c23c7 in gtk_icon_source_set_pixbuf () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#1  0x00007f94913d78dc in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#2  0x00007f94913d7a6b in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#3  0x00007f94913d7d1b in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#4  0x00007f94913d7f98 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#5  0x00007f9491473875 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#6  0x00007f9491552072 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#7  0x00007f9491473875 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#8  0x00007f949147410a in gtk_widget_get_preferred_size () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#9  0x00007f9491550400 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#10 0x00007f94915571f7 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#11 0x00007f94900a5d54 in g_closure_invoke () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#12 0x00007f94900b79f4 in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#13 0x00007f94900c11c7 in g_signal_emit_valist () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#14 0x00007f94900c1392 in g_signal_emit () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#15 0x00007f94913667a8 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#16 0x00007f949102691f in ?? () from /usr/lib/libgdk-3.so.0
+No symbol table info available.
+#17 0x00007f948fbcc85d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f948fbcd058 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f948fbcd592 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x0000000000415d97 in main ()
+No symbol table info available.

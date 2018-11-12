@@ -1,0 +1,73 @@
+#0  0xb3ae0e07 in ?? () from /usr/lib/libsyncdaemon-1.0.so.1
+No symbol table info available.
+#1  0xb703df8a in g_cclosure_marshal_VOID__POINTER (closure=0x9fd8c98, return_value=0x0, n_param_values=2, param_values=0x9fb9fc0, invocation_hint=0xbfd18b50, marshal_data=0x0) at /build/buildd/glib2.0-2.31.4.tested/./gobject/gmarshal.c:609
+        callback = 0xb3ae0d80
+        cc = 0x9fd8c98
+        data1 = 0x9fc2398
+        data2 = 0x9fd78c8
+        __PRETTY_FUNCTION__ = "g_cclosure_marshal_VOID__POINTER"
+#2  0xb4a7717a in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#3  0xb703bdac in g_closure_invoke (closure=0x9fd8c98, return_value=0x0, n_param_values=3, param_values=0x9f55958, invocation_hint=0xbfd18b50) at /build/buildd/glib2.0-2.31.4.tested/./gobject/gclosure.c:774
+        marshal = 0xb4a76fd0
+        marshal_data = 0x0
+        in_marshal = 0
+        __PRETTY_FUNCTION__ = "g_closure_invoke"
+#4  0xb704d0c5 in signal_emit_unlocked_R (node=0x9dc2db8, detail=1862, instance=0x9fc2398, emission_return=0x0, instance_and_params=0x9f55958) at /build/buildd/glib2.0-2.31.4.tested/./gobject/gsignal.c:3302
+        tmp = <optimized out>
+        handler = 0x9fd5dc0
+        accumulator = 0x0
+        emission = {next = 0x0, instance = 0x9fc2398, ihint = {signal_id = 189, detail = 1862, run_type = G_SIGNAL_RUN_FIRST}, state = EMISSION_RUN, chain_type = 4}
+        class_closure = 0x0
+        hlist = 0x9fdb870
+        handler_list = 0x9fd5da0
+        return_accu = 0x0
+        accu = {g_type = 0, data = {{v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}, {v_int = 0, v_uint = 0, v_long = 0, v_ulong = 0, v_int64 = 0, v_uint64 = 0, v_float = 0, v_double = 0, v_pointer = 0x0}}}
+        signal_id = 189
+        max_sequential_handler_number = 740
+        return_value_altered = 0
+#5  0xb7054942 in g_signal_emit_valist (instance=0x9fc2398, signal_id=189, detail=1862, var_args=0xbfd18d04 "") at /build/buildd/glib2.0-2.31.4.tested/./gobject/gsignal.c:3033
+        instance_and_params = 0x9f55958
+        signal_return_type = 4
+        param_values = 0x9f5596c
+        node = 0x9dc2db8
+        i = <optimized out>
+        n_params = 2
+        __PRETTY_FUNCTION__ = "g_signal_emit_valist"
+#6  0xb7054ad3 in g_signal_emit (instance=0x9fc2398, signal_id=189, detail=1862) at /build/buildd/glib2.0-2.31.4.tested/./gobject/gsignal.c:3090
+        var_args = 0xbfd18cfc "X\225\375\t\310\355\372\t"
+#7  0xb4a77820 in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#8  0xb631c441 in dbus_connection_dispatch () from /lib/i386-linux-gnu/libdbus-1.so.3
+No symbol table info available.
+#9  0xb4a6f9ad in ?? () from /usr/lib/i386-linux-gnu/libdbus-glib-1.so.2
+No symbol table info available.
+#10 0xb6f7828a in g_main_dispatch (context=0x9d65a38) at /build/buildd/glib2.0-2.31.4.tested/./glib/gmain.c:2513
+        dispatch = 0xb4a6f980
+        was_in_call = 0
+        user_data = 0x0
+        callback = 0
+        cb_funcs = 0x0
+        cb_data = 0x0
+        current_source_link = {data = 0x9e57250, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x9e57250
+        current = 0x9daf4a8
+        i = <optimized out>
+#11 g_main_context_dispatch (context=0x9d65a38) at /build/buildd/glib2.0-2.31.4.tested/./glib/gmain.c:3050
+No locals.
+#12 0xb6f78695 in g_main_context_iterate (dispatch=1, block=-1225236432, context=0x9d65a38, self=<optimized out>) at /build/buildd/glib2.0-2.31.4.tested/./glib/gmain.c:3121
+        timeout = 0
+        some_ready = 1
+        fds = 0x9ec4938
+        max_priority = 0
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+#13 g_main_context_iterate (context=0x9d65a38, block=-1225236432, dispatch=1, self=<optimized out>) at /build/buildd/glib2.0-2.31.4.tested/./glib/gmain.c:3058
+        some_ready = 1
+#14 0xb6f78adb in g_main_loop_run (loop=0x9e13b20) at /build/buildd/glib2.0-2.31.4.tested/./glib/gmain.c:3315
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#15 0xb73db9e5 in gtk_main () at /build/buildd/gtk+3.0-3.3.4/./gtk/gtkmain.c:1164
+        loop = 0x9e13b20
+#16 0x0804ae6c in main ()
+No symbol table info available.

@@ -1,0 +1,14 @@
+#0  g_source_unref (source=0x200000003) at /build/buildd/glib2.0-2.28.4/./glib/gmain.c:1734
+        __PRETTY_FUNCTION__ = "g_source_unref"
+#1  0x000000000042cea8 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#2  0x000000000042d129 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#3  0x000000000042b1d5 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#4  0x000000000042b309 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#5  0x0000000000422949 in CompManager::fini() ()
+No symbol table info available.
+#6  0x0000000000423148 in main ()
+No symbol table info available.

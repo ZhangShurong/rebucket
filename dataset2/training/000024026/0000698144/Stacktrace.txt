@@ -1,0 +1,60 @@
+#0  0x000000000043b830 in CompWindow::id() ()
+No symbol table info available.
+#1  0x00007f29704f419d in UnityScreen::getWindowPaintList() () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#2  0x00007f297668655a in CompositeScreen::getWindowPaintList() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#3  0x00007f297605ceb1 in PrivateGLScreen::paintOutputRegion(GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#4  0x00007f297605d7d7 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#5  0x00007f297288d232 in WallScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#6  0x00007f297605d70d in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#7  0x00007f29704f362f in UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#8  0x00007f297605d70d in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#9  0x00007f297605f1a8 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#10 0x00007f29766864b9 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#11 0x00007f29766864b9 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#12 0x00007f29766864b9 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#13 0x00007f2976688210 in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#14 0x0000000000429ea8 in CompTimer::internalCallback(unsigned int) ()
+No symbol table info available.
+#15 0x00007f297c519d5c in Glib::TimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#16 0x00007f297c51887f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#17 0x00007f297c02ad0d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f297c02b4f8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f297c02b789 in g_main_context_iteration () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007f2978102e99 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#21 0x00007f2978dab880 in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#22 0x0000000000429ea8 in CompTimer::internalCallback(unsigned int) ()
+No symbol table info available.
+#23 0x00007f297c519d5c in Glib::TimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#24 0x00007f297c51887f in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#25 0x00007f297c02ad0d in g_main_context_dispatch () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#26 0x00007f297c02b4f8 in ?? () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#27 0x00007f297c02bb3a in g_main_loop_run () from /lib/libglib-2.0.so.0
+No symbol table info available.
+#28 0x0000000000429337 in CompScreen::eventLoop() ()
+No symbol table info available.
+#29 0x00000000004222e0 in main ()
+No symbol table info available.

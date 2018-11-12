@@ -1,0 +1,148 @@
+#0  0x00007f43e653d3a5 in __GI_raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = 0
+        pid = <optimized out>
+        selftid = <optimized out>
+#1  0x00007f43e6540b0b in __GI_abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x4, sa_sigaction = 0x4}, sa_mask = {__val = {5, 140737222961842, 6, 139929604998783, 3, 140737222946666, 6, 139929604998787, 2, 140737222946686, 2, 139929604989781, 1, 139929604998783, 3, 140737222946660}}, sa_flags = 12, sa_restorer = 0x7f43e6664683}
+        sigs = {__val = {32, 0 <repeats 15 times>}}
+#2  0x00007f43e6575113 in __libc_message (do_abort=2, fmt=0x7f43e66660d8 "*** glibc detected *** %s: %s: 0x%s ***\n") at ../sysdeps/unix/sysv/linux/libc_fatal.c:189
+        ap = {{gp_offset = 40, fp_offset = 48, overflow_arg_area = 0x7ffff02e38e0, reg_save_area = 0x7ffff02e37f0}}
+        ap_copy = {{gp_offset = 16, fp_offset = 48, overflow_arg_area = 0x7ffff02e38e0, reg_save_area = 0x7ffff02e37f0}}
+        fd = 2
+        on_2 = <optimized out>
+        list = <optimized out>
+        nlist = <optimized out>
+        cp = <optimized out>
+        written = <optimized out>
+#3  0x00007f43e657fa96 in malloc_printerr (action=3, str=0x7f43e6663167 "malloc(): memory corruption", ptr=<optimized out>) at malloc.c:6283
+        buf = "00007f43c414ae10"
+        cp = <optimized out>
+#4  0x00007f43e65815f8 in _int_malloc (av=0x7f43c4000020, bytes=88) at malloc.c:4396
+        iters = <optimized out>
+        nb = 96
+        idx = <optimized out>
+        bin = <optimized out>
+        victim = 0x7f43c414ae00
+        size = <optimized out>
+        victim_index = <optimized out>
+        remainder = <optimized out>
+        remainder_size = <optimized out>
+        block = <optimized out>
+        bit = <optimized out>
+        map = <optimized out>
+        fwd = <optimized out>
+        bck = <optimized out>
+        errstr = 0x0
+        __func__ = "_int_malloc"
+#5  0x00007f43e658377d in __GI___libc_malloc (bytes=88) at malloc.c:3660
+        ar_ptr = 0x7f43c4000020
+        victim = <optimized out>
+        hook = <optimized out>
+        __func__ = "__libc_malloc"
+#6  0x00007f43dbe681b9 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#7  0x00007f43db1f87c2 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#8  0x00007f43db1f93f6 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#9  0x00007f43db1d1732 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#10 0x00007f43db1e739c in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#11 0x00007f43daff9c80 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#12 0x00007f43db001e9f in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#13 0x00007f43db002f15 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#14 0x00007f43da7c1b16 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#15 0x00007f43da7c217c in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#16 0x00007f43daba8925 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#17 0x00007f43d5fb9f3f in nux::IOpenGLSurface::UnlockRect() () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#18 0x00007f43d5fba965 in nux::IOpenGLTexture2D::UnlockRect(int) () from /usr/lib/libnux-graphics-1.0.so.0
+No symbol table info available.
+#19 0x00007f43d66eeca0 in unity::PanelMenuView::Draw(nux::GraphicsEngine&, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#20 0x00007f43d630dcb0 in nux::View::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#21 0x00007f43d6312ed7 in nux::Layout::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#22 0x00007f43d6774b24 in unity::PanelView::DrawContent(nux::GraphicsEngine&, bool) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#23 0x00007f43d630dc58 in nux::View::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#24 0x00007f43d6312ed7 in nux::Layout::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#25 0x00007f43d62db692 in nux::BaseWindow::DrawContent(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#26 0x00007f43d630dc58 in nux::View::ProcessDraw(nux::GraphicsEngine&, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#27 0x00007f43d6386ad1 in nux::WindowCompositor::RenderTopViewContent(nux::BaseWindow*, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#28 0x00007f43d638801a in nux::WindowCompositor::RenderTopViews(bool, std::list<nux::ObjectWeakPtr<nux::BaseWindow>, std::allocator<nux::ObjectWeakPtr<nux::BaseWindow> > >&, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#29 0x00007f43d63883d5 in nux::WindowCompositor::Draw(bool, bool) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#30 0x00007f43d638fb55 in nux::WindowThread::RenderInterfaceFromForeignCmd(nux::Rect*) () from /usr/lib/libnux-1.0.so.0
+No symbol table info available.
+#31 0x00007f43d67631cc in UnityScreen::paintDisplay(CompRegion const&, GLMatrix const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#32 0x00007f43d67639af in UnityWindow::glDraw(GLMatrix const&, GLFragment::Attrib&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#33 0x00007f43dc7fe7cb in GLWindow::glDraw(GLMatrix const&, GLFragment::Attrib&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#34 0x00007f43dc7febfd in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#35 0x00007f43d7b89c68 in WallWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#36 0x00007f43dc7feb9f in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#37 0x00007f43d7081635 in FadeWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libfade.so
+No symbol table info available.
+#38 0x00007f43dc7feb9f in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#39 0x00007f43d675ac6a in UnityWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#40 0x00007f43dc7feb9f in GLWindow::glPaint(GLWindowPaintAttrib const&, GLMatrix const&, CompRegion const&, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#41 0x00007f43dc7ff0d9 in PrivateGLScreen::paintOutputRegion(GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#42 0x00007f43dc7ff5a7 in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#43 0x00007f43d7b83802 in WallScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libwall.so
+No symbol table info available.
+#44 0x00007f43dc7ff4dc in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#45 0x00007f43d6763b5e in UnityScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libunityshell.so
+No symbol table info available.
+#46 0x00007f43dc7ff4dc in GLScreen::glPaintOutput(GLScreenPaintAttrib const&, GLMatrix const&, CompRegion const&, CompOutput*, unsigned int) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#47 0x00007f43dc801346 in PrivateGLScreen::paintOutputs(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int, CompRegion const&) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#48 0x00007f43dca21f09 in CompositeScreen::paint(std::list<CompOutput*, std::allocator<CompOutput*> >&, unsigned int) () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#49 0x00007f43dca2377f in CompositeScreen::handlePaintTimeout() () from /usr/lib/compiz/libcomposite.so
+No symbol table info available.
+#50 0x0000000000422d6b in CompTimer::triggerCallback() ()
+No symbol table info available.
+#51 0x0000000000422ea2 in CompTimeoutSource::callback() ()
+No symbol table info available.
+#52 0x000000000042239d in CompTimeoutSource::dispatch(sigc::slot_base*) ()
+No symbol table info available.
+#53 0x00007f43e7baf9df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#54 0x00007f43e76b5a5d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#55 0x00007f43e76b6258 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#56 0x00007f43e76b6792 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#57 0x000000000042c816 in CompScreen::eventLoop() ()
+No symbol table info available.
+#58 0x000000000042022a in main ()
+No symbol table info available.

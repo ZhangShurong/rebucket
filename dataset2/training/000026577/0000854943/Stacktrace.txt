@@ -1,0 +1,18 @@
+#0  0x00007f161fe38f39 in g_variant_unref () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f16205ad3db in g_settings_get_string () from /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#2  0x00007f162275aed1 in ?? () from /usr/lib/libbrasero-burn3.so.1
+No symbol table info available.
+#3  0x00007f16202e8833 in g_type_create_instance () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#4  0x00007f16202c7d2c in ?? () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#5  0x00007f16202cacc2 in g_object_newv () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#6  0x00007f16202cb83c in g_object_new () from /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0
+No symbol table info available.
+#7  0x00007f162275aaca in brasero_burn_library_start () from /usr/lib/libbrasero-burn3.so.1
+No symbol table info available.
+#8  0x000000000041c729 in main ()
+No symbol table info available.

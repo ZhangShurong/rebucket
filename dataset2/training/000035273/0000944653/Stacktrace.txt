@@ -1,0 +1,46 @@
+#0  0x00007f56f26a6d74 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007f56e6b37728 in GLScreen::GLScreen(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#2  0x00007f56e6b2b498 in PluginClassHandler<GLScreen, CompScreen, 4>::get(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#3  0x00007f56e6b2f26c in CompPlugin::VTableForScreenAndWindow<GLScreen, GLWindow>::initScreen(CompScreen*) () from /usr/lib/compiz/libopengl.so
+No symbol table info available.
+#4  0x00007f56f2f43df4 in CompManager::initPlugin(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#5  0x00007f56f2f448a1 in CompPlugin::push(CompPlugin*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#6  0x00007f56f2f136ea in PrivateScreen::updatePlugins() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#7  0x00007f56f2f14284 in PrivateScreen::processEvents() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#8  0x00007f56f2f499e7 in CompEventSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#9  0x00007f56f14546df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#10 0x00007f56f0f5ddda in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#11 0x00007f56f0f5e1a0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#12 0x00007f56f0f5e264 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#13 0x00007f56ed45ec79 in ?? () from /usr/lib/compizconfig/backends/libgconf.so
+No symbol table info available.
+#14 0x00007f56eed2459e in CcpScreen::timeout() () from /usr/lib/compiz/libccp.so
+No symbol table info available.
+#15 0x00007f56f2f5242b in CompTimer::triggerCallback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#16 0x00007f56f2f5252f in CompTimeoutSource::callback() () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#17 0x00007f56f2f519dd in CompTimeoutSource::dispatch(sigc::slot_base*) () from /usr/lib/libcompiz_core.so.ABI-20120216
+No symbol table info available.
+#18 0x00007f56f14546df in Glib::Source::dispatch_vfunc(_GSource*, int (*)(void*), void*) () from /usr/lib/x86_64-linux-gnu/libglibmm-2.4.so.1
+No symbol table info available.
+#19 0x00007f56f0f5ddda in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007f56f0f5e1a0 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#21 0x00007f56f0f5e59a in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#22 0x000000000040299e in main ()
+No symbol table info available.

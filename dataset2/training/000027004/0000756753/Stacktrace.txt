@@ -1,0 +1,10 @@
+#0  0x00cc3416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x0030f8a0 in raise () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#2  0x04e25bf3 in ?? () from /usr/lib/fglrx/dri/fglrx_dri.so
+No symbol table info available.
+#3  0x00306e99 in start_thread () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#4  0x0102973e in clone () from /lib/i386-linux-gnu/libc.so.6
+No symbol table info available.

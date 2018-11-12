@@ -1,0 +1,58 @@
+#0  0x0088a416 in __kernel_vsyscall ()
+No symbol table info available.
+#1  0x002a6dd1 in raise (sig=6) at ../nptl/sysdeps/unix/sysv/linux/raise.c:64
+        resultvar = <value optimized out>
+        resultvar = <value optimized out>
+        pid = 4038644
+        selftid = 1052
+#2  0x002aa2ae in abort () at abort.c:92
+        save_stage = 2
+        act = {__sigaction_handler = {sa_handler = 0x3db450 <main_arena+144>, sa_sigaction = 0x3db450 <main_arena+144>}, sa_mask = {__val = {144, 153012216, 4038644, 4043712, 138, 3214283932, 3064701, 4038644, 4038644, 4038644, 139, 3214284136, 2998734, 153011920, 153011920, 138, 153011816, 0, 153011920, 4222451712, 153011920, 153012021, 153011920, 153011920, 153012058, 153012220, 153011920, 153012220, 0, 0, 0, 0}}, sa_flags = 0, sa_restorer = 0x91e5910}
+        sigs = {__val = {32, 0 <repeats 31 times>}}
+#3  0x0029f7e8 in __assert_fail (assertion=0x51f824 "req == dpy->xcb->pending_requests", file=0x51f72b "../../src/xcb_io.c", line=140, function=0x51fa07 "dequeue_pending_request") at assert.c:81
+        buf = 0x91ec800 "gnome-settings-daemon: ../../src/xcb_io.c:140: dequeue_pending_request: La declaración `req == dpy->xcb->pending_requests' no se cumple.\n"
+#4  0x004a6850 in dequeue_pending_request (dpy=<value optimized out>, req=<value optimized out>) at ../../src/xcb_io.c:140
+No locales.
+#5  0x004a764f in _XReply (dpy=0x90f8400, rep=0xbf961674, extra=0, discard=1) at ../../src/xcb_io.c:574
+        req = 0x91e5910
+        response = 0x0
+        error = 0x0
+        c = 0x90f8d48
+        reply = <value optimized out>
+        current = 0x91ec600
+        __PRETTY_FUNCTION__ = "_XReply"
+#6  0x004913b8 in XInternAtom (dpy=0x90f8400, name=0xbf9616dc "_NET_SYSTEM_TRAY_S0", onlyIfExists=0) at ../../src/IntAtom.c:181
+        atom = <value optimized out>
+        sig = <value optimized out>
+        idx = 11
+        n = <value optimized out>
+        rep = {type = 72 'H', pad1 = 116 't', sequenceNumber = 72, length = 11346992, atom = 11235328, pad2 = 4670640, pad3 = 15978484, pad4 = 153014272, pad5 = 152011776, pad6 = 3214284508}
+#7  0x00dd9310 in ?? () from /usr/lib/libgtk-3.so.0
+No symbol table info available.
+#8  0x54454e5f in ?? ()
+No symbol table info available.
+#9  0x5359535f in ?? ()
+No symbol table info available.
+#10 0x5f4d4554 in ?? ()
+No symbol table info available.
+#11 0x59415254 in ?? ()
+No symbol table info available.
+#12 0x0030535f in _IO_acquire_lock_clear_flags2_fct (stream=0x5f4d4554, format=0x59415254 <Address 0x59415254 out of bounds>, args=0x30535f "u\035\211\f$\350\207\335\370\377\215\n\350`S\005") at ../libio/libioP.h:995
+        fp = 0x5f4d4554
+#13 __isoc99_vfwscanf (stream=0x5f4d4554, format=0x59415254 <Address 0x59415254 out of bounds>, args=0x30535f "u\035\211\f$\350\207\335\370\377\215\n\350`S\005") at isoc99_vfwscanf.c:30
+        _IO_acquire_lock_file = 0x5f4d4554
+        done = <value optimized out>
+#14 0x5359535f in ?? ()
+No symbol table info available.
+#15 0x5f4d4554 in ?? ()
+No symbol table info available.
+#16 0x59415254 in ?? ()
+No symbol table info available.
+#17 0x0030535f in _IO_acquire_lock_clear_flags2_fct (stream=No se puede acceder a la memoria en la dirección 0x54454e67
+) at ../libio/libioP.h:995
+        fp = <error reading variable fp (No se puede acceder a la memoria en la dirección 0x54454e67)>
+#18 __isoc99_vfwscanf (stream=No se puede acceder a la memoria en la dirección 0x54454e67
+) at isoc99_vfwscanf.c:30
+        _IO_acquire_lock_file = <error reading variable _IO_acquire_lock_file (No se puede acceder a la memoria en la dirección 0x54454e67)>
+        done = <value optimized out>
+No se puede acceder a la memoria en la dirección 0x54454e63

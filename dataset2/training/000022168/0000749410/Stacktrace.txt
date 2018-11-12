@@ -1,0 +1,18 @@
+#0  0x0031733d in pthread_mutex_lock () from /lib/i386-linux-gnu/libpthread.so.0
+No symbol table info available.
+#1  0x00a22954 in ?? () from /lib/i386-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00165200 in Glib::Source::unreference() const () from /usr/lib/libglibmm-2.4.so.1
+No symbol table info available.
+#3  0x08070d75 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#4  0x08071042 in PrivateScreen::~PrivateScreen() ()
+No symbol table info available.
+#5  0x0806fba8 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#6  0x0806fcd2 in CompScreen::~CompScreen() ()
+No symbol table info available.
+#7  0x08066671 in CompManager::fini() ()
+No symbol table info available.
+#8  0x08066e60 in main ()
+No symbol table info available.

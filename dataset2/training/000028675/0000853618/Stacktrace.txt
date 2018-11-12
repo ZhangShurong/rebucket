@@ -1,0 +1,37 @@
+#0  0x03fc25b0 in ?? ()
+No symbol table info available.
+#1  0x001e9d5a in call_in_idle_cb (user_data=0xafb0a230) at /build/buildd/glib2.0-2.29.90/./gio/gdbusconnection.c:4440
+        invocation = 0xafb0a230
+        vtable = <optimized out>
+        registration_id = <optimized out>
+        subtree_registration_id = <optimized out>
+        __PRETTY_FUNCTION__ = "call_in_idle_cb"
+#2  0x002c71c0 in g_idle_dispatch (source=0x8b1d4d8, callback=0x1e9c00 <call_in_idle_cb>, user_data=0xafb0a230) at /build/buildd/glib2.0-2.29.90/./glib/gmain.c:4801
+No locals.
+#3  0x002cb30f in g_main_dispatch (context=0x8ab5e08) at /build/buildd/glib2.0-2.29.90/./glib/gmain.c:2441
+        dispatch = 0x2c71a0 <g_idle_dispatch>
+        was_in_call = 0
+        user_data = 0xafb0a230
+        callback = 0x1e9c00 <call_in_idle_cb>
+        cb_funcs = 0x38035c
+        cb_data = 0x8b1d3d8
+        current_source_link = {data = 0x8b1d4d8, next = 0x0}
+        need_destroy = <optimized out>
+        source = 0x8b1d4d8
+        current = 0x8b00500
+        i = <optimized out>
+#4  g_main_context_dispatch (context=0x8ab5e08) at /build/buildd/glib2.0-2.29.90/./glib/gmain.c:3011
+No locals.
+#5  0x002cba40 in g_main_context_iterate (context=0x8ab5e08, block=2991104, dispatch=1, self=<optimized out>) at /build/buildd/glib2.0-2.29.90/./glib/gmain.c:3089
+        max_priority = 0
+        timeout = 0
+        some_ready = 1
+        nfds = <optimized out>
+        allocated_nfds = <optimized out>
+        fds = 0xb6d3d1d8
+#6  0x002cc04b in g_main_loop_run (loop=0x8b762b0) at /build/buildd/glib2.0-2.29.90/./glib/gmain.c:3297
+        __PRETTY_FUNCTION__ = "g_main_loop_run"
+#7  0x00ad4795 in gtk_main () at /build/buildd/gtk+3.0-3.1.90/./gtk/gtkmain.c:1367
+        loop = 0x8b762b0
+#8  0x0804aa31 in main ()
+No symbol table info available.
