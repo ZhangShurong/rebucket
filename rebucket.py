@@ -28,10 +28,14 @@ class Stack(object):
 
 
 class Frame(object):
-    def __init__(self, frame_dict):
-        self.symbol = frame_dict['symbol']
-        self.line = frame_dict['line']
-        self.file_path = frame_dict['file']
+    def __init__(self, frame, with_str = False):
+        if with_str:
+            self.symbol = frame
+        else:
+            self.symbol = frame['symbol']
+            self.line = frame['line']
+            self.file_path = frame['file']    
+        
 '''
 # TODO Do we need rewrite function '=='?
     def __eq__(self, other):
@@ -51,6 +55,25 @@ def load_stack(stack_json):
         stack_arr = []
         for frame_dict in frames:
             frame = Frame(frame_dict)
+            stack_arr.append(frame)
+        stack = Stack(stack_id, stack_arr)
+        all_stack.append(stack)
+    return all_stack
+
+def load_stack2(stack_json):
+    with open(stack_json) as f:
+        apm_dict = json.load(f)
+    all_stack = []
+    for _hits_item in apm_dict['hits']['hits']:
+        if _hits_item['_source']['stack'] is None:
+            continue
+        stack_id = _hits_item['_id']
+        stacks_str = _hits_item['_source']['stack'][1:-1]
+        frames = stacks_str.split(',')
+
+        stack_arr = []
+        for frame_str in frames:
+            frame = Frame(frame_str, True)
             stack_arr.append(frame)
         stack = Stack(stack_id, stack_arr)
         all_stack.append(stack)
@@ -95,7 +118,8 @@ def clustering(all_stack):
             sim.append(res)
     
     link = linkage(sim, method = 'complete')
-    result = fcluster(link, 0.5, criterion='distance', depth = 2, R=None, monocrit = None)
+    dist = 0.6
+    result = fcluster(link, dist, criterion='distance', depth = 2, R=None, monocrit = None)
     print result
     maximum = max(result)
     bucket = [[] for i in range(maximum)]
@@ -129,16 +153,17 @@ def write_buckets(buckets, bucket_file):
 
 def main():
     stack_json_dir = 'apm_data'
+    bucket_json = 'apm_data/bucket.json'
     json_file_list = glob.glob(stack_json_dir + os.sep + "df*.json")
     all_stack = []
     for json_file in json_file_list:
-        stack = load_stack(json_file)
+        stack = load_stack2(json_file)
         all_stack += stack
-    
-    bucket_json = 'apm_data/bucket.json'
-
+    print "We have " + str(len(all_stack)) + " Stacks Now"
+    print "Clustering"
     buckets = load_buckets(bucket_json)
     new_buckets = rebucket(all_stack, buckets)
+    print "We have " + str(len(new_buckets)) + " buckets Now"
     write_buckets(new_buckets, bucket_json)
 
 if __name__ == "__main__":
