@@ -113,29 +113,23 @@ def rebucket(all_stack, buckets):
 
 def write_buckets(buckets, bucket_file):
     buckets_array = []
-    count = 0
-    bucket_dict = dict()
     for bucket in buckets:
         stack_arr = []
-        count += 1
-        
         for stack in bucket:
             stack_dict = dict()
             frame_arr = []
             for frame in stack.stack_arr:
                 frame_arr.append(frame.symbol)
             stack_dict[stack.id] = frame_arr
-
             stack_arr.append(stack_dict)
-        bucket_dict[count] = stack_arr
-        buckets_array.append(bucket_dict)
-    buckets_json = json.dumps(bucket_dict)
+        buckets_array.append(stack_arr)
+    buckets_json = json.dumps(buckets_array)
     with open(bucket_file, 'w') as f:
         json.dump(buckets_json, f)
 
 def main():
     stack_json_dir = 'apm_data'
-    json_file_list = glob.glob(stack_json_dir + os.sep + "*.json")
+    json_file_list = glob.glob(stack_json_dir + os.sep + "df*.json")
     all_stack = []
     for json_file in json_file_list:
         stack = load_stack(json_file)
