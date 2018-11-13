@@ -7,6 +7,25 @@ if bucket file is not empty, stacks in stack_json will be appended into bucket_j
 '''
 import json
 import math
+import glob
+import os
+import numpy
+from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
+
+class Stack(object):
+    stack_arr = []
+    id = ''
+
+    def __init__(self, id, frame_arr):
+        self.id = id
+        self.stack_arr = frame_arr
+
+    def __len__(self):
+        return len(self.stack_arr)
+    
+    def __getitem__(self, index):
+        return self.stack_arr[index]
+
 
 class Frame(object):
     def __init__(self, frame_dict):
@@ -27,10 +46,13 @@ def load_stack(stack_json):
         if _hits_item['_source']['feature'] is None:
             continue
         frames = _hits_item['_source']['feature'][0]['frame']
-        stack = []
+        
+        stack_id = _hits_item['_id']
+        stack_arr = []
         for frame_dict in frames:
             frame = Frame(frame_dict)
-            stack.append(frame)
+            stack_arr.append(frame)
+        stack = Stack(stack_id, stack_arr)
         all_stack.append(stack)
     return all_stack
 
@@ -71,28 +93,59 @@ def clustering(all_stack):
         for j in range(i + 1, len(all_stack)):
             res = get_dist(all_stack[i], all_stack[j])
             sim.append(res)
-    print sim
     
-    return []
+    link = linkage(sim, method = 'complete')
+    result = fcluster(link, 0.5, criterion='distance', depth = 2, R=None, monocrit = None)
+    print result
+    maximum = max(result)
+    bucket = [[] for i in range(maximum)]
+    for i in range(len(result)):
+        bucket[int(result[i]) - 1].append(all_stack[i])
+    bucket.sort()
+    return bucket
 
 def rebucket(all_stack, buckets):
-    for stack in all_stack:
-        for frame in stack:
-            print frame.symbol
-        print '---------'
-    clustering(all_stack)
-    return []
+    # for stack in all_stack:
+    #     for frame in stack:
+    #         print frame.symbol
+    #     print '---------'
+    return clustering(all_stack)
 
-def write_buckets(bucket_json):
-    pass
+def write_buckets(buckets, bucket_file):
+    buckets_array = []
+    count = 0
+    bucket_dict = dict()
+    for bucket in buckets:
+        stack_arr = []
+        count += 1
+        
+        for stack in bucket:
+            stack_dict = dict()
+            frame_arr = []
+            for frame in stack.stack_arr:
+                frame_arr.append(frame.symbol)
+            stack_dict[stack.id] = frame_arr
+
+            stack_arr.append(stack_dict)
+        bucket_dict[count] = stack_arr
+        buckets_array.append(bucket_dict)
+    buckets_json = json.dumps(bucket_dict)
+    with open(bucket_file, 'w') as f:
+        json.dump(buckets_json, f)
 
 def main():
-    stack_json = 'apm_data/df_log_android-2018-10-01.json'
+    stack_json_dir = 'apm_data'
+    json_file_list = glob.glob(stack_json_dir + os.sep + "*.json")
+    all_stack = []
+    for json_file in json_file_list:
+        stack = load_stack(json_file)
+        all_stack += stack
+    
     bucket_json = 'apm_data/bucket.json'
-    all_stack = load_stack(stack_json)
+
     buckets = load_buckets(bucket_json)
     new_buckets = rebucket(all_stack, buckets)
-    write_buckets(new_buckets)
+    write_buckets(new_buckets, bucket_json)
 
 if __name__ == "__main__":
     main()
