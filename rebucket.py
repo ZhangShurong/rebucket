@@ -42,7 +42,7 @@ class Frame(object):
         pass
 '''
 
-def load_stack(stack_json):
+def load_stack_feature(stack_json):
     with open(stack_json) as f:
         apm_dict = json.load(f)
     all_stack = []
@@ -60,7 +60,7 @@ def load_stack(stack_json):
         all_stack.append(stack)
     return all_stack
 
-def load_stack2(stack_json):
+def load_stack_stack(stack_json):
     with open(stack_json) as f:
         apm_dict = json.load(f)
     all_stack = []
@@ -157,7 +157,7 @@ def main():
     json_file_list = glob.glob(stack_json_dir + os.sep + "df*.json")
     all_stack = []
     for json_file in json_file_list:
-        stack = load_stack2(json_file)
+        stack = load_stack_stack(json_file)
         all_stack += stack
     print "We have " + str(len(all_stack)) + " Stacks Now"
     print "Clustering"
