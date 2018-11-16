@@ -13,6 +13,7 @@ This script:
 '''
 from rebucket import Stack, Frame
 import re
+import json
 
 class StackTraceExtractor:
     def __init__(self):
@@ -38,22 +39,52 @@ def load_stacks(bug_report_csv):
     with open(bug_report_csv) as f:
         lines = f.readlines()
     stackTraceExtractor = StackTraceExtractor()
+    stacks = []
     for line in lines:
         issue_id = line.split(',')[0]
         duplicated_issue = line.split(',')[3]
+        duplicates_id = None
         description = line.split(',')[5]
-        s = stackTraceExtractor.find_stack_traces(description)
-        if len(s) is not 0:
-            print s
-            exit(0)
-    return []
+        ori_frames = stackTraceExtractor.find_stack_traces(description)
+        frames = []
+        if len(ori_frames) is 0:
+            continue
+        if len(duplicated_issue) is not 0:
+            duplicates_id = duplicated_issue.split('.')[0]
+        for ori_frame in ori_frames:
+            frame_dict = dict()
+            frame_dict['symbol'] = ori_frame[0].strip()
+            frame_dict['file'] = ori_frame[1].split(':')[0]
+            try:
+                frame_dict['line'] = int(ori_frame[1].split(':')[1])
+            except ValueError:
+                frame_dict['line'] = 0
+            frame = Frame(frame_dict)
+            frames.append(frame)
+        stack = Stack(issue_id, frames, duplicates_id)
+        stacks.append(stack)
+    return stacks
 
 def save_json(output_json, stacks):
-    pass
+    with open(output_json, 'w') as fb_output:
+        output_json_arr = []
+        for stack in stacks:
+            stack_dict = dict()
+            stack_dict['stack_id'] = stack.id
+            stack_dict['duplicated_stack'] = stack.duplicated_stack
+            stack_dict['stack_arr'] = []
+            for frame in stack.stack_arr:
+                frame_dict = dict()
+                frame_dict['symbol'] = frame.symbol
+                frame_dict['file'] = frame.file
+                frame_dict['line'] = frame.line
+                stack_dict['stack_arr'].append(frame_dict)
+            output_json_arr.append(stack_dict)
+        json.dump(output_json_arr, fb_output)
 
 def main():
-    ori_data_path = 'ignore/bugrepo-master/EclipsePlatform/eclipse_platform/eclipse_platform.csv'
-    output_data_path = 'apm_data/df_eclipse.json'
+    ori_data_path = 'dataset/Thunderbird/mozilla_thunderbird.csv'
+    output_data_path = 'dataset/Thunderbird/df_mozilla_thunderbird.json'
     stacks = load_stacks(ori_data_path)
     save_json(output_data_path, stacks)
 if __name__ == "__main__":

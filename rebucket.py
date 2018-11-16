@@ -15,14 +15,17 @@ from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
 class Stack(object):
     stack_arr = []
     id = ''
+    duplicated_stack=''
 
-    def __init__(self, id, frame_arr):
+    def __init__(self, id, frame_arr, duplicated_stack=None):
         self.id = id
         self.stack_arr = frame_arr
+        if duplicated_stack is not None:
+            self.duplicated_stack = duplicated_stack
 
     def __len__(self):
         return len(self.stack_arr)
-    
+
     def __getitem__(self, index):
         return self.stack_arr[index]
 
@@ -34,8 +37,8 @@ class Frame(object):
         else:
             self.symbol = frame['symbol']
             self.line = frame['line']
-            self.file_path = frame['file']    
-        
+            self.file = frame['file']
+
 '''
 # TODO Do we need rewrite function '=='?
     def __eq__(self, other):
@@ -50,7 +53,7 @@ def load_stack_feature(stack_json):
         if _hits_item['_source']['feature'] is None:
             continue
         frames = _hits_item['_source']['feature'][0]['frame']
-        
+
         stack_id = _hits_item['_id']
         stack_arr = []
         for frame_dict in frames:
@@ -116,7 +119,7 @@ def clustering(all_stack):
         for j in range(i + 1, len(all_stack)):
             res = get_dist(all_stack[i], all_stack[j])
             sim.append(res)
-    
+
     link = linkage(sim, method = 'complete')
     dist = 0.6
     result = fcluster(link, dist, criterion='distance', depth = 2, R=None, monocrit = None)
