@@ -12,6 +12,7 @@ import os
 import numpy
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
 
+BUCKETS = []
 class Stack(object):
     stack_arr = []
     id = ''
@@ -154,6 +155,21 @@ def write_buckets(buckets, bucket_file):
     with open(bucket_file, 'w') as f:
         json.dump(buckets_json, f)
 
+def single_pass_clustering(stack):
+    found = False
+    for bucket in BUCKETS:
+        sim = get_dist(stack, bucket[0])
+        print sim
+        if sim > 0.9:
+            bucket.append(stack)
+            found = True
+            break
+    if found is not True:
+        BUCKETS.append([stack])
+
+def query(stack):
+    print "Got"
+
 def main():
     stack_json_dir = 'apm_data'
     bucket_json = 'apm_data/bucket.json'
@@ -169,5 +185,11 @@ def main():
     print "We have " + str(len(new_buckets)) + " buckets Now"
     write_buckets(new_buckets, bucket_json)
 
+    print "single_pass_clustering..."
+    for stack in all_stack:
+        single_pass_clustering(stack)
+    print "We have " + str(len(BUCKETS)) + " buckets Now"
+
 if __name__ == "__main__":
     main()
+
