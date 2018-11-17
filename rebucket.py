@@ -12,17 +12,21 @@ import os
 import numpy
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
 
+BUCKETS = []
 class Stack(object):
     stack_arr = []
     id = ''
+    duplicated_stack=''
 
-    def __init__(self, id, frame_arr):
+    def __init__(self, id, frame_arr, duplicated_stack=None):
         self.id = id
         self.stack_arr = frame_arr
+        if duplicated_stack is not None:
+            self.duplicated_stack = duplicated_stack
 
     def __len__(self):
         return len(self.stack_arr)
-    
+
     def __getitem__(self, index):
         return self.stack_arr[index]
 
@@ -34,15 +38,15 @@ class Frame(object):
         else:
             self.symbol = frame['symbol']
             self.line = frame['line']
-            self.file_path = frame['file']    
-        
+            self.file = frame['file']
+
 '''
 # TODO Do we need rewrite function '=='?
     def __eq__(self, other):
         pass
 '''
 
-def load_stack(stack_json):
+def load_stack_feature(stack_json):
     with open(stack_json) as f:
         apm_dict = json.load(f)
     all_stack = []
@@ -50,7 +54,7 @@ def load_stack(stack_json):
         if _hits_item['_source']['feature'] is None:
             continue
         frames = _hits_item['_source']['feature'][0]['frame']
-        
+
         stack_id = _hits_item['_id']
         stack_arr = []
         for frame_dict in frames:
@@ -60,7 +64,7 @@ def load_stack(stack_json):
         all_stack.append(stack)
     return all_stack
 
-def load_stack2(stack_json):
+def load_stack_stack(stack_json):
     with open(stack_json) as f:
         apm_dict = json.load(f)
     all_stack = []
@@ -116,7 +120,7 @@ def clustering(all_stack):
         for j in range(i + 1, len(all_stack)):
             res = get_dist(all_stack[i], all_stack[j])
             sim.append(res)
-    
+
     link = linkage(sim, method = 'complete')
     dist = 0.6
     result = fcluster(link, dist, criterion='distance', depth = 2, R=None, monocrit = None)
@@ -151,13 +155,28 @@ def write_buckets(buckets, bucket_file):
     with open(bucket_file, 'w') as f:
         json.dump(buckets_json, f)
 
+def single_pass_clustering(stack):
+    found = False
+    for bucket in BUCKETS:
+        sim = get_dist(stack, bucket[0])
+        print sim
+        if sim > 0.9:
+            bucket.append(stack)
+            found = True
+            break
+    if found is not True:
+        BUCKETS.append([stack])
+
+def query(stack):
+    print "Got"
+
 def main():
     stack_json_dir = 'apm_data'
     bucket_json = 'apm_data/bucket.json'
     json_file_list = glob.glob(stack_json_dir + os.sep + "df*.json")
     all_stack = []
     for json_file in json_file_list:
-        stack = load_stack2(json_file)
+        stack = load_stack_stack(json_file)
         all_stack += stack
     print "We have " + str(len(all_stack)) + " Stacks Now"
     print "Clustering"
@@ -166,5 +185,11 @@ def main():
     print "We have " + str(len(new_buckets)) + " buckets Now"
     write_buckets(new_buckets, bucket_json)
 
+    print "single_pass_clustering..."
+    for stack in all_stack:
+        single_pass_clustering(stack)
+    print "We have " + str(len(BUCKETS)) + " buckets Now"
+
 if __name__ == "__main__":
     main()
+
