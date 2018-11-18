@@ -120,7 +120,7 @@ def clustering(all_stack):
         for j in range(i + 1, len(all_stack)):
             res = get_dist(all_stack[i], all_stack[j])
             sim.append(res)
-
+    print sim
     link = linkage(sim, method = 'complete')
     dist = 0.6
     result = fcluster(link, dist, criterion='distance', depth = 2, R=None, monocrit = None)
@@ -159,8 +159,7 @@ def single_pass_clustering(stack):
     found = False
     for bucket in BUCKETS:
         sim = get_dist(stack, bucket[0])
-        print sim
-        if sim > 0.9:
+        if sim < 0.1:
             bucket.append(stack)
             found = True
             break
