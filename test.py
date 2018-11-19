@@ -90,51 +90,51 @@ def main():
     all_stacks = read_dataset(json_path)
     
     #---Training---
-    train_num = 200
-    c = 0.0
-    c_best = 0.0
-    c_max = 2.0
+    # train_num = 200
+    # c = 0.0
+    c_best = 0.04
+    # c_max = 2.0
 
-    dist = 0.0
-    dist_best = 0.0
-    dist_max = 1.0
+    # dist = 0.0
+    dist_best = 0.06
+    # dist_max = 1.0
 
-    o = 0.0
-    o_best = 0.0
-    o_max = 2.0
+    # o = 0.0
+    o_best = 0.13
+    # o_max = 2.0
 
-    s = 0.01
+    # s = 0.01
 
-    real_buckets = generate_realbuckets(all_stacks[0:train_num])
-    fm_max = 0.0
-    while dist < dist_max:
-        rebuckets = rebucket.clustering(all_stacks[0:train_num], c, o ,dist)
-        f_m = meature_result(real_buckets, rebuckets)
-        if f_m > fm_max:
-            fm_max = f_m
-            dist_best = dist
-        dist += s
-    print "best dist is " + str(dist_best)
+    # real_buckets = generate_realbuckets(all_stacks[0:train_num])
+    # fm_max = 0.0
+    # while dist < dist_max:
+    #     rebuckets = rebucket.clustering(all_stacks[0:train_num], c, o ,dist)
+    #     f_m = meature_result(real_buckets, rebuckets)
+    #     if f_m > fm_max:
+    #         fm_max = f_m
+    #         dist_best = dist
+    #     dist += s
+    # print "best dist is " + str(dist_best)
 
-    fm_max = 0.0
-    while o < o_max:
-        rebuckets = rebucket.clustering(all_stacks[0:train_num], c, o ,dist_best)
-        f_m = meature_result(real_buckets, rebuckets)
-        if f_m > fm_max:
-            fm_max = f_m
-            o_best = o
-        o += s
-    print "best o is " + str(o_best)
+    # fm_max = 0.0
+    # while o < o_max:
+    #     rebuckets = rebucket.clustering(all_stacks[0:train_num], c, o ,dist_best)
+    #     f_m = meature_result(real_buckets, rebuckets)
+    #     if f_m > fm_max:
+    #         fm_max = f_m
+    #         o_best = o
+    #     o += s
+    # print "best o is " + str(o_best)
 
-    fm_max = 0.0
-    while c < c_max:
-        rebuckets = rebucket.clustering(all_stacks[0:train_num], c, o_best ,dist_best)
-        f_m = meature_result(real_buckets, rebuckets)
-        if f_m > fm_max:
-            fm_max = f_m
-            c_best = c
-        c += s
-    print "best c is " + str(c_best)
+    # fm_max = 0.0
+    # while c < c_max:
+    #     rebuckets = rebucket.clustering(all_stacks[0:train_num], c, o_best ,dist_best)
+    #     f_m = meature_result(real_buckets, rebuckets)
+    #     if f_m > fm_max:
+    #         fm_max = f_m
+    #         c_best = c
+    #     c += s
+    # print "best c is " + str(c_best)
     #---Training End---
 
     test_num = 2000
@@ -145,7 +145,7 @@ def main():
     print "end testing"
     for stack in all_stacks:
         count += 1
-        rebucket.single_pass_clustering(stack)
+        rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
         if count % 10 == 0:
             print count
         if count == test_num:
