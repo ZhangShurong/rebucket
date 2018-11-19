@@ -19,6 +19,13 @@ def read_dataset(json_path):
 def main():
     json_path = 'dataset/eclipse/df_eclipse.json'
     all_stacks = read_dataset(json_path)
+    count = 0
+    for stack in all_stacks:
+        count += 1
+        rebucket.single_pass_clustering(stack)
+        if count % 10 == 0:
+            print count
+    print len(rebucket.BUCKET)
     print len(rebucket.clustering(all_stacks))
 if __name__ == "__main__":
     main()
