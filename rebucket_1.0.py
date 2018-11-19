@@ -173,7 +173,7 @@ def clustering(allCallStack, c, o, dist, filename):
 	maximum = max(result)
 	bucket = [[] for i in range(maximum)]
 	for i in range(len(result)):
-		bucket[int(result[i]) - 1].append(str(allCallStack[i][0]))
+		bucket[result[i]) - 1].append(str(allCallStack[i][0]))
 	bucket.sort()
 
 	if hatena_flag == 1:

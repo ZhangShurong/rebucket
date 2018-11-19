@@ -86,10 +86,12 @@ def load_stack_stack(stack_json):
 def load_buckets(bucket_json):
     return []
 
-def get_dist(stack1, stack2):
+def get_dist(stack1, stack2, c, o):
     # FIXME set resonable c and o
-    c = 0.1
-    o = 0.2
+    # c = 0.1
+    # o = 0.2
+    # c = 1
+    # o = 1
 
     stack_len1 = len(stack1)
     stack_len2 = len(stack2)
@@ -100,6 +102,7 @@ def get_dist(stack1, stack2):
     if stack_len2 == 1:
         return 1.0
     M = [[0. for i in range(len(stack2) + 1)] for j in range(len(stack1) + 1)]
+    
     for i in xrange(1, len(stack1) + 1):
         for j in xrange(1, len(stack2) + 1):
             if stack1[i - 1].symbol == stack2[j - 1].symbol:
@@ -114,17 +117,37 @@ def get_dist(stack1, stack2):
     sim = M[stack_len1][stack_len2] / sig
     return 1 - sim
 
-def clustering(all_stack):
+def stack_prefix(stack1, stack2, num):
+    for i in range(0, num):
+        if i > len(stack1.stack_arr) or i > len(stack2.stack_arr):
+            return False
+        if stack1.stack_arr[i] != stack2.stack_arr[i]:
+            return False
+    return True
+    
+def prefix_match(all_stack):
+    prefix = 4
+    buckets = []
+    for stack in all_stack:
+        found = False
+        for bucket in buckets:
+            if stack_prefix(bucket[0], stack, prefix):
+                bucket.append(stack)
+                found = True
+        if not found:
+            buckets.append([stack])
+    return buckets
+
+
+def clustering(all_stack, c, o, dist):
     sim = []
     for i in range(len(all_stack) - 1):
         for j in range(i + 1, len(all_stack)):
-            res = get_dist(all_stack[i], all_stack[j])
+            res = get_dist(all_stack[i], all_stack[j], c, o)
             sim.append(res)
-    print sim
     link = linkage(sim, method = 'complete')
-    dist = 0.6
+    # dist = 0.2
     result = fcluster(link, dist, criterion='distance', depth = 2, R=None, monocrit = None)
-    print result
     maximum = max(result)
     bucket = [[] for i in range(maximum)]
     for i in range(len(result)):
@@ -157,12 +180,18 @@ def write_buckets(buckets, bucket_file):
 
 def single_pass_clustering(stack):
     found = False
-    for bucket in BUCKETS:
+    min = -1
+    min_sim = -1
+    for i, bucket in enumerate(BUCKETS):
         sim = get_dist(stack, bucket[0])
-        if sim < 0.1:
+        if sim < min_sim:
+            min_sim = sim
+            min = i
+        if sim < 0.2:
             bucket.append(stack)
             found = True
-            break
+            min = i
+            min_sim = sim
     if found is not True:
         BUCKETS.append([stack])
 
