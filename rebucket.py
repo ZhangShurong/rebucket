@@ -155,12 +155,12 @@ def clustering(all_stack, c, o, dist):
     bucket.sort()
     return bucket
 
-def rebucket(all_stack, buckets):
+def rebucket(all_stack, buckets, c, o, dist):
     # for stack in all_stack:
     #     for frame in stack:
     #         print frame.symbol
     #     print '---------'
-    return clustering(all_stack)
+    return clustering(all_stack, c, o, dist)
 
 def write_buckets(buckets, bucket_file):
     buckets_array = []
@@ -178,16 +178,16 @@ def write_buckets(buckets, bucket_file):
     with open(bucket_file, 'w') as f:
         json.dump(buckets_json, f)
 
-def single_pass_clustering(stack):
+def single_pass_clustering(stack, c, o, dist):
     found = False
     min = -1
     min_sim = -1
     for i, bucket in enumerate(BUCKETS):
-        sim = get_dist(stack, bucket[0])
+        sim = get_dist(stack, bucket[0], c, o)
         if sim < min_sim:
             min_sim = sim
             min = i
-        if sim < 0.2:
+        if sim < dist:
             bucket.append(stack)
             found = True
             min = i
@@ -209,7 +209,7 @@ def main():
     print "We have " + str(len(all_stack)) + " Stacks Now"
     print "Clustering"
     buckets = load_buckets(bucket_json)
-    new_buckets = rebucket(all_stack, buckets)
+    new_buckets = rebucket(all_stack, buckets, 0.04, 0.13, 0.06)
     print "We have " + str(len(new_buckets)) + " buckets Now"
     write_buckets(new_buckets, bucket_json)
 

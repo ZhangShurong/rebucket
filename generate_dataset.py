@@ -83,8 +83,10 @@ def save_json(output_json, stacks):
         json.dump(output_json_arr, fb_output)
 
 def main():
-    ori_data_path = 'dataset/Thunderbird/mozilla_thunderbird.csv'
-    output_data_path = 'dataset/Thunderbird/df_mozilla_thunderbird.json'
+    # ori_data_path = 'dataset/Thunderbird/mozilla_thunderbird.csv'
+    # output_data_path = 'dataset/Thunderbird/df_mozilla_thunderbird.json'
+    ori_data_path = 'dataset/Firefox/mozilla_firefox.csv'
+    output_data_path = 'dataset/Firefox/df_mozilla_firefox.json'
     stacks = load_stacks(ori_data_path)
     save_json(output_data_path, stacks)
 if __name__ == "__main__":
