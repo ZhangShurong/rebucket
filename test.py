@@ -106,6 +106,41 @@ def inverse_purity(real_buckets, BUCKETS, flag = False):
         inverse_purity += float(len(real_buckets[i])) * float(max(inverse_pur)) / float(N)
     return inverse_purity
 
+def wrong(real_buckets, BUCKETS, flag = False):
+    buckets = []
+    if not flag:
+        for bucket in BUCKETS:
+            tmp_bucket = []
+            for stack in bucket:
+                tmp_bucket.append(stack.id)
+            buckets.append(tmp_bucket)
+    else:
+        buckets = BUCKETS
+    
+    N = 0.0
+    for bucket in real_buckets:
+        N += len(bucket)
+    wrong_set = []
+    for j in range(0, len(buckets)):
+        found = False
+        for i in range(0, len(real_buckets)):
+            if set(buckets[j]).issubset(set(real_buckets[i])):
+                found = True
+        if not found:
+            wrong_set.append(buckets[i])
+    real_set = []
+    print wrong_set
+    for bucket in wrong_set:
+        for stack in bucket:
+            for real_bucket in real_buckets:
+                if stack in real_bucket:
+                    if real_bucket not in real_set:
+                        real_set.append(real_bucket)
+    
+    return len(real_set) - len(wrong_set)
+        
+            
+
 
 def meature_result(real_buckets, BUCKETS, flag = False):
     buckets = []
@@ -186,9 +221,9 @@ def train(dataset):
     return [c_best, o_best, dist_best]
 
 def main():
-    json_path = 'dataset/eclipse/df_eclipse.json'
+    #json_path = 'dataset/eclipse/df_eclipse.json'
     #json_path = 'dataset/Firefox/df_mozilla_firefox.json'
-    #json_path = 'dataset/mozilla_core/df_mozilla_core.json'
+    json_path = 'dataset/mozilla_core/df_mozilla_core.json'
     #json_path = 'dataset/JDT/df_eclipse_jdt.json'
     
     all_stacks = read_dataset(json_path)
@@ -210,6 +245,7 @@ def main():
     real_buckets = generate_realbuckets(all_stacks[0:test_num])
     print "testing"
     print meature_result(real_buckets, real_buckets, True)
+    print "Wrong = " + str(wrong(real_buckets, real_buckets, True))
     print "end testing"
     for stack in all_stacks:
         count += 1
@@ -223,6 +259,7 @@ def main():
     print "F = " + str(meature_result(real_buckets, rebucket.BUCKETS))
     print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
     print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
+    print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
 
     print "rebucket.clustering..."
     rebuckets = rebucket.clustering(all_stacks[0:test_num], c_best, o_best ,dist_best)
@@ -231,6 +268,7 @@ def main():
     print "F = " + str(meature_result(real_buckets, rebuckets))
     print "purity = " + str(purity(real_buckets, rebuckets))
     print "inverse_purity = " + str(inverse_purity(real_buckets, rebuckets))
+    print "Wrong = " + str(wrong(real_buckets, rebuckets))
 
     print "prefix match..."
     prefix_buckets = rebucket.prefix_match(all_stacks[0:test_num])
@@ -238,6 +276,7 @@ def main():
     print "F = " + str(meature_result(real_buckets, prefix_buckets))
     print "purity = " + str(purity(real_buckets, prefix_buckets))
     print "inverse_purity = " + str(inverse_purity(real_buckets, prefix_buckets))
+    print "Wrong = " + str(wrong(real_buckets, prefix_buckets))
 
     print "Test num "+str(test_num)
     print "real buckets " + str(len(real_buckets))
