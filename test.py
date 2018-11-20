@@ -27,8 +27,10 @@ def generate_realbuckets(stacks):
             in_bucket = False
             for bucket in real_buckets:
                 if stack.duplicated_stack in bucket:
-                    bucket.append(stack.id)
-                    in_bucket = True
+                    if stack.id in bucket:
+                        in_bucket = True
+                    else:
+                        bucket.append(stack.id)
                     break
             if not in_bucket:
                 found = False
@@ -297,7 +299,7 @@ def main():
 
     all_stacks = read_dataset(json_path)
 
-    need_train = False
+    need_train = True
     c_best = 0.04
     o_best = 0.13
     dist_best = 0.03
