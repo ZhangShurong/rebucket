@@ -100,17 +100,24 @@ def compare_stack(stack1, stack2):
     return True
 
 def same_filter(stacks):
-    count = 0
+    duplicated_stack_arr = []
+
     for i, stack in enumerate(stacks):
         for j in range(i + 1, len(stacks)):
             if compare_stack(stack, stacks[j]):
+                if stack.duplicated_stack in duplicated_stack_arr:
+                    continue
+                duplicated_stack_arr.append(stack.id)
                 stacks[j].duplicated_stack = stack.id
-                count += 1
-    print count
+
     return stacks
         
 
 def main():
+    input_arr = ['dataset/Thunderbird/mozilla_thunderbird.csv', 'dataset/Firefox/mozilla_firefox.csv',
+    'dataset/eclipse/eclipse_platform.csv', 'dataset/JDT/eclipse_jdt.csv', 'dataset/mozilla_core/mozilla_core.csv']
+    output_arr = ['dataset/Thunderbird/df_mozilla_thunderbird.json', 'dataset/Firefox/df_mozilla_firefox.json',
+    'dataset/eclipse/df_eclipse.json', 'dataset/JDT/df_eclipse_jdt.json', 'dataset/mozilla_core/df_mozilla_core.json']
     # ori_data_path = 'dataset/Thunderbird/mozilla_thunderbird.csv'
     # output_data_path = 'dataset/Thunderbird/df_mozilla_thunderbird.json'
     # ori_data_path = 'dataset/Firefox/mozilla_firefox.csv'
@@ -121,9 +128,9 @@ def main():
     # output_data_path = 'dataset/JDT/df_eclipse_jdt.json'
     # ori_data_path = 'dataset/mozilla_core/mozilla_core.csv'
     # output_data_path = 'dataset/mozilla_core/df_mozilla_core.json'
-    
-    stacks = load_stacks(ori_data_path)
-    stacks = same_filter(stacks)
-    save_json(output_data_path, stacks)
+    for index, input_csv in enumerate(input_arr):
+        stacks = load_stacks(input_csv)
+        stacks = same_filter(stacks)
+        save_json(output_arr[index], stacks)
 if __name__ == "__main__":
     main()
