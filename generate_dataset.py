@@ -112,8 +112,13 @@ def main():
     # output_data_path = 'dataset/Thunderbird/df_mozilla_thunderbird.json'
     # ori_data_path = 'dataset/Firefox/mozilla_firefox.csv'
     # output_data_path = 'dataset/Firefox/df_mozilla_firefox.json'
-    ori_data_path = 'dataset/eclipse/eclipse_platform.csv'
-    output_data_path = 'dataset/eclipse/df_eclipse.json'
+    # ori_data_path = 'dataset/eclipse/eclipse_platform.csv'
+    # output_data_path = 'dataset/eclipse/df_eclipse.json'
+    # ori_data_path = 'dataset/JDT/eclipse_jdt.csv'
+    # output_data_path = 'dataset/JDT/df_eclipse_jdt.json'
+    ori_data_path = 'dataset/mozilla_core/mozilla_core.csv'
+    output_data_path = 'dataset/mozilla_core/df_mozilla_core.json'
+    
     stacks = load_stacks(ori_data_path)
     stacks = same_filter(stacks)
     save_json(output_data_path, stacks)
