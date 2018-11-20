@@ -336,7 +336,7 @@ def main():
     need_train = False
     c_best = 0.04
     o_best = 0.13
-    dist_best = 0.03
+    dist_best = 0.06
     # dist_best = 0.06
     para = [c_best, o_best, dist_best]
     if need_train:
