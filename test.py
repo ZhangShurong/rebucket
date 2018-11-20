@@ -23,44 +23,26 @@ def generate_realbuckets(stacks):
     real_buckets = []
 
     for stack in stacks:
-        if len(stack.duplicated_stack) is not 0:
-            in_bucket = False
-            for bucket in real_buckets:
-                if stack.duplicated_stack in bucket:
-                    if stack.id in bucket:
-                        in_bucket = True
-                    else:
-                        bucket.append(stack.id)
-                    break
-            if not in_bucket:
-                found = False
+        found = False
+        for bucket in real_buckets:
+            if stack.id in bucket and stack.duplicated_stack in bucket:
+                found = True
+                break
+            if stack.id not in bucket and stack.duplicated_stack not in bucket:
+                continue
+                # real_buckets.append([stack.id])
+            if stack.id in bucket:
                 for d_stack in stacks:
                     if d_stack.id == stack.duplicated_stack:
-                        real_buckets.append([d_stack.id, stack.id])
-                        found = True
-                if not found:
-                    real_buckets.append([stack.id])
-        else:
-            already_have = False
-            for bucket in real_buckets:
-                if stack.id in bucket:
-                    already_have = True
-            if not already_have:
-                real_buckets.append([stack.id])
-    #     if len(stack.duplicated_stack) is not 0:
-    #         found = False
-    #         for bucket in real_buckets:
-    #             if stack.duplicated_stack in bucket:
-    #                 bucket.append(stack.duplicated_stack)
-    #                 found = True
-    #             else:
-    #                 for tmp_stack in stacks:
-    #                     if tmp_stack.id == stack.duplicated_stack:
-    #                         bucket.append(stack.duplicated_stack)
-    #                         found = True
-    #         if found:
-    #             continue
-    #     real_buckets.append([stack.id])
+                        bucket.append(d_stack.id)
+            else:
+                bucket.append(stack.id)
+            found = True
+        if not found:
+            real_buckets.append([stack.id])
+            for d_stack in stacks:
+                if d_stack.id == stack.duplicated_stack:
+                    real_buckets[-1].append(d_stack.id)
     return real_buckets
 
 def purity(real_buckets, BUCKETS, flag = False):
