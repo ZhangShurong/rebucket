@@ -144,16 +144,15 @@ def wrong(real_buckets, BUCKETS, flag = False):
                         real_set.append(real_bucket)
     debug = True
     if debug:
-        for stack in wrong_set:
-            for bucket in real_buckets:
-                if stack in bucket:
-                    print "Real bucket is " + str(bucket)
-            for bucket in BUCKETS:
-                if stack in bucket:
-                    print "Wrong bucket is " + str(bucket)
+        for bucket in wrong_set:
+            for stack in bucket:
+                for real_bucket in real_buckets:
+                    if stack in real_bucket:
+                        print "Real bucket is " + str(real_bucket)
+            print "Wrong bucket is " + str(bucket)
+
     return len(real_set) - len(wrong_set)
         
-            
 
 
 def meature_result(real_buckets, BUCKETS, flag = False):
@@ -262,6 +261,7 @@ def test(json_path, para):
     print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
     print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
     print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
+    rebucket.BUCKETS = []
 
     print "-----------"
     print "rebucket.clustering..."
@@ -272,6 +272,7 @@ def test(json_path, para):
     print "purity = " + str(purity(real_buckets, rebuckets))
     print "inverse_purity = " + str(inverse_purity(real_buckets, rebuckets))
     print "Wrong = " + str(wrong(real_buckets, rebuckets))
+    rebucket.BUCKETS = []
 
     print "-----------"
     print "prefix match..."
@@ -281,6 +282,7 @@ def test(json_path, para):
     print "purity = " + str(purity(real_buckets, prefix_buckets))
     print "inverse_purity = " + str(inverse_purity(real_buckets, prefix_buckets))
     print "Wrong = " + str(wrong(real_buckets, prefix_buckets))
+    rebucket.BUCKETS = []
 
 
     print "Test num "+str(test_num)
@@ -294,7 +296,7 @@ def main():
     
     all_stacks = read_dataset(json_path)
     
-    need_train = True
+    need_train = False
     c_best = 0.04
     o_best = 0.13
     dist_best = 0.03
