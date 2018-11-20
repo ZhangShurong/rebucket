@@ -119,9 +119,9 @@ def get_dist(stack1, stack2, c, o):
 
 def stack_prefix(stack1, stack2, num):
     for i in range(0, num):
-        if i > len(stack1.stack_arr) or i > len(stack2.stack_arr):
+        if i >= len(stack1.stack_arr) or i >= len(stack2.stack_arr):
             return False
-        if stack1.stack_arr[i] != stack2.stack_arr[i]:
+        if stack1.stack_arr[i].symbol != stack2.stack_arr[i].symbol:
             return False
     return True
     
