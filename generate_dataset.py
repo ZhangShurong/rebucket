@@ -50,7 +50,17 @@ def load_stacks(bug_report_csv):
         if len(ori_frames) is 0:
             continue
         if len(duplicated_issue) is not 0:
-            duplicates_id = duplicated_issue.split('.')[0]
+            duplicates_ids = duplicated_issue.split('.')
+            dps = []
+            for dp_id in duplicates_ids:
+                if dp_id == '0':
+                    continue
+                dps.append(dp_id)
+            duplicates_id = ','.join(dps)
+            if len(duplicates_ids) > 2:
+                print duplicates_id
+                exit(0)
+            
         for ori_frame in ori_frames:
             frame_dict = dict()
             frame_dict['symbol'] = ori_frame[0].strip()
@@ -82,12 +92,30 @@ def save_json(output_json, stacks):
             output_json_arr.append(stack_dict)
         json.dump(output_json_arr, fb_output)
 
+def compare_stack(stack1, stack2):
+    min_len = min([len(stack1.stack_arr),len(stack2.stack_arr)])
+    for i in range(0, min_len):
+        if stack1.stack_arr[i].symbol != stack2.stack_arr[i].symbol:
+            return False
+    return True
+
+def same_filter(stacks):
+    for i, stack in enumerate(stacks):
+        for j in range(i + 1, len(stacks)):
+            if compare_stack(stack, stacks[j]):
+                stacks[j].duplicated_stack = stack.id
+    return stacks
+        
+
 def main():
     # ori_data_path = 'dataset/Thunderbird/mozilla_thunderbird.csv'
     # output_data_path = 'dataset/Thunderbird/df_mozilla_thunderbird.json'
-    ori_data_path = 'dataset/Firefox/mozilla_firefox.csv'
-    output_data_path = 'dataset/Firefox/df_mozilla_firefox.json'
+    # ori_data_path = 'dataset/Firefox/mozilla_firefox.csv'
+    # output_data_path = 'dataset/Firefox/df_mozilla_firefox.json'
+    ori_data_path = 'dataset/eclipse/eclipse_platform.csv'
+    output_data_path = 'dataset/eclipse/df_eclipse.json'
     stacks = load_stacks(ori_data_path)
+    stacks = same_filter(stacks)
     save_json(output_data_path, stacks)
 if __name__ == "__main__":
     main()

@@ -209,14 +209,18 @@ def main():
     print "We have " + str(len(all_stack)) + " Stacks Now"
     print "Clustering"
     buckets = load_buckets(bucket_json)
-    new_buckets = rebucket(all_stack, buckets, 0.04, 0.13, 0.06)
+    new_buckets = rebucket(all_stack, buckets, 0.0, 0.0, 0.1)
     print "We have " + str(len(new_buckets)) + " buckets Now"
     write_buckets(new_buckets, bucket_json)
 
     print "single_pass_clustering..."
     for stack in all_stack:
-        single_pass_clustering(stack)
+        single_pass_clustering(stack, 0.0, 0.0, 0.1)
     print "We have " + str(len(BUCKETS)) + " buckets Now"
+
+    print "prefix_match..."
+    prefix_buckets = prefix_match(all_stack)
+    print "We have " + str(len(prefix_buckets)) + " buckets Now"
 
 if __name__ == "__main__":
     main()
