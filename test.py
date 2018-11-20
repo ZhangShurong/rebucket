@@ -21,11 +21,11 @@ def read_dataset(json_path):
 def generate_realbuckets(stacks):
 
     real_buckets = []
-    
+
     for stack in stacks:
         if len(stack.duplicated_stack) is not 0:
             in_bucket = False
-            for bucket in real_buckets: 
+            for bucket in real_buckets:
                 if stack.duplicated_stack in bucket:
                     bucket.append(stack.id)
                     in_bucket = True
@@ -44,10 +44,10 @@ def generate_realbuckets(stacks):
                 if stack.id in bucket:
                     already_have = True
             if not already_have:
-                real_buckets.append([stack.id])  
+                real_buckets.append([stack.id])
     #     if len(stack.duplicated_stack) is not 0:
     #         found = False
-    #         for bucket in real_buckets: 
+    #         for bucket in real_buckets:
     #             if stack.duplicated_stack in bucket:
     #                 bucket.append(stack.duplicated_stack)
     #                 found = True
@@ -71,15 +71,15 @@ def purity(real_buckets, BUCKETS, flag = False):
             buckets.append(tmp_bucket)
     else:
         buckets = BUCKETS
-    
+
     N = 0.0
     for bucket in real_buckets:
         N += len(bucket)
-    
+
     purity = 0.0
     for j in range(0, len(buckets)):
-        pur = []    
-        for i in range(0, len(real_buckets)):    
+        pur = []
+        for i in range(0, len(real_buckets)):
             Li_Cj = len(list(set(real_buckets[i]).intersection(set(buckets[j]))))
             precision = float(Li_Cj)/float(len(buckets[j]))
             pur.append(precision)
@@ -96,11 +96,11 @@ def inverse_purity(real_buckets, BUCKETS, flag = False):
             buckets.append(tmp_bucket)
     else:
         buckets = BUCKETS
-    
+
     N = 0.0
     for bucket in real_buckets:
         N += len(bucket)
-    
+
     inverse_purity = 0.0
     for i in range(0, len(real_buckets)):
         inverse_pur = []
@@ -121,7 +121,7 @@ def wrong(real_buckets, BUCKETS, flag = False):
             buckets.append(tmp_bucket)
     else:
         buckets = BUCKETS
-    
+
     N = 0.0
     for bucket in real_buckets:
         N += len(bucket)
@@ -135,14 +135,14 @@ def wrong(real_buckets, BUCKETS, flag = False):
             wrong_set.append(buckets[j])
 
     real_set = []
-    
+
     for bucket in wrong_set:
         for stack in bucket:
             for real_bucket in real_buckets:
                 if stack in real_bucket:
                     if real_bucket not in real_set:
                         real_set.append(real_bucket)
-    debug = True
+    debug = False
     if debug:
         for bucket in wrong_set:
             for stack in bucket:
@@ -152,7 +152,7 @@ def wrong(real_buckets, BUCKETS, flag = False):
             print "Wrong bucket is " + str(bucket)
 
     return len(real_set) - len(wrong_set)
-        
+
 
 
 def meature_result(real_buckets, BUCKETS, flag = False):
@@ -165,11 +165,11 @@ def meature_result(real_buckets, BUCKETS, flag = False):
             buckets.append(tmp_bucket)
     else:
         buckets = BUCKETS
-    
+
     N = 0.0
     for bucket in real_buckets:
         N += len(bucket)
-    
+
     fmeasure = 0.0
     for i in range(0, len(real_buckets)):
         f = []
@@ -181,7 +181,7 @@ def meature_result(real_buckets, BUCKETS, flag = False):
                 f.append(0)
             else:
                 f.append(float((2 * precision * recall) / (precision + recall)) )
-        fmeasure += float(len(real_buckets[i])) * float(max(f)) / float(N)       
+        fmeasure += float(len(real_buckets[i])) * float(max(f)) / float(N)
     return fmeasure
 
 def train(dataset):
@@ -241,27 +241,28 @@ def test(json_path, para):
     test_num = 2000
     if test_num > len(all_stacks):
         test_num = len(all_stacks)
+
     count = 0
     real_buckets = generate_realbuckets(all_stacks[0:test_num])
     print "testing"
     print meature_result(real_buckets, real_buckets, True)
     print "Wrong = " + str(wrong(real_buckets, real_buckets, True))
     print "end testing"
-    for stack in all_stacks:
-        count += 1
-        rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
-        if count % 100 == 0:
-            print count
-        if count == test_num:
-            break
-    
-    print "-----------"
-    print "Buckets = " + str(len(rebucket.BUCKETS))
-    print "F = " + str(meature_result(real_buckets, rebucket.BUCKETS))
-    print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
-    print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
-    print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
-    rebucket.BUCKETS = []
+
+    # for stack in all_stacks:
+    #     count += 1
+    #     rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
+    #     if count % 100 == 0:
+    #         print count
+    #     if count == test_num:
+    #         break
+    # print "-----------"
+    # print "Buckets = " + str(len(rebucket.BUCKETS))
+    # print "F = " + str(meature_result(real_buckets, rebucket.BUCKETS))
+    # print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
+    # print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
+    # print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
+    # rebucket.BUCKETS = []
 
     print "-----------"
     print "rebucket.clustering..."
@@ -293,9 +294,9 @@ def main():
     #json_path = 'dataset/Firefox/df_mozilla_firefox.json'
     #json_path = 'dataset/mozilla_core/df_mozilla_core.json'
     #json_path = 'dataset/JDT/df_eclipse_jdt.json'
-    
+
     all_stacks = read_dataset(json_path)
-    
+
     need_train = False
     c_best = 0.04
     o_best = 0.13
@@ -316,7 +317,7 @@ def main():
         print json_arr
         test(json_path, para)
         print "------------------------"
-    
+
 
 if __name__ == "__main__":
     main()
