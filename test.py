@@ -19,6 +19,7 @@ def read_dataset(json_path):
 
 
 def generate_realbuckets(stacks):
+
     real_buckets = []
     
     for stack in stacks:
@@ -30,9 +31,13 @@ def generate_realbuckets(stacks):
                     in_bucket = True
                     break
             if not in_bucket:
+                found = False
                 for d_stack in stacks:
                     if d_stack.id == stack.duplicated_stack:
                         real_buckets.append([d_stack.id, stack.id])
+                        found = True
+                if not found:
+                    real_buckets.append([stack.id])
         else:
             already_have = False
             for bucket in real_buckets:
@@ -127,16 +132,25 @@ def wrong(real_buckets, BUCKETS, flag = False):
             if set(buckets[j]).issubset(set(real_buckets[i])):
                 found = True
         if not found:
-            wrong_set.append(buckets[i])
+            wrong_set.append(buckets[j])
+
     real_set = []
-    print wrong_set
+    
     for bucket in wrong_set:
         for stack in bucket:
             for real_bucket in real_buckets:
                 if stack in real_bucket:
                     if real_bucket not in real_set:
                         real_set.append(real_bucket)
-    
+    debug = True
+    if debug:
+        for stack in wrong_set:
+            for bucket in real_buckets:
+                if stack in bucket:
+                    print "Real bucket is " + str(bucket)
+            for bucket in BUCKETS:
+                if stack in bucket:
+                    print "Wrong bucket is " + str(bucket)
     return len(real_set) - len(wrong_set)
         
             
@@ -220,24 +234,11 @@ def train(dataset):
     #---Training End---
     return [c_best, o_best, dist_best]
 
-def main():
-    #json_path = 'dataset/eclipse/df_eclipse.json'
-    #json_path = 'dataset/Firefox/df_mozilla_firefox.json'
-    json_path = 'dataset/mozilla_core/df_mozilla_core.json'
-    #json_path = 'dataset/JDT/df_eclipse_jdt.json'
-    
+def test(json_path, para):
+    c_best = para[0]
+    o_best = para[1]
+    dist_best = para[2]
     all_stacks = read_dataset(json_path)
-    
-    need_train = False
-    c_best = 0.04
-    o_best = 0.13
-    dist_best = 0.06
-    if need_train:
-        para = train(all_stacks[0:200])
-        c_best = para[0]
-        o_best = para[1]
-        dist_best = para[2]
-
     test_num = 2000
     if test_num > len(all_stacks):
         test_num = len(all_stacks)
@@ -255,12 +256,14 @@ def main():
         if count == test_num:
             break
     
+    print "-----------"
     print "Buckets = " + str(len(rebucket.BUCKETS))
     print "F = " + str(meature_result(real_buckets, rebucket.BUCKETS))
     print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
     print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
     print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
 
+    print "-----------"
     print "rebucket.clustering..."
     rebuckets = rebucket.clustering(all_stacks[0:test_num], c_best, o_best ,dist_best)
 
@@ -270,6 +273,7 @@ def main():
     print "inverse_purity = " + str(inverse_purity(real_buckets, rebuckets))
     print "Wrong = " + str(wrong(real_buckets, rebuckets))
 
+    print "-----------"
     print "prefix match..."
     prefix_buckets = rebucket.prefix_match(all_stacks[0:test_num])
     print "Buckets = " + str(len(prefix_buckets))
@@ -278,8 +282,39 @@ def main():
     print "inverse_purity = " + str(inverse_purity(real_buckets, prefix_buckets))
     print "Wrong = " + str(wrong(real_buckets, prefix_buckets))
 
+
     print "Test num "+str(test_num)
     print "real buckets " + str(len(real_buckets))
+
+def main():
+    json_path = 'dataset/eclipse/df_eclipse.json'
+    #json_path = 'dataset/Firefox/df_mozilla_firefox.json'
+    #json_path = 'dataset/mozilla_core/df_mozilla_core.json'
+    #json_path = 'dataset/JDT/df_eclipse_jdt.json'
+    
+    all_stacks = read_dataset(json_path)
+    
+    need_train = True
+    c_best = 0.04
+    o_best = 0.13
+    dist_best = 0.03
+    # dist_best = 0.06
+    para = [c_best, o_best, dist_best]
+    if need_train:
+        print "training...."
+        para = train(all_stacks[0:200])
+        c_best = para[0]
+        o_best = para[1]
+        dist_best = para[2]
+    print "Result is " + str(para)
+    json_arr = ["dataset/Firefox/df_mozilla_firefox.json","dataset/mozilla_core/df_mozilla_core.json",
+        "dataset/eclipse/df_eclipse.json","dataset/JDT/df_eclipse_jdt.json"]
+    for json_path in json_arr:
+        print "------------------------"
+        print json_arr
+        test(json_path, para)
+        print "------------------------"
+    
 
 if __name__ == "__main__":
     main()
