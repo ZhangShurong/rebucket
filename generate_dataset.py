@@ -107,12 +107,38 @@ def same_filter(stacks):
             if compare_stack(stack, stacks[j]):
                 if stack.duplicated_stack in duplicated_stack_arr:
                     continue
+                if len(stack.duplicated_stack) != 0:
+                    continue
                 duplicated_stack_arr.append(stack.id)
                 stacks[j].duplicated_stack = stack.id
-
     return stacks
         
+def generate_realbuckets(stacks):
 
+    real_buckets = []
+
+    for stack in stacks:
+        found = False
+        for bucket in real_buckets:
+            if stack.id in bucket and stack.duplicated_stack in bucket:
+                found = True
+                break
+            if stack.id not in bucket and stack.duplicated_stack not in bucket:
+                continue
+                # real_buckets.append([stack.id])
+            if stack.id in bucket:
+                for d_stack in stacks:
+                    if d_stack.id == stack.duplicated_stack:
+                        bucket.append(d_stack.id)
+            else:
+                bucket.append(stack.id)
+            found = True
+        if not found:
+            real_buckets.append([stack.id])
+            for d_stack in stacks:
+                if d_stack.id == stack.duplicated_stack:
+                    real_buckets[-1].append(d_stack.id)
+    return real_buckets
 def main():
     input_arr = ['dataset/Thunderbird/mozilla_thunderbird.csv', 'dataset/Firefox/mozilla_firefox.csv',
     'dataset/eclipse/eclipse_platform.csv', 'dataset/JDT/eclipse_jdt.csv', 'dataset/mozilla_core/mozilla_core.csv']
@@ -128,9 +154,13 @@ def main():
     # output_data_path = 'dataset/JDT/df_eclipse_jdt.json'
     # ori_data_path = 'dataset/mozilla_core/mozilla_core.csv'
     # output_data_path = 'dataset/mozilla_core/df_mozilla_core.json'
+
     for index, input_csv in enumerate(input_arr):
         stacks = load_stacks(input_csv)
+        print len(generate_realbuckets(stacks))
         stacks = same_filter(stacks)
+        print len(generate_realbuckets(stacks))
         save_json(output_arr[index], stacks)
+        
 if __name__ == "__main__":
     main()
