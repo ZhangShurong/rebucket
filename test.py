@@ -2,6 +2,7 @@ import json
 import rebucket
 from rebucket import Stack
 from rebucket import Frame
+import time
 
 def read_dataset(json_path):
     with open(json_path) as json_file:
@@ -217,6 +218,62 @@ def train(dataset):
     #---Training End---
     return [c_best, o_best, dist_best]
 
+def profile(json_path, para):
+    c_best = para[0]
+    o_best = para[1]
+    dist_best = para[2]
+    all_stacks = read_dataset(json_path)
+    test_num = 2000
+    if test_num > len(all_stacks):
+        test_num = len(all_stacks)
+
+    real_buckets = generate_realbuckets(all_stacks[0:test_num])
+    print "testing"
+    print meature_result(real_buckets, real_buckets, True)
+    print "Wrong = " + str(wrong(real_buckets, real_buckets, True))
+    print "end testing"
+
+    start = time.time()
+    count = 0
+    for stack in all_stacks:
+        count += 1
+        rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
+        if count % 100 == 0:
+            print count
+        if count == test_num:
+            break
+    print "-----------"
+    print "Buckets = " + str(len(rebucket.BUCKETS))
+    print "F = " + str(meature_result(real_buckets, rebucket.BUCKETS))
+    print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
+    print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
+    print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
+    rebucket.BUCKETS = []
+    end = time.time()
+    print str(end - start)
+
+    start = time.time()
+    count = 0
+    for stack in all_stacks:
+        count += 1
+        rebucket.single_pass_clustering_2(stack, c_best, o_best ,dist_best)
+        if count % 100 == 0:
+            print count
+        if count == test_num:
+            break
+    print "-----------"
+    print "Buckets = " + str(len(rebucket.BUCKETS))
+    print "F = " + str(meature_result(real_buckets, rebucket.BUCKETS))
+    print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
+    print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
+    print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
+    rebucket.BUCKETS = []
+    end = time.time()
+    print str(end - start)
+
+    print "Test num " + str(test_num)
+    print "real buckets " + str(len(real_buckets))
+
 def test(json_path, para):
     c_best = para[0]
     o_best = para[1]
@@ -226,13 +283,13 @@ def test(json_path, para):
     if test_num > len(all_stacks):
         test_num = len(all_stacks)
 
-    count = 0
+
     real_buckets = generate_realbuckets(all_stacks[0:test_num])
     print "testing"
     print meature_result(real_buckets, real_buckets, True)
     print "Wrong = " + str(wrong(real_buckets, real_buckets, True))
     print "end testing"
-
+    # count = 0
     # for stack in all_stacks:
     #     count += 1
     #     rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
@@ -269,19 +326,14 @@ def test(json_path, para):
     print "Wrong = " + str(wrong(real_buckets, prefix_buckets))
     rebucket.BUCKETS = []
 
-
     print "Test num "+str(test_num)
     print "real buckets " + str(len(real_buckets))
 
 def main():
     json_path = 'dataset/eclipse/df_eclipse.json'
-    #json_path = 'dataset/Firefox/df_mozilla_firefox.json'
-    #json_path = 'dataset/mozilla_core/df_mozilla_core.json'
-    #json_path = 'dataset/JDT/df_eclipse_jdt.json'
 
     all_stacks = read_dataset(json_path)
-
-    need_train = True
+    need_train = False
     c_best = 0.04
     o_best = 0.13
     dist_best = 0.03
@@ -290,17 +342,22 @@ def main():
     if need_train:
         print "training...."
         para = train(all_stacks[0:200])
-        c_best = para[0]
-        o_best = para[1]
-        dist_best = para[2]
+
     print "Result is " + str(para)
     json_arr = ["dataset/Firefox/df_mozilla_firefox.json","dataset/mozilla_core/df_mozilla_core.json",
         "dataset/eclipse/df_eclipse.json","dataset/JDT/df_eclipse_jdt.json"]
-    for json_path in json_arr:
-        print "------------------------"
-        print json_arr
-        test(json_path, para)
-        print "------------------------"
+
+    need_test = False
+    if need_test:
+        for json_path in json_arr:
+            print "------------------------"
+            print json_arr
+            test(json_path, para)
+            print "------------------------"
+
+    need_profile = True
+    if need_profile:
+        profile(json_arr[3], para)
 
 
 if __name__ == "__main__":

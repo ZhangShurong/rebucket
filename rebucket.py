@@ -11,6 +11,7 @@ import glob
 import os
 import numpy
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
+from multiprocessing import Pool
 
 BUCKETS = []
 class Stack(object):
@@ -177,6 +178,36 @@ def write_buckets(buckets, bucket_file):
     buckets_json = json.dumps(buckets_array)
     with open(bucket_file, 'w') as f:
         json.dump(buckets_json, f)
+
+def cal_dist(para):
+    c = 0.04
+    o = 0.13
+    sim = get_dist(para['stack'], BUCKETS[para['index']][0], c, o)
+    para['res_list'][para['index']] = sim
+
+def single_pass_clustering_2(stack, c, o, dist):
+    res_list = list(numpy.zeros(len(BUCKETS)))
+    p = Pool(5)
+    paras = []
+    for i in range(0, len(BUCKETS)):
+        paras_dict = dict()
+        paras_dict['res_list'] = res_list
+        paras_dict['index'] = i
+        paras_dict['stack'] = stack
+        paras.append(paras_dict)
+    p.map(cal_dist, paras)
+    p.close()
+    p.join()
+    if len(BUCKETS) is 0:
+        BUCKETS.append([stack])
+        return
+    min_sim = min(list(res_list))
+    if min_sim <= dist:
+        min_idx = res_list.index(min_sim)
+        BUCKETS[min_idx].append(stack)
+    else:
+        BUCKETS.append([stack])
+
 
 def single_pass_clustering(stack, c, o, dist):
     found = False
