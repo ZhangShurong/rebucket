@@ -100,10 +100,13 @@ def compare_stack(stack1, stack2):
     return True
 
 def same_filter(stacks):
+    count = 0
     for i, stack in enumerate(stacks):
         for j in range(i + 1, len(stacks)):
             if compare_stack(stack, stacks[j]):
                 stacks[j].duplicated_stack = stack.id
+                count += 1
+    print count
     return stacks
         
 
@@ -116,8 +119,8 @@ def main():
     # output_data_path = 'dataset/eclipse/df_eclipse.json'
     # ori_data_path = 'dataset/JDT/eclipse_jdt.csv'
     # output_data_path = 'dataset/JDT/df_eclipse_jdt.json'
-    ori_data_path = 'dataset/mozilla_core/mozilla_core.csv'
-    output_data_path = 'dataset/mozilla_core/df_mozilla_core.json'
+    # ori_data_path = 'dataset/mozilla_core/mozilla_core.csv'
+    # output_data_path = 'dataset/mozilla_core/df_mozilla_core.json'
     
     stacks = load_stacks(ori_data_path)
     stacks = same_filter(stacks)
