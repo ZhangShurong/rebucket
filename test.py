@@ -330,10 +330,10 @@ def test(json_path, para):
     print "real buckets " + str(len(real_buckets))
 
 def main():
-    json_path = 'dataset/eclipse/df_eclipse.json'
-
+    #json_path = 'dataset/eclipse/df_eclipse.json'
+    json_path = 'dataset/JDT/df_eclipse_jdt.json'
     all_stacks = read_dataset(json_path)
-    need_train = False
+    need_train = True
     c_best = 0.04
     o_best = 0.13
     dist_best = 0.06
@@ -341,7 +341,7 @@ def main():
     para = [c_best, o_best, dist_best]
     if need_train:
         print "training...."
-        para = train(all_stacks[0:200])
+        para = train(all_stacks[0:400])
 
     print "Result is " + str(para)
     json_arr = ["dataset/Firefox/df_mozilla_firefox.json","dataset/mozilla_core/df_mozilla_core.json",
