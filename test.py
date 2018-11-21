@@ -330,8 +330,8 @@ def test(json_path, para):
     print "real buckets " + str(len(real_buckets))
 
 def main():
-    #json_path = 'dataset/eclipse/df_eclipse.json'
-    json_path = 'dataset/JDT/df_eclipse_jdt.json'
+    json_path = 'dataset/eclipse/df_eclipse.json'
+    #json_path = 'dataset/JDT/df_eclipse_jdt.json'
     all_stacks = read_dataset(json_path)
     need_train = True
     c_best = 0.04
