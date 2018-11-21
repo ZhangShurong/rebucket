@@ -4,6 +4,7 @@ from rebucket import Stack
 from rebucket import Frame
 import time
 
+
 def read_dataset(json_path):
     with open(json_path) as json_file:
         dataset_dict = json.load(json_file)
@@ -218,12 +219,11 @@ def train(dataset):
     #---Training End---
     return [c_best, o_best, dist_best]
 
-def profile(json_path, para):
+def profile(json_path, para, test_num):
     c_best = para[0]
     o_best = para[1]
     dist_best = para[2]
     all_stacks = read_dataset(json_path)
-    test_num = 2000
     if test_num > len(all_stacks):
         test_num = len(all_stacks)
 
@@ -237,7 +237,12 @@ def profile(json_path, para):
     count = 0
     for stack in all_stacks:
         count += 1
+        if count == 1900:
+            t_start = time.time()
         rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
+        if count == 1900:
+            t_end = time.time()
+            print "t_end = " + str(t_end - t_start)
         if count % 100 == 0:
             print count
         if count == test_num:
@@ -250,13 +255,18 @@ def profile(json_path, para):
     print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
     rebucket.BUCKETS = []
     end = time.time()
-    print str(end - start)
+    print "Time = " + str(end - start)
 
     start = time.time()
     count = 0
     for stack in all_stacks:
         count += 1
-        rebucket.single_pass_clustering_2(stack, c_best, o_best ,dist_best)
+        if count == 1900:
+            t_start = time.time()
+        rebucket.single_pass_clustering_3(stack, c_best, o_best ,dist_best)
+        if count == 1900:
+            t_end = time.time()
+            print "t_end = " + str(t_end - t_start)
         if count % 100 == 0:
             print count
         if count == test_num:
@@ -333,7 +343,7 @@ def main():
     json_path = 'dataset/eclipse/df_eclipse.json'
     #json_path = 'dataset/JDT/df_eclipse_jdt.json'
     all_stacks = read_dataset(json_path)
-    need_train = True
+    need_train = False
     c_best = 0.04
     o_best = 0.13
     dist_best = 0.06
@@ -357,7 +367,7 @@ def main():
 
     need_profile = True
     if need_profile:
-        profile(json_arr[3], para)
+        profile(json_arr[2], para, 2000)
 
 
 if __name__ == "__main__":

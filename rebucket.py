@@ -12,8 +12,13 @@ import os
 import numpy
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
 from multiprocessing import Pool
+from multiprocessing.dummy import Pool as ThreadPool
+import threadpool
 
 BUCKETS = []
+res_list = list(numpy.ones(2000))
+task_pool = threadpool.ThreadPool(8)
+
 class Stack(object):
     stack_arr = []
     id = ''
@@ -179,25 +184,23 @@ def write_buckets(buckets, bucket_file):
     with open(bucket_file, 'w') as f:
         json.dump(buckets_json, f)
 
-def cal_dist(para):
+def cal_dist(index, stack):
     c = 0.04
     o = 0.13
-    sim = get_dist(para['stack'], BUCKETS[para['index']][0], c, o)
-    para['res_list'][para['index']] = sim
+    sim = get_dist(stack, BUCKETS[index][0], c, o)
+    res_list[index] = sim
 
 def single_pass_clustering_2(stack, c, o, dist):
-    res_list = list(numpy.zeros(len(BUCKETS)))
-    p = Pool(5)
-    paras = []
-    for i in range(0, len(BUCKETS)):
-        paras_dict = dict()
-        paras_dict['res_list'] = res_list
-        paras_dict['index'] = i
-        paras_dict['stack'] = stack
-        paras.append(paras_dict)
-    p.map(cal_dist, paras)
-    p.close()
-    p.join()
+    global res_list
+    for i in range(0, len(res_list)):
+        res_list[i] = 1.0
+
+    # req_list = []
+    # for index in range(0, len(BUCKETS)):
+    #     req_list.append(([index, stack], None))
+    requests = threadpool.makeRequests(cal_dist, [([index, stack], None) for index in range(0, len(BUCKETS))])
+    [task_pool.putRequest(req) for req in requests]
+    task_pool.wait()
     if len(BUCKETS) is 0:
         BUCKETS.append([stack])
         return
@@ -208,6 +211,26 @@ def single_pass_clustering_2(stack, c, o, dist):
     else:
         BUCKETS.append([stack])
 
+def single_pass_clustering_3(stack, c, o, dist):
+    global res_list
+    for i in range(0, len(res_list)):
+        res_list[i] = 1.0
+
+    mypool = ThreadPool(16)
+    for i in range(0, len(BUCKETS)):
+        mypool.apply_async(cal_dist, args=(i, stack))
+    mypool.close()
+    mypool.join()
+
+    if len(BUCKETS) is 0:
+        BUCKETS.append([stack])
+        return
+    min_sim = min(list(res_list))
+    if min_sim <= dist:
+        min_idx = res_list.index(min_sim)
+        BUCKETS[min_idx].append(stack)
+    else:
+        BUCKETS.append([stack])
 
 def single_pass_clustering(stack, c, o, dist):
     found = False
