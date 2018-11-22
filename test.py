@@ -220,6 +220,7 @@ def train(dataset):
     return [c_best, o_best, dist_best]
 
 def profile(json_path, para, test_num):
+    profile_num = 199
     c_best = para[0]
     o_best = para[1]
     dist_best = para[2]
@@ -237,10 +238,10 @@ def profile(json_path, para, test_num):
     count = 0
     for stack in all_stacks:
         count += 1
-        if count == 1900:
+        if count == profile_num:
             t_start = time.time()
         rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
-        if count == 1900:
+        if count == profile_num:
             t_end = time.time()
             print "t_end = " + str(t_end - t_start)
         if count % 100 == 0:
@@ -261,10 +262,10 @@ def profile(json_path, para, test_num):
     count = 0
     for stack in all_stacks:
         count += 1
-        if count == 1900:
+        if count == profile_num:
             t_start = time.time()
-        rebucket.single_pass_clustering_3(stack, c_best, o_best ,dist_best)
-        if count == 1900:
+        rebucket.single_pass_clustering_4(stack, c_best, o_best ,dist_best)
+        if count == profile_num:
             t_end = time.time()
             print "t_end = " + str(t_end - t_start)
         if count % 100 == 0:
@@ -279,7 +280,7 @@ def profile(json_path, para, test_num):
     print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
     rebucket.BUCKETS = []
     end = time.time()
-    print str(end - start)
+    print "Time = " + str(end - start)
 
     print "Test num " + str(test_num)
     print "real buckets " + str(len(real_buckets))
@@ -367,7 +368,7 @@ def main():
 
     need_profile = True
     if need_profile:
-        profile(json_arr[2], para, 2000)
+        profile(json_arr[2], para, 200)
 
 
 if __name__ == "__main__":

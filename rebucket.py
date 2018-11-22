@@ -12,9 +12,10 @@ import os
 import numpy
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster, fclusterdata
 from multiprocessing import Pool
-from multiprocessing.dummy import Pool as ThreadPool
+from multiprocessing import Pool as ThreadPool
 import threadpool
 
+STACK = None
 BUCKETS = []
 res_list = list(numpy.ones(2000))
 task_pool = threadpool.ThreadPool(8)
@@ -184,11 +185,18 @@ def write_buckets(buckets, bucket_file):
     with open(bucket_file, 'w') as f:
         json.dump(buckets_json, f)
 
-def cal_dist(index, stack):
+def cal_dist(index):
     c = 0.04
     o = 0.13
-    sim = get_dist(stack, BUCKETS[index][0], c, o)
+    global STACK
+    sim = get_dist(STACK, BUCKETS[index][0], c, o)
     res_list[index] = sim
+
+def cal_dist_process(stack1, stack2, index):
+    c = 0.04
+    o = 0.13
+    sim = get_dist(stack1, stack2, c, o)
+    return (index, sim)
 
 def single_pass_clustering_2(stack, c, o, dist):
     global res_list
@@ -215,10 +223,10 @@ def single_pass_clustering_3(stack, c, o, dist):
     global res_list
     for i in range(0, len(res_list)):
         res_list[i] = 1.0
-
-    mypool = ThreadPool(16)
-    for i in range(0, len(BUCKETS)):
-        mypool.apply_async(cal_dist, args=(i, stack))
+    global STACK
+    STACK = stack
+    mypool = ThreadPool(8)
+    mypool.map(cal_dist,[i for i in range(0,len(BUCKETS))])
     mypool.close()
     mypool.join()
 
@@ -231,6 +239,30 @@ def single_pass_clustering_3(stack, c, o, dist):
         BUCKETS[min_idx].append(stack)
     else:
         BUCKETS.append([stack])
+
+def single_pass_clustering_4(stack, c, o, dist):
+    global res_list
+    for i in range(0, len(res_list)):
+        res_list[i] = 1.0
+    pool = Pool(processes=4)
+    result = []
+    for i in range(0, len(BUCKETS)):
+        result.append(pool.apply_async(cal_dist_process, (stack,BUCKETS[i],i)))
+    pool.close()
+    pool.join()
+    for res in result:
+        res_list[res.get()[0]] = res.get()[1]
+
+    if len(BUCKETS) is 0:
+        BUCKETS.append([stack])
+        return
+    min_sim = min(list(res_list))
+    if min_sim <= dist:
+        min_idx = res_list.index(min_sim)
+        BUCKETS[min_idx].append(stack)
+    else:
+        BUCKETS.append([stack])
+
 
 def single_pass_clustering(stack, c, o, dist):
     found = False
