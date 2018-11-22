@@ -8,7 +8,7 @@ apm_data/
 .vscode/
 # C extensions
 *.so
-
+build/
 # Distribution / packaging
 .Python
 build/
