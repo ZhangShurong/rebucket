@@ -13,6 +13,16 @@ int sub(int a, int b)
 {
     return a - b;
 }
+Stack json_to_stack(const char* json)
+{
+    Stack stack;
+    return stack;
+}
+double get_dist(Stack stack1, Stack stack2)
+{
+    return 0.3;
+}
+
 const char* single_pass_clustering(const char* stack_json)
 {
     Document d;
@@ -25,5 +35,14 @@ const char* single_pass_clustering(const char* stack_json)
     Writer<StringBuffer> writer(buffer);
     d.Accept(writer);
     // Output {"project":"rapidjson","stars":11}
-    return buffer.GetString();
+    char* res = new char[strlen(buffer.GetString())];
+    strcpy(res, buffer.GetString());
+    return res;
+}
+void free_buffer(const char* str_ptr)
+{
+    if(!str_ptr) {
+        return;
+    }
+    delete [] str_ptr;
 }
