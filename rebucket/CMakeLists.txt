@@ -24,4 +24,4 @@ target_link_libraries(test rebucket)
 # Set the location for library installation -- i.e., /usr/local/lib
 # not really necessary in this example. Use "sudo make install" to apply
 #install(TARGETS hello DESTINATION /usr/local/lib)
-configure_file(test/testlib.py testlib.py COPYONLY)
+configure_file(test/test.py test.py COPYONLY)
