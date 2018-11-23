@@ -365,8 +365,8 @@ def main():
             print json_arr
             test(json_path, para)
             print "------------------------"
-
-    need_profile = True
+    test(json_arr[0], para)
+    need_profile = False
     if need_profile:
         profile(json_arr[2], para, 200)
 

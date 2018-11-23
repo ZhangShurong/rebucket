@@ -9,6 +9,7 @@ cmake-build-debug/
 .vscode/
 # C extensions
 *.so
+librebucket.dylib
 build/
 # Distribution / packaging
 .Python
