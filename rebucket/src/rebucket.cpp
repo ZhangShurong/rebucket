@@ -4,6 +4,7 @@
 #include "rapidjson/stringbuffer.h"
 #include <cmath>
 #include <algorithm>
+#include <vector>
 using namespace rapidjson;
 //TODO It should in redis
 vector<Bucket> buckets;
@@ -14,8 +15,9 @@ Stack json_to_stack(const char* json)
     Document d;
     d.Parse(json);
     stack.stack_id = d["stack_id"].GetString();
-    for (auto& v:d["stack_arr"].GetArray())
-        stack.frames.push_back(v.GetString());
+    for (int i = 0; i < d["stack_arr"].GetArray().Size(); ++i) {
+        stack.frames.push_back(d["stack_arr"].GetArray()[i].GetString());
+    }
     return stack;
 }
 
@@ -29,14 +31,15 @@ double get_dist(Stack stack1, Stack stack2)
         return 1.0;
     }
     //FIXME not good enough
-    double **M;
-    M = new double* [stack_len1];
-    for( int i=0; i<stack_len1; i++ )
-    {
-        M[i] = new double [stack_len2];
-    }
-    for(int i = 0; i < stack_len1; ++i){
-        for(int j = 0; j < stack_len2; ++j) {
+    std::vector<std::vector<double> > M(stack_len1 + 1, std::vector<double>(stack_len2 + 1));
+//    double **M = NULL;
+//    M = new double* [stack_len1];
+//    for( int i=0; i<stack_len1; i++ )
+//    {
+//        M[i] = new double [stack_len2];
+//    }
+    for(int i = 1; i < stack_len1; ++i){
+        for(int j = 1; j < stack_len2; ++j) {
             double x = 0;
             if(stack1.frames[i] == stack2.frames[j]){
                 x = exp(-c*min(i-1, j-1)) * exp(-o*abs(i-j));
@@ -53,11 +56,11 @@ double get_dist(Stack stack1, Stack stack2)
     double sim = M[stack_len1][stack_len2] / sig;
     
     //free M
-    for( int i=0; i<stack_len1; i++ )
-    {
-        delete [] M[i];
-    }
-    delete M;
+//    for( int i=0; i<stack_len1; i++ )
+//    {
+//        delete [] M[i];
+//    }
+//    delete[] M;
     return 1 - sim;
 
 }
