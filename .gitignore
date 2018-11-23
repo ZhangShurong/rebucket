@@ -5,6 +5,7 @@ __pycache__/
 ignore/
 apm_data/
 .idea/
+rebucket/rebucket/cmake-build-debug/
 .vscode/
 # C extensions
 *.so
