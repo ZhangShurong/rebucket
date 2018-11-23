@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8.9)
 project (rebucket)
 set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_CXX_STANDARD 11)
 
 # Bring the headers, such as helloworld.h into the project
 INCLUDE_DIRECTORIES(include)

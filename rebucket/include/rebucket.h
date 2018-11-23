@@ -8,14 +8,12 @@ struct Stack{
     vector<string> frames;
 };
 
-struct Sucket{
+struct Bucket{
     string bucket_id;
-    vector<string> stack_ids;
+    vector<Stack> stacks;
 };
 
 extern "C" {  
-int add(int a, int b);
-int sub(int a, int b);
 const char* single_pass_clustering(const char* stack_json);
 void free_buffer(const char* str_ptr);
 }
