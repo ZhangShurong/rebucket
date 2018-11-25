@@ -2,6 +2,7 @@ import ctypes
 import platform
 import sys, getopt
 import json
+import time
 class Stack(object):
     stack_arr = []
     id = ''
@@ -89,12 +90,16 @@ def main(argv):
     total = 0
     buckets = 0
     for i,stack_bytes in enumerate(stack_arr):
-    # test_stack1 = b"{\"stack_id\":\"1\",\"stack_arr\":[\"a\",\"b\",\"a\",\"b\",\"c\",\"d\"]}"
-    # test_stack2 = b"{\"stack_id\":\"2\",\"stack_arr\":[\"a\",\"b\",\"a\",\"b\",\"c\",\"d\"]}"
-    # lib.single_pass_clustering.restype = ctypes.c_char_p
-        print("Ori = " + all_stack[i].id)
+        if i == 5001:
+            break
+        # print("Ori = " + all_stack[i].id)
+        if i == 5000:
+            start = time.time()
+            bucket_id = str(lib.single_pass_clustering(ctypes.c_char_p(stack_bytes)))
+            end = time.time()
+            print "Time is " + str(end - start)
         bucket_id = str(lib.single_pass_clustering(ctypes.c_char_p(stack_bytes)))
-        print("bucket is : " + bucket_id)
+        # print("bucket is : " + bucket_id)
         if (all_stack[i].id == bucket_id):
             buckets += 1
         total += 1

@@ -5,6 +5,7 @@
 #include <cmath>
 #include <algorithm>
 #include <vector>
+#include <omp.h>
 using namespace rapidjson;
 //TODO It should in redis
 vector<Bucket> buckets;
@@ -24,7 +25,6 @@ Stack json_to_stack(const char* json)
     for (int i = 0; i < d["stack_arr"].GetArray().Size(); ++i) {
         stack.frames.push_back(d["stack_arr"].GetArray()[i].GetString());
     }
-    // cout << "id is " << stack.stack_id << endl;
     return stack;
 }
 
@@ -45,10 +45,8 @@ double get_dist(Stack stack1, Stack stack2)
             double x = 0;
             if(stack1.frames[i - 1] == stack2.frames[j - 1]){
                 x = exp(-c*min(i-1, j-1)) * exp(-o*abs(i-j));
-                //x = (math.e ** (-c * min(i-1, j-1))) * (math.e ** (-o * abs(i-j)))
             }
             M[i][j] = max(max(M[i-1][j-1] + x, M[i-1][j]), M[i][j-1]);
-            //M[i][j] = max(M[i-1][j-1] + x, M[i-1][j], M[i][j-1])
         }
     }
     double sig = 0;
@@ -63,8 +61,9 @@ double get_dist(Stack stack1, Stack stack2)
 const char* single_pass_clustering(const char* stack_json)
 {
     Stack stack = json_to_stack(stack_json);
-    double min_dist = 10;
+    double min_dist = 2;
     int min_index = -1;
+    #pragma omp parallel for
     for (int i = 0; i < buckets.size(); ++i){
         double dist = get_dist(stack, buckets[i].stacks[0]);
         if(dist < min_dist){
@@ -84,7 +83,7 @@ const char* single_pass_clustering(const char* stack_json)
         bucket.stacks.push_back(stack);
         buckets.push_back(bucket);
     }
-    // cout << "In C++" << res << "\n";
+    //NOTE be careful
     static string s = bucket_id;
     s = bucket_id;
     return s.c_str();

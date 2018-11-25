@@ -220,7 +220,7 @@ def train(dataset):
     return [c_best, o_best, dist_best]
 
 def profile(json_path, para, test_num):
-    profile_num = 199
+    profile_num = 5000
     c_best = para[0]
     o_best = para[1]
     dist_best = para[2]
@@ -365,10 +365,10 @@ def main():
             print json_arr
             test(json_path, para)
             print "------------------------"
-    test(json_arr[0], para)
-    need_profile = False
+    
+    need_profile = True
     if need_profile:
-        profile(json_arr[2], para, 200)
+        profile(json_arr[2], para, 5001)
 
 
 if __name__ == "__main__":

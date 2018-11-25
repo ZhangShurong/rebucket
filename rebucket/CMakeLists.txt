@@ -3,6 +3,10 @@ project (rebucket)
 set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_CXX_STANDARD 11)
 
+
+find_package(OpenMP REQUIRED)
+
+
 # Bring the headers, such as helloworld.h into the project
 INCLUDE_DIRECTORIES(include)
 SET(SOURCE_PATH ${PROJECT_SOURCE_DIR}/src)
@@ -12,8 +16,10 @@ file(GLOB SOURCES "src/*.cpp")
 file(GLOB TEST_SOURCES "test/*.cpp")
 add_executable(test ${TEST_SOURCES})
 
+
 # Generate the shared library from the sources
 add_library(rebucket SHARED ${SOURCES})
+target_link_libraries(rebucket PRIVATE OpenMP::OpenMP_CXX)
 # create the executable
 # include (GenerateExportHeader)
 # GENERATE_EXPORT_HEADER(rebucket
