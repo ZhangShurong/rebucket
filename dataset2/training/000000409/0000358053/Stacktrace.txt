@@ -1,3 +1,0 @@
-#0  doPoll (timeout=<value optimized out>) at ../../src/display.c:1215
-	w = (CompWatchFd *) 0xcb01c000bc0179
-	rv = <value optimized out>

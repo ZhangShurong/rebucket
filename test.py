@@ -300,21 +300,6 @@ def test(json_path, para):
     print meature_result(real_buckets, real_buckets, True)
     print "Wrong = " + str(wrong(real_buckets, real_buckets, True))
     print "end testing"
-    # count = 0
-    # for stack in all_stacks:
-    #     count += 1
-    #     rebucket.single_pass_clustering(stack, c_best, o_best ,dist_best)
-    #     if count % 100 == 0:
-    #         print count
-    #     if count == test_num:
-    #         break
-    # print "-----------"
-    # print "Buckets = " + str(len(rebucket.BUCKETS))
-    # print "F = " + str(meature_result(real_buckets, rebucket.BUCKETS))
-    # print "purity = " + str(purity(real_buckets, rebucket.BUCKETS))
-    # print "inverse_purity = " + str(inverse_purity(real_buckets, rebucket.BUCKETS))
-    # print "Wrong = " + str(wrong(real_buckets, rebucket.BUCKETS))
-    # rebucket.BUCKETS = []
 
     print "-----------"
     print "rebucket.clustering..."
@@ -358,7 +343,7 @@ def main():
     json_arr = ["dataset/Firefox/df_mozilla_firefox.json","dataset/mozilla_core/df_mozilla_core.json",
         "dataset/eclipse/df_eclipse.json","dataset/JDT/df_eclipse_jdt.json"]
 
-    need_test = False
+    need_test = True
     if need_test:
         for json_path in json_arr:
             print "------------------------"
@@ -366,7 +351,7 @@ def main():
             test(json_path, para)
             print "------------------------"
     
-    need_profile = True
+    need_profile = False
     if need_profile:
         profile(json_arr[2], para, 5001)
 

@@ -78,7 +78,7 @@ def main(argv):
     # passString
     for opt, arg in opts:
         if opt == '-h':
-            print 'test.py -i <inputfile> -o <outputfile>'
+            print 'test.py  -d <dataset>'
             sys.exit()
         elif opt in ("-d", "--dataset"):
              dataset_path = arg
