@@ -3,7 +3,14 @@ implements rebucket algorithm for research.
 
 ## How To Use? 
 Usage:
-python test.py
+```
+cd rebucket
+mkdir build
+cd build
+cmake ..
+make
+python test.py -d ../../dataset/Firefox/df_mozilla_firefox.json
+```
 
 ## dataset
 https://github.com/logpai/bugrepo
@@ -15,7 +22,6 @@ todo
 ------
 以下为中文说明
 # Rebucket算法实现
-如果是南科大的小伙伴碰巧找到了本项目，可以看看issue哦。
 
 算法本身请参见rebucket论文，本文档只说明项目相关内容
 ## 项目结构
