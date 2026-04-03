@@ -1,78 +1,77 @@
-# rebucket
-implements rebucket algorithm for research.
+# Rebucket
 
-## How To Use? 
-Usage:
-```
+Rebucket 算法的一个 C++ 实现（用于研究/实验），提供动态库 `librebucket`，并通过 Python `ctypes` 脚本驱动跑数据集。
+
+## 环境依赖
+
+- CMake（建议 >= 3.x；最低兼容 `2.8.12`）
+- 支持 OpenMP 的 C++ 编译器（Linux 常见为 GCC/Clang + `libgomp/libomp`）
+- Python 3（用于 `ctypes` 驱动脚本）
+
+## 快速开始
+
+在仓库根目录执行：
+
+```bash
 cd rebucket
-mkdir build
+mkdir -p build
+cmake -S . -B build
+cmake --build build -j
+
+# 运行数据集（注意：需要在 build 目录下运行，脚本会从当前目录加载 ./librebucket.so）
 cd build
-cmake ..
-make
-python test.py -d ../../dataset/Firefox/df_mozilla_firefox.json
+python3 test.py -d ../../dataset/Firefox/df_mozilla_firefox.json
 ```
 
-## dataset
-https://github.com/logpai/bugrepo
+## 测试
 
-## Implement
-todo 
-- [x] implements rebucket algorithm with c++
-- [ ] data strcuture
-------
-以下为中文说明
-# Rebucket算法实现
+```bash
+# C++ 单测（在仓库根目录）
+ctest --test-dir rebucket/build --output-on-failure
 
-算法本身请参见rebucket论文，本文档只说明项目相关内容
-## 项目结构
-rebucket  
-|  
-|---- dataset, 处理后的数据集  
-|  
-|---- rebucket, C++实现rebucket   
-|  
-|---- generate_dataset.py， 生成数据集的脚本  
-|  
-|---- rebucket/test/test.py，测试脚本（构建后会被复制到 build/test.py）  
-
-## 数据集处理部分
-**为什么需要处理数据集**
-因为原始的数据集bugrepo并不是每个记录都含有堆栈，因此需要提取出堆栈信息，声称可用的数据集。生成数据集的脚本是generate_dataset.py。生成数据集的位置在dataset中。  
-数据集提取算法为：  
-
-http://groups.csail.mit.edu/pag/pubs/bettenburg-msr-2008.pdf
-
-**数据集格式**  
-因为数据量不大且为了兼容其他项目，因此数据集采用的是json字符串存储。其格式为
-```
-{
-    "stack_id":"堆栈ID",
-    "duplicated_stack":"重复堆栈ID",
-    "stack_arr":[堆栈内容，用数组表示]
-}
-```
-## 验证算法部分
-因为原始的论文中已经提供了详细的度量值，本文只简单描述如何计算分类错误数。  
-假设正确的分类应该是
-```
-{[1,2,3],[4,5,6],[7,8]}
-```
-但是由于种种原因，分类错误，导致了以下分类结果：
-```
-{[1,2],[3],[4,5,6,7,8]}
-```
-上述过程的漏报数为1，因为7,8这两个堆栈均被分到了4,5,6中，意味着，有**一类**错误没有反应出来。或者换种说法，意味着生产环境中，有一类错误没有上报。  
-计算漏报数非常简单，只需要对比分类结果与真实结果，找出哪一类没有被分类即可。相关代码在rebucket.py中的wrong函数中。
-
-## 如何运行c++代码？
-进入rebucket目录
-```
-mkdir build
-cmake ..
-make
-```
-此时，build目录下面会有动态连接库以及test.py，请执行
-```
-python test.py -d ../../dataset/Firefox/df_mozilla_firefox.json
+# Python 侧自检（不依赖数据集）
+cd rebucket/build
+python3 test.py --self-test
 ```
 
+## 目录结构
+
+- `dataset/`：处理后的数据集（来源于 bugrepo）
+- `rebucket/`：C++ 实现 + CMake 构建脚本
+- `generate_dataset.py`：从 bugrepo CSV 抽取堆栈并生成本项目使用的 JSON 数据集
+
+## 数据集
+
+原始数据集来自：`https://github.com/logpai/bugrepo`。
+
+本仓库中 `dataset/*/*.json` 的格式为一个数组，每个元素包含一个 issue 的堆栈信息：
+
+```json
+[
+  {
+    "stack_id": "...",
+    "duplicated_stack": "...",
+    "stack_arr": [
+      {"symbol": "a.b.C.m", "file": "C.java", "line": 123}
+    ]
+  }
+]
+```
+
+说明：C++ 核心聚类只使用 `symbol` 序列；`rebucket/test/test.py` 会在运行前把 `stack_arr` 转成字符串数组传入动态库。
+
+## 常见问题
+
+- `test.py` 找不到动态库：请确认在 `rebucket/build` 目录下执行（脚本默认加载 `./librebucket.so`）。
+- OpenMP 未找到：请确认编译器/系统已安装 OpenMP 运行库（如 `libgomp1`/`libomp`），并确保 CMake 能 `find_package(OpenMP)`。
+
+## 生成数据集（可选）
+
+`generate_dataset.py` 用于从 bugrepo 的 CSV 中抽取 `Description` 里的 Java 堆栈并生成 `dataset/*/*.json`。
+脚本要求 CSV 具备至少三列：`Issue_id`、`Duplicated_issue`、`Description`。
+
+当前脚本使用固定的输入/输出路径数组（见 `generate_dataset.py:186`），将 bugrepo 的原始 CSV 放到对应路径后直接运行：
+
+```bash
+python3 generate_dataset.py
+```
