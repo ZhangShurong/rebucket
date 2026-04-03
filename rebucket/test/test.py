@@ -1,3 +1,12 @@
+"""Run rebucket shared library on a dataset.
+
+Typical usage:
+    python3 test.py -d ../../dataset/Firefox/df_mozilla_firefox.json
+
+Self test:
+    python3 test.py --self-test
+"""
+
 import ctypes
 import platform
 import sys
@@ -68,8 +77,9 @@ def main(argv):
         print("Other System tasks")
 
     dataset_path = ''
+    self_test = False
     try:
-        opts, args = getopt.getopt(argv, "hd:", ["help", "dataset="])
+        opts, args = getopt.getopt(argv, "hd:", ["help", "dataset=", "self-test"])
     except getopt.GetoptError:
         print('test.py -d <dataset>')
         sys.exit(2)
@@ -79,11 +89,35 @@ def main(argv):
             sys.exit()
         elif opt in ("-d", "--dataset"):
             dataset_path = arg
+
+        elif opt == "--self-test":
+            self_test = True
+
+    # Bind extra helpers.
+    if hasattr(lib, "rebucket_reset"):
+        lib.rebucket_reset.restype = None
+        lib.rebucket_reset()
+    if hasattr(lib, "rebucket_bucket_count"):
+        lib.rebucket_bucket_count.restype = ctypes.c_size_t
+
+    lib.single_pass_clustering.restype = ctypes.c_char_p
+
+    if self_test:
+        # invalid json => empty
+        r = lib.single_pass_clustering(ctypes.c_char_p(b"{bad"))
+        assert r is not None and r.decode("utf-8") == "", "invalid json should return empty string"
+        if hasattr(lib, "rebucket_bucket_count"):
+            assert lib.rebucket_bucket_count() == 0
+        # valid json => stack_id
+        r = lib.single_pass_clustering(ctypes.c_char_p(b'{"stack_id":"1","stack_arr":["a","b"]}'))
+        assert r.decode("utf-8") == "1"
+        print("[PASS] python self-test")
+        return
+
     all_stack = load_dataset(dataset_path)
     print(len(all_stack))
     stack_arr = stacks_to_str(all_stack)
     print('single_pass_clustering')
-    lib.single_pass_clustering.restype = ctypes.c_char_p
     total = 0
     buckets = 0
     for i, stack_bytes in enumerate(stack_arr):

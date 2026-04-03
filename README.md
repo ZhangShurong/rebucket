@@ -33,9 +33,7 @@ rebucket
 |  
 |---- generate_dataset.py， 生成数据集的脚本  
 |  
-|---- test.py 测试脚本  
-|  
-|---- rebucket.py 算法脚本  
+|---- rebucket/test/test.py，测试脚本（构建后会被复制到 build/test.py）  
 
 ## 数据集处理部分
 **为什么需要处理数据集**
@@ -77,5 +75,4 @@ make
 ```
 python test.py -d ../../dataset/Firefox/df_mozilla_firefox.json
 ```
-
 
